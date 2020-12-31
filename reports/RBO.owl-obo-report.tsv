@@ -1,0 +1,5 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	obo:RBO_00000108	rdfs:label	
+WARN	missing_definition	root node	IAO:0000115	
+WARN	missing_definition	obo:RBO_00000108	IAO:0000115	
+INFO	missing_superclass	root node	rdfs:subClassOf	

@@ -1,0 +1,41 @@
+title: Radiation Biology Ontology
+id: rbo
+github_org: DanBerrios
+repo: RBO
+allow_equivalents: all
+description: None
+license: https://creativecommons.org/licenses/unspecified
+dosdp_tools_options: --obo-prefixes=true
+edit_format: owl
+exclude_tautologies: structural
+export_formats:
+- owl
+- obo
+import_group:
+  products:
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: chmo
+  - id: envo
+  - id: obi
+  - id: uo
+obo_format_options: ''
+primary_release: full
+reasoner: ELK
+release_artefacts:
+- full
+- base
+robot_java_args: ''
+robot_report:
+  custom_profile: false
+  fail_on: null
+  report_on:
+  - edit
+  - .owl
+  use_labels: true
+uribase: http://purl.obolibrary.org/obo
+use_dosdps: false
+components:
+  products:
+    - filename: all_templates.owl
