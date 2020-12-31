@@ -1,0 +1,432 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2020-12-31/imports/chmo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-12-31</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
+        <oboInOwl:id>BFO:0000057</oboInOwl:id>
+        <rdfs:label>has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <oboInOwl:id>BFO:0000002</oboInOwl:id>
+        <rdfs:label>continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <oboInOwl:id>BFO:0000015</oboInOwl:id>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <oboInOwl:id>BFO:0000017</oboInOwl:id>
+        <rdfs:label>realizable_entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <oboInOwl:id>BFO:0000020</oboInOwl:id>
+        <rdfs:label>specifically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <oboInOwl:id>BFO:0000023</oboInOwl:id>
+        <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <oboInOwl:id>BFO:0000031</oboInOwl:id>
+        <rdfs:label>generically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <oboInOwl:id>BFO:0000040</oboInOwl:id>
+        <rdfs:label>material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000000">
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000227"/>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>The determination of the spectral absorbance of a solution. This method is often used to determine the concentration of a chemical in a solution.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>colorimetric method</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>colourimetry</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000001</oboInOwl:id>
+        <rdfs:label>colorimetry</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The determination of the spectral absorbance of a solution. This method is often used to determine the concentration of a chemical in a solution.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002739"/>
+        <obo:IAO_0000115>The determination of the mass of a gas or vapour adsorbed to a surface.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>gravimetric sorption</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gravimetric sorption-desorption</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gravimetric sorption-desorption analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gravimetric sorption/desorption</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gravimetric sorption/desorption analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>CHMO:0000002</oboInOwl:id>
+        <rdfs:label>gravimetric sorption analysis</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The determination of the mass of a gas or vapour adsorbed to a surface.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000993">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>An independent material continuant that is self-connected and retains its identity over time.</obo:IAO_0000115>
+        <oboInOwl:id>CHMO:0000993</oboInOwl:id>
+        <rdfs:label>portion of material</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An independent material continuant that is self-connected and retains its identity over time.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002739 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002739">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <obo:IAO_0000115>A measurement method which obtains the concentration or quantity of a specified substance in an analyte.</obo:IAO_0000115>
+        <oboInOwl:created_by>batchelorc</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-04-13T11:50:09Z</oboInOwl:creation_date>
+        <oboInOwl:id>CHMO:0002739</oboInOwl:id>
+        <rdfs:label>quantitative determination method</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002739"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A measurement method which obtains the concentration or quantity of a specified substance in an analyte.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002793 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002793">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A piece of apparatus that is used to measure a physical quantity.</obo:IAO_0000115>
+        <oboInOwl:id>CHMO:0002793</oboInOwl:id>
+        <rdfs:label>sensor</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002793"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A piece of apparatus that is used to measure a physical quantity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002796 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002796">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002797"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Measurement of the dose of a substance taken up by an object.</obo:IAO_0000115>
+        <oboInOwl:id>CHMO:0002796</oboInOwl:id>
+        <rdfs:label>dosimetry</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002796"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Measurement of the dose of a substance taken up by an object.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/9781847559753-00013</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHMO_0002797 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002797">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002793"/>
+        <obo:IAO_0000115>A sensor that is used to measure the dose of a substance taken by up an object.</obo:IAO_0000115>
+        <oboInOwl:id>CHMO:0002797</oboInOwl:id>
+        <rdfs:label>dosimeter</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002797"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A sensor that is used to measure the dose of a substance taken by up an object.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/9781847559753-00013</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <oboInOwl:id>IAO:0000030</oboInOwl:id>
+        <rdfs:label>information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <oboInOwl:id>IAO:0000033</oboInOwl:id>
+        <rdfs:label>directive information entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <oboInOwl:id>IAO:0000104</oboInOwl:id>
+        <rdfs:label>plan specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <oboInOwl:hasAlternativeId>CHMO:0001840</oboInOwl:hasAlternativeId>
+        <oboInOwl:id>OBI:0000011</oboInOwl:id>
+        <rdfs:label>planned process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHMO:0000000</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHMO:0001133</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>measurement method</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>OBI:0000070</oboInOwl:id>
+        <rdfs:label>assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>obi:pppb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000443">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>An assay with the objective to capture information about the presence, concentration or amount of an analyte in the evaluant.</obo:IAO_0000115>
+        <oboInOwl:id>OBI:0000443</oboInOwl:id>
+        <rdfs:label>analyte assay</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An assay with the objective to capture information about the presence, concentration or amount of an analyte in the evaluant.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>obi:ar</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obi:bp</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obi:hp</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obi:ppb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obi:prs</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
+        <obo:IAO_0000115>A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHMO:0000998</oboInOwl:hasAlternativeId>
+        <oboInOwl:id>OBI:0000968</oboInOwl:id>
+        <rdfs:label>device</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>obi:obi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
