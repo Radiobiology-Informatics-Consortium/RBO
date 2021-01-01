@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl#"
-     xml:base="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/rbo/components/RBO_terms.owl#"
+     xml:base="http://purl.obolibrary.org/obo/rbo/components/RBO_terms.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -8,9 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-01/components/all_templates.owl"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/RBO_terms.owl"/>
     
 
 
@@ -1053,7 +1051,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000089"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine study</rdfs:label>
     </owl:Class>
     

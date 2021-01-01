@@ -16,8 +16,8 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/envo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2020-12-31/imports/envo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-12-31</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-01/imports/envo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2880,7 +2880,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref rdf:resource="http://sweetontology.net/realmSoil/Permafrost"/>
         <oboInOwl:hasDbXref>EcoLexicon:permafrost</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>LTER:408</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Permafrost</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:comment>Ice is not always present, as may be in the case of nonporous bedrock, but it frequently occurs and it may be in amounts exceeding the potential hydraulic saturation of the ground material.</rdfs:comment>
@@ -2891,7 +2891,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Soil or rock and included ice or organic material at or below the freezing point of water (0 degrees Celsius or 32 degrees Fahrenheit) for two or more years.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000134"/>
@@ -8722,6 +8722,82 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001217">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_21001217"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002608"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000801"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001219"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_21001217"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115>A stellar radiation process during which penetrating electromagnetic radiation is emitted by high-energy electrons as they fall into a lower state of energy.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>X-ray radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>X-ray stellar radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>x ray stellar radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>X-ray solar radiation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset>environmental_hazards</oboInOwl:inSubset>
+        <oboInOwl:inSubset>envoAstro</oboInOwl:inSubset>
+        <rdfs:comment>Ambiguity exists in the definition of x-rays and their differentiation from gamma rays. Photons with sufficient energy to be classified as x-rays may be emitted by other processes than electrons falling to lower energy states. Most x-rays have wavelengths ranging from 0.01 to 10 nanometers, corresponding to frequencies in the range of 30 petahertz to 30 exahertz and energies in the range of 100 eV to 100 keV.</rdfs:comment>
+        <rdfs:label xml:lang="en">X-ray stellar radiation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001217"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A stellar radiation process during which penetrating electromagnetic radiation is emitted by high-energy electrons as they fall into a lower state of energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/X-ray</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001217"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Ambiguity exists in the definition of x-rays and their differentiation from gamma rays. Photons with sufficient energy to be classified as x-rays may be emitted by other processes than electrons falling to lower energy states. Most x-rays have wavelengths ranging from 0.01 to 10 nanometers, corresponding to frequencies in the range of 30 petahertz to 30 exahertz and energies in the range of 100 eV to 100 keV.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/X-ray#Energy_ranges</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001219">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_21001219"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002608"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000801"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001211"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_21001219"/>
+        <obo:IAO_0000115>A stellar radiation process during which electromagnetic waves or their quanta are emitted from a star with sufficient energy to disrupt molecular bonds or alter the electron number of atoms.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ionising stellar radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>ionising solar radiation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset>envoAstro</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">ionizing stellar radiation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001219"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A stellar radiation process during which electromagnetic waves or their quanta are emitted from a star with sufficient energy to disrupt molecular bonds or alter the electron number of atoms.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Electromagnetic_radiation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Solar_irradiance</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01001226 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001226">
@@ -12053,6 +12129,53 @@ Some definitions include additional discussion of the the physics involved which
         <obo:IAO_0000115>An environment which is determined by an anatomical entity.</obo:IAO_0000115>
         <rdfs:label>anatomical entity environment</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_21001217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_21001219"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000115>A radiation process during which penetrating electromagnetic radiation is emitted by high-energy electrons as they fall into a lower state of energy.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C17262</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>X ray radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>X-ray</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset>environmental_hazards</oboInOwl:inSubset>
+        <rdfs:label>X-ray radiation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_21001217"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A radiation process during which penetrating electromagnetic radiation is emitted by high-energy electrons as they fall into a lower state of energy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/X-ray</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_21001217"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>X-ray</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>NCIT:C17262</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_21001219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_21001219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001026"/>
+        <obo:IAO_0000115>A radiation process during which electromagnetic waves or their quanta are emitted with sufficient energy to disrupt molecular bonds or alter the electron number of atoms.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>NCIT:C17052</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ionising radiation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
+        <rdfs:label>ionizing radiation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_21001219"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A radiation process during which electromagnetic waves or their quanta are emitted with sufficient energy to disrupt molecular bonds or alter the electron number of atoms.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Electromagnetic_radiation</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 

@@ -1,0 +1,10 @@
+c,p,x
+http://purl.obolibrary.org/obo/RBO_010000,http://www.w3.org/2000/01/rdf-schema#label,as low as reasonably achievable 
+http://purl.obolibrary.org/obo/RBO_010008,http://www.w3.org/2000/01/rdf-schema#label,excess lifetime risk 
+http://purl.obolibrary.org/obo/RBO_010011,http://purl.obolibrary.org/obo/IAO_0000115,"The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s–1.) "
+http://purl.obolibrary.org/obo/RBO_010019,http://purl.obolibrary.org/obo/IAO_0000112,Neutrons have been found to have a higher RBE than electrons. 
+http://purl.obolibrary.org/obo/RBO_010006,http://purl.obolibrary.org/obo/IAO_0000115,"Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a long distance and leave a trail of secondary ionizations. "
+http://purl.obolibrary.org/obo/RBO_010017,http://purl.obolibrary.org/obo/IAO_0000115,"A general term referring to the relative biological effectiveness of the radiation of interest. For example, the absorbed dose from an exposure to neutron radiation may be quantitatively the same as that from an exposure to gamma rays in a volume of tissue on the order of 1 cm3. However, at a higher resolution of a few micrometers the ionizing events will be more uniformly dispersed for the gamma-ray radiation than for the neutron radiation, thus producing quantitatively different biological effects (see relative biological effectiveness). "
+http://purl.obolibrary.org/obo/RBO_010012,http://purl.obolibrary.org/obo/IAO_0000119, In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)
+http://purl.obolibrary.org/obo/RBO_010015,http://www.w3.org/2000/01/rdf-schema#label,quality factor 
+http://purl.obolibrary.org/obo/RBO_010018,http://www.w3.org/2000/01/rdf-schema#label,radiation weighting factor 
