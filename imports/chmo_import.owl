@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2020-12-31/imports/chmo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-12-31</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-01/imports/chmo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -31,18 +31,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
     
 
 
@@ -183,57 +171,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000000">
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000227"/>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000115>The determination of the spectral absorbance of a solution. This method is often used to determine the concentration of a chemical in a solution.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>colorimetric method</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>colourimetry</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>CHMO:0000001</oboInOwl:id>
-        <rdfs:label>colorimetry</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The determination of the spectral absorbance of a solution. This method is often used to determine the concentration of a chemical in a solution.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHMO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002739"/>
-        <obo:IAO_0000115>The determination of the mass of a gas or vapour adsorbed to a surface.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>gravimetric sorption</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>gravimetric sorption-desorption</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>gravimetric sorption-desorption analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>gravimetric sorption/desorption</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>gravimetric sorption/desorption analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:id>CHMO:0000002</oboInOwl:id>
-        <rdfs:label>gravimetric sorption analysis</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The determination of the mass of a gas or vapour adsorbed to a surface.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-0640-0422</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CHMO_0000993 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000993">
@@ -246,25 +183,6 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An independent material continuant that is self-connected and retains its identity over time.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHMO_0002739 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002739">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
-        <obo:IAO_0000115>A measurement method which obtains the concentration or quantity of a specified substance in an analyte.</obo:IAO_0000115>
-        <oboInOwl:created_by>batchelorc</oboInOwl:created_by>
-        <oboInOwl:creation_date>2012-04-13T11:50:09Z</oboInOwl:creation_date>
-        <oboInOwl:id>CHMO:0002739</oboInOwl:id>
-        <rdfs:label>quantitative determination method</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002739"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A measurement method which obtains the concentration or quantity of a specified substance in an analyte.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -384,27 +302,6 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>obi:pppb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000443 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000443">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
-        <obo:IAO_0000115>An assay with the objective to capture information about the presence, concentration or amount of an analyte in the evaluant.</obo:IAO_0000115>
-        <oboInOwl:id>OBI:0000443</oboInOwl:id>
-        <rdfs:label>analyte assay</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000443"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An assay with the objective to capture information about the presence, concentration or amount of an analyte in the evaluant.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>obi:ar</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obi:bp</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obi:hp</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obi:ppb</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>obi:prs</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
