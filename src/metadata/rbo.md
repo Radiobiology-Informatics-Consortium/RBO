@@ -10,11 +10,11 @@ build:
   system: git
   path: "."
 contact:
-  email: 
-  label: 
-  github: 
+  email: daniel.c.berrios@nasa.gov
+  label: POC
+  github: https://github.com/DanBerrios
 description: The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.
-domain: stuff
+domain: radiation biology, the study of the effects of radiation on biological systems
 homepage: https://github.com/DanBerrios/RBO
 products:
   - id: rbo.owl
@@ -45,6 +45,7 @@ license:
 activity_status: active
 ---
 
-Enter a detailed description of your ontology here. You can use arbitrary markdown and HTML.
-You can also embed images too.
+The effects of all kinds of radiation on biological systems is the subject of much research, both on earth and in space environments.  This ontology is designed to support the needs of these investigators, particularly for organizing, describing and archiving data from experiments and observations examining these effects.  
+
+See [Radiation Research](https://meridian.allenpress.com/radiation-research), [International Journal of Radiation Oncology, Biology, Physics](https://www.redjournal.org/) 
 
