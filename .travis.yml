@@ -10,7 +10,7 @@ before_install:
 
 # command to run tests
 script:
-  - make docker-test
+  - make test
 
 #after_success:
 #  coveralls
