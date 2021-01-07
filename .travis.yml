@@ -9,7 +9,8 @@ before_install:
   - docker pull obolibrary/odkfull
 
 # command to run tests
-script: cd src/ontology && sh run.sh make test
+script:
+  - make docker-test
 
 #after_success:
 #  coveralls
@@ -18,7 +19,6 @@ script: cd src/ontology && sh run.sh make test
 branches:
   only:
     - master
-    - test-travis
 
 ### Add your own lists here
 ### See https://github.com/INCATools/ontology-development-kit/issues/35
