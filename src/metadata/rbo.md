@@ -13,7 +13,7 @@ contact:
   email: 
   label: 
   github: 
-description: Radiation Biology Ontology is an ontology...
+description: The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.
 domain: stuff
 homepage: https://github.com/DanBerrios/RBO
 products:
