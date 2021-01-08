@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: rbo/releases/2021-01-01/rbo-base.owl
+data-version: rbo/releases/2021-01-08/rbo-base.owl
 ontology: rbo/rbo-base
 property_value: http://purl.org/dc/elements/1.1/description "The RBO is an ontology about Radiation Biology, with emphasis on Space Biology." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Radiation Biology Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
-property_value: owl:versionInfo "2021-01-01" xsd:string
+property_value: owl:versionInfo "2021-01-08" xsd:string
 
 [Term]
 id: RBO:00000001
