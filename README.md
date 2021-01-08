@@ -3,7 +3,9 @@
 
 # Radiation Biology Ontology
 
-The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.
+The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.  The effects of all kinds of radiation on biological systems is the subject of much research, both on earth and in space environments.  This ontology is designed to support the needs of these investigators, particularly for organizing, describing and archiving data from experiments and observations examining these effects.  
+
+See [Radiation Research](https://meridian.allenpress.com/radiation-research), [International Journal of Radiation Oncology, Biology, Physics](https://www.redjournal.org/) 
 
 More information can be found at http://obofoundry.org/ontology/RBO
 
@@ -28,7 +30,3 @@ Please use this GitHub repository's [Issue tracker](https://github.com/DanBerrio
 ## Acknowledgements
 
 This ontology repository was created using the [ontology starter kit](https://github.com/INCATools/ontology-starter-kit)
-
-The effects of all kinds of radiation on biological systems is the subject of much research, both on earth and in space environments.  This ontology is designed to support the needs of these investigators, particularly for organizing, describing and archiving data from experiments and observations examining these effects.  
-
-See [Radiation Research](https://meridian.allenpress.com/radiation-research), [International Journal of Radiation Oncology, Biology, Physics](https://www.redjournal.org/) 
