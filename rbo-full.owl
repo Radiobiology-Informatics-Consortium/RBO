@@ -23,11 +23,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboInOwl1="oboInOwl:">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-07/rbo-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-12/rbo-full.owl"/>
         <dc:description>The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.</dc:description>
         <dc:title>Radiation Biology Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-07</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -587,7 +587,9 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -19453,6 +19455,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 26 protons and 30 neutrons</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</obo:IAO_0000118>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-56, 56Fe</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron-56</rdfs:label>
     </owl:Class>
@@ -19680,8 +19683,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000026"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galactic cosmic radiation is one of the principal sources of radiation dose outside low-earth orbit</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galactic cosmic radiation consists of
- high-energy charged particles originating from outside the solar system</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galactic cosmic radiation consists of high-energy charged particles originating from outside the solar system</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galactic cosmic radiation</rdfs:label>
     </owl:Class>
     
@@ -19805,28 +19807,6 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High energy photons emitted during nuclear decay of the Cobalt-60 isotope.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-60</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalt-60 gamma radiation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000055 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The sample was irradiated with thermal neutrons.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neutron that has (by collision with other particles) reached an energy state equal to that of its surroundings, typically on the order of 0.025 eV (electron volts).</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal neutron</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000058 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000058">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000120"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High energy photons emitted during nuclear decay of the Cobalt-57 isotope.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-57</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalt-57 gamma radiation</rdfs:label>
     </owl:Class>
     
 
@@ -20303,8 +20283,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000116"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely
-spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high linear energy transfer radiation</rdfs:label>
     </owl:Class>
@@ -32442,9 +32421,9 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000025 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000025">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were irradiated using the NSRL Galactic Cosmic Ray Simulation.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NSRL Galactic Cosmic Ray Simulation is comprised of seven different species of ion, and fourteen different energies of H and He for 33 separate beams in a single GCRSim exposure.
-(https://www.bnl.gov/nsrl/userguide/GCRSim.php)</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NSRL Galactic Cosmic Ray Simulation is comprised of seven different species of ion, and fourteen different energies of H and He for 33 separate beams in a single GCRSim exposure.  (https://www.bnl.gov/nsrl/userguide/GCRSim.php)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NSRL GCRSim</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NSRL Galactic Cosmic Ray Simulation</rdfs:label>
     </owl:NamedIndividual>
@@ -32454,6 +32433,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000030 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000030">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000047"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted at the NSRL</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particle accelerator beamline located at Brookhaven National Laboratory</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000119>
@@ -32466,6 +32446,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000031 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000031">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000121"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was carried out at HIMAC</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particle accelerator at the National Institute of Radiological Sciences in Chiba, Japan</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIMAC; NIRS-HIMAC</oboInOwl:hasExactSynonym>
@@ -32477,6 +32458,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000034 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000034">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000046"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted aboard the International Space Station</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of an Earth-orbiting space station that went operational in the year 2000.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -32490,6 +32472,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000035 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000035">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000046"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted on the Mir space station</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of an Earth-orbiting space station, operational from1986 to 2001, operated by the Soviet Union and later by Russia.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
@@ -32501,6 +32484,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000036 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000036">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000033"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The biological payload was carried into orbit by the Space Shuttle</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a reusable spacecraft designed to carry passengers and equipment into low Earth orbit and return to Earth. Operated by the United States and operational from 1981 to 2011.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
@@ -32512,6 +32496,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000037 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000037">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000033"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted aboard the Bion-MI satellite.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a Russian-operated Earth satellite carrying biological samples. Launched April 19, 2013 and returned to Earth May 19, 2013</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -32524,6 +32509,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000038 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000038">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000033"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were flown on the Foton-M4 satellite</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a Russian-operated Earth satellite carrying biological samples. Launched July 19, 2014 and returned to Earth September 1, 2014</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
@@ -32535,6 +32521,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000039 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000039">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000046"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted on the Shenzhou-8 space station</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a Chinese-operated Earth satellite carrying biological samples. Launched October 31, 2011 and returned to Earth November 17, 2011.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
@@ -32546,6 +32533,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000040 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000040">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000045"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted in the US Laboratory on the ISS</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a module on the International Space Station, operated by the United States</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
@@ -32558,6 +32546,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000041 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000041">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000045"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted on the Japanese Experiment Module</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Japanese science module for the International Space Station developed by JAXA. It is the largest single ISS module, and is attached to the Harmony module. The first two pieces of the module were launched on Space Shuttle missions STS-123 and STS-124.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
@@ -32570,6 +32559,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000042 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000042">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000045"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted on the Columbus module on the ISS</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a module on the International Space Station, operated by the European Space Agency.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
@@ -32582,6 +32572,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000043 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000043">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000045"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was conducted in the Zvezda module of the ISS.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instance of a module on the International Space Station, operated by the Russian Space Agency.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
@@ -32593,6 +32584,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000048 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000048">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000121"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The experiment was carried out at the SIS-18 accelerator.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An particle accelerator located at the GSI Helmholtz Centre for Heavy Ion Research, Darmstadt, Germay.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIS18</rdfs:label>
@@ -32603,6 +32595,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000053 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000053">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were irradiated using the NSRL Solar Particle Event Simulation.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NSRL SPE simulatoris based on the fluence of the August 1972 event, with an energy spectrum similar to the March 1989 event.   The majority of the protons are at very low energies, below 1 MeV, and pose little to no risk to astronauts in a space craft or space suit.  The SPESim begins with 50 MeV protons, which amounts to 91.66% of the total dose.  Then the beam energy increments in steps of 10 MeV up to 150 MeV where 0.14% of the total dose is delivered.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NSRL SPESim</oboInOwl:hasExactSynonym>
@@ -32615,10 +32608,21 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000054">
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were irradiated using the NSRL Simplified Galactic Cosmic Ray Simulation.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NSRL Simplified Galactic Cosmic Ray Simulation uses 6 beams and 5 different ions including protons at two different energies. 
-(https://www.bnl.gov/nsrl/userguide/SimGCRSim.php</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NSRL Simplified Galactic Cosmic Ray Simulation uses 6 beams and 5 different ions including protons at two different energies. (https://www.bnl.gov/nsrl/userguide/SimGCRSim.php</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NSRL SimGCRSim</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NSRL Simplified Galactic Cosmic Ray Simulation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000055 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000055">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neutron that has (by collision with other particles) reached an energy state equal to that of its surroundings, typically on the order of 0.025 eV (electron volts).&quot;		The sample was irradiated with thermal neutrons.								ENVO:01001024				
+obo:RBO_00000058	Cobalt-57 gamma radiation				High energy photons emitted during nuclear decay of the Cobalt-57 isotope.										obo:RBO_00000120	Co-57			
+obo:RBO_00000059	Brookhaven National Laboratory Gamma Radiation Source Facility				The Gamma Radiation Facility known as GRSF houses a cesium-137 gamma ray source which can provide gamma rays at a variety of dose rates. The gamma source is an industry standard J.L. Shepherd Mark I Model 68A 137Cs ? Irradiator. The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET) in water of approximately 0.8 keV/?m.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BNL GRSF</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal neutron</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -32626,6 +32630,7 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000056 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000056">
+        <rdf:type rdf:resource="http://purl.bioontology.org/ontology/MESH/D009688"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were irradiated with thermal neutrons at the KUR-HWNIF</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heavy water tank of approximately 2 m3 adjacent to the core of the Kyoto University Research Reactor (KUR), a light-water moderated tank-type reactor.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUR-HWNIF</oboInOwl:hasExactSynonym>
@@ -32637,22 +32642,11 @@ spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/RBO_00000057 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000057">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000121"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were irradiated with fast neutrons at the HIRRAC.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neutron generator  at the Research Institute for Radiation Biology and Medicine, Hiroshima University (RIRBM). Monoenergetic neutrons of which energy is less than 1.3 MeV are generated by the 7Li(p,n)7 Be reaction at proton energies up to 3 MeV.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIRRAC</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hiroshima University Radiobiological Research Accelerator</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000059 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000059">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Gamma Radiation Facility known as GRSF houses a cesium-137 gamma ray source which can provide gamma rays at a variety of dose rates. The gamma source is an industry standard
-J.L. Shepherd Mark I Model 68A 137Cs ? Irradiator.
-The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET) in water of approximately 0.8 keV/?m.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BNL GRSF</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brookhaven National Laboratory Gamma Radiation Source Facility</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -34412,8 +34406,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000118>m</obo:IAO_0000118>
         <obo:IAO_0000115>A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second.</obo:IAO_0000115>
-        <rdfs:label>meter</rdfs:label>
         <oboInOwl1:hasExactSynonym>m</oboInOwl1:hasExactSynonym>
+        <rdfs:label>meter</rdfs:label>
         <oboInOwl1:hasExactSynonym>metre</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second.&quot; [BIPM:BIPM, NIST:NIST]</rdfs:comment>
     </rdf:Description>
@@ -34460,8 +34454,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000118>cm</obo:IAO_0000118>
         <rdfs:label>centimeter</rdfs:label>
         <oboInOwl1:hasExactSynonym>centimetre</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000111>centimeter</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>cm</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000111>centimeter</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:comment>&quot;A length unit which is equal to one hundredth of a meter or 10^[-2] m.&quot; [NIST:NIST]</rdfs:comment>
         <obo:IAO_0000115>A length unit which is equal to one hundredth of a meter or 10^[-2] m.</obo:IAO_0000115>
@@ -34470,8 +34464,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000115>A length unit which is equal to one thousandth of a meter or 10^[-3] m.</obo:IAO_0000115>
         <obo:IAO_0000118>mm</obo:IAO_0000118>
         <oboInOwl1:hasExactSynonym>micrometre</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000111>millimeter</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <obo:IAO_0000111>millimeter</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>mm</oboInOwl1:hasExactSynonym>
         <rdfs:label>millimeter</rdfs:label>
         <rdfs:comment>&quot;A length unit which is equal to one thousandth of a meter or 10^[-3] m.&quot; [NIST:NIST]</rdfs:comment>
@@ -34479,8 +34473,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000017">
         <obo:IAO_0000111>micrometer</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>micron</oboInOwl1:hasExactSynonym>
-        <rdfs:comment>&quot;A length unit which is equal to one millionth of a meter or 10^[-6] m.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>micrometre</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;A length unit which is equal to one millionth of a meter or 10^[-6] m.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>um</oboInOwl1:hasExactSynonym>
         <rdfs:label>micrometer</rdfs:label>
         <obo:IAO_0000115>A length unit which is equal to one millionth of a meter or 10^[-6] m.</obo:IAO_0000115>
@@ -34489,8 +34483,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000018">
         <obo:IAO_0000118>nm</obo:IAO_0000118>
-        <obo:IAO_0000111>nanometer</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>nm</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000111>nanometer</obo:IAO_0000111>
         <obo:IAO_0000115>A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>nanometre</oboInOwl1:hasExactSynonym>
         <rdfs:label>nanometer</rdfs:label>
@@ -34499,8 +34493,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000019">
         <oboInOwl1:hasExactSynonym>Å</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000111>angstrom</obo:IAO_0000111>
         <rdfs:label>angstrom</rdfs:label>
+        <obo:IAO_0000111>angstrom</obo:IAO_0000111>
         <rdfs:comment>&quot;A length unit which is equal to 10 [-10] m.&quot; [NIST:NIST]</rdfs:comment>
         <obo:IAO_0000115>A length unit which is equal to 10 [-10] m.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
@@ -34525,8 +34519,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <rdfs:label>milligram</rdfs:label>
         <obo:IAO_0000115>A mass unit which is equal to one thousandth of a gram or 10^[-3] g.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>mg</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000118>mg</obo:IAO_0000118>
         <rdfs:comment>&quot;A mass unit which is equal to one thousandth of a gram or 10^[-3] g.&quot; [UOC:GVG]</rdfs:comment>
+        <obo:IAO_0000118>mg</obo:IAO_0000118>
         <obo:IAO_0000111>milligram</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000023">
@@ -34566,8 +34560,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <rdfs:comment>&quot;A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.&quot; [NIST:NIST]</rdfs:comment>
         <obo:IAO_0000118>degree C</obo:IAO_0000118>
         <obo:IAO_0000115>A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <oboInOwl1:hasExactSynonym>C</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000118>C</obo:IAO_0000118>
         <obo:IAO_0000111>degree Celsius</obo:IAO_0000111>
     </rdf:Description>
@@ -34606,8 +34600,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <rdfs:comment>&quot;A time unit which is equal to 3600 seconds or 60 minutes.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000033">
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000111>day</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:comment>&quot;A time unit which is equal to 24 hours.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <obo:IAO_0000115>A time unit which is equal to 24 hours.</obo:IAO_0000115>
         <rdfs:label>day</rdfs:label>
@@ -34616,8 +34610,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:label>week</rdfs:label>
         <rdfs:comment>&quot;A time unit which is equal to 7 days.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
-        <obo:IAO_0000111>week</obo:IAO_0000111>
         <obo:IAO_0000115>A time unit which is equal to 7 days.</obo:IAO_0000115>
+        <obo:IAO_0000111>week</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000035">
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
@@ -34628,8 +34622,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
         <obo:IAO_0000111>year</obo:IAO_0000111>
-        <rdfs:comment>&quot;A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <obo:IAO_0000115>A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days.</obo:IAO_0000115>
+        <rdfs:comment>&quot;A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <rdfs:label>year</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
     </rdf:Description>
@@ -34668,8 +34662,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000042">
         <obo:IAO_0000118>pmol</obo:IAO_0000118>
-        <oboInOwl1:hasExactSynonym>pmol</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A substance unit equal to 10^[-12] mol.&quot; [NIST:NIST]</rdfs:comment>
+        <oboInOwl1:hasExactSynonym>pmol</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000115>A substance unit equal to 10^[-12] mol.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000111>picomole</obo:IAO_0000111>
@@ -34698,14 +34692,14 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000115>A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M.</obo:IAO_0000115>
         <rdfs:label>millimolar</rdfs:label>
         <obo:IAO_0000118>mM</obo:IAO_0000118>
-        <obo:IAO_0000111>millimolar</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <oboInOwl1:hasExactSynonym>mM</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <obo:IAO_0000111>millimolar</obo:IAO_0000111>
         <rdfs:comment>&quot;A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M.&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000064">
-        <obo:IAO_0000118>uM</obo:IAO_0000118>
         <rdfs:label>micromolar</rdfs:label>
+        <obo:IAO_0000118>uM</obo:IAO_0000118>
         <obo:IAO_0000115>A unit of molarity which is equal to one millionth of a molar or 10^[-6] M.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>uM</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
@@ -34716,8 +34710,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000118>nM</obo:IAO_0000118>
         <obo:IAO_0000111>nanomolar</obo:IAO_0000111>
         <rdfs:comment>&quot;A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M.&quot; [UOC:GVG]</rdfs:comment>
-        <rdfs:label>nanomolar</rdfs:label>
         <obo:IAO_0000115>A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M.</obo:IAO_0000115>
+        <rdfs:label>nanomolar</rdfs:label>
         <oboInOwl1:hasExactSynonym>nM</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
     </rdf:Description>
@@ -34726,14 +34720,14 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000111>picomolar</obo:IAO_0000111>
         <rdfs:comment>&quot;A unit of molarity which is equal to 10^[-12] M.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label>picomolar</rdfs:label>
-        <oboInOwl1:hasExactSynonym>pM</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000115>A unit of molarity which is equal to 10^[-12] M.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <obo:IAO_0000115>A unit of molarity which is equal to 10^[-12] M.</obo:IAO_0000115>
+        <oboInOwl1:hasExactSynonym>pM</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000068">
         <rdfs:label>molal</rdfs:label>
-        <rdfs:comment>&quot;A unit of concentration which expresses a concentration of a solution of 1 mole per kilogram of solvent (mol/kg).&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>m</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;A unit of concentration which expresses a concentration of a solution of 1 mole per kilogram of solvent (mol/kg).&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000069">
         <oboInOwl1:hasExactSynonym>mm</oboInOwl1:hasExactSynonym>
@@ -34778,10 +34772,10 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <oboInOwl1:hasExactSynonym>m/s^[2]</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000078">
-        <rdfs:comment>&quot;An angular unit acceleration which is equal to the angular acceleration of an object changing its angular velocity by 1rad/s over a time period that equals one second.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>alpha</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>rad/s^[2]</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;An angular unit acceleration which is equal to the angular acceleration of an object changing its angular velocity by 1rad/s over a time period that equals one second.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>radian per second per second</rdfs:label>
+        <oboInOwl1:hasExactSynonym>rad/s^[2]</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000079">
         <oboInOwl1:hasExactSynonym>rad/s</oboInOwl1:hasExactSynonym>
@@ -34801,21 +34795,21 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <rdfs:label>square centimeter</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000082">
-        <rdfs:comment>&quot;An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>square millimeter</rdfs:label>
+        <rdfs:comment>&quot;An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>square millimetre</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>mm^[2]</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000083">
         <oboInOwl1:hasExactSynonym>kg/m^[3]</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in kilograms divided by the volume in cubic meters.&quot; [UOC:GVG]</rdfs:comment>
-        <oboInOwl1:hasExactSynonym>kilogram per cubic metre</oboInOwl1:hasExactSynonym>
         <rdfs:label>kilogram per cubic meter</rdfs:label>
+        <oboInOwl1:hasExactSynonym>kilogram per cubic metre</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000084">
         <rdfs:label>gram per cubic centimeter</rdfs:label>
-        <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in grams divided by the volume in cubic centimeters.&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>gram per cubic centimetre</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in grams divided by the volume in cubic centimeters.&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>g/cm^[3]</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000085">
@@ -34826,8 +34820,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000086">
         <rdfs:comment>&quot;An area density unit which is equal to the mass of an object in kilograms divided by the surface area in meters squared.&quot; [NIST:NIST]</rdfs:comment>
-        <oboInOwl1:hasExactSynonym>kilogram per square metre</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>Body Mass Index (BMI)</oboInOwl1:hasExactSynonym>
+        <oboInOwl1:hasExactSynonym>kilogram per square metre</oboInOwl1:hasExactSynonym>
         <rdfs:label>kilogram per square meter</rdfs:label>
         <oboInOwl1:hasExactSynonym>kg/m^[2]</oboInOwl1:hasExactSynonym>
     </rdf:Description>
@@ -34885,8 +34879,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000097">
         <obo:IAO_0000111>cubic centimeter</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000115>A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <oboInOwl1:hasExactSynonym>cubic centimetre</oboInOwl1:hasExactSynonym>
         <rdfs:label>cubic centimeter</rdfs:label>
         <oboInOwl1:hasExactSynonym>cm^3</oboInOwl1:hasExactSynonym>
@@ -34895,23 +34889,23 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000118>cc</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000098">
-        <rdfs:comment>&quot;A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>milliliter</rdfs:label>
+        <rdfs:comment>&quot;A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>ml</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000115>A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <oboInOwl1:hasExactSynonym>millilitre</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000118>ml</obo:IAO_0000118>
         <obo:IAO_0000111>milliliter</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000099">
         <oboInOwl1:hasExactSynonym>litre</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>l</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>L</oboInOwl1:hasExactSynonym>
+        <oboInOwl1:hasExactSynonym>l</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000115>A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:IAO_0000111>liter</obo:IAO_0000111>
         <rdfs:comment>&quot;A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.&quot; [NIST:NIST]</rdfs:comment>
+        <obo:IAO_0000111>liter</obo:IAO_0000111>
         <obo:IAO_0000118>L</obo:IAO_0000118>
         <rdfs:label>liter</rdfs:label>
     </rdf:Description>
@@ -34928,8 +34922,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000111>microliter</obo:IAO_0000111>
         <rdfs:label>microliter</rdfs:label>
         <obo:IAO_0000118>ul</obo:IAO_0000118>
-        <obo:IAO_0000115>A volume unit which is equal to one millionth of a liter or 10^[-6] L.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>microlitre</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000115>A volume unit which is equal to one millionth of a liter or 10^[-6] L.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>ul</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:comment>&quot;A volume unit which is equal to one millionth of a liter or 10^[-6] L.&quot; [NIST:NIST]</rdfs:comment>
@@ -34950,8 +34944,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000111>picoliter</obo:IAO_0000111>
         <obo:IAO_0000115>A volume unit which is equal to 10^[-12] L.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>pl</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000118>pl</obo:IAO_0000118>
         <oboInOwl1:hasExactSynonym>picolitre</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000118>pl</obo:IAO_0000118>
         <rdfs:comment>&quot;A volume unit which is equal to 10^[-12] L.&quot; [NIST:NIST]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000104">
@@ -34964,8 +34958,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000111>hertz</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>Hz</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:IAO_0000115>A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.</obo:IAO_0000115>
         <rdfs:comment>&quot;A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.&quot; [NIST:NIST]</rdfs:comment>
+        <obo:IAO_0000115>A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.</obo:IAO_0000115>
         <rdfs:label>hertz</rdfs:label>
         <oboInOwl1:hasExactSynonym>s^1</oboInOwl1:hasExactSynonym>
     </rdf:Description>
@@ -35001,8 +34995,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000120">
         <rdfs:label>katal</rdfs:label>
-        <rdfs:comment>&quot;A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>kat</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;A catalytic unit activity which is equal to the activity of a catalyst in moles per second, such as the amount of an enzyme needed to transform one mole of substrate per second.&quot; [NIST:NIST]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000123">
         <rdfs:comment>&quot;A plane angle unit which is equal to the angle subtended at the center of a circle by an arc equal in length to the radius of the circle, approximately 57 degrees 17 minutes and 44.6 seconds.&quot; [NIST:NIST]</rdfs:comment>
@@ -35025,8 +35019,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <oboInOwl1:hasExactSynonym>Ci</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000134">
-        <rdfs:comment>&quot;An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>Gy</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;An absorbed dose unit which is equal to the absorption of one joule of radiation energy by one kilogram of matter.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>gray</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000135">
@@ -35090,8 +35084,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000147">
         <rdfs:label>disintegrations per minute</rdfs:label>
-        <oboInOwl1:hasExactSynonym>dpm</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;An activity (of a radionuclide) unit which is equal to the activity of a quantity of radioactive material in which one nucleus decays per minute or there is one atom disintegration per minute.&quot; [ORCBS:ORCBS]</rdfs:comment>
+        <oboInOwl1:hasExactSynonym>dpm</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000148">
         <rdfs:label>counts per minute</rdfs:label>
@@ -35137,8 +35131,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000160">
         <oboInOwl1:hasExactSynonym>microeinstein per square metre per second</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>umicroeinstein/sm^[2]</oboInOwl1:hasExactSynonym>
         <rdfs:label>microeinstein per square meter per second</rdfs:label>
+        <oboInOwl1:hasExactSynonym>umicroeinstein/sm^[2]</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>micromole per second and square meter mmol/sm^2</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;An irradiance unit which is equal to one microeinstein per square meter per second or 10^[-6] microeinstein/sm^[2].&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
@@ -35159,9 +35153,9 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000115>A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000164">
+        <obo:IAO_0000111>mass volume percentage</obo:IAO_0000111>
         <obo:IAO_0000118>% w/v</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:IAO_0000111>mass volume percentage</obo:IAO_0000111>
         <obo:IAO_0000115>A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.</obo:IAO_0000115>
         <rdfs:label>mass volume percentage</rdfs:label>
         <oboInOwl1:hasExactSynonym>weight-volume percentage</oboInOwl1:hasExactSynonym>
@@ -35173,16 +35167,16 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000118>% v/v</obo:IAO_0000118>
         <rdfs:label>volume percentage</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <oboInOwl1:hasExactSynonym>% (v/v)</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.&quot; [UOC:GVG]</rdfs:comment>
+        <oboInOwl1:hasExactSynonym>% (v/v)</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000115>A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.</obo:IAO_0000115>
         <obo:IAO_0000118>percent vol per vol</obo:IAO_0000118>
         <obo:IAO_0000111>volume percentage</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000167">
         <oboInOwl1:hasExactSynonym>pph</oboInOwl1:hasExactSynonym>
-        <rdfs:comment>&quot;A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 100 regardless of the units of measure as long as they are the same.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label>parts per hundred</rdfs:label>
+        <rdfs:comment>&quot;A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 100 regardless of the units of measure as long as they are the same.&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>10^[-2]</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000168">
@@ -35194,8 +35188,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000169">
         <oboInOwl1:hasExactSynonym>10^[-6]</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000 regardless of the units of measure used as long as they are the same or 1 part in 10^[6].&quot; [UOC:GVG]</rdfs:comment>
-        <oboInOwl1:hasExactSynonym>ppm</oboInOwl1:hasExactSynonym>
         <rdfs:label>parts per million</rdfs:label>
+        <oboInOwl1:hasExactSynonym>ppm</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000170">
         <rdfs:label>parts per billion</rdfs:label>
@@ -35217,8 +35211,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000173">
         <oboInOwl1:hasExactSynonym>gram per millilitre</oboInOwl1:hasExactSynonym>
-        <rdfs:label>gram per milliliter</rdfs:label>
         <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter.&quot; [UOC:GVG]</rdfs:comment>
+        <rdfs:label>gram per milliliter</rdfs:label>
         <oboInOwl1:hasExactSynonym>g/ml</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000174">
@@ -35243,8 +35237,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000111>milligram per milliliter</obo:IAO_0000111>
         <obo:IAO_0000118>mg per ml</obo:IAO_0000118>
-        <rdfs:label>milligram per milliliter</rdfs:label>
         <obo:IAO_0000115>A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.</obo:IAO_0000115>
+        <rdfs:label>milligram per milliliter</rdfs:label>
         <oboInOwl1:hasExactSynonym>milligram per millilitre</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000118>mg/ml</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
@@ -35293,8 +35287,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <rdfs:label>purity percentage</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000194">
-        <rdfs:comment>&quot;A dimensionless percent unit which denotes the density of an attached or monolayer culture (e.g., cell culture).&quot; [MGED:MGED]</rdfs:comment>
         <rdfs:label>confluence percentage</rdfs:label>
+        <rdfs:comment>&quot;A dimensionless percent unit which denotes the density of an attached or monolayer culture (e.g., cell culture).&quot; [MGED:MGED]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000195">
         <oboInOwl1:hasExactSynonym>F</oboInOwl1:hasExactSynonym>
@@ -35365,13 +35359,13 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000111>milliliter per liter</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000208">
-        <rdfs:comment>&quot;A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000111>gram per deciliter</obo:IAO_0000111>
+        <rdfs:comment>&quot;A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>g/dl</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>gram per decilitre</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:label>gram per deciliter</rdfs:label>
         <obo:IAO_0000115>A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000118>g/dl</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000209">
@@ -35394,8 +35388,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:label>colony forming unit per volume</rdfs:label>
         <obo:IAO_0000111>colony forming unit per volume</obo:IAO_0000111>
-        <rdfs:comment>&quot;A concentration unit which a measure of viable bacterial numbers in a given volume.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <obo:IAO_0000115>A concentration unit which a measure of viable bacterial numbers in a given volume.</obo:IAO_0000115>
+        <rdfs:comment>&quot;A concentration unit which a measure of viable bacterial numbers in a given volume.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000213">
         <oboInOwl1:hasExactSynonym>colony forming unit per millilitre</oboInOwl1:hasExactSynonym>
@@ -35428,8 +35422,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <oboInOwl1:hasExactSynonym>Da</oboInOwl1:hasExactSynonym>
         <rdfs:label>dalton</rdfs:label>
         <oboInOwl1:hasExactSynonym>u</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>amu</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>unified atomic mass unit</oboInOwl1:hasExactSynonym>
+        <oboInOwl1:hasExactSynonym>amu</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;An independently to the base SI units defined mass unit which is equal to one twelfth of the mass of an unbound atom of the carbon-12 nuclide, at rest and in its ground state.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000222">
@@ -35508,8 +35502,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000242">
         <oboInOwl1:hasExactSynonym>pixel density</oboInOwl1:hasExactSynonym>
-        <rdfs:comment>&quot;A spatial resolution unit which is a standard measure of the resolution of a computer display, related to the size of the display in inches and the total number of pixels in the horizontal and vertical directions.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <rdfs:label>pixels per inch</rdfs:label>
+        <rdfs:comment>&quot;A spatial resolution unit which is a standard measure of the resolution of a computer display, related to the size of the display in inches and the total number of pixels in the horizontal and vertical directions.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>ppi</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000243">
@@ -35519,8 +35513,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000244">
         <rdfs:comment>&quot;A count unit which contains one nucleotide.&quot; [UO:GVG]</rdfs:comment>
-        <oboInOwl1:hasExactSynonym>bp</oboInOwl1:hasExactSynonym>
         <rdfs:label>base pair</rdfs:label>
+        <oboInOwl1:hasExactSynonym>bp</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000245">
         <rdfs:label>kibibyte</rdfs:label>
@@ -35559,8 +35553,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000252">
         <rdfs:comment>&quot;An electric potential difference unit which is equal to one million volts or 10^[6] V.&quot; [UOC:GVG]</rdfs:comment>
-        <rdfs:label>megavolt</rdfs:label>
         <oboInOwl1:hasExactSynonym>MV</oboInOwl1:hasExactSynonym>
+        <rdfs:label>megavolt</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000254">
         <rdfs:comment>&quot;A surface tension unit which is equal to one newton per meter.&quot; [NIST:NIST]</rdfs:comment>
@@ -35608,8 +35602,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000266">
         <oboInOwl1:hasExactSynonym>electron volt</oboInOwl1:hasExactSynonym>
-        <rdfs:comment>&quot;A non-SI unit of energy (eV) defined as the energy acquired by a single unbound electron when it passes through an electrostatic potential difference of one volt. An electronvolt is equal to 1.602 176 53(14) x 10^-19 J.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>eV</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;A non-SI unit of energy (eV) defined as the energy acquired by a single unbound electron when it passes through an electrostatic potential difference of one volt. An electronvolt is equal to 1.602 176 53(14) x 10^-19 J.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <rdfs:label>electronvolt</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000268">
@@ -35635,8 +35629,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000272">
         <rdfs:comment>&quot;A unit of pressure equal to the amount of fluid pressure one millimeter deep in mercury at zero degrees centigrade on Earth.&quot; [url:en.wiktionary.org/wiki/mmHg]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>millimeters of mercury</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>mmHg</oboInOwl1:hasExactSynonym>
         <rdfs:label>millimetres of mercury</rdfs:label>
+        <oboInOwl1:hasExactSynonym>mmHg</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000273">
         <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in milligrams divided by the volume in liters.&quot; [UOC:GVG]</rdfs:comment>
@@ -35679,8 +35673,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000115>A rate unit which is equal to one over one molar second.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000283">
-        <rdfs:comment>&quot;An area density unit which is equal to the mass of an object in kilograms divided by the surface area in hectares.&quot; [UO:GVG]</rdfs:comment>
         <rdfs:label>kilogram per hectare</rdfs:label>
+        <rdfs:comment>&quot;An area density unit which is equal to the mass of an object in kilograms divided by the surface area in hectares.&quot; [UO:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000284">
         <obo:IAO_0000115>A rate unit which is equal to one over one nanomolar.</obo:IAO_0000115>
@@ -35695,19 +35689,19 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000111>count per molar</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>1/M</oboInOwl1:hasExactSynonym>
-        <rdfs:label>count per molar</rdfs:label>
         <obo:IAO_0000115>A rate unit which is equal to one over one molar.</obo:IAO_0000115>
+        <rdfs:label>count per molar</rdfs:label>
         <rdfs:comment>&quot;A rate unit which is equal to one over one molar.&quot; [UO:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>M^-1</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000301">
-        <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters.&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000115>A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters.</obo:IAO_0000115>
+        <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters.&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000118>ug/L</obo:IAO_0000118>
         <oboInOwl1:hasExactSynonym>microgram per litre</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:IAO_0000118>ng/ml</obo:IAO_0000118>
         <obo:IAO_0000111>microgram per liter</obo:IAO_0000111>
+        <obo:IAO_0000118>ng/ml</obo:IAO_0000118>
         <oboInOwl1:hasExactSynonym>ug/L</oboInOwl1:hasExactSynonym>
         <rdfs:label>microgram per liter</rdfs:label>
     </rdf:Description>
@@ -35741,8 +35735,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000325">
         <oboInOwl1:hasRelatedSynonym>mH</oboInOwl1:hasRelatedSynonym>
-        <rdfs:comment>&quot;A frequency unit which is equal to one million hertz or 10^[6] V.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label>megaHertz</rdfs:label>
+        <rdfs:comment>&quot;A frequency unit which is equal to one million hertz or 10^[6] V.&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000326">
         <oboInOwl1:hasExactSynonym>cM</oboInOwl1:hasExactSynonym>
@@ -35892,8 +35886,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
         <rdfs:comment>&quot;An imperial volume unit which is equivalent to 568.261,25 millilitres.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010029">
-        <rdfs:label>quart</rdfs:label>
         <oboInOwl1:hasExactSynonym>qt</oboInOwl1:hasExactSynonym>
+        <rdfs:label>quart</rdfs:label>
         <rdfs:comment>&quot;An imperial volume unit which is equivalent to 1,136.5225 millilitres, or two pints.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010030">
@@ -35934,8 +35928,8 @@ The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010037">
         <rdfs:label>hundredweight</rdfs:label>
-        <oboInOwl1:hasExactSynonym>cwt</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;An imperial mass unit which is equivalent to 50.802,345,44 kilograms, 112 pounds, or 8 stone.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
+        <oboInOwl1:hasExactSynonym>cwt</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010038">
         <rdfs:comment>&quot;An imperial mass unit which is equivalent to 1,016.046,9088 kilograms, or 2,240 pounds.&quot; [Wikipedia:Wikipedia]</rdfs:comment>

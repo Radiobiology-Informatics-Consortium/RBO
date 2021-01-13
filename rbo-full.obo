@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: rbo/releases/2021-01-07/rbo-full.owl
+data-version: rbo/releases/2021-01-12/rbo-full.owl
 subsetdef: attribute_slim ""
 subsetdef: EnvO-Lite-GSC ""
 subsetdef: goslim_aspergillus ""
@@ -24,7 +24,7 @@ ontology: rbo/rbo-full
 property_value: http://purl.org/dc/elements/1.1/description "The RBO is an ontology about Radiation Biology, with emphasis on Space Biology." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Radiation Biology Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
-property_value: owl:versionInfo "2021-01-07" xsd:string
+property_value: owl:versionInfo "2021-01-12" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -6302,6 +6302,7 @@ name: iron-56
 def: "An atomic nucleus with 26 protons and 30 neutrons" []
 synonym: "Fe-56, 56Fe" EXACT []
 is_a: RBO:010012 ! heavy ion
+property_value: IAO:0000118 "N" xsd:string
 
 [Term]
 id: RBO:00000006
@@ -6442,7 +6443,7 @@ is_a: RBO:00000002 ! space radiation
 [Term]
 id: RBO:00000027
 name: galactic cosmic radiation
-def: "Galactic cosmic radiation consists of\n high-energy charged particles originating from outside the solar system" []
+def: "Galactic cosmic radiation consists of high-energy charged particles originating from outside the solar system" []
 is_a: RBO:00000026 ! cosmic radiation
 property_value: IAO:0000112 "Galactic cosmic radiation is one of the principal sources of radiation dose outside low-earth orbit" xsd:string
 
@@ -6522,20 +6523,6 @@ id: RBO:00000052
 name: Cobalt-60 gamma radiation
 def: "High energy photons emitted during nuclear decay of the Cobalt-60 isotope." []
 synonym: "Co-60" EXACT []
-is_a: RBO:00000120 ! gamma radiation
-
-[Term]
-id: RBO:00000055
-name: thermal neutron
-def: "A neutron that has (by collision with other particles) reached an energy state equal to that of its surroundings, typically on the order of 0.025 eV (electron volts)." []
-is_a: ENVO:01001024 ! particle radiation
-property_value: IAO:0000112 "The sample was irradiated with thermal neutrons." xsd:string
-
-[Term]
-id: RBO:00000058
-name: Cobalt-57 gamma radiation
-def: "High energy photons emitted during nuclear decay of the Cobalt-57 isotope." []
-synonym: "Co-57" EXACT []
 is_a: RBO:00000120 ! gamma radiation
 
 [Term]
@@ -6801,7 +6788,7 @@ is_a: BFO:0000023 ! role
 [Term]
 id: RBO:00000112
 name: high linear energy transfer radiation
-def: "Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely\nspaced on a molecular scale (e.g., >10 keV ?m�1)." []
+def: "Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely spaced on a molecular scale (e.g., >10 keV ?m�1)." []
 is_a: RBO:00000116 ! ionizing radiation
 property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf" xsd:string
 
