@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-15/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-20/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -84,9 +84,9 @@
     
 
 
-    <!-- http://purl.bioontology.org/ontology/MESH/D009688 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/MESH/D009688"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
     
 
 
@@ -141,12 +141,6 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001024"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987"/>
     
 
 
@@ -1049,7 +1043,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000089"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine study</rdfs:label>
     </owl:Class>
     
@@ -1201,6 +1194,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008150</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009987</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_010000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010000">
@@ -1246,7 +1259,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_010003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000124"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bystander effect can be  studied by identifying cells that were traversed by a charged particle.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term used to describe the effects on cells in which the energy had not been directly deposited. In most instances, the cells so affected were neighbors of the cells directly impacted by the radiation</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -1673,7 +1686,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000056 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000056">
-        <rdf:type rdf:resource="http://purl.bioontology.org/ontology/MESH/D009688"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were irradiated with thermal neutrons at the KUR-HWNIF</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heavy water tank of approximately 2 m3 adjacent to the core of the Kyoto University Research Reactor (KUR), a light-water moderated tank-type reactor.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUR-HWNIF</oboInOwl:hasExactSynonym>

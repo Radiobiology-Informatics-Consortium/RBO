@@ -1,11 +1,10 @@
 format-version: 1.2
-data-version: rbo/releases/2021-01-12/rbo-base.owl
+data-version: rbo/releases/2021-01-20/rbo-base.owl
 ontology: rbo/rbo-base
 property_value: http://purl.org/dc/elements/1.1/description "The RBO is an ontology about Radiation Biology, with emphasis on Space Biology." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Radiation Biology Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/license https://creativecommons.org/publicdomain/zero/1.0/
-property_value: owl:versionInfo "2021-01-12" xsd:string
+property_value: owl:versionInfo "2021-01-20" xsd:string
 
 [Term]
 id: RBO:00000001
@@ -260,6 +259,14 @@ id: RBO:00000052
 name: Cobalt-60 gamma radiation
 def: "High energy photons emitted during nuclear decay of the Cobalt-60 isotope." []
 synonym: "Co-60" EXACT []
+is_a: RBO:00000120 ! gamma radiation
+
+[Term]
+id: RBO:00000058
+name: Cobalt-57 gamma radiation
+def: "High energy photons emitted during nuclear decay of the Cobalt-57 isotope." []
+synonym: "Co-57" EXACT []
+xref: obo:RBO_00000060
 is_a: RBO:00000120 ! gamma radiation
 
 [Term]
@@ -526,6 +533,7 @@ is_a: BFO:0000023
 id: RBO:00000112
 name: high linear energy transfer radiation
 def: "Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely spaced on a molecular scale (e.g., >10 keV ?m�1)." []
+xref: NCIT:C17052
 is_a: RBO:00000116 ! ionizing radiation
 property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf" xsd:string
 
@@ -534,6 +542,7 @@ id: RBO:00000113
 name: low linear energy transfer radiation
 def: "X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale" []
 synonym: "low LET|low-LET" EXACT []
+xref: NCIT:C17052
 is_a: RBO:00000116 ! ionizing radiation
 property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf" xsd:string
 
@@ -590,11 +599,30 @@ xref: NCIT:C94854
 is_a: OBI:0000968
 
 [Term]
+id: RBO:00000122
+name: nuclear reactor
+xref: MESH:D009688
+is_a: OBI:0000968
+
+[Term]
+id: RBO:00000123
+name: biological process
+xref: GO:0008150
+is_a: BFO:0000015
+
+[Term]
+id: RBO:00000124
+name: cellular process
+xref: GO:0009987
+is_a: RBO:00000123 ! biological process
+
+[Term]
 id: RBO:010000
 name: as low as reasonably achievable
 def: "A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expenditure of further resources would be unwarranted by the reduction in exposure that would be achieved." []
 synonym: "ALARA" EXACT []
 is_a: IAO:0000104
+property_value: IAO:0000111 "as low as reasonably achievable" xsd:string
 property_value: IAO:0000112 "One of the measures to ensure ALARA is to minimize the time spent working around radioactive materials." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000118 "ALARA" xsd:string
@@ -622,7 +650,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010003
 name: bystander effect
 def: "The term used to describe the effects on cells in which the energy had not been directly deposited. In most instances, the cells so affected were neighbors of the cells directly impacted by the radiation" []
-is_a: GO:0009987
+is_a: RBO:00000124 ! cellular process
 property_value: IAO:0000112 "The bystander effect can be  studied by identifying cells that were traversed by a charged particle." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
@@ -713,7 +741,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010015
 name: quality factor
-def: "Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed dose (D) at a point in tissue to dose equivalent (H ) at a point, where H = D � Q. The quality factor is a specified function of unrestricted linear energy transfer in water, and is defined with respect to the particular type and energy of radiation incident on tissue at the point of interest" []
+def: "Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed dose (D) at a point in tissue to dose equivalent (H ) at a point, where H = D ? Q. The quality factor is a specified function of unrestricted linear energy transfer in water, and is defined with respect to the particular type and energy of radiation incident on tissue at the point of interest" []
 is_a: OBI:0001909
 property_value: IAO:0000112 "Neutrons have a high quality factor compared to photons." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -733,7 +761,7 @@ id: RBO:010017
 name: radiation quality
 def: "Currently under discussion: [A general term referring to the relative biological effectiveness of the radiation of interest. For example, the absorbed dose from an exposure to neutron radiation may be quantitatively the same as that from an exposure to gamma rays in a volume of tissue on the order of 1 cm3. However, at a higher resolution of a few micrometers the ionizing events will be more uniformly dispersed for the gamma-ray radiation than for the neutron radiation, thus producing quantitatively different biological effects (see relative biological effectiveness). }" []
 is_a: PATO:0001018
-property_value: IAO:0000112 "\"Radiation quality has been commonly expressed in terms of the LET of the ionizing particles that deliver the absorbed dose.\" (Rossi, 1959)" xsd:string
+property_value: IAO:0000112 "Radiation quality has been commonly expressed in terms of the LET of the ionizing particles that deliver the absorbed dose. (Rossi, 1959)" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
 
