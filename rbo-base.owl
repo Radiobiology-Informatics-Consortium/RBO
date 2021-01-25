@@ -12,12 +12,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-12/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-01-20/rbo-base.owl"/>
         <dc:description>The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.</dc:description>
         <dc:title>Radiation Biology Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-12</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-01-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -175,9 +174,9 @@
     
 
 
-    <!-- http://purl.bioontology.org/ontology/MESH/D009688 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/MESH/D009688"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
     
 
 
@@ -229,33 +228,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001023"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001024"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001026"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0009987 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009987"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003"/>
     
 
 
@@ -268,42 +243,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C150121 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C150121"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C18102 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18102"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C18982 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18982"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C19662 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19662"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C44386 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C44386"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C94854 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C94854"/>
     
 
 
@@ -746,6 +685,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000120"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High energy photons emitted during nuclear decay of the Cobalt-57 isotope.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:RBO_00000060</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-57</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalt-57 gamma radiation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000060">
@@ -1182,7 +1133,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000108">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000089"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocrine study</rdfs:label>
     </owl:Class>
     
@@ -1221,6 +1171,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000116"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely spaced on a molecular scale (e.g., &gt;10 keV ?m�1).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17052</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high linear energy transfer radiation</rdfs:label>
     </owl:Class>
     
@@ -1232,6 +1183,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000116"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17052</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low LET|low-LET</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low linear energy transfer radiation</rdfs:label>
     </owl:Class>
@@ -1322,10 +1274,41 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D009688</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nuclear reactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008150</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009987</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_010000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">as low as reasonably achievable</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the measures to ensure ALARA is to minimize the time spent working around radioactive materials.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expenditure of further resources would be unwarranted by the reduction in exposure that would be achieved.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -1366,7 +1349,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_010003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000124"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bystander effect can be  studied by identifying cells that were traversed by a charged particle.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term used to describe the effects on cells in which the energy had not been directly deposited. In most instances, the cells so affected were neighbors of the cells directly impacted by the radiation</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -1500,7 +1483,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutrons have a high quality factor compared to photons.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed dose (D) at a point in tissue to dose equivalent (H ) at a point, where H = D � Q. The quality factor is a specified function of unrestricted linear energy transfer in water, and is defined with respect to the particular type and energy of radiation incident on tissue at the point of interest</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed dose (D) at a point in tissue to dose equivalent (H ) at a point, where H = D ? Q. The quality factor is a specified function of unrestricted linear energy transfer in water, and is defined with respect to the particular type and energy of radiation incident on tissue at the point of interest</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality factor</rdfs:label>
@@ -1525,7 +1508,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Radiation quality has been commonly expressed in terms of the LET of the ionizing particles that deliver the absorbed dose.&quot; (Rossi, 1959)</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation quality has been commonly expressed in terms of the LET of the ionizing particles that deliver the absorbed dose. (Rossi, 1959)</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Currently under discussion: [A general term referring to the relative biological effectiveness of the radiation of interest. For example, the absorbed dose from an exposure to neutron radiation may be quantitatively the same as that from an exposure to gamma rays in a volume of tissue on the order of 1 cm3. However, at a higher resolution of a few micrometers the ionizing events will be more uniformly dispersed for the gamma-ray radiation than for the neutron radiation, thus producing quantitatively different biological effects (see relative biological effectiveness). }</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
@@ -1781,22 +1764,11 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000054 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000054">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were irradiated using the NSRL Simplified Galactic Cosmic Ray Simulation.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NSRL Simplified Galactic Cosmic Ray Simulation uses 6 beams and 5 different ions including protons at two different energies. (https://www.bnl.gov/nsrl/userguide/SimGCRSim.php</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The NSRL Simplified Galactic Cosmic Ray Simulation uses 6 beams and 5 different ions including protons at two different energies. https://www.bnl.gov/nsrl/userguide/SimGCRSim.php</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NSRL SimGCRSim</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NSRL Simplified Galactic Cosmic Ray Simulation</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000055 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000055">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neutron that has (by collision with other particles) reached an energy state equal to that of its surroundings, typically on the order of 0.025 eV (electron volts).&quot;		The sample was irradiated with thermal neutrons.								ENVO:01001024				
-obo:RBO_00000058	Cobalt-57 gamma radiation				High energy photons emitted during nuclear decay of the Cobalt-57 isotope.										obo:RBO_00000120	Co-57			
-obo:RBO_00000059	Brookhaven National Laboratory Gamma Radiation Source Facility				The Gamma Radiation Facility known as GRSF houses a cesium-137 gamma ray source which can provide gamma rays at a variety of dose rates. The gamma source is an industry standard J.L. Shepherd Mark I Model 68A 137Cs ? Irradiator. The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET) in water of approximately 0.8 keV/?m.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BNL GRSF</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal neutron</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1804,7 +1776,7 @@ obo:RBO_00000059	Brookhaven National Laboratory Gamma Radiation Source Facility	
     <!-- http://purl.obolibrary.org/obo/RBO_00000056 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000056">
-        <rdf:type rdf:resource="http://purl.bioontology.org/ontology/MESH/D009688"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were irradiated with thermal neutrons at the KUR-HWNIF</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A heavy water tank of approximately 2 m3 adjacent to the core of the Kyoto University Research Reactor (KUR), a light-water moderated tank-type reactor.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUR-HWNIF</oboInOwl:hasExactSynonym>
@@ -1821,6 +1793,20 @@ obo:RBO_00000059	Brookhaven National Laboratory Gamma Radiation Source Facility	
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A neutron generator  at the Research Institute for Radiation Biology and Medicine, Hiroshima University (RIRBM). Monoenergetic neutrons of which energy is less than 1.3 MeV are generated by the 7Li(p,n)7 Be reaction at proton energies up to 3 MeV.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIRRAC</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hiroshima University Radiobiological Research Accelerator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000059 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000059">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Gamma Radiation Facility known as GRSF houses a cesium-137 gamma ray source which can provide gamma rays at a variety of dose rates. The gamma source is an industry standar dJ.L. Shepherd Mark I Model 68A 137Cs ? Irradiator.
+The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET) in water of approximately 0.8 keV/?m.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.bnl.gov/nsrl/grsf/</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BNL GRSF</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brookhaven National Laboratory Gamma Radiation Source Facility</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
