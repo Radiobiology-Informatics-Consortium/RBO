@@ -18,6 +18,7 @@ script: cd src/ontology && ./run.sh make test
 branches:
   only:
     - master
+    - Jack
 
 ### Add your own lists here
 ### See https://github.com/INCATools/ontology-development-kit/issues/35
