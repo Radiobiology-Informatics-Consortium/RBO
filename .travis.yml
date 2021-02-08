@@ -27,4 +27,5 @@ notifications:
     recipients:
       - daniel.c.berrios@nasa.gov
       - L.Slater.1@bham.ac.uk
+      - miller@lbl.gov
     on_failure: always
