@@ -20,34 +20,53 @@ Annotations:
     iddigits: 7
 
 AnnotationProperty: idprefix:
-
-    
 AnnotationProperty: iddigits:
-
-    
 AnnotationProperty: idsfor:
-
-    
 AnnotationProperty: allocatedto:
 
 Datatype: idrange:1
 
     Annotations: 
-        allocatedto: "ONTOLOGY-CREATOR"
+        allocatedto: "Initial IDs"
     
     EquivalentTo: 
-        xsd:integer[>= 0 , <= 999999]
+        xsd:integer[>= 0 , < 1000]
 
     
 Datatype: idrange:2
 
     Annotations: 
-        allocatedto: "ADDITIONAL EDITOR"
+        allocatedto: "Daniel Berrios"
     
     EquivalentTo: 
-        xsd:integer[>= 1000000 , <= 1999999]
+        xsd:integer[>= 1000, < 5000]
+
     
+Datatype: idrange:3
+
+    Annotations: 
+        allocatedto: "Jack Miller"
     
+    EquivalentTo: 
+        xsd:integer[>= 5000, < 10000]
+    
+Datatype: idrange:4
+
+    Annotations: 
+        allocatedto: "Paul Schofield"
+    
+    EquivalentTo: 
+        xsd:integer[>= 10000, < 15000]
+
+Datatype: idrange:5
+
+    Annotations: 
+        allocatedto: "Luke Slater"
+    
+    EquivalentTo: 
+        xsd:integer[>= 15000, < 20000]
+
 Datatype: xsd:integer
 Datatype: rdf:PlainLiteral
+
 
