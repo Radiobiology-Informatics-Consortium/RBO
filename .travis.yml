@@ -10,7 +10,7 @@ services:
 
 env:
  global:
- - REPO=api
+ - REPO=RBO
  - BUILD_ENV=test
  
 # command to run tests
