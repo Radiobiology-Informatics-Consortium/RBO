@@ -37,3 +37,5 @@ src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
 src/ontology/rbo-edit.owl.orig
+*.bak
+src/templates/RBO_terms.template

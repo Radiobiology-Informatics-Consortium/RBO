@@ -19,6 +19,23 @@ branches:
   only:
     - master
     - Jack
+    
+## Deployment
+deploy:
+  provider: releases
+  on:
+    branch: Jack
+  api_key: "OozErSRdGuEfJR5hOvLN+mPmADoYeyV43R2X4WwT/kbzHIZoseWKKPVfu5CiZApKlcuC/7OdrP+kgsim6aKVzwAfEj0DX3tkFfbmqqiZwv7LwCQCxOXBc6NhJX5Gkvimvi9xQD4iqukVT0PEkRAz1BHUBdycp4MNLnmjUjcYcR16R9yX4UNPztJV+b5LTQLA7PsQPgoRD9kRjj99T3njv6cekZr8ajAyxiybLgNS5VJzTpUGH1xpa1OeBnnc9dncwL4QxvTwp1jCXVx0bASsUtsqfUJg3tSnOeMZ6JcijjR0XtY7SqEkm0W/rDlbrlCFK5CbbzgS33DGQBJkZT/wrbsbFbrRoqDJTj0FpD5++aipqEh9GcYD8OgHHSt2Z+GtZuJKn/8T6ucEp93wC2njHps54brG60WmKaMRDpDAtjIqPR5KMsBHvCcGM1NwKF4cTTTtjPQV+m3YqaGPutBME2kQMhCJTa/IEUpI9vioMEP1whphKGE2L9/jm4UP8rCGZAnnjJ8rsIzqE4Uahm7tzn2tHK4U7k2CzoycHmN0hHWOflJCBlr50lejDY4WoEUUfXr4QIo7RUf90hbn+ElieSsAWh8n4GlrDHRg4IIwbqnHEFu9eRwYHB/HvKN2x5W9O5/yZDI8eO5EVgKxnzbp8rj5xW9SjT4SJuCsgrpXpfg="
+  file_glob: true
+  file:
+    - imports/*
+    - src/templates/*
+    - src/ontology/imports/*
+    - src/ontology/components/*
+    - src/ontology/*.owl
+    - src/ontology/*.obo
+  skip_cleanup: true
+  draft: true
 
 ### Add your own lists here
 ### See https://github.com/INCATools/ontology-development-kit/issues/35
