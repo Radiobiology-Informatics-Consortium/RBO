@@ -8,6 +8,11 @@ services:
 #before_install:
 #  - docker pull obolibrary/odkfull
 
+env:
+ global:
+ - REPO=RBO
+ - BUILD_ENV=test
+ 
 # command to run tests
 script: cd src/ontology && ./run.sh make test
 
@@ -24,7 +29,7 @@ branches:
 
 before_deploy:
 - cd ..
-- tar -zcf ${TRAVIS_BUILD_DIR}${REPO}-${BUILD_ENV}-${TRAVIS_TAG}-${TRAVIS_BUILD_NUMBER}.tar.gz ${REPO}
+- tar -zcf ${TRAVIS_BUILD_DIR}${REPO}-${BUILD_ENV}-${TRAVIS_TAG}-${TRAVIS_BUILD_NUMBER}.tar.gz ${TRAVIS_BUILD_DIR}
 
 
 deploy:
