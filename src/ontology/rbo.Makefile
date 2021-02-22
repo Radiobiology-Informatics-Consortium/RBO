@@ -19,3 +19,6 @@ components/all_templates.owl: $(TEMPLATES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
+		
+templates: $(TEMPLATES)
+	echo $(TEMPLATES)
