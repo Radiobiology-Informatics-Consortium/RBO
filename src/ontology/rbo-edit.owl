@@ -7,12 +7,14 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(core:=<http://purl.obolibrary.org/obo/uberon/core#>)
+Prefix(obda:=<https://w3id.org/obda/vocabulary#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/RBO.owl>
+Import(<http://purl.obolibrary.org/obo/rbo/components/all_templates.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/envo_import.owl>)
@@ -20,10 +22,8 @@ Import(<http://purl.obolibrary.org/obo/rbo/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/uo_import.owl>)
-Import(<http://purl.obolibrary.org/obo/rbo/components/all_templates.owl>)
 Annotation(dce:description "The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.")
 Annotation(dce:title "Radiation Biology Ontology")
-
 
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:RO_0002180))
@@ -45,6 +45,14 @@ Declaration(AnnotationProperty(oboInOwl:creation_date))
 Declaration(AnnotationProperty(oboInOwl:hasBroadSynonym))
 Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
+
+############################
+#   Classes
+############################
+
+# Class: obo:RBO_00000006 (carbon-12 ion radiation)
+
+SubClassOf(obo:RBO_00000006 ObjectSomeValuesFrom(obo:RO_0000057 obo:RBO_00005005))
 
 
 )
