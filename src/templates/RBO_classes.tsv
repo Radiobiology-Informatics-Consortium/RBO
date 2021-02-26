@@ -27,7 +27,7 @@ obo:RBO_00000024	dose fraction				The absorbed radiation dose administered in a 
 obo:RBO_00000026	cosmic radiation				Penetrating ionizing radiation, both particulate and electromagnetic, that originates in outer space										space radiation																			
 obo:RBO_00000027	galactic cosmic radiation				Galactic cosmic radiation consists of high-energy charged particles originating from outside the solar system		Galactic cosmic radiation is one of the principal sources of radiation dose outside low-earth orbit								cosmic radiation																			
 obo:RBO_00000028	solar cosmic radiation				Solar cosmic radiation is high-energy charged particles that originate from the sun.		Solar cosmic radiation contributes to the radiation dose to humans in space.								cosmic radiation																			
-obo:RBO_00000029	dose rate				The measurement datum representing a dose to an organism or object per unit time.		The dose rate was 0.5 mGy/min.								IAO:0000109																			<<<<<<< Updated upstream
+obo:RBO_00000029	dose rate				The measurement datum representing a dose to an organism or object per unit time.		The dose rate was 0.5 mGy/min.								IAO:0000109																			
 obo:RBO_00000033	spacecraft				Vehicles, crewed or uncrewed, which are designed to orbit about the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space.	NASA Thesaurus, 1988	The Apollo spacecraft took 24 astronauts to the Moon between 1968 and 1972.								OBI:0000968																			CHEBI:33250
 obo:RBO_00000044	spacecraft module				a self-contained unit of a spacecraft										spacecraft																			
 obo:RBO_00000045	International Space Station module	ISS module			A self-contained unit of the International Space Station.		The experiment was conducted in the International Space Station module Columbus|The experiment was conducted on the Russian module of the ISS.								spacecraft module																			
@@ -90,12 +90,12 @@ obo:RBO_00000108	endocrine study														obo:RBO_00000089
 obo:RBO_00000109	offspring study														radiobiology study type																			
 obo:RBO_00000110	biokinetics study														radiobiology study type																			
 obo:RBO_00000111	occupational role														BFO:0000023																			
-obo:RBO_00000112	high linear energy transfer radiation				Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely spaced on a molecular scale (e.g., >10 keV-micron^[-1].	NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf									RBO_00000116				NCIT:C17052															
-obo:RBO_00000113	low linear energy transfer radiation				X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale.	NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf									RBO_00000116	low LET|low-LET			NCIT:C17052															
+obo:RBO_00000112	high linear energy transfer radiation				Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely spaced on a molecular scale (e.g., >10 keV-micron^[-1].	NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf									obo:RBO_00000116				NCIT:C17052															
+obo:RBO_00000113	low linear energy transfer radiation				X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale.	NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf									obo:RBO_00000116	low LET|low-LET			NCIT:C17052															
 obo:RBO_00000114	ionizing electromagnetic radiation				Electromagnetic radiation having sufficient energy to remove one or more electrons from an atom										obo:RBO_00000116																			
-obo:RBO_00000115	radiation dosimeter device	radiation dosimeter device		radiation dosimeter	A device that is used to measure the amount of ionizing radiation exposure or absorption.	NCIT									OBI:0000968				NCIT:C150121															
+obo:RBO_00000115	radiation dosimeter device	radiation dosimeter		radiation dosimeter	A device that is used to measure the amount of ionizing radiation exposure or absorption.	NCIT									OBI:0000968				NCIT:C150121															
 obo:RBO_00000116	ionizing radiation			ionising radiation	Particle or electromagnetic radiation with sufficient energy to liberate one or more electrons from an atom.										ENVO:01001023				NCIT:C17052															
-obo:RBO_00000117	charged particle radiation				Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)										ENVO:01001024				NCIT:C18982															
+obo:RBO_00000117	charged particle radiation	charged particle			Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)										ENVO:01001024				NCIT:C18982															
 obo:RBO_00000118	risk estimate														OBI:0001909				NCIT:C19015															
 obo:RBO_00000119	lifetime risk estimate														obo:RBO_00000118				NCIT:C19662															
 obo:RBO_00000120	gamma radiation				electromagnetic radiation with photon energies greater than approximately 100 keV	http://son.nasa.gov/tass/content/electrospectrum.htm									obo:RBO_00000114				NCIT:C44386															
@@ -103,8 +103,8 @@ obo:RBO_00000121	particle accelerator				A device used to impart kinetic energy 
 obo:RBO_00000122	nuclear reactor				A device in which nuclear fission may be initiated and controlled in a self-sustaining chain reaction to generate energy or produce useful radiation.										OBI:0000968				MESH:D009688															
 obo:RBO_00000123	biological process														BFO:0000015				GO:0008150															
 obo:RBO_00000124	cellular process														obo:RBO_00000123				GO:0009987															
-obo:RBO_00005001	heavy ion radiation				Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means										RBO:00000117																			
-obo:RBO_00005002	light ion radiation				Atomic nuclei, variously defined as having atomic number 2, 3, 4, 5 or 6 and kinetic energy imparted by natural or artificial means										RBO:00000117																			
+obo:RBO_00005001	heavy ion radiation				Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means										obo:RBO_00000117																			
+obo:RBO_00005002	light ion radiation				Atomic nuclei, variously defined as having atomic number 2, 3, 4, 5 or 6 and kinetic energy imparted by natural or artificial means										obo:RBO_00000117																			
 obo:RBO_00005003	charged particle				A particle with a positive or negative electric charge										BFO:0000040																			
 obo:RBO_00005004	iron-56 nucleus				An atomic nucleus with 26 protons and 30 neutrons										heavy ion	Fe-56, 56Fe																		
 obo:RBO_00005005	carbon-12 nucleus				An atomic nucleus with 6 protons and 6 neutrons										heavy ion	12C, 12-C																		
