@@ -14,7 +14,7 @@ env:
  - BUILD_ENV=test
  
 # command to run tests
-script: cd src/ontology && ./run.sh make prepare_release -B
+script: cd src/ontology && travis_wait 60 ./run.sh make prepare_release -B
 
 #after_success:
 #  coveralls
