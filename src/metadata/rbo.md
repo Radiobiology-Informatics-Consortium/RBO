@@ -13,7 +13,7 @@ contact:
   email: daniel.c.berrios@nasa.gov
   label: POC
   github: https://github.com/DanBerrios
-description: The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.
+description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
 domain: radiation biology, the study of the effects of radiation on biological systems
 homepage: https://github.com/DanBerrios/RBO
 products:
