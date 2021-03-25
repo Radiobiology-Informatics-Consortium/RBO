@@ -576,7 +576,7 @@ name: radiation dosimeter device
 def: "A device that is used to measure the amount of ionizing radiation exposure or absorption." []
 xref: NCIT:C150121
 is_a: OBI:0000968
-property_value: IAO:0000111 "radiation dosimeter device" xsd:string
+property_value: IAO:0000111 "radiation dosimeter" xsd:string
 property_value: IAO:0000118 "radiation dosimeter" xsd:string
 property_value: IAO:0000119 "NCIT" xsd:string
 
@@ -594,6 +594,7 @@ name: charged particle radiation
 def: "Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
 xref: NCIT:C18982
 is_a: ENVO:01001024
+property_value: IAO:0000111 "charged particle" xsd:string
 
 [Term]
 id: RBO:00000118
@@ -699,21 +700,25 @@ id: RBO:00005009
 name: Spaceflight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
 synonym: "Space flight" EXACT []
+is_a: ENVO:03000010
 
 [Term]
 id: RBO:00005010
 name: absorbed radiation dose
 def: "The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium." []
+is_a: RBO:010016 ! radiation dose
 
 [Term]
 id: RBO:00005011
 name: absorbed radiation dose rate
 def: "The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium per unit time." []
+is_a: RBO:00000029 ! dose rate
 
 [Term]
 id: RBO:00005012
 name: ionizing radiation energy
 def: "The kinetic energy carried by a particle or photon of ionizing radiation. " []
+is_a: RBO:00000116 ! ionizing radiation
 
 [Term]
 id: RBO:00005013

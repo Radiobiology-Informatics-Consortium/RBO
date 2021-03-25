@@ -5835,7 +5835,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:hasDbXref rdf:resource="http://sweetontology.net/realmSoil/Permafrost"/>
         <oboInOwl:hasDbXref>EcoLexicon:permafrost</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>LTER:408</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Permafrost</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:comment>Ice is not always present, as may be in the case of nonporous bedrock, but it frequently occurs and it may be in amounts exceeding the potential hydraulic saturation of the ground material.</rdfs:comment>
@@ -5846,7 +5846,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Soil or rock and included ice or organic material at or below the freezing point of water (0 degrees Celsius or 32 degrees Fahrenheit) for two or more years.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000134"/>
@@ -5943,7 +5943,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:hasDbXref>Geonames:T.TAL</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SWEETRealm:Talus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TGN:21508</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>TALUS</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>talus slope</oboInOwl:hasRelatedSynonym>
@@ -5954,7 +5954,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000194"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Broken rock that appears at the bottom of crags, mountain cliffs or valley shoulders.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000194"/>
@@ -6052,7 +6052,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000309"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A landform sunken or depressed below the surrounding area.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Depression_%28geology%29</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Depression_%28geology%29</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000309"/>
@@ -6323,7 +6323,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A rock is a naturally occurring solid aggregate of one or more minerals or mineraloids.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:ma</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Rock_(geology)</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Rock_(geology)</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7110,7 +7110,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000023"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The marine pelagic biome (pelagic meaning open sea) is that of the marine water column, from the surface to the greatest depths.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-7506-3384-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:978-0-7506-3384-0</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7132,7 +7132,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The neritic epipelagic zone biome comprises the marine water column above a continental shelf.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-444-82619-0</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-7506-3384-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:978-0-7506-3384-0</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -7154,7 +7154,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The oceanic epipelagic zone biome comprises the marine water column offshore, beyond a continental shelf.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-444-82619-0</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0-7506-3384-0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:978-0-7506-3384-0</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -7176,7 +7176,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The oceanic sea surface microlayer (SML) biome comprises the top 1000 micrometers of the marine surface waters occurring offshore, away from a continental shelf. It is the boundary layer where all exchange occurs between the atmosphere and the ocean. The chemical, physical, and biological properties of the SML differ greatly from the sub-surface water just a few centimeters beneath.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sea_surface_microlayer</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Sea_surface_microlayer</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7197,7 +7197,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The neritic sea surface microlayer (SML) biome comprises the top 1000 micrometers of marine surface waters occurring above a continental shelf. It is the boundary layer where all exchange occurs between the atmosphere and the ocean. The chemical, physical, and biological properties of the SML differ greatly from the sub-surface water just a few centimeters beneath.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORCID:0000-0002-4366-3088</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sea_surface_microlayer</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Sea_surface_microlayer</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7550,7 +7550,7 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000256"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A mineral material is an environmental material which is primarily composed of some substance that is naturally occurring, solid and stable at room temperature, representable by a chemical formula, usually abiogenic, and that has an ordered atomic structure.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mineral</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Mineral</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -20274,7 +20274,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation dosimeter device</obo:IAO_0000111>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation dosimeter</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to measure the amount of ionizing radiation exposure or absorption.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation dosimeter</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT</obo:IAO_0000119>
@@ -20300,6 +20300,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C18982</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle radiation</rdfs:label>
@@ -20469,6 +20470,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/RBO_00005009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space flight</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaceflight</rdfs:label>
@@ -20479,6 +20481,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/RBO_00005010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorbed radiation dose</rdfs:label>
     </owl:Class>
@@ -20488,6 +20491,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/RBO_00005011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000029"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium per unit time.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorbed radiation dose rate</rdfs:label>
     </owl:Class>
@@ -20497,6 +20501,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/RBO_00005012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000116"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The kinetic energy carried by a particle or photon of ionizing radiation. </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionizing radiation energy</rdfs:label>
     </owl:Class>
@@ -34561,8 +34566,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000115>A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000010">
-        <obo:IAO_0000118>s</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <obo:IAO_0000118>s</obo:IAO_0000118>
         <oboInOwl1:hasExactSynonym>s</oboInOwl1:hasExactSynonym>
         <rdfs:label>second</rdfs:label>
         <obo:IAO_0000118>sec</obo:IAO_0000118>
@@ -34613,8 +34618,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000017">
         <obo:IAO_0000111>micrometer</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>micron</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>micrometre</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A length unit which is equal to one millionth of a meter or 10^[-6] m.&quot; [NIST:NIST]</rdfs:comment>
+        <oboInOwl1:hasExactSynonym>micrometre</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>um</oboInOwl1:hasExactSynonym>
         <rdfs:label>micrometer</rdfs:label>
         <obo:IAO_0000115>A length unit which is equal to one millionth of a meter or 10^[-6] m.</obo:IAO_0000115>
@@ -34623,13 +34628,13 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000018">
         <obo:IAO_0000118>nm</obo:IAO_0000118>
-        <obo:IAO_0000111>nanometer</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>nm</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000111>nanometer</obo:IAO_0000111>
         <obo:IAO_0000115>A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>nanometre</oboInOwl1:hasExactSynonym>
         <rdfs:label>nanometer</rdfs:label>
-        <rdfs:comment>&quot;A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.&quot; [NIST:NIST]</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <rdfs:comment>&quot;A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.&quot; [NIST:NIST]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000019">
         <oboInOwl1:hasExactSynonym>Å</oboInOwl1:hasExactSynonym>
@@ -34677,8 +34682,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000111>nanogram</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <oboInOwl1:hasExactSynonym>ng</oboInOwl1:hasExactSynonym>
-        <rdfs:comment>&quot;A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label>nanogram</rdfs:label>
+        <rdfs:comment>&quot;A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000118>ng</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000025">
@@ -34700,8 +34705,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:comment>&quot;A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.&quot; [NIST:NIST]</rdfs:comment>
         <obo:IAO_0000118>degree C</obo:IAO_0000118>
         <obo:IAO_0000115>A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.</obo:IAO_0000115>
-        <oboInOwl1:hasExactSynonym>C</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <oboInOwl1:hasExactSynonym>C</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000118>C</obo:IAO_0000118>
         <obo:IAO_0000111>degree Celsius</obo:IAO_0000111>
     </rdf:Description>
@@ -34730,8 +34735,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:comment>&quot;A time unit which is equal to 60 seconds.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000032">
-        <obo:IAO_0000111>hour</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <obo:IAO_0000111>hour</obo:IAO_0000111>
         <rdfs:label>hour</rdfs:label>
         <obo:IAO_0000118>h</obo:IAO_0000118>
         <oboInOwl1:hasExactSynonym>h</oboInOwl1:hasExactSynonym>
@@ -34740,8 +34745,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:comment>&quot;A time unit which is equal to 3600 seconds or 60 minutes.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000033">
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000111>day</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:comment>&quot;A time unit which is equal to 24 hours.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <obo:IAO_0000115>A time unit which is equal to 24 hours.</obo:IAO_0000115>
         <rdfs:label>day</rdfs:label>
@@ -34750,8 +34755,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:label>week</rdfs:label>
         <rdfs:comment>&quot;A time unit which is equal to 7 days.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
-        <obo:IAO_0000111>week</obo:IAO_0000111>
         <obo:IAO_0000115>A time unit which is equal to 7 days.</obo:IAO_0000115>
+        <obo:IAO_0000111>week</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000035">
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
@@ -34787,8 +34792,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000118>umol</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000040">
-        <rdfs:label>millimole</rdfs:label>
         <rdfs:comment>&quot;A substance unit equal to a thousandth of a mol or 10^[-3] mol.&quot; [NIST:NIST]</rdfs:comment>
+        <rdfs:label>millimole</rdfs:label>
         <oboInOwl1:hasExactSynonym>mmol</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000041">
@@ -34806,8 +34811,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:comment>&quot;A substance unit equal to 10^[-12] mol.&quot; [NIST:NIST]</rdfs:comment>
         <obo:IAO_0000115>A substance unit equal to 10^[-12] mol.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:IAO_0000111>picomole</obo:IAO_0000111>
         <rdfs:label>picomole</rdfs:label>
+        <obo:IAO_0000111>picomole</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000043">
         <rdfs:label>femtomole</rdfs:label>
@@ -34824,17 +34829,17 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:comment>&quot;A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L).&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000115>A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L).</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <oboInOwl1:hasExactSynonym>M</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000111>molar</obo:IAO_0000111>
+        <oboInOwl1:hasExactSynonym>M</oboInOwl1:hasExactSynonym>
         <rdfs:label>molar</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000063">
         <obo:IAO_0000115>A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M.</obo:IAO_0000115>
-        <rdfs:label>millimolar</rdfs:label>
         <obo:IAO_0000118>mM</obo:IAO_0000118>
-        <oboInOwl1:hasExactSynonym>mM</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000111>millimolar</obo:IAO_0000111>
+        <rdfs:label>millimolar</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <obo:IAO_0000111>millimolar</obo:IAO_0000111>
+        <oboInOwl1:hasExactSynonym>mM</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M.&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000064">
@@ -34850,8 +34855,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000118>nM</obo:IAO_0000118>
         <obo:IAO_0000111>nanomolar</obo:IAO_0000111>
         <rdfs:comment>&quot;A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M.&quot; [UOC:GVG]</rdfs:comment>
-        <obo:IAO_0000115>A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M.</obo:IAO_0000115>
         <rdfs:label>nanomolar</rdfs:label>
+        <obo:IAO_0000115>A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>nM</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
     </rdf:Description>
@@ -34860,8 +34865,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000111>picomolar</obo:IAO_0000111>
         <rdfs:comment>&quot;A unit of molarity which is equal to 10^[-12] M.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label>picomolar</rdfs:label>
-        <obo:IAO_0000115>A unit of molarity which is equal to 10^[-12] M.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+        <obo:IAO_0000115>A unit of molarity which is equal to 10^[-12] M.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>pM</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000068">
@@ -34914,8 +34919,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000078">
         <rdfs:comment>&quot;An angular unit acceleration which is equal to the angular acceleration of an object changing its angular velocity by 1rad/s over a time period that equals one second.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>alpha</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>rad/s^[2]</oboInOwl1:hasExactSynonym>
         <rdfs:label>radian per second per second</rdfs:label>
+        <oboInOwl1:hasExactSynonym>rad/s^[2]</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000079">
         <oboInOwl1:hasExactSynonym>rad/s</oboInOwl1:hasExactSynonym>
@@ -34960,8 +34965,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000086">
         <rdfs:comment>&quot;An area density unit which is equal to the mass of an object in kilograms divided by the surface area in meters squared.&quot; [NIST:NIST]</rdfs:comment>
-        <oboInOwl1:hasExactSynonym>kilogram per square metre</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>Body Mass Index (BMI)</oboInOwl1:hasExactSynonym>
+        <oboInOwl1:hasExactSynonym>kilogram per square metre</oboInOwl1:hasExactSynonym>
         <rdfs:label>kilogram per square meter</rdfs:label>
         <oboInOwl1:hasExactSynonym>kg/m^[2]</oboInOwl1:hasExactSynonym>
     </rdf:Description>
@@ -35019,8 +35024,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000097">
         <obo:IAO_0000111>cubic centimeter</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000115>A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <oboInOwl1:hasExactSynonym>cubic centimetre</oboInOwl1:hasExactSynonym>
         <rdfs:label>cubic centimeter</rdfs:label>
         <oboInOwl1:hasExactSynonym>cm^3</oboInOwl1:hasExactSynonym>
@@ -35032,20 +35037,20 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:label>milliliter</rdfs:label>
         <rdfs:comment>&quot;A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>ml</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>millilitre</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000115>A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.</obo:IAO_0000115>
+        <oboInOwl1:hasExactSynonym>millilitre</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000111>milliliter</obo:IAO_0000111>
         <obo:IAO_0000118>ml</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000099">
         <oboInOwl1:hasExactSynonym>litre</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>l</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>L</oboInOwl1:hasExactSynonym>
+        <oboInOwl1:hasExactSynonym>l</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000115>A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:IAO_0000111>liter</obo:IAO_0000111>
         <rdfs:comment>&quot;A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.&quot; [NIST:NIST]</rdfs:comment>
+        <obo:IAO_0000111>liter</obo:IAO_0000111>
         <obo:IAO_0000118>L</obo:IAO_0000118>
         <rdfs:label>liter</rdfs:label>
     </rdf:Description>
@@ -35059,8 +35064,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000101">
-        <rdfs:label>microliter</rdfs:label>
         <obo:IAO_0000111>microliter</obo:IAO_0000111>
+        <rdfs:label>microliter</rdfs:label>
         <obo:IAO_0000118>ul</obo:IAO_0000118>
         <oboInOwl1:hasExactSynonym>microlitre</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000115>A volume unit which is equal to one millionth of a liter or 10^[-6] L.</obo:IAO_0000115>
@@ -35069,8 +35074,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:comment>&quot;A volume unit which is equal to one millionth of a liter or 10^[-6] L.&quot; [NIST:NIST]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000102">
-        <obo:IAO_0000115>A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>nl</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000115>A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L.</obo:IAO_0000115>
         <rdfs:label>nanoliter</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:comment>&quot;A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L.&quot; [NIST:NIST]</rdfs:comment>
@@ -35098,8 +35103,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000111>hertz</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>Hz</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <obo:IAO_0000115>A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.</obo:IAO_0000115>
         <rdfs:comment>&quot;A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.&quot; [NIST:NIST]</rdfs:comment>
+        <obo:IAO_0000115>A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.</obo:IAO_0000115>
         <rdfs:label>hertz</rdfs:label>
         <oboInOwl1:hasExactSynonym>s^1</oboInOwl1:hasExactSynonym>
     </rdf:Description>
@@ -35109,8 +35114,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:label>newton</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000110">
-        <oboInOwl1:hasExactSynonym>Pa</oboInOwl1:hasExactSynonym>
         <rdfs:label>pascal</rdfs:label>
+        <oboInOwl1:hasExactSynonym>Pa</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A pressure unit which is equal to the pressure or stress on a surface caused by a force of 1 newton spread over a surface of 1 m^[2].&quot; [NIST:NIST]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000112">
@@ -35209,13 +35214,13 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000144">
         <oboInOwl1:hasExactSynonym>nSv</oboInOwl1:hasExactSynonym>
-        <rdfs:comment>&quot;A dose equivalent unit which is equal to one thousandth of a millionth of a sievert or 10^[-9] Sv.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label>nanosievert</rdfs:label>
+        <rdfs:comment>&quot;A dose equivalent unit which is equal to one thousandth of a millionth of a sievert or 10^[-9] Sv.&quot; [NIST:NIST]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000145">
         <rdfs:comment>&quot;An activity (of a radionuclide) unit which is equal to one thousandth of a curie or 10^[-3] Ci.&quot; [ORCBS:ORCBS]</rdfs:comment>
-        <rdfs:label>millicurie</rdfs:label>
         <oboInOwl1:hasExactSynonym>mCi</oboInOwl1:hasExactSynonym>
+        <rdfs:label>millicurie</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000146">
         <rdfs:label>microcurie</rdfs:label>
@@ -35224,8 +35229,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000147">
         <rdfs:label>disintegrations per minute</rdfs:label>
-        <oboInOwl1:hasExactSynonym>dpm</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;An activity (of a radionuclide) unit which is equal to the activity of a quantity of radioactive material in which one nucleus decays per minute or there is one atom disintegration per minute.&quot; [ORCBS:ORCBS]</rdfs:comment>
+        <oboInOwl1:hasExactSynonym>dpm</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000148">
         <rdfs:label>counts per minute</rdfs:label>
@@ -35238,8 +35243,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <oboInOwl1:hasExactSynonym>ns</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000151">
-        <rdfs:label>century</rdfs:label>
         <rdfs:comment>&quot;A time unit which is equal to 100 years.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
+        <rdfs:label>century</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000152">
         <rdfs:label>half life</rdfs:label>
@@ -35271,8 +35276,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000160">
         <oboInOwl1:hasExactSynonym>microeinstein per square metre per second</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>umicroeinstein/sm^[2]</oboInOwl1:hasExactSynonym>
         <rdfs:label>microeinstein per square meter per second</rdfs:label>
+        <oboInOwl1:hasExactSynonym>umicroeinstein/sm^[2]</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>micromole per second and square meter mmol/sm^2</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;An irradiance unit which is equal to one microeinstein per square meter per second or 10^[-6] microeinstein/sm^[2].&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
@@ -35307,8 +35312,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000118>% v/v</obo:IAO_0000118>
         <rdfs:label>volume percentage</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
-        <rdfs:comment>&quot;A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>% (v/v)</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000115>A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.</obo:IAO_0000115>
         <obo:IAO_0000118>percent vol per vol</obo:IAO_0000118>
         <obo:IAO_0000111>volume percentage</obo:IAO_0000111>
@@ -35328,8 +35333,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000169">
         <oboInOwl1:hasExactSynonym>10^[-6]</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000 regardless of the units of measure used as long as they are the same or 1 part in 10^[6].&quot; [UOC:GVG]</rdfs:comment>
-        <rdfs:label>parts per million</rdfs:label>
         <oboInOwl1:hasExactSynonym>ppm</oboInOwl1:hasExactSynonym>
+        <rdfs:label>parts per million</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000170">
         <rdfs:label>parts per billion</rdfs:label>
@@ -35351,8 +35356,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000173">
         <oboInOwl1:hasExactSynonym>gram per millilitre</oboInOwl1:hasExactSynonym>
-        <rdfs:label>gram per milliliter</rdfs:label>
         <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter.&quot; [UOC:GVG]</rdfs:comment>
+        <rdfs:label>gram per milliliter</rdfs:label>
         <oboInOwl1:hasExactSynonym>g/ml</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000174">
@@ -35368,8 +35373,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000111>gram per liter</obo:IAO_0000111>
         <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in grams divided by the volume in liters.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label>gram per liter</rdfs:label>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <oboInOwl1:hasExactSynonym>g/L</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000118>g/L</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000176">
@@ -35377,8 +35382,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:comment>&quot;A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000111>milligram per milliliter</obo:IAO_0000111>
         <obo:IAO_0000118>mg per ml</obo:IAO_0000118>
-        <obo:IAO_0000115>A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.</obo:IAO_0000115>
         <rdfs:label>milligram per milliliter</rdfs:label>
+        <obo:IAO_0000115>A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.</obo:IAO_0000115>
         <oboInOwl1:hasExactSynonym>milligram per millilitre</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000118>mg/ml</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
@@ -35442,8 +35447,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:label>pH</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000115>A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).</obo:IAO_0000115>
-        <rdfs:comment>&quot;A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <obo:IAO_0000111>pH</obo:IAO_0000111>
+        <rdfs:comment>&quot;A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000197">
         <rdfs:comment>&quot;A specific volume unit which is equal to one liter volume occupied by one kilogram of a particular substance.&quot; [NIST:NIST]</rdfs:comment>
@@ -35499,13 +35504,13 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000111>milliliter per liter</obo:IAO_0000111>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000208">
-        <rdfs:comment>&quot;A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.&quot; [UOC:GVG]</rdfs:comment>
         <obo:IAO_0000111>gram per deciliter</obo:IAO_0000111>
+        <rdfs:comment>&quot;A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>g/dl</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>gram per decilitre</oboInOwl1:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000115>A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.</obo:IAO_0000115>
         <rdfs:label>gram per deciliter</rdfs:label>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000118>g/dl</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000209">
@@ -35528,8 +35533,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:label>colony forming unit per volume</rdfs:label>
         <obo:IAO_0000111>colony forming unit per volume</obo:IAO_0000111>
-        <obo:IAO_0000115>A concentration unit which a measure of viable bacterial numbers in a given volume.</obo:IAO_0000115>
         <rdfs:comment>&quot;A concentration unit which a measure of viable bacterial numbers in a given volume.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
+        <obo:IAO_0000115>A concentration unit which a measure of viable bacterial numbers in a given volume.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000213">
         <oboInOwl1:hasExactSynonym>colony forming unit per millilitre</oboInOwl1:hasExactSynonym>
@@ -35562,13 +35567,13 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <oboInOwl1:hasExactSynonym>Da</oboInOwl1:hasExactSynonym>
         <rdfs:label>dalton</rdfs:label>
         <oboInOwl1:hasExactSynonym>u</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>unified atomic mass unit</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>amu</oboInOwl1:hasExactSynonym>
+        <oboInOwl1:hasExactSynonym>unified atomic mass unit</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;An independently to the base SI units defined mass unit which is equal to one twelfth of the mass of an unbound atom of the carbon-12 nuclide, at rest and in its ground state.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000222">
-        <oboInOwl1:hasExactSynonym>kDa</oboInOwl1:hasExactSynonym>
         <rdfs:label>kilodalton</rdfs:label>
+        <oboInOwl1:hasExactSynonym>kDa</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A mass unit which is equal to one thousand daltons.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000223">
@@ -35642,8 +35647,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000242">
         <oboInOwl1:hasExactSynonym>pixel density</oboInOwl1:hasExactSynonym>
-        <rdfs:label>pixels per inch</rdfs:label>
         <rdfs:comment>&quot;A spatial resolution unit which is a standard measure of the resolution of a computer display, related to the size of the display in inches and the total number of pixels in the horizontal and vertical directions.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
+        <rdfs:label>pixels per inch</rdfs:label>
         <oboInOwl1:hasExactSynonym>ppi</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000243">
@@ -35653,8 +35658,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000244">
         <rdfs:comment>&quot;A count unit which contains one nucleotide.&quot; [UO:GVG]</rdfs:comment>
-        <rdfs:label>base pair</rdfs:label>
         <oboInOwl1:hasExactSynonym>bp</oboInOwl1:hasExactSynonym>
+        <rdfs:label>base pair</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000245">
         <rdfs:label>kibibyte</rdfs:label>
@@ -35677,8 +35682,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:label>kilovolt</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000249">
-        <rdfs:label>microvolt</rdfs:label>
         <oboInOwl1:hasExactSynonym>uV</oboInOwl1:hasExactSynonym>
+        <rdfs:label>microvolt</rdfs:label>
         <rdfs:comment>&quot;An electric potential difference unit which is equal to one millionth of a volt or 10^[-6] V.&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000250">
@@ -35693,8 +35698,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000252">
         <rdfs:comment>&quot;An electric potential difference unit which is equal to one million volts or 10^[6] V.&quot; [UOC:GVG]</rdfs:comment>
-        <rdfs:label>megavolt</rdfs:label>
         <oboInOwl1:hasExactSynonym>MV</oboInOwl1:hasExactSynonym>
+        <rdfs:label>megavolt</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000254">
         <rdfs:comment>&quot;A surface tension unit which is equal to one newton per meter.&quot; [NIST:NIST]</rdfs:comment>
@@ -35724,8 +35729,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:label>decibel</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000260">
-        <rdfs:label>effective dose unit</rdfs:label>
         <rdfs:comment>&quot;A unit which is a standard measure of the estimate of the stochastic effect that a non-uniform radiation dose has on a human.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
+        <rdfs:label>effective dose unit</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000264">
         <oboInOwl1:hasExactSynonym>A V^-1</oboInOwl1:hasExactSynonym>
@@ -35742,8 +35747,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000266">
         <oboInOwl1:hasExactSynonym>electron volt</oboInOwl1:hasExactSynonym>
-        <rdfs:comment>&quot;A non-SI unit of energy (eV) defined as the energy acquired by a single unbound electron when it passes through an electrostatic potential difference of one volt. An electronvolt is equal to 1.602 176 53(14) x 10^-19 J.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>eV</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;A non-SI unit of energy (eV) defined as the energy acquired by a single unbound electron when it passes through an electrostatic potential difference of one volt. An electronvolt is equal to 1.602 176 53(14) x 10^-19 J.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <rdfs:label>electronvolt</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000268">
@@ -35818,8 +35823,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000284">
         <obo:IAO_0000115>A rate unit which is equal to one over one nanomolar.</obo:IAO_0000115>
-        <oboInOwl1:hasExactSynonym>1/nM</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A rate unit which is equal to one over one nanomolar.&quot; [UO:GVG]</rdfs:comment>
+        <oboInOwl1:hasExactSynonym>1/nM</oboInOwl1:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000111>count per nanomolar</obo:IAO_0000111>
         <rdfs:label>count per nanomolar</rdfs:label>
@@ -35829,8 +35834,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <obo:IAO_0000111>count per molar</obo:IAO_0000111>
         <oboInOwl1:hasExactSynonym>1/M</oboInOwl1:hasExactSynonym>
-        <obo:IAO_0000115>A rate unit which is equal to one over one molar.</obo:IAO_0000115>
         <rdfs:label>count per molar</rdfs:label>
+        <obo:IAO_0000115>A rate unit which is equal to one over one molar.</obo:IAO_0000115>
         <rdfs:comment>&quot;A rate unit which is equal to one over one molar.&quot; [UO:GVG]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>M^-1</oboInOwl1:hasExactSynonym>
     </rdf:Description>
@@ -35850,8 +35855,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:label>milligram per kilogram</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000309">
-        <rdfs:label>milligram per square meter</rdfs:label>
         <rdfs:comment>&quot;A dose unit which is equal to 1 milligram of a toxic or pharmaceutical substance per square meter of surface area of the recipient subject.&quot; [UO:PC]</rdfs:comment>
+        <rdfs:label>milligram per square meter</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000310">
         <rdfs:comment>&quot;A concentration unit which is a standard measure of the amount of a toxic or pharmaceutical substance administered over time to a recipient subject, expressed in terms of the size of the subject.&quot; [UO:PC]</rdfs:comment>
@@ -35947,8 +35952,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010012">
         <rdfs:label>thou</rdfs:label>
-        <rdfs:comment>&quot;A length unit which is equal to 0.0254 millimetres.&quot; [Wikipedia:Wikpiedia]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>mil</oboInOwl1:hasExactSynonym>
+        <rdfs:comment>&quot;A length unit which is equal to 0.0254 millimetres.&quot; [Wikipedia:Wikpiedia]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>th</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010013">
@@ -36026,14 +36031,14 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <rdfs:comment>&quot;An imperial volume unit which is equivalent to 568.261,25 millilitres.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010029">
-        <rdfs:label>quart</rdfs:label>
         <oboInOwl1:hasExactSynonym>qt</oboInOwl1:hasExactSynonym>
+        <rdfs:label>quart</rdfs:label>
         <rdfs:comment>&quot;An imperial volume unit which is equivalent to 1,136.5225 millilitres, or two pints.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010030">
         <rdfs:label>gallon</rdfs:label>
-        <oboInOwl1:hasExactSynonym>gal</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;An imperial volume unit which is equivalent to 4,546.09 millilitres, or 8 pints.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
+        <oboInOwl1:hasExactSynonym>gal</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010031">
         <oboInOwl1:hasExactSynonym>gr</oboInOwl1:hasExactSynonym>
@@ -36072,8 +36077,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <oboInOwl1:hasExactSynonym>cwt</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010038">
-        <rdfs:comment>&quot;An imperial mass unit which is equivalent to 1,016.046,9088 kilograms, or 2,240 pounds.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <rdfs:label>ton</rdfs:label>
+        <rdfs:comment>&quot;An imperial mass unit which is equivalent to 1,016.046,9088 kilograms, or 2,240 pounds.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>t</oboInOwl1:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010039">
@@ -36108,8 +36113,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <oboInOwl1:hasExactSynonym>food calorie</oboInOwl1:hasExactSynonym>
         <rdfs:label>large calorie</rdfs:label>
         <oboInOwl1:hasExactSynonym>cal</oboInOwl1:hasExactSynonym>
-        <oboInOwl1:hasExactSynonym>calorie</oboInOwl1:hasExactSynonym>
         <oboInOwl1:hasExactSynonym>big calorie</oboInOwl1:hasExactSynonym>
+        <oboInOwl1:hasExactSynonym>calorie</oboInOwl1:hasExactSynonym>
         <rdfs:comment>&quot;A unit of energy widely used in nutrition, equivalent to the amount of heat needed to cause one kilogram of water to rise in temperature by one degree Celsius.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <oboInOwl1:hasExactSynonym>kcal</oboInOwl1:hasExactSynonym>
     </rdf:Description>

@@ -252,6 +252,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_03000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
@@ -1245,7 +1251,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation dosimeter device</obo:IAO_0000111>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation dosimeter</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that is used to measure the amount of ionizing radiation exposure or absorption.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation dosimeter</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT</obo:IAO_0000119>
@@ -1271,6 +1277,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000117">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C18982</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle radiation</rdfs:label>
@@ -1440,6 +1447,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Activity carried out by crewed or robotic vehicles outside the Earth&apos;s atmmosphere.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Space flight</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaceflight</rdfs:label>
@@ -1450,6 +1458,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorbed radiation dose</rdfs:label>
     </owl:Class>
@@ -1459,6 +1468,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000029"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium per unit time.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorbed radiation dose rate</rdfs:label>
     </owl:Class>
@@ -1468,6 +1478,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000116"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The kinetic energy carried by a particle or photon of ionizing radiation. </obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionizing radiation energy</rdfs:label>
     </owl:Class>
