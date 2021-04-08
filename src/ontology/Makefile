@@ -327,6 +327,15 @@ mirror/uo.owl: mirror/uo.trigger
 
 .PRECIOUS: mirror/%.owl
 
+## ONTOLOGY: doid RAD Slim
+## Copy of doid Slim is re-downloaded whenever source changes
+mirror/doid.trigger: $(SRC)
+
+mirror/doid.owl: mirror/doid.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/doid/subsets/DO_RAD_slim.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
 
 
 # ----------------------------------------
