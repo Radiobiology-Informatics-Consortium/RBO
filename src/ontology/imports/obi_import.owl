@@ -11,8 +11,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-02-26/imports/obi_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-26</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-04-20/imports/obi_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -43,13 +43,21 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <obo:IAO_0000111>editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000111>editor preferred term</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>editor preferred label</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label>editor preferred term</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -79,7 +87,9 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <obo:IAO_0000111>definition</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000111>textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2012-04-05: 
 Barry Smith
@@ -106,6 +116,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -205,6 +216,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001847 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001847"/>
     
 
 
@@ -2588,6 +2605,22 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000111 xml:lang="en">protocol</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</obo:IAO_0000119>
+        <obo:OBI_0001847>study protocol</obo:OBI_0001847>
+        <rdfs:label xml:lang="en">protocol</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000338 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000338">
@@ -3647,6 +3680,36 @@ The following are NOT conclusions based on data: data themselves; results from p
         <obo:IAO_0000119>NCI BBRB, OBI</obo:IAO_0000119>
         <obo:IAO_0000234>NCI BBRB</obo:IAO_0000234>
         <rdfs:label>Karnofsky score vaue specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0002989 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002989">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000018"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111>material supplier</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115>A person or organization that provides material supplies to other people or organizations.</obo:IAO_0000115>
+        <obo:IAO_0000117>Rebecca Jackson</obo:IAO_0000117>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1289</obo:IAO_0000233>
+        <rdfs:label>material supplier</rdfs:label>
     </owl:Class>
     
 
@@ -4715,19 +4778,8 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000462 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000462">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000018"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0002989"/>
         <obo:IAO_0000111>Affymetrix</obo:IAO_0000111>
         <obo:IAO_0000112>Affymetrix supplied microarray</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -4740,13 +4792,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000752 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000752">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Thermo</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4758,13 +4804,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000753 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000753">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Waters</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4776,13 +4816,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000754 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000754">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>BIO-RAD</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4806,13 +4840,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000756 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000756">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Ambion</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4824,13 +4852,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000757 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000757">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Helicos</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4842,13 +4864,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000758 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000758">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Roche</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4860,13 +4876,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000759 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000759">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Illumina</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4939,13 +4949,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000765 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000765">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Agilent</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -4998,13 +5002,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000769 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000769">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Li-Cor</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -5016,13 +5014,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000770 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000770">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Bruker Corporation</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -5101,13 +5093,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000776 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000776">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Applied Biosystems</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -5147,13 +5133,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000779 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000779">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Bruker Daltonics</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Philippe Rocca-Serra</obo:IAO_0000117>
@@ -5219,13 +5199,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000829 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000829">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Sysmex Corporation, Kobe, Japan</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000119>WEB:http://www.sysmex.com/@2009/08/06</obo:IAO_0000119>
@@ -5237,13 +5211,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0000901 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0000901">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000014"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000450"/>
         <obo:IAO_0000111>U.S. Food and Drug Administration</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000118>FDA</obo:IAO_0000118>
@@ -5322,13 +5290,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001213 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001213">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>eBioscience</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5342,13 +5304,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001224 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001224">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Cytopeia</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5362,13 +5318,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001287 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001287">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Exalpha Biological</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5382,13 +5332,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001312 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001312">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Apogee Flow Systems</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5402,13 +5346,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001320 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001320">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Exbio Antibodies</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5422,13 +5360,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001321 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001321">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Becton Dickinson (BD Biosciences)</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5442,13 +5374,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001338 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001338">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Dako Cytomation</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5462,13 +5388,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001340 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001340">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Millipore</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5482,13 +5402,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001347 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001347">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Antigenix</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5502,13 +5416,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001355 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001355">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Partec</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5522,13 +5430,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001372 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001372">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Beckman Coulter</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5542,13 +5444,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001375 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001375">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Advanced Instruments Inc. (AI Companies)</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5562,13 +5458,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001424 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001424">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Miltenyi Biotec</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5582,13 +5472,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001428 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001428">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>AES Chemunex</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5602,13 +5486,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001431 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001431">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Bentley Instruments</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5622,13 +5500,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001434 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001434">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Invitrogen</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5642,13 +5514,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001443 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001443">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Luminex</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5662,13 +5528,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001458 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001458">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>CytoBuoy</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
@@ -5682,13 +5542,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001855 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001855">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Nimblegen</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>An organization that focuses on manufacturing target enrichment probe pools for DNA sequencing.</obo:IAO_0000115>
@@ -5701,13 +5555,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001856 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001856">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Pacific Biosciences</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>An organization that supplies tools for studying the synthesis and regulation of DNA, RNA and protein. It developed a powerful technology platform called single molecule real-time (SMRT) technology which enables real-time analysis of biomolecules with single molecule resolution.</obo:IAO_0000115>
@@ -5720,13 +5568,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0001860 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001860">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>NanoString Technologies</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>An organization that supplies life science tools for translational research and molecular diagnostics based on a novel digital molecular barcoding technology. The NanoString platform can provide simple, multiplexed digital profiling of single molecules.</obo:IAO_0000115>
@@ -7905,13 +7747,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0002755 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0002755">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Oxford Nanopore Technologies</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An organization that is developing and selling nanopore sequencing products and is based in the UK.</obo:IAO_0000115>
@@ -7925,13 +7761,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0002903 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0002903">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000571"/>
-            </owl:Restriction>
-        </rdf:type>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>BioGents</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>An organization that manufactures mosquito traps and other mosquito control products.</obo:IAO_0000115>
