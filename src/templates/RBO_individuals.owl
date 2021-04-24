@@ -100,12 +100,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00000051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000051"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RBO_00000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000121"/>
@@ -115,6 +109,30 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000122"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005035"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005039"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005042"/>
     
 
 
@@ -367,12 +385,62 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000059 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000059">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000051"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BNL GSRF</obo:IAO_0000111>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BNL GRSF</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Gamma Radiation Facility known as GRSF houses a cesium-137 gamma ray source which can provide gamma rays at a variety of dose rates. The gamma source is an industry standar dJ.L. Shepherd Mark I Model 68A 137Cs ? Irradiator. The photon energy from the source is 662 keV, with a Lineal Energy Transfer (LET) in water of approximately 0.8 keV/um. (https://www.bnl.gov/nsrl/grsf/)</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BNL GRSF</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brookhaven National Laboratory Gamma Radiation Source Facility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005043 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005043">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gammacell 40</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005044 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005044">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005042"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RARAF 5.5 MV microbeam</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005045 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005045">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005035"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swift HALE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005046 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005046">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005034"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ER-2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005047 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005047">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005034"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB-57</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

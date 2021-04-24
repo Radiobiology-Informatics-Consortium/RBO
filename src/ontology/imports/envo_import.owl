@@ -16,8 +16,8 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/envo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-04-20/imports/envo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-20</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-04-24/imports/envo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4702,8 +4702,8 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An atmosphere is a layer of gases surrounding a material body of sufficient mass that is held in place by the gravity of the body.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atmosphere</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Physical_geography</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Atmosphere</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Physical_geography</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -4780,8 +4780,8 @@ From https://en.wikipedia.org/wiki/ [A mineral] is different from a rock, which 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000276"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A large unit of land or water containing a geographically distinct assemblage of species, natural communities, and environmental conditions.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL:http://worldwildlife.org/biomes</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOI:10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>URL:http://worldwildlife.org/biomes</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -5703,6 +5703,22 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>boundary layer</owl:annotatedTarget>
         <oboInOwl:hasDbXref>http://www.eionet.europa.eu/gemet/concept/976</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000604">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003074"/>
+        <obo:IAO_0000115>A vehicle is a mobile machine which transports people or cargo.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vehicle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A vehicle is a mobile machine which transports people or cargo.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Vehicle</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8075,15 +8091,15 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
-        <owl:annotatedTarget>LTER:173</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=173&amp;/ecosystems</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An environmental system which includes both living and non-living components.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Ecosystem</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+        <owl:annotatedTarget>LTER:173</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=173&amp;/ecosystems</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9514,6 +9530,24 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
         <rdfs:comment>a useful class: this can be used to define sub-terrestrial and sub-marine entities</rdfs:comment>
         <rdfs:label xml:lang="en">surface of an astronomical body</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <obo:IAO_0000115>A vehicle which is able to travel through air in an atmosphere.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-04T19:28:01Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">aircraft</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001488"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A vehicle which is able to travel through air in an atmosphere.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Aircraft</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
