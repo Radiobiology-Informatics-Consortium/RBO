@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2021-01-20
+data-version: releases/2021-02-26
 subsetdef: attribute_slim ""
 subsetdef: EnvO-Lite-GSC ""
 subsetdef: goslim_aspergillus ""
@@ -23,7 +23,7 @@ subsetdef: TraitNet ""
 ontology: rbo
 property_value: http://purl.org/dc/elements/1.1/description "The RBO is an ontology about Radiation Biology, with emphasis on Space Biology." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Radiation Biology Ontology" xsd:string
-property_value: owl:versionInfo "2021-01-20" xsd:string
+property_value: owl:versionInfo "2021-02-26" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -522,6 +522,11 @@ property_value: IAO:0000111 "atom" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/chebi.owl
 
 [Term]
+id: CHEBI:33252
+name: atomic nucleus
+is_a: CHEBI:36347 ! nuclear particle
+
+[Term]
 id: CHEBI:33259
 name: elemental molecular entity
 is_a: CHEBI:23367 ! molecular entity
@@ -666,6 +671,11 @@ is_a: CHEBI:24839 ! inorganic salt
 id: CHEBI:36342
 name: subatomic particle
 is_a: BFO:0000040 ! material entity
+
+[Term]
+id: CHEBI:36347
+name: nuclear particle
+is_a: CHEBI:36342 ! subatomic particle
 
 [Term]
 id: CHEBI:36357
@@ -3546,19 +3556,6 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 property_value: http://purl.org/dc/elements/1.1/date 2019-10-21T11:52:55Z xsd:dateTime
 
 [Term]
-id: ENVO:01001814
-name: organic object
-def: "An object which is formed as a result of one or more biological processes and is composed primarily of organic material." []
-is_a: ENVO:01001686 ! mass of environmental material
-intersection_of: BFO:0000030 ! object
-intersection_of: RO:0002354 GO:0008150 ! formed as result of biological_process
-intersection_of: RO:0002473 ENVO:01000155 ! composed primarily of organic material
-relationship: RO:0002354 GO:0008150 ! formed as result of biological_process
-relationship: RO:0002473 ENVO:01000155 ! composed primarily of organic material
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-4366-3088
-property_value: http://purl.org/dc/elements/1.1/date 2019-10-29T15:02:58Z xsd:dateTime
-
-[Term]
 id: ENVO:01001836
 name: montane biome
 def: "A biome which is subject to montane altitudinal conditions." []
@@ -3950,19 +3947,8 @@ synonym: "single organism process" RELATED []
 synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
 is_a: BFO:0000015 ! process
-disjoint_from: OBI:0000011 ! planned process
-property_value: IAO:0000111 "biological_process" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 created_by: jl
 creation_date: 2012-09-19T15:05:24Z
-
-[Term]
-id: GO:0009987
-name: cellular process
-def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." []
-is_a: GO:0008150 ! biological_process
-property_value: IAO:0000111 "cellular process" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Term]
 id: GO:0016301
@@ -6272,8 +6258,10 @@ creation_date: 2010-11-15T11:41:38Z
 [Term]
 id: RBO:00000001
 name: ionizing radiation by source
-def: "Radiation classified by its origin" []
+def: "Ionizing radiation classified by its origin" []
+synonym: "ionizing radiation source" EXACT []
 is_a: RBO:00000116 ! ionizing radiation
+property_value: IAO:0000111 "ionizing radiation source" xsd:string
 
 [Term]
 id: RBO:00000002
@@ -6297,47 +6285,52 @@ property_value: IAO:0000119 "ICRP glossary (http://icrpaedia.org/Tissue_equivale
 
 [Term]
 id: RBO:00000005
-name: iron-56
-def: "An atomic nucleus with 26 protons and 30 neutrons" []
-synonym: "Fe-56, 56Fe" EXACT []
-is_a: RBO:010012 ! heavy ion
-property_value: IAO:0000118 "N" xsd:string
+name: iron-56 ion radiation
+def: "Atomic nuclei, each with 26 protons and 30 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+synonym: "Iron-56, Fe-56, 56Fe" EXACT []
+is_a: RBO:00005001 ! heavy ion radiation
+property_value: IAO:0000111 "Fe-56" xsd:string
 
 [Term]
 id: RBO:00000006
-name: carbon-12
-def: "An atomic nucleus with 6 protons and 6 neutrons" []
-synonym: "12C, 12-C" EXACT []
-is_a: RBO:00000010 ! light ion
-is_a: RBO:010012 ! heavy ion
+name: carbon-12 ion radiation
+def: "Atomic nuclei, each with 6 protons and 6 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+synonym: "carbon-12, 12C, 12-C" EXACT []
+is_a: RBO:00005001 ! heavy ion radiation
+is_a: RBO:00005002 ! light ion radiation
+relationship: RO:0000057 RBO:00005005 ! has participant carbon-12 nucleus
+property_value: IAO:0000111 "C-12" xsd:string
 
 [Term]
 id: RBO:00000007
-name: silicon-28
-def: "An atomic nucleus with 14 protons and 14 neutrons" []
-synonym: "28Si, Si-28" EXACT []
-is_a: RBO:010012 ! heavy ion
+name: silicon-28 ion radiation
+def: "Atomic nuclei, each with 14 protons and 14 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+synonym: "silicon-28, 28Si, Si-28" EXACT []
+is_a: RBO:00005001 ! heavy ion radiation
+property_value: IAO:0000111 "Si-28" xsd:string
 
 [Term]
 id: RBO:00000008
-name: helium-4
-def: "An atomic nucleus with 2 protons and 2 neutrons" []
-synonym: "4He, He-4" EXACT []
-is_a: RBO:00000010 ! light ion
-is_a: RBO:010012 ! heavy ion
+name: helium-4 ion radiation
+def: "Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+synonym: "helium-4, 4He, He-4" EXACT []
+is_a: RBO:00005001 ! heavy ion radiation
+is_a: RBO:00005002 ! light ion radiation
+property_value: IAO:0000111 "He-4" xsd:string
 
 [Term]
 id: RBO:00000009
-name: neon-20
-def: "An atomic nucleus with 10 protons and 10 neutrons" []
-synonym: "20Ne, Ne-20" EXACT []
-is_a: RBO:010012 ! heavy ion
+name: neon-20 ion radiation
+def: "Atomic nuclei, each with 10 protons and 10 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+synonym: "neon-20, 20Ne, Ne-20" EXACT []
+is_a: RBO:00005001 ! heavy ion radiation
+property_value: IAO:0000111 "Ne-20" xsd:string
 
 [Term]
 id: RBO:00000010
 name: light ion
-def: "An atomic nucleus, variously defined as having 2, 3, 4, 5, or 6 protons" []
-is_a: RBO:00000117 ! charged particle radiation
+def: "An atomic nucleus, fully stripped of its orbital electrons, and containing 2, 3, 4, 5, or 6 protons." []
+is_a: RBO:00005003 ! charged particle
 
 [Term]
 id: RBO:00000011
@@ -6356,8 +6349,8 @@ property_value: IAO:0000112 "Thermoluminescent dosimeters and plastic nuclear tr
 [Term]
 id: RBO:00000013
 name: background ionizing radiation
-def: "The amount of radiation to which a member of the population on Earth is exposed from natural sources, such as terrestrial radiation from naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring radionuclides deposited in the human body. The natural background radiation received by an individual depends on geographic location and living habits. In the United States, the background radiation is on the order of 1 mSv y�1, excluding indoor radon which amounts to ~2 mSv y�1 on average." []
-is_a: RBO:00000116 ! ionizing radiation
+def: "The amount of radiation to which a member of the population on Earth is exposed from natural sources, such as terrestrial radiation from naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring ra" []
+is_a: ENVO:01001023 ! radiation
 
 [Term]
 id: RBO:00000014
@@ -6372,6 +6365,7 @@ name: mixed radiation field
 def: "The process of exposing the same sample to more than one type and/or energy of radiation, in sequence or simultaneously." []
 synonym: "mixed field|mixed radiation" EXACT []
 is_a: RBO:00000049 ! particle accelerator radiation
+property_value: IAO:0000111 "mixed radiation" xsd:string
 property_value: IAO:0000112 "The samples were exposed to a mixed radiation field consisting of several ions at different energies." xsd:string
 
 [Term]
@@ -6398,6 +6392,7 @@ name: low Earth orbit
 def: "The region between the Earth's atmosphere and the innermost Earth radiation belt" []
 synonym: "LEO" EXACT []
 is_a: ENVO:01000637 ! outer space
+property_value: IAO:0000111 "LEO" xsd:string
 
 [Term]
 id: RBO:00000020
@@ -6405,6 +6400,7 @@ name: beyond low Earth orbit
 def: "That part of outer space beyond the Earth's radiation belts." []
 synonym: "BLEO" EXACT []
 is_a: ENVO:01000637 ! outer space
+property_value: IAO:0000111 "BLEO" xsd:string
 
 [Term]
 id: RBO:00000021
@@ -6448,7 +6444,7 @@ property_value: IAO:0000112 "Galactic cosmic radiation is one of the principal s
 
 [Term]
 id: RBO:00000028
-name: solar_cosmic_radiation
+name: solar cosmic radiation
 def: "Solar cosmic radiation is high-energy charged particles that originate from the sun." []
 is_a: RBO:00000026 ! cosmic radiation
 property_value: IAO:0000112 "Solar cosmic radiation contributes to the radiation dose to humans in space." xsd:string
@@ -6463,7 +6459,7 @@ property_value: IAO:0000112 "The dose rate was 0.5 mGy/min." xsd:string
 [Term]
 id: RBO:00000033
 name: spacecraft
-def: "Devices, crewed and uncrewed, which are designed to be placed into  orbit about the Earth or another celestial body or into a trajectory to another celestial body or location in space." []
+def: "Vehicles, crewed or uncrewed, which are designed to orbit about the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space." []
 is_a: OBI:0000968 ! device
 property_value: IAO:0000112 "The Apollo spacecraft took 24 astronauts to the Moon between 1968 and 1972." xsd:string
 property_value: IAO:0000119 "NASA Thesaurus, 1988" xsd:string
@@ -6479,13 +6475,14 @@ id: RBO:00000045
 name: International Space Station module
 def: "A self-contained unit of the International Space Station." []
 is_a: RBO:00000044 ! spacecraft module
+property_value: IAO:0000111 "ISS module" xsd:string
 property_value: IAO:0000112 "The experiment was conducted in the International Space Station module Columbus" xsd:string
 property_value: IAO:0000112 "The experiment was conducted on the Russian module of the ISS." xsd:string
 
 [Term]
 id: RBO:00000046
 name: space station
-def: "A s spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies." []
+def: "A spacecraft capable of supporting a human crew in orbit for an extended period of time. It lacks major propulsion or landing systems. Stations must have docking ports to allow other spacecraft to dock to transfer crew and supplies." []
 is_a: RBO:00000033 ! spacecraft
 property_value: IAO:0000112 "Mir was a space station that operated in low Earth orbit from 1986 to 2001, operated by the Soviet Union and later by Russia." xsd:string
 property_value: IAO:0000119 "Wikipedia" xsd:string
@@ -6495,7 +6492,7 @@ id: RBO:00000047
 name: particle accelerator beamline
 def: "The path leading from a particle accelerator to an experimental station used in experiments in particle physics, materials science, chemistry, and molecular biology, or in irradiation tests or to produce isotopes." []
 is_a: RBO:00000121 ! particle accelerator
-property_value: IAO:0000112 "The HIMAC accelerator has beamlines for radiotherapy, biology experiments and physics experiments." xsd:string
+property_value: IAO:0000112 "The HIMAC accelerator has a beamline dedicated for radiation biology experiments." xsd:string
 property_value: IAO:0000119 "Wikipedia" xsd:string
 
 [Term]
@@ -6516,6 +6513,7 @@ name: Cesium-137 gamma radiation
 def: "High energy photons emitted during nuclear decay of the Cesium-137 isotope." []
 synonym: "Cs-137" EXACT []
 is_a: RBO:00000120 ! gamma radiation
+property_value: IAO:0000111 "Cs-137 gamma" xsd:string
 
 [Term]
 id: RBO:00000052
@@ -6523,6 +6521,7 @@ name: Cobalt-60 gamma radiation
 def: "High energy photons emitted during nuclear decay of the Cobalt-60 isotope." []
 synonym: "Co-60" EXACT []
 is_a: RBO:00000120 ! gamma radiation
+property_value: IAO:0000111 "Co-60 gamma" xsd:string
 
 [Term]
 id: RBO:00000058
@@ -6531,6 +6530,7 @@ def: "High energy photons emitted during nuclear decay of the Cobalt-57 isotope.
 synonym: "Co-57" EXACT []
 xref: obo:RBO_00000060
 is_a: RBO:00000120 ! gamma radiation
+property_value: IAO:0000111 "Co-57 gamma" xsd:string
 
 [Term]
 id: RBO:00000060
@@ -6580,7 +6580,11 @@ is_a: RBO:00000061 ! actinide
 [Term]
 id: RBO:00000069
 name: ultraviolet radiation
+def: "Electromagnetic radiation with photon energies approximately 3-120 eV. High energy UV radiation can be ioinizing." []
 is_a: RBO:00000114 ! ionizing electromagnetic radiation
+property_value: IAO:0000111 "UV" xsd:string
+property_value: IAO:0000118 "UV radiation" xsd:string
+property_value: IAO:0000119 http://son.nasa.gov/tass/content/electrospectrum.htm xsd:string
 
 [Term]
 id: RBO:00000070
@@ -6795,7 +6799,7 @@ is_a: BFO:0000023 ! role
 [Term]
 id: RBO:00000112
 name: high linear energy transfer radiation
-def: "Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely spaced on a molecular scale (e.g., >10 keV ?m�1)." []
+def: "Neutrons or charged particles, such as protons or alpha particles that produce ionizing events densely spaced on a molecular scale (e.g., >10 keV-micron^[-1]." []
 xref: NCIT:C17052
 is_a: RBO:00000116 ! ionizing radiation
 property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf" xsd:string
@@ -6803,7 +6807,7 @@ property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/
 [Term]
 id: RBO:00000113
 name: low linear energy transfer radiation
-def: "X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale" []
+def: "X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale." []
 synonym: "low LET|low-LET" EXACT []
 xref: NCIT:C17052
 is_a: RBO:00000116 ! ionizing radiation
@@ -6812,6 +6816,7 @@ property_value: IAO:0000119 "NCRP https://ncrponline.org/wp-content/themes/ncrp/
 [Term]
 id: RBO:00000114
 name: ionizing electromagnetic radiation
+def: "Electromagnetic radiation having sufficient energy to remove one or more electrons from an atom" []
 is_a: RBO:00000116 ! ionizing radiation
 
 [Term]
@@ -6820,22 +6825,25 @@ name: radiation dosimeter device
 def: "A device that is used to measure the amount of ionizing radiation exposure or absorption." []
 xref: NCIT:C150121
 is_a: OBI:0000968 ! device
-property_value: IAO:0000111 "radiation dosimeter device" xsd:string
+property_value: IAO:0000111 "radiation dosimeter" xsd:string
 property_value: IAO:0000118 "radiation dosimeter" xsd:string
 property_value: IAO:0000119 "NCIT" xsd:string
 
 [Term]
 id: RBO:00000116
 name: ionizing radiation
+def: "Particle or electromagnetic radiation with sufficient energy to liberate one or more electrons from an atom." []
 xref: NCIT:C17052
-is_a: BFO:0000040 ! material entity
+is_a: ENVO:01001023 ! radiation
 property_value: IAO:0000118 "ionising radiation" xsd:string
 
 [Term]
 id: RBO:00000117
 name: charged particle radiation
+def: "Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
 xref: NCIT:C18982
 is_a: ENVO:01001024 ! particle radiation
+property_value: IAO:0000111 "charged particle" xsd:string
 
 [Term]
 id: RBO:00000118
@@ -6852,18 +6860,22 @@ is_a: RBO:00000118 ! risk estimate
 [Term]
 id: RBO:00000120
 name: gamma radiation
+def: "electromagnetic radiation with photon energies greater than approximately 100 keV" []
 xref: NCIT:C44386
 is_a: RBO:00000114 ! ionizing electromagnetic radiation
+property_value: IAO:0000119 http://son.nasa.gov/tass/content/electrospectrum.htm xsd:string
 
 [Term]
 id: RBO:00000121
 name: particle accelerator
+def: "A device used to impart kinetic energy to subatomic particles by means of electric and magnetic fields" []
 xref: NCIT:C94854
 is_a: OBI:0000968 ! device
 
 [Term]
 id: RBO:00000122
 name: nuclear reactor
+def: "A device in which nuclear fission may be initiated and controlled in a self-sustaining chain reaction to generate energy or produce useful radiation." []
 xref: MESH:D009688
 is_a: OBI:0000968 ! device
 
@@ -6880,12 +6892,99 @@ xref: GO:0009987
 is_a: RBO:00000123 ! biological process
 
 [Term]
+id: RBO:00005001
+name: heavy ion radiation
+def: "Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means" []
+is_a: RBO:00000117 ! charged particle radiation
+
+[Term]
+id: RBO:00005002
+name: light ion radiation
+def: "Atomic nuclei, variously defined as having atomic number 2, 3, 4, 5 or 6 and kinetic energy imparted by natural or artificial means" []
+is_a: RBO:00000117 ! charged particle radiation
+
+[Term]
+id: RBO:00005003
+name: charged particle
+def: "A particle with a positive or negative electric charge" []
+is_a: BFO:0000040 ! material entity
+
+[Term]
+id: RBO:00005004
+name: iron-56 nucleus
+def: "An atomic nucleus with 26 protons and 30 neutrons" []
+synonym: "Fe-56, 56Fe" EXACT []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005005
+name: carbon-12 nucleus
+def: "An atomic nucleus with 6 protons and 6 neutrons" []
+synonym: "12C, 12-C" EXACT []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005006
+name: silicon-28 nucleus
+def: "An atomic nucleus with 14 protons and 14 neutrons" []
+synonym: "28Si, Si-28" EXACT []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005007
+name: helium-4 nucleus
+def: "An atomic nucleus with 2 protons and 2 neutrons" []
+synonym: "4He, He-4" EXACT []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005008
+name: neon-20 nucleus
+def: "An atomic nucleus with 10 protons and 10 neutrons" []
+synonym: "20Ne, Ne-20" EXACT []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005009
+name: Spaceflight
+def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
+synonym: "Space flight" EXACT []
+is_a: ENVO:03000010 ! material transport process
+
+[Term]
+id: RBO:00005010
+name: absorbed radiation dose
+def: "The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium." []
+is_a: RBO:010016 ! radiation dose
+
+[Term]
+id: RBO:00005011
+name: absorbed radiation dose rate
+def: "The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium per unit time." []
+is_a: RBO:00000029 ! dose rate
+
+[Term]
+id: RBO:00005012
+name: ionizing radiation energy
+def: "The kinetic energy carried by a particle or photon of ionizing radiation. " []
+is_a: RBO:00000116 ! ionizing radiation
+
+[Term]
+id: RBO:00005013
+name: x-ray radiation
+def: "Electromagnetic radiation with photon energies approximately between 0.1 and 120 keV. The upper end of the x-ray spectrum overlaps with the lower end of the gamma ray spectrum." []
+is_a: RBO:00000114 ! ionizing electromagnetic radiation
+property_value: IAO:0000111 "x-ray" xsd:string
+property_value: IAO:0000118 "x-ray" xsd:string
+property_value: IAO:0000119 http://son.nasa.gov/tass/content/electrospectrum.htm xsd:string
+
+[Term]
 id: RBO:010000
 name: as low as reasonably achievable
-def: "A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expenditure of further resources would be unwarranted by the reduction in exposure that would be achieved." []
+def: "A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen" []
 synonym: "ALARA" EXACT []
 is_a: IAO:0000104 ! plan specification
-property_value: IAO:0000111 "as low as reasonably achievable" xsd:string
+property_value: IAO:0000111 "ALARA" xsd:string
 property_value: IAO:0000112 "One of the measures to ensure ALARA is to minimize the time spent working around radioactive materials." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000118 "ALARA" xsd:string
@@ -6903,7 +7002,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010002
 name: biodosimetry
-def: "Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that exposure)." []
+def: "Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that " []
 is_a: CHMO:0002796 ! dosimetry
 property_value: IAO:0000112 "Biodosimetry was used to measure the exposure of some victims of the Chernobyl nuclear accident." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -6921,7 +7020,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010006
 name: delta ray
-def: "Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a long distance and leave a trail of secondary ionizations." []
+def: "Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a " []
 synonym: "delta electron" EXACT []
 is_a: RBO:00000117 ! charged particle radiation
 property_value: IAO:0000112 "Delta ray energies increase with the velocity of the incident particle." xsd:string
@@ -6932,7 +7031,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010007
 name: dose equivalent
-def: "The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J kg �1 with the special name sievert (Sv)" []
+def: "The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)" []
 is_a: RBO:010016 ! radiation dose
 property_value: IAO:0000112 "The average annual dose equivalent for crew members on the ISS is approximately 300 mSv." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -6949,7 +7048,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010009
 name: fast neutron
-def: "Neutrons of energies above a few hundred kiloelectron volts (keV" []
+def: "Neutrons of energies above a few hundred kiloelectron volts (keV)" []
 is_a: ENVO:01001024 ! particle radiation
 property_value: IAO:0000112 "The sample was irradiated with fast neutrons." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -6958,7 +7057,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010010
 name: fluence
-def: "The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m�2 or cm�2) (i.e., particles per m2 or per cm2)." []
+def: "The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2])." []
 is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "The value of the fluence was approximately 1 particle per cm2." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -6967,7 +7066,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010011
 name: flux
-def: "The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s�1.)" []
+def: "The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)" []
 is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "The flux of cosmic ray muons per cm2 at the surface of the Earth is approximately 1.0." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -6976,15 +7075,15 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010012
 name: heavy ion
-def: "An atomic nucleus with 2 or more protons. Ions with charges between 2 (helium) and approximately 10 (neon) are sometimes referred to as light ions." []
-is_a: RBO:00000117 ! charged particle radiation
+def: "An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions." []
+is_a: CHEBI:33252 ! atomic nucleus
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
 
 [Term]
 id: RBO:010013
 name: linear energy transfer
-def: "The energy deposited by an ionizing charged particle or photon in any medium per unit path length" []
+def: "The energy deposited by an ionizing charged particle or photon in any medium per unit path length." []
 synonym: "LET" EXACT []
 is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "Biological effects are a function of LET." xsd:string
@@ -6995,7 +7094,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010014
 name: organ dose
-def: "The mean absorbed radiation dose  in a specified tissue or organ of the human body" []
+def: "The mean absorbed radiation dose  in a specified tissue or organ of the human body." []
 is_a: RBO:010016 ! radiation dose
 property_value: IAO:0000112 "Radiation protection standards take into account organ dose as well as whole body dose." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -7004,7 +7103,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010015
 name: quality factor
-def: "Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed dose (D) at a point in tissue to dose equivalent (H ) at a point, where H = D ? Q. The quality factor is a specified function of unrestricted linear energy transfer in water, and is defined with respect to the particular type and energy of radiation incident on tissue at the point of interest" []
+def: "Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed " []
 is_a: OBI:0001909 ! conclusion based on data
 property_value: IAO:0000112 "Neutrons have a high quality factor compared to photons." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -7016,13 +7115,13 @@ name: radiation dose
 def: "A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \"radiation dose\" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)." []
 is_a: OBI:0000984 ! dose
 property_value: IAO:0000112 "The samples received a dose of 1 Gy. (The use of the gray unit implies that \"dose\" refers to a measured quantity, typically absorbed dose or organ dose.)" xsd:string
-property_value: IAO:0000112 "The samples received a dose of 1 Sv. (The use of the sievert unit implies that \"dose\" refers to a derived or weighted quantity, such as dose equivalent or equivalent dose.)" xsd:string
+property_value: IAO:0000112 "The samples received a dose of 1 Sv. (The use of the sievert unit implies that \"dose\" refers to a der" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 
 [Term]
 id: RBO:010017
 name: radiation quality
-def: "Currently under discussion: [A general term referring to the relative biological effectiveness of the radiation of interest. For example, the absorbed dose from an exposure to neutron radiation may be quantitatively the same as that from an exposure to gamma rays in a volume of tissue on the order of 1 cm3. However, at a higher resolution of a few micrometers the ionizing events will be more uniformly dispersed for the gamma-ray radiation than for the neutron radiation, thus producing quantitatively different biological effects (see relative biological effectiveness). }" []
+def: "Currently under discussion: [A general term referring to the relative biological effectiveness of the radiation of interest. For example, the absorbed dose from an exposure to neutron radiation may be quantitatively the same as that from an exposure to ga" []
 is_a: PATO:0001018 ! physical quality
 property_value: IAO:0000112 "Radiation quality has been commonly expressed in terms of the LET of the ionizing particles that deliver the absorbed dose. (Rossi, 1959)" xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -7040,7 +7139,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010019
 name: relative biological effectiveness
-def: "Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question required to produce an identical biological effect in a particular experimental organism or tissue" []
+def: "Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r" []
 synonym: "RBE" EXACT []
 is_a: IAO:0000109 ! measurement datum
 property_value: IAO:0000112 "Neutrons have been found to have a higher RBE than electrons. " xsd:string

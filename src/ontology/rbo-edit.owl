@@ -7,12 +7,14 @@ Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(core:=<http://purl.obolibrary.org/obo/uberon/core#>)
+Prefix(obda:=<https://w3id.org/obda/vocabulary#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/RBO.owl>
+
 Import(<http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/components/all_templates.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/bfo_import.owl>)
@@ -50,6 +52,10 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 ############################
 #   Classes
 ############################
+
+# Class: obo:RBO_00000006 (carbon-12 ion radiation)
+
+SubClassOf(obo:RBO_00000006 ObjectSomeValuesFrom(obo:RO_0000057 obo:RBO_00005005))
 
 # Class: obo:DOID_4 (disease)
 

@@ -21,150 +21,150 @@ ERROR	duplicate_definition	has_specified_output	definition	A relation between a 
 ERROR	duplicate_definition	is_specified_output_of	definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
 ERROR	duplicate_definition	has_specified_input	definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
 ERROR	duplicate_definition	is_specified_input_of	definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
-ERROR	multiple_equivalent_classes	kilogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2208
-ERROR	multiple_equivalent_classes	kilogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2212
-ERROR	multiple_equivalent_classes	centimeter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2225
-ERROR	multiple_equivalent_classes	centimeter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2229
-ERROR	multiple_equivalent_classes	millimeter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2232
-ERROR	multiple_equivalent_classes	millimeter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2236
-ERROR	multiple_equivalent_classes	micrometer	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2239
-ERROR	multiple_equivalent_classes	micrometer	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2243
-ERROR	multiple_equivalent_classes	nanometer	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2246
-ERROR	multiple_equivalent_classes	nanometer	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2250
-ERROR	multiple_equivalent_classes	picometer	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2255
-ERROR	multiple_equivalent_classes	picometer	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2259
-ERROR	multiple_equivalent_classes	milligram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2264
-ERROR	multiple_equivalent_classes	milligram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2268
-ERROR	multiple_equivalent_classes	microgram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2271
-ERROR	multiple_equivalent_classes	microgram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2275
-ERROR	multiple_equivalent_classes	nanogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2278
-ERROR	multiple_equivalent_classes	nanogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2282
-ERROR	multiple_equivalent_classes	picogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2285
-ERROR	multiple_equivalent_classes	picogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2289
-ERROR	multiple_equivalent_classes	femtogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2292
-ERROR	multiple_equivalent_classes	femtogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2296
-ERROR	multiple_equivalent_classes	millisecond	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2301
-ERROR	multiple_equivalent_classes	millisecond	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2305
-ERROR	multiple_equivalent_classes	microsecond	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2308
-ERROR	multiple_equivalent_classes	microsecond	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2312
-ERROR	multiple_equivalent_classes	picosecond	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2315
-ERROR	multiple_equivalent_classes	picosecond	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2319
-ERROR	multiple_equivalent_classes	milliampere	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2334
-ERROR	multiple_equivalent_classes	milliampere	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2338
-ERROR	multiple_equivalent_classes	microampere	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2341
-ERROR	multiple_equivalent_classes	microampere	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2345
-ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2348
-ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2352
-ERROR	multiple_equivalent_classes	millimole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2355
-ERROR	multiple_equivalent_classes	millimole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2359
-ERROR	multiple_equivalent_classes	nanomole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2362
-ERROR	multiple_equivalent_classes	nanomole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2366
-ERROR	multiple_equivalent_classes	picomole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2369
-ERROR	multiple_equivalent_classes	picomole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2373
-ERROR	multiple_equivalent_classes	femtomole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2376
-ERROR	multiple_equivalent_classes	femtomole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2380
-ERROR	multiple_equivalent_classes	attomole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2383
-ERROR	multiple_equivalent_classes	attomole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2387
-ERROR	multiple_equivalent_classes	millimolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2392
-ERROR	multiple_equivalent_classes	millimolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2396
-ERROR	multiple_equivalent_classes	micromolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2399
-ERROR	multiple_equivalent_classes	micromolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2403
-ERROR	multiple_equivalent_classes	nanomolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2406
-ERROR	multiple_equivalent_classes	nanomolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2410
-ERROR	multiple_equivalent_classes	picomolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2413
-ERROR	multiple_equivalent_classes	picomolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2417
-ERROR	multiple_equivalent_classes	millimolal	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2422
-ERROR	multiple_equivalent_classes	millimolal	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2426
-ERROR	multiple_equivalent_classes	micromolal	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2429
-ERROR	multiple_equivalent_classes	micromolal	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2433
-ERROR	multiple_equivalent_classes	nanomolal	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2436
-ERROR	multiple_equivalent_classes	nanomolal	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2440
-ERROR	multiple_equivalent_classes	picomolal	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2443
-ERROR	multiple_equivalent_classes	picomolal	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2447
-ERROR	multiple_equivalent_classes	femtomolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2450
-ERROR	multiple_equivalent_classes	femtomolar	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2454
-ERROR	multiple_equivalent_classes	kilogram per square meter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2479
-ERROR	multiple_equivalent_classes	kilogram per square meter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2483
-ERROR	multiple_equivalent_classes	kilogram per mole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2486
-ERROR	multiple_equivalent_classes	kilogram per mole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2490
-ERROR	multiple_equivalent_classes	milliliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2511
-ERROR	multiple_equivalent_classes	milliliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2515
-ERROR	multiple_equivalent_classes	microliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2522
-ERROR	multiple_equivalent_classes	microliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2526
-ERROR	multiple_equivalent_classes	nanoliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2529
-ERROR	multiple_equivalent_classes	nanoliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2533
-ERROR	multiple_equivalent_classes	picoliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2536
-ERROR	multiple_equivalent_classes	picoliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2540
-ERROR	multiple_equivalent_classes	femtoliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2543
-ERROR	multiple_equivalent_classes	femtoliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2547
-ERROR	multiple_equivalent_classes	millisievert	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2582
-ERROR	multiple_equivalent_classes	millisievert	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2586
-ERROR	multiple_equivalent_classes	microsievert	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2589
-ERROR	multiple_equivalent_classes	microsievert	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2593
-ERROR	multiple_equivalent_classes	microgray	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2598
-ERROR	multiple_equivalent_classes	microgray	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2602
-ERROR	multiple_equivalent_classes	milligray	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2605
-ERROR	multiple_equivalent_classes	milligray	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2609
-ERROR	multiple_equivalent_classes	nanogray	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2612
-ERROR	multiple_equivalent_classes	nanogray	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2616
-ERROR	multiple_equivalent_classes	nanosievert	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2619
-ERROR	multiple_equivalent_classes	nanosievert	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2623
-ERROR	multiple_equivalent_classes	millicurie	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2626
-ERROR	multiple_equivalent_classes	millicurie	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2630
-ERROR	multiple_equivalent_classes	microcurie	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2633
-ERROR	multiple_equivalent_classes	microcurie	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2637
-ERROR	multiple_equivalent_classes	nanosecond	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2644
-ERROR	multiple_equivalent_classes	nanosecond	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2648
-ERROR	multiple_equivalent_classes	microeinstein per square meter per second	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2663
-ERROR	multiple_equivalent_classes	microeinstein per square meter per second	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2667
-ERROR	multiple_equivalent_classes	kilogram per liter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2692
-ERROR	multiple_equivalent_classes	kilogram per liter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2696
-ERROR	multiple_equivalent_classes	milligram per milliliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2701
-ERROR	multiple_equivalent_classes	milligram per milliliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2705
-ERROR	multiple_equivalent_classes	milliliter per kilogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2734
-ERROR	multiple_equivalent_classes	milliliter per kilogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2738
-ERROR	multiple_equivalent_classes	microliter per kilogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2741
-ERROR	multiple_equivalent_classes	microliter per kilogram	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2745
-ERROR	multiple_equivalent_classes	deciliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2760
-ERROR	multiple_equivalent_classes	deciliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2764
-ERROR	multiple_equivalent_classes	kilodalton	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2783
-ERROR	multiple_equivalent_classes	kilodalton	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2787
-ERROR	multiple_equivalent_classes	kilowatt-hour	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2792
-ERROR	multiple_equivalent_classes	kilowatt-hour	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2796
-ERROR	multiple_equivalent_classes	kilovolt-hour	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2805
-ERROR	multiple_equivalent_classes	kilovolt-hour	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2809
-ERROR	multiple_equivalent_classes	kilobyte	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2816
-ERROR	multiple_equivalent_classes	kilobyte	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2820
-ERROR	multiple_equivalent_classes	megabyte	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2823
-ERROR	multiple_equivalent_classes	megabyte	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2827
-ERROR	multiple_equivalent_classes	millivolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2848
-ERROR	multiple_equivalent_classes	millivolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2852
-ERROR	multiple_equivalent_classes	kilovolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2855
-ERROR	multiple_equivalent_classes	kilovolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2859
-ERROR	multiple_equivalent_classes	microvolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2862
-ERROR	multiple_equivalent_classes	microvolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2866
-ERROR	multiple_equivalent_classes	nanovolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2869
-ERROR	multiple_equivalent_classes	nanovolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2873
-ERROR	multiple_equivalent_classes	picovolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2876
-ERROR	multiple_equivalent_classes	picovolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2880
-ERROR	multiple_equivalent_classes	megavolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2883
-ERROR	multiple_equivalent_classes	megavolt	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2887
-ERROR	multiple_equivalent_classes	milligram per liter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2916
-ERROR	multiple_equivalent_classes	milligram per liter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2920
-ERROR	multiple_equivalent_classes	microgram per milliliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2923
-ERROR	multiple_equivalent_classes	microgram per milliliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2927
-ERROR	multiple_equivalent_classes	nanogram per milliliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2930
-ERROR	multiple_equivalent_classes	nanogram per milliliter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2934
-ERROR	multiple_equivalent_classes	microgram per liter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2949
-ERROR	multiple_equivalent_classes	microgram per liter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2953
-ERROR	multiple_equivalent_classes	milligram per square meter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2958
-ERROR	multiple_equivalent_classes	milligram per square meter	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2962
-ERROR	multiple_equivalent_classes	millisiemens	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2987
-ERROR	multiple_equivalent_classes	millisiemens	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid2991
-ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid3066
-ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid3070
-ERROR	multiple_equivalent_classes	picoampere	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid3081
-ERROR	multiple_equivalent_classes	picoampere	owl:equivalentClass	b5a2ed5d-fbef-4b65-9214-1d4312db4cabgenid3085
+ERROR	multiple_equivalent_classes	kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2201
+ERROR	multiple_equivalent_classes	kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2205
+ERROR	multiple_equivalent_classes	centimeter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2218
+ERROR	multiple_equivalent_classes	centimeter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2222
+ERROR	multiple_equivalent_classes	millimeter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2225
+ERROR	multiple_equivalent_classes	millimeter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2229
+ERROR	multiple_equivalent_classes	micrometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2232
+ERROR	multiple_equivalent_classes	micrometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2236
+ERROR	multiple_equivalent_classes	nanometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2239
+ERROR	multiple_equivalent_classes	nanometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2243
+ERROR	multiple_equivalent_classes	picometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2248
+ERROR	multiple_equivalent_classes	picometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2252
+ERROR	multiple_equivalent_classes	milligram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2257
+ERROR	multiple_equivalent_classes	milligram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2261
+ERROR	multiple_equivalent_classes	microgram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2264
+ERROR	multiple_equivalent_classes	microgram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2268
+ERROR	multiple_equivalent_classes	nanogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2271
+ERROR	multiple_equivalent_classes	nanogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2275
+ERROR	multiple_equivalent_classes	picogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2278
+ERROR	multiple_equivalent_classes	picogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2282
+ERROR	multiple_equivalent_classes	femtogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2285
+ERROR	multiple_equivalent_classes	femtogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2289
+ERROR	multiple_equivalent_classes	millisecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2294
+ERROR	multiple_equivalent_classes	millisecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2298
+ERROR	multiple_equivalent_classes	microsecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2301
+ERROR	multiple_equivalent_classes	microsecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2305
+ERROR	multiple_equivalent_classes	picosecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2308
+ERROR	multiple_equivalent_classes	picosecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2312
+ERROR	multiple_equivalent_classes	milliampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2327
+ERROR	multiple_equivalent_classes	milliampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2331
+ERROR	multiple_equivalent_classes	microampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2334
+ERROR	multiple_equivalent_classes	microampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2338
+ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2341
+ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2345
+ERROR	multiple_equivalent_classes	millimole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2348
+ERROR	multiple_equivalent_classes	millimole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2352
+ERROR	multiple_equivalent_classes	nanomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2355
+ERROR	multiple_equivalent_classes	nanomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2359
+ERROR	multiple_equivalent_classes	picomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2362
+ERROR	multiple_equivalent_classes	picomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2366
+ERROR	multiple_equivalent_classes	femtomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2369
+ERROR	multiple_equivalent_classes	femtomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2373
+ERROR	multiple_equivalent_classes	attomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2376
+ERROR	multiple_equivalent_classes	attomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2380
+ERROR	multiple_equivalent_classes	millimolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2385
+ERROR	multiple_equivalent_classes	millimolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2389
+ERROR	multiple_equivalent_classes	micromolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2392
+ERROR	multiple_equivalent_classes	micromolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2396
+ERROR	multiple_equivalent_classes	nanomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2399
+ERROR	multiple_equivalent_classes	nanomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2403
+ERROR	multiple_equivalent_classes	picomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2406
+ERROR	multiple_equivalent_classes	picomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2410
+ERROR	multiple_equivalent_classes	millimolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2415
+ERROR	multiple_equivalent_classes	millimolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2419
+ERROR	multiple_equivalent_classes	micromolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2422
+ERROR	multiple_equivalent_classes	micromolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2426
+ERROR	multiple_equivalent_classes	nanomolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2429
+ERROR	multiple_equivalent_classes	nanomolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2433
+ERROR	multiple_equivalent_classes	picomolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2436
+ERROR	multiple_equivalent_classes	picomolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2440
+ERROR	multiple_equivalent_classes	femtomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2443
+ERROR	multiple_equivalent_classes	femtomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2447
+ERROR	multiple_equivalent_classes	kilogram per square meter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2472
+ERROR	multiple_equivalent_classes	kilogram per square meter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2476
+ERROR	multiple_equivalent_classes	kilogram per mole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2479
+ERROR	multiple_equivalent_classes	kilogram per mole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2483
+ERROR	multiple_equivalent_classes	milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2504
+ERROR	multiple_equivalent_classes	milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2508
+ERROR	multiple_equivalent_classes	microliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2515
+ERROR	multiple_equivalent_classes	microliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2519
+ERROR	multiple_equivalent_classes	nanoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2522
+ERROR	multiple_equivalent_classes	nanoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2526
+ERROR	multiple_equivalent_classes	picoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2529
+ERROR	multiple_equivalent_classes	picoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2533
+ERROR	multiple_equivalent_classes	femtoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2536
+ERROR	multiple_equivalent_classes	femtoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2540
+ERROR	multiple_equivalent_classes	millisievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2575
+ERROR	multiple_equivalent_classes	millisievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2579
+ERROR	multiple_equivalent_classes	microsievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2582
+ERROR	multiple_equivalent_classes	microsievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2586
+ERROR	multiple_equivalent_classes	microgray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2591
+ERROR	multiple_equivalent_classes	microgray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2595
+ERROR	multiple_equivalent_classes	milligray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2598
+ERROR	multiple_equivalent_classes	milligray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2602
+ERROR	multiple_equivalent_classes	nanogray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2605
+ERROR	multiple_equivalent_classes	nanogray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2609
+ERROR	multiple_equivalent_classes	nanosievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2612
+ERROR	multiple_equivalent_classes	nanosievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2616
+ERROR	multiple_equivalent_classes	millicurie	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2619
+ERROR	multiple_equivalent_classes	millicurie	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2623
+ERROR	multiple_equivalent_classes	microcurie	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2626
+ERROR	multiple_equivalent_classes	microcurie	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2630
+ERROR	multiple_equivalent_classes	nanosecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2637
+ERROR	multiple_equivalent_classes	nanosecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2641
+ERROR	multiple_equivalent_classes	microeinstein per square meter per second	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2656
+ERROR	multiple_equivalent_classes	microeinstein per square meter per second	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2660
+ERROR	multiple_equivalent_classes	kilogram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2685
+ERROR	multiple_equivalent_classes	kilogram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2689
+ERROR	multiple_equivalent_classes	milligram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2694
+ERROR	multiple_equivalent_classes	milligram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2698
+ERROR	multiple_equivalent_classes	milliliter per kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2727
+ERROR	multiple_equivalent_classes	milliliter per kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2731
+ERROR	multiple_equivalent_classes	microliter per kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2734
+ERROR	multiple_equivalent_classes	microliter per kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2738
+ERROR	multiple_equivalent_classes	deciliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2753
+ERROR	multiple_equivalent_classes	deciliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2757
+ERROR	multiple_equivalent_classes	kilodalton	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2776
+ERROR	multiple_equivalent_classes	kilodalton	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2780
+ERROR	multiple_equivalent_classes	kilowatt-hour	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2785
+ERROR	multiple_equivalent_classes	kilowatt-hour	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2789
+ERROR	multiple_equivalent_classes	kilovolt-hour	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2798
+ERROR	multiple_equivalent_classes	kilovolt-hour	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2802
+ERROR	multiple_equivalent_classes	kilobyte	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2809
+ERROR	multiple_equivalent_classes	kilobyte	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2813
+ERROR	multiple_equivalent_classes	megabyte	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2816
+ERROR	multiple_equivalent_classes	megabyte	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2820
+ERROR	multiple_equivalent_classes	millivolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2841
+ERROR	multiple_equivalent_classes	millivolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2845
+ERROR	multiple_equivalent_classes	kilovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2848
+ERROR	multiple_equivalent_classes	kilovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2852
+ERROR	multiple_equivalent_classes	microvolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2855
+ERROR	multiple_equivalent_classes	microvolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2859
+ERROR	multiple_equivalent_classes	nanovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2862
+ERROR	multiple_equivalent_classes	nanovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2866
+ERROR	multiple_equivalent_classes	picovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2869
+ERROR	multiple_equivalent_classes	picovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2873
+ERROR	multiple_equivalent_classes	megavolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2876
+ERROR	multiple_equivalent_classes	megavolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2880
+ERROR	multiple_equivalent_classes	milligram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2909
+ERROR	multiple_equivalent_classes	milligram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2913
+ERROR	multiple_equivalent_classes	microgram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2916
+ERROR	multiple_equivalent_classes	microgram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2920
+ERROR	multiple_equivalent_classes	nanogram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2923
+ERROR	multiple_equivalent_classes	nanogram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2927
+ERROR	multiple_equivalent_classes	microgram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2942
+ERROR	multiple_equivalent_classes	microgram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2946
+ERROR	multiple_equivalent_classes	milligram per square meter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2951
+ERROR	multiple_equivalent_classes	milligram per square meter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2955
+ERROR	multiple_equivalent_classes	millisiemens	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2980
+ERROR	multiple_equivalent_classes	millisiemens	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2984
+ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid3059
+ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid3063
+ERROR	multiple_equivalent_classes	picoampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid3074
+ERROR	multiple_equivalent_classes	picoampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid3078
 ERROR	missing_label	dc:license	rdfs:label	
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	role	rdfs:label	role
@@ -176,8 +176,6 @@ ERROR	duplicate_label	micromole	rdfs:label	micromole
 ERROR	duplicate_label	micromole	rdfs:label	micromole
 ERROR	duplicate_label	ionizing radiation	rdfs:label	ionizing radiation
 ERROR	duplicate_label	ionizing radiation	rdfs:label	ionizing radiation
-ERROR	duplicate_label	cellular process	rdfs:label	cellular process
-ERROR	duplicate_label	cellular process	rdfs:label	cellular process
 ERROR	multiple_definitions	independent continuant	definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
 ERROR	multiple_definitions	independent continuant	definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
 ERROR	multiple_definitions	process	definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
@@ -291,6 +289,10 @@ WARN	annotation_whitespace	Stage IIA (FIGO)	definition	An International Federati
 WARN	annotation_whitespace	Stage IIA1 (FIGO)	definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. 
 WARN	annotation_whitespace	Stage IIA2 (FIGO)	definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
 WARN	annotation_whitespace	Stage IIB (FIGO)	definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
+WARN	annotation_whitespace	ionizing radiation energy	definition	The kinetic energy carried by a particle or photon of ionizing radiation. 
+WARN	annotation_whitespace	biodosimetry	definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
+WARN	annotation_whitespace	delta ray	definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
+WARN	annotation_whitespace	quality factor	definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
 WARN	annotation_whitespace	relative biological effectiveness	example of usage	Neutrons have been found to have a higher RBE than electrons. 
 WARN	annotation_whitespace	spatially disjoint from	IAO:0000116	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
 WARN	annotation_whitespace	capable of	definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
@@ -361,6 +363,7 @@ WARN	missing_definition	sodium chloride	definition
 WARN	missing_definition	sodium molecular entity	definition	
 WARN	missing_definition	sodium salt	definition	
 WARN	missing_definition	inorganic hydride	definition	
+WARN	missing_definition	atomic nucleus	definition	
 WARN	missing_definition	elemental molecular entity	definition	
 WARN	missing_definition	elemental oxygen	definition	
 WARN	missing_definition	diatomic oxygen	definition	
@@ -388,6 +391,7 @@ WARN	missing_definition	halide salt	definition
 WARN	missing_definition	alkali metal salt	definition	
 WARN	missing_definition	inorganic chloride	definition	
 WARN	missing_definition	subatomic particle	definition	
+WARN	missing_definition	nuclear particle	definition	
 WARN	missing_definition	polyatomic entity	definition	
 WARN	missing_definition	chalcogen hydride	definition	
 WARN	missing_definition	argon molecular entity	definition	
@@ -466,7 +470,6 @@ WARN	missing_definition	neptunium	definition
 WARN	missing_definition	plutonium	definition	
 WARN	missing_definition	thorium	definition	
 WARN	missing_definition	uranium	definition	
-WARN	missing_definition	ultraviolet radiation	definition	
 WARN	missing_definition	radioprotectant	definition	
 WARN	missing_definition	radionuclide chelator	definition	
 WARN	missing_definition	co-carcinogen	definition	
@@ -509,14 +512,8 @@ WARN	missing_definition	endocrine study	definition
 WARN	missing_definition	offspring study	definition	
 WARN	missing_definition	biokinetics study	definition	
 WARN	missing_definition	occupational role	definition	
-WARN	missing_definition	ionizing electromagnetic radiation	definition	
-WARN	missing_definition	ionizing radiation	definition	
-WARN	missing_definition	charged particle radiation	definition	
 WARN	missing_definition	risk estimate	definition	
 WARN	missing_definition	lifetime risk estimate	definition	
-WARN	missing_definition	gamma radiation	definition	
-WARN	missing_definition	particle accelerator	definition	
-WARN	missing_definition	nuclear reactor	definition	
 WARN	missing_definition	biological process	definition	
 WARN	missing_definition	cellular process	definition	
 WARN	missing_definition	has component activity	definition	
@@ -870,6 +867,7 @@ INFO	lowercase_definition	GenePattern software	definition	a software that provid
 INFO	lowercase_definition	service provider role	definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
 INFO	lowercase_definition	leave one out cross validation method	definition	<is a data transformation : leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data>
 INFO	lowercase_definition	spacecraft module	definition	a self-contained unit of a spacecraft
+INFO	lowercase_definition	gamma radiation	definition	electromagnetic radiation with photon energies greater than approximately 100 keV
 INFO	lowercase_definition	inheres in	definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	bearer of	definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	participates in	definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en

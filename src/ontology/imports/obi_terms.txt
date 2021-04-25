@@ -1,6 +1,10 @@
 obo:IAO_0000104 # plan specification
+obo:IAO:0000003 # measurement unit label
 obo:OBI_0001909 # conclusion based on data
 obo:OBI_0000968 # device
-obo:IAO_0000109
-obo:OBI_0000011
-obo:OBI_0000984
+obo:IAO_0000109 # measurement datum
+obo:OBI_0000011 # planned process
+obo:OBI_0000984 # dose
+obo:OBI_0000272 # protocol
+obo:OBI_0002983 # altitude measurement datum
+
