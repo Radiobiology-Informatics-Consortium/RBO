@@ -16,8 +16,8 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/envo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-04-02/imports/envo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-02</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-04-25/imports/envo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3018,7 +3018,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>Geonames:T.TAL</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SWEETRealm:Talus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TGN:21508</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>TALUS</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>talus slope</oboInOwl:hasRelatedSynonym>
@@ -3029,7 +3029,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000194"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Broken rock that appears at the bottom of crags, mountain cliffs or valley shoulders.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000194"/>
@@ -5717,6 +5717,22 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000604">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003074"/>
+        <obo:IAO_0000115>A vehicle is a mobile machine which transports people or cargo.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vehicle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A vehicle is a mobile machine which transports people or cargo.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Vehicle</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000617 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000617">
@@ -8085,15 +8101,15 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
-        <owl:annotatedTarget>LTER:173</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=173&amp;/ecosystems</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An environmental system which includes both living and non-living components.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Ecosystem</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+        <owl:annotatedTarget>LTER:173</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://vocab.lternet.edu/vocab/vocab/index.php?tema=173&amp;/ecosystems</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9524,6 +9540,24 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
         <rdfs:comment>a useful class: this can be used to define sub-terrestrial and sub-marine entities</rdfs:comment>
         <rdfs:label xml:lang="en">surface of an astronomical body</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000604"/>
+        <obo:IAO_0000115>A vehicle which is able to travel through air in an atmosphere.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-10-04T19:28:01Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">aircraft</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001488"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A vehicle which is able to travel through air in an atmosphere.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Aircraft</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
