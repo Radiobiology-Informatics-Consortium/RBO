@@ -7,8 +7,6 @@ bin/
 *.tmp.owl
 *.tmp.json
 
-src/ontology/mirror
-src/ontology/mirror/*
 src/ontology/rbo.owl
 src/ontology/rbo.obo
 src/ontology/rbo.json
@@ -39,5 +37,7 @@ src/patterns/all_pattern_terms.txt
 src/ontology/rbo-edit.owl.orig
 *.bak
 src/templates/RBO_terms.template
-*.pem
 key
+*.pem
+
+src/ontology/mirror

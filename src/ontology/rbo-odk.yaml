@@ -20,6 +20,8 @@ import_group:
   - id: envo
   - id: obi
   - id: uo
+  - id: doid
+    mirror_from: http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl
 obo_format_options: ''
 primary_release: full
 reasoner: ELK

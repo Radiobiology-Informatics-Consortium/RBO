@@ -75,7 +75,9 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ro bfo pato chmo envo obi uo chebi
+
+IMPORTS =  ro bfo pato chmo envo obi uo chebi doid
+
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -228,6 +230,9 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: imports/%_import.owl
 
+imports/doid_import.owl: 
+	cp mirror/doid.owl imports/doid_import.owl
+
 # convert imports to obo.
 # this can be useful for spot-checks and diffs.
 # we set strict mode to false by default. For discussion see https://github.com/owlcs/owlapi/issues/752
@@ -317,7 +322,6 @@ mirror/obi.owl: mirror/obi.trigger
 
 .PRECIOUS: mirror/%.owl
 
-
 ## ONTOLOGY: uo
 ## Copy of uo is re-downloaded whenever source changes
 mirror/uo.trigger: $(SRC)
@@ -336,7 +340,14 @@ mirror/chebi.owl: mirror/chebi.trigger
 
 .PRECIOUS: mirror/%.owl
 
+## ONTOLOGY: doid RAD Slim
+## Copy of doid Slim is re-downloaded whenever source changes
+mirror/doid.trigger: $(SRC)
 
+mirror/doid.owl: mirror/doid.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/doid/subsets/DO_RAD_slim.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
 
 # ----------------------------------------
 # Subsets
