@@ -76,7 +76,7 @@ all_main: $(MAIN_FILES)
 
 
 
-IMPORTS =  ro bfo pato chmo envo obi uo chebi doid
+IMPORTS =  ro bfo pato chmo envo obi uo chebi doid uberon
 
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
@@ -232,6 +232,16 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 
 imports/doid_import.owl: 
 	cp mirror/doid.owl imports/doid_import.owl
+
+imports/uberon_import.owl: mirror/uberon.owl imports/uberon_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uberon_terms_combined.txt --force true --method STAR \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+imports/uo_import.owl: mirror/uo.owl imports/uo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uo_terms_combined.txt --force true --method BOT --individuals exclude \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 # convert imports to obo.
 # this can be useful for spot-checks and diffs.
