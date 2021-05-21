@@ -30,6 +30,9 @@
   <uri name="http://purl.obolibrary.org/obo/rbo/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/rbo/imports/uberon_import.obo" uri="imports/uberon_import.obo"/>
   
+  <uri name="http://purl.obolibrary.org/obo/rbo/imports/cob_import.owl" uri="imports/cob_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/rbo/imports/cob_import.obo" uri="imports/cob_import.obo"/>
+  
   <uri name="http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl" uri="imports/doid_import.owl"/>
 
   <uri name="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl" uri="components/all_templates.owl"/>
