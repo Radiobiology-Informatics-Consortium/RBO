@@ -1,30 +1,33 @@
 format-version: 1.2
-data-version: rbo/releases/2021-02-26/rbo-base.owl
+data-version: rbo/releases/2021-05-21/rbo-base.owl
 ontology: rbo/rbo-base
-property_value: http://purl.org/dc/elements/1.1/description "The RBO is an ontology about Radiation Biology, with emphasis on Space Biology." xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Radiation Biology Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: owl:versionInfo "2021-02-26" xsd:string
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
+property_value: owl:versionInfo "2021-05-21" xsd:string
+
+[Term]
+id: DOID:4
+is_a: BFO:0000016
 
 [Term]
 id: RBO:00000001
-name: ionizing radiation by source
-def: "Ionizing radiation classified by its origin" []
-synonym: "ionizing radiation source" EXACT []
+name: ionizing radiation categorized by source
+def: "Ionizing radiation classified by the material entity which generates or emits it." []
 is_a: RBO:00000116 ! ionizing radiation
-property_value: IAO:0000111 "ionizing radiation source" xsd:string
 
 [Term]
 id: RBO:00000002
 name: space radiation
 def: "Radiation originating outside the Earth's atmosphere." []
-is_a: RBO:00000001 ! ionizing radiation by source
+is_a: RBO:00000001 ! ionizing radiation categorized by source
 
 [Term]
 id: RBO:00000003
 name: ground radiation
 def: "Radiation produced on Earth or on another planetary body by natural or artificial means." []
-is_a: RBO:00000001 ! ionizing radiation by source
+is_a: RBO:00000001 ! ionizing radiation categorized by source
 property_value: IAO:0000112 "One of the principal sources of ground radiation is radon gas." xsd:string
 
 [Term]
@@ -36,51 +39,39 @@ property_value: IAO:0000119 "ICRP glossary (http://icrpaedia.org/Tissue_equivale
 
 [Term]
 id: RBO:00000005
-name: iron-56 ion radiation
+name: Fe-56 ion radiation
 def: "Atomic nuclei, each with 26 protons and 30 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
-synonym: "Iron-56, Fe-56, 56Fe" EXACT []
 is_a: RBO:00005001 ! heavy ion radiation
-property_value: IAO:0000111 "Fe-56" xsd:string
 
 [Term]
 id: RBO:00000006
-name: carbon-12 ion radiation
+name: C-12 ion radiation
 def: "Atomic nuclei, each with 6 protons and 6 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
-synonym: "carbon-12, 12C, 12-C" EXACT []
 is_a: RBO:00005001 ! heavy ion radiation
-is_a: RBO:00005002 ! light ion radiation
-relationship: RO:0000057 RBO:00005005 ! carbon-12 nucleus
-property_value: IAO:0000111 "C-12" xsd:string
 
 [Term]
 id: RBO:00000007
-name: silicon-28 ion radiation
+name: Si-28 ion radiation
 def: "Atomic nuclei, each with 14 protons and 14 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
-synonym: "silicon-28, 28Si, Si-28" EXACT []
 is_a: RBO:00005001 ! heavy ion radiation
-property_value: IAO:0000111 "Si-28" xsd:string
 
 [Term]
 id: RBO:00000008
-name: helium-4 ion radiation
+name: He-4 ion radiation
 def: "Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
-synonym: "helium-4, 4He, He-4" EXACT []
 is_a: RBO:00005001 ! heavy ion radiation
-is_a: RBO:00005002 ! light ion radiation
-property_value: IAO:0000111 "He-4" xsd:string
 
 [Term]
 id: RBO:00000009
-name: neon-20 ion radiation
+name: Ne-20 ion radiation
 def: "Atomic nuclei, each with 10 protons and 10 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
-synonym: "neon-20, 20Ne, Ne-20" EXACT []
 is_a: RBO:00005001 ! heavy ion radiation
-property_value: IAO:0000111 "Ne-20" xsd:string
 
 [Term]
 id: RBO:00000010
 name: light ion
 def: "An atomic nucleus, fully stripped of its orbital electrons, and containing 2, 3, 4, 5, or 6 protons." []
+is_a: CHEBI:33252
 is_a: RBO:00005003 ! charged particle
 
 [Term]
@@ -140,7 +131,7 @@ is_a: RBO:00000016 ! radiation environment
 [Term]
 id: RBO:00000019
 name: low Earth orbit
-def: "The region between the Earth's atmosphere and the innermost Earth radiation belt" []
+def: "The region of outer space between the Earth's atmosphere and the innermost Earth radiation belt" []
 synonym: "LEO" EXACT []
 is_a: ENVO:01000637
 property_value: IAO:0000111 "LEO" xsd:string
@@ -156,15 +147,16 @@ property_value: IAO:0000111 "BLEO" xsd:string
 [Term]
 id: RBO:00000021
 name: fractionated radiation exposure
-def: "A radiation dose administered in multiple exposures at specified time intervals" []
-is_a: PATO:0001744
+def: "A radiation dose administered in two or more exposures at specified time intervals" []
+is_a: RBO:00000082 ! radiobiology study type
+property_value: IAO:0000111 "fractionated" xsd:string
 
 [Term]
 id: RBO:00000022
 name: millirad
 def: "A unit of absorbed dose equal to 1/1000 of a rad" []
 synonym: "mrad" EXACT []
-is_a: UO:0000129
+is_a: UO:1000135
 
 [Term]
 id: RBO:00000023
@@ -574,6 +566,7 @@ is_a: RBO:00000116 ! ionizing radiation
 id: RBO:00000115
 name: radiation dosimeter device
 def: "A device that is used to measure the amount of ionizing radiation exposure or absorption." []
+synonym: "dosimeter" EXACT []
 xref: NCIT:C150121
 is_a: OBI:0000968
 property_value: IAO:0000111 "radiation dosimeter" xsd:string
@@ -584,6 +577,7 @@ property_value: IAO:0000119 "NCIT" xsd:string
 id: RBO:00000116
 name: ionizing radiation
 def: "Particle or electromagnetic radiation with sufficient energy to liberate one or more electrons from an atom." []
+synonym: "ionising radiation" EXACT []
 xref: NCIT:C17052
 is_a: ENVO:01001023
 property_value: IAO:0000118 "ionising radiation" xsd:string
@@ -595,6 +589,7 @@ def: "Charged particles with kinetic energy imparted by natural or artificial me
 xref: NCIT:C18982
 is_a: ENVO:01001024
 property_value: IAO:0000111 "charged particle" xsd:string
+property_value: IAO:0000118 "charged particle" xsd:string
 
 [Term]
 id: RBO:00000118
@@ -622,6 +617,7 @@ name: particle accelerator
 def: "A device used to impart kinetic energy to subatomic particles by means of electric and magnetic fields" []
 xref: NCIT:C94854
 is_a: OBI:0000968
+is_a: RBO:00005014 ! radiation source
 
 [Term]
 id: RBO:00000122
@@ -629,6 +625,7 @@ name: nuclear reactor
 def: "A device in which nuclear fission may be initiated and controlled in a self-sustaining chain reaction to generate energy or produce useful radiation." []
 xref: MESH:D009688
 is_a: OBI:0000968
+is_a: RBO:00005014 ! radiation source
 
 [Term]
 id: RBO:00000123
@@ -641,6 +638,66 @@ id: RBO:00000124
 name: cellular process
 xref: GO:0009987
 is_a: RBO:00000123 ! biological process
+
+[Term]
+id: RBO:00000125
+name: O-16 ion radiation
+def: "Atomic nuclei, each with 8 protons and 8 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000126
+name: Ar-40  ion radiation
+def: "Atomic nuclei, each with 18 protons and 22 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000127
+name: Ti-48  ion radiation
+def: "Atomic nuclei, each with 22 protons and 26 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000128
+name: Kr-84 ion radiation
+def: "Atomic nuclei, each with 36 protons and 48 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000129
+name: Nb-93 ion radiation
+def: "Atomic nuclei, each with 41 protons and 52 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000130
+name: Ag-107 ion radiation
+def: "Atomic nuclei, each with 47 protons and 60 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000131
+name: Xe-129 ion radiation
+def: "Atomic nuclei, each with 54 protons and 75 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000132
+name: Ta-181 ion radiation
+def: "Atomic nuclei, each with 73 protons and 108 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000133
+name: Au-197 ion radiation
+def: "Atomic nuclei, each with 79 protons and 118 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
+
+[Term]
+id: RBO:00000134
+name: N-14 ion radiation
+def: "Atomic nuclei, each with 7 protons and 7 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)" []
+is_a: RBO:00005001 ! heavy ion radiation
 
 [Term]
 id: RBO:00005001
@@ -662,37 +719,32 @@ is_a: BFO:0000040
 
 [Term]
 id: RBO:00005004
-name: iron-56 nucleus
-def: "An atomic nucleus with 26 protons and 30 neutrons" []
-synonym: "Fe-56, 56Fe" EXACT []
+name: Iron-56 nucleus
+def: "An atomic nucleus with 26 protons and 30 neutrons " []
 is_a: RBO:010012 ! heavy ion
 
 [Term]
 id: RBO:00005005
-name: carbon-12 nucleus
-def: "An atomic nucleus with 6 protons and 6 neutrons" []
-synonym: "12C, 12-C" EXACT []
+name: Silicon-28 nucleus
+def: "An atomic nucleus with 14 protons and 14 neutrons " []
 is_a: RBO:010012 ! heavy ion
 
 [Term]
 id: RBO:00005006
-name: silicon-28 nucleus
-def: "An atomic nucleus with 14 protons and 14 neutrons" []
-synonym: "28Si, Si-28" EXACT []
+name: Carbon-12 nucleus
+def: "An atomic nucleus with 6 protons and 6 neutrons " []
 is_a: RBO:010012 ! heavy ion
 
 [Term]
 id: RBO:00005007
-name: helium-4 nucleus
-def: "An atomic nucleus with 2 protons and 2 neutrons" []
-synonym: "4He, He-4" EXACT []
+name: Helium-4 nucleus
+def: "An atomic nucleus with 2 protons and 2 neutrons " []
 is_a: RBO:010012 ! heavy ion
 
 [Term]
 id: RBO:00005008
-name: neon-20 nucleus
-def: "An atomic nucleus with 10 protons and 10 neutrons" []
-synonym: "20Ne, Ne-20" EXACT []
+name: Neon-20 nucleus
+def: "An atomic nucleus with 10 protons and 10 neutrons " []
 is_a: RBO:010012 ! heavy ion
 
 [Term]
@@ -707,18 +759,21 @@ id: RBO:00005010
 name: absorbed radiation dose
 def: "The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium." []
 is_a: RBO:010016 ! radiation dose
+property_value: IAO:0000117 "Jack Miller" xsd:string
 
 [Term]
 id: RBO:00005011
 name: absorbed radiation dose rate
 def: "The  amount of energy from any type of ionizing radiation deposited in a specified mass of any medium per unit time." []
 is_a: RBO:00000029 ! dose rate
+property_value: IAO:0000117 "Jack Miller" xsd:string
 
 [Term]
 id: RBO:00005012
 name: ionizing radiation energy
 def: "The kinetic energy carried by a particle or photon of ionizing radiation. " []
 is_a: RBO:00000116 ! ionizing radiation
+property_value: IAO:0000117 "Jack Miller" xsd:string
 
 [Term]
 id: RBO:00005013
@@ -726,8 +781,305 @@ name: x-ray radiation
 def: "Electromagnetic radiation with photon energies approximately between 0.1 and 120 keV. The upper end of the x-ray spectrum overlaps with the lower end of the gamma ray spectrum." []
 is_a: RBO:00000114 ! ionizing electromagnetic radiation
 property_value: IAO:0000111 "x-ray" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000118 "x-ray" xsd:string
 property_value: IAO:0000119 http://son.nasa.gov/tass/content/electrospectrum.htm xsd:string
+
+[Term]
+id: RBO:00005014
+name: radiation source
+def: "A material entity which emits radiation" []
+is_a: BFO:0000040
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005015
+name: sham irradiation
+def: "A protocol in which a sample is kept under conditions identical to irradiated samples, without exposure" []
+is_a: OBI:0000272
+property_value: IAO:0000111 "sham irradiation" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "sham" xsd:string
+
+[Term]
+id: RBO:00005016
+name: radiation fractionation protocol
+def: "A protocol for administering a total radiation dose in two or more increments separated by a specified time interval" []
+is_a: IAO:0000104
+property_value: IAO:0000111 "fractionation protocol" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "fractionation protocol" xsd:string
+
+[Term]
+id: RBO:00005017
+name: cis-lunar space
+def: "The region of space between the Earth and the Moon" []
+is_a: RBO:00000016 ! radiation environment
+property_value: IAO:0000111 "cis-lunar space" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005018
+name: lunar orbit
+def: "A region of space defined by a regular, repeating path of a specified object about Earth's moon" []
+is_a: RBO:00000016 ! radiation environment
+property_value: IAO:0000111 "lunar orbit" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005019
+name: lunar surface
+def: "The area of the lunar landmass exposed to space" []
+is_a: RBO:00000016 ! radiation environment
+property_value: IAO:0000111 "lunar surface" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005020
+name: cis-Mars space
+def: "The region of space between the Earth and Mars" []
+is_a: RBO:00000016 ! radiation environment
+property_value: IAO:0000111 "cis-Mars space" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005021
+name: Mars orbit
+def: "A region of space defined by a regular, repeating path of a specified object about Mars" []
+is_a: RBO:00000016 ! radiation environment
+property_value: IAO:0000111 "Mars orbit" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005022
+name: Mars surface
+def: "The area of the Mars landmass exposed to the Martian atmosphere" []
+is_a: RBO:00000016 ! radiation environment
+property_value: IAO:0000111 "Mars surface" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005023
+name: interplanetary space
+def: "The region of space in the Solar System between planets" []
+is_a: RBO:00000016 ! radiation environment
+property_value: IAO:0000111 "interplanetary space" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005024
+name: planet surface
+def: "The outermost solid or liquid area of a planet" []
+is_a: RBO:00000016 ! radiation environment
+property_value: IAO:0000111 "planet surface" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005025
+name: non-irradiated
+def: "An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation " []
+is_a: PATO:0001744
+property_value: IAO:0000111 "non-irradiated" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005026
+name: ground analog study
+def: "A study at a ground facility designed so as to replicate one or more conditions in space (e.g. radiation, microgravity, isolation)" []
+is_a: RBO:00000082 ! radiobiology study type
+property_value: IAO:0000111 "ground analog experiment" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "ground analog" xsd:string
+
+[Term]
+id: RBO:00005027
+name: ground control study
+def: "An study at a ground facility designed so as to replicate conditions in space (e.g. radiation, microgravity, isolation) with the exception of one condition, so as to ascertain the effects of that condition on an organism or instrument" []
+is_a: RBO:00000082 ! radiobiology study type
+property_value: IAO:0000111 "ground control" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "ground control" xsd:string
+
+[Term]
+id: RBO:00005028
+name: irradiation protocol
+def: "A protocol for administering radiation to a sample " []
+is_a: ENVO:01001488
+property_value: IAO:0000111 "irradiation protocol" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005029
+name: radiation fraction
+def: "One of the series of individual doses administered to a sample in a fractionated irradiation." []
+is_a: RBO:00000024 ! dose fraction
+property_value: IAO:0000111 "radiation fraction" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "fraction" xsd:string
+
+[Term]
+id: RBO:00005030
+name: radiation fraction interval
+def: "Time between fractions in a fractionated irradiation." []
+is_a: RBO:00000029 ! dose rate
+property_value: IAO:0000111 "radiation fraction interval" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005031
+name: high altitude
+def: "The region of the atmosphere above 8000 feet above sea level. Altitudes above 12000 feet are sometimes referred to as very high altitude, and above 18000 feet as extremely high altitude." []
+is_a: OBI:0002983
+property_value: IAO:0000111 "high altitude" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 https://www.medicinenet.com/high_altitude/definition.htm xsd:string
+
+[Term]
+id: RBO:00005032
+name: sham-irradiated
+def: "A radiation quality resulting from a material entity being kept under similar conditions as an irradiated material entity" []
+is_a: RBO:00005025 ! non-irradiated
+property_value: IAO:0000111 "sham" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005033
+name: parabolic flight aircraft
+def: "An aircraft which flies a series of parabolic arcs to simulate micrgravity." []
+is_a: ENVO:01001488
+property_value: IAO:0000111 "parabolic flight" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "Vomit Comet" xsd:string
+
+[Term]
+id: RBO:00005034
+name: high altitude research aircraft
+def: "An aircraft which flies at altitudes greater than commercial aircraft altitudes for research purposes." []
+is_a: ENVO:01001488
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005035
+name: uncrewed aerial vehicle
+def: "An research aircraft designed to operate without crew members, either autonomously or under control from a ground station" []
+is_a: ENVO:01001488
+property_value: IAO:0000111 "UAV" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "UAV" xsd:string
+
+[Term]
+id: RBO:00005036
+name: highly charged energetic nuclei
+def: "Fully ionized atomic nuclei with 2 or more protons and energies in excess of tens of MeV per nucleon" []
+is_a: RBO:00005003 ! charged particle
+property_value: IAO:0000111 "HZE" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "HZE" xsd:string
+
+[Term]
+id: RBO:00005037
+name: adaptive radiation response study
+def: "A study of a response to radiation conditioned by prior administration of radiation of a different type and/or at a different dose or dose rate" []
+is_a: RBO:00000082 ! radiobiology study type
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000118 "adaptive" xsd:string
+
+[Term]
+id: RBO:00005038
+name: average fractionated dose rate
+def: "The total dose administered in a series of radiation fractions divided by the elapsed time between the beginning of the first exposure fraction and the end of the last exposure fraction" []
+is_a: RBO:00000029 ! dose rate
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005039
+name: gamma irradiator
+def: "A device which exposes samples to gamma radiation." []
+is_a: RBO:00005014 ! radiation source
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005040
+name: particle charge
+def: "The electric charge of a particle used in an irradiation" []
+is_a: UO:0000219
+property_value: IAO:0000111 "charge" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005041
+name: radiation dosimetry
+def: "The measurement of the amount of radiation taken up by a sample." []
+is_a: CHMO:0002796
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005042
+name: microbeam
+def: "A microbeam is a narrow beam of radiation, of micrometer or sub-micrometer dimensions. Together with integrated imaging techniques, microbeams allow precisely defined quantities of damage to be introduced at precisely defined locations." []
+is_a: RBO:00000121 ! particle accelerator
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "Wikipedia" xsd:string
+
+[Term]
+id: RBO:00005048
+name: Niobium-93 nucleus
+def: "An atomic nucleus with 41 protons and 52 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005049
+name: Silver-107 nucleus
+def: "An atomic nucleus with 47 protons and 60 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005050
+name: Xenon-129 nucleus
+def: "An atomic nucleus with 54 protons and 75 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005051
+name: Tantalum-181 nucleus
+def: "An atomic nucleus with 73 protons and 108 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005052
+name: Gold-197 nucleus
+def: "An atomic nucleus with 79 protons and 118 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005053
+name: Nitrogen-14 nucleus
+def: "An atomic nucleus with 7 protons and 7 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005054
+name: Oxygen-16 nucleus
+def: "An atomic nucleus with 8 protons and 8 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005055
+name: Argon-40  nucleus
+def: "An atomic nucleus with 18 protons and 22 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005056
+name: Titanium-48  nucleus
+def: "An atomic nucleus with 22 protons and 26 neutrons " []
+is_a: RBO:010012 ! heavy ion
+
+[Term]
+id: RBO:00005057
+name: Krypton-84 nucleus
+def: "An atomic nucleus with 36 protons and 48 neutrons " []
+is_a: RBO:010012 ! heavy ion
 
 [Term]
 id: RBO:010000
@@ -762,7 +1114,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 [Term]
 id: RBO:010003
 name: bystander effect
-def: "The term used to describe the effects on cells in which the energy had not been directly deposited. In most instances, the cells so affected were neighbors of the cells directly impacted by the radiation" []
+def: "The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated  by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one." []
 is_a: RBO:00000124 ! cellular process
 property_value: IAO:0000112 "The bystander effect can be  studied by identifying cells that were traversed by a charged particle." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -790,7 +1142,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 
 [Term]
 id: RBO:010008
-name: excess lifetime risk
+name: excess lifetime risk of cancer
 def: "The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included" []
 is_a: RBO:00000119 ! lifetime risk estimate
 property_value: IAO:0000117 "Jack Miller" xsd:string
@@ -906,4 +1258,8 @@ is_a: PATO:0001018
 property_value: IAO:0000112 "Tissue equivalent materials can be used to study radiation effects at depth in the human body." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
+
+[Term]
+id: UO:0000127
+is_a: IAO:0000003
 

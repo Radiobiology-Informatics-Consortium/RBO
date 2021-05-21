@@ -274,71 +274,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-56</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 26 protons and 30 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron-56, Fe-56, 56Fe</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron-56 ion radiation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005002"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-12</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 6 protons and 6 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon-12, 12C, 12-C</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon-12 ion radiation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si-28</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 14 protons and 14 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon-28, 28Si, Si-28</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon-28 ion radiation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005002"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He-4</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4, 4He, He-4</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4 ion radiation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne-20</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 10 protons and 10 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neon-20, 20Ne, Ne-20</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neon-20 ion radiation</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RBO_00000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus, fully stripped of its orbital electrons, and containing 2, 3, 4, 5, or 6 protons.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light ion</rdfs:label>
@@ -1309,61 +1248,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A particle with a positive or negative electric charge</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 26 protons and 30 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-56, 56Fe</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron-56 nucleus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 6 protons and 6 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12C, 12-C</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon-12 nucleus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 14 protons and 14 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28Si, Si-28</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon-28 nucleus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 2 protons and 2 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4He, He-4</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4 nucleus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00005008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 10 protons and 10 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20Ne, Ne-20</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neon-20 nucleus</rdfs:label>
     </owl:Class>
     
 

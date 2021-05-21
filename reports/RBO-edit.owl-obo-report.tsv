@@ -1,4 +1,5 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	disease	rdfs:label	
 ERROR	missing_label	carbon-12 ion radiation	rdfs:label	
-ERROR	missing_ontology_license	obo:RBO.owl	dc:license	
+WARN	missing_definition	disease	definition	
 WARN	missing_definition	carbon-12 ion radiation	definition	

@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-04-25/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-05-21/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -70,6 +70,33 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000800 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000800"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_2001 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_2001">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass number</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -280,10 +307,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-56</obo:IAO_0000111>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">26</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">56</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 26 protons and 30 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron-56, Fe-56, 56Fe</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron-56 ion radiation</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-56 ion radiation</rdfs:label>
     </owl:Class>
     
 
@@ -292,11 +331,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005002"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-12</obo:IAO_0000111>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">12</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 6 protons and 6 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon-12, 12C, 12-C</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon-12 ion radiation</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-12 ion radiation</rdfs:label>
     </owl:Class>
     
 
@@ -305,10 +355,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si-28</obo:IAO_0000111>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">14</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">28</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 14 protons and 14 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon-28, 28Si, Si-28</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon-28 ion radiation</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si-28 ion radiation</rdfs:label>
     </owl:Class>
     
 
@@ -317,11 +379,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005002"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He-4</obo:IAO_0000111>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4, 4He, He-4</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4 ion radiation</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He-4 ion radiation</rdfs:label>
     </owl:Class>
     
 
@@ -330,10 +403,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne-20</obo:IAO_0000111>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 10 protons and 10 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neon-20, 20Ne, Ne-20</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neon-20 ion radiation</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne-20 ion radiation</rdfs:label>
     </owl:Class>
     
 
@@ -341,6 +426,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus, fully stripped of its orbital electrons, and containing 2, 3, 4, 5, or 6 protons.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light ion</rdfs:label>
@@ -1285,6 +1371,246 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">16</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 8 protons and 8 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-16 ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 18 protons and 22 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ar-40  ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">22</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">48</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 22 protons and 26 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ti-48  ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">36</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">84</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 36 protons and 48 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kr-84 ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">41</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">93</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 41 protons and 52 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nb-93 ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">47</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">107</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 47 protons and 60 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ag-107 ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">54</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">129</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 54 protons and 75 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xe-129 ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">73</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">181</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 73 protons and 108 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta-181 ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">79</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">197</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 79 protons and 118 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Au-197 ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">14</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 7 protons and 7 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-14 ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00005001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005001">
@@ -1319,9 +1645,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 26 protons and 30 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-56, 56Fe</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">iron-56 nucleus</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">26</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">56</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 26 protons and 30 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron-56 nucleus</rdfs:label>
     </owl:Class>
     
 
@@ -1330,9 +1669,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 6 protons and 6 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12C, 12-C</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon-12 nucleus</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">14</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">28</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 14 protons and 14 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silicon-28 nucleus</rdfs:label>
     </owl:Class>
     
 
@@ -1341,9 +1693,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 14 protons and 14 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28Si, Si-28</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silicon-28 nucleus</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">12</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 6 protons and 6 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon-12 nucleus</rdfs:label>
     </owl:Class>
     
 
@@ -1352,9 +1717,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 2 protons and 2 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4He, He-4</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">helium-4 nucleus</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 2 protons and 2 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helium-4 nucleus</rdfs:label>
     </owl:Class>
     
 
@@ -1363,9 +1741,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 10 protons and 10 neutrons</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20Ne, Ne-20</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neon-20 nucleus</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">10</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 10 protons and 10 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neon-20 nucleus</rdfs:label>
     </owl:Class>
     
 
@@ -1776,6 +2167,246 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microbeam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">41</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">93</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 41 protons and 52 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niobium-93 nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">47</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">107</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 47 protons and 60 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silver-107 nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">54</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">129</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 54 protons and 75 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xenon-129 nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">73</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">181</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 73 protons and 108 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tantalum-181 nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">79</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">197</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 79 protons and 118 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gold-197 nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">7</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">14</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 7 protons and 7 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitrogen-14 nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">16</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 8 protons and 8 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxygen-16 nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">18</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">40</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 18 protons and 22 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argon-40  nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">22</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">48</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 22 protons and 26 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titanium-48  nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/COB_0000800"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">36</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">84</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 36 protons and 48 neutrons </obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Krypton-84 nucleus</rdfs:label>
     </owl:Class>
     
 

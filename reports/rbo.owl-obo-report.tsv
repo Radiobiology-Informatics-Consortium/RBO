@@ -1,201 +1,82 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	eBioscience	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Cytopeia	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Exalpha Biological	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Apogee Flow Systems	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Exbio Antibodies	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Becton Dickinson (BD Biosciences)	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Dako Cytomation	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Millipore	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Antigenix	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Partec	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Beckman Coulter	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Advanced Instruments Inc. (AI Companies)	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Miltenyi Biotec	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	AES Chemunex	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Bentley Instruments	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Invitrogen	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Luminex	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	CytoBuoy	definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	has_specified_output	definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
-ERROR	duplicate_definition	is_specified_output_of	definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
-ERROR	duplicate_definition	has_specified_input	definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
-ERROR	duplicate_definition	is_specified_input_of	definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
-ERROR	multiple_equivalent_classes	kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2201
-ERROR	multiple_equivalent_classes	kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2205
-ERROR	multiple_equivalent_classes	centimeter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2218
-ERROR	multiple_equivalent_classes	centimeter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2222
-ERROR	multiple_equivalent_classes	millimeter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2225
-ERROR	multiple_equivalent_classes	millimeter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2229
-ERROR	multiple_equivalent_classes	micrometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2232
-ERROR	multiple_equivalent_classes	micrometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2236
-ERROR	multiple_equivalent_classes	nanometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2239
-ERROR	multiple_equivalent_classes	nanometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2243
-ERROR	multiple_equivalent_classes	picometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2248
-ERROR	multiple_equivalent_classes	picometer	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2252
-ERROR	multiple_equivalent_classes	milligram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2257
-ERROR	multiple_equivalent_classes	milligram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2261
-ERROR	multiple_equivalent_classes	microgram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2264
-ERROR	multiple_equivalent_classes	microgram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2268
-ERROR	multiple_equivalent_classes	nanogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2271
-ERROR	multiple_equivalent_classes	nanogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2275
-ERROR	multiple_equivalent_classes	picogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2278
-ERROR	multiple_equivalent_classes	picogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2282
-ERROR	multiple_equivalent_classes	femtogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2285
-ERROR	multiple_equivalent_classes	femtogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2289
-ERROR	multiple_equivalent_classes	millisecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2294
-ERROR	multiple_equivalent_classes	millisecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2298
-ERROR	multiple_equivalent_classes	microsecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2301
-ERROR	multiple_equivalent_classes	microsecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2305
-ERROR	multiple_equivalent_classes	picosecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2308
-ERROR	multiple_equivalent_classes	picosecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2312
-ERROR	multiple_equivalent_classes	milliampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2327
-ERROR	multiple_equivalent_classes	milliampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2331
-ERROR	multiple_equivalent_classes	microampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2334
-ERROR	multiple_equivalent_classes	microampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2338
-ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2341
-ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2345
-ERROR	multiple_equivalent_classes	millimole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2348
-ERROR	multiple_equivalent_classes	millimole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2352
-ERROR	multiple_equivalent_classes	nanomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2355
-ERROR	multiple_equivalent_classes	nanomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2359
-ERROR	multiple_equivalent_classes	picomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2362
-ERROR	multiple_equivalent_classes	picomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2366
-ERROR	multiple_equivalent_classes	femtomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2369
-ERROR	multiple_equivalent_classes	femtomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2373
-ERROR	multiple_equivalent_classes	attomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2376
-ERROR	multiple_equivalent_classes	attomole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2380
-ERROR	multiple_equivalent_classes	millimolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2385
-ERROR	multiple_equivalent_classes	millimolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2389
-ERROR	multiple_equivalent_classes	micromolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2392
-ERROR	multiple_equivalent_classes	micromolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2396
-ERROR	multiple_equivalent_classes	nanomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2399
-ERROR	multiple_equivalent_classes	nanomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2403
-ERROR	multiple_equivalent_classes	picomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2406
-ERROR	multiple_equivalent_classes	picomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2410
-ERROR	multiple_equivalent_classes	millimolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2415
-ERROR	multiple_equivalent_classes	millimolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2419
-ERROR	multiple_equivalent_classes	micromolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2422
-ERROR	multiple_equivalent_classes	micromolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2426
-ERROR	multiple_equivalent_classes	nanomolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2429
-ERROR	multiple_equivalent_classes	nanomolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2433
-ERROR	multiple_equivalent_classes	picomolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2436
-ERROR	multiple_equivalent_classes	picomolal	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2440
-ERROR	multiple_equivalent_classes	femtomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2443
-ERROR	multiple_equivalent_classes	femtomolar	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2447
-ERROR	multiple_equivalent_classes	kilogram per square meter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2472
-ERROR	multiple_equivalent_classes	kilogram per square meter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2476
-ERROR	multiple_equivalent_classes	kilogram per mole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2479
-ERROR	multiple_equivalent_classes	kilogram per mole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2483
-ERROR	multiple_equivalent_classes	milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2504
-ERROR	multiple_equivalent_classes	milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2508
-ERROR	multiple_equivalent_classes	microliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2515
-ERROR	multiple_equivalent_classes	microliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2519
-ERROR	multiple_equivalent_classes	nanoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2522
-ERROR	multiple_equivalent_classes	nanoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2526
-ERROR	multiple_equivalent_classes	picoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2529
-ERROR	multiple_equivalent_classes	picoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2533
-ERROR	multiple_equivalent_classes	femtoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2536
-ERROR	multiple_equivalent_classes	femtoliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2540
-ERROR	multiple_equivalent_classes	millisievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2575
-ERROR	multiple_equivalent_classes	millisievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2579
-ERROR	multiple_equivalent_classes	microsievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2582
-ERROR	multiple_equivalent_classes	microsievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2586
-ERROR	multiple_equivalent_classes	microgray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2591
-ERROR	multiple_equivalent_classes	microgray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2595
-ERROR	multiple_equivalent_classes	milligray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2598
-ERROR	multiple_equivalent_classes	milligray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2602
-ERROR	multiple_equivalent_classes	nanogray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2605
-ERROR	multiple_equivalent_classes	nanogray	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2609
-ERROR	multiple_equivalent_classes	nanosievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2612
-ERROR	multiple_equivalent_classes	nanosievert	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2616
-ERROR	multiple_equivalent_classes	millicurie	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2619
-ERROR	multiple_equivalent_classes	millicurie	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2623
-ERROR	multiple_equivalent_classes	microcurie	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2626
-ERROR	multiple_equivalent_classes	microcurie	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2630
-ERROR	multiple_equivalent_classes	nanosecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2637
-ERROR	multiple_equivalent_classes	nanosecond	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2641
-ERROR	multiple_equivalent_classes	microeinstein per square meter per second	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2656
-ERROR	multiple_equivalent_classes	microeinstein per square meter per second	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2660
-ERROR	multiple_equivalent_classes	kilogram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2685
-ERROR	multiple_equivalent_classes	kilogram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2689
-ERROR	multiple_equivalent_classes	milligram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2694
-ERROR	multiple_equivalent_classes	milligram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2698
-ERROR	multiple_equivalent_classes	milliliter per kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2727
-ERROR	multiple_equivalent_classes	milliliter per kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2731
-ERROR	multiple_equivalent_classes	microliter per kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2734
-ERROR	multiple_equivalent_classes	microliter per kilogram	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2738
-ERROR	multiple_equivalent_classes	deciliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2753
-ERROR	multiple_equivalent_classes	deciliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2757
-ERROR	multiple_equivalent_classes	kilodalton	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2776
-ERROR	multiple_equivalent_classes	kilodalton	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2780
-ERROR	multiple_equivalent_classes	kilowatt-hour	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2785
-ERROR	multiple_equivalent_classes	kilowatt-hour	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2789
-ERROR	multiple_equivalent_classes	kilovolt-hour	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2798
-ERROR	multiple_equivalent_classes	kilovolt-hour	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2802
-ERROR	multiple_equivalent_classes	kilobyte	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2809
-ERROR	multiple_equivalent_classes	kilobyte	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2813
-ERROR	multiple_equivalent_classes	megabyte	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2816
-ERROR	multiple_equivalent_classes	megabyte	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2820
-ERROR	multiple_equivalent_classes	millivolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2841
-ERROR	multiple_equivalent_classes	millivolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2845
-ERROR	multiple_equivalent_classes	kilovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2848
-ERROR	multiple_equivalent_classes	kilovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2852
-ERROR	multiple_equivalent_classes	microvolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2855
-ERROR	multiple_equivalent_classes	microvolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2859
-ERROR	multiple_equivalent_classes	nanovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2862
-ERROR	multiple_equivalent_classes	nanovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2866
-ERROR	multiple_equivalent_classes	picovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2869
-ERROR	multiple_equivalent_classes	picovolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2873
-ERROR	multiple_equivalent_classes	megavolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2876
-ERROR	multiple_equivalent_classes	megavolt	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2880
-ERROR	multiple_equivalent_classes	milligram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2909
-ERROR	multiple_equivalent_classes	milligram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2913
-ERROR	multiple_equivalent_classes	microgram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2916
-ERROR	multiple_equivalent_classes	microgram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2920
-ERROR	multiple_equivalent_classes	nanogram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2923
-ERROR	multiple_equivalent_classes	nanogram per milliliter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2927
-ERROR	multiple_equivalent_classes	microgram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2942
-ERROR	multiple_equivalent_classes	microgram per liter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2946
-ERROR	multiple_equivalent_classes	milligram per square meter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2951
-ERROR	multiple_equivalent_classes	milligram per square meter	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2955
-ERROR	multiple_equivalent_classes	millisiemens	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2980
-ERROR	multiple_equivalent_classes	millisiemens	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid2984
-ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid3059
-ERROR	multiple_equivalent_classes	micromole	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid3063
-ERROR	multiple_equivalent_classes	picoampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid3074
-ERROR	multiple_equivalent_classes	picoampere	owl:equivalentClass	a8f6de93-0340-408b-b8f3-5ab4d94d591egenid3078
-ERROR	missing_label	dc:license	rdfs:label	
+ERROR	duplicate_definition	eBioscience	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Cytopeia	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Exalpha Biological	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Apogee Flow Systems	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Exbio Antibodies	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Becton Dickinson (BD Biosciences)	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Dako Cytomation	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Millipore	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Antigenix	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Partec	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Beckman Coulter	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Advanced Instruments Inc. (AI Companies)	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Miltenyi Biotec	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	AES Chemunex	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Bentley Instruments	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Invitrogen	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Luminex	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	CytoBuoy	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	has_specified_output	textual definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
+ERROR	duplicate_definition	is_specified_output_of	textual definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.@en
+ERROR	duplicate_definition	has_specified_input	textual definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
+ERROR	duplicate_definition	is_specified_input_of	textual definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
+ERROR	duplicate_definition	muscle of iris	textual definition	.
+ERROR	duplicate_definition	early pharyngeal endoderm	textual definition	.
+ERROR	duplicate_definition	layer of sclera	textual definition	.
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	radiation quality	rdfs:label	radiation quality
 ERROR	duplicate_label	radiation quality	rdfs:label	radiation quality
+ERROR	duplicate_label	quality	rdfs:label	quality@en
+ERROR	duplicate_label	quality	rdfs:label	quality@en
+ERROR	duplicate_label	part_of	rdfs:label	part of
+ERROR	duplicate_label	part of	rdfs:label	part of
 ERROR	duplicate_label	milli	rdfs:label	milli
 ERROR	duplicate_label	milli	rdfs:label	milli
 ERROR	duplicate_label	micromole	rdfs:label	micromole
 ERROR	duplicate_label	micromole	rdfs:label	micromole
+ERROR	duplicate_label	material entity	rdfs:label	material entity@en
+ERROR	duplicate_label	material entity	rdfs:label	material entity@en
 ERROR	duplicate_label	ionizing radiation	rdfs:label	ionizing radiation
 ERROR	duplicate_label	ionizing radiation	rdfs:label	ionizing radiation
-ERROR	multiple_definitions	independent continuant	definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
-ERROR	multiple_definitions	independent continuant	definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
-ERROR	multiple_definitions	process	definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
-ERROR	multiple_definitions	process	definition	<p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en>
-ERROR	multiple_definitions	specifically dependent continuant	definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en
-ERROR	multiple_definitions	specifically dependent continuant	definition	<b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1 i &lt; j n, ci and cj share no common parts, are such that for each 1 i n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en>
-ERROR	multiple_definitions	specifically dependent continuant	definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
-ERROR	multiple_definitions	generically dependent continuant	definition	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en
-ERROR	multiple_definitions	generically dependent continuant	definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
-ERROR	multiple_definitions	has part	definition	<Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.>
-ERROR	multiple_definitions	has part	definition	a core relation that holds between a whole and its part@en
-ERROR	multiple_definitions	data item	definition	An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
-ERROR	multiple_definitions	data item	definition	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
-ERROR	multiple_definitions	planned process	definition	A process that realizes a plan which is the concretization of a plan specification.@en
-ERROR	multiple_definitions	planned process	definition	A processual entity that realizes a plan which is the concretization of a plan specification.@en
-ERROR	missing_ontology_license	obo:rbo.owl	dc:license	
+ERROR	duplicate_label	has quality	rdfs:label	has quality@en
+ERROR	duplicate_label	has quality	rdfs:label	has quality@en
+ERROR	duplicate_label	has part	rdfs:label	has part
+ERROR	duplicate_label	has part	rdfs:label	has part
+ERROR	multiple_definitions	independent continuant	textual definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
+ERROR	multiple_definitions	independent continuant	textual definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
+ERROR	multiple_definitions	process	textual definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
+ERROR	multiple_definitions	process	textual definition	<p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en>
+ERROR	multiple_definitions	specifically dependent continuant	textual definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en
+ERROR	multiple_definitions	specifically dependent continuant	textual definition	<b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1 i &lt; j n, ci and cj share no common parts, are such that for each 1 i n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en>
+ERROR	multiple_definitions	specifically dependent continuant	textual definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
+ERROR	multiple_definitions	generically dependent continuant	textual definition	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en
+ERROR	multiple_definitions	generically dependent continuant	textual definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
+ERROR	multiple_definitions	has part	textual definition	<Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.>
+ERROR	multiple_definitions	has part	textual definition	a core relation that holds between a whole and its part@en
+ERROR	multiple_definitions	preceded_by	textual definition	<X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)>
+ERROR	multiple_definitions	preceded_by	textual definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	surrounded by	textual definition	x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x
+ERROR	multiple_definitions	surrounded by	textual definition	<x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y>
+ERROR	multiple_definitions	adjacent_to	textual definition	x adjacent to y if and only if x and y share a boundary.
+ERROR	multiple_definitions	adjacent_to	textual definition	<x adjacent_to y iff: x and y share a boundary>
+ERROR	multiple_definitions	ends	textual definition	Relation between occurrents, shares an end boundary with.
+ERROR	multiple_definitions	ends	textual definition	inverse of ends with
+ERROR	multiple_definitions	has potential to developmentally contribute to	textual definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y
+ERROR	multiple_definitions	has potential to developmentally contribute to	textual definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y@en
+ERROR	multiple_definitions	has potential to develop into	textual definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y
+ERROR	multiple_definitions	has potential to develop into	textual definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y@en
+ERROR	multiple_definitions	composed primarily of	textual definition	x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.
+ERROR	multiple_definitions	composed primarily of	textual definition	<x composed_primarily_of y iff: more than half of the mass of x is made from parts of y>
 ERROR	multiple_labels	continuant	rdfs:label	continuant
 ERROR	multiple_labels	continuant	rdfs:label	continuant@en
 ERROR	multiple_labels	process	rdfs:label	process
 ERROR	multiple_labels	process	rdfs:label	process@en
+ERROR	multiple_labels	disposition	rdfs:label	disposition
+ERROR	multiple_labels	disposition	rdfs:label	disposition@en
 ERROR	multiple_labels	realizable entity	rdfs:label	realizable entity@en
 ERROR	multiple_labels	realizable entity	rdfs:label	realizable_entity
 ERROR	multiple_labels	specifically dependent continuant	rdfs:label	specifically dependent continuant
@@ -214,40 +95,78 @@ ERROR	multiple_labels	part_of	rdfs:label	part_of
 ERROR	multiple_labels	has part	rdfs:label	has part
 ERROR	multiple_labels	has part	rdfs:label	has part@en
 ERROR	multiple_labels	has part	rdfs:label	has_part
+ERROR	multiple_labels	preceded_by	rdfs:label	preceded by@en
+ERROR	multiple_labels	preceded_by	rdfs:label	preceded_by
+ERROR	multiple_labels	precedes	rdfs:label	precedes
+ERROR	multiple_labels	precedes	rdfs:label	precedes@en
 ERROR	multiple_labels	information content entity	rdfs:label	information content entity
 ERROR	multiple_labels	information content entity	rdfs:label	information content entity@en
 ERROR	multiple_labels	directive information entity	rdfs:label	directive information entity
 ERROR	multiple_labels	directive information entity	rdfs:label	directive information entity@en
 ERROR	multiple_labels	plan specification	rdfs:label	plan specification
 ERROR	multiple_labels	plan specification	rdfs:label	plan specification@en
-ERROR	multiple_labels	editor preferred term	rdfs:label	editor preferred term@en
-ERROR	multiple_labels	editor preferred term	rdfs:label	editor preferred term~editor preferred label
+ERROR	multiple_labels	editor preferred label	rdfs:label	editor preferred label
+ERROR	multiple_labels	editor preferred label	rdfs:label	editor preferred label@en
+ERROR	multiple_labels	editor preferred label	rdfs:label	editor preferred term
+ERROR	multiple_labels	editor preferred label	rdfs:label	editor preferred term@en
+ERROR	multiple_labels	editor preferred label	rdfs:label	editor preferred term~editor preferred label
 ERROR	multiple_labels	example of usage	rdfs:label	example of usage
 ERROR	multiple_labels	example of usage	rdfs:label	example of usage@en
-ERROR	multiple_labels	definition	rdfs:label	definition
-ERROR	multiple_labels	definition	rdfs:label	definition@en
+ERROR	multiple_labels	textual definition	rdfs:label	definition
+ERROR	multiple_labels	textual definition	rdfs:label	definition@en
+ERROR	multiple_labels	textual definition	rdfs:label	textual definition
 ERROR	multiple_labels	term editor	rdfs:label	term editor
 ERROR	multiple_labels	term editor	rdfs:label	term editor@en
 ERROR	multiple_labels	alternative term	rdfs:label	alternative term
 ERROR	multiple_labels	alternative term	rdfs:label	alternative term@en
 ERROR	multiple_labels	definition source	rdfs:label	definition source
 ERROR	multiple_labels	definition source	rdfs:label	definition source@en
-ERROR	multiple_labels	Vertebrata <Metazoa>	rdfs:label	Vertebrata <Metazoa>
-ERROR	multiple_labels	Vertebrata <Metazoa>	rdfs:label	Vertebrata <vertebrates>
 ERROR	multiple_labels	planned process	rdfs:label	planned process
 ERROR	multiple_labels	planned process	rdfs:label	planned process@en
+ERROR	multiple_labels	located in	rdfs:label	located in@en
+ERROR	multiple_labels	located in	rdfs:label	located_in
+ERROR	multiple_labels	bounding layer of	rdfs:label	bounding layer of
+ERROR	multiple_labels	bounding layer of	rdfs:label	bounding layer of@en
+ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately preceded by@en
+ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately_preceded_by
+ERROR	multiple_labels	has component	rdfs:label	has component
+ERROR	multiple_labels	has component	rdfs:label	has component@en
+ERROR	multiple_labels	develops from	rdfs:label	develops from@en
+ERROR	multiple_labels	develops from	rdfs:label	develops_from
+ERROR	multiple_labels	develops_into	rdfs:label	develops into@en
+ERROR	multiple_labels	develops_into	rdfs:label	develops_into
 ERROR	multiple_labels	surrounded by	rdfs:label	surrounded by
 ERROR	multiple_labels	surrounded by	rdfs:label	surrounded by@en
+ERROR	multiple_labels	surrounded by	rdfs:label	surrounded_by
+ERROR	multiple_labels	adjacent_to	rdfs:label	adjacent to@en
+ERROR	multiple_labels	adjacent_to	rdfs:label	adjacent_to
+ERROR	multiple_labels	ends	rdfs:label	ends
+ERROR	multiple_labels	ends	rdfs:label	ends@en
+ERROR	multiple_labels	has developmental contribution from	rdfs:label	has developmental contribution from
+ERROR	multiple_labels	has developmental contribution from	rdfs:label	has developmental contribution from@en
+ERROR	multiple_labels	developmentally contributes to	rdfs:label	developmentally contributes to@en
+ERROR	multiple_labels	developmentally contributes to	rdfs:label	developmentally_contributes_to
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat@en
-ERROR	multiple_labels	Creator	rdfs:label	Creator
-ERROR	multiple_labels	Creator	rdfs:label	Creator@en-us
+ERROR	multiple_labels	member of	rdfs:label	member of
+ERROR	multiple_labels	member of	rdfs:label	member of@en
+ERROR	multiple_labels	has member	rdfs:label	has member
+ERROR	multiple_labels	has member	rdfs:label	has member@en
+ERROR	multiple_labels	has potential to developmentally contribute to	rdfs:label	has potential to developmentally contribute to
+ERROR	multiple_labels	has potential to developmentally contribute to	rdfs:label	has potential to developmentally contribute to@en
+ERROR	multiple_labels	has potential to develop into	rdfs:label	has potential to develop into
+ERROR	multiple_labels	has potential to develop into	rdfs:label	has potential to develop into@en
+ERROR	multiple_labels	creator	rdfs:label	Creator
+ERROR	multiple_labels	creator	rdfs:label	Creator@en-us
+ERROR	multiple_labels	creator	rdfs:label	creator
 ERROR	multiple_labels	Date	rdfs:label	Date
 ERROR	multiple_labels	Date	rdfs:label	Date@en-us
 ERROR	multiple_labels	Description	rdfs:label	Description
 ERROR	multiple_labels	Description	rdfs:label	Description@en-us
-ERROR	multiple_labels	Title	rdfs:label	Title
-ERROR	multiple_labels	Title	rdfs:label	Title@en-us
+ERROR	multiple_labels	Description	rdfs:label	description
+ERROR	multiple_labels	title	rdfs:label	Title
+ERROR	multiple_labels	title	rdfs:label	Title@en-us
+ERROR	multiple_labels	title	rdfs:label	title
 WARN	annotation_whitespace	continuant	IAO:0000602	<(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] >
 WARN	annotation_whitespace	continuant	IAO:0000602	<(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] >
 WARN	annotation_whitespace	continuant	IAO:0000602	<(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] >
@@ -273,32 +192,49 @@ WARN	annotation_whitespace	material entity	IAO:0000602	<(forall (x) (if (Materia
 WARN	annotation_whitespace	material entity	IAO:0000602	<(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] >
 WARN	annotation_whitespace	material entity	IAO:0000602	<(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] >
 WARN	annotation_whitespace	datum label	IAO:0000232	<9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. >
-WARN	annotation_whitespace	definition	IAO:0000116	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
+WARN	annotation_whitespace	textual definition	IAO:0000116	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
 WARN	annotation_whitespace	is_supported_by_data	example of usage	"The relation between the conclusion \""Gene tpbA is involved in EPS production\"" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. "
 WARN	annotation_whitespace	drawing a conclusion based on data	example of usage	Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. 
 WARN	annotation_whitespace	categorical label	example of usage	The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. 
 WARN	annotation_whitespace	device	IAO:0000116	"<2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \""device\"", and are enumerating the types of roles that a reagent can perform.2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions. Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear. For example:(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component. This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.(3) A gel running box is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it. This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation). In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay. >"
 WARN	annotation_whitespace	questionnaire	IAO:0000116	<JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. JZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. @en>
-WARN	annotation_whitespace	Edingburgh handedness inventory	definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
+WARN	annotation_whitespace	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
 WARN	annotation_whitespace	conclusion based on data	IAO:0000116	"In the Philly 2013 workshop, we recognized the limitations of \""conclusion textual entity\"", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate. "
 WARN	annotation_whitespace	histologic grade according to AJCC 7th edition	example of usage	< G4: Undifferentiated>
 WARN	annotation_whitespace	histologic grade according to AJCC 7th edition	example of usage	<G1:Well differentiated >
-WARN	annotation_whitespace	histologic grade for ovarian tumor according to a two-tier grading system	definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. 
-WARN	annotation_whitespace	Stage 0 (AJCC 7th)	definition	A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. 
-WARN	annotation_whitespace	Stage IIA (FIGO)	definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. 
-WARN	annotation_whitespace	Stage IIA1 (FIGO)	definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. 
-WARN	annotation_whitespace	Stage IIA2 (FIGO)	definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
-WARN	annotation_whitespace	Stage IIB (FIGO)	definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
-WARN	annotation_whitespace	ionizing radiation energy	definition	The kinetic energy carried by a particle or photon of ionizing radiation. 
-WARN	annotation_whitespace	biodosimetry	definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
-WARN	annotation_whitespace	delta ray	definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
-WARN	annotation_whitespace	quality factor	definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
+WARN	annotation_whitespace	histologic grade for ovarian tumor according to a two-tier grading system	textual definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. 
+WARN	annotation_whitespace	Stage 0 (AJCC 7th)	textual definition	A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. 
+WARN	annotation_whitespace	Stage IIA (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. 
+WARN	annotation_whitespace	Stage IIA1 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. 
+WARN	annotation_whitespace	Stage IIA2 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
+WARN	annotation_whitespace	Stage IIB (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
+WARN	annotation_whitespace	Iron-56 nucleus	textual definition	An atomic nucleus with 26 protons and 30 neutrons 
+WARN	annotation_whitespace	Silicon-28 nucleus	textual definition	An atomic nucleus with 14 protons and 14 neutrons 
+WARN	annotation_whitespace	Carbon-12 nucleus	textual definition	An atomic nucleus with 6 protons and 6 neutrons 
+WARN	annotation_whitespace	Helium-4 nucleus	textual definition	An atomic nucleus with 2 protons and 2 neutrons 
+WARN	annotation_whitespace	Neon-20 nucleus	textual definition	An atomic nucleus with 10 protons and 10 neutrons 
+WARN	annotation_whitespace	ionizing radiation energy	textual definition	The kinetic energy carried by a particle or photon of ionizing radiation. 
+WARN	annotation_whitespace	non-irradiated	textual definition	An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation 
+WARN	annotation_whitespace	irradiation protocol	textual definition	A protocol for administering radiation to a sample 
+WARN	annotation_whitespace	Niobium-93 nucleus	textual definition	An atomic nucleus with 41 protons and 52 neutrons 
+WARN	annotation_whitespace	Silver-107 nucleus	textual definition	An atomic nucleus with 47 protons and 60 neutrons 
+WARN	annotation_whitespace	Xenon-129 nucleus	textual definition	An atomic nucleus with 54 protons and 75 neutrons 
+WARN	annotation_whitespace	Tantalum-181 nucleus	textual definition	An atomic nucleus with 73 protons and 108 neutrons 
+WARN	annotation_whitespace	Gold-197 nucleus	textual definition	An atomic nucleus with 79 protons and 118 neutrons 
+WARN	annotation_whitespace	Nitrogen-14 nucleus	textual definition	An atomic nucleus with 7 protons and 7 neutrons 
+WARN	annotation_whitespace	Oxygen-16 nucleus	textual definition	An atomic nucleus with 8 protons and 8 neutrons 
+WARN	annotation_whitespace	Argon-40 nucleus	textual definition	An atomic nucleus with 18 protons and 22 neutrons 
+WARN	annotation_whitespace	Titanium-48 nucleus	textual definition	An atomic nucleus with 22 protons and 26 neutrons 
+WARN	annotation_whitespace	Krypton-84 nucleus	textual definition	An atomic nucleus with 36 protons and 48 neutrons 
+WARN	annotation_whitespace	biodosimetry	textual definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
+WARN	annotation_whitespace	delta ray	textual definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
+WARN	annotation_whitespace	quality factor	textual definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
 WARN	annotation_whitespace	relative biological effectiveness	example of usage	Neutrons have been found to have a higher RBE than electrons. 
 WARN	annotation_whitespace	spatially disjoint from	IAO:0000116	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
-WARN	annotation_whitespace	capable of	definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 WARN	annotation_whitespace	siemens	has_exact_synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has_exact_synonym	E-field strength 
-WARN	annotation_whitespace	Title	Description	"
+WARN	annotation_whitespace	title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -318,6 +254,8 @@ WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum ac
 WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	alternative term	<pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)>
 WARN	duplicate_exact_synonym	mass volume percentage	alternative term	percent vol per vol
 WARN	duplicate_exact_synonym	volume percentage	alternative term	percent vol per vol
+WARN	duplicate_exact_synonym	ionizing radiation	has_exact_synonym	ionising radiation
+WARN	duplicate_exact_synonym	ionizing radiation	has_exact_synonym	ionising radiation
 WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative term	G4
 WARN	duplicate_exact_synonym	G4 (WHO)	alternative term	G4
 WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative term	G3
@@ -326,477 +264,837 @@ WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
 WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
 WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_label_synonym	lymphoid leukemia	has_exact_synonym	lymphoid leukemia
 WARN	duplicate_label_synonym	ocean	has_exact_synonym	ocean
 WARN	duplicate_label_synonym	sea	has_exact_synonym	sea
 WARN	duplicate_label_synonym	depression	oboInOwl:hasRelatedSynonym	depression
-WARN	missing_definition	fiat object part	definition	
-WARN	missing_definition	site	definition	
-WARN	missing_definition	object	definition	
-WARN	missing_definition	has participant	definition	
-WARN	missing_definition	immaterial entity	definition	
-WARN	missing_definition	anatomical entity	definition	
-WARN	missing_definition	biological entity	definition	
-WARN	missing_definition	gas molecular entity	definition	
-WARN	missing_definition	electron donor	definition	
-WARN	missing_definition	water	definition	
-WARN	missing_definition	dioxygen	definition	
-WARN	missing_definition	carbon dioxide	definition	
-WARN	missing_definition	donor	definition	
-WARN	missing_definition	dinitrogen	definition	
-WARN	missing_definition	carbon oxide	definition	
-WARN	missing_definition	chloride salt	definition	
-WARN	missing_definition	chlorine molecular entity	definition	
-WARN	missing_definition	molecular entity	definition	
-WARN	missing_definition	chemical entity	definition	
-WARN	missing_definition	biological role	definition	
-WARN	missing_definition	halogen molecular entity	definition	
-WARN	missing_definition	hydroxides	definition	
-WARN	missing_definition	inorganic molecular entity	definition	
-WARN	missing_definition	inorganic salt	definition	
-WARN	missing_definition	salt	definition	
-WARN	missing_definition	elemental molecule	definition	
-WARN	missing_definition	molecule	definition	
-WARN	missing_definition	organic oxide	definition	
-WARN	missing_definition	oxide	definition	
-WARN	missing_definition	oxygen molecular entity	definition	
-WARN	missing_definition	sodium chloride	definition	
-WARN	missing_definition	sodium molecular entity	definition	
-WARN	missing_definition	sodium salt	definition	
-WARN	missing_definition	inorganic hydride	definition	
-WARN	missing_definition	atomic nucleus	definition	
-WARN	missing_definition	elemental molecular entity	definition	
-WARN	missing_definition	elemental oxygen	definition	
-WARN	missing_definition	diatomic oxygen	definition	
-WARN	missing_definition	diatomic nitrogen	definition	
-WARN	missing_definition	elemental nitrogen	definition	
-WARN	missing_definition	nutrient	definition	
-WARN	missing_definition	heteroorganic entity	definition	
-WARN	missing_definition	alkali metal molecular entity	definition	
-WARN	missing_definition	pnictogen molecular entity	definition	
-WARN	missing_definition	chalcogen molecular entity	definition	
-WARN	missing_definition	elemental pnictogen	definition	
-WARN	missing_definition	metal atom	definition	
-WARN	missing_definition	main group molecular entity	definition	
-WARN	missing_definition	carbon group molecular entity	definition	
-WARN	missing_definition	noble gas molecular entity	definition	
-WARN	missing_definition	hydrogen molecular entity	definition	
-WARN	missing_definition	s-block molecular entity	definition	
-WARN	missing_definition	p-block molecular entity	definition	
-WARN	missing_definition	helium molecular entity	definition	
-WARN	missing_definition	hydrides	definition	
-WARN	missing_definition	oxygen hydride	definition	
-WARN	missing_definition	biomacromolecule	definition	
-WARN	missing_definition	macromolecule	definition	
-WARN	missing_definition	halide salt	definition	
-WARN	missing_definition	alkali metal salt	definition	
-WARN	missing_definition	inorganic chloride	definition	
-WARN	missing_definition	subatomic particle	definition	
-WARN	missing_definition	nuclear particle	definition	
-WARN	missing_definition	polyatomic entity	definition	
-WARN	missing_definition	chalcogen hydride	definition	
-WARN	missing_definition	argon molecular entity	definition	
-WARN	missing_definition	organochalcogen compound	definition	
-WARN	missing_definition	organooxygen compound	definition	
-WARN	missing_definition	mononuclear parent hydride	definition	
-WARN	missing_definition	heteroatomic molecular entity	definition	
-WARN	missing_definition	halide	definition	
-WARN	missing_definition	inorganic sodium salt	definition	
-WARN	missing_definition	mineral	definition	
-WARN	missing_definition	organic molecular entity	definition	
-WARN	missing_definition	role	definition	
-WARN	missing_definition	chemical role	definition	
-WARN	missing_definition	nitrogen molecular entity	definition	
-WARN	missing_definition	physiological role	definition	
-WARN	missing_definition	inorganic hydroxy compound	definition	
-WARN	missing_definition	chemical substance	definition	
-WARN	missing_definition	one-carbon compound	definition	
-WARN	missing_definition	organic molecule	definition	
-WARN	missing_definition	greenhouse gas	definition	
-WARN	missing_definition	food component	definition	
-WARN	missing_definition	geographic feature	definition	
-WARN	missing_definition	body of liquid	definition	
-WARN	missing_definition	mass fluid flow	definition	
-WARN	missing_definition	aquatic ecosystem	definition	
-WARN	missing_definition	marine ecosystem	definition	
-WARN	missing_definition	molecular_function	definition	
-WARN	missing_definition	catalytic activity	definition	
-WARN	missing_definition	kinase activity	definition	
-WARN	missing_definition	transferase activity	definition	
-WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	definition	
-WARN	missing_definition	root	definition	
-WARN	missing_definition	Viruses	definition	
-WARN	missing_definition	Teleostomi	definition	
-WARN	missing_definition	Euteleostomi	definition	
-WARN	missing_definition	cellular organisms	definition	
-WARN	missing_definition	Dipnotetrapodomorpha	definition	
-WARN	missing_definition	Boreoeutheria	definition	
-WARN	missing_definition	Bacteria	definition	
-WARN	missing_definition	Homininae	definition	
-WARN	missing_definition	Archaea	definition	
-WARN	missing_definition	Eukaryota	definition	
-WARN	missing_definition	Euarchontoglires	definition	
-WARN	missing_definition	Simiiformes	definition	
-WARN	missing_definition	Hominoidea	definition	
-WARN	missing_definition	Tetrapoda	definition	
-WARN	missing_definition	Amniota	definition	
-WARN	missing_definition	Theria <Mammalia>	definition	
-WARN	missing_definition	Viridiplantae	definition	
-WARN	missing_definition	Opisthokonta	definition	
-WARN	missing_definition	Metazoa	definition	
-WARN	missing_definition	Bilateria	definition	
-WARN	missing_definition	Deuterostomia	definition	
-WARN	missing_definition	Haplorrhini	definition	
-WARN	missing_definition	Mammalia	definition	
-WARN	missing_definition	Eumetazoa	definition	
-WARN	missing_definition	Chordata	definition	
-WARN	missing_definition	Vertebrata <Metazoa>	definition	
-WARN	missing_definition	Gnathostomata <vertebrate>	definition	
-WARN	missing_definition	Sarcopterygii	definition	
-WARN	missing_definition	Craniata <chordata>	definition	
-WARN	missing_definition	Eutheria	definition	
-WARN	missing_definition	Primates	definition	
-WARN	missing_definition	Catarrhini	definition	
-WARN	missing_definition	Hominidae	definition	
-WARN	missing_definition	Homo	definition	
-WARN	missing_definition	Homo sapiens	definition	
-WARN	missing_definition	qualitative	definition	
-WARN	missing_definition	sloped downward	definition	
-WARN	missing_definition	radionuclide	definition	
-WARN	missing_definition	actinide	definition	
-WARN	missing_definition	actinium	definition	
-WARN	missing_definition	americium	definition	
-WARN	missing_definition	californium	definition	
-WARN	missing_definition	neptunium	definition	
-WARN	missing_definition	plutonium	definition	
-WARN	missing_definition	thorium	definition	
-WARN	missing_definition	uranium	definition	
-WARN	missing_definition	radioprotectant	definition	
-WARN	missing_definition	radionuclide chelator	definition	
-WARN	missing_definition	co-carcinogen	definition	
-WARN	missing_definition	radiation response modifier	definition	
-WARN	missing_definition	peptide radiation response modifier	definition	
-WARN	missing_definition	small molecule radiation response modifier	definition	
-WARN	missing_definition	nuclear industry worker	definition	
-WARN	missing_definition	astronaut	definition	
-WARN	missing_definition	military	definition	
-WARN	missing_definition	medical professional	definition	
-WARN	missing_definition	dentist	definition	
-WARN	missing_definition	radiologist	definition	
-WARN	missing_definition	radiobiology study type	definition	
-WARN	missing_definition	epidemiological study	definition	
-WARN	missing_definition	environmental study	definition	
-WARN	missing_definition	lifespan study	definition	
-WARN	missing_definition	carcinogenesis study	definition	
-WARN	missing_definition	tissue damage study	definition	
-WARN	missing_definition	dna damage and repair study	definition	
-WARN	missing_definition	physiological study	definition	
-WARN	missing_definition	anatomical study	definition	
-WARN	missing_definition	external exposure study	definition	
-WARN	missing_definition	internal contamination study	definition	
-WARN	missing_definition	mixed exposure route study	definition	
-WARN	missing_definition	acute external exposure study	definition	
-WARN	missing_definition	chronic external exposure study	definition	
-WARN	missing_definition	chronic internal contamination study	definition	
-WARN	missing_definition	acute internal contamination study	definition	
-WARN	missing_definition	acute mixed exposure route study	definition	
-WARN	missing_definition	chronic mixed exposure route study	definition	
-WARN	missing_definition	gene expression study	definition	
-WARN	missing_definition	proteomics study	definition	
-WARN	missing_definition	marker discovery study	definition	
-WARN	missing_definition	therapeutics study	definition	
-WARN	missing_definition	survival study	definition	
-WARN	missing_definition	metabolomics study	definition	
-WARN	missing_definition	nuclear accident study	definition	
-WARN	missing_definition	toxicity study	definition	
-WARN	missing_definition	endocrine study	definition	
-WARN	missing_definition	offspring study	definition	
-WARN	missing_definition	biokinetics study	definition	
-WARN	missing_definition	occupational role	definition	
-WARN	missing_definition	risk estimate	definition	
-WARN	missing_definition	lifetime risk estimate	definition	
-WARN	missing_definition	biological process	definition	
-WARN	missing_definition	cellular process	definition	
-WARN	missing_definition	has component activity	definition	
-WARN	missing_definition	directly regulated by	definition	
-WARN	missing_definition	during which ends	definition	
-WARN	missing_definition	ends after	definition	
-WARN	missing_definition	immediately preceded by	definition	
-WARN	missing_definition	immediately precedes	definition	
-WARN	missing_definition	temporally related to	definition	
-WARN	missing_definition	results in formation of	definition	
-WARN	missing_definition	causally upstream of, positive effect	definition	
-WARN	missing_definition	causally upstream of, negative effect	definition	
-WARN	missing_definition	enables	definition	
-WARN	missing_definition	formed as result of	definition	
-WARN	missing_definition	immediately causally downstream of	definition	
-WARN	missing_definition	phosphorylates	definition	
-WARN	missing_definition	helper property (not for use in curation)	definition	
-WARN	missing_definition	is kinase activity	definition	
-WARN	missing_definition	depends on	definition	
-WARN	missing_definition	causal relation between entities	definition	
-WARN	missing_definition	causally influenced by	definition	
-WARN	missing_definition	interaction relation helper property	definition	
-WARN	missing_definition	molecular interaction relation helper property	definition	
-WARN	missing_definition	acts upstream of or within, positive effect	definition	
-WARN	missing_definition	acts upstream of or within, negative effect	definition	
-WARN	missing_definition	causally upstream of or within, negative effect	definition	
-WARN	missing_definition	causally upstream of or within, positive effect	definition	
-WARN	missing_definition	unit	definition	
-WARN	missing_definition	electric current unit	definition	
-WARN	missing_definition	temperature unit	definition	
-WARN	missing_definition	substance unit	definition	
-WARN	missing_definition	luminous intensity unit	definition	
-WARN	missing_definition	base unit	definition	
-WARN	missing_definition	prefix	definition	
-WARN	missing_definition	area unit	definition	
-WARN	missing_definition	acceleration unit	definition	
-WARN	missing_definition	angular velocity unit	definition	
-WARN	missing_definition	angular acceleration unit	definition	
-WARN	missing_definition	concentration unit	definition	
-WARN	missing_definition	mass density unit	definition	
-WARN	missing_definition	luminance unit	definition	
-WARN	missing_definition	area density unit	definition	
-WARN	missing_definition	molar mass unit	definition	
-WARN	missing_definition	molar volume unit	definition	
-WARN	missing_definition	momentum unit	definition	
-WARN	missing_definition	rotational frequency unit	definition	
-WARN	missing_definition	specific volume unit	definition	
-WARN	missing_definition	speed/velocity unit	definition	
-WARN	missing_definition	unit of molarity	definition	
-WARN	missing_definition	unit of molality	definition	
-WARN	missing_definition	unit of normality	definition	
-WARN	missing_definition	volume unit	definition	
-WARN	missing_definition	frequency unit	definition	
-WARN	missing_definition	force unit	definition	
-WARN	missing_definition	pressure unit	definition	
-WARN	missing_definition	energy unit	definition	
-WARN	missing_definition	power unit	definition	
-WARN	missing_definition	illuminance unit	definition	
-WARN	missing_definition	luminous flux unit	definition	
-WARN	missing_definition	catalytic activity unit	definition	
-WARN	missing_definition	angle unit	definition	
-WARN	missing_definition	plane angle unit	definition	
-WARN	missing_definition	solid angle unit	definition	
-WARN	missing_definition	radiation unit	definition	
-WARN	missing_definition	activity (of a radionuclide) unit	definition	
-WARN	missing_definition	absorbed dose unit	definition	
-WARN	missing_definition	dose equivalent unit	definition	
-WARN	missing_definition	exposure unit	definition	
-WARN	missing_definition	irradiance unit	definition	
-WARN	missing_definition	light unit	definition	
-WARN	missing_definition	radiant intensity unit	definition	
-WARN	missing_definition	radiance unit	definition	
-WARN	missing_definition	parts per notation unit	definition	
-WARN	missing_definition	unit per volume unit	definition	
-WARN	missing_definition	density unit	definition	
-WARN	missing_definition	linear density unit	definition	
-WARN	missing_definition	dimensionless unit	definition	
-WARN	missing_definition	percent	definition	
-WARN	missing_definition	count unit	definition	
-WARN	missing_definition	ratio	definition	
-WARN	missing_definition	fraction	definition	
-WARN	missing_definition	cell concentration unit	definition	
-WARN	missing_definition	catalytic (activity) concentration unit	definition	
-WARN	missing_definition	volume per unit volume	definition	
-WARN	missing_definition	plaque forming unit per volume	definition	
-WARN	missing_definition	electric potential difference unit	definition	
-WARN	missing_definition	electric charge	definition	
-WARN	missing_definition	magnetic flux unit	definition	
-WARN	missing_definition	magnetic flux density unit	definition	
-WARN	missing_definition	information unit	definition	
-WARN	missing_definition	image resolution unit	definition	
-WARN	missing_definition	spatial resolution unit	definition	
-WARN	missing_definition	surface tension unit	definition	
-WARN	missing_definition	viscosity unit	definition	
-WARN	missing_definition	conduction unit	definition	
-WARN	missing_definition	electrical conduction unit	definition	
-WARN	missing_definition	heat conduction unit	definition	
-WARN	missing_definition	electric field strength unit	definition	
-WARN	missing_definition	volumetric flow rate unit	definition	
-WARN	missing_definition	rate unit	definition	
-WARN	missing_definition	mega	definition	
-WARN	missing_definition	kilo	definition	
-WARN	missing_definition	deci	definition	
-WARN	missing_definition	milli	definition	
-WARN	missing_definition	centi	definition	
-WARN	missing_definition	micro	definition	
-WARN	missing_definition	nano	definition	
-WARN	missing_definition	pico	definition	
-WARN	missing_definition	femto	definition	
-WARN	missing_definition	atto	definition	
-WARN	missing_definition	dose unit	definition	
-WARN	missing_definition	meter based unit	definition	
-WARN	missing_definition	second based unit	definition	
-WARN	missing_definition	ampere based unit	definition	
-WARN	missing_definition	kelvin based unit	definition	
-WARN	missing_definition	mole based unit	definition	
-WARN	missing_definition	candela based unit	definition	
-WARN	missing_definition	angstrom based unit	definition	
-WARN	missing_definition	gram based unit	definition	
-WARN	missing_definition	degree Celsius based unit	definition	
-WARN	missing_definition	minute based unit	definition	
-WARN	missing_definition	hour based unit	definition	
-WARN	missing_definition	day based unit	definition	
-WARN	missing_definition	week based unit	definition	
-WARN	missing_definition	month based unit	definition	
-WARN	missing_definition	year based unit	definition	
-WARN	missing_definition	molar based unit	definition	
-WARN	missing_definition	molal based unit	definition	
-WARN	missing_definition	normal based unit	definition	
-WARN	missing_definition	mole fraction based unit	definition	
-WARN	missing_definition	meter per second per second based unit	definition	
-WARN	missing_definition	radian per second per second based unit	definition	
-WARN	missing_definition	radian per second based unit	definition	
-WARN	missing_definition	square meter based unit	definition	
-WARN	missing_definition	square centimeter based unit	definition	
-WARN	missing_definition	square millimeter based unit	definition	
-WARN	missing_definition	gram per cubic centimeter based unit	definition	
-WARN	missing_definition	candela per square meter based unit	definition	
-WARN	missing_definition	gram per mole based unit	definition	
-WARN	missing_definition	cubic meter per mole based unit	definition	
-WARN	missing_definition	cubic centimeter per mole based unit	definition	
-WARN	missing_definition	turns per second based unit	definition	
-WARN	missing_definition	cubic meter per kilogram based unit	definition	
-WARN	missing_definition	meter per second based unit	definition	
-WARN	missing_definition	cubic meter based unit	definition	
-WARN	missing_definition	cubic centimeter based unit	definition	
-WARN	missing_definition	liter based unit	definition	
-WARN	missing_definition	cubic decimeter based unit	definition	
-WARN	missing_definition	hertz based unit	definition	
-WARN	missing_definition	newton based unit	definition	
-WARN	missing_definition	pascal based unit	definition	
-WARN	missing_definition	joule based unit	definition	
-WARN	missing_definition	watt based unit	definition	
-WARN	missing_definition	lux based unit	definition	
-WARN	missing_definition	lumen based unit	definition	
-WARN	missing_definition	katal based unit	definition	
-WARN	missing_definition	radian based unit	definition	
-WARN	missing_definition	steradian based unit	definition	
-WARN	missing_definition	becquerel based unit	definition	
-WARN	missing_definition	curie based unit	definition	
-WARN	missing_definition	gray based unit	definition	
-WARN	missing_definition	rad based unit	definition	
-WARN	missing_definition	roentgen based unit	definition	
-WARN	missing_definition	sievert based unit	definition	
-WARN	missing_definition	Roentgen equivalent man based unit	definition	
-WARN	missing_definition	disintegrations per minute based unit	definition	
-WARN	missing_definition	counts per minute based unit	definition	
-WARN	missing_definition	century based unit	definition	
-WARN	missing_definition	half life based unit	definition	
-WARN	missing_definition	foot candle based unit	definition	
-WARN	missing_definition	watt per square meter based unit	definition	
-WARN	missing_definition	einstein per square meter per second based unit	definition	
-WARN	missing_definition	watt per steradian per square meter based unit	definition	
-WARN	missing_definition	watt per steradian based unit	definition	
-WARN	missing_definition	mass percentage based unit	definition	
-WARN	missing_definition	mass volume percentage based unit	definition	
-WARN	missing_definition	volume percentage based unit	definition	
-WARN	missing_definition	parts per hundred based unit	definition	
-WARN	missing_definition	parts per thousand based unit	definition	
-WARN	missing_definition	parts per million based unit	definition	
-WARN	missing_definition	parts per billion based unit	definition	
-WARN	missing_definition	parts per trillion based unit	definition	
-WARN	missing_definition	parts per quadrillion based unit	definition	
-WARN	missing_definition	gram per milliliter based unit	definition	
-WARN	missing_definition	gram per liter based unit	definition	
-WARN	missing_definition	unit per milliliter based unit	definition	
-WARN	missing_definition	unit per liter based unit	definition	
-WARN	missing_definition	mass per unit volume based unit	definition	
-WARN	missing_definition	enzyme unit based unit	definition	
-WARN	missing_definition	degree based unit	definition	
-WARN	missing_definition	pi based unit	definition	
-WARN	missing_definition	molecule count based unit	definition	
-WARN	missing_definition	purity percentage based unit	definition	
-WARN	missing_definition	confluence percentage based unit	definition	
-WARN	missing_definition	degree Fahrenheit based unit	definition	
-WARN	missing_definition	pH based unit	definition	
-WARN	missing_definition	liter per kilogram based unit	definition	
-WARN	missing_definition	cells per milliliter based unit	definition	
-WARN	missing_definition	katal per cubic meter based unit	definition	
-WARN	missing_definition	katal per liter based unit	definition	
-WARN	missing_definition	gram per deciliter based unit	definition	
-WARN	missing_definition	colony forming unit based unit	definition	
-WARN	missing_definition	plaque forming unit based unit	definition	
-WARN	missing_definition	colony forming unit per milliliter based unit	definition	
-WARN	missing_definition	plaque forming unit per milliliter based unit	definition	
-WARN	missing_definition	disintegrations per second based unit	definition	
-WARN	missing_definition	volt based unit	definition	
-WARN	missing_definition	coulomb based unit	definition	
-WARN	missing_definition	dalton based unit	definition	
-WARN	missing_definition	watt-hour based unit	definition	
-WARN	missing_definition	weber based unit	definition	
-WARN	missing_definition	tesla based unit	definition	
-WARN	missing_definition	volt-hour based unit	definition	
-WARN	missing_definition	bit based unit	definition	
-WARN	missing_definition	byte based unit	definition	
-WARN	missing_definition	chroma sampling unit based unit	definition	
-WARN	missing_definition	dynamic range unit based unit	definition	
-WARN	missing_definition	dots per inch based unit	definition	
-WARN	missing_definition	pixels per inch based unit	definition	
-WARN	missing_definition	pixels per millimeter based unit	definition	
-WARN	missing_definition	base pair based unit	definition	
-WARN	missing_definition	kibibyte based unit	definition	
-WARN	missing_definition	mebibyte based unit	definition	
-WARN	missing_definition	newton per meter based unit	definition	
-WARN	missing_definition	dyne per cm based unit	definition	
-WARN	missing_definition	pascal second based unit	definition	
-WARN	missing_definition	poise based unit	definition	
-WARN	missing_definition	effective dose unit based unit	definition	
-WARN	missing_definition	siemens based unit	definition	
-WARN	missing_definition	watt per meter kelvin based unit	definition	
-WARN	missing_definition	electronvolt based unit	definition	
-WARN	missing_definition	volt per meter based unit	definition	
-WARN	missing_definition	absorbance unit based unit	definition	
-WARN	missing_definition	count per nanomolar second based unit	definition	
-WARN	missing_definition	count per molar second based unit	definition	
-WARN	missing_definition	count per nanomolar based unit	definition	
-WARN	missing_definition	count per molar based unit	definition	
-WARN	missing_definition	dosage unit based unit	definition	
-WARN	missing_definition	relative light unit based unit	definition	
-WARN	missing_definition	relative luminescence unit based unit	definition	
-WARN	missing_definition	relative fluorescence unit based unit	definition	
-WARN	missing_definition	square micrometer based unit	definition	
-WARN	missing_definition	hectare based unit	definition	
-WARN	missing_definition	inch based unit	definition	
-WARN	missing_definition	thou based unit	definition	
-WARN	missing_definition	foot based unit	definition	
-WARN	missing_definition	yard based unit	definition	
-WARN	missing_definition	chain based unit	definition	
-WARN	missing_definition	furlong based unit	definition	
-WARN	missing_definition	mile based unit	definition	
-WARN	missing_definition	league based unit	definition	
-WARN	missing_definition	maritime length unit based unit	definition	
-WARN	missing_definition	fathom based unit	definition	
-WARN	missing_definition	cable based unit	definition	
-WARN	missing_definition	nautical mile based unit	definition	
-WARN	missing_definition	perch based unit	definition	
-WARN	missing_definition	rood based unit	definition	
-WARN	missing_definition	acre based unit	definition	
-WARN	missing_definition	fluid ounce based unit	definition	
-WARN	missing_definition	gill based unit	definition	
-WARN	missing_definition	pint based unit	definition	
-WARN	missing_definition	quart based unit	definition	
-WARN	missing_definition	gallon based unit	definition	
-WARN	missing_definition	grain based unit	definition	
-WARN	missing_definition	drachm based unit	definition	
-WARN	missing_definition	ounce based unit	definition	
-WARN	missing_definition	pound based unit	definition	
-WARN	missing_definition	stone based unit	definition	
-WARN	missing_definition	quarter based unit	definition	
-WARN	missing_definition	hundredweight based unit	definition	
-WARN	missing_definition	ton based unit	definition	
-WARN	missing_definition	slug based unit	definition	
-WARN	missing_definition	teaspoon based unit	definition	
-WARN	missing_definition	gram per square meter based unit	definition	
-WARN	missing_definition	large calorie based unit	definition	
-WARN	missing_definition	Creator	definition	
-WARN	missing_definition	Date	definition	
-WARN	missing_definition	Description	definition	
-WARN	missing_definition	Title	definition	
-WARN	missing_definition	dc:license	definition	
-WARN	missing_definition	has_broad_synonym	definition	
-WARN	missing_definition	database_cross_reference	definition	
-WARN	missing_definition	has_exact_synonym	definition	
+WARN	duplicate_label_synonym	organism substance	has_exact_synonym	organism substance
+WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
+WARN	duplicate_label_synonym	musculature	has_exact_synonym	musculature
+WARN	duplicate_label_synonym	uvea	has_exact_synonym	uvea
+WARN	duplicate_label_synonym	optic choroid	oboInOwl:hasRelatedSynonym	optic choroid
+WARN	duplicate_label_synonym	rhombomere	has_exact_synonym	rhombomere
+WARN	duplicate_label_synonym	gray matter	has_exact_synonym	gray matter
+WARN	duplicate_label_synonym	artery smooth muscle tissue	has_exact_synonym	artery smooth muscle tissue
+WARN	duplicate_label_synonym	gray matter of spinal cord	has_exact_synonym	gray matter of spinal cord
+WARN	duplicate_label_synonym	cartilage tissue	has_exact_synonym	cartilage tissue
+WARN	duplicate_label_synonym	iris epithelium	has_exact_synonym	iris epithelium
+WARN	duplicate_label_synonym	periderm	oboInOwl:hasRelatedSynonym	periderm
+WARN	duplicate_label_synonym	gland of digestive tract	has_exact_synonym	gland of digestive tract
+WARN	duplicate_label_synonym	facial bone	has_exact_synonym	facial bone
+WARN	duplicate_label_synonym	mouth mucosa	has_exact_synonym	mouth mucosa
+WARN	duplicate_label_synonym	mesencephalic neural crest	has_exact_synonym	mesencephalic neural crest
+WARN	duplicate_label_synonym	germinal neuroepithelium	has_exact_synonym	germinal neuroepithelium
+WARN	duplicate_label_synonym	primary heart field	has_exact_synonym	primary heart field
+WARN	duplicate_label_synonym	cardiac vein	has_exact_synonym	cardiac vein
+WARN	duplicate_label_synonym	anterior limiting lamina of cornea	has_exact_synonym	anterior limiting lamina of cornea
+WARN	duplicate_label_synonym	neuromere	has_exact_synonym	neuromere
+WARN	duplicate_label_synonym	primitive heart tube	has_exact_synonym	primitive heart tube
+WARN	duplicate_label_synonym	head mesenchyme from mesoderm	has_exact_synonym	head mesenchyme from mesoderm
+WARN	duplicate_label_synonym	lumen of digestive tract	has_exact_synonym	lumen of digestive tract
+WARN	duplicate_label_synonym	anatomical junction	has_exact_synonym	anatomical junction
+WARN	duplicate_label_synonym	perichordal bone	oboInOwl:hasRelatedSynonym	perichordal bone
+WARN	duplicate_label_synonym	ciliary processes	has_exact_synonym	ciliary processes
+WARN	duplicate_label_synonym	facial skeleton	has_exact_synonym	facial skeleton
+WARN	duplicate_label_synonym	hematopoietic tissue	has_exact_synonym	hematopoietic tissue
+WARN	duplicate_label_synonym	foramen of skull	has_exact_synonym	foramen of skull
+WARN	duplicate_label_synonym	arterial blood	has_exact_synonym	arterial blood
+WARN	duplicate_label_synonym	venous blood	has_exact_synonym	venous blood
+WARN	duplicate_label_synonym	thoracic skeleton	has_exact_synonym	thoracic skeleton
+WARN	missing_definition	fiat object part	textual definition	
+WARN	missing_definition	object aggregate	textual definition	
+WARN	missing_definition	site	textual definition	
+WARN	missing_definition	object	textual definition	
+WARN	missing_definition	has participant	textual definition	
+WARN	missing_definition	immaterial entity	textual definition	
+WARN	missing_definition	anatomical entity	textual definition	
+WARN	missing_definition	biological entity	textual definition	
+WARN	missing_definition	gas molecular entity	textual definition	
+WARN	missing_definition	electron donor	textual definition	
+WARN	missing_definition	water	textual definition	
+WARN	missing_definition	dioxygen	textual definition	
+WARN	missing_definition	carbon dioxide	textual definition	
+WARN	missing_definition	donor	textual definition	
+WARN	missing_definition	dinitrogen	textual definition	
+WARN	missing_definition	carbon oxide	textual definition	
+WARN	missing_definition	chloride salt	textual definition	
+WARN	missing_definition	chlorine molecular entity	textual definition	
+WARN	missing_definition	molecular entity	textual definition	
+WARN	missing_definition	chemical entity	textual definition	
+WARN	missing_definition	biological role	textual definition	
+WARN	missing_definition	halogen molecular entity	textual definition	
+WARN	missing_definition	hydroxides	textual definition	
+WARN	missing_definition	inorganic molecular entity	textual definition	
+WARN	missing_definition	inorganic salt	textual definition	
+WARN	missing_definition	salt	textual definition	
+WARN	missing_definition	elemental molecule	textual definition	
+WARN	missing_definition	molecule	textual definition	
+WARN	missing_definition	organic oxide	textual definition	
+WARN	missing_definition	oxide	textual definition	
+WARN	missing_definition	oxygen molecular entity	textual definition	
+WARN	missing_definition	sodium chloride	textual definition	
+WARN	missing_definition	sodium molecular entity	textual definition	
+WARN	missing_definition	sodium salt	textual definition	
+WARN	missing_definition	inorganic hydride	textual definition	
+WARN	missing_definition	atomic nucleus	textual definition	
+WARN	missing_definition	elemental molecular entity	textual definition	
+WARN	missing_definition	elemental oxygen	textual definition	
+WARN	missing_definition	diatomic oxygen	textual definition	
+WARN	missing_definition	diatomic nitrogen	textual definition	
+WARN	missing_definition	elemental nitrogen	textual definition	
+WARN	missing_definition	nutrient	textual definition	
+WARN	missing_definition	heteroorganic entity	textual definition	
+WARN	missing_definition	alkali metal molecular entity	textual definition	
+WARN	missing_definition	pnictogen molecular entity	textual definition	
+WARN	missing_definition	chalcogen molecular entity	textual definition	
+WARN	missing_definition	elemental pnictogen	textual definition	
+WARN	missing_definition	metal atom	textual definition	
+WARN	missing_definition	main group molecular entity	textual definition	
+WARN	missing_definition	carbon group molecular entity	textual definition	
+WARN	missing_definition	noble gas molecular entity	textual definition	
+WARN	missing_definition	hydrogen molecular entity	textual definition	
+WARN	missing_definition	s-block molecular entity	textual definition	
+WARN	missing_definition	p-block molecular entity	textual definition	
+WARN	missing_definition	helium molecular entity	textual definition	
+WARN	missing_definition	hydrides	textual definition	
+WARN	missing_definition	oxygen hydride	textual definition	
+WARN	missing_definition	biomacromolecule	textual definition	
+WARN	missing_definition	macromolecule	textual definition	
+WARN	missing_definition	halide salt	textual definition	
+WARN	missing_definition	alkali metal salt	textual definition	
+WARN	missing_definition	inorganic chloride	textual definition	
+WARN	missing_definition	subatomic particle	textual definition	
+WARN	missing_definition	nuclear particle	textual definition	
+WARN	missing_definition	polyatomic entity	textual definition	
+WARN	missing_definition	chalcogen hydride	textual definition	
+WARN	missing_definition	argon molecular entity	textual definition	
+WARN	missing_definition	organochalcogen compound	textual definition	
+WARN	missing_definition	organooxygen compound	textual definition	
+WARN	missing_definition	mononuclear parent hydride	textual definition	
+WARN	missing_definition	heteroatomic molecular entity	textual definition	
+WARN	missing_definition	halide	textual definition	
+WARN	missing_definition	inorganic sodium salt	textual definition	
+WARN	missing_definition	mineral	textual definition	
+WARN	missing_definition	organic molecular entity	textual definition	
+WARN	missing_definition	role	textual definition	
+WARN	missing_definition	chemical role	textual definition	
+WARN	missing_definition	nitrogen molecular entity	textual definition	
+WARN	missing_definition	physiological role	textual definition	
+WARN	missing_definition	inorganic hydroxy compound	textual definition	
+WARN	missing_definition	chemical substance	textual definition	
+WARN	missing_definition	one-carbon compound	textual definition	
+WARN	missing_definition	organic molecule	textual definition	
+WARN	missing_definition	greenhouse gas	textual definition	
+WARN	missing_definition	food component	textual definition	
+WARN	missing_definition	quality	textual definition	
+WARN	missing_definition	mass	textual definition	
+WARN	missing_definition	charge	textual definition	
+WARN	missing_definition	material entity	textual definition	
+WARN	missing_definition	subatomic particle	textual definition	
+WARN	missing_definition	atomic nucleus	textual definition	
+WARN	missing_definition	characteristic of	textual definition	
+WARN	missing_definition	quality of	textual definition	
+WARN	missing_definition	has quality	textual definition	
+WARN	missing_definition	monoatomic ion	textual definition	
+WARN	missing_definition	uncharged atom	textual definition	
+WARN	missing_definition	has part	textual definition	
+WARN	missing_definition	part of	textual definition	
+WARN	missing_definition	characteristic	textual definition	
+WARN	missing_definition	has characteristic	textual definition	
+WARN	missing_definition	has number of atomic nuclei	textual definition	
+WARN	missing_definition	atherosclerosis	textual definition	
+WARN	missing_definition	iris disease	textual definition	
+WARN	missing_definition	liver disease	textual definition	
+WARN	missing_definition	bone marrow disease	textual definition	
+WARN	missing_definition	cornea cancer	textual definition	
+WARN	missing_definition	geographic feature	textual definition	
+WARN	missing_definition	body of liquid	textual definition	
+WARN	missing_definition	mass fluid flow	textual definition	
+WARN	missing_definition	aquatic ecosystem	textual definition	
+WARN	missing_definition	marine ecosystem	textual definition	
+WARN	missing_definition	molecular_function	textual definition	
+WARN	missing_definition	catalytic activity	textual definition	
+WARN	missing_definition	kinase activity	textual definition	
+WARN	missing_definition	transferase activity	textual definition	
+WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
+WARN	missing_definition	has measurement value	textual definition	
+WARN	missing_definition	has measurement unit label	textual definition	
+WARN	missing_definition	root	textual definition	
+WARN	missing_definition	Viruses	textual definition	
+WARN	missing_definition	Teleostomi	textual definition	
+WARN	missing_definition	Euteleostomi	textual definition	
+WARN	missing_definition	cellular organisms	textual definition	
+WARN	missing_definition	Dipnotetrapodomorpha	textual definition	
+WARN	missing_definition	Boreoeutheria	textual definition	
+WARN	missing_definition	Bacteria	textual definition	
+WARN	missing_definition	Homininae	textual definition	
+WARN	missing_definition	Archaea	textual definition	
+WARN	missing_definition	Eukaryota	textual definition	
+WARN	missing_definition	Euarchontoglires	textual definition	
+WARN	missing_definition	Simiiformes	textual definition	
+WARN	missing_definition	Hominoidea	textual definition	
+WARN	missing_definition	Tetrapoda	textual definition	
+WARN	missing_definition	Amniota	textual definition	
+WARN	missing_definition	Theria <mammals>	textual definition	
+WARN	missing_definition	Viridiplantae	textual definition	
+WARN	missing_definition	Opisthokonta	textual definition	
+WARN	missing_definition	Metazoa	textual definition	
+WARN	missing_definition	Bilateria	textual definition	
+WARN	missing_definition	Deuterostomia	textual definition	
+WARN	missing_definition	Haplorrhini	textual definition	
+WARN	missing_definition	Mammalia	textual definition	
+WARN	missing_definition	Eumetazoa	textual definition	
+WARN	missing_definition	Chordata	textual definition	
+WARN	missing_definition	Vertebrata <vertebrates>	textual definition	
+WARN	missing_definition	Gnathostomata <vertebrates>	textual definition	
+WARN	missing_definition	Sarcopterygii	textual definition	
+WARN	missing_definition	Craniata <chordates>	textual definition	
+WARN	missing_definition	Eutheria	textual definition	
+WARN	missing_definition	Primates	textual definition	
+WARN	missing_definition	Catarrhini	textual definition	
+WARN	missing_definition	Hominidae	textual definition	
+WARN	missing_definition	Homo	textual definition	
+WARN	missing_definition	Homo sapiens	textual definition	
+WARN	missing_definition	qualitative	textual definition	
+WARN	missing_definition	sloped downward	textual definition	
+WARN	missing_definition	radionuclide	textual definition	
+WARN	missing_definition	actinide	textual definition	
+WARN	missing_definition	actinium	textual definition	
+WARN	missing_definition	americium	textual definition	
+WARN	missing_definition	californium	textual definition	
+WARN	missing_definition	neptunium	textual definition	
+WARN	missing_definition	plutonium	textual definition	
+WARN	missing_definition	thorium	textual definition	
+WARN	missing_definition	uranium	textual definition	
+WARN	missing_definition	radioprotectant	textual definition	
+WARN	missing_definition	radionuclide chelator	textual definition	
+WARN	missing_definition	co-carcinogen	textual definition	
+WARN	missing_definition	radiation response modifier	textual definition	
+WARN	missing_definition	peptide radiation response modifier	textual definition	
+WARN	missing_definition	small molecule radiation response modifier	textual definition	
+WARN	missing_definition	nuclear industry worker	textual definition	
+WARN	missing_definition	astronaut	textual definition	
+WARN	missing_definition	military	textual definition	
+WARN	missing_definition	medical professional	textual definition	
+WARN	missing_definition	dentist	textual definition	
+WARN	missing_definition	radiologist	textual definition	
+WARN	missing_definition	radiobiology study type	textual definition	
+WARN	missing_definition	epidemiological study	textual definition	
+WARN	missing_definition	environmental study	textual definition	
+WARN	missing_definition	lifespan study	textual definition	
+WARN	missing_definition	carcinogenesis study	textual definition	
+WARN	missing_definition	tissue damage study	textual definition	
+WARN	missing_definition	dna damage and repair study	textual definition	
+WARN	missing_definition	physiological study	textual definition	
+WARN	missing_definition	anatomical study	textual definition	
+WARN	missing_definition	external exposure study	textual definition	
+WARN	missing_definition	internal contamination study	textual definition	
+WARN	missing_definition	mixed exposure route study	textual definition	
+WARN	missing_definition	acute external exposure study	textual definition	
+WARN	missing_definition	chronic external exposure study	textual definition	
+WARN	missing_definition	chronic internal contamination study	textual definition	
+WARN	missing_definition	acute internal contamination study	textual definition	
+WARN	missing_definition	acute mixed exposure route study	textual definition	
+WARN	missing_definition	chronic mixed exposure route study	textual definition	
+WARN	missing_definition	gene expression study	textual definition	
+WARN	missing_definition	proteomics study	textual definition	
+WARN	missing_definition	marker discovery study	textual definition	
+WARN	missing_definition	therapeutics study	textual definition	
+WARN	missing_definition	survival study	textual definition	
+WARN	missing_definition	metabolomics study	textual definition	
+WARN	missing_definition	nuclear accident study	textual definition	
+WARN	missing_definition	toxicity study	textual definition	
+WARN	missing_definition	endocrine study	textual definition	
+WARN	missing_definition	offspring study	textual definition	
+WARN	missing_definition	biokinetics study	textual definition	
+WARN	missing_definition	occupational role	textual definition	
+WARN	missing_definition	risk estimate	textual definition	
+WARN	missing_definition	lifetime risk estimate	textual definition	
+WARN	missing_definition	biological process	textual definition	
+WARN	missing_definition	cellular process	textual definition	
+WARN	missing_definition	mass number	textual definition	
+WARN	missing_definition	location_of	textual definition	
+WARN	missing_definition	contains	textual definition	
+WARN	missing_definition	has boundary	textual definition	
+WARN	missing_definition	has component activity	textual definition	
+WARN	missing_definition	directly regulated by	textual definition	
+WARN	missing_definition	during which ends	textual definition	
+WARN	missing_definition	ends after	textual definition	
+WARN	missing_definition	immediately precedes	textual definition	
+WARN	missing_definition	continuous_with	textual definition	
+WARN	missing_definition	drains	textual definition	
+WARN	missing_definition	temporally related to	textual definition	
+WARN	missing_definition	starts with	textual definition	
+WARN	missing_definition	ends with	textual definition	
+WARN	missing_definition	developmentally_replaces	textual definition	
+WARN	missing_definition	results in formation of	textual definition	
+WARN	missing_definition	causally upstream of, positive effect	textual definition	
+WARN	missing_definition	causally upstream of, negative effect	textual definition	
+WARN	missing_definition	enables	textual definition	
+WARN	missing_definition	formed as result of	textual definition	
+WARN	missing_definition	attaches_to	textual definition	
+WARN	missing_definition	tributary_of	textual definition	
+WARN	missing_definition	branching_part_of	textual definition	
+WARN	missing_definition	immediately causally downstream of	textual definition	
+WARN	missing_definition	contributes to morphology of	textual definition	
+WARN	missing_definition	phosphorylates	textual definition	
+WARN	missing_definition	helper property (not for use in curation)	textual definition	
+WARN	missing_definition	is kinase activity	textual definition	
+WARN	missing_definition	existence starts and ends during	textual definition	
+WARN	missing_definition	transformation of	textual definition	
+WARN	missing_definition	immediate transformation of	textual definition	
+WARN	missing_definition	existence starts during or after	textual definition	
+WARN	missing_definition	existence ends during or before	textual definition	
+WARN	missing_definition	depends on	textual definition	
+WARN	missing_definition	causal relation between entities	textual definition	
+WARN	missing_definition	causally influenced by	textual definition	
+WARN	missing_definition	interaction relation helper property	textual definition	
+WARN	missing_definition	molecular interaction relation helper property	textual definition	
+WARN	missing_definition	has branching part	textual definition	
+WARN	missing_definition	luminal space of	textual definition	
+WARN	missing_definition	skeleton of	textual definition	
+WARN	missing_definition	produces	textual definition	
+WARN	missing_definition	produced_by	textual definition	
+WARN	missing_definition	acts upstream of or within, positive effect	textual definition	
+WARN	missing_definition	acts upstream of or within, negative effect	textual definition	
+WARN	missing_definition	causally upstream of or within, negative effect	textual definition	
+WARN	missing_definition	causally upstream of or within, positive effect	textual definition	
+WARN	missing_definition	anterior region of body	textual definition	
+WARN	missing_definition	posterior region of body	textual definition	
+WARN	missing_definition	subdivision of head	textual definition	
+WARN	missing_definition	posterior neural tube	textual definition	
+WARN	missing_definition	anterior neural tube	textual definition	
+WARN	missing_definition	developing anatomical structure	textual definition	
+WARN	missing_definition	posterior surface of head	textual definition	
+WARN	missing_definition	future spinal cord	textual definition	
+WARN	missing_definition	presumptive blood	textual definition	
+WARN	missing_definition	presumptive gut	textual definition	
+WARN	missing_definition	1st arch mandibular component	textual definition	
+WARN	missing_definition	pharyngeal region of foregut	textual definition	
+WARN	missing_definition	subdivision of trunk	textual definition	
+WARN	missing_definition	midbrain mantle layer	textual definition	
+WARN	missing_definition	spinal cord mantle layer	textual definition	
+WARN	missing_definition	midbrain hindbrain boundary neural plate	textual definition	
+WARN	missing_definition	trunk paraxial mesoderm	textual definition	
+WARN	missing_definition	entire pharyngeal arch endoderm	textual definition	
+WARN	missing_definition	anterior lateral plate mesoderm	textual definition	
+WARN	missing_definition	optic neural crest	textual definition	
+WARN	missing_definition	germ layer / neural crest	textual definition	
+WARN	missing_definition	primary subdivision of cranial skeletal system	textual definition	
+WARN	missing_definition	intra-ocular muscle	textual definition	
+WARN	missing_definition	embryonic skin basal layer	textual definition	
+WARN	missing_definition	future lower lip	textual definition	
+WARN	missing_definition	fibrous connective tissue	textual definition	
+WARN	missing_definition	collection of collagen fibrils	textual definition	
+WARN	missing_definition	respiratory system arterial smooth muscle	textual definition	
+WARN	missing_definition	extraembryonic cavity	textual definition	
+WARN	missing_definition	subdivision of tube	textual definition	
+WARN	missing_definition	subepicardial layer of epicardium	textual definition	
+WARN	missing_definition	heart plus pericardium	textual definition	
+WARN	missing_definition	heterogeneous tissue	textual definition	
+WARN	missing_definition	lamina of gray matter of spinal cord	textual definition	
+WARN	missing_definition	cardiac muscle tissue of ventricle	textual definition	
+WARN	missing_definition	gray matter of hindbrain	textual definition	
+WARN	missing_definition	gray matter of midbrain	textual definition	
+WARN	missing_definition	sensory organ epithelium	textual definition	
+WARN	missing_definition	surface of eyeball	textual definition	
+WARN	missing_definition	hindbrain marginal layer	textual definition	
+WARN	missing_definition	spinal cord ventricular layer	textual definition	
+WARN	missing_definition	lymphomyeloid tissue	textual definition	
+WARN	missing_definition	gland lumen	textual definition	
+WARN	missing_definition	zone of organ	textual definition	
+WARN	missing_definition	epithelial layer of duct	textual definition	
+WARN	missing_definition	jaw epithelium	textual definition	
+WARN	missing_definition	uveal vein	textual definition	
+WARN	missing_definition	cavity of cardiac chamber	textual definition	
+WARN	missing_definition	serous cavity	textual definition	
+WARN	missing_definition	wall of blood vessel	textual definition	
+WARN	missing_definition	orifice of skull	textual definition	
+WARN	missing_definition	vasculature of central nervous system plus retina	textual definition	
+WARN	missing_definition	vasculature of central nervous system	textual definition	
+WARN	missing_definition	wall of eyeball	textual definition	
+WARN	missing_definition	unit	textual definition	
+WARN	missing_definition	electric current unit	textual definition	
+WARN	missing_definition	temperature unit	textual definition	
+WARN	missing_definition	substance unit	textual definition	
+WARN	missing_definition	luminous intensity unit	textual definition	
+WARN	missing_definition	ampere	textual definition	
+WARN	missing_definition	kelvin	textual definition	
+WARN	missing_definition	mole	textual definition	
+WARN	missing_definition	candela	textual definition	
+WARN	missing_definition	picometer	textual definition	
+WARN	missing_definition	femtogram	textual definition	
+WARN	missing_definition	millisecond	textual definition	
+WARN	missing_definition	microsecond	textual definition	
+WARN	missing_definition	picosecond	textual definition	
+WARN	missing_definition	milliampere	textual definition	
+WARN	missing_definition	microampere	textual definition	
+WARN	missing_definition	millimole	textual definition	
+WARN	missing_definition	femtomole	textual definition	
+WARN	missing_definition	attomole	textual definition	
+WARN	missing_definition	base unit	textual definition	
+WARN	missing_definition	prefix	textual definition	
+WARN	missing_definition	area unit	textual definition	
+WARN	missing_definition	acceleration unit	textual definition	
+WARN	missing_definition	angular velocity unit	textual definition	
+WARN	missing_definition	angular acceleration unit	textual definition	
+WARN	missing_definition	concentration unit	textual definition	
+WARN	missing_definition	mass density unit	textual definition	
+WARN	missing_definition	luminance unit	textual definition	
+WARN	missing_definition	area density unit	textual definition	
+WARN	missing_definition	molar mass unit	textual definition	
+WARN	missing_definition	molar volume unit	textual definition	
+WARN	missing_definition	momentum unit	textual definition	
+WARN	missing_definition	rotational frequency unit	textual definition	
+WARN	missing_definition	specific volume unit	textual definition	
+WARN	missing_definition	speed/velocity unit	textual definition	
+WARN	missing_definition	unit of molarity	textual definition	
+WARN	missing_definition	unit of molality	textual definition	
+WARN	missing_definition	molal	textual definition	
+WARN	missing_definition	millimolal	textual definition	
+WARN	missing_definition	micromolal	textual definition	
+WARN	missing_definition	nanomolal	textual definition	
+WARN	missing_definition	picomolal	textual definition	
+WARN	missing_definition	femtomolar	textual definition	
+WARN	missing_definition	unit of normality	textual definition	
+WARN	missing_definition	normal	textual definition	
+WARN	missing_definition	mole fraction	textual definition	
+WARN	missing_definition	meter per second per second	textual definition	
+WARN	missing_definition	radian per second per second	textual definition	
+WARN	missing_definition	radian per second	textual definition	
+WARN	missing_definition	square meter	textual definition	
+WARN	missing_definition	square centimeter	textual definition	
+WARN	missing_definition	square millimeter	textual definition	
+WARN	missing_definition	kilogram per cubic meter	textual definition	
+WARN	missing_definition	gram per cubic centimeter	textual definition	
+WARN	missing_definition	candela per square meter	textual definition	
+WARN	missing_definition	kilogram per square meter	textual definition	
+WARN	missing_definition	kilogram per mole	textual definition	
+WARN	missing_definition	gram per mole	textual definition	
+WARN	missing_definition	cubic meter per mole	textual definition	
+WARN	missing_definition	cubic centimeter per mole	textual definition	
+WARN	missing_definition	kilogram meter per second	textual definition	
+WARN	missing_definition	turns per second	textual definition	
+WARN	missing_definition	cubic meter per kilogram	textual definition	
+WARN	missing_definition	meter per second	textual definition	
+WARN	missing_definition	volume unit	textual definition	
+WARN	missing_definition	cubic meter	textual definition	
+WARN	missing_definition	femtoliter	textual definition	
+WARN	missing_definition	frequency unit	textual definition	
+WARN	missing_definition	force unit	textual definition	
+WARN	missing_definition	newton	textual definition	
+WARN	missing_definition	pressure unit	textual definition	
+WARN	missing_definition	pascal	textual definition	
+WARN	missing_definition	energy unit	textual definition	
+WARN	missing_definition	joule	textual definition	
+WARN	missing_definition	power unit	textual definition	
+WARN	missing_definition	watt	textual definition	
+WARN	missing_definition	illuminance unit	textual definition	
+WARN	missing_definition	lux	textual definition	
+WARN	missing_definition	luminous flux unit	textual definition	
+WARN	missing_definition	lumen	textual definition	
+WARN	missing_definition	catalytic activity unit	textual definition	
+WARN	missing_definition	katal	textual definition	
+WARN	missing_definition	angle unit	textual definition	
+WARN	missing_definition	plane angle unit	textual definition	
+WARN	missing_definition	radian	textual definition	
+WARN	missing_definition	solid angle unit	textual definition	
+WARN	missing_definition	steradian	textual definition	
+WARN	missing_definition	radiation unit	textual definition	
+WARN	missing_definition	activity (of a radionuclide) unit	textual definition	
+WARN	missing_definition	absorbed dose unit	textual definition	
+WARN	missing_definition	dose equivalent unit	textual definition	
+WARN	missing_definition	exposure unit	textual definition	
+WARN	missing_definition	becquerel	textual definition	
+WARN	missing_definition	curie	textual definition	
+WARN	missing_definition	gray	textual definition	
+WARN	missing_definition	rad	textual definition	
+WARN	missing_definition	roentgen	textual definition	
+WARN	missing_definition	sievert	textual definition	
+WARN	missing_definition	millisievert	textual definition	
+WARN	missing_definition	microsievert	textual definition	
+WARN	missing_definition	Roentgen equivalent man	textual definition	
+WARN	missing_definition	microgray	textual definition	
+WARN	missing_definition	milligray	textual definition	
+WARN	missing_definition	nanogray	textual definition	
+WARN	missing_definition	nanosievert	textual definition	
+WARN	missing_definition	millicurie	textual definition	
+WARN	missing_definition	microcurie	textual definition	
+WARN	missing_definition	disintegrations per minute	textual definition	
+WARN	missing_definition	counts per minute	textual definition	
+WARN	missing_definition	nanosecond	textual definition	
+WARN	missing_definition	century	textual definition	
+WARN	missing_definition	half life	textual definition	
+WARN	missing_definition	foot candle	textual definition	
+WARN	missing_definition	irradiance unit	textual definition	
+WARN	missing_definition	watt per square meter	textual definition	
+WARN	missing_definition	einstein per square meter per second	textual definition	
+WARN	missing_definition	light unit	textual definition	
+WARN	missing_definition	watt per steradian per square meter	textual definition	
+WARN	missing_definition	radiant intensity unit	textual definition	
+WARN	missing_definition	microeinstein per square meter per second	textual definition	
+WARN	missing_definition	radiance unit	textual definition	
+WARN	missing_definition	watt per steradian	textual definition	
+WARN	missing_definition	parts per notation unit	textual definition	
+WARN	missing_definition	parts per hundred	textual definition	
+WARN	missing_definition	parts per thousand	textual definition	
+WARN	missing_definition	parts per million	textual definition	
+WARN	missing_definition	parts per billion	textual definition	
+WARN	missing_definition	parts per trillion	textual definition	
+WARN	missing_definition	parts per quadrillion	textual definition	
+WARN	missing_definition	gram per milliliter	textual definition	
+WARN	missing_definition	kilogram per liter	textual definition	
+WARN	missing_definition	unit per volume unit	textual definition	
+WARN	missing_definition	unit per milliliter	textual definition	
+WARN	missing_definition	unit per liter	textual definition	
+WARN	missing_definition	mass per unit volume	textual definition	
+WARN	missing_definition	enzyme unit	textual definition	
+WARN	missing_definition	density unit	textual definition	
+WARN	missing_definition	linear density unit	textual definition	
+WARN	missing_definition	kilogram per meter	textual definition	
+WARN	missing_definition	degree	textual definition	
+WARN	missing_definition	dimensionless unit	textual definition	
+WARN	missing_definition	percent	textual definition	
+WARN	missing_definition	pi	textual definition	
+WARN	missing_definition	count unit	textual definition	
+WARN	missing_definition	ratio	textual definition	
+WARN	missing_definition	fraction	textual definition	
+WARN	missing_definition	molecule count	textual definition	
+WARN	missing_definition	purity percentage	textual definition	
+WARN	missing_definition	confluence percentage	textual definition	
+WARN	missing_definition	liter per kilogram	textual definition	
+WARN	missing_definition	milliliter per kilogram	textual definition	
+WARN	missing_definition	microliter per kilogram	textual definition	
+WARN	missing_definition	cell concentration unit	textual definition	
+WARN	missing_definition	cells per milliliter	textual definition	
+WARN	missing_definition	catalytic (activity) concentration unit	textual definition	
+WARN	missing_definition	katal per cubic meter	textual definition	
+WARN	missing_definition	katal per liter	textual definition	
+WARN	missing_definition	volume per unit volume	textual definition	
+WARN	missing_definition	milliliter per cubic meter	textual definition	
+WARN	missing_definition	deciliter	textual definition	
+WARN	missing_definition	colony forming unit	textual definition	
+WARN	missing_definition	plaque forming unit	textual definition	
+WARN	missing_definition	colony forming unit per milliliter	textual definition	
+WARN	missing_definition	plaque forming unit per volume	textual definition	
+WARN	missing_definition	plaque forming unit per milliliter	textual definition	
+WARN	missing_definition	disintegrations per second	textual definition	
+WARN	missing_definition	electric potential difference unit	textual definition	
+WARN	missing_definition	volt	textual definition	
+WARN	missing_definition	electric charge	textual definition	
+WARN	missing_definition	coulomb	textual definition	
+WARN	missing_definition	dalton	textual definition	
+WARN	missing_definition	kilodalton	textual definition	
+WARN	missing_definition	watt-hour	textual definition	
+WARN	missing_definition	kilowatt-hour	textual definition	
+WARN	missing_definition	magnetic flux unit	textual definition	
+WARN	missing_definition	weber	textual definition	
+WARN	missing_definition	magnetic flux density unit	textual definition	
+WARN	missing_definition	tesla	textual definition	
+WARN	missing_definition	volt-hour	textual definition	
+WARN	missing_definition	kilovolt-hour	textual definition	
+WARN	missing_definition	information unit	textual definition	
+WARN	missing_definition	bit	textual definition	
+WARN	missing_definition	byte	textual definition	
+WARN	missing_definition	kilobyte	textual definition	
+WARN	missing_definition	megabyte	textual definition	
+WARN	missing_definition	image resolution unit	textual definition	
+WARN	missing_definition	chroma sampling unit	textual definition	
+WARN	missing_definition	dynamic range unit	textual definition	
+WARN	missing_definition	spatial resolution unit	textual definition	
+WARN	missing_definition	dots per inch	textual definition	
+WARN	missing_definition	micron pixel	textual definition	
+WARN	missing_definition	pixels per inch	textual definition	
+WARN	missing_definition	pixels per millimeter	textual definition	
+WARN	missing_definition	base pair	textual definition	
+WARN	missing_definition	kibibyte	textual definition	
+WARN	missing_definition	mebibyte	textual definition	
+WARN	missing_definition	millivolt	textual definition	
+WARN	missing_definition	kilovolt	textual definition	
+WARN	missing_definition	microvolt	textual definition	
+WARN	missing_definition	nanovolt	textual definition	
+WARN	missing_definition	picovolt	textual definition	
+WARN	missing_definition	megavolt	textual definition	
+WARN	missing_definition	surface tension unit	textual definition	
+WARN	missing_definition	newton per meter	textual definition	
+WARN	missing_definition	dyne per cm	textual definition	
+WARN	missing_definition	viscosity unit	textual definition	
+WARN	missing_definition	pascal second	textual definition	
+WARN	missing_definition	poise	textual definition	
+WARN	missing_definition	decibel	textual definition	
+WARN	missing_definition	effective dose unit	textual definition	
+WARN	missing_definition	conduction unit	textual definition	
+WARN	missing_definition	electrical conduction unit	textual definition	
+WARN	missing_definition	heat conduction unit	textual definition	
+WARN	missing_definition	siemens	textual definition	
+WARN	missing_definition	watt per meter kelvin	textual definition	
+WARN	missing_definition	electronvolt	textual definition	
+WARN	missing_definition	electric field strength unit	textual definition	
+WARN	missing_definition	volt per meter	textual definition	
+WARN	missing_definition	absorbance unit	textual definition	
+WARN	missing_definition	volumetric flow rate unit	textual definition	
+WARN	missing_definition	millimetres of mercury	textual definition	
+WARN	missing_definition	milligram per liter	textual definition	
+WARN	missing_definition	microgram per milliliter	textual definition	
+WARN	missing_definition	nanogram per milliliter	textual definition	
+WARN	missing_definition	milliunits per milliliter	textual definition	
+WARN	missing_definition	rate unit	textual definition	
+WARN	missing_definition	kilogram per hectare	textual definition	
+WARN	missing_definition	giga	textual definition	
+WARN	missing_definition	mega	textual definition	
+WARN	missing_definition	kilo	textual definition	
+WARN	missing_definition	deci	textual definition	
+WARN	missing_definition	milli	textual definition	
+WARN	missing_definition	centi	textual definition	
+WARN	missing_definition	micro	textual definition	
+WARN	missing_definition	nano	textual definition	
+WARN	missing_definition	pico	textual definition	
+WARN	missing_definition	femto	textual definition	
+WARN	missing_definition	atto	textual definition	
+WARN	missing_definition	dose unit	textual definition	
+WARN	missing_definition	milligram per kilogram	textual definition	
+WARN	missing_definition	milligram per square meter	textual definition	
+WARN	missing_definition	dosage unit	textual definition	
+WARN	missing_definition	milligram per kilogram per day	textual definition	
+WARN	missing_definition	relative light unit	textual definition	
+WARN	missing_definition	relative luminescence unit	textual definition	
+WARN	missing_definition	relative fluorescence unit	textual definition	
+WARN	missing_definition	megaHertz	textual definition	
+WARN	missing_definition	centiMorgan	textual definition	
+WARN	missing_definition	centiRay	textual definition	
+WARN	missing_definition	mega base pair	textual definition	
+WARN	missing_definition	giga base pair	textual definition	
+WARN	missing_definition	square micrometer	textual definition	
+WARN	missing_definition	millisiemens	textual definition	
+WARN	missing_definition	micromole per litre	textual definition	
+WARN	missing_definition	micromole per kilogram	textual definition	
+WARN	missing_definition	millimeters per day	textual definition	
+WARN	missing_definition	kilometer per hour	textual definition	
+WARN	missing_definition	milli	textual definition	
+WARN	missing_definition	hectare	textual definition	
+WARN	missing_definition	inch	textual definition	
+WARN	missing_definition	thou	textual definition	
+WARN	missing_definition	foot	textual definition	
+WARN	missing_definition	yard	textual definition	
+WARN	missing_definition	chain	textual definition	
+WARN	missing_definition	furlong	textual definition	
+WARN	missing_definition	mile	textual definition	
+WARN	missing_definition	league	textual definition	
+WARN	missing_definition	maritime length unit	textual definition	
+WARN	missing_definition	fathom	textual definition	
+WARN	missing_definition	cable	textual definition	
+WARN	missing_definition	nautical mile	textual definition	
+WARN	missing_definition	perch	textual definition	
+WARN	missing_definition	rood	textual definition	
+WARN	missing_definition	acre	textual definition	
+WARN	missing_definition	fluid ounce	textual definition	
+WARN	missing_definition	gill	textual definition	
+WARN	missing_definition	pint	textual definition	
+WARN	missing_definition	quart	textual definition	
+WARN	missing_definition	gallon	textual definition	
+WARN	missing_definition	grain	textual definition	
+WARN	missing_definition	drachm	textual definition	
+WARN	missing_definition	ounce	textual definition	
+WARN	missing_definition	pound	textual definition	
+WARN	missing_definition	stone	textual definition	
+WARN	missing_definition	quarter	textual definition	
+WARN	missing_definition	hundredweight	textual definition	
+WARN	missing_definition	ton	textual definition	
+WARN	missing_definition	slug	textual definition	
+WARN	missing_definition	teaspoon	textual definition	
+WARN	missing_definition	micromole	textual definition	
+WARN	missing_definition	gram per square meter	textual definition	
+WARN	missing_definition	nanogram per microliter	textual definition	
+WARN	missing_definition	large calorie	textual definition	
+WARN	missing_definition	micrograms per wheaton bottle	textual definition	
+WARN	missing_definition	picoampere	textual definition	
+WARN	missing_definition	centigray	textual definition	
+WARN	missing_definition	gigaelectronvolt	textual definition	
+WARN	missing_definition	gigaelectronvolt per nucleon	textual definition	
+WARN	missing_definition	megaelectronvolt per nucleon	textual definition	
+WARN	missing_definition	kiloelectronvolt per micron	textual definition	
+WARN	missing_definition	gray per minute	textual definition	
+WARN	missing_definition	centigray per minute	textual definition	
+WARN	missing_definition	milligray per minute	textual definition	
+WARN	missing_definition	milligray per day	textual definition	
+WARN	missing_definition	meter based unit	textual definition	
+WARN	missing_definition	second based unit	textual definition	
+WARN	missing_definition	ampere based unit	textual definition	
+WARN	missing_definition	kelvin based unit	textual definition	
+WARN	missing_definition	mole based unit	textual definition	
+WARN	missing_definition	candela based unit	textual definition	
+WARN	missing_definition	angstrom based unit	textual definition	
+WARN	missing_definition	gram based unit	textual definition	
+WARN	missing_definition	degree Celsius based unit	textual definition	
+WARN	missing_definition	minute based unit	textual definition	
+WARN	missing_definition	hour based unit	textual definition	
+WARN	missing_definition	day based unit	textual definition	
+WARN	missing_definition	week based unit	textual definition	
+WARN	missing_definition	month based unit	textual definition	
+WARN	missing_definition	year based unit	textual definition	
+WARN	missing_definition	molar based unit	textual definition	
+WARN	missing_definition	molal based unit	textual definition	
+WARN	missing_definition	normal based unit	textual definition	
+WARN	missing_definition	mole fraction based unit	textual definition	
+WARN	missing_definition	meter per second per second based unit	textual definition	
+WARN	missing_definition	radian per second per second based unit	textual definition	
+WARN	missing_definition	radian per second based unit	textual definition	
+WARN	missing_definition	square meter based unit	textual definition	
+WARN	missing_definition	square centimeter based unit	textual definition	
+WARN	missing_definition	square millimeter based unit	textual definition	
+WARN	missing_definition	gram per cubic centimeter based unit	textual definition	
+WARN	missing_definition	candela per square meter based unit	textual definition	
+WARN	missing_definition	gram per mole based unit	textual definition	
+WARN	missing_definition	cubic meter per mole based unit	textual definition	
+WARN	missing_definition	cubic centimeter per mole based unit	textual definition	
+WARN	missing_definition	turns per second based unit	textual definition	
+WARN	missing_definition	cubic meter per kilogram based unit	textual definition	
+WARN	missing_definition	meter per second based unit	textual definition	
+WARN	missing_definition	cubic meter based unit	textual definition	
+WARN	missing_definition	cubic centimeter based unit	textual definition	
+WARN	missing_definition	liter based unit	textual definition	
+WARN	missing_definition	cubic decimeter based unit	textual definition	
+WARN	missing_definition	hertz based unit	textual definition	
+WARN	missing_definition	newton based unit	textual definition	
+WARN	missing_definition	pascal based unit	textual definition	
+WARN	missing_definition	joule based unit	textual definition	
+WARN	missing_definition	watt based unit	textual definition	
+WARN	missing_definition	lux based unit	textual definition	
+WARN	missing_definition	lumen based unit	textual definition	
+WARN	missing_definition	katal based unit	textual definition	
+WARN	missing_definition	radian based unit	textual definition	
+WARN	missing_definition	steradian based unit	textual definition	
+WARN	missing_definition	becquerel based unit	textual definition	
+WARN	missing_definition	curie based unit	textual definition	
+WARN	missing_definition	gray based unit	textual definition	
+WARN	missing_definition	rad based unit	textual definition	
+WARN	missing_definition	roentgen based unit	textual definition	
+WARN	missing_definition	sievert based unit	textual definition	
+WARN	missing_definition	Roentgen equivalent man based unit	textual definition	
+WARN	missing_definition	disintegrations per minute based unit	textual definition	
+WARN	missing_definition	counts per minute based unit	textual definition	
+WARN	missing_definition	century based unit	textual definition	
+WARN	missing_definition	half life based unit	textual definition	
+WARN	missing_definition	foot candle based unit	textual definition	
+WARN	missing_definition	watt per square meter based unit	textual definition	
+WARN	missing_definition	einstein per square meter per second based unit	textual definition	
+WARN	missing_definition	watt per steradian per square meter based unit	textual definition	
+WARN	missing_definition	watt per steradian based unit	textual definition	
+WARN	missing_definition	mass percentage based unit	textual definition	
+WARN	missing_definition	mass volume percentage based unit	textual definition	
+WARN	missing_definition	volume percentage based unit	textual definition	
+WARN	missing_definition	parts per hundred based unit	textual definition	
+WARN	missing_definition	parts per thousand based unit	textual definition	
+WARN	missing_definition	parts per million based unit	textual definition	
+WARN	missing_definition	parts per billion based unit	textual definition	
+WARN	missing_definition	parts per trillion based unit	textual definition	
+WARN	missing_definition	parts per quadrillion based unit	textual definition	
+WARN	missing_definition	gram per milliliter based unit	textual definition	
+WARN	missing_definition	gram per liter based unit	textual definition	
+WARN	missing_definition	unit per milliliter based unit	textual definition	
+WARN	missing_definition	unit per liter based unit	textual definition	
+WARN	missing_definition	mass per unit volume based unit	textual definition	
+WARN	missing_definition	enzyme unit based unit	textual definition	
+WARN	missing_definition	degree based unit	textual definition	
+WARN	missing_definition	pi based unit	textual definition	
+WARN	missing_definition	molecule count based unit	textual definition	
+WARN	missing_definition	purity percentage based unit	textual definition	
+WARN	missing_definition	confluence percentage based unit	textual definition	
+WARN	missing_definition	degree Fahrenheit based unit	textual definition	
+WARN	missing_definition	pH based unit	textual definition	
+WARN	missing_definition	liter per kilogram based unit	textual definition	
+WARN	missing_definition	cells per milliliter based unit	textual definition	
+WARN	missing_definition	katal per cubic meter based unit	textual definition	
+WARN	missing_definition	katal per liter based unit	textual definition	
+WARN	missing_definition	gram per deciliter based unit	textual definition	
+WARN	missing_definition	colony forming unit based unit	textual definition	
+WARN	missing_definition	plaque forming unit based unit	textual definition	
+WARN	missing_definition	colony forming unit per milliliter based unit	textual definition	
+WARN	missing_definition	plaque forming unit per milliliter based unit	textual definition	
+WARN	missing_definition	disintegrations per second based unit	textual definition	
+WARN	missing_definition	volt based unit	textual definition	
+WARN	missing_definition	coulomb based unit	textual definition	
+WARN	missing_definition	dalton based unit	textual definition	
+WARN	missing_definition	watt-hour based unit	textual definition	
+WARN	missing_definition	weber based unit	textual definition	
+WARN	missing_definition	tesla based unit	textual definition	
+WARN	missing_definition	volt-hour based unit	textual definition	
+WARN	missing_definition	bit based unit	textual definition	
+WARN	missing_definition	byte based unit	textual definition	
+WARN	missing_definition	chroma sampling unit based unit	textual definition	
+WARN	missing_definition	dynamic range unit based unit	textual definition	
+WARN	missing_definition	dots per inch based unit	textual definition	
+WARN	missing_definition	pixels per inch based unit	textual definition	
+WARN	missing_definition	pixels per millimeter based unit	textual definition	
+WARN	missing_definition	base pair based unit	textual definition	
+WARN	missing_definition	kibibyte based unit	textual definition	
+WARN	missing_definition	mebibyte based unit	textual definition	
+WARN	missing_definition	newton per meter based unit	textual definition	
+WARN	missing_definition	dyne per cm based unit	textual definition	
+WARN	missing_definition	pascal second based unit	textual definition	
+WARN	missing_definition	poise based unit	textual definition	
+WARN	missing_definition	effective dose unit based unit	textual definition	
+WARN	missing_definition	siemens based unit	textual definition	
+WARN	missing_definition	watt per meter kelvin based unit	textual definition	
+WARN	missing_definition	electronvolt based unit	textual definition	
+WARN	missing_definition	volt per meter based unit	textual definition	
+WARN	missing_definition	absorbance unit based unit	textual definition	
+WARN	missing_definition	count per nanomolar second based unit	textual definition	
+WARN	missing_definition	count per molar second based unit	textual definition	
+WARN	missing_definition	count per nanomolar based unit	textual definition	
+WARN	missing_definition	count per molar based unit	textual definition	
+WARN	missing_definition	dosage unit based unit	textual definition	
+WARN	missing_definition	relative light unit based unit	textual definition	
+WARN	missing_definition	relative luminescence unit based unit	textual definition	
+WARN	missing_definition	relative fluorescence unit based unit	textual definition	
+WARN	missing_definition	square micrometer based unit	textual definition	
+WARN	missing_definition	hectare based unit	textual definition	
+WARN	missing_definition	inch based unit	textual definition	
+WARN	missing_definition	thou based unit	textual definition	
+WARN	missing_definition	foot based unit	textual definition	
+WARN	missing_definition	yard based unit	textual definition	
+WARN	missing_definition	chain based unit	textual definition	
+WARN	missing_definition	furlong based unit	textual definition	
+WARN	missing_definition	mile based unit	textual definition	
+WARN	missing_definition	league based unit	textual definition	
+WARN	missing_definition	maritime length unit based unit	textual definition	
+WARN	missing_definition	fathom based unit	textual definition	
+WARN	missing_definition	cable based unit	textual definition	
+WARN	missing_definition	nautical mile based unit	textual definition	
+WARN	missing_definition	perch based unit	textual definition	
+WARN	missing_definition	rood based unit	textual definition	
+WARN	missing_definition	acre based unit	textual definition	
+WARN	missing_definition	fluid ounce based unit	textual definition	
+WARN	missing_definition	gill based unit	textual definition	
+WARN	missing_definition	pint based unit	textual definition	
+WARN	missing_definition	quart based unit	textual definition	
+WARN	missing_definition	gallon based unit	textual definition	
+WARN	missing_definition	grain based unit	textual definition	
+WARN	missing_definition	drachm based unit	textual definition	
+WARN	missing_definition	ounce based unit	textual definition	
+WARN	missing_definition	pound based unit	textual definition	
+WARN	missing_definition	stone based unit	textual definition	
+WARN	missing_definition	quarter based unit	textual definition	
+WARN	missing_definition	hundredweight based unit	textual definition	
+WARN	missing_definition	ton based unit	textual definition	
+WARN	missing_definition	slug based unit	textual definition	
+WARN	missing_definition	teaspoon based unit	textual definition	
+WARN	missing_definition	gram per square meter based unit	textual definition	
+WARN	missing_definition	large calorie based unit	textual definition	
+WARN	missing_definition	gray per minute based unit	textual definition	
+WARN	missing_definition	abbreviation	textual definition	
+WARN	missing_definition	channel for	textual definition	
+WARN	missing_definition	channels_from	textual definition	
+WARN	missing_definition	protects	textual definition	
+WARN	missing_definition	subdivision of	textual definition	
+WARN	missing_definition	creator	textual definition	
+WARN	missing_definition	Date	textual definition	
+WARN	missing_definition	Description	textual definition	
+WARN	missing_definition	title	textual definition	
+WARN	missing_definition	license	textual definition	
+WARN	missing_definition	has_broad_synonym	textual definition	
+WARN	missing_definition	database_cross_reference	textual definition	
+WARN	missing_definition	has_exact_synonym	textual definition	
 WARN	duplicate_scoped_synonym	Euteleostomi	alternative term	bony vertebrates
 WARN	duplicate_scoped_synonym	Euteleostomi	has_exact_synonym	bony vertebrates
 WARN	duplicate_scoped_synonym	Bacteria	alternative term	eubacteria
@@ -817,17 +1115,19 @@ WARN	duplicate_scoped_synonym	Mammalia	has_exact_synonym	mammals
 WARN	duplicate_scoped_synonym	Mammalia	oboInOwl:hasRelatedSynonym	mammals
 WARN	duplicate_scoped_synonym	Chordata	has_exact_synonym	chordates
 WARN	duplicate_scoped_synonym	Chordata	oboInOwl:hasRelatedSynonym	chordates
-WARN	duplicate_scoped_synonym	Vertebrata <Metazoa>	alternative term	Vertebrata
-WARN	duplicate_scoped_synonym	Vertebrata <Metazoa>	alternative term	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <Metazoa>	has_exact_synonym	Vertebrata
-WARN	duplicate_scoped_synonym	Vertebrata <Metazoa>	has_exact_synonym	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <Metazoa>	oboInOwl:hasRelatedSynonym	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	Vertebrata
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	Vertebrata
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	oboInOwl:hasRelatedSynonym	vertebrates
 WARN	duplicate_scoped_synonym	Eutheria	has_exact_synonym	placentals
 WARN	duplicate_scoped_synonym	Eutheria	oboInOwl:hasRelatedSynonym	placentals
 WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
 WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	man
 WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	human
 WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	man
+WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	has_exact_synonym	ionising radiation
 WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative term	ALARA
 WARN	duplicate_scoped_synonym	as low as reasonably achievable	has_exact_synonym	ALARA
 WARN	duplicate_scoped_synonym	delta ray	alternative term	delta electron
@@ -836,104 +1136,179 @@ WARN	duplicate_scoped_synonym	linear energy transfer	alternative term	LET
 WARN	duplicate_scoped_synonym	linear energy transfer	has_exact_synonym	LET
 WARN	duplicate_scoped_synonym	relative biological effectiveness	alternative term	RBE
 WARN	duplicate_scoped_synonym	relative biological effectiveness	has_exact_synonym	RBE
-INFO	lowercase_definition	independent continuant	definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
-INFO	lowercase_definition	process	definition	<p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en>
+WARN	duplicate_scoped_synonym	immediately preceded by	alternative term	starts_at_end_of
+WARN	duplicate_scoped_synonym	immediately preceded by	has_exact_synonym	starts_at_end_of
+WARN	duplicate_scoped_synonym	zygote stage	has_exact_synonym	fertilized egg stage
+WARN	duplicate_scoped_synonym	zygote stage	oboInOwl:hasRelatedSynonym	fertilized egg stage
+WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	respiratory system	oboInOwl:hasRelatedSynonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	sensory system	has_exact_synonym	organa sensuum
+WARN	duplicate_scoped_synonym	sensory system	oboInOwl:hasRelatedSynonym	organa sensuum
+WARN	duplicate_scoped_synonym	optic choroid	has_exact_synonym	choroidea
+WARN	duplicate_scoped_synonym	optic choroid	oboInOwl:hasRelatedSynonym	choroidea
+WARN	duplicate_scoped_synonym	mouth mucosa	has_exact_synonym	tunica mucosa oris
+WARN	duplicate_scoped_synonym	mouth mucosa	oboInOwl:hasRelatedSynonym	tunica mucosa oris
+WARN	duplicate_scoped_synonym	cardiac vein	has_exact_synonym	coronary vein
+WARN	duplicate_scoped_synonym	cardiac vein	oboInOwl:hasRelatedSynonym	coronary vein
+WARN	duplicate_scoped_synonym	corneo-scleral junction	has_exact_synonym	limbus corneae
+WARN	duplicate_scoped_synonym	corneo-scleral junction	oboInOwl:hasRelatedSynonym	limbus corneae
+WARN	duplicate_scoped_synonym	craniocervical region musculature	has_exact_synonym	head or neck muscle
+WARN	duplicate_scoped_synonym	craniocervical region musculature	oboInOwl:hasRelatedSynonym	head or neck muscle
+WARN	duplicate_scoped_synonym	ciliary processes	has_exact_synonym	processus ciliares
+WARN	duplicate_scoped_synonym	ciliary processes	oboInOwl:hasRelatedSynonym	processus ciliares
+INFO	lowercase_definition	independent continuant	textual definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
+INFO	lowercase_definition	process	textual definition	<p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en>
 INFO	lowercase_definition	disposition	IAO:0000600	<b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en>
 INFO	lowercase_definition	quality	IAO:0000600	<a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])@en>
-INFO	lowercase_definition	specifically dependent continuant	definition	<b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1 i &lt; j n, ci and cj share no common parts, are such that for each 1 i n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en>
-INFO	lowercase_definition	specifically dependent continuant	definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
+INFO	lowercase_definition	specifically dependent continuant	textual definition	<b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1 i &lt; j n, ci and cj share no common parts, are such that for each 1 i n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en>
+INFO	lowercase_definition	specifically dependent continuant	textual definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
 INFO	lowercase_definition	role	IAO:0000600	<b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en>
-INFO	lowercase_definition	generically dependent continuant	definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
-INFO	lowercase_definition	part_of	definition	a core relation that holds between a part and its whole@en
-INFO	lowercase_definition	has part	definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	generically dependent continuant	textual definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
+INFO	lowercase_definition	part_of	textual definition	a core relation that holds between a part and its whole@en
+INFO	lowercase_definition	has part	textual definition	a core relation that holds between a whole and its part@en
 INFO	lowercase_definition	realized in	IAO:0000600	<[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en>
 INFO	lowercase_definition	realizes	IAO:0000600	<to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en>
-INFO	lowercase_definition	preceded by	definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
-INFO	lowercase_definition	precedes	definition	<x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
-INFO	lowercase_definition	occurs in	definition	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
-INFO	lowercase_definition	contains process	definition	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
-INFO	lowercase_definition	partially_surrounded_by	definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
-INFO	lowercase_definition	data item	definition	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
-INFO	lowercase_definition	denoted by	definition	inverse of the relation 'denotes'@en
-INFO	lowercase_definition	regulator role	definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
-INFO	lowercase_definition	regulatory role	definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
-INFO	lowercase_definition	material supplier role	definition	a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation.@en
-INFO	lowercase_definition	specimen role	definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
-INFO	lowercase_definition	zip	definition	<zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/)@en>
-INFO	lowercase_definition	tar	definition	<tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en>
-INFO	lowercase_definition	material transformation objective	definition	an objective specifiction that creates an specific output object from input materials.@en
-INFO	lowercase_definition	manufacturing objective	definition	is the objective to manufacture a material of a certain function (device)@en
-INFO	lowercase_definition	GenePattern software	definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
-INFO	lowercase_definition	service provider role	definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
-INFO	lowercase_definition	leave one out cross validation method	definition	<is a data transformation : leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data>
-INFO	lowercase_definition	spacecraft module	definition	a self-contained unit of a spacecraft
-INFO	lowercase_definition	gamma radiation	definition	electromagnetic radiation with photon energies greater than approximately 100 keV
-INFO	lowercase_definition	inheres in	definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	bearer of	definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	participates in	definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
-INFO	lowercase_definition	has participant	definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
-INFO	lowercase_definition	function of	definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	role of	definition	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	has function	definition	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	has quality	definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	has role	definition	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	derives from	definition	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
-INFO	lowercase_definition	located in	definition	a relation between two independent continuants, the target and the location, in which the target is entirely within the location@en
-INFO	lowercase_definition	has component process	definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
-INFO	lowercase_definition	overlaps	definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
-INFO	lowercase_definition	has component	definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
-INFO	lowercase_definition	develops from	definition	x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y
-INFO	lowercase_definition	develops into	definition	inverse of develops from
-INFO	lowercase_definition	regulates	definition	<process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.>
-INFO	lowercase_definition	capable of part of	definition	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
-INFO	lowercase_definition	surrounded by	definition	x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x
-INFO	lowercase_definition	adjacent to	definition	x adjacent to y if and only if x and y share a boundary.
-INFO	lowercase_definition	ends	definition	inverse of ends with
-INFO	lowercase_definition	has input	definition	<p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.>
-INFO	lowercase_definition	has output	definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.
-INFO	lowercase_definition	has developmental contribution from	definition	x has developmental contribution from y iff x has some part z such that z develops from y@en
-INFO	lowercase_definition	developmentally contributes to	definition	inverse of has developmental contribution from
-INFO	lowercase_definition	acts upstream of	definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
-INFO	lowercase_definition	acts upstream of or within	definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
-INFO	lowercase_definition	results in developmental progression of	definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
-INFO	lowercase_definition	has habitat	definition	<x 'has habitat' y if and only if: x is an organism, y is a habitat, and y can sustain and allow the growth of a population of xs.>
-INFO	lowercase_definition	inheres in part of	definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
-INFO	lowercase_definition	part of structure that is capable of	definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
-INFO	lowercase_definition	involved in	definition	c involved_in p if and only if c enables some process p', and p' is part of p
-INFO	lowercase_definition	enabled by	definition	inverse of enables
-INFO	lowercase_definition	regulated by	definition	inverse of regulates
-INFO	lowercase_definition	negatively regulated by	definition	inverse of negatively regulates
-INFO	lowercase_definition	positively regulated by	definition	inverse of positively regulates
-INFO	lowercase_definition	member of	definition	is member of is a mereological relation between a item and a collection.
-INFO	lowercase_definition	has member	definition	has member is a mereological relation between a collection and an item.
-INFO	lowercase_definition	input of	definition	inverse of has input
-INFO	lowercase_definition	output of	definition	inverse of has output
-INFO	lowercase_definition	has developmental potential involving	definition	x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction).@en
-INFO	lowercase_definition	has potential to developmentally contribute to	definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y@en
-INFO	lowercase_definition	has potential to develop into	definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y@en
-INFO	lowercase_definition	has potential to directly develop into	definition	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y@en
-INFO	lowercase_definition	causally downstream of	definition	inverse of upstream of
-INFO	lowercase_definition	causally upstream of	definition	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
-INFO	lowercase_definition	immediately causally upstream of	definition	p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q.
-INFO	lowercase_definition	causally upstream of or within	definition	p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.
-INFO	lowercase_definition	causally downstream of or within	definition	inverse of causally upstream of or within
-INFO	lowercase_definition	involved in regulation of	definition	c involved in regulation of p if c is involved in some p' and p' regulates some p
-INFO	lowercase_definition	involved in positive regulation of	definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
-INFO	lowercase_definition	involved in negative regulation of	definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
-INFO	lowercase_definition	involved in or involved in regulation of	definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
-INFO	lowercase_definition	is active in	definition	c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.
-INFO	lowercase_definition	composed primarily of	definition	x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.
-INFO	lowercase_definition	has part that occurs in	definition	p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.
-INFO	lowercase_definition	causal relation between processes	definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.
-INFO	lowercase_definition	determined by	definition	s determined by f if and only if s is a type of system, and f is a material entity that is part of s, such that f exerts a strong causal influence on the functioning of s, and the removal of f would cause the collapse of s.
-INFO	lowercase_definition	determined by part of	definition	s 'determined by part of' w if and only if there exists some f such that (1) s 'determined by' f and (2) f part_of w, or f=w.
-INFO	lowercase_definition	has part structure that is capable of	definition	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p
-INFO	lowercase_definition	acts upstream of, positive effect	definition	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
-INFO	lowercase_definition	acts upstream of, negative effect	definition	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
-INFO	lowercase_definition	Earth	definition	third planet from the Sun in the Solar System
-INFO	lowercase_definition	Suni	definition	"\""Suni, or Jalca, is one of the eight Natural Regions of Peru. It is located in the Andes at an altitude between 3,500 and 4,000 metres above sea level. Suni has a dry and cold weather and there are many glacial valleys. The flora includes gramineous plants and shrubs such as the taya-taya (Caesalpinia spinosa), the quishuar (Buddleja coriacea), and the cantuta (Cantua buxifolia) which was considered sacred by the Incas. Even though it is hard for plants to grow because of the weather, people are able to cultivate such crops as quinoa, qañiwa, broad beans and ulluku (Ullucus tuberosus). The main fauna is the guinea pig and, among numerous other highland birds, the Chiguanco thrush.\"""
+INFO	lowercase_definition	preceded_by	textual definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+INFO	lowercase_definition	precedes	textual definition	<x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+INFO	lowercase_definition	occurs in	textual definition	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+INFO	lowercase_definition	contains process	textual definition	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+INFO	lowercase_definition	anterior_to	textual definition	<x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer>
+INFO	lowercase_definition	dorsal_to	textual definition	x dorsal_to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
+INFO	lowercase_definition	posterior_to	textual definition	x posterior_to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail.
+INFO	lowercase_definition	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
+INFO	lowercase_definition	partially_surrounded_by	textual definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
+INFO	lowercase_definition	is quality measurement of	textual definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en
+INFO	lowercase_definition	denoted by	textual definition	inverse of the relation 'denotes'@en
+INFO	lowercase_definition	is quality measured as	textual definition	inverse of the relation of is quality measurement of@en
+INFO	lowercase_definition	regulator role	textual definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
+INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
+INFO	lowercase_definition	material supplier role	textual definition	a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation.@en
+INFO	lowercase_definition	specimen role	textual definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
+INFO	lowercase_definition	zip	textual definition	<zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/)@en>
+INFO	lowercase_definition	tar	textual definition	<tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en>
+INFO	lowercase_definition	material transformation objective	textual definition	an objective specifiction that creates an specific output object from input materials.@en
+INFO	lowercase_definition	manufacturing objective	textual definition	is the objective to manufacture a material of a certain function (device)@en
+INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
+INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
+INFO	lowercase_definition	leave one out cross validation method	textual definition	<is a data transformation : leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data>
+INFO	lowercase_definition	spacecraft module	textual definition	a self-contained unit of a spacecraft
+INFO	lowercase_definition	gamma radiation	textual definition	electromagnetic radiation with photon energies greater than approximately 100 keV
+INFO	lowercase_definition	Gammacell 40	textual definition	<http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf>
+INFO	lowercase_definition	RARAF 5.5 MV microbeam	textual definition	<https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility>
+INFO	lowercase_definition	Swift HALE	textual definition	<https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights>
+INFO	lowercase_definition	ER-2	textual definition	<https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html>
+INFO	lowercase_definition	WB-57	textual definition	<https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC>
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	function of	textual definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	role of	textual definition	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has function	textual definition	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has quality	textual definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has role	textual definition	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	derives from	textual definition	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
+INFO	lowercase_definition	located in	textual definition	a relation between two independent continuants, the target and the location, in which the target is entirely within the location@en
+INFO	lowercase_definition	has component process	textual definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+INFO	lowercase_definition	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
+INFO	lowercase_definition	has component	textual definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
+INFO	lowercase_definition	develops from	textual definition	x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y
+INFO	lowercase_definition	develops_into	textual definition	inverse of develops from
+INFO	lowercase_definition	regulates	textual definition	<process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.>
+INFO	lowercase_definition	capable of part of	textual definition	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
+INFO	lowercase_definition	surrounded by	textual definition	x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x
+INFO	lowercase_definition	surrounded by	textual definition	<x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y>
+INFO	lowercase_definition	adjacent_to	textual definition	x adjacent to y if and only if x and y share a boundary.
+INFO	lowercase_definition	adjacent_to	textual definition	<x adjacent_to y iff: x and y share a boundary>
+INFO	lowercase_definition	surrounds	textual definition	inverse of surrounded_by
+INFO	lowercase_definition	ends	textual definition	inverse of ends with
+INFO	lowercase_definition	has input	textual definition	<p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.>
+INFO	lowercase_definition	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.
+INFO	lowercase_definition	has developmental contribution from	textual definition	x has developmental contribution from y iff x has some part z such that z develops from y@en
+INFO	lowercase_definition	developmentally contributes to	textual definition	inverse of has developmental contribution from
+INFO	lowercase_definition	developmentally_induced_by	textual definition	<t1 developmentally_induced_by t2 if there is a process of organ induction (GO:0001759) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor tissue type T to T', where T' develops_from T.>
+INFO	lowercase_definition	acts upstream of	textual definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
+INFO	lowercase_definition	acts upstream of or within	textual definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
+INFO	lowercase_definition	results in developmental progression of	textual definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
+INFO	lowercase_definition	has habitat	textual definition	<x 'has habitat' y if and only if: x is an organism, y is a habitat, and y can sustain and allow the growth of a population of xs.>
+INFO	lowercase_definition	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	part of structure that is capable of	textual definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
+INFO	lowercase_definition	involved in	textual definition	c involved_in p if and only if c enables some process p', and p' is part of p
+INFO	lowercase_definition	enabled by	textual definition	inverse of enables
+INFO	lowercase_definition	regulated by	textual definition	inverse of regulates
+INFO	lowercase_definition	negatively regulated by	textual definition	inverse of negatively regulates
+INFO	lowercase_definition	positively regulated by	textual definition	inverse of positively regulates
+INFO	lowercase_definition	member of	textual definition	is member of is a mereological relation between a item and a collection.
+INFO	lowercase_definition	has member	textual definition	has member is a mereological relation between a collection and an item.
+INFO	lowercase_definition	input of	textual definition	inverse of has input
+INFO	lowercase_definition	output of	textual definition	inverse of has output
+INFO	lowercase_definition	has developmental potential involving	textual definition	x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction).@en
+INFO	lowercase_definition	has potential to developmentally contribute to	textual definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y
+INFO	lowercase_definition	has potential to developmentally contribute to	textual definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y@en
+INFO	lowercase_definition	has potential to develop into	textual definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y
+INFO	lowercase_definition	has potential to develop into	textual definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y@en
+INFO	lowercase_definition	has potential to directly develop into	textual definition	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y@en
+INFO	lowercase_definition	causally downstream of	textual definition	inverse of upstream of
+INFO	lowercase_definition	causally upstream of	textual definition	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
+INFO	lowercase_definition	immediately causally upstream of	textual definition	p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q.
+INFO	lowercase_definition	causally upstream of or within	textual definition	p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.
+INFO	lowercase_definition	causally downstream of or within	textual definition	inverse of causally upstream of or within
+INFO	lowercase_definition	involved in regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' regulates some p
+INFO	lowercase_definition	involved in positive regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
+INFO	lowercase_definition	involved in negative regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
+INFO	lowercase_definition	involved in or involved in regulation of	textual definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
+INFO	lowercase_definition	is active in	textual definition	c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.
+INFO	lowercase_definition	composed primarily of	textual definition	x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.
+INFO	lowercase_definition	composed primarily of	textual definition	<x composed_primarily_of y iff: more than half of the mass of x is made from parts of y>
+INFO	lowercase_definition	has part that occurs in	textual definition	p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.
+INFO	lowercase_definition	causal relation between processes	textual definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.
+INFO	lowercase_definition	determined by	textual definition	s determined by f if and only if s is a type of system, and f is a material entity that is part of s, such that f exerts a strong causal influence on the functioning of s, and the removal of f would cause the collapse of s.
+INFO	lowercase_definition	determined by part of	textual definition	s 'determined by part of' w if and only if there exists some f such that (1) s 'determined by' f and (2) f part_of w, or f=w.
+INFO	lowercase_definition	has part structure that is capable of	textual definition	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p
+INFO	lowercase_definition	acts upstream of, positive effect	textual definition	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
+INFO	lowercase_definition	acts upstream of, negative effect	textual definition	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
+INFO	lowercase_definition	realized in response to	textual definition	r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r.
+INFO	lowercase_definition	serous membrane	textual definition	multi-tissue structure that is comprised of a secretory epithelial layer (mesothelium) and a connective tissue layer.
+INFO	lowercase_definition	post-embryonic stage	textual definition	stage succeeding embryo, including mature structure
+INFO	lowercase_definition	cornea	textual definition	the transparent anterior portion of the fibrous coat of the eye that serves as the chief refractory structure
+INFO	lowercase_definition	circulatory system	textual definition	organ system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells, etc. to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis[WP].
+INFO	lowercase_definition	muscle of iris	textual definition	.
+INFO	lowercase_definition	occipital bone	textual definition	the bone at the lower, posterior part of the skull
+INFO	lowercase_definition	anterior chamber of eyeball	textual definition	the space in the eye, filled with aqueous humor, and bounded anteriorly by the cornea and a small portion of the sclera and posteriorly by a small portion of the ciliary body, the iris, and part of the crystalline lens
+INFO	lowercase_definition	uvea	textual definition	the pigmented middle of the three concentric layers that make up an eye, consisting of the iris, ciliary body and choroid[WP,edited].
+INFO	lowercase_definition	iris	textual definition	the adjustable membrane, composed of the stroma and pigmented epithelium, located just in front of the crystalline lens within the eye
+INFO	lowercase_definition	corneal epithelium	textual definition	the smooth stratified squamous epithelium that covers the outer surface of the cornea
+INFO	lowercase_definition	ciliary body	textual definition	the thickened portion of the vascular tunic, which lies between the choroid and the iris, composed of ciliary muscle and ciliary processes
+INFO	lowercase_definition	optic choroid	textual definition	vascular layer containing connective tissue, of the eye lying between the retina and the sclera. The choroid provides oxygen and nourishment to the outer layers of the retina. Along with the ciliary body and iris, the choroid forms the uveal tract[WP].
+INFO	lowercase_definition	anterior segment of eyeball	textual definition	any of the parts of the eye that lie in front of, or ventral to, the lens (inclusive)
+INFO	lowercase_definition	posterior segment of eyeball	textual definition	any of the parts of the eye that lie in back of, or dorsal to, the lens (but not inclusive)
+INFO	lowercase_definition	capsule of lens	textual definition	the elastic, clear, membrane-like structure, that is outer most layer of the lens
+INFO	lowercase_definition	myocardium of atrium	textual definition	the atrial part of middle layer of the heart, comprised of involuntary muscle
+INFO	lowercase_definition	epicardium	textual definition	a region of the serous membrane that forms the innermost layer of the pericardium and the outer surface of the heart.
+INFO	lowercase_definition	myocardium	textual definition	the middle layer of the heart, comprised mainly of striated cardiac muscle fibers
+INFO	lowercase_definition	bone marrow	textual definition	the soft tissue that fills the cavities of bones
+INFO	lowercase_definition	pericardial sac	textual definition	a double-walled sac containing the heart and the roots of the great vessels.
+INFO	lowercase_definition	gland	textual definition	an organ that functions as a secretory or excretory organ
+INFO	lowercase_definition	cranial neural crest	textual definition	neural crest cells (NCCs) originating in the anterior part of the developing embryo and residing between the mid-diencephalon and the forming hindbrain; cranial NCCs migrate dorsolaterally to form the craniofacial mesenchyme that differentiates into various craniofacial cartilages and bones, cranial neurons, glia, and connective tissues of the face; these cells enter the pharyngeal pouches and arches where they give rise to thymic cells, bones of the middle ear and jaw (mandible), and the odontoblasts of the tooth primordia; like their counterparts in the trunk, cranial NCCs also contribute to the developing peripheral nervous system, along with the pigmented cell (i.e. melanocyte) lineage.
+INFO	lowercase_definition	smooth muscle of eye	textual definition	<any of the striated muscles that move the eye and include: superior rectus, inferior rectus, medial rectus, lateral rectus, superior oblique, inferior oblique, retractor bulbi>
+INFO	lowercase_definition	blood vessel smooth muscle	textual definition	smooth muscle found within, and composing the majority of the wall of blood vessels.
+INFO	lowercase_definition	dermal skeletal element	textual definition	dermis-derived entity that is made of skeletal tissue.
+INFO	lowercase_definition	respiratory system mucosa	textual definition	the mucous membrane lining the respiratory tract
+INFO	lowercase_definition	mandibular prominence	textual definition	the paired ventral prominences formed by bifurcation of the first pharyngeal arches in the embryo; the two prominences unite ventrally and fuse to form the mandible and lower lip
+INFO	lowercase_definition	corneo-scleral junction	textual definition	the edge of the cornea where it joins the sclera; the limbus is a common site for the occurrence of corneal epithelial neoplasm
+INFO	lowercase_definition	pigment epithelium of eye	textual definition	epithelial layer of the retina, ciliary body, or iris composed of cells containing pigment granules.
+INFO	lowercase_definition	early pharyngeal endoderm	textual definition	.
+INFO	lowercase_definition	layer of sclera	textual definition	.
+INFO	lowercase_definition	prechordal mesoderm	textual definition	the area of axial mesoderm that develops into the prechordal plate
+INFO	lowercase_definition	wall of heart	textual definition	wall of organ which has as its parts the endocardium, myocardium , epicardium, and the cardiac septum, surrounded by the pericardial sac proper and is continuous with the walls of the systemic and pulmonary arterial and venous trees.
+INFO	lowercase_definition	anteriorly connected to	textual definition	x anteriorly_connected_to y iff the anterior part of x is connected to y. i.e. x connected_to y and x posterior_to y.
+INFO	lowercase_definition	conduit for	textual definition	x is a conduit for y iff y passes through the lumen of x.
+INFO	lowercase_definition	posteriorly connected to	textual definition	x posteriorly_connected_to y iff the posterior part of x is connected to y. i.e. x connected_to y and x anterior_to y.
+INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
+INFO	lowercase_definition	Suni	textual definition	"\""Suni, or Jalca, is one of the eight Natural Regions of Peru. It is located in the Andes at an altitude between 3,500 and 4,000 metres above sea level. Suni has a dry and cold weather and there are many glacial valleys. The flora includes gramineous plants and shrubs such as the taya-taya (Caesalpinia spinosa), the quishuar (Buddleja coriacea), and the cantuta (Cantua buxifolia) which was considered sacred by the Incas. Even though it is hard for plants to grow because of the weather, people are able to cultivate such crops as quinoa, qañiwa, broad beans and ulluku (Ullucus tuberosus). The main fauna is the guinea pig and, among numerous other highland birds, the Chiguanco thrush.\"""
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	role	rdfs:subClassOf	
 INFO	missing_superclass	organismal entity	rdfs:subClassOf	
+INFO	missing_superclass	processual entity	rdfs:subClassOf	
 INFO	missing_superclass	unit	rdfs:subClassOf	
 INFO	missing_superclass	prefix	rdfs:subClassOf	
