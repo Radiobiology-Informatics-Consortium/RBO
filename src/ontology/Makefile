@@ -244,7 +244,7 @@ imports/cob_import.owl: mirror/cob.owl imports/cob_terms_combined.txt
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 	
 imports/go_import.owl: mirror/go.owl imports/go_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/go_terms_combined.txt --force true --method STAR \
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/go_terms.txt --force true --method STAR  \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 

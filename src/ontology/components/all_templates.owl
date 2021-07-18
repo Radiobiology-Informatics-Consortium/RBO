@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-05-21/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-07-16/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -156,6 +156,18 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0002796 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002796"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000006"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000012"/>
     
 
 
@@ -426,7 +438,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000012"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus, fully stripped of its orbital electrons, and containing 2, 3, 4, 5, or 6 protons.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">light ion</rdfs:label>
@@ -1822,7 +1834,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000006"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity which emits radiation</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation source</rdfs:label>
