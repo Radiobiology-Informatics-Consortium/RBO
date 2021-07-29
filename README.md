@@ -13,7 +13,7 @@ More information can be found at http://obofoundry.org/ontology/RBO
 
 ### Stable release versions
 
-The latest version of the ontology can always be found at:
+The latest version of the RBO can always be found at:
 
 http://purl.obolibrary.org/obo/RBO.owl
 
