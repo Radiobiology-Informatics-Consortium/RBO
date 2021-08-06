@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-07-30/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-08-06/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -192,6 +192,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_03000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051716 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051716"/>
     
 
 
@@ -743,6 +749,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:RBO_00000060</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-57</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalt-57 gamma radiation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radionuclide</owl:deprecated>
     </owl:Class>
     
 
@@ -1357,6 +1364,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008150</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">owl:deprecated</owl:deprecated>
     </owl:Class>
     
 
@@ -1367,6 +1375,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009987</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">owl:deprecated</owl:deprecated>
     </owl:Class>
     
 
@@ -2411,6 +2420,55 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00005066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000129"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mGy/sec</obo:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A derived absorbed dose unit which is equal to one milligray absorbed per second</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mGy/sec </obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">miliigray per second</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051716"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect cellular response to stimulus</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This could be used to describe a tissue response to immune stimulation, so for example an IL2 response of endothelial cells in response to lymphocytes stimulated by pathogen.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus which acts on another cell and not on the responding cell. The process begins with detection of the stimulus by a cell and ends with a change in state or activity of a different cell</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Schofield</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect cellular response to stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005067"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo &amp; Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. L�ffler MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of radiation acting on another cell and not on the responding cell. The process begins with detection of radiation by a cell or cells and ends with a change in state or activity of a different cell or cells.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Schofield</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect cellular response to radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005068"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Directly describes the bystander effect (Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo &amp; Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) but can alo sbe used to describe phenomena related to the abscopal effect, manifest in whole organisms where irradiation of one part of the organism causes changes in another un-irradiated component.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of exposure to ionising radiation which acts on another cell and not on the responding cell. The process begins with detection of the ionising radiation by one cell or cells and ends with a change in state or activity of a different cell or cells.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paul Schofield</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indirect cellular response to ionising radiation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_010000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010000">
@@ -2456,7 +2514,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_010003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000124"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005069"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The bystander effect can be  studied by identifying cells that were traversed by a charged particle.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated  by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -2670,6 +2728,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000129"/>
     
 
 
