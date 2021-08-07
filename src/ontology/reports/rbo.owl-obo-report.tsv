@@ -24,8 +24,8 @@ ERROR	duplicate_definition	is_specified_input_of	textual definition	A relation b
 ERROR	duplicate_definition	muscle of iris	textual definition	.
 ERROR	duplicate_definition	early pharyngeal endoderm	textual definition	.
 ERROR	duplicate_definition	layer of sclera	textual definition	.
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	3506a988-0d1c-421b-befe-9f2054a905e3genid5787
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	3506a988-0d1c-421b-befe-9f2054a905e3genid5791
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	4a20d535-ada0-4a4b-9f07-1aad723cc784genid5790
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	4a20d535-ada0-4a4b-9f07-1aad723cc784genid5794
 ERROR	misused_obsolete_label	obsolete cell part	rdfs:label	obsolete cell part
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	role	rdfs:label	role
@@ -252,8 +252,8 @@ ERROR	multiple_labels	inheres in	rdfs:label	inheres in@en
 ERROR	multiple_labels	bearer of	rdfs:label	bearer of
 ERROR	multiple_labels	bearer of	rdfs:label	bearer of@en
 ERROR	multiple_labels	bearer of	rdfs:label	has characteristic@en
-ERROR	multiple_labels	participates_in	rdfs:label	participates in@en
-ERROR	multiple_labels	participates_in	rdfs:label	participates_in
+ERROR	multiple_labels	participates in	rdfs:label	participates in@en
+ERROR	multiple_labels	participates in	rdfs:label	participates_in
 ERROR	multiple_labels	has role	rdfs:label	has role
 ERROR	multiple_labels	has role	rdfs:label	has role@en
 ERROR	multiple_labels	location_of	rdfs:label	location of@en
@@ -270,8 +270,8 @@ ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately preceded by
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately_preceded_by
 ERROR	multiple_labels	overlaps	rdfs:label	overlaps
 ERROR	multiple_labels	overlaps	rdfs:label	overlaps@en
-ERROR	multiple_labels	continuous with	rdfs:label	continuous with@en
-ERROR	multiple_labels	continuous with	rdfs:label	continuous_with
+ERROR	multiple_labels	continuous_with	rdfs:label	continuous with@en
+ERROR	multiple_labels	continuous_with	rdfs:label	continuous_with
 ERROR	multiple_labels	connected to	rdfs:label	connected to
 ERROR	multiple_labels	connected to	rdfs:label	connected to@en
 ERROR	multiple_labels	connects	rdfs:label	connects
@@ -319,8 +319,8 @@ ERROR	multiple_labels	has developmental contribution from	rdfs:label	has develop
 ERROR	multiple_labels	has developmental contribution from	rdfs:label	has developmental contribution from@en
 ERROR	multiple_labels	developmentally_induced_by	rdfs:label	developmentally induced by@en
 ERROR	multiple_labels	developmentally_induced_by	rdfs:label	developmentally_induced_by
-ERROR	multiple_labels	developmentally_replaces	rdfs:label	developmentally replaces@en
-ERROR	multiple_labels	developmentally_replaces	rdfs:label	developmentally_replaces
+ERROR	multiple_labels	developmentally replaces	rdfs:label	developmentally replaces@en
+ERROR	multiple_labels	developmentally replaces	rdfs:label	developmentally_replaces
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat@en
 ERROR	multiple_labels	inheres in part of	rdfs:label	characteristic of part of@en
@@ -346,9 +346,9 @@ ERROR	multiple_labels	produced_by	rdfs:label	produced by@en
 ERROR	multiple_labels	produced_by	rdfs:label	produced_by
 ERROR	multiple_labels	surface of bone	rdfs:label	surface of bone
 ERROR	multiple_labels	surface of bone	rdfs:label	surface of bone@en
-ERROR	multiple_labels	creator	rdfs:label	Creator
-ERROR	multiple_labels	creator	rdfs:label	Creator@en-us
-ERROR	multiple_labels	creator	rdfs:label	creator
+ERROR	multiple_labels	Creator	rdfs:label	Creator
+ERROR	multiple_labels	Creator	rdfs:label	Creator@en-us
+ERROR	multiple_labels	Creator	rdfs:label	creator
 ERROR	multiple_labels	Date	rdfs:label	Date
 ERROR	multiple_labels	Date	rdfs:label	Date@en-us
 ERROR	multiple_labels	Description	rdfs:label	Description
@@ -1910,7 +1910,7 @@ WARN	missing_definition	channels_from	textual definition
 WARN	missing_definition	channels_into	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	creator	textual definition	
+WARN	missing_definition	Creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	Title	textual definition	
@@ -2062,7 +2062,7 @@ INFO	lowercase_definition	WB-57	textual definition	<https://airbornescience.nasa
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	participates_in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	function of	textual definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	quality of	textual definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en
@@ -2114,7 +2114,7 @@ INFO	lowercase_definition	developmentally_induced_by	textual definition	<t1 deve
 INFO	lowercase_definition	developmentally_induced_by	textual definition	<t1 induced_by t2 if there is a process of developmental induction (GO:0031128) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor anatomical structure type T to T', where T' develops_from T>
 INFO	lowercase_definition	acts upstream of	textual definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
 INFO	lowercase_definition	acts upstream of or within	textual definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
-INFO	lowercase_definition	developmentally_replaces	textual definition	x developmentally replaces y if and only if there is some developmental process that causes x to move or to cease to exist, and for the site that was occupied by x to become occupied by y, where y either comes into existence in this site or moves to this site from somewhere else
+INFO	lowercase_definition	developmentally replaces	textual definition	x developmentally replaces y if and only if there is some developmental process that causes x to move or to cease to exist, and for the site that was occupied by x to become occupied by y, where y either comes into existence in this site or moves to this site from somewhere else
 INFO	lowercase_definition	results in developmental progression of	textual definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
 INFO	lowercase_definition	has habitat	textual definition	<x 'has habitat' y if and only if: x is an organism, y is a habitat, and y can sustain and allow the growth of a population of xs.>
 INFO	lowercase_definition	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.

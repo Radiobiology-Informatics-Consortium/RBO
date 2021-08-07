@@ -1,15 +1,23 @@
 format-version: 1.2
-data-version: rbo/releases/2021-05-21/rbo-base.owl
+data-version: rbo/releases/2021-08-07/rbo-base.owl
 ontology: rbo/rbo-base
 property_value: http://purl.org/dc/elements/1.1/description "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Radiation Biology Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2021-05-21" xsd:string
+property_value: owl:versionInfo "2021-08-07" xsd:string
 
 [Term]
 id: DOID:4
 is_a: BFO:0000016
+
+[Term]
+id: GO:0009314
+relationship: RO:0002608 ENVO:01001023
+
+[Term]
+id: GO:0010212
+relationship: RO:0002608 RBO:00000116 ! ionizing radiation
 
 [Term]
 id: RBO:00000001
@@ -1082,6 +1090,40 @@ def: "An atomic nucleus with 36 protons and 48 neutrons " []
 is_a: RBO:010012 ! heavy ion
 
 [Term]
+id: RBO:00005066
+name: miliigray per second
+def: "A derived absorbed dose unit which is equal to one milligray absorbed per second" []
+is_a: UO:0000129
+property_value: IAO:0000111 "mGy/sec" xsd:string
+property_value: IAO:0000118 "mGy/sec " xsd:string
+
+[Term]
+id: RBO:00005067
+name: Indirect cellular response to stimulus
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus which acts on another cell and not on the responding cell. The process begins with detection of the stimulus by a cell and ends with a change in state or activity of a different cell" []
+is_a: GO:0051716
+property_value: IAO:0000111 "Indirect cellular response to stimulus" xsd:string
+property_value: IAO:0000112 "This could be used to describe a tissue response to immune stimulation, so for example an IL2 response of endothelial cells in response to lymphocytes stimulated by pathogen." xsd:string
+property_value: IAO:0000119 "Paul Schofield" xsd:string
+
+[Term]
+id: RBO:00005068
+name: Indirect cellular response to radiation
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of radiation acting on another cell and not on the responding cell. The process begins with detection of radiation by a cell or cells and ends with a change in state or activity of a different cell or cells." []
+is_a: RBO:00005067 ! Indirect cellular response to stimulus
+relationship: RO:0009501 ENVO:01001023
+property_value: IAO:0000112 "The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo & Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. L�ffler MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671" xsd:string
+property_value: IAO:0000119 "Paul Schofield" xsd:string
+
+[Term]
+id: RBO:00005069
+name: Indirect cellular response to ionising radiation
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of exposure to ionising radiation which acts on another cell and not on the responding cell. The process begins with detection of the ionising radiation by one cell or cells and ends with a change in state or activity of a different cell or cells." []
+is_a: RBO:00005068 ! Indirect cellular response to radiation
+property_value: IAO:0000112 "Directly describes the bystander effect (Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo & Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) but can alo sbe used to describe phenomena related to the abscopal effect, manifest in whole organisms where irradiation of one part of the organism causes changes in another un-irradiated component." xsd:string
+property_value: IAO:0000119 "Paul Schofield" xsd:string
+
+[Term]
 id: RBO:010000
 name: as low as reasonably achievable
 def: "A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen" []
@@ -1115,7 +1157,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010003
 name: bystander effect
 def: "The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated  by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one." []
-is_a: RBO:00000124 ! cellular process
+is_a: RBO:00005069 ! Indirect cellular response to ionising radiation
 property_value: IAO:0000112 "The bystander effect can be  studied by identifying cells that were traversed by a charged particle." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
