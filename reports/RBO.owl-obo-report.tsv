@@ -24,8 +24,11 @@ ERROR	duplicate_definition	is_specified_input_of	textual definition	A relation b
 ERROR	duplicate_definition	muscle of iris	textual definition	.
 ERROR	duplicate_definition	early pharyngeal endoderm	textual definition	.
 ERROR	duplicate_definition	layer of sclera	textual definition	.
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	4a20d535-ada0-4a4b-9f07-1aad723cc784genid5790
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	4a20d535-ada0-4a4b-9f07-1aad723cc784genid5794
+ERROR	duplicate_definition	transitively anteriorly connected to	textual definition	.
+ERROR	duplicate_definition	transitively distally connected to	textual definition	.
+ERROR	duplicate_definition	transitively proximally connected to	textual definition	.
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	2f52e16b-df80-4554-8668-c6d5dedf7e89genid5809
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	2f52e16b-df80-4554-8668-c6d5dedf7e89genid5813
 ERROR	misused_obsolete_label	obsolete cell part	rdfs:label	obsolete cell part
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	role	rdfs:label	role
@@ -71,10 +74,14 @@ ERROR	multiple_definitions	preceded_by	textual definition	<X preceded_by Y iff: 
 ERROR	multiple_definitions	preceded_by	textual definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
 ERROR	multiple_definitions	anterior_to	textual definition	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
 ERROR	multiple_definitions	anterior_to	textual definition	<x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer>
+ERROR	multiple_definitions	distal_to	textual definition	x distal to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).
+ERROR	multiple_definitions	distal_to	textual definition	x distal_to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).
 ERROR	multiple_definitions	dorsal_to	textual definition	x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
 ERROR	multiple_definitions	dorsal_to	textual definition	x dorsal_to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
 ERROR	multiple_definitions	posterior to	textual definition	x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
 ERROR	multiple_definitions	posterior to	textual definition	x posterior_to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail.
+ERROR	multiple_definitions	proximal_to	textual definition	x proximal to y iff x is closer to the point of attachment with the body than y.
+ERROR	multiple_definitions	proximal_to	textual definition	x proximal_to y iff x is closer to the point of attachment with the body than y.
 ERROR	multiple_definitions	ventral_to	textual definition	x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
 ERROR	multiple_definitions	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
 ERROR	multiple_definitions	in_left_side_of	textual definition	X in left side of Y <=> if Y is subdivided into two left and right portions, X is part of the left portion.
@@ -91,8 +98,8 @@ ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of
 ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
 ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure
-ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
-ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y
 ERROR	multiple_definitions	immediately deep to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
 ERROR	multiple_definitions	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
@@ -183,10 +190,14 @@ ERROR	multiple_labels	contains process	rdfs:label	contains process
 ERROR	multiple_labels	contains process	rdfs:label	contains process@en
 ERROR	multiple_labels	anterior_to	rdfs:label	anterior to
 ERROR	multiple_labels	anterior_to	rdfs:label	anterior_to
+ERROR	multiple_labels	distal_to	rdfs:label	distal to
+ERROR	multiple_labels	distal_to	rdfs:label	distal_to
 ERROR	multiple_labels	dorsal_to	rdfs:label	dorsal to
 ERROR	multiple_labels	dorsal_to	rdfs:label	dorsal_to
 ERROR	multiple_labels	posterior to	rdfs:label	posterior to
 ERROR	multiple_labels	posterior to	rdfs:label	posterior_to
+ERROR	multiple_labels	proximal_to	rdfs:label	proximal to
+ERROR	multiple_labels	proximal_to	rdfs:label	proximal_to
 ERROR	multiple_labels	ventral_to	rdfs:label	ventral to
 ERROR	multiple_labels	ventral_to	rdfs:label	ventral_to
 ERROR	multiple_labels	deep to	rdfs:label	deep to
@@ -207,8 +218,8 @@ ERROR	multiple_labels	in distal side of	rdfs:label	in distal side of
 ERROR	multiple_labels	in distal side of	rdfs:label	in_distal_side_of
 ERROR	multiple_labels	in lateral side of	rdfs:label	in lateral side of
 ERROR	multiple_labels	in lateral side of	rdfs:label	in_lateral_side_of
-ERROR	multiple_labels	proximalmost_part_of	rdfs:label	proximalmost part of
-ERROR	multiple_labels	proximalmost_part_of	rdfs:label	proximalmost_part_of
+ERROR	multiple_labels	proximalmost part of	rdfs:label	proximalmost part of
+ERROR	multiple_labels	proximalmost part of	rdfs:label	proximalmost_part_of
 ERROR	multiple_labels	immediately deep to	rdfs:label	immediately deep to
 ERROR	multiple_labels	immediately deep to	rdfs:label	immediately_deep_to
 ERROR	multiple_labels	immediately superficial to	rdfs:label	immediately superficial to
@@ -252,8 +263,11 @@ ERROR	multiple_labels	inheres in	rdfs:label	inheres in@en
 ERROR	multiple_labels	bearer of	rdfs:label	bearer of
 ERROR	multiple_labels	bearer of	rdfs:label	bearer of@en
 ERROR	multiple_labels	bearer of	rdfs:label	has characteristic@en
+ERROR	multiple_labels	participates in	rdfs:label	participates in
 ERROR	multiple_labels	participates in	rdfs:label	participates in@en
 ERROR	multiple_labels	participates in	rdfs:label	participates_in
+ERROR	multiple_labels	has quality	rdfs:label	has quality
+ERROR	multiple_labels	has quality	rdfs:label	has quality@en
 ERROR	multiple_labels	has role	rdfs:label	has role
 ERROR	multiple_labels	has role	rdfs:label	has role@en
 ERROR	multiple_labels	location_of	rdfs:label	location of@en
@@ -262,22 +276,30 @@ ERROR	multiple_labels	contains	rdfs:label	contains
 ERROR	multiple_labels	contains	rdfs:label	contains@en
 ERROR	multiple_labels	located in	rdfs:label	located in@en
 ERROR	multiple_labels	located in	rdfs:label	located_in
+ERROR	multiple_labels	boundary of	rdfs:label	2D boundary of@en
+ERROR	multiple_labels	boundary of	rdfs:label	boundary of
 ERROR	multiple_labels	has 2D boundary	rdfs:label	has 2D boundary@en
 ERROR	multiple_labels	has 2D boundary	rdfs:label	has boundary
 ERROR	multiple_labels	bounding layer of	rdfs:label	bounding layer of
 ERROR	multiple_labels	bounding layer of	rdfs:label	bounding layer of@en
+ERROR	multiple_labels	simultaneous with	rdfs:label	simultaneous with@en
+ERROR	multiple_labels	simultaneous with	rdfs:label	simultaneous_with
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately preceded by@en
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately_preceded_by
 ERROR	multiple_labels	overlaps	rdfs:label	overlaps
 ERROR	multiple_labels	overlaps	rdfs:label	overlaps@en
 ERROR	multiple_labels	continuous_with	rdfs:label	continuous with@en
 ERROR	multiple_labels	continuous_with	rdfs:label	continuous_with
+ERROR	multiple_labels	only in taxon	rdfs:label	only in taxon
+ERROR	multiple_labels	only in taxon	rdfs:label	only_in_taxon
 ERROR	multiple_labels	connected to	rdfs:label	connected to
 ERROR	multiple_labels	connected to	rdfs:label	connected to@en
 ERROR	multiple_labels	connects	rdfs:label	connects
 ERROR	multiple_labels	connects	rdfs:label	connects@en
 ERROR	multiple_labels	attached to part of	rdfs:label	attached to part of@en
 ERROR	multiple_labels	attached to part of	rdfs:label	attaches_to_part_of
+ERROR	multiple_labels	supplies	rdfs:label	supplies
+ERROR	multiple_labels	supplies	rdfs:label	supplies@en
 ERROR	multiple_labels	drains	rdfs:label	drains
 ERROR	multiple_labels	drains	rdfs:label	drains@en
 ERROR	multiple_labels	has component	rdfs:label	has component
@@ -288,6 +310,8 @@ ERROR	multiple_labels	develops from	rdfs:label	develops from@en
 ERROR	multiple_labels	develops from	rdfs:label	develops_from
 ERROR	multiple_labels	develops_into	rdfs:label	develops into@en
 ERROR	multiple_labels	develops_into	rdfs:label	develops_into
+ERROR	multiple_labels	directly develops from	rdfs:label	directly develops from@en
+ERROR	multiple_labels	directly develops from	rdfs:label	directly_develops_from
 ERROR	multiple_labels	regulates	rdfs:label	regulates
 ERROR	multiple_labels	regulates	rdfs:label	regulates@en
 ERROR	multiple_labels	negatively regulates	rdfs:label	negatively regulates
@@ -311,34 +335,54 @@ ERROR	multiple_labels	starts	rdfs:label	starts
 ERROR	multiple_labels	starts	rdfs:label	starts@en
 ERROR	multiple_labels	starts with	rdfs:label	starts with
 ERROR	multiple_labels	starts with	rdfs:label	starts with@en
+ERROR	multiple_labels	develops from part of	rdfs:label	develops from part of@en
+ERROR	multiple_labels	develops from part of	rdfs:label	develops_from_part_of
+ERROR	multiple_labels	develops_in	rdfs:label	develops in@en
+ERROR	multiple_labels	develops_in	rdfs:label	develops_in
 ERROR	multiple_labels	ends	rdfs:label	ends
 ERROR	multiple_labels	ends	rdfs:label	ends@en
 ERROR	multiple_labels	ends with	rdfs:label	ends with
 ERROR	multiple_labels	ends with	rdfs:label	ends with@en
 ERROR	multiple_labels	has developmental contribution from	rdfs:label	has developmental contribution from
 ERROR	multiple_labels	has developmental contribution from	rdfs:label	has developmental contribution from@en
+ERROR	multiple_labels	developmentally contributes to	rdfs:label	developmentally contributes to@en
+ERROR	multiple_labels	developmentally contributes to	rdfs:label	developmentally_contributes_to
 ERROR	multiple_labels	developmentally_induced_by	rdfs:label	developmentally induced by@en
 ERROR	multiple_labels	developmentally_induced_by	rdfs:label	developmentally_induced_by
+ERROR	multiple_labels	developmentally preceded by	rdfs:label	developmentally preceded by
+ERROR	multiple_labels	developmentally preceded by	rdfs:label	developmentally preceded by@en
 ERROR	multiple_labels	developmentally replaces	rdfs:label	developmentally replaces@en
 ERROR	multiple_labels	developmentally replaces	rdfs:label	developmentally_replaces
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat@en
 ERROR	multiple_labels	inheres in part of	rdfs:label	characteristic of part of@en
 ERROR	multiple_labels	inheres in part of	rdfs:label	inheres in part of@en
+ERROR	multiple_labels	functionally related to	rdfs:label	functionally related to
+ERROR	multiple_labels	functionally related to	rdfs:label	functionally related to@en
+ERROR	multiple_labels	part of structure that is capable of	rdfs:label	part of structure that is capable of
+ERROR	multiple_labels	part of structure that is capable of	rdfs:label	part of structure that is capable of@en
 ERROR	multiple_labels	member of	rdfs:label	member of
 ERROR	multiple_labels	member of	rdfs:label	member of@en
 ERROR	multiple_labels	has member	rdfs:label	has member
 ERROR	multiple_labels	has member	rdfs:label	has member@en
+ERROR	multiple_labels	input of	rdfs:label	input of
+ERROR	multiple_labels	input of	rdfs:label	input of@en
 ERROR	multiple_labels	output of	rdfs:label	output of
 ERROR	multiple_labels	output of	rdfs:label	output of@en
 ERROR	multiple_labels	attaches_to	rdfs:label	attached to@en
 ERROR	multiple_labels	attaches_to	rdfs:label	attaches_to
+ERROR	multiple_labels	has muscle insertion	rdfs:label	has muscle insertion@en
+ERROR	multiple_labels	has muscle insertion	rdfs:label	has_muscle_insertion
 ERROR	multiple_labels	tributary_of	rdfs:label	tributary of@en
 ERROR	multiple_labels	tributary_of	rdfs:label	tributary_of
 ERROR	multiple_labels	branching_part_of	rdfs:label	branching part of@en
 ERROR	multiple_labels	branching_part_of	rdfs:label	branching_part_of
+ERROR	multiple_labels	has potential to developmentally contribute to	rdfs:label	has potential to developmentally contribute to
+ERROR	multiple_labels	has potential to developmentally contribute to	rdfs:label	has potential to developmentally contribute to@en
 ERROR	multiple_labels	has potential to develop into	rdfs:label	has potential to develop into
 ERROR	multiple_labels	has potential to develop into	rdfs:label	has potential to develop into@en
+ERROR	multiple_labels	has potential to directly develop into	rdfs:label	has potential to directly develop into
+ERROR	multiple_labels	has potential to directly develop into	rdfs:label	has potential to directly develop into@en
 ERROR	multiple_labels	produces	rdfs:label	produces
 ERROR	multiple_labels	produces	rdfs:label	produces@en
 ERROR	multiple_labels	produced_by	rdfs:label	produced by
@@ -346,9 +390,9 @@ ERROR	multiple_labels	produced_by	rdfs:label	produced by@en
 ERROR	multiple_labels	produced_by	rdfs:label	produced_by
 ERROR	multiple_labels	surface of bone	rdfs:label	surface of bone
 ERROR	multiple_labels	surface of bone	rdfs:label	surface of bone@en
-ERROR	multiple_labels	Creator	rdfs:label	Creator
-ERROR	multiple_labels	Creator	rdfs:label	Creator@en-us
-ERROR	multiple_labels	Creator	rdfs:label	creator
+ERROR	multiple_labels	creator	rdfs:label	Creator
+ERROR	multiple_labels	creator	rdfs:label	Creator@en-us
+ERROR	multiple_labels	creator	rdfs:label	creator
 ERROR	multiple_labels	Date	rdfs:label	Date
 ERROR	multiple_labels	Date	rdfs:label	Date@en-us
 ERROR	multiple_labels	Description	rdfs:label	Description
@@ -1328,6 +1372,7 @@ WARN	missing_definition	contained in	textual definition
 WARN	missing_definition	contains	textual definition	
 WARN	missing_definition	has component activity	textual definition	
 WARN	missing_definition	directly regulated by	textual definition	
+WARN	missing_definition	before or simultaneous with	textual definition	
 WARN	missing_definition	during which ends	textual definition	
 WARN	missing_definition	ends after	textual definition	
 WARN	missing_definition	immediately precedes	textual definition	
@@ -1910,7 +1955,8 @@ WARN	missing_definition	channels_from	textual definition
 WARN	missing_definition	channels_into	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	Creator	textual definition	
+WARN	missing_definition	transitively_connected to	textual definition	
+WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	Title	textual definition	
@@ -2027,10 +2073,14 @@ INFO	lowercase_definition	occurs in	textual definition	b occurs_in c =def b is a
 INFO	lowercase_definition	contains process	textual definition	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
 INFO	lowercase_definition	anterior_to	textual definition	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
 INFO	lowercase_definition	anterior_to	textual definition	<x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer>
+INFO	lowercase_definition	distal_to	textual definition	x distal to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).
+INFO	lowercase_definition	distal_to	textual definition	x distal_to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal).
 INFO	lowercase_definition	dorsal_to	textual definition	x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	dorsal_to	textual definition	x dorsal_to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	posterior to	textual definition	x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
 INFO	lowercase_definition	posterior to	textual definition	x posterior_to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail.
+INFO	lowercase_definition	proximal_to	textual definition	x proximal to y iff x is closer to the point of attachment with the body than y.
+INFO	lowercase_definition	proximal_to	textual definition	x proximal_to y iff x is closer to the point of attachment with the body than y.
 INFO	lowercase_definition	ventral_to	textual definition	x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	in_proximal_side_of	textual definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
@@ -2075,7 +2125,7 @@ INFO	lowercase_definition	disposition of	textual definition	inverse of has dispo
 INFO	lowercase_definition	derives from	textual definition	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
 INFO	lowercase_definition	location_of	textual definition	a relation between two independent continuants, the location and the target, in which the target is entirely within the location@en
 INFO	lowercase_definition	located in	textual definition	a relation between two independent continuants, the target and the location, in which the target is entirely within the location@en
-INFO	lowercase_definition	2D boundary of	textual definition	a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity@en
+INFO	lowercase_definition	boundary of	textual definition	a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity@en
 INFO	lowercase_definition	has 2D boundary	textual definition	a relation between a material entity and a 2D immaterial entity (the boundary), in which the boundary delimits the material entity@en
 INFO	lowercase_definition	has component process	textual definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
@@ -2101,7 +2151,7 @@ INFO	lowercase_definition	surrounds	textual definition	inverse of surrounded_by
 INFO	lowercase_definition	starts	textual definition	inverse of starts with
 INFO	lowercase_definition	starts with	textual definition	<x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) < ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.>
 INFO	lowercase_definition	develops from part of	textual definition	x develops from part of y if and only if there exists some z such that x develops from z and z is part of y
-INFO	lowercase_definition	develops in	textual definition	x develops_in y if x is located in y whilst x is developing
+INFO	lowercase_definition	develops_in	textual definition	x develops_in y if x is located in y whilst x is developing
 INFO	lowercase_definition	ends	textual definition	inverse of ends with
 INFO	lowercase_definition	ends with	textual definition	<x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.>
 INFO	lowercase_definition	has start location	textual definition	x 'has starts location' y if and only if there exists some process z such that x 'starts with' z and z 'occurs in' y
@@ -2235,9 +2285,13 @@ INFO	lowercase_definition	wall of heart	textual definition	wall of organ which h
 INFO	lowercase_definition	anteriorly connected to	textual definition	x anteriorly_connected_to y iff the anterior part of x is connected to y. i.e. x connected_to y and x posterior_to y.
 INFO	lowercase_definition	conduit for	textual definition	x is a conduit for y iff y passes through the lumen of x.
 INFO	lowercase_definition	distally connected to	textual definition	x distally_connected_to y iff the distal part of x is connected to y. i.e. x connected_to y and x proximal_to y.
+INFO	lowercase_definition	indirectly_supplies	textual definition	a indirectly_supplies s iff a has a branch and the branch supplies or indirectly supplies s
 INFO	lowercase_definition	posteriorly connected to	textual definition	x posteriorly_connected_to y iff the posterior part of x is connected to y. i.e. x connected_to y and x anterior_to y.
 INFO	lowercase_definition	proximally connected to	textual definition	x proximally_connected_to y iff the proximal part of x is connected to y. i.e. x connected_to y and x distal_to y.
 INFO	lowercase_definition	site_of	textual definition	c site_of p if c is the bearer of a disposition that is realized by a process that has p as part
+INFO	lowercase_definition	transitively anteriorly connected to	textual definition	.
+INFO	lowercase_definition	transitively distally connected to	textual definition	.
+INFO	lowercase_definition	transitively proximally connected to	textual definition	.
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	lowercase_definition	Suni	textual definition	"\""Suni, or Jalca, is one of the eight Natural Regions of Peru. It is located in the Andes at an altitude between 3,500 and 4,000 metres above sea level. Suni has a dry and cold weather and there are many glacial valleys. The flora includes gramineous plants and shrubs such as the taya-taya (Caesalpinia spinosa), the quishuar (Buddleja coriacea), and the cantuta (Cantua buxifolia) which was considered sacred by the Incas. Even though it is hard for plants to grow because of the weather, people are able to cultivate such crops as quinoa, qañiwa, broad beans and ulluku (Ullucus tuberosus). The main fauna is the guinea pig and, among numerous other highland birds, the Chiguanco thrush.\"""
 INFO	missing_superclass	entity	rdfs:subClassOf	
@@ -2245,6 +2299,5 @@ INFO	missing_superclass	role	rdfs:subClassOf
 INFO	missing_superclass	cellular_component	rdfs:subClassOf	
 INFO	missing_superclass	site of double-strand break	rdfs:subClassOf	
 INFO	missing_superclass	organismal entity	rdfs:subClassOf	
-INFO	missing_superclass	processual entity	rdfs:subClassOf	
 INFO	missing_superclass	unit	rdfs:subClassOf	
 INFO	missing_superclass	prefix	rdfs:subClassOf	

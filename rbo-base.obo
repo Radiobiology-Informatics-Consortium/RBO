@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: rbo/releases/2021-08-07/rbo-base.owl
+data-version: rbo/releases/2021-08-08/rbo-base.owl
 ontology: rbo/rbo-base
 property_value: http://purl.org/dc/elements/1.1/description "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Radiation Biology Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2021-08-07" xsd:string
+property_value: owl:versionInfo "2021-08-08" xsd:string
 
 [Term]
 id: DOID:4
