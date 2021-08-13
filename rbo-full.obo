@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: rbo/releases/2021-08-08/rbo-full.owl
+data-version: rbo/releases/2021-08-13/rbo-full.owl
 subsetdef: added_for_HCA ""
 subsetdef: attribute_slim ""
 subsetdef: cumbo ""
@@ -15,6 +15,7 @@ subsetdef: goslim_agr ""
 subsetdef: goslim_aspergillus ""
 subsetdef: goslim_candida ""
 subsetdef: goslim_chembl ""
+subsetdef: goslim_drosophila ""
 subsetdef: goslim_flybase_ribbon ""
 subsetdef: goslim_generic ""
 subsetdef: goslim_metagenomics ""
@@ -48,7 +49,7 @@ ontology: rbo/rbo-full
 property_value: dc-description "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments." xsd:string
 property_value: dc-title "Radiation Biology Ontology" xsd:string
 property_value: dcterms-license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2021-08-08" xsd:string
+property_value: owl:versionInfo "2021-08-13" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -9382,6 +9383,22 @@ is_a: GO:0003674 ! molecular_function
 [Term]
 id: GO:0005575
 name: cellular_component
+namespace: cellular_component
+alt_id: GO:0008372
+def: "A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome)." [GOC:pdt, NIF_Subcellular:sao1337158144]
+comment: Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. When this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "cell or subcellular entity" EXACT []
+synonym: "cellular component" EXACT []
+synonym: "subcellular entity" RELATED [NIF_Subcellular:nlx_subcell_100315]
+xref: NIF_Subcellular:sao1337158144
 
 [Term]
 id: GO:0005576
@@ -9427,7 +9444,21 @@ relationship: part_of GO:0005576 ! extracellular region
 [Term]
 id: GO:0005622
 name: intracellular anatomical structure
+namespace: cellular_component
+def: "A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm." [ISBN:0198506732]
+subset: gocheck_do_not_annotate
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_plant
+synonym: "internal to cell" EXACT []
+synonym: "intracellular" EXACT []
+synonym: "nucleocytoplasm" RELATED [GOC:mah]
+synonym: "protoplasm" EXACT []
+synonym: "protoplast" RELATED [GOC:mah]
+xref: Wikipedia:Intracellular
 is_a: GO:0110165 ! cellular anatomical entity
+property_value: IAO:0000233 https://github.com/geneontology/go-ontology/issues/17776 xsd:anyURI
 
 [Term]
 id: GO:0005634
@@ -9445,6 +9476,23 @@ relationship: part_of GO:0012505 ! endomembrane system
 [Term]
 id: GO:0005694
 name: chromosome
+namespace: cellular_component
+def: "A structure composed of a very long molecule of DNA and associated proteins (e.g. histones) that carries hereditary information." [ISBN:0198547684]
+comment: Chromosomes include parts that are not part of the chromatin.  Examples include the kinetochore.
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_drosophila
+subset: goslim_flybase_ribbon
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_yeast
+synonym: "chromatid" RELATED []
+synonym: "interphase chromosome" NARROW []
+synonym: "prophase chromosome" NARROW []
+xref: Wikipedia:Chromosome
 is_a: GO:0043232 ! intracellular non-membrane-bounded organelle
 
 [Term]
@@ -9500,6 +9548,91 @@ intersection_of: part_of GO:0071944 ! cell periphery
 relationship: part_of GO:0071944 ! cell periphery
 
 [Term]
+id: GO:0006139
+name: nucleobase-containing compound metabolic process
+namespace: biological_process
+alt_id: GO:0055134
+def: "Any cellular metabolic process involving nucleobases, nucleosides, nucleotides and nucleic acids." [GOC:ai]
+subset: goslim_pir
+subset: goslim_plant
+synonym: "cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+synonym: "nucleobase, nucleoside and nucleotide metabolic process" RELATED []
+synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" RELATED [GOC:dph, GOC:tb]
+synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+is_a: GO:0006725 ! cellular aromatic compound metabolic process
+is_a: GO:0034641 ! cellular nitrogen compound metabolic process
+is_a: GO:0044238 ! primary metabolic process
+is_a: GO:0046483 ! heterocycle metabolic process
+is_a: GO:1901360 ! organic cyclic compound metabolic process
+
+[Term]
+id: GO:0006259
+name: DNA metabolic process
+namespace: biological_process
+alt_id: GO:0055132
+def: "Any cellular metabolic process involving deoxyribonucleic acid. This is one of the two main types of nucleic acid, consisting of a long, unbranched macromolecule formed from one, or more commonly, two, strands of linked deoxyribonucleotides." [ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_flybase_ribbon
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+synonym: "cellular DNA metabolism" EXACT []
+synonym: "DNA metabolism" EXACT []
+is_a: GO:0044260 ! cellular macromolecule metabolic process
+is_a: GO:0090304 ! nucleic acid metabolic process
+
+[Term]
+id: GO:0006281
+name: DNA repair
+namespace: biological_process
+def: "The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway." [PMID:11563486]
+subset: goslim_drosophila
+subset: goslim_pir
+subset: goslim_pombe
+subset: goslim_yeast
+xref: Wikipedia:DNA_repair
+is_a: GO:0006259 ! DNA metabolic process
+is_a: GO:0006974 ! cellular response to DNA damage stimulus
+
+[Term]
+id: GO:0006282
+name: regulation of DNA repair
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of DNA repair." [GOC:go_curators]
+subset: goslim_metagenomics
+is_a: GO:0051052 ! regulation of DNA metabolic process
+is_a: GO:2001020 ! regulation of response to DNA damage stimulus
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0006281 ! DNA repair
+relationship: regulates GO:0006281 ! DNA repair
+
+[Term]
+id: GO:0006725
+name: cellular aromatic compound metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving aromatic compounds, any organic compound characterized by one or more planar rings, each of which contains conjugated double bonds and delocalized pi electrons, as carried out by individual cells." [GOC:ai, ISBN:0198506732]
+subset: goslim_pir
+synonym: "aromatic compound metabolism" EXACT []
+synonym: "aromatic hydrocarbon metabolic process" NARROW []
+synonym: "aromatic hydrocarbon metabolism" NARROW []
+is_a: GO:0044237 ! cellular metabolic process
+
+[Term]
+id: GO:0006807
+name: nitrogen compound metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving organic or inorganic compounds that contain nitrogen." [GOC:jl, ISBN:0198506732]
+subset: goslim_metagenomics
+subset: goslim_pir
+synonym: "nitrogen compound metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+
+[Term]
 id: GO:0006810
 name: transport
 is_a: GO:0051234 ! establishment of localization
@@ -9548,6 +9681,37 @@ is_a: GO:0006937 ! regulation of muscle contraction
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: regulates GO:0006941 ! striated muscle contraction
 relationship: regulates GO:0006941 ! striated muscle contraction
+
+[Term]
+id: GO:0006950
+name: response to stress
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_drosophila
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_plant
+synonym: "response to abiotic stress" RELATED []
+synonym: "response to biotic stress" RELATED []
+is_a: GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0006974
+name: cellular response to DNA damage stimulus
+namespace: biological_process
+alt_id: GO:0034984
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating damage to its DNA from environmental insults or errors during metabolism." [GOC:go_curators]
+subset: goslim_yeast
+synonym: "cellular DNA damage response" EXACT []
+synonym: "DNA damage response" EXACT []
+synonym: "response to DNA damage stimulus" BROAD []
+synonym: "response to genotoxic stress" EXACT []
+is_a: GO:0033554 ! cellular response to stress
 
 [Term]
 id: GO:0006996
@@ -9676,6 +9840,29 @@ created_by: jl
 creation_date: 2012-09-19T15:05:24Z
 
 [Term]
+id: GO:0008152
+name: metabolic process
+namespace: biological_process
+alt_id: GO:0044236
+alt_id: GO:0044710
+def: "The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation." [GOC:go_curators, ISBN:0198547684]
+comment: Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+synonym: "metabolic process resulting in cell growth" NARROW []
+synonym: "metabolism" EXACT []
+synonym: "metabolism resulting in cell growth" NARROW []
+synonym: "multicellular organism metabolic process" NARROW []
+synonym: "single-organism metabolic process" RELATED []
+xref: Wikipedia:Metabolism
+is_a: GO:0008150 ! biological_process
+created_by: jl
+creation_date: 2012-10-17T15:46:40Z
+
+[Term]
 id: GO:0008283
 name: cell population proliferation
 is_a: GO:0009987 ! cellular process
@@ -9784,6 +9971,48 @@ name: tissue development
 is_a: GO:0048856 ! anatomical structure development
 
 [Term]
+id: GO:0009892
+name: negative regulation of metabolic process
+namespace: biological_process
+alt_id: GO:0044252
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism." [GOC:go_curators]
+synonym: "down regulation of metabolic process" EXACT []
+synonym: "down-regulation of metabolic process" EXACT []
+synonym: "downregulation of metabolic process" EXACT []
+synonym: "inhibition of metabolic process" NARROW []
+synonym: "inhibition of organismal metabolic process" NARROW []
+synonym: "negative regulation of metabolism" EXACT []
+synonym: "negative regulation of multicellular organismal metabolic process" NARROW []
+synonym: "negative regulation of organismal metabolism" EXACT []
+is_a: GO:0019222 ! regulation of metabolic process
+is_a: GO:0048519 ! negative regulation of biological process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0008152 ! metabolic process
+relationship: negatively_regulates GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0009893
+name: positive regulation of metabolic process
+namespace: biological_process
+alt_id: GO:0044253
+def: "Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism." [GOC:go_curators]
+synonym: "activation of metabolic process" NARROW []
+synonym: "positive regulation of metabolism" EXACT []
+synonym: "positive regulation of multicellular organismal metabolic process" NARROW []
+synonym: "positive regulation of organismal metabolism" NARROW []
+synonym: "stimulation of metabolic process" NARROW []
+synonym: "stimulation of organismal metabolic process" NARROW []
+synonym: "up regulation of metabolic process" EXACT []
+synonym: "up-regulation of metabolic process" EXACT []
+synonym: "up-regulation of organismal metabolic process" NARROW []
+synonym: "upregulation of metabolic process" EXACT []
+is_a: GO:0019222 ! regulation of metabolic process
+is_a: GO:0048518 ! positive regulation of biological process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0008152 ! metabolic process
+relationship: positively_regulates GO:0008152 ! metabolic process
+
+[Term]
 id: GO:0009914
 name: hormone transport
 is_a: GO:0006810 ! transport
@@ -9854,6 +10083,28 @@ is_a: GO:0045995 ! regulation of embryonic development
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: regulates GO:0007369 ! gastrulation
 relationship: regulates GO:0007369 ! gastrulation
+
+[Term]
+id: GO:0010604
+name: positive regulation of macromolecule metabolic process
+namespace: biological_process
+def: "Any process that increases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:dph, GOC:tb]
+is_a: GO:0009893 ! positive regulation of metabolic process
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0043170 ! macromolecule metabolic process
+relationship: positively_regulates GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0010605
+name: negative regulation of macromolecule metabolic process
+namespace: biological_process
+def: "Any process that decreases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:dph, GOC:tb]
+is_a: GO:0009892 ! negative regulation of metabolic process
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0043170 ! macromolecule metabolic process
+relationship: negatively_regulates GO:0043170 ! macromolecule metabolic process
 
 [Term]
 id: GO:0010638
@@ -10005,6 +10256,35 @@ is_a: GO:0007610 ! behavior
 is_a: GO:0048609 ! multicellular organismal reproductive process
 intersection_of: GO:0007610 ! behavior
 intersection_of: part_of GO:0000003 ! reproduction
+
+[Term]
+id: GO:0019219
+name: regulation of nucleobase-containing compound metabolic process
+namespace: biological_process
+def: "Any cellular process that modulates the frequency, rate or extent of the chemical reactions and pathways involving nucleobases, nucleosides, nucleotides and nucleic acids." [GOC:go_curators]
+synonym: "regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" RELATED [GOC:dph, GOC:tb]
+synonym: "regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+is_a: GO:0031323 ! regulation of cellular metabolic process
+is_a: GO:0051171 ! regulation of nitrogen compound metabolic process
+is_a: GO:0080090 ! regulation of primary metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0006139 ! nucleobase-containing compound metabolic process
+relationship: regulates GO:0006139 ! nucleobase-containing compound metabolic process
+
+[Term]
+id: GO:0019222
+name: regulation of metabolic process
+namespace: biological_process
+alt_id: GO:0044246
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism." [GOC:go_curators]
+subset: goslim_metagenomics
+synonym: "regulation of metabolism" EXACT []
+synonym: "regulation of multicellular organismal metabolic process" NARROW []
+synonym: "regulation of organismal metabolic process" NARROW [GOC:tb]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0008152 ! metabolic process
+relationship: regulates GO:0008152 ! metabolic process
 
 [Term]
 id: GO:0019226
@@ -10232,6 +10512,53 @@ intersection_of: part_of GO:0043227 ! membrane-bounded organelle
 relationship: part_of GO:0043227 ! membrane-bounded organelle
 
 [Term]
+id: GO:0031323
+name: regulation of cellular metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances." [GOC:mah]
+synonym: "regulation of cellular metabolism" EXACT []
+is_a: GO:0019222 ! regulation of metabolic process
+is_a: GO:0050794 ! regulation of cellular process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0044237 ! cellular metabolic process
+relationship: regulates GO:0044237 ! cellular metabolic process
+
+[Term]
+id: GO:0031324
+name: negative regulation of cellular metabolic process
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances." [GOC:mah]
+synonym: "down regulation of cellular metabolic process" EXACT []
+synonym: "down-regulation of cellular metabolic process" EXACT []
+synonym: "downregulation of cellular metabolic process" EXACT []
+synonym: "inhibition of cellular metabolic process" NARROW []
+synonym: "negative regulation of cellular metabolism" EXACT []
+is_a: GO:0009892 ! negative regulation of metabolic process
+is_a: GO:0031323 ! regulation of cellular metabolic process
+is_a: GO:0048523 ! negative regulation of cellular process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0044237 ! cellular metabolic process
+relationship: negatively_regulates GO:0044237 ! cellular metabolic process
+
+[Term]
+id: GO:0031325
+name: positive regulation of cellular metabolic process
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances." [GOC:mah]
+synonym: "activation of cellular metabolic process" NARROW []
+synonym: "positive regulation of cellular metabolism" EXACT []
+synonym: "stimulation of cellular metabolic process" NARROW []
+synonym: "up regulation of cellular metabolic process" EXACT []
+synonym: "up-regulation of cellular metabolic process" EXACT []
+synonym: "upregulation of cellular metabolic process" EXACT []
+is_a: GO:0009893 ! positive regulation of metabolic process
+is_a: GO:0031323 ! regulation of cellular metabolic process
+is_a: GO:0048522 ! positive regulation of cellular process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0044237 ! cellular metabolic process
+relationship: positively_regulates GO:0044237 ! cellular metabolic process
+
+[Term]
 id: GO:0031410
 name: cytoplasmic vesicle
 is_a: GO:0097708 ! intracellular vesicle
@@ -10449,9 +10776,30 @@ intersection_of: regulates GO:0006996 ! organelle organization
 relationship: regulates GO:0006996 ! organelle organization
 
 [Term]
+id: GO:0033554
+name: cellular response to stress
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating the organism is under stress. The stress is usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:mah]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+is_a: GO:0006950 ! response to stress
+is_a: GO:0051716 ! cellular response to stimulus
+
+[Term]
 id: GO:0034101
 name: erythrocyte homeostasis
 is_a: GO:0002262 ! myeloid cell homeostasis
+
+[Term]
+id: GO:0034641
+name: cellular nitrogen compound metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving various organic and inorganic nitrogenous compounds, as carried out by individual cells." [GOC:mah]
+subset: goslim_chembl
+subset: goslim_generic
+synonym: "cellular nitrogen compound metabolism" EXACT []
+is_a: GO:0006807 ! nitrogen compound metabolic process
+is_a: GO:0044237 ! cellular metabolic process
 
 [Term]
 id: GO:0035148
@@ -10487,6 +10835,7 @@ synonym: "DNA damage focus" RELATED [GOC:mah, PMID:20096808, PMID:21035408]
 synonym: "ionizing radiation-induced foci" RELATED [PMID:20096808, PMID:21035408]
 synonym: "IRIF" RELATED [PMID:20096808, PMID:21035408]
 synonym: "site of DSB" EXACT [PMID:21035408]
+is_a: GO:0090734 ! site of DNA damage
 created_by: bf
 creation_date: 2011-05-17T03:04:42Z
 
@@ -10611,8 +10960,29 @@ name: extracellular structure organization
 is_a: GO:0016043 ! cellular component organization
 
 [Term]
+id: GO:0043170
+name: macromolecule metabolic process
+namespace: biological_process
+alt_id: GO:0043283
+alt_id: GO:0044259
+def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:mah]
+subset: goslim_pir
+synonym: "biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
+synonym: "macromolecule metabolism" EXACT []
+synonym: "multicellular organismal macromolecule metabolic process" NARROW []
+synonym: "organismal macromolecule metabolism" EXACT []
+is_a: GO:0071704 ! organic substance metabolic process
+
+[Term]
 id: GO:0043226
 name: organelle
+namespace: cellular_component
+def: "Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane." [GOC:go_curators]
+subset: goslim_chembl
+subset: goslim_generic
+subset: goslim_pir
+xref: NIF_Subcellular:sao1539965131
+xref: Wikipedia:Organelle
 is_a: GO:0110165 ! cellular anatomical entity
 
 [Term]
@@ -10626,11 +10996,18 @@ relationship: has_part GO:0016020 ! membrane
 [Term]
 id: GO:0043228
 name: non-membrane-bounded organelle
+namespace: cellular_component
+def: "Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane. Includes ribosomes, the cytoskeleton and chromosomes." [GOC:go_curators]
+synonym: "non-membrane-enclosed organelle" EXACT []
+xref: NIF_Subcellular:sao1456184038
 is_a: GO:0043226 ! organelle
 
 [Term]
 id: GO:0043229
 name: intracellular organelle
+namespace: cellular_component
+def: "Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane." [GOC:go_curators]
+subset: goslim_pir
 is_a: GO:0043226 ! organelle
 intersection_of: GO:0043226 ! organelle
 intersection_of: part_of GO:0005622 ! intracellular anatomical structure
@@ -10655,6 +11032,11 @@ intersection_of: part_of GO:0005622 ! intracellular anatomical structure
 [Term]
 id: GO:0043232
 name: intracellular non-membrane-bounded organelle
+namespace: cellular_component
+def: "Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane and occurring within the cell. Includes ribosomes, the cytoskeleton and chromosomes." [GOC:go_curators]
+subset: goslim_mouse
+subset: goslim_pir
+synonym: "intracellular non-membrane-enclosed organelle" EXACT []
 is_a: GO:0043228 ! non-membrane-bounded organelle
 is_a: GO:0043229 ! intracellular organelle
 intersection_of: GO:0043228 ! non-membrane-bounded organelle
@@ -10761,6 +11143,36 @@ is_a: GO:0065009 ! regulation of molecular function
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: positively_regulates GO:0003674 ! molecular_function
 relationship: positively_regulates GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0044237
+name: cellular metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways by which individual cells transform chemical substances." [GOC:go_curators]
+synonym: "cellular metabolism" EXACT []
+synonym: "intermediary metabolism" RELATED [GOC:mah]
+is_a: GO:0008152 ! metabolic process
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0044238
+name: primary metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism." [GOC:go_curators, http://www.metacyc.org]
+subset: goslim_pir
+synonym: "primary metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0044260
+name: cellular macromolecule metabolic process
+namespace: biological_process
+alt_id: GO:0034960
+def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass, as carried out by individual cells." [GOC:mah]
+synonym: "cellular biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
+synonym: "cellular macromolecule metabolism" EXACT []
+is_a: GO:0043170 ! macromolecule metabolic process
+is_a: GO:0044237 ! cellular metabolic process
 
 [Term]
 id: GO:0044297
@@ -10898,6 +11310,39 @@ intersection_of: positively_regulates GO:0030219 ! megakaryocyte differentiation
 relationship: positively_regulates GO:0030219 ! megakaryocyte differentiation
 
 [Term]
+id: GO:0045738
+name: negative regulation of DNA repair
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of DNA repair." [GOC:go_curators]
+synonym: "down regulation of DNA repair" EXACT []
+synonym: "down-regulation of DNA repair" EXACT []
+synonym: "downregulation of DNA repair" EXACT []
+synonym: "inhibition of DNA repair" NARROW []
+is_a: GO:0006282 ! regulation of DNA repair
+is_a: GO:0051053 ! negative regulation of DNA metabolic process
+is_a: GO:2001021 ! negative regulation of response to DNA damage stimulus
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0006281 ! DNA repair
+relationship: negatively_regulates GO:0006281 ! DNA repair
+
+[Term]
+id: GO:0045739
+name: positive regulation of DNA repair
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of DNA repair." [GOC:go_curators]
+synonym: "activation of DNA repair" NARROW []
+synonym: "stimulation of DNA repair" NARROW []
+synonym: "up regulation of DNA repair" EXACT []
+synonym: "up-regulation of DNA repair" EXACT []
+synonym: "upregulation of DNA repair" EXACT []
+is_a: GO:0006282 ! regulation of DNA repair
+is_a: GO:0051054 ! positive regulation of DNA metabolic process
+is_a: GO:2001022 ! positive regulation of response to DNA damage stimulus
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0006281 ! DNA repair
+relationship: positively_regulates GO:0006281 ! DNA repair
+
+[Term]
 id: GO:0045759
 name: negative regulation of action potential
 is_a: GO:0048519 ! negative regulation of biological process
@@ -10979,6 +11424,43 @@ intersection_of: positively_regulates GO:0006936 ! muscle contraction
 relationship: positively_regulates GO:0006936 ! muscle contraction
 
 [Term]
+id: GO:0045934
+name: negative regulation of nucleobase-containing compound metabolic process
+namespace: biological_process
+def: "Any cellular process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways involving nucleobases, nucleosides, nucleotides and nucleic acids." [GOC:go_curators]
+synonym: "down regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "down-regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "downregulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "inhibition of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" NARROW []
+synonym: "negative regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" RELATED [GOC:dph, GOC:tb]
+synonym: "negative regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+is_a: GO:0019219 ! regulation of nucleobase-containing compound metabolic process
+is_a: GO:0031324 ! negative regulation of cellular metabolic process
+is_a: GO:0051172 ! negative regulation of nitrogen compound metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0006139 ! nucleobase-containing compound metabolic process
+relationship: negatively_regulates GO:0006139 ! nucleobase-containing compound metabolic process
+
+[Term]
+id: GO:0045935
+name: positive regulation of nucleobase-containing compound metabolic process
+namespace: biological_process
+def: "Any cellular process that activates or increases the frequency, rate or extent of the chemical reactions and pathways involving nucleobases, nucleosides, nucleotides and nucleic acids." [GOC:go_curators]
+synonym: "activation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" NARROW []
+synonym: "positive regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" RELATED [GOC:dph, GOC:tb]
+synonym: "positive regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+synonym: "stimulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" NARROW []
+synonym: "up regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "up-regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "upregulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+is_a: GO:0019219 ! regulation of nucleobase-containing compound metabolic process
+is_a: GO:0031325 ! positive regulation of cellular metabolic process
+is_a: GO:0051173 ! positive regulation of nitrogen compound metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0006139 ! nucleobase-containing compound metabolic process
+relationship: positively_regulates GO:0006139 ! nucleobase-containing compound metabolic process
+
+[Term]
 id: GO:0045988
 name: negative regulation of striated muscle contraction
 is_a: GO:0006942 ! regulation of striated muscle contraction
@@ -11013,6 +11495,15 @@ is_a: GO:2000026 ! regulation of multicellular organismal development
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: regulates GO:0009790 ! embryo development
 relationship: regulates GO:0009790 ! embryo development
+
+[Term]
+id: GO:0046483
+name: heterocycle metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving heterocyclic compounds, those with a cyclic molecular structure and at least two different atoms in the ring (or rings)." [ISBN:0198506732]
+subset: goslim_pir
+synonym: "heterocycle metabolism" EXACT []
+is_a: GO:0044237 ! cellular metabolic process
 
 [Term]
 id: GO:0046879
@@ -11512,6 +12003,54 @@ intersection_of: negatively_regulates GO:0006810 ! transport
 relationship: negatively_regulates GO:0006810 ! transport
 
 [Term]
+id: GO:0051052
+name: regulation of DNA metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving DNA." [GOC:ai]
+subset: goslim_yeast
+synonym: "regulation of DNA metabolism" EXACT []
+is_a: GO:0019219 ! regulation of nucleobase-containing compound metabolic process
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0006259 ! DNA metabolic process
+relationship: regulates GO:0006259 ! DNA metabolic process
+
+[Term]
+id: GO:0051053
+name: negative regulation of DNA metabolic process
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways involving DNA." [GOC:ai]
+synonym: "down regulation of DNA metabolic process" EXACT []
+synonym: "down-regulation of DNA metabolic process" EXACT []
+synonym: "downregulation of DNA metabolic process" EXACT []
+synonym: "inhibition of DNA metabolic process" NARROW []
+synonym: "negative regulation of DNA metabolism" EXACT []
+is_a: GO:0010605 ! negative regulation of macromolecule metabolic process
+is_a: GO:0045934 ! negative regulation of nucleobase-containing compound metabolic process
+is_a: GO:0051052 ! regulation of DNA metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0006259 ! DNA metabolic process
+relationship: negatively_regulates GO:0006259 ! DNA metabolic process
+
+[Term]
+id: GO:0051054
+name: positive regulation of DNA metabolic process
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways involving DNA." [GOC:ai]
+synonym: "activation of DNA metabolic process" NARROW []
+synonym: "positive regulation of DNA metabolism" EXACT []
+synonym: "stimulation of DNA metabolic process" NARROW []
+synonym: "up regulation of DNA metabolic process" EXACT []
+synonym: "up-regulation of DNA metabolic process" EXACT []
+synonym: "upregulation of DNA metabolic process" EXACT []
+is_a: GO:0010604 ! positive regulation of macromolecule metabolic process
+is_a: GO:0045935 ! positive regulation of nucleobase-containing compound metabolic process
+is_a: GO:0051052 ! regulation of DNA metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0006259 ! DNA metabolic process
+relationship: positively_regulates GO:0006259 ! DNA metabolic process
+
+[Term]
 id: GO:0051093
 name: negative regulation of developmental process
 is_a: GO:0048519 ! negative regulation of biological process
@@ -11554,6 +12093,53 @@ is_a: GO:0051128 ! regulation of cellular component organization
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: positively_regulates GO:0016043 ! cellular component organization
 relationship: positively_regulates GO:0016043 ! cellular component organization
+
+[Term]
+id: GO:0051171
+name: regulation of nitrogen compound metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds." [GOC:ai, GOC:tb]
+synonym: "regulation of nitrogen metabolic process" EXACT [GOC:tb]
+synonym: "regulation of nitrogen metabolism" EXACT []
+is_a: GO:0019222 ! regulation of metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0006807 ! nitrogen compound metabolic process
+relationship: regulates GO:0006807 ! nitrogen compound metabolic process
+
+[Term]
+id: GO:0051172
+name: negative regulation of nitrogen compound metabolic process
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds." [GOC:ai, GOC:tb]
+synonym: "down regulation of nitrogen metabolic process" EXACT []
+synonym: "down-regulation of nitrogen metabolic process" EXACT []
+synonym: "downregulation of nitrogen metabolic process" EXACT []
+synonym: "inhibition of nitrogen metabolic process" NARROW []
+synonym: "negative regulation of nitrogen metabolic process" EXACT [GOC:tb]
+synonym: "negative regulation of nitrogen metabolism" EXACT []
+is_a: GO:0009892 ! negative regulation of metabolic process
+is_a: GO:0051171 ! regulation of nitrogen compound metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0006807 ! nitrogen compound metabolic process
+relationship: negatively_regulates GO:0006807 ! nitrogen compound metabolic process
+
+[Term]
+id: GO:0051173
+name: positive regulation of nitrogen compound metabolic process
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds." [GOC:ai, GOC:tb]
+synonym: "activation of nitrogen metabolic process" NARROW []
+synonym: "positive regulation of nitrogen metabolic process" EXACT [GOC:tb]
+synonym: "positive regulation of nitrogen metabolism" EXACT []
+synonym: "stimulation of nitrogen metabolic process" NARROW []
+synonym: "up regulation of nitrogen metabolic process" EXACT []
+synonym: "up-regulation of nitrogen metabolic process" EXACT []
+synonym: "upregulation of nitrogen metabolic process" EXACT []
+is_a: GO:0009893 ! positive regulation of metabolic process
+is_a: GO:0051171 ! regulation of nitrogen compound metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0006807 ! nitrogen compound metabolic process
+relationship: positively_regulates GO:0006807 ! nitrogen compound metabolic process
 
 [Term]
 id: GO:0051179
@@ -11794,6 +12380,16 @@ is_a: GO:0006941 ! striated muscle contraction
 relationship: part_of GO:0060047 ! heart contraction
 
 [Term]
+id: GO:0060255
+name: regulation of macromolecule metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:dph, GOC:tb]
+is_a: GO:0019222 ! regulation of metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0043170 ! macromolecule metabolic process
+relationship: regulates GO:0043170 ! macromolecule metabolic process
+
+[Term]
 id: GO:0060341
 name: regulation of cellular localization
 is_a: GO:0032879 ! regulation of localization
@@ -12023,6 +12619,18 @@ name: organic substance transport
 is_a: GO:0006810 ! transport
 
 [Term]
+id: GO:0071704
+name: organic substance metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon." [GOC:mah]
+synonym: "organic molecular entity metabolic process" EXACT []
+synonym: "organic molecular entity metabolism" EXACT []
+synonym: "organic substance metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+created_by: mah
+creation_date: 2010-03-08T03:32:18Z
+
+[Term]
 id: GO:0071840
 name: cellular component organization or biogenesis
 is_a: GO:0009987 ! cellular process
@@ -12066,12 +12674,72 @@ name: circulatory system development
 is_a: GO:0048731 ! system development
 
 [Term]
+id: GO:0080090
+name: regulation of primary metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism involving those compounds formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism." [PMID:19211694]
+is_a: GO:0019222 ! regulation of metabolic process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0044238 ! primary metabolic process
+relationship: regulates GO:0044238 ! primary metabolic process
+created_by: dhl
+creation_date: 2009-04-22T04:30:52Z
+
+[Term]
+id: GO:0080134
+name: regulation of response to stress
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a response to stress. Response to stress is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:dhl]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+is_a: GO:0048583 ! regulation of response to stimulus
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0006950 ! response to stress
+relationship: regulates GO:0006950 ! response to stress
+created_by: dhl
+creation_date: 2009-05-06T04:51:28Z
+
+[Term]
+id: GO:0080135
+name: regulation of cellular response to stress
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of a cellular response to stress. Cellular response to stress is a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating the organism is under stress. The stress is usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [GOC:dhl]
+is_a: GO:0050794 ! regulation of cellular process
+is_a: GO:0080134 ! regulation of response to stress
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0033554 ! cellular response to stress
+relationship: regulates GO:0033554 ! cellular response to stress
+created_by: dhl
+creation_date: 2009-05-06T05:02:52Z
+
+[Term]
 id: GO:0090257
 name: regulation of muscle system process
 is_a: GO:0044057 ! regulation of system process
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: regulates GO:0003012 ! muscle system process
 relationship: regulates GO:0003012 ! muscle system process
+
+[Term]
+id: GO:0090304
+name: nucleic acid metabolic process
+namespace: biological_process
+def: "Any cellular metabolic process involving nucleic acids." [GOC:dph, GOC:tb]
+is_a: GO:0006139 ! nucleobase-containing compound metabolic process
+is_a: GO:0043170 ! macromolecule metabolic process
+created_by: tb
+creation_date: 2010-04-07T10:18:47Z
+
+[Term]
+id: GO:0090734
+name: site of DNA damage
+namespace: cellular_component
+def: "A region of a chromosome at which DNA damage has occurred. DNA damage signaling and repair proteins accumulate at the lesion to respond to the damage and repair the DNA to form a continuous DNA helix." [GOC:pg]
+xref: Wikipedia:DNA_repair
+is_a: GO:0110165 ! cellular anatomical entity
+relationship: part_of GO:0005694 ! chromosome
+created_by: tb
+creation_date: 2017-02-03T17:24:08Z
 
 [Term]
 id: GO:0097014
@@ -12258,7 +12926,11 @@ creation_date: 2017-02-17T16:02:42Z
 [Term]
 id: GO:0110165
 name: cellular anatomical entity
+namespace: cellular_component
+def: "A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex." [GOC:kmv]
 is_a: GO:0005575 ! cellular_component
+created_by: kmv
+creation_date: 2019-08-12T18:01:37Z
 
 [Term]
 id: GO:0120025
@@ -12318,6 +12990,16 @@ is_a: GO:1901342 ! regulation of vasculature development
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: negatively_regulates GO:0001944 ! vasculature development
 relationship: negatively_regulates GO:0001944 ! vasculature development
+
+[Term]
+id: GO:1901360
+name: organic cyclic compound metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving organic cyclic compound." [GOC:TermGenie]
+synonym: "organic cyclic compound metabolism" EXACT [GOC:TermGenie]
+is_a: GO:0071704 ! organic substance metabolic process
+created_by: bf
+creation_date: 2012-09-14T09:03:51Z
 
 [Term]
 id: GO:1901532
@@ -13033,6 +13715,58 @@ is_a: GO:2000834 ! regulation of androgen secretion
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: positively_regulates GO:0035935 ! androgen secretion
 relationship: positively_regulates GO:0035935 ! androgen secretion
+
+[Term]
+id: GO:2001020
+name: regulation of response to DNA damage stimulus
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of response to DNA damage stimulus." [GOC:obol]
+synonym: "regulation of cellular DNA damage response" EXACT [GOC:obol]
+synonym: "regulation of cellular response to DNA damage stimulus" EXACT [GOC:obol]
+synonym: "regulation of DNA damage response" EXACT [GOC:obol]
+synonym: "regulation of response to genotoxic stress" EXACT [GOC:obol]
+is_a: GO:0080135 ! regulation of cellular response to stress
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0006974 ! cellular response to DNA damage stimulus
+relationship: regulates GO:0006974 ! cellular response to DNA damage stimulus
+created_by: yaf
+creation_date: 2011-08-19T10:20:25Z
+
+[Term]
+id: GO:2001021
+name: negative regulation of response to DNA damage stimulus
+namespace: biological_process
+def: "Any process that stops, prevents or reduces the frequency, rate or extent of response to DNA damage stimulus." [GOC:obol]
+synonym: "negative regulation of cellular DNA damage response" EXACT [GOC:obol]
+synonym: "negative regulation of cellular response to DNA damage stimulus" EXACT [GOC:obol]
+synonym: "negative regulation of DNA damage response" EXACT [GOC:obol]
+synonym: "negative regulation of response to genotoxic stress" EXACT [GOC:obol]
+is_a: GO:0048523 ! negative regulation of cellular process
+is_a: GO:0048585 ! negative regulation of response to stimulus
+is_a: GO:2001020 ! regulation of response to DNA damage stimulus
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0006974 ! cellular response to DNA damage stimulus
+relationship: negatively_regulates GO:0006974 ! cellular response to DNA damage stimulus
+created_by: yaf
+creation_date: 2011-08-19T10:20:29Z
+
+[Term]
+id: GO:2001022
+name: positive regulation of response to DNA damage stimulus
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of response to DNA damage stimulus." [GOC:obol]
+synonym: "positive regulation of cellular DNA damage response" EXACT [GOC:obol]
+synonym: "positive regulation of cellular response to DNA damage stimulus" EXACT [GOC:obol]
+synonym: "positive regulation of DNA damage response" EXACT [GOC:obol]
+synonym: "positive regulation of response to genotoxic stress" EXACT [GOC:obol]
+is_a: GO:0048522 ! positive regulation of cellular process
+is_a: GO:0048584 ! positive regulation of response to stimulus
+is_a: GO:2001020 ! regulation of response to DNA damage stimulus
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0006974 ! cellular response to DNA damage stimulus
+relationship: positively_regulates GO:0006974 ! cellular response to DNA damage stimulus
+created_by: yaf
+creation_date: 2011-08-19T10:20:33Z
 
 [Term]
 id: GO:2001228
@@ -16962,7 +17696,6 @@ name: processual entity
 namespace: uberon
 def: "An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity." [span:ProcessualEntity]
 subset: upper_level
-is_a: BFO:0000003 ! occurrent
 disjoint_from: UBERON:0001062 ! anatomical entity
 
 [Term]
@@ -17621,6 +18354,7 @@ xref: EFO:0001272
 xref: FBdv:00005369
 xref: WBls:0000041
 xref: XtroDO:0000084
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000092 ! post-embryonic stage
 relationship: preceded_by UBERON:0000111 ! organogenesis stage
@@ -17647,6 +18381,7 @@ xref: WBls:0000003
 xref: WBls:0000092
 xref: WBls:0000102
 xref: XAO:1000012
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 disjoint_from: UBERON:0000092 ! post-embryonic stage
 relationship: part_of GO:0009790 ! embryo development
@@ -17662,6 +18397,7 @@ def: "End of the life of an organism." [XAO:0000437]
 synonym: "death" RELATED []
 xref: XAO:0000437
 xref: XtroDO:0000085
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 relationship: ends UBERON:0000104 ! life cycle
 property_value: UBPROP:0000012 "ncit:Death is an outcome" xsd:string {external_ontology="ncit"}
@@ -17796,6 +18532,7 @@ xref: OGES:000024
 xref: WBls:0000022
 xref: WBls:0000093
 xref: WBls:0000103
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of GO:0009791 ! post-embryonic development
 relationship: preceded_by UBERON:0000068 ! embryo stage
@@ -17927,6 +18664,7 @@ xref: PdumDv:0000100
 xref: VHOG:0000745
 xref: XAO:1000001
 xref: ZFS:0000001
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000068 ! embryo stage
 relationship: starts UBERON:0000104 ! life cycle
@@ -17951,6 +18689,7 @@ xref: OGES:000020
 xref: PdumDv:0000200
 xref: XAO:1000004
 xref: ZFS:0000046
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 intersection_of: UBERON:0000105 ! life cycle stage
 intersection_of: simultaneous_with GO:0040016 ! embryonic cleavage
@@ -17978,6 +18717,7 @@ xref: OpenCyc:Mx4rEetFnKP2EdqAAAACs4vPlg
 xref: WBls:0000005
 xref: XAO:1000003
 xref: ZFS:0000045
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 relationship: part_of UBERON:0000068 ! embryo stage
 relationship: preceded_by UBERON:0000107 ! cleavage stage
@@ -18007,6 +18747,7 @@ xref: OGES:000019
 xref: WBls:0000010
 xref: XAO:1000005
 xref: ZFS:0000047
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 relationship: only_in_taxon NCBITaxon:6072 ! Eumetazoa
 relationship: part_of GO:0007369 ! gastrulation
@@ -18024,6 +18765,7 @@ xref: BILS:0000110
 xref: HsapDv:0000012
 xref: MmusDv:0000017
 xref: XAO:1000006
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 relationship: only_in_taxon NCBITaxon:6072 ! Eumetazoa
 relationship: part_of GO:0001841 ! neural tube formation
@@ -18045,6 +18787,7 @@ xref: http://en.wikipedia.org/wiki/Organogenesis
 xref: MmusDv:0000018
 xref: OGES:000005
 xref: OGES:000032
+is_a: BFO:0000003 ! occurrent
 is_a: UBERON:0000105 ! life cycle stage
 relationship: only_in_taxon NCBITaxon:6072 ! Eumetazoa
 relationship: part_of GO:0048513 ! animal organ development
@@ -47605,11 +48348,6 @@ created_by: dos
 creation_date: 2017-09-22T14:14:36Z
 
 [Typedef]
-id: RO:0002081
-name: before or simultaneous with
-is_a: RO:0002222 ! temporally related to
-
-[Typedef]
 id: RO:0002084
 name: during which ends
 comment: Previously had ID  http://purl.obolibrary.org/obo/RO_0002122 in test files in sandpit - but this seems to have been dropped from ro-edit.owl at some point.  No re-use under this ID AFAIK, but leaving note here in case we run in to clashes down the line.  Official ID now chosen from DOS ID range.
@@ -48058,10 +48796,6 @@ is_a: RO:0002500 ! causal agent in process
 id: RO:0002432
 name: is active in
 def: "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure." [GOC:cjm, GOC:dos]
-synonym: "enables activity in" EXACT []
-property_value: example_of_usage "A protein that enables activity in a cytosol." xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000118 "executes activity in" xsd:string
 holds_over_chain: RO:0002327 occurs_in {http://purl.obolibrary.org/obo/RO_0002581="true"}
 is_a: functionally_related_to ! functionally related to
 is_a: overlaps ! overlaps
@@ -48148,8 +48882,6 @@ property_value: IAO:0000232 "This property or its subproperties is not to be use
 id: RO:0002479
 name: has part that occurs in
 def: "p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c." []
-subset: ro-eco
-property_value: IAO:0000117 "Chris Mungall" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000004 ! independent continuant
 holds_over_chain: has_part occurs_in {http://purl.obolibrary.org/obo/RO_0002581="true"}
@@ -48164,7 +48896,6 @@ is_a: RO:0002564 ! molecular interaction relation helper property
 id: RO:0002487
 name: relation between physical entity and a process or stage
 domain: BFO:0000004 ! independent continuant
-range: BFO:0000003 ! occurrent
 
 [Typedef]
 id: RO:0002490
@@ -48523,7 +49254,6 @@ namespace: uberon
 def: "x anteriorly_connected_to y iff the anterior part of x is connected to y. i.e. x connected_to y and x posterior_to y." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
 is_a: connected_to ! connected to
 is_a: posterior_to ! posterior to
-is_a: transitively_anteriorly_connected_to ! transitively anteriorly connected to
 
 [Typedef]
 id: attaches_to
@@ -48690,7 +49420,6 @@ def: "Binary relationship: x connected_to y if and only if there exists some z s
 comment: Connection does not imply overlaps.
 xref: RO:0002170
 property_value: seeAlso SIO:000652
-is_a: transitively_connected_to ! transitively_connected to
 
 [Typedef]
 id: connects
@@ -48918,24 +49647,11 @@ is_a: develops_from ! develops from
 inverse_of: RO:0002210 ! directly develops into
 
 [Typedef]
-id: distal_to
-name: distal to
-name: distal_to
-namespace: uberon
-def: "x distal to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal)." [BSPO:cjm]
-def: "x distal_to y iff x is further along the proximo-distal axis than y, towards the appendage tip. A proximo-distal axis extends from tip of an appendage (distal) to where it joins the body (proximal)." [http://orcid.org/0000-0002-6601-2165]
-xref: BSPO:0000097
-is_transitive: true
-inverse_of: proximal_to ! proximal_to
-
-[Typedef]
 id: distally_connected_to
 name: distally connected to
 namespace: uberon
 def: "x distally_connected_to y iff the distal part of x is connected to y. i.e. x connected_to y and x proximal_to y." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
 is_a: connected_to ! connected to
-is_a: proximal_to ! proximal_to
-is_a: transitively_distally_connected_to ! transitively distally connected to
 inverse_of: proximally_connected_to ! proximally connected to
 
 [Typedef]
@@ -48992,7 +49708,6 @@ def: "x ends with y if and only if x has part y and the time point at which x en
 xref: RO:0002230
 is_transitive: true
 is_a: has_part ! has_part
-is_a: RO:0002222 ! temporally related to
 
 [Typedef]
 id: example_of_usage
@@ -49407,7 +50122,6 @@ name: in taxon
 namespace: uberon
 def: "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed." []
 xref: RO:0002162
-range: CARO:0001010
 holds_over_chain: attaches_to in_taxon
 holds_over_chain: capable_of in_taxon
 holds_over_chain: connected_to in_taxon
@@ -49426,16 +50140,6 @@ holds_over_chain: part_of in_taxon
 holds_over_chain: produced_by in_taxon
 holds_over_chain: produces in_taxon
 holds_over_chain: supplies in_taxon
-
-[Typedef]
-id: indirectly_supplies
-name: indirectly_supplies
-namespace: uberon
-def: "a indirectly_supplies s iff a has a branch and the branch supplies or indirectly supplies s" []
-property_value: editor_note "add to RO" xsd:string
-holds_over_chain: has_branching_part indirectly_supplies
-holds_over_chain: has_branching_part supplies
-is_transitive: true
 
 [Typedef]
 id: input_of
@@ -49770,23 +50474,11 @@ name: protects
 namespace: uberon
 
 [Typedef]
-id: proximal_to
-name: proximal to
-name: proximal_to
-namespace: uberon
-def: "x proximal to y iff x is closer to the point of attachment with the body than y." [BSPO:cjm]
-def: "x proximal_to y iff x is closer to the point of attachment with the body than y." [http://orcid.org/0000-0002-6601-2165]
-xref: BSPO:0000100
-is_transitive: true
-
-[Typedef]
 id: proximally_connected_to
 name: proximally connected to
 namespace: uberon
 def: "x proximally_connected_to y iff the proximal part of x is connected to y. i.e. x connected_to y and x distal_to y." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
 is_a: connected_to ! connected to
-is_a: distal_to ! distal_to
-is_a: transitively_proximally_connected_to ! transitively proximally connected to
 
 [Typedef]
 id: proximalmost_part_of
@@ -49861,7 +50553,6 @@ synonym: "is_equal_to" EXACT []
 xref: RO:0002082
 is_transitive: true
 is_a: ends ! ends
-is_a: RO:0002081 ! before or simultaneous with
 is_a: starts ! starts
 
 [Typedef]
@@ -49889,7 +50580,6 @@ def: "inverse of starts with" []
 def: "Relation between occurrents, shares a start boundary with." [Allen:starts, https://orcid.org/0000-0002-6601-2165]
 xref: RO:0002223
 is_a: part_of ! part_of
-is_a: RO:0002222 ! temporally related to
 inverse_of: starts_with ! starts with
 
 [Typedef]
@@ -49900,7 +50590,6 @@ def: "x starts with y if and only if x has part y and the time point at which x 
 xref: RO:0002224
 is_transitive: true
 is_a: has_part ! has_part
-is_a: RO:0002222 ! temporally related to
 
 [Typedef]
 id: subdivision_of
@@ -49970,33 +50659,6 @@ xref: RO:0002494
 property_value: seeAlso SIO:000657
 is_transitive: true
 is_a: develops_from ! develops from
-
-[Typedef]
-id: transitively_anteriorly_connected_to
-name: transitively anteriorly connected to
-namespace: uberon
-def: "." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
-is_transitive: true
-
-[Typedef]
-id: transitively_connected_to
-name: transitively_connected to
-namespace: uberon
-is_transitive: true
-
-[Typedef]
-id: transitively_distally_connected_to
-name: transitively distally connected to
-namespace: uberon
-def: "." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
-is_transitive: true
-
-[Typedef]
-id: transitively_proximally_connected_to
-name: transitively proximally connected to
-namespace: uberon
-def: "." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
-is_transitive: true
 
 [Typedef]
 id: tributary_of
