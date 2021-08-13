@@ -247,7 +247,7 @@ imports/go_top_import.owl: imports/go_import.owl
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i mirror/go.owl --branch-from-term "obo:GO_0006281"  --force true --method MIREOT   \
 	merge -i $< \
 	query --update ../sparql/inject-subset-declaration.ru \
-	annotate --ontology-iri $(ONTBASE)/$< $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl imports/go_import.owl; fi
+	annotate --ontology-iri $(ONTBASE)/$< $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl imports/go_import.owl && cp imports/go_import.owl imports/go_top_import.owl; fi
 
 imports/uo_import.owl: mirror/uo.owl imports/uo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uo_terms_combined.txt --force true --method BOT --individuals exclude \
@@ -281,7 +281,7 @@ components/%: .FORCE
 #
 
 IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
+MIR=false # Global parameter to bypass mirror generation
 
 
 ## ONTOLOGY: ro

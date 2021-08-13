@@ -24,8 +24,8 @@ ERROR	duplicate_definition	is_specified_input_of	textual definition	A relation b
 ERROR	duplicate_definition	muscle of iris	textual definition	.
 ERROR	duplicate_definition	early pharyngeal endoderm	textual definition	.
 ERROR	duplicate_definition	layer of sclera	textual definition	.
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	f25994d2-e616-41bc-9a83-f13e8bf281fegenid6084
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	f25994d2-e616-41bc-9a83-f13e8bf281fegenid6088
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	59404aae-f811-4f17-99c1-93652f99db2dgenid6084
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	59404aae-f811-4f17-99c1-93652f99db2dgenid6088
 ERROR	misused_obsolete_label	obsolete cell part	rdfs:label	obsolete cell part
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	role	rdfs:label	role
@@ -91,10 +91,10 @@ ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of
 ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
 ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure
-ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
-ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y
-ERROR	multiple_definitions	immediately deep to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
-ERROR	multiple_definitions	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y
+ERROR	multiple_definitions	immediately_deep_to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
+ERROR	multiple_definitions	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
@@ -207,10 +207,10 @@ ERROR	multiple_labels	in distal side of	rdfs:label	in distal side of
 ERROR	multiple_labels	in distal side of	rdfs:label	in_distal_side_of
 ERROR	multiple_labels	in lateral side of	rdfs:label	in lateral side of
 ERROR	multiple_labels	in lateral side of	rdfs:label	in_lateral_side_of
-ERROR	multiple_labels	proximalmost_part_of	rdfs:label	proximalmost part of
-ERROR	multiple_labels	proximalmost_part_of	rdfs:label	proximalmost_part_of
-ERROR	multiple_labels	immediately deep to	rdfs:label	immediately deep to
-ERROR	multiple_labels	immediately deep to	rdfs:label	immediately_deep_to
+ERROR	multiple_labels	proximalmost part of	rdfs:label	proximalmost part of
+ERROR	multiple_labels	proximalmost part of	rdfs:label	proximalmost_part_of
+ERROR	multiple_labels	immediately_deep_to	rdfs:label	immediately deep to
+ERROR	multiple_labels	immediately_deep_to	rdfs:label	immediately_deep_to
 ERROR	multiple_labels	immediately superficial to	rdfs:label	immediately superficial to
 ERROR	multiple_labels	immediately superficial to	rdfs:label	immediately_superficial_to
 ERROR	multiple_labels	cell	rdfs:label	cell
@@ -277,8 +277,8 @@ ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately preceded by
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately_preceded_by
 ERROR	multiple_labels	overlaps	rdfs:label	overlaps
 ERROR	multiple_labels	overlaps	rdfs:label	overlaps@en
-ERROR	multiple_labels	continuous_with	rdfs:label	continuous with@en
-ERROR	multiple_labels	continuous_with	rdfs:label	continuous_with
+ERROR	multiple_labels	continuous with	rdfs:label	continuous with@en
+ERROR	multiple_labels	continuous with	rdfs:label	continuous_with
 ERROR	multiple_labels	only in taxon	rdfs:label	only in taxon
 ERROR	multiple_labels	only in taxon	rdfs:label	only_in_taxon
 ERROR	multiple_labels	connected to	rdfs:label	connected to
@@ -379,9 +379,9 @@ ERROR	multiple_labels	produced_by	rdfs:label	produced by@en
 ERROR	multiple_labels	produced_by	rdfs:label	produced_by
 ERROR	multiple_labels	surface of bone	rdfs:label	surface of bone
 ERROR	multiple_labels	surface of bone	rdfs:label	surface of bone@en
-ERROR	multiple_labels	Creator	rdfs:label	Creator
-ERROR	multiple_labels	Creator	rdfs:label	Creator@en-us
-ERROR	multiple_labels	Creator	rdfs:label	creator
+ERROR	multiple_labels	creator	rdfs:label	Creator
+ERROR	multiple_labels	creator	rdfs:label	Creator@en-us
+ERROR	multiple_labels	creator	rdfs:label	creator
 ERROR	multiple_labels	Date	rdfs:label	Date
 ERROR	multiple_labels	Date	rdfs:label	Date@en-us
 ERROR	multiple_labels	Description	rdfs:label	Description
@@ -1935,7 +1935,7 @@ WARN	missing_definition	channels_from	textual definition
 WARN	missing_definition	channels_into	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	Creator	textual definition	
+WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	title	textual definition	
@@ -2065,7 +2065,7 @@ INFO	lowercase_definition	ventral_to	textual definition	x ventral to y iff x is 
 INFO	lowercase_definition	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	in_proximal_side_of	textual definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
 INFO	lowercase_definition	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
-INFO	lowercase_definition	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+INFO	lowercase_definition	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 INFO	lowercase_definition	immediately superficial to	textual definition	x immediately superficial to y iff x superficial to y and x is contiguous with y.
 INFO	lowercase_definition	partially_surrounded_by	textual definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
 INFO	lowercase_definition	is quality measurement of	textual definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en
