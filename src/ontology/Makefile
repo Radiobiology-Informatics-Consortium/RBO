@@ -80,8 +80,8 @@ IMPORTS =  ro bfo pato chmo envo obi uo chebi doid uberon cob go
 
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
-IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
-IMPORT_FILES = $(IMPORT_OWL_FILES)
+IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl) 
+IMPORT_FILES = $(IMPORT_OWL_FILES) imports/go_top_import.owl
 
 
 all_imports: $(IMPORT_FILES) imports/go_top_import.owl
@@ -243,7 +243,7 @@ imports/cob_import.owl: mirror/cob.owl imports/cob_terms_combined.txt
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 	
-imports/go_top_import.owl: imports/go_import.owl imports/go_top_terms.txt
+imports/go_top_import.owl: imports/go_import.owl
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i mirror/go.owl --branch-from-term "obo:GO_0006281"  --force true --method MIREOT   \
 	merge -i $< \
 	query --update ../sparql/inject-subset-declaration.ru \
@@ -281,7 +281,7 @@ components/%: .FORCE
 #
 
 IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
+MIR=false # Global parameter to bypass mirror generation
 
 
 ## ONTOLOGY: ro

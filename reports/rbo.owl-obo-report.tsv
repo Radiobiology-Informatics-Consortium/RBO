@@ -24,8 +24,8 @@ ERROR	duplicate_definition	is_specified_input_of	textual definition	A relation b
 ERROR	duplicate_definition	muscle of iris	textual definition	.
 ERROR	duplicate_definition	early pharyngeal endoderm	textual definition	.
 ERROR	duplicate_definition	layer of sclera	textual definition	.
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	59c28a0d-0ff7-4dd5-afd7-8ed17bf2cbc8genid6009
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	59c28a0d-0ff7-4dd5-afd7-8ed17bf2cbc8genid6013
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	f25994d2-e616-41bc-9a83-f13e8bf281fegenid6084
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	f25994d2-e616-41bc-9a83-f13e8bf281fegenid6088
 ERROR	misused_obsolete_label	obsolete cell part	rdfs:label	obsolete cell part
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	role	rdfs:label	role
@@ -91,8 +91,8 @@ ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of
 ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
 ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure
-ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
-ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y
 ERROR	multiple_definitions	immediately deep to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
 ERROR	multiple_definitions	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
@@ -207,8 +207,8 @@ ERROR	multiple_labels	in distal side of	rdfs:label	in distal side of
 ERROR	multiple_labels	in distal side of	rdfs:label	in_distal_side_of
 ERROR	multiple_labels	in lateral side of	rdfs:label	in lateral side of
 ERROR	multiple_labels	in lateral side of	rdfs:label	in_lateral_side_of
-ERROR	multiple_labels	proximalmost part of	rdfs:label	proximalmost part of
-ERROR	multiple_labels	proximalmost part of	rdfs:label	proximalmost_part_of
+ERROR	multiple_labels	proximalmost_part_of	rdfs:label	proximalmost part of
+ERROR	multiple_labels	proximalmost_part_of	rdfs:label	proximalmost_part_of
 ERROR	multiple_labels	immediately deep to	rdfs:label	immediately deep to
 ERROR	multiple_labels	immediately deep to	rdfs:label	immediately_deep_to
 ERROR	multiple_labels	immediately superficial to	rdfs:label	immediately superficial to
@@ -277,8 +277,8 @@ ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately preceded by
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately_preceded_by
 ERROR	multiple_labels	overlaps	rdfs:label	overlaps
 ERROR	multiple_labels	overlaps	rdfs:label	overlaps@en
-ERROR	multiple_labels	continuous with	rdfs:label	continuous with@en
-ERROR	multiple_labels	continuous with	rdfs:label	continuous_with
+ERROR	multiple_labels	continuous_with	rdfs:label	continuous with@en
+ERROR	multiple_labels	continuous_with	rdfs:label	continuous_with
 ERROR	multiple_labels	only in taxon	rdfs:label	only in taxon
 ERROR	multiple_labels	only in taxon	rdfs:label	only_in_taxon
 ERROR	multiple_labels	connected to	rdfs:label	connected to
@@ -340,8 +340,8 @@ ERROR	multiple_labels	developmentally_induced_by	rdfs:label	developmentally indu
 ERROR	multiple_labels	developmentally_induced_by	rdfs:label	developmentally_induced_by
 ERROR	multiple_labels	developmentally preceded by	rdfs:label	developmentally preceded by
 ERROR	multiple_labels	developmentally preceded by	rdfs:label	developmentally preceded by@en
-ERROR	multiple_labels	developmentally_replaces	rdfs:label	developmentally replaces@en
-ERROR	multiple_labels	developmentally_replaces	rdfs:label	developmentally_replaces
+ERROR	multiple_labels	developmentally replaces	rdfs:label	developmentally replaces@en
+ERROR	multiple_labels	developmentally replaces	rdfs:label	developmentally_replaces
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat@en
 ERROR	multiple_labels	inheres in part of	rdfs:label	characteristic of part of@en
@@ -492,20 +492,20 @@ WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
 WARN	duplicate_label_synonym	part_of	alternative term	part_of
 WARN	duplicate_label_synonym	has_part	alternative term	has_part
-WARN	duplicate_label_synonym	mesenchymal stem cell	oboInOwl:hasRelatedSynonym	mesenchymal stem cell
+WARN	duplicate_label_synonym	mesenchymal stem cell	has_related_synonym	mesenchymal stem cell
 WARN	duplicate_label_synonym	myocyte of sinoatrial node	has_exact_synonym	myocyte of sinoatrial node
 WARN	duplicate_label_synonym	lymphoid leukemia	has_exact_synonym	lymphoid leukemia
 WARN	duplicate_label_synonym	ocean	has_exact_synonym	ocean
 WARN	duplicate_label_synonym	sea	has_exact_synonym	sea
-WARN	duplicate_label_synonym	depression	oboInOwl:hasRelatedSynonym	depression
-WARN	duplicate_label_synonym	lung bud	oboInOwl:hasRelatedSynonym	lung bud
+WARN	duplicate_label_synonym	depression	has_related_synonym	depression
+WARN	duplicate_label_synonym	lung bud	has_related_synonym	lung bud
 WARN	duplicate_label_synonym	organism substance	has_exact_synonym	organism substance
 WARN	duplicate_label_synonym	simple columnar epithelium	has_exact_synonym	simple columnar epithelium
 WARN	duplicate_label_synonym	endocrine system	has_exact_synonym	endocrine system
 WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
 WARN	duplicate_label_synonym	musculature	has_exact_synonym	musculature
 WARN	duplicate_label_synonym	uvea	has_exact_synonym	uvea
-WARN	duplicate_label_synonym	optic choroid	oboInOwl:hasRelatedSynonym	optic choroid
+WARN	duplicate_label_synonym	optic choroid	has_related_synonym	optic choroid
 WARN	duplicate_label_synonym	rhombomere	has_exact_synonym	rhombomere
 WARN	duplicate_label_synonym	submucosa of esophagus	has_exact_synonym	submucosa of esophagus
 WARN	duplicate_label_synonym	gray matter	has_exact_synonym	gray matter
@@ -515,11 +515,11 @@ WARN	duplicate_label_synonym	appendicular skeleton	has_exact_synonym	appendicula
 WARN	duplicate_label_synonym	artery smooth muscle tissue	has_exact_synonym	artery smooth muscle tissue
 WARN	duplicate_label_synonym	gray matter of spinal cord	has_exact_synonym	gray matter of spinal cord
 WARN	duplicate_label_synonym	sinoatrial node	has_exact_synonym	sinoatrial node
-WARN	duplicate_label_synonym	cranial muscle	oboInOwl:hasRelatedSynonym	cranial muscle
+WARN	duplicate_label_synonym	cranial muscle	has_related_synonym	cranial muscle
 WARN	duplicate_label_synonym	cartilage tissue	has_exact_synonym	cartilage tissue
 WARN	duplicate_label_synonym	esophagus mucosa	has_exact_synonym	esophagus mucosa
 WARN	duplicate_label_synonym	iris epithelium	has_exact_synonym	iris epithelium
-WARN	duplicate_label_synonym	periderm	oboInOwl:hasRelatedSynonym	periderm
+WARN	duplicate_label_synonym	periderm	has_related_synonym	periderm
 WARN	duplicate_label_synonym	skeletal muscle tissue of eye	has_exact_synonym	skeletal muscle tissue of eye
 WARN	duplicate_label_synonym	cardiac muscle tissue of interventricular septum	has_exact_synonym	cardiac muscle tissue of interventricular septum
 WARN	duplicate_label_synonym	skeletal muscle tissue of pharynx	has_exact_synonym	skeletal muscle tissue of pharynx
@@ -535,7 +535,7 @@ WARN	duplicate_label_synonym	cardiac vein	has_exact_synonym	cardiac vein
 WARN	duplicate_label_synonym	external genitalia	has_exact_synonym	external genitalia
 WARN	duplicate_label_synonym	paired limb/fin bud	has_exact_synonym	paired limb/fin bud
 WARN	duplicate_label_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
-WARN	duplicate_label_synonym	pharyngeal arch artery	oboInOwl:hasRelatedSynonym	pharyngeal arch artery
+WARN	duplicate_label_synonym	pharyngeal arch artery	has_related_synonym	pharyngeal arch artery
 WARN	duplicate_label_synonym	anterior limiting lamina of cornea	has_exact_synonym	anterior limiting lamina of cornea
 WARN	duplicate_label_synonym	pelvic appendage	has_exact_synonym	pelvic appendage
 WARN	duplicate_label_synonym	neuromere	has_exact_synonym	neuromere
@@ -546,7 +546,7 @@ WARN	duplicate_label_synonym	lumen of digestive tract	has_exact_synonym	lumen of
 WARN	duplicate_label_synonym	ovary stroma	has_exact_synonym	ovary stroma
 WARN	duplicate_label_synonym	anatomical junction	has_exact_synonym	anatomical junction
 WARN	duplicate_label_synonym	pelvic girdle skeleton	has_exact_synonym	pelvic girdle skeleton
-WARN	duplicate_label_synonym	perichordal bone	oboInOwl:hasRelatedSynonym	perichordal bone
+WARN	duplicate_label_synonym	perichordal bone	has_related_synonym	perichordal bone
 WARN	duplicate_label_synonym	ciliary processes	has_exact_synonym	ciliary processes
 WARN	duplicate_label_synonym	facial skeleton	has_exact_synonym	facial skeleton
 WARN	duplicate_label_synonym	hematopoietic tissue	has_exact_synonym	hematopoietic tissue
@@ -1940,9 +1940,14 @@ WARN	missing_definition	Date	textual definition
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	title	textual definition	
 WARN	missing_definition	license	textual definition	
+WARN	missing_definition	has_alternative_id	textual definition	
 WARN	missing_definition	has_broad_synonym	textual definition	
 WARN	missing_definition	database_cross_reference	textual definition	
 WARN	missing_definition	has_exact_synonym	textual definition	
+WARN	missing_definition	has_narrow_synonym	textual definition	
+WARN	missing_definition	has_obo_namespace	textual definition	
+WARN	missing_definition	has_related_synonym	textual definition	
+WARN	missing_definition	in_subset	textual definition	
 WARN	duplicate_scoped_synonym	Euteleostomi	alternative term	bony vertebrates
 WARN	duplicate_scoped_synonym	Euteleostomi	has_exact_synonym	bony vertebrates
 WARN	duplicate_scoped_synonym	Bacteria	alternative term	eubacteria
@@ -1951,25 +1956,25 @@ WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eucaryotes
 WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eukaryotes
 WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eucaryotes
 WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eukaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	oboInOwl:hasRelatedSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	eukaryotes
 WARN	duplicate_scoped_synonym	Tetrapoda	alternative term	tetrapods
 WARN	duplicate_scoped_synonym	Tetrapoda	has_exact_synonym	tetrapods
 WARN	duplicate_scoped_synonym	Amniota	alternative term	amniotes
 WARN	duplicate_scoped_synonym	Amniota	has_exact_synonym	amniotes
 WARN	duplicate_scoped_synonym	Viridiplantae	has_exact_synonym	green plants
-WARN	duplicate_scoped_synonym	Viridiplantae	oboInOwl:hasRelatedSynonym	green plants
+WARN	duplicate_scoped_synonym	Viridiplantae	has_related_synonym	green plants
 WARN	duplicate_scoped_synonym	Mammalia	alternative term	mammals
 WARN	duplicate_scoped_synonym	Mammalia	has_exact_synonym	mammals
-WARN	duplicate_scoped_synonym	Mammalia	oboInOwl:hasRelatedSynonym	mammals
+WARN	duplicate_scoped_synonym	Mammalia	has_related_synonym	mammals
 WARN	duplicate_scoped_synonym	Chordata	has_exact_synonym	chordates
-WARN	duplicate_scoped_synonym	Chordata	oboInOwl:hasRelatedSynonym	chordates
+WARN	duplicate_scoped_synonym	Chordata	has_related_synonym	chordates
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	Vertebrata
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	vertebrates
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	Vertebrata
 WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	oboInOwl:hasRelatedSynonym	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_related_synonym	vertebrates
 WARN	duplicate_scoped_synonym	Eutheria	has_exact_synonym	placentals
-WARN	duplicate_scoped_synonym	Eutheria	oboInOwl:hasRelatedSynonym	placentals
+WARN	duplicate_scoped_synonym	Eutheria	has_related_synonym	placentals
 WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
 WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	man
 WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	human
@@ -1987,51 +1992,51 @@ WARN	duplicate_scoped_synonym	relative biological effectiveness	has_exact_synony
 WARN	duplicate_scoped_synonym	immediately preceded by	alternative term	starts_at_end_of
 WARN	duplicate_scoped_synonym	immediately preceded by	has_exact_synonym	starts_at_end_of
 WARN	duplicate_scoped_synonym	zygote stage	has_exact_synonym	fertilized egg stage
-WARN	duplicate_scoped_synonym	zygote stage	oboInOwl:hasRelatedSynonym	fertilized egg stage
+WARN	duplicate_scoped_synonym	zygote stage	has_related_synonym	fertilized egg stage
 WARN	duplicate_scoped_synonym	respiratory tube	has_exact_synonym	segment of tracheobronchial tree
-WARN	duplicate_scoped_synonym	respiratory tube	oboInOwl:hasNarrowSynonym	segment of tracheobronchial tree
+WARN	duplicate_scoped_synonym	respiratory tube	has_narrow_synonym	segment of tracheobronchial tree
 WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
-WARN	duplicate_scoped_synonym	respiratory system	oboInOwl:hasRelatedSynonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	respiratory system	has_related_synonym	apparatus respiratorius
 WARN	duplicate_scoped_synonym	sensory system	has_exact_synonym	organa sensuum
-WARN	duplicate_scoped_synonym	sensory system	oboInOwl:hasRelatedSynonym	organa sensuum
+WARN	duplicate_scoped_synonym	sensory system	has_related_synonym	organa sensuum
 WARN	duplicate_scoped_synonym	descending aorta	has_exact_synonym	pars descendens aortae
-WARN	duplicate_scoped_synonym	descending aorta	oboInOwl:hasRelatedSynonym	pars descendens aortae
+WARN	duplicate_scoped_synonym	descending aorta	has_related_synonym	pars descendens aortae
 WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	abdominal part of aorta
 WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	pars abdominalis aortae
-WARN	duplicate_scoped_synonym	abdominal aorta	oboInOwl:hasRelatedSynonym	abdominal part of aorta
-WARN	duplicate_scoped_synonym	abdominal aorta	oboInOwl:hasRelatedSynonym	pars abdominalis aortae
+WARN	duplicate_scoped_synonym	abdominal aorta	has_related_synonym	abdominal part of aorta
+WARN	duplicate_scoped_synonym	abdominal aorta	has_related_synonym	pars abdominalis aortae
 WARN	duplicate_scoped_synonym	optic choroid	has_exact_synonym	choroidea
-WARN	duplicate_scoped_synonym	optic choroid	oboInOwl:hasRelatedSynonym	choroidea
+WARN	duplicate_scoped_synonym	optic choroid	has_related_synonym	choroidea
 WARN	duplicate_scoped_synonym	sinoatrial node	has_exact_synonym	nodus sinuatrialis
-WARN	duplicate_scoped_synonym	sinoatrial node	oboInOwl:hasRelatedSynonym	nodus sinuatrialis
+WARN	duplicate_scoped_synonym	sinoatrial node	has_related_synonym	nodus sinuatrialis
 WARN	duplicate_scoped_synonym	atrioventricular node	has_exact_synonym	nodus atrioventricularis
-WARN	duplicate_scoped_synonym	atrioventricular node	oboInOwl:hasRelatedSynonym	nodus atrioventricularis
+WARN	duplicate_scoped_synonym	atrioventricular node	has_related_synonym	nodus atrioventricularis
 WARN	duplicate_scoped_synonym	endocrine gland	has_exact_synonym	ductless gland
-WARN	duplicate_scoped_synonym	endocrine gland	oboInOwl:hasRelatedSynonym	ductless gland
+WARN	duplicate_scoped_synonym	endocrine gland	has_related_synonym	ductless gland
 WARN	duplicate_scoped_synonym	esophagus mucosa	has_exact_synonym	tunica mucosa oesophagi
-WARN	duplicate_scoped_synonym	esophagus mucosa	oboInOwl:hasRelatedSynonym	tunica mucosa oesophagi
+WARN	duplicate_scoped_synonym	esophagus mucosa	has_related_synonym	tunica mucosa oesophagi
 WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_exact_synonym	hindlimb ectoderm
-WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	oboInOwl:hasNarrowSynonym	hindlimb ectoderm
+WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_narrow_synonym	hindlimb ectoderm
 WARN	duplicate_scoped_synonym	abdominal wall	has_exact_synonym	paries abdominalis
-WARN	duplicate_scoped_synonym	abdominal wall	oboInOwl:hasRelatedSynonym	paries abdominalis
+WARN	duplicate_scoped_synonym	abdominal wall	has_related_synonym	paries abdominalis
 WARN	duplicate_scoped_synonym	mouth mucosa	has_exact_synonym	tunica mucosa oris
-WARN	duplicate_scoped_synonym	mouth mucosa	oboInOwl:hasRelatedSynonym	tunica mucosa oris
+WARN	duplicate_scoped_synonym	mouth mucosa	has_related_synonym	tunica mucosa oris
 WARN	duplicate_scoped_synonym	cardiac vein	has_exact_synonym	coronary vein
-WARN	duplicate_scoped_synonym	cardiac vein	oboInOwl:hasRelatedSynonym	coronary vein
+WARN	duplicate_scoped_synonym	cardiac vein	has_related_synonym	coronary vein
 WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	branchial aortic arches
 WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	oboInOwl:hasRelatedSynonym	branchial aortic arches
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	oboInOwl:hasRelatedSynonym	pharyngeal arch artery
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_related_synonym	branchial aortic arches
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_related_synonym	pharyngeal arch artery
 WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_exact_synonym	muscular interventricular septum
-WARN	duplicate_scoped_synonym	interventricular septum muscular part	oboInOwl:hasRelatedSynonym	muscular interventricular septum
+WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_related_synonym	muscular interventricular septum
 WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_exact_synonym	pulmonary conus
-WARN	duplicate_scoped_synonym	outflow part of right ventricle	oboInOwl:hasRelatedSynonym	pulmonary conus
+WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_related_synonym	pulmonary conus
 WARN	duplicate_scoped_synonym	corneo-scleral junction	has_exact_synonym	limbus corneae
-WARN	duplicate_scoped_synonym	corneo-scleral junction	oboInOwl:hasRelatedSynonym	limbus corneae
+WARN	duplicate_scoped_synonym	corneo-scleral junction	has_related_synonym	limbus corneae
 WARN	duplicate_scoped_synonym	craniocervical region musculature	has_exact_synonym	head or neck muscle
-WARN	duplicate_scoped_synonym	craniocervical region musculature	oboInOwl:hasRelatedSynonym	head or neck muscle
+WARN	duplicate_scoped_synonym	craniocervical region musculature	has_related_synonym	head or neck muscle
 WARN	duplicate_scoped_synonym	ciliary processes	has_exact_synonym	processus ciliares
-WARN	duplicate_scoped_synonym	ciliary processes	oboInOwl:hasRelatedSynonym	processus ciliares
+WARN	duplicate_scoped_synonym	ciliary processes	has_related_synonym	processus ciliares
 INFO	lowercase_definition	independent continuant	textual definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
 INFO	lowercase_definition	process	textual definition	<p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en>
 INFO	lowercase_definition	disposition	IAO:0000600	<b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en>
@@ -2139,7 +2144,7 @@ INFO	lowercase_definition	developmentally_induced_by	textual definition	<t1 deve
 INFO	lowercase_definition	developmentally_induced_by	textual definition	<t1 induced_by t2 if there is a process of developmental induction (GO:0031128) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor anatomical structure type T to T', where T' develops_from T>
 INFO	lowercase_definition	acts upstream of	textual definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
 INFO	lowercase_definition	acts upstream of or within	textual definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
-INFO	lowercase_definition	developmentally_replaces	textual definition	x developmentally replaces y if and only if there is some developmental process that causes x to move or to cease to exist, and for the site that was occupied by x to become occupied by y, where y either comes into existence in this site or moves to this site from somewhere else
+INFO	lowercase_definition	developmentally replaces	textual definition	x developmentally replaces y if and only if there is some developmental process that causes x to move or to cease to exist, and for the site that was occupied by x to become occupied by y, where y either comes into existence in this site or moves to this site from somewhere else
 INFO	lowercase_definition	results in developmental progression of	textual definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
 INFO	lowercase_definition	has habitat	textual definition	<x 'has habitat' y if and only if: x is an organism, y is a habitat, and y can sustain and allow the growth of a population of xs.>
 INFO	lowercase_definition	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.

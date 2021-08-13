@@ -10699,16 +10699,16 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">square centimeter</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000082">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">square millimeter</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;An area unit which is equal to one millionth of a square meter or 10^[-6] m^[2].&quot; [NIST:NIST]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">square millimeter</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">square millimetre</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mm^[2]</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000083">
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg/m^[3]</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A mass unit density which is equal to mass of an object in kilograms divided by the volume in cubic meters.&quot; [UOC:GVG]</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram per cubic meter</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram per cubic metre</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram per cubic meter</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000084">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram per cubic centimeter</rdfs:label>
@@ -10724,8 +10724,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000086">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;An area density unit which is equal to the mass of an object in kilograms divided by the surface area in meters squared.&quot; [NIST:NIST]</rdfs:comment>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram per square metre</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body Mass Index (BMI)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram per square metre</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram per square meter</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg/m^[2]</oboInOwl:hasExactSynonym>
     </rdf:Description>
@@ -10789,8 +10789,8 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml.&quot; [NIST:NIST]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000098">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milliliter</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.&quot; [NIST:NIST]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milliliter</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ml</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">millilitre</oboInOwl:hasExactSynonym>
     </rdf:Description>
@@ -11024,8 +11024,8 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000164">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass volume percentage</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight-volume percentage</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(w/v)</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000165">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume percentage</rdfs:label>
@@ -11040,15 +11040,15 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000168">
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ppth</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parts per thousand</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10^[-3]</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parts per thousand</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1000 regardless of the units of measure as long as they are the same.&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000169">
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10^[-6]</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A dimensionless concentration notation which denotes the amount of a given substance in a total amount of 1,000,000 regardless of the units of measure used as long as they are the same or 1 part in 10^[6].&quot; [UOC:GVG]</rdfs:comment>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ppm</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parts per million</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ppm</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000170">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parts per billion</rdfs:label>
@@ -11070,8 +11070,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000173">
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram per millilitre</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter.&quot; [UOC:GVG]</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram per milliliter</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter.&quot; [UOC:GVG]</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g/ml</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000174">
@@ -11115,8 +11115,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000184">
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg/m</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;An area density unit which is equal to the mass of an object in kilograms divided by one meter.&quot; [NIST:NIST]</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram per metre</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;An area density unit which is equal to the mass of an object in kilograms divided by one meter.&quot; [NIST:NIST]</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogram per meter</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000185">
@@ -11168,8 +11168,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000201">
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cells per ml</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A unit of cell concentration which is equal to one cell in a volume of 1 milliliter.&quot; [Bioedonline:Bioedonline]</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cells per millilitre</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A unit of cell concentration which is equal to one cell in a volume of 1 milliliter.&quot; [Bioedonline:Bioedonline]</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cells per milliliter</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000203">
@@ -11340,8 +11340,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000244">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A count unit which contains one nucleotide.&quot; [UO:GVG]</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base pair</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bp</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base pair</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basepair</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000245">
@@ -11430,8 +11430,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000266">
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron volt</oboInOwl:hasExactSynonym>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A non-SI unit of energy (eV) defined as the energy acquired by a single unbound electron when it passes through an electrostatic potential difference of one volt. An electronvolt is equal to 1.602 176 53(14) x 10^-19 J.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eV</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A non-SI unit of energy (eV) defined as the energy acquired by a single unbound electron when it passes through an electrostatic potential difference of one volt. An electronvolt is equal to 1.602 176 53(14) x 10^-19 J.&quot; [Wikipedia:Wikipedia]</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electronvolt</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000268">
@@ -11447,8 +11447,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000271">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microliters per minute</rdfs:label>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uL/min</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microlitres per minute</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uL/min</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute.&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000272">
@@ -11470,8 +11470,8 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microgram per millilitre</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000275">
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanogram per millilitre</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ng/ml</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanogram per millilitre</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanogram per milliliter</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A mass unit density which is equal to mass of an object in nanograms divided by the volume in milliliters.&quot; [UOC:GVG]</rdfs:comment>
     </rdf:Description>
@@ -11557,8 +11557,8 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A unit of genetic map distance defined corresponding to an interval in which there is a 1% probability of X-irradiation induced breakage. To be completely specified, the unit must be qualified by the radiation in dosage in rads (e.g. cR8000), because this determines the actual breakage probability.&quot; [NCBI:http\://www.ncbi.nlm.nih.gov/SCIENCE96/Glossary.html]</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000329">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mega base pair</rdfs:label>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A unit equal to one million base pairs&quot; [UOC:GVG]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mega base pair</rdfs:label>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mb</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">megabasepair</oboInOwl:hasExactSynonym>
     </rdf:Description>
@@ -11617,8 +11617,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010012">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thou</rdfs:label>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mil</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A length unit which is equal to 0.0254 millimetres.&quot; [Wikipedia:Wikpiedia]</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mil</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">th</oboInOwl:hasExactSynonym>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0010013">
