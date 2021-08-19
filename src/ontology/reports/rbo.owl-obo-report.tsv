@@ -24,10 +24,15 @@ ERROR	duplicate_definition	is_specified_input_of	textual definition	A relation b
 ERROR	duplicate_definition	muscle of iris	textual definition	.
 ERROR	duplicate_definition	early pharyngeal endoderm	textual definition	.
 ERROR	duplicate_definition	layer of sclera	textual definition	.
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	939a7a8f-c5b2-4447-adc1-11973200368bgenid5651
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	939a7a8f-c5b2-4447-adc1-11973200368bgenid5655
+ERROR	misused_obsolete_label	obsolete cell part	rdfs:label	obsolete cell part
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	role	rdfs:label	role
 ERROR	duplicate_label	radiation quality	rdfs:label	radiation quality
 ERROR	duplicate_label	radiation quality	rdfs:label	radiation quality
+ERROR	duplicate_label	quality of	rdfs:label	quality of@en
+ERROR	duplicate_label	quality of	rdfs:label	quality of@en
 ERROR	duplicate_label	quality	rdfs:label	quality@en
 ERROR	duplicate_label	quality	rdfs:label	quality@en
 ERROR	duplicate_label	part_of	rdfs:label	part of
@@ -42,8 +47,12 @@ ERROR	duplicate_label	ionizing radiation	rdfs:label	ionizing radiation
 ERROR	duplicate_label	ionizing radiation	rdfs:label	ionizing radiation
 ERROR	duplicate_label	has quality	rdfs:label	has quality@en
 ERROR	duplicate_label	has quality	rdfs:label	has quality@en
+ERROR	duplicate_label	has_part	rdfs:label	has part
 ERROR	duplicate_label	has part	rdfs:label	has part
-ERROR	duplicate_label	has part	rdfs:label	has part
+ERROR	duplicate_label	characteristic of	rdfs:label	characteristic of@en
+ERROR	duplicate_label	inheres in	rdfs:label	characteristic of@en
+ERROR	duplicate_label	cellular process	rdfs:label	cellular process
+ERROR	duplicate_label	cellular process	rdfs:label	cellular process
 ERROR	multiple_definitions	independent continuant	textual definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
 ERROR	multiple_definitions	independent continuant	textual definition	<b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en>
 ERROR	multiple_definitions	process	textual definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
@@ -53,24 +62,90 @@ ERROR	multiple_definitions	specifically dependent continuant	textual definition	
 ERROR	multiple_definitions	specifically dependent continuant	textual definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
 ERROR	multiple_definitions	generically dependent continuant	textual definition	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en
 ERROR	multiple_definitions	generically dependent continuant	textual definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
-ERROR	multiple_definitions	has part	textual definition	<Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.>
-ERROR	multiple_definitions	has part	textual definition	a core relation that holds between a whole and its part@en
+ERROR	multiple_definitions	part_of	textual definition	a core relation that holds between a part and its whole
+ERROR	multiple_definitions	part_of	textual definition	a core relation that holds between a part and its whole@en
+ERROR	multiple_definitions	has_part	textual definition	<Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2.>
+ERROR	multiple_definitions	has_part	textual definition	a core relation that holds between a whole and its part
+ERROR	multiple_definitions	has_part	textual definition	a core relation that holds between a whole and its part@en
 ERROR	multiple_definitions	preceded_by	textual definition	<X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)>
 ERROR	multiple_definitions	preceded_by	textual definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
+ERROR	multiple_definitions	anterior_to	textual definition	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
+ERROR	multiple_definitions	anterior_to	textual definition	<x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer>
+ERROR	multiple_definitions	dorsal_to	textual definition	x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
+ERROR	multiple_definitions	dorsal_to	textual definition	x dorsal_to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
+ERROR	multiple_definitions	posterior to	textual definition	x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
+ERROR	multiple_definitions	posterior to	textual definition	x posterior_to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail.
+ERROR	multiple_definitions	ventral_to	textual definition	x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
+ERROR	multiple_definitions	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
+ERROR	multiple_definitions	in_left_side_of	textual definition	X in left side of Y <=> if Y is subdivided into two left and right portions, X is part of the left portion.
+ERROR	multiple_definitions	in_left_side_of	textual definition	X in_left_side_of Y <=> if Y is subdivided into left and right portions, X is part_of the left portion.
+ERROR	multiple_definitions	in_right_side_of	textual definition	X in right side of Y <=> if Y is subdivided into two left and right portions, X is part of the right portion.
+ERROR	multiple_definitions	in_right_side_of	textual definition	X in_right_side_of Y <=> if Y is subdivided into left and right portions, X is part_of the right portion.
+ERROR	multiple_definitions	in posterior side of	textual definition	X posterior side of Y <=> if Y is subdivided into two anterior and posterior portions, X is part of the posterior portion.
+ERROR	multiple_definitions	in posterior side of	textual definition	X posterior_side_of Y <=> if Y is subdivided into two anterior and posterior portions, X is part_of the posterior portion.
+ERROR	multiple_definitions	in_anterior_side_of	textual definition	X anterior side of Y <=> if Y is subdivided into two anterior and posterior portions, X is part of the anterior portion.
+ERROR	multiple_definitions	in_anterior_side_of	textual definition	X anterior_side_of Y <=> if Y is subdivided into two anterior and posterior portions, X is part_of the anterior portion.
+ERROR	multiple_definitions	in_proximal_side_of	textual definition	X proximal_side_of Y <=> if Y is subdivided into distal and proximal portions, X is part_of the proximal portion.
+ERROR	multiple_definitions	in_proximal_side_of	textual definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
+ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of Y <=> if Y is subdivided into distal and proximal portions, X is part_of the distal portion.
+ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
+ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
+ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y
+ERROR	multiple_definitions	immediately_deep_to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
+ERROR	multiple_definitions	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
+ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
+ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	overlaps	textual definition	A overlaps B if they share some part in common.
+ERROR	multiple_definitions	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
+ERROR	multiple_definitions	overlaps	textual definition	x overlaps y iff they have some part in common.
+ERROR	multiple_definitions	only in taxon	textual definition	<S only_in_taxon T iff: S SubClassOf in_taxon only T>
+ERROR	multiple_definitions	only in taxon	textual definition	x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.
+ERROR	multiple_definitions	connected to	textual definition	<Binary relationship: x connected_to y if and only if there exists some z such that z connects x and y in a ternary connected_to(x,y,z) relationship.>
+ERROR	multiple_definitions	connected to	textual definition	a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b
+ERROR	multiple_definitions	connects	textual definition	<Binary relationship: z connects x if and only if there exists some y such that z connects x and y in a ternary connected_to(x,y,z) relationship.>
+ERROR	multiple_definitions	connects	textual definition	c connects a if and only if there exist some b such that a and b are similar parts of the same system, and c connects b, specifically, c connects a with b. When one structure connects two others it unites some aspect of the function or role they play within the system.
+ERROR	multiple_definitions	supplies	textual definition	Relation between an arterial structure and another structure, where the arterial structure acts as a conduit channeling fluid, substance or energy.
+ERROR	multiple_definitions	supplies	textual definition	relation between an artery and the structure is supplies with blood.
 ERROR	multiple_definitions	surrounded by	textual definition	x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x
 ERROR	multiple_definitions	surrounded by	textual definition	<x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y>
 ERROR	multiple_definitions	adjacent_to	textual definition	x adjacent to y if and only if x and y share a boundary.
 ERROR	multiple_definitions	adjacent_to	textual definition	<x adjacent_to y iff: x and y share a boundary>
+ERROR	multiple_definitions	surrounds	textual definition	inverse of surrounded by
+ERROR	multiple_definitions	surrounds	textual definition	inverse of surrounded_by
+ERROR	multiple_definitions	starts	textual definition	Relation between occurrents, shares a start boundary with.
+ERROR	multiple_definitions	starts	textual definition	inverse of starts with
 ERROR	multiple_definitions	ends	textual definition	Relation between occurrents, shares an end boundary with.
 ERROR	multiple_definitions	ends	textual definition	inverse of ends with
+ERROR	multiple_definitions	developmentally_induced_by	textual definition	<t1 developmentally_induced_by t2 if there is a process of organ induction (GO:0001759) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor tissue type T to T', where T' develops_from T.>
+ERROR	multiple_definitions	developmentally_induced_by	textual definition	<t1 induced_by t2 if there is a process of developmental induction (GO:0031128) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor anatomical structure type T to T', where T' develops_from T>
+ERROR	multiple_definitions	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+ERROR	multiple_definitions	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+ERROR	multiple_definitions	has muscle insertion	textual definition	m has_muscle_insertion s iff m is attaches_to s, and it is the case that when m contracts, s moves. Insertions are usually connections of muscle via tendon to bone.
+ERROR	multiple_definitions	has muscle insertion	textual definition	m has_muscle_insertion s iff m is attaches_to s, and it is the case that when m contracts, s moves. Insertions are usually connections of muscle via tendon to bone.@en
 ERROR	multiple_definitions	has potential to developmentally contribute to	textual definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y
 ERROR	multiple_definitions	has potential to developmentally contribute to	textual definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y@en
 ERROR	multiple_definitions	has potential to develop into	textual definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y
 ERROR	multiple_definitions	has potential to develop into	textual definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y@en
+ERROR	multiple_definitions	has potential to directly develop into	textual definition	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y
+ERROR	multiple_definitions	has potential to directly develop into	textual definition	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y@en
 ERROR	multiple_definitions	composed primarily of	textual definition	x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.
 ERROR	multiple_definitions	composed primarily of	textual definition	<x composed_primarily_of y iff: more than half of the mass of x is made from parts of y>
+ERROR	multiple_definitions	existence starts during	textual definition	Relation between continuant c and occurrent s, such that every instance of c comes into existing during some s.
+ERROR	multiple_definitions	existence starts during	textual definition	<x existence starts during y if and only if the time point at which x starts is after or equivalent to the time point at which y starts and before or equivalent to the time point at which y ends. Formally: x existence starts during y iff α(x) >= α(y) & α(x) <= ω(y).>
+ERROR	multiple_definitions	existence starts with	textual definition	Relation between continuant and occurrent, such that c comes into existence at the start of p.
+ERROR	multiple_definitions	existence starts with	textual definition	<x starts ends with y if and only if the time point at which x starts is equivalent to the time point at which y starts. Formally: x existence starts with y iff α(x) = α(y).>
+ERROR	multiple_definitions	existence ends during	textual definition	Relation between continuant c and occurrent s, such that every instance of c ceases to exist during some s, if it does not die prematurely.
+ERROR	multiple_definitions	existence ends during	textual definition	<x existence ends during y if and only if the time point at which x ends is before or equivalent to the time point at which y ends and after or equivalent to the point at which y starts. Formally: x existence ends during y iff ω(x) <= ω(y) and ω(x) >= α(y).>
+ERROR	multiple_definitions	existence ends with	textual definition	Relation between continuant and occurrent, such that c ceases to exist at the end of p.
+ERROR	multiple_definitions	existence ends with	textual definition	<x existence ends with y if and only if the time point at which x ends is equivalent to the time point at which y ends. Formally: x existence ends with y iff ω(x) = ω(y).>
+ERROR	multiple_definitions	has skeleton	textual definition	A relation between a segment or subdivision of an organism and the maximal subdivision of material entities that provides structural support for that segment or subdivision.
+ERROR	multiple_definitions	has skeleton	textual definition	A relation between a subdivision of an organism and the single subdivision of skeleton that provides structural support for that subdivision.
 ERROR	multiple_labels	continuant	rdfs:label	continuant
 ERROR	multiple_labels	continuant	rdfs:label	continuant@en
 ERROR	multiple_labels	process	rdfs:label	process
@@ -85,6 +160,8 @@ ERROR	multiple_labels	role	rdfs:label	role
 ERROR	multiple_labels	role	rdfs:label	role@en
 ERROR	multiple_labels	fiat object part	rdfs:label	fiat object@en
 ERROR	multiple_labels	fiat object part	rdfs:label	fiat object part@en
+ERROR	multiple_labels	object	rdfs:label	object
+ERROR	multiple_labels	object	rdfs:label	object@en
 ERROR	multiple_labels	generically dependent continuant	rdfs:label	generically dependent continuant
 ERROR	multiple_labels	generically dependent continuant	rdfs:label	generically dependent continuant@en
 ERROR	multiple_labels	material entity	rdfs:label	material entity
@@ -92,13 +169,58 @@ ERROR	multiple_labels	material entity	rdfs:label	material entity@en
 ERROR	multiple_labels	part_of	rdfs:label	part of
 ERROR	multiple_labels	part_of	rdfs:label	part of@en
 ERROR	multiple_labels	part_of	rdfs:label	part_of
-ERROR	multiple_labels	has part	rdfs:label	has part
-ERROR	multiple_labels	has part	rdfs:label	has part@en
-ERROR	multiple_labels	has part	rdfs:label	has_part
+ERROR	multiple_labels	has_part	rdfs:label	has part
+ERROR	multiple_labels	has_part	rdfs:label	has part@en
+ERROR	multiple_labels	has_part	rdfs:label	has_part
+ERROR	multiple_labels	preceded_by	rdfs:label	preceded by
 ERROR	multiple_labels	preceded_by	rdfs:label	preceded by@en
 ERROR	multiple_labels	preceded_by	rdfs:label	preceded_by
 ERROR	multiple_labels	precedes	rdfs:label	precedes
 ERROR	multiple_labels	precedes	rdfs:label	precedes@en
+ERROR	multiple_labels	occurs in	rdfs:label	occurs in
+ERROR	multiple_labels	occurs in	rdfs:label	occurs in@en
+ERROR	multiple_labels	contains process	rdfs:label	contains process
+ERROR	multiple_labels	contains process	rdfs:label	contains process@en
+ERROR	multiple_labels	anterior_to	rdfs:label	anterior to
+ERROR	multiple_labels	anterior_to	rdfs:label	anterior_to
+ERROR	multiple_labels	dorsal_to	rdfs:label	dorsal to
+ERROR	multiple_labels	dorsal_to	rdfs:label	dorsal_to
+ERROR	multiple_labels	posterior to	rdfs:label	posterior to
+ERROR	multiple_labels	posterior to	rdfs:label	posterior_to
+ERROR	multiple_labels	ventral_to	rdfs:label	ventral to
+ERROR	multiple_labels	ventral_to	rdfs:label	ventral_to
+ERROR	multiple_labels	deep to	rdfs:label	deep to
+ERROR	multiple_labels	deep to	rdfs:label	deep_to
+ERROR	multiple_labels	superficial_to	rdfs:label	superficial to
+ERROR	multiple_labels	superficial_to	rdfs:label	superficial_to
+ERROR	multiple_labels	in_left_side_of	rdfs:label	in left side of
+ERROR	multiple_labels	in_left_side_of	rdfs:label	in_left_side_of
+ERROR	multiple_labels	in_right_side_of	rdfs:label	in right side of
+ERROR	multiple_labels	in_right_side_of	rdfs:label	in_right_side_of
+ERROR	multiple_labels	in posterior side of	rdfs:label	in posterior side of
+ERROR	multiple_labels	in posterior side of	rdfs:label	in_posterior_side_of
+ERROR	multiple_labels	in_anterior_side_of	rdfs:label	in anterior side of
+ERROR	multiple_labels	in_anterior_side_of	rdfs:label	in_anterior_side_of
+ERROR	multiple_labels	in_proximal_side_of	rdfs:label	in proximal side of
+ERROR	multiple_labels	in_proximal_side_of	rdfs:label	in_proximal_side_of
+ERROR	multiple_labels	in distal side of	rdfs:label	in distal side of
+ERROR	multiple_labels	in distal side of	rdfs:label	in_distal_side_of
+ERROR	multiple_labels	in lateral side of	rdfs:label	in lateral side of
+ERROR	multiple_labels	in lateral side of	rdfs:label	in_lateral_side_of
+ERROR	multiple_labels	proximalmost_part_of	rdfs:label	proximalmost part of
+ERROR	multiple_labels	proximalmost_part_of	rdfs:label	proximalmost_part_of
+ERROR	multiple_labels	immediately_deep_to	rdfs:label	immediately deep to
+ERROR	multiple_labels	immediately_deep_to	rdfs:label	immediately_deep_to
+ERROR	multiple_labels	immediately superficial to	rdfs:label	immediately superficial to
+ERROR	multiple_labels	immediately superficial to	rdfs:label	immediately_superficial_to
+ERROR	multiple_labels	cell	rdfs:label	cell
+ERROR	multiple_labels	cell	rdfs:label	cell@en
+ERROR	multiple_labels	neuron	rdfs:label	neuron
+ERROR	multiple_labels	neuron	rdfs:label	neuron@en
+ERROR	multiple_labels	nucleus	rdfs:label	nucleus
+ERROR	multiple_labels	nucleus	rdfs:label	nucleus@en
+ERROR	multiple_labels	obsolete cell part	rdfs:label	cell part@en
+ERROR	multiple_labels	obsolete cell part	rdfs:label	obsolete cell part
 ERROR	multiple_labels	information content entity	rdfs:label	information content entity
 ERROR	multiple_labels	information content entity	rdfs:label	information content entity@en
 ERROR	multiple_labels	directive information entity	rdfs:label	directive information entity
@@ -115,6 +237,8 @@ ERROR	multiple_labels	example of usage	rdfs:label	example of usage@en
 ERROR	multiple_labels	textual definition	rdfs:label	definition
 ERROR	multiple_labels	textual definition	rdfs:label	definition@en
 ERROR	multiple_labels	textual definition	rdfs:label	textual definition
+ERROR	multiple_labels	editor note	rdfs:label	editor note
+ERROR	multiple_labels	editor note	rdfs:label	editor note@en
 ERROR	multiple_labels	term editor	rdfs:label	term editor
 ERROR	multiple_labels	term editor	rdfs:label	term editor@en
 ERROR	multiple_labels	alternative term	rdfs:label	alternative term
@@ -123,39 +247,105 @@ ERROR	multiple_labels	definition source	rdfs:label	definition source
 ERROR	multiple_labels	definition source	rdfs:label	definition source@en
 ERROR	multiple_labels	planned process	rdfs:label	planned process
 ERROR	multiple_labels	planned process	rdfs:label	planned process@en
+ERROR	multiple_labels	inheres in	rdfs:label	characteristic of@en
+ERROR	multiple_labels	inheres in	rdfs:label	inheres in@en
+ERROR	multiple_labels	bearer of	rdfs:label	bearer of
+ERROR	multiple_labels	bearer of	rdfs:label	bearer of@en
+ERROR	multiple_labels	bearer of	rdfs:label	has characteristic@en
+ERROR	multiple_labels	participates in	rdfs:label	participates in@en
+ERROR	multiple_labels	participates in	rdfs:label	participates_in
+ERROR	multiple_labels	has role	rdfs:label	has role
+ERROR	multiple_labels	has role	rdfs:label	has role@en
+ERROR	multiple_labels	location_of	rdfs:label	location of@en
+ERROR	multiple_labels	location_of	rdfs:label	location_of
+ERROR	multiple_labels	contains	rdfs:label	contains
+ERROR	multiple_labels	contains	rdfs:label	contains@en
 ERROR	multiple_labels	located in	rdfs:label	located in@en
 ERROR	multiple_labels	located in	rdfs:label	located_in
+ERROR	multiple_labels	has 2D boundary	rdfs:label	has 2D boundary@en
+ERROR	multiple_labels	has 2D boundary	rdfs:label	has boundary
 ERROR	multiple_labels	bounding layer of	rdfs:label	bounding layer of
 ERROR	multiple_labels	bounding layer of	rdfs:label	bounding layer of@en
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately preceded by@en
 ERROR	multiple_labels	immediately preceded by	rdfs:label	immediately_preceded_by
+ERROR	multiple_labels	overlaps	rdfs:label	overlaps
+ERROR	multiple_labels	overlaps	rdfs:label	overlaps@en
+ERROR	multiple_labels	continuous_with	rdfs:label	continuous with@en
+ERROR	multiple_labels	continuous_with	rdfs:label	continuous_with
+ERROR	multiple_labels	connected to	rdfs:label	connected to
+ERROR	multiple_labels	connected to	rdfs:label	connected to@en
+ERROR	multiple_labels	connects	rdfs:label	connects
+ERROR	multiple_labels	connects	rdfs:label	connects@en
+ERROR	multiple_labels	attached to part of	rdfs:label	attached to part of@en
+ERROR	multiple_labels	attached to part of	rdfs:label	attaches_to_part_of
+ERROR	multiple_labels	drains	rdfs:label	drains
+ERROR	multiple_labels	drains	rdfs:label	drains@en
 ERROR	multiple_labels	has component	rdfs:label	has component
 ERROR	multiple_labels	has component	rdfs:label	has component@en
+ERROR	multiple_labels	has component	rdfs:label	has_component
+ERROR	multiple_labels	develops from	rdfs:label	develops from
 ERROR	multiple_labels	develops from	rdfs:label	develops from@en
 ERROR	multiple_labels	develops from	rdfs:label	develops_from
 ERROR	multiple_labels	develops_into	rdfs:label	develops into@en
 ERROR	multiple_labels	develops_into	rdfs:label	develops_into
+ERROR	multiple_labels	regulates	rdfs:label	regulates
+ERROR	multiple_labels	regulates	rdfs:label	regulates@en
+ERROR	multiple_labels	negatively regulates	rdfs:label	negatively regulates
+ERROR	multiple_labels	negatively regulates	rdfs:label	negatively regulates@en
+ERROR	multiple_labels	positively regulates	rdfs:label	positively regulates
+ERROR	multiple_labels	positively regulates	rdfs:label	positively regulates@en
+ERROR	multiple_labels	capable_of	rdfs:label	capable of
+ERROR	multiple_labels	capable_of	rdfs:label	capable of@en
+ERROR	multiple_labels	capable_of	rdfs:label	capable_of
+ERROR	multiple_labels	capable of part of	rdfs:label	capable of part of
+ERROR	multiple_labels	capable of part of	rdfs:label	capable of part of@en
 ERROR	multiple_labels	surrounded by	rdfs:label	surrounded by
 ERROR	multiple_labels	surrounded by	rdfs:label	surrounded by@en
 ERROR	multiple_labels	surrounded by	rdfs:label	surrounded_by
+ERROR	multiple_labels	adjacent_to	rdfs:label	adjacent to
 ERROR	multiple_labels	adjacent_to	rdfs:label	adjacent to@en
 ERROR	multiple_labels	adjacent_to	rdfs:label	adjacent_to
+ERROR	multiple_labels	surrounds	rdfs:label	surrounds
+ERROR	multiple_labels	surrounds	rdfs:label	surrounds@en
+ERROR	multiple_labels	starts	rdfs:label	starts
+ERROR	multiple_labels	starts	rdfs:label	starts@en
+ERROR	multiple_labels	starts with	rdfs:label	starts with
+ERROR	multiple_labels	starts with	rdfs:label	starts with@en
 ERROR	multiple_labels	ends	rdfs:label	ends
 ERROR	multiple_labels	ends	rdfs:label	ends@en
+ERROR	multiple_labels	ends with	rdfs:label	ends with
+ERROR	multiple_labels	ends with	rdfs:label	ends with@en
 ERROR	multiple_labels	has developmental contribution from	rdfs:label	has developmental contribution from
 ERROR	multiple_labels	has developmental contribution from	rdfs:label	has developmental contribution from@en
-ERROR	multiple_labels	developmentally contributes to	rdfs:label	developmentally contributes to@en
-ERROR	multiple_labels	developmentally contributes to	rdfs:label	developmentally_contributes_to
+ERROR	multiple_labels	developmentally_induced_by	rdfs:label	developmentally induced by@en
+ERROR	multiple_labels	developmentally_induced_by	rdfs:label	developmentally_induced_by
+ERROR	multiple_labels	developmentally replaces	rdfs:label	developmentally replaces@en
+ERROR	multiple_labels	developmentally replaces	rdfs:label	developmentally_replaces
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat
 ERROR	multiple_labels	has habitat	rdfs:label	has habitat@en
+ERROR	multiple_labels	inheres in part of	rdfs:label	characteristic of part of@en
+ERROR	multiple_labels	inheres in part of	rdfs:label	inheres in part of@en
 ERROR	multiple_labels	member of	rdfs:label	member of
 ERROR	multiple_labels	member of	rdfs:label	member of@en
 ERROR	multiple_labels	has member	rdfs:label	has member
 ERROR	multiple_labels	has member	rdfs:label	has member@en
-ERROR	multiple_labels	has potential to developmentally contribute to	rdfs:label	has potential to developmentally contribute to
-ERROR	multiple_labels	has potential to developmentally contribute to	rdfs:label	has potential to developmentally contribute to@en
+ERROR	multiple_labels	output of	rdfs:label	output of
+ERROR	multiple_labels	output of	rdfs:label	output of@en
+ERROR	multiple_labels	attaches_to	rdfs:label	attached to@en
+ERROR	multiple_labels	attaches_to	rdfs:label	attaches_to
+ERROR	multiple_labels	tributary_of	rdfs:label	tributary of@en
+ERROR	multiple_labels	tributary_of	rdfs:label	tributary_of
+ERROR	multiple_labels	branching_part_of	rdfs:label	branching part of@en
+ERROR	multiple_labels	branching_part_of	rdfs:label	branching_part_of
 ERROR	multiple_labels	has potential to develop into	rdfs:label	has potential to develop into
 ERROR	multiple_labels	has potential to develop into	rdfs:label	has potential to develop into@en
+ERROR	multiple_labels	produces	rdfs:label	produces
+ERROR	multiple_labels	produces	rdfs:label	produces@en
+ERROR	multiple_labels	produced_by	rdfs:label	produced by
+ERROR	multiple_labels	produced_by	rdfs:label	produced by@en
+ERROR	multiple_labels	produced_by	rdfs:label	produced_by
+ERROR	multiple_labels	surface of bone	rdfs:label	surface of bone
+ERROR	multiple_labels	surface of bone	rdfs:label	surface of bone@en
 ERROR	multiple_labels	creator	rdfs:label	Creator
 ERROR	multiple_labels	creator	rdfs:label	Creator@en-us
 ERROR	multiple_labels	creator	rdfs:label	creator
@@ -192,14 +382,14 @@ WARN	annotation_whitespace	material entity	IAO:0000602	<(forall (x) (if (Materia
 WARN	annotation_whitespace	material entity	IAO:0000602	<(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] >
 WARN	annotation_whitespace	material entity	IAO:0000602	<(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] >
 WARN	annotation_whitespace	datum label	IAO:0000232	<9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. >
-WARN	annotation_whitespace	textual definition	IAO:0000116	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
+WARN	annotation_whitespace	textual definition	editor note	<2012-04-05: Barry SmithThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions' is terrible.Can you fix to something like:A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.Alan RuttenbergYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. On the specifics of the proposed definition:We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with. @en>
 WARN	annotation_whitespace	is_supported_by_data	example of usage	"The relation between the conclusion \""Gene tpbA is involved in EPS production\"" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. "
 WARN	annotation_whitespace	drawing a conclusion based on data	example of usage	Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. 
 WARN	annotation_whitespace	categorical label	example of usage	The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. 
-WARN	annotation_whitespace	device	IAO:0000116	"<2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \""device\"", and are enumerating the types of roles that a reagent can perform.2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions. Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear. For example:(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component. This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.(3) A gel running box is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it. This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation). In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay. >"
-WARN	annotation_whitespace	questionnaire	IAO:0000116	<JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. JZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. @en>
+WARN	annotation_whitespace	device	editor note	"<2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \""device\"", and are enumerating the types of roles that a reagent can perform.2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions. Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear. For example:(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component. This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.(3) A gel running box is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it. This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation). In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay. >"
+WARN	annotation_whitespace	questionnaire	editor note	<JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. JZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. @en>
 WARN	annotation_whitespace	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
-WARN	annotation_whitespace	conclusion based on data	IAO:0000116	"In the Philly 2013 workshop, we recognized the limitations of \""conclusion textual entity\"", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate. "
+WARN	annotation_whitespace	conclusion based on data	editor note	"In the Philly 2013 workshop, we recognized the limitations of \""conclusion textual entity\"", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate. "
 WARN	annotation_whitespace	histologic grade according to AJCC 7th edition	example of usage	< G4: Undifferentiated>
 WARN	annotation_whitespace	histologic grade according to AJCC 7th edition	example of usage	<G1:Well differentiated >
 WARN	annotation_whitespace	histologic grade for ovarian tumor according to a two-tier grading system	textual definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. 
@@ -230,8 +420,8 @@ WARN	annotation_whitespace	biodosimetry	textual definition	Use of a biological r
 WARN	annotation_whitespace	delta ray	textual definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
 WARN	annotation_whitespace	quality factor	textual definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
 WARN	annotation_whitespace	relative biological effectiveness	example of usage	Neutrons have been found to have a higher RBE than electrons. 
-WARN	annotation_whitespace	spatially disjoint from	IAO:0000116	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
-WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	annotation_whitespace	spatially disjoint from	editor note	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
+WARN	annotation_whitespace	capable_of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 WARN	annotation_whitespace	siemens	has_exact_synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has_exact_synonym	E-field strength 
 WARN	annotation_whitespace	title	Description	"
@@ -264,35 +454,62 @@ WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
 WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
 WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_label_synonym	part_of	alternative term	part_of
+WARN	duplicate_label_synonym	has_part	alternative term	has_part
+WARN	duplicate_label_synonym	mesenchymal stem cell	oboInOwl:hasRelatedSynonym	mesenchymal stem cell
+WARN	duplicate_label_synonym	myocyte of sinoatrial node	has_exact_synonym	myocyte of sinoatrial node
 WARN	duplicate_label_synonym	lymphoid leukemia	has_exact_synonym	lymphoid leukemia
 WARN	duplicate_label_synonym	ocean	has_exact_synonym	ocean
 WARN	duplicate_label_synonym	sea	has_exact_synonym	sea
 WARN	duplicate_label_synonym	depression	oboInOwl:hasRelatedSynonym	depression
+WARN	duplicate_label_synonym	lung bud	oboInOwl:hasRelatedSynonym	lung bud
 WARN	duplicate_label_synonym	organism substance	has_exact_synonym	organism substance
+WARN	duplicate_label_synonym	simple columnar epithelium	has_exact_synonym	simple columnar epithelium
+WARN	duplicate_label_synonym	endocrine system	has_exact_synonym	endocrine system
 WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
 WARN	duplicate_label_synonym	musculature	has_exact_synonym	musculature
 WARN	duplicate_label_synonym	uvea	has_exact_synonym	uvea
 WARN	duplicate_label_synonym	optic choroid	oboInOwl:hasRelatedSynonym	optic choroid
 WARN	duplicate_label_synonym	rhombomere	has_exact_synonym	rhombomere
+WARN	duplicate_label_synonym	submucosa of esophagus	has_exact_synonym	submucosa of esophagus
 WARN	duplicate_label_synonym	gray matter	has_exact_synonym	gray matter
+WARN	duplicate_label_synonym	right cardiac atrium	has_exact_synonym	right cardiac atrium
+WARN	duplicate_label_synonym	left cardiac atrium	has_exact_synonym	left cardiac atrium
+WARN	duplicate_label_synonym	appendicular skeleton	has_exact_synonym	appendicular skeleton
 WARN	duplicate_label_synonym	artery smooth muscle tissue	has_exact_synonym	artery smooth muscle tissue
 WARN	duplicate_label_synonym	gray matter of spinal cord	has_exact_synonym	gray matter of spinal cord
+WARN	duplicate_label_synonym	sinoatrial node	has_exact_synonym	sinoatrial node
+WARN	duplicate_label_synonym	cranial muscle	oboInOwl:hasRelatedSynonym	cranial muscle
 WARN	duplicate_label_synonym	cartilage tissue	has_exact_synonym	cartilage tissue
+WARN	duplicate_label_synonym	esophagus mucosa	has_exact_synonym	esophagus mucosa
 WARN	duplicate_label_synonym	iris epithelium	has_exact_synonym	iris epithelium
 WARN	duplicate_label_synonym	periderm	oboInOwl:hasRelatedSynonym	periderm
+WARN	duplicate_label_synonym	skeletal muscle tissue of eye	has_exact_synonym	skeletal muscle tissue of eye
+WARN	duplicate_label_synonym	cardiac muscle tissue of interventricular septum	has_exact_synonym	cardiac muscle tissue of interventricular septum
+WARN	duplicate_label_synonym	skeletal muscle tissue of pharynx	has_exact_synonym	skeletal muscle tissue of pharynx
 WARN	duplicate_label_synonym	gland of digestive tract	has_exact_synonym	gland of digestive tract
 WARN	duplicate_label_synonym	facial bone	has_exact_synonym	facial bone
 WARN	duplicate_label_synonym	mouth mucosa	has_exact_synonym	mouth mucosa
 WARN	duplicate_label_synonym	mesencephalic neural crest	has_exact_synonym	mesencephalic neural crest
+WARN	duplicate_label_synonym	skeletal muscle tissue of trunk	has_exact_synonym	skeletal muscle tissue of trunk
+WARN	duplicate_label_synonym	reproductive gland	has_exact_synonym	reproductive gland
 WARN	duplicate_label_synonym	germinal neuroepithelium	has_exact_synonym	germinal neuroepithelium
 WARN	duplicate_label_synonym	primary heart field	has_exact_synonym	primary heart field
 WARN	duplicate_label_synonym	cardiac vein	has_exact_synonym	cardiac vein
+WARN	duplicate_label_synonym	external genitalia	has_exact_synonym	external genitalia
+WARN	duplicate_label_synonym	paired limb/fin bud	has_exact_synonym	paired limb/fin bud
+WARN	duplicate_label_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
+WARN	duplicate_label_synonym	pharyngeal arch artery	oboInOwl:hasRelatedSynonym	pharyngeal arch artery
 WARN	duplicate_label_synonym	anterior limiting lamina of cornea	has_exact_synonym	anterior limiting lamina of cornea
+WARN	duplicate_label_synonym	pelvic appendage	has_exact_synonym	pelvic appendage
 WARN	duplicate_label_synonym	neuromere	has_exact_synonym	neuromere
 WARN	duplicate_label_synonym	primitive heart tube	has_exact_synonym	primitive heart tube
+WARN	duplicate_label_synonym	paired limb/fin field	has_exact_synonym	paired limb/fin field
 WARN	duplicate_label_synonym	head mesenchyme from mesoderm	has_exact_synonym	head mesenchyme from mesoderm
 WARN	duplicate_label_synonym	lumen of digestive tract	has_exact_synonym	lumen of digestive tract
+WARN	duplicate_label_synonym	ovary stroma	has_exact_synonym	ovary stroma
 WARN	duplicate_label_synonym	anatomical junction	has_exact_synonym	anatomical junction
+WARN	duplicate_label_synonym	pelvic girdle skeleton	has_exact_synonym	pelvic girdle skeleton
 WARN	duplicate_label_synonym	perichordal bone	oboInOwl:hasRelatedSynonym	perichordal bone
 WARN	duplicate_label_synonym	ciliary processes	has_exact_synonym	ciliary processes
 WARN	duplicate_label_synonym	facial skeleton	has_exact_synonym	facial skeleton
@@ -301,6 +518,8 @@ WARN	duplicate_label_synonym	foramen of skull	has_exact_synonym	foramen of skull
 WARN	duplicate_label_synonym	arterial blood	has_exact_synonym	arterial blood
 WARN	duplicate_label_synonym	venous blood	has_exact_synonym	venous blood
 WARN	duplicate_label_synonym	thoracic skeleton	has_exact_synonym	thoracic skeleton
+WARN	duplicate_label_synonym	abdominal viscera	has_exact_synonym	abdominal viscera
+WARN	duplicate_label_synonym	lung field	has_exact_synonym	lung field
 WARN	missing_definition	fiat object part	textual definition	
 WARN	missing_definition	object aggregate	textual definition	
 WARN	missing_definition	site	textual definition	
@@ -308,20 +527,28 @@ WARN	missing_definition	object	textual definition
 WARN	missing_definition	has participant	textual definition	
 WARN	missing_definition	immaterial entity	textual definition	
 WARN	missing_definition	anatomical entity	textual definition	
+WARN	missing_definition	connected anatomical structure	textual definition	
+WARN	missing_definition	material anatomical entity	textual definition	
 WARN	missing_definition	biological entity	textual definition	
+WARN	missing_definition	electron	textual definition	
 WARN	missing_definition	gas molecular entity	textual definition	
 WARN	missing_definition	electron donor	textual definition	
 WARN	missing_definition	water	textual definition	
 WARN	missing_definition	dioxygen	textual definition	
+WARN	missing_definition	hyaluronic acid	textual definition	
 WARN	missing_definition	carbon dioxide	textual definition	
+WARN	missing_definition	glycan	textual definition	
 WARN	missing_definition	donor	textual definition	
 WARN	missing_definition	dinitrogen	textual definition	
+WARN	missing_definition	glycosaminoglycan	textual definition	
+WARN	missing_definition	aminoglycan	textual definition	
 WARN	missing_definition	carbon oxide	textual definition	
 WARN	missing_definition	chloride salt	textual definition	
 WARN	missing_definition	chlorine molecular entity	textual definition	
 WARN	missing_definition	molecular entity	textual definition	
 WARN	missing_definition	chemical entity	textual definition	
 WARN	missing_definition	biological role	textual definition	
+WARN	missing_definition	group	textual definition	
 WARN	missing_definition	halogen molecular entity	textual definition	
 WARN	missing_definition	hydroxides	textual definition	
 WARN	missing_definition	inorganic molecular entity	textual definition	
@@ -329,14 +556,26 @@ WARN	missing_definition	inorganic salt	textual definition
 WARN	missing_definition	salt	textual definition	
 WARN	missing_definition	elemental molecule	textual definition	
 WARN	missing_definition	molecule	textual definition	
+WARN	missing_definition	nitrogen atom	textual definition	
+WARN	missing_definition	nonmetal atom	textual definition	
 WARN	missing_definition	organic oxide	textual definition	
+WARN	missing_definition	organic sulfate	textual definition	
 WARN	missing_definition	oxide	textual definition	
+WARN	missing_definition	oxygen atom	textual definition	
 WARN	missing_definition	oxygen molecular entity	textual definition	
 WARN	missing_definition	sodium chloride	textual definition	
 WARN	missing_definition	sodium molecular entity	textual definition	
 WARN	missing_definition	sodium salt	textual definition	
+WARN	missing_definition	sulfuric ester	textual definition	
+WARN	missing_definition	sulfates	textual definition	
+WARN	missing_definition	sulfur atom	textual definition	
+WARN	missing_definition	sulfur molecular entity	textual definition	
+WARN	missing_definition	carbon atom	textual definition	
+WARN	missing_definition	fundamental particle	textual definition	
+WARN	missing_definition	oxoacid derivative	textual definition	
 WARN	missing_definition	inorganic hydride	textual definition	
 WARN	missing_definition	atomic nucleus	textual definition	
+WARN	missing_definition	nucleon	textual definition	
 WARN	missing_definition	elemental molecular entity	textual definition	
 WARN	missing_definition	elemental oxygen	textual definition	
 WARN	missing_definition	diatomic oxygen	textual definition	
@@ -345,10 +584,16 @@ WARN	missing_definition	elemental nitrogen	textual definition
 WARN	missing_definition	nutrient	textual definition	
 WARN	missing_definition	heteroorganic entity	textual definition	
 WARN	missing_definition	alkali metal molecular entity	textual definition	
+WARN	missing_definition	pnictogen	textual definition	
 WARN	missing_definition	pnictogen molecular entity	textual definition	
+WARN	missing_definition	chalcogen	textual definition	
 WARN	missing_definition	chalcogen molecular entity	textual definition	
+WARN	missing_definition	carbon group element atom	textual definition	
+WARN	missing_definition	main group element atom	textual definition	
+WARN	missing_definition	sulfur oxoacid derivative	textual definition	
 WARN	missing_definition	elemental pnictogen	textual definition	
 WARN	missing_definition	metal atom	textual definition	
+WARN	missing_definition	p-block element atom	textual definition	
 WARN	missing_definition	main group molecular entity	textual definition	
 WARN	missing_definition	carbon group molecular entity	textual definition	
 WARN	missing_definition	noble gas molecular entity	textual definition	
@@ -361,9 +606,18 @@ WARN	missing_definition	oxygen hydride	textual definition
 WARN	missing_definition	biomacromolecule	textual definition	
 WARN	missing_definition	macromolecule	textual definition	
 WARN	missing_definition	halide salt	textual definition	
+WARN	missing_definition	organonitrogen compound	textual definition	
 WARN	missing_definition	alkali metal salt	textual definition	
+WARN	missing_definition	ester	textual definition	
+WARN	missing_definition	sulfated glycosaminoglycan	textual definition	
+WARN	missing_definition	carbohydrate sulfate	textual definition	
 WARN	missing_definition	inorganic chloride	textual definition	
+WARN	missing_definition	lepton	textual definition	
+WARN	missing_definition	baryon	textual definition	
+WARN	missing_definition	fermion	textual definition	
 WARN	missing_definition	subatomic particle	textual definition	
+WARN	missing_definition	composite particle	textual definition	
+WARN	missing_definition	hadron	textual definition	
 WARN	missing_definition	nuclear particle	textual definition	
 WARN	missing_definition	polyatomic entity	textual definition	
 WARN	missing_definition	chalcogen hydride	textual definition	
@@ -371,10 +625,13 @@ WARN	missing_definition	argon molecular entity	textual definition
 WARN	missing_definition	organochalcogen compound	textual definition	
 WARN	missing_definition	organooxygen compound	textual definition	
 WARN	missing_definition	mononuclear parent hydride	textual definition	
+WARN	missing_definition	mucopolysaccharide	textual definition	
 WARN	missing_definition	heteroatomic molecular entity	textual definition	
 WARN	missing_definition	halide	textual definition	
+WARN	missing_definition	sulfuric acid derivative	textual definition	
 WARN	missing_definition	inorganic sodium salt	textual definition	
 WARN	missing_definition	mineral	textual definition	
+WARN	missing_definition	organic amino compound	textual definition	
 WARN	missing_definition	organic molecular entity	textual definition	
 WARN	missing_definition	role	textual definition	
 WARN	missing_definition	chemical role	textual definition	
@@ -382,10 +639,50 @@ WARN	missing_definition	nitrogen molecular entity	textual definition
 WARN	missing_definition	physiological role	textual definition	
 WARN	missing_definition	inorganic hydroxy compound	textual definition	
 WARN	missing_definition	chemical substance	textual definition	
+WARN	missing_definition	carbohydrate derivative	textual definition	
 WARN	missing_definition	one-carbon compound	textual definition	
+WARN	missing_definition	polysaccharide derivative	textual definition	
 WARN	missing_definition	organic molecule	textual definition	
+WARN	missing_definition	exopolysaccharide	textual definition	
 WARN	missing_definition	greenhouse gas	textual definition	
 WARN	missing_definition	food component	textual definition	
+WARN	missing_definition	carbohydrates and carbohydrate derivatives	textual definition	
+WARN	missing_definition	neuronal receptor cell	textual definition	
+WARN	missing_definition	germ line stem cell	textual definition	
+WARN	missing_definition	neuron neural crest derived	textual definition	
+WARN	missing_definition	glioblast	textual definition	
+WARN	missing_definition	squamous epithelial cell	textual definition	
+WARN	missing_definition	neuron associated cell	textual definition	
+WARN	missing_definition	CNS neuron (sensu Vertebrata)	textual definition	
+WARN	missing_definition	visual pigment cell	textual definition	
+WARN	missing_definition	seromucus secreting cell	textual definition	
+WARN	missing_definition	steroid hormone secreting cell	textual definition	
+WARN	missing_definition	eukaryotic cell	textual definition	
+WARN	missing_definition	eye photoreceptor cell	textual definition	
+WARN	missing_definition	crystallin accumulating cell	textual definition	
+WARN	missing_definition	extracellular matrix secreting cell	textual definition	
+WARN	missing_definition	oxygen accumulating cell	textual definition	
+WARN	missing_definition	extraembryonic cell	textual definition	
+WARN	missing_definition	neurosecretory neuron	textual definition	
+WARN	missing_definition	CNS interneuron	textual definition	
+WARN	missing_definition	carbohydrate secreting cell	textual definition	
+WARN	missing_definition	primary neuron	textual definition	
+WARN	missing_definition	primary sensory neuron	textual definition	
+WARN	missing_definition	animal cell	textual definition	
+WARN	missing_definition	fibroblast of dermis	textual definition	
+WARN	missing_definition	epithelial cell of lower respiratory tract	textual definition	
+WARN	missing_definition	microcirculation associated smooth muscle cell	textual definition	
+WARN	missing_definition	cardiac blood vessel endothelial cell	textual definition	
+WARN	missing_definition	cardiac endothelial cell	textual definition	
+WARN	missing_definition	camera-type eye photoreceptor cell	textual definition	
+WARN	missing_definition	cardiac glial cell	textual definition	
+WARN	missing_definition	cardiac myoblast	textual definition	
+WARN	missing_definition	cardiac neuron	textual definition	
+WARN	missing_definition	lung neuroendocrine cell	textual definition	
+WARN	missing_definition	lung ciliated cell	textual definition	
+WARN	missing_definition	lung secretory cell	textual definition	
+WARN	missing_definition	lung endothelial cell	textual definition	
+WARN	missing_definition	pulmonary artery endothelial cell	textual definition	
 WARN	missing_definition	quality	textual definition	
 WARN	missing_definition	mass	textual definition	
 WARN	missing_definition	charge	textual definition	
@@ -412,13 +709,503 @@ WARN	missing_definition	body of liquid	textual definition
 WARN	missing_definition	mass fluid flow	textual definition	
 WARN	missing_definition	aquatic ecosystem	textual definition	
 WARN	missing_definition	marine ecosystem	textual definition	
+WARN	missing_definition	reproduction	textual definition	
+WARN	missing_definition	nuclear chromosome	textual definition	
+WARN	missing_definition	cytoplasmic chromosome	textual definition	
+WARN	missing_definition	chromatin	textual definition	
+WARN	missing_definition	heterochromatin	textual definition	
+WARN	missing_definition	skeletal system development	textual definition	
+WARN	missing_definition	ossification	textual definition	
+WARN	missing_definition	action potential	textual definition	
+WARN	missing_definition	angiogenesis	textual definition	
+WARN	missing_definition	blood vessel development	textual definition	
+WARN	missing_definition	branching involved in blood vessel morphogenesis	textual definition	
+WARN	missing_definition	temperature homeostasis	textual definition	
+WARN	missing_definition	ameboidal-type cell migration	textual definition	
+WARN	missing_definition	formation of primary germ layer	textual definition	
+WARN	missing_definition	ectoderm formation	textual definition	
+WARN	missing_definition	endoderm formation	textual definition	
+WARN	missing_definition	mesoderm formation	textual definition	
+WARN	missing_definition	morphogenesis of a branching structure	textual definition	
+WARN	missing_definition	embryonic epithelial tube formation	textual definition	
+WARN	missing_definition	neural tube formation	textual definition	
+WARN	missing_definition	vasculature development	textual definition	
+WARN	missing_definition	intramembranous ossification	textual definition	
+WARN	missing_definition	morphogenesis of an epithelium	textual definition	
+WARN	missing_definition	regulation of heart rate	textual definition	
+WARN	missing_definition	positive regulation of mesenchymal cell proliferation	textual definition	
+WARN	missing_definition	regulation of respiratory gaseous exchange by nervous system process	textual definition	
+WARN	missing_definition	hematopoietic progenitor cell differentiation	textual definition	
+WARN	missing_definition	myeloid cell homeostasis	textual definition	
+WARN	missing_definition	immune system process	textual definition	
+WARN	missing_definition	immune system development	textual definition	
+WARN	missing_definition	regulation of immune system process	textual definition	
+WARN	missing_definition	negative regulation of immune system process	textual definition	
+WARN	missing_definition	positive regulation of immune system process	textual definition	
+WARN	missing_definition	developmental process involved in reproduction	textual definition	
+WARN	missing_definition	system process	textual definition	
+WARN	missing_definition	muscle system process	textual definition	
+WARN	missing_definition	circulatory system process	textual definition	
+WARN	missing_definition	heart process	textual definition	
+WARN	missing_definition	respiratory system process	textual definition	
+WARN	missing_definition	regulation of extracellular matrix constituent secretion	textual definition	
+WARN	missing_definition	positive regulation of extracellular matrix constituent secretion	textual definition	
+WARN	missing_definition	negative regulation of extracellular matrix constituent secretion	textual definition	
 WARN	missing_definition	molecular_function	textual definition	
 WARN	missing_definition	catalytic activity	textual definition	
+WARN	missing_definition	cellular_component	textual definition	
+WARN	missing_definition	extracellular region	textual definition	
+WARN	missing_definition	fibrinogen complex	textual definition	
+WARN	missing_definition	collagen trimer	textual definition	
+WARN	missing_definition	fibrillar collagen trimer	textual definition	
+WARN	missing_definition	collagen type IV trimer	textual definition	
+WARN	missing_definition	basement membrane	textual definition	
+WARN	missing_definition	extracellular space	textual definition	
+WARN	missing_definition	intracellular anatomical structure	textual definition	
+WARN	missing_definition	nucleus	textual definition	
+WARN	missing_definition	nuclear envelope	textual definition	
+WARN	missing_definition	chromosome	textual definition	
+WARN	missing_definition	nucleolus	textual definition	
+WARN	missing_definition	cytoplasm	textual definition	
+WARN	missing_definition	vacuole	textual definition	
+WARN	missing_definition	vacuolar lumen	textual definition	
+WARN	missing_definition	plasma membrane	textual definition	
+WARN	missing_definition	cell-cell junction	textual definition	
+WARN	missing_definition	cilium	textual definition	
+WARN	missing_definition	cell cortex	textual definition	
+WARN	missing_definition	transport	textual definition	
+WARN	missing_definition	extracellular transport	textual definition	
+WARN	missing_definition	lipid transport	textual definition	
+WARN	missing_definition	movement of cell or subcellular component	textual definition	
+WARN	missing_definition	muscle contraction	textual definition	
+WARN	missing_definition	regulation of muscle contraction	textual definition	
+WARN	missing_definition	striated muscle contraction	textual definition	
+WARN	missing_definition	regulation of striated muscle contraction	textual definition	
+WARN	missing_definition	organelle organization	textual definition	
+WARN	missing_definition	cell communication	textual definition	
+WARN	missing_definition	cell-cell signaling	textual definition	
+WARN	missing_definition	chemical synaptic transmission	textual definition	
+WARN	missing_definition	multicellular organism development	textual definition	
+WARN	missing_definition	gamete generation	textual definition	
+WARN	missing_definition	gastrulation	textual definition	
+WARN	missing_definition	ectoderm development	textual definition	
+WARN	missing_definition	nervous system development	textual definition	
+WARN	missing_definition	endoderm development	textual definition	
+WARN	missing_definition	mesoderm development	textual definition	
+WARN	missing_definition	respiratory gaseous exchange by respiratory system	textual definition	
+WARN	missing_definition	digestion	textual definition	
+WARN	missing_definition	sensory perception	textual definition	
+WARN	missing_definition	visual perception	textual definition	
+WARN	missing_definition	behavior	textual definition	
+WARN	missing_definition	blood circulation	textual definition	
+WARN	missing_definition	regulation of heart contraction	textual definition	
+WARN	missing_definition	cell population proliferation	textual definition	
+WARN	missing_definition	positive regulation of cell population proliferation	textual definition	
+WARN	missing_definition	negative regulation of cell population proliferation	textual definition	
+WARN	missing_definition	response to radiation	textual definition	
+WARN	missing_definition	response to light stimulus	textual definition	
+WARN	missing_definition	detection of external stimulus	textual definition	
+WARN	missing_definition	detection of abiotic stimulus	textual definition	
+WARN	missing_definition	detection of light stimulus	textual definition	
+WARN	missing_definition	detection of visible light	textual definition	
+WARN	missing_definition	response to external stimulus	textual definition	
+WARN	missing_definition	response to abiotic stimulus	textual definition	
+WARN	missing_definition	anatomical structure morphogenesis	textual definition	
+WARN	missing_definition	embryo development	textual definition	
+WARN	missing_definition	post-embryonic development	textual definition	
+WARN	missing_definition	embryo development ending in birth or egg hatching	textual definition	
+WARN	missing_definition	tissue development	textual definition	
+WARN	missing_definition	hormone transport	textual definition	
+WARN	missing_definition	cellular process	textual definition	
+WARN	missing_definition	mesenchymal cell proliferation	textual definition	
+WARN	missing_definition	regulation of mesenchymal cell proliferation	textual definition	
+WARN	missing_definition	regulation of gastrulation	textual definition	
+WARN	missing_definition	positive regulation of organelle organization	textual definition	
+WARN	missing_definition	negative regulation of organelle organization	textual definition	
+WARN	missing_definition	regulation of cell communication	textual definition	
+WARN	missing_definition	positive regulation of cell communication	textual definition	
+WARN	missing_definition	negative regulation of cell communication	textual definition	
+WARN	missing_definition	regulation of hormone levels	textual definition	
+WARN	missing_definition	lipid localization	textual definition	
+WARN	missing_definition	cellular component assembly involved in morphogenesis	textual definition	
+WARN	missing_definition	endomembrane system	textual definition	
+WARN	missing_definition	vesicle membrane	textual definition	
+WARN	missing_definition	gas transport	textual definition	
+WARN	missing_definition	oxygen transport	textual definition	
+WARN	missing_definition	membrane	textual definition	
+WARN	missing_definition	cellular component organization	textual definition	
+WARN	missing_definition	vesicle organization	textual definition	
 WARN	missing_definition	kinase activity	textual definition	
+WARN	missing_definition	morphogenesis of embryonic epithelium	textual definition	
+WARN	missing_definition	cell migration	textual definition	
+WARN	missing_definition	negative regulation of angiogenesis	textual definition	
 WARN	missing_definition	transferase activity	textual definition	
 WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
+WARN	missing_definition	stem cell division	textual definition	
+WARN	missing_definition	reproductive behavior	textual definition	
+WARN	missing_definition	transmission of nerve impulse	textual definition	
+WARN	missing_definition	sexual reproduction	textual definition	
+WARN	missing_definition	neural tube development	textual definition	
+WARN	missing_definition	cellular process involved in reproduction in multicellular organism	textual definition	
+WARN	missing_definition	reproductive process	textual definition	
+WARN	missing_definition	digestive system process	textual definition	
+WARN	missing_definition	regulation of anatomical structure morphogenesis	textual definition	
+WARN	missing_definition	cellular component assembly	textual definition	
+WARN	missing_definition	regulation of signaling	textual definition	
+WARN	missing_definition	signaling	textual definition	
+WARN	missing_definition	positive regulation of signaling	textual definition	
+WARN	missing_definition	negative regulation of signaling	textual definition	
+WARN	missing_definition	signal release	textual definition	
+WARN	missing_definition	myofibril	textual definition	
+WARN	missing_definition	sarcomere	textual definition	
+WARN	missing_definition	cell junction	textual definition	
+WARN	missing_definition	hemopoiesis	textual definition	
+WARN	missing_definition	myeloid cell differentiation	textual definition	
+WARN	missing_definition	cell differentiation	textual definition	
+WARN	missing_definition	extracellular matrix organization	textual definition	
+WARN	missing_definition	erythrocyte differentiation	textual definition	
+WARN	missing_definition	megakaryocyte differentiation	textual definition	
+WARN	missing_definition	regulation of ossification	textual definition	
+WARN	missing_definition	negative regulation of ossification	textual definition	
+WARN	missing_definition	external encapsulating structure	textual definition	
+WARN	missing_definition	regulation of cell migration	textual definition	
+WARN	missing_definition	positive regulation of cell migration	textual definition	
+WARN	missing_definition	negative regulation of cell migration	textual definition	
+WARN	missing_definition	cytoplasmic vesicle membrane	textual definition	
+WARN	missing_definition	intraciliary transport particle	textual definition	
+WARN	missing_definition	extracellular matrix	textual definition	
+WARN	missing_definition	organelle membrane	textual definition	
+WARN	missing_definition	cytoplasmic vesicle	textual definition	
+WARN	missing_definition	regulation of nervous system process	textual definition	
+WARN	missing_definition	negative regulation of nervous system process	textual definition	
+WARN	missing_definition	positive regulation of nervous system process	textual definition	
+WARN	missing_definition	nuclear membrane	textual definition	
+WARN	missing_definition	organelle envelope	textual definition	
+WARN	missing_definition	membrane-enclosed lumen	textual definition	
+WARN	missing_definition	envelope	textual definition	
+WARN	missing_definition	nuclear lumen	textual definition	
+WARN	missing_definition	vesicle	textual definition	
+WARN	missing_definition	regulation of response to external stimulus	textual definition	
+WARN	missing_definition	negative regulation of response to external stimulus	textual definition	
+WARN	missing_definition	positive regulation of response to external stimulus	textual definition	
+WARN	missing_definition	regulation of lipid transport	textual definition	
+WARN	missing_definition	negative regulation of lipid transport	textual definition	
+WARN	missing_definition	positive regulation of lipid transport	textual definition	
+WARN	missing_definition	regulation of intracellular transport	textual definition	
+WARN	missing_definition	negative regulation of intracellular transport	textual definition	
+WARN	missing_definition	positive regulation of intracellular transport	textual definition	
+WARN	missing_definition	multicellular organismal process	textual definition	
+WARN	missing_definition	developmental process	textual definition	
+WARN	missing_definition	multicellular organism reproduction	textual definition	
+WARN	missing_definition	plasma membrane bounded cell projection cytoplasm	textual definition	
+WARN	missing_definition	regulation of localization	textual definition	
+WARN	missing_definition	secretion by cell	textual definition	
+WARN	missing_definition	cellular component morphogenesis	textual definition	
+WARN	missing_definition	protein-containing complex	textual definition	
+WARN	missing_definition	macromolecule localization	textual definition	
+WARN	missing_definition	regulation of organelle organization	textual definition	
+WARN	missing_definition	erythrocyte homeostasis	textual definition	
+WARN	missing_definition	tube formation	textual definition	
+WARN	missing_definition	tube morphogenesis	textual definition	
+WARN	missing_definition	tube development	textual definition	
+WARN	missing_definition	multicellular organismal signaling	textual definition	
+WARN	missing_definition	steroid hormone secretion	textual definition	
+WARN	missing_definition	androgen secretion	textual definition	
+WARN	missing_definition	direct ossification	textual definition	
+WARN	missing_definition	somatodendritic compartment	textual definition	
+WARN	missing_definition	locomotion	textual definition	
+WARN	missing_definition	regulation of locomotion	textual definition	
+WARN	missing_definition	negative regulation of locomotion	textual definition	
+WARN	missing_definition	embryonic cleavage	textual definition	
+WARN	missing_definition	positive regulation of locomotion	textual definition	
+WARN	missing_definition	positive regulation of embryonic development	textual definition	
+WARN	missing_definition	cell migration involved in gastrulation	textual definition	
+WARN	missing_definition	regulation of cell population proliferation	textual definition	
+WARN	missing_definition	regulation of membrane potential	textual definition	
+WARN	missing_definition	homeostatic process	textual definition	
+WARN	missing_definition	cell projection	textual definition	
+WARN	missing_definition	neuron projection	textual definition	
+WARN	missing_definition	chordate embryonic development	textual definition	
+WARN	missing_definition	neuronal cell body	textual definition	
+WARN	missing_definition	extracellular structure organization	textual definition	
+WARN	missing_definition	organelle	textual definition	
+WARN	missing_definition	membrane-bounded organelle	textual definition	
+WARN	missing_definition	non-membrane-bounded organelle	textual definition	
+WARN	missing_definition	intracellular organelle	textual definition	
+WARN	missing_definition	extracellular organelle	textual definition	
+WARN	missing_definition	intracellular membrane-bounded organelle	textual definition	
+WARN	missing_definition	intracellular non-membrane-bounded organelle	textual definition	
+WARN	missing_definition	organelle lumen	textual definition	
+WARN	missing_definition	extracellular non-membrane-bounded organelle	textual definition	
+WARN	missing_definition	contractile fiber	textual definition	
+WARN	missing_definition	regulation of respiratory gaseous exchange	textual definition	
+WARN	missing_definition	regulation of system process	textual definition	
+WARN	missing_definition	regulation of digestive system process	textual definition	
+WARN	missing_definition	regulation of endocrine process	textual definition	
+WARN	missing_definition	regulation of respiratory system process	textual definition	
+WARN	missing_definition	cellular component biogenesis	textual definition	
+WARN	missing_definition	regulation of cellular component biogenesis	textual definition	
+WARN	missing_definition	positive regulation of cellular component biogenesis	textual definition	
+WARN	missing_definition	negative regulation of molecular function	textual definition	
+WARN	missing_definition	positive regulation of molecular function	textual definition	
+WARN	missing_definition	cell body	textual definition	
+WARN	missing_definition	obsolete cell part	textual definition	
+WARN	missing_definition	multi-organism reproductive process	textual definition	
+WARN	missing_definition	synapse	textual definition	
+WARN	missing_definition	external encapsulating structure organization	textual definition	
+WARN	missing_definition	regulation of cell differentiation	textual definition	
+WARN	missing_definition	negative regulation of cell differentiation	textual definition	
+WARN	missing_definition	positive regulation of cell differentiation	textual definition	
+WARN	missing_definition	regulation of myeloid cell differentiation	textual definition	
+WARN	missing_definition	negative regulation of myeloid cell differentiation	textual definition	
+WARN	missing_definition	positive regulation of myeloid cell differentiation	textual definition	
+WARN	missing_definition	regulation of erythrocyte differentiation	textual definition	
+WARN	missing_definition	negative regulation of erythrocyte differentiation	textual definition	
+WARN	missing_definition	positive regulation of erythrocyte differentiation	textual definition	
+WARN	missing_definition	regulation of megakaryocyte differentiation	textual definition	
+WARN	missing_definition	negative regulation of megakaryocyte differentiation	textual definition	
+WARN	missing_definition	positive regulation of megakaryocyte differentiation	textual definition	
+WARN	missing_definition	negative regulation of action potential	textual definition	
+WARN	missing_definition	positive regulation of action potential	textual definition	
+WARN	missing_definition	regulation of angiogenesis	textual definition	
+WARN	missing_definition	positive regulation of angiogenesis	textual definition	
+WARN	missing_definition	positive regulation of ossification	textual definition	
+WARN	missing_definition	negative regulation of heart contraction	textual definition	
+WARN	missing_definition	positive regulation of heart contraction	textual definition	
+WARN	missing_definition	negative regulation of muscle contraction	textual definition	
+WARN	missing_definition	positive regulation of muscle contraction	textual definition	
+WARN	missing_definition	negative regulation of striated muscle contraction	textual definition	
+WARN	missing_definition	positive regulation of striated muscle contraction	textual definition	
+WARN	missing_definition	negative regulation of embryonic development	textual definition	
+WARN	missing_definition	regulation of embryonic development	textual definition	
+WARN	missing_definition	hormone secretion	textual definition	
+WARN	missing_definition	regulation of hormone secretion	textual definition	
+WARN	missing_definition	positive regulation of hormone secretion	textual definition	
+WARN	missing_definition	negative regulation of hormone secretion	textual definition	
+WARN	missing_definition	secretion	textual definition	
+WARN	missing_definition	intracellular transport	textual definition	
+WARN	missing_definition	somatic stem cell division	textual definition	
+WARN	missing_definition	mesoderm morphogenesis	textual definition	
+WARN	missing_definition	animal organ development	textual definition	
+WARN	missing_definition	blood vessel morphogenesis	textual definition	
+WARN	missing_definition	positive regulation of biological process	textual definition	
+WARN	missing_definition	negative regulation of biological process	textual definition	
+WARN	missing_definition	positive regulation of behavior	textual definition	
+WARN	missing_definition	negative regulation of behavior	textual definition	
+WARN	missing_definition	positive regulation of cellular process	textual definition	
+WARN	missing_definition	negative regulation of cellular process	textual definition	
+WARN	missing_definition	hematopoietic or lymphoid organ development	textual definition	
+WARN	missing_definition	regulation of post-embryonic development	textual definition	
+WARN	missing_definition	negative regulation of post-embryonic development	textual definition	
+WARN	missing_definition	positive regulation of post-embryonic development	textual definition	
+WARN	missing_definition	regulation of response to stimulus	textual definition	
+WARN	missing_definition	positive regulation of response to stimulus	textual definition	
+WARN	missing_definition	negative regulation of response to stimulus	textual definition	
+WARN	missing_definition	embryonic morphogenesis	textual definition	
+WARN	missing_definition	multicellular organismal reproductive process	textual definition	
+WARN	missing_definition	anatomical structure formation involved in morphogenesis	textual definition	
+WARN	missing_definition	tissue morphogenesis	textual definition	
+WARN	missing_definition	system development	textual definition	
+WARN	missing_definition	branching morphogenesis of an epithelial tube	textual definition	
+WARN	missing_definition	pigment granule	textual definition	
+WARN	missing_definition	anatomical structure development	textual definition	
+WARN	missing_definition	cellular developmental process	textual definition	
+WARN	missing_definition	cell motility	textual definition	
+WARN	missing_definition	multicellular organismal homeostasis	textual definition	
+WARN	missing_definition	homeostasis of number of cells	textual definition	
+WARN	missing_definition	regulation of biological process	textual definition	
+WARN	missing_definition	regulation of developmental process	textual definition	
+WARN	missing_definition	regulation of cellular process	textual definition	
+WARN	missing_definition	regulation of behavior	textual definition	
+WARN	missing_definition	modulation of chemical synaptic transmission	textual definition	
+WARN	missing_definition	negative regulation of synaptic transmission	textual definition	
+WARN	missing_definition	positive regulation of synaptic transmission	textual definition	
+WARN	missing_definition	nervous system process	textual definition	
+WARN	missing_definition	endocrine process	textual definition	
+WARN	missing_definition	response to stimulus	textual definition	
+WARN	missing_definition	detection of stimulus involved in sensory perception	textual definition	
+WARN	missing_definition	detection of light stimulus involved in visual perception	textual definition	
+WARN	missing_definition	sensory perception of light stimulus	textual definition	
+WARN	missing_definition	detection of light stimulus involved in sensory perception	textual definition	
+WARN	missing_definition	regulation of secretion	textual definition	
+WARN	missing_definition	positive regulation of secretion	textual definition	
+WARN	missing_definition	negative regulation of secretion	textual definition	
+WARN	missing_definition	regulation of transport	textual definition	
+WARN	missing_definition	positive regulation of transport	textual definition	
+WARN	missing_definition	negative regulation of transport	textual definition	
+WARN	missing_definition	negative regulation of developmental process	textual definition	
+WARN	missing_definition	positive regulation of developmental process	textual definition	
+WARN	missing_definition	regulation of cellular component organization	textual definition	
+WARN	missing_definition	negative regulation of cellular component organization	textual definition	
+WARN	missing_definition	positive regulation of cellular component organization	textual definition	
+WARN	missing_definition	localization	textual definition	
+WARN	missing_definition	cartilage development	textual definition	
+WARN	missing_definition	establishment of localization	textual definition	
+WARN	missing_definition	regulation of multicellular organismal process	textual definition	
+WARN	missing_definition	positive regulation of multicellular organismal process	textual definition	
+WARN	missing_definition	negative regulation of multicellular organismal process	textual definition	
+WARN	missing_definition	regulation of cellular component movement	textual definition	
+WARN	missing_definition	negative regulation of cellular component movement	textual definition	
+WARN	missing_definition	positive regulation of cellular component movement	textual definition	
+WARN	missing_definition	cell division	textual definition	
+WARN	missing_definition	regulation of cell division	textual definition	
+WARN	missing_definition	detection of stimulus	textual definition	
+WARN	missing_definition	cellular localization	textual definition	
+WARN	missing_definition	establishment of localization in cell	textual definition	
+WARN	missing_definition	localization of cell	textual definition	
+WARN	missing_definition	multi-organism process	textual definition	
+WARN	missing_definition	positive regulation of cell division	textual definition	
+WARN	missing_definition	negative regulation of cell division	textual definition	
+WARN	missing_definition	regulation of sensory perception	textual definition	
+WARN	missing_definition	regulation of nervous system development	textual definition	
+WARN	missing_definition	negative regulation of nervous system development	textual definition	
+WARN	missing_definition	positive regulation of nervous system development	textual definition	
+WARN	missing_definition	regulation of transmission of nerve impulse	textual definition	
+WARN	missing_definition	negative regulation of transmission of nerve impulse	textual definition	
+WARN	missing_definition	positive regulation of transmission of nerve impulse	textual definition	
+WARN	missing_definition	regulation of cardiac muscle contraction	textual definition	
+WARN	missing_definition	negative regulation of cardiac muscle contraction	textual definition	
+WARN	missing_definition	heart contraction	textual definition	
+WARN	missing_definition	cardiac muscle contraction	textual definition	
+WARN	missing_definition	regulation of cellular localization	textual definition	
+WARN	missing_definition	epithelium development	textual definition	
+WARN	missing_definition	positive regulation of cardiac muscle contraction	textual definition	
+WARN	missing_definition	positive regulation of digestive system process	textual definition	
+WARN	missing_definition	negative regulation of digestive system process	textual definition	
+WARN	missing_definition	epithelial tube morphogenesis	textual definition	
+WARN	missing_definition	regulation of morphogenesis of a branching structure	textual definition	
+WARN	missing_definition	endocrine hormone secretion	textual definition	
+WARN	missing_definition	regulation of cartilage development	textual definition	
+WARN	missing_definition	positive regulation of cartilage development	textual definition	
+WARN	missing_definition	negative regulation of cartilage development	textual definition	
+WARN	missing_definition	morphogenesis of a branching epithelium	textual definition	
+WARN	missing_definition	connective tissue development	textual definition	
+WARN	missing_definition	collagen-containing extracellular matrix	textual definition	
+WARN	missing_definition	biological regulation	textual definition	
+WARN	missing_definition	regulation of biological quality	textual definition	
+WARN	missing_definition	regulation of molecular function	textual definition	
+WARN	missing_definition	extracellular membrane-bounded organelle	textual definition	
+WARN	missing_definition	intracellular organelle lumen	textual definition	
+WARN	missing_definition	anchoring junction	textual definition	
+WARN	missing_definition	extracellular matrix constituent secretion	textual definition	
+WARN	missing_definition	organelle assembly	textual definition	
+WARN	missing_definition	organic substance transport	textual definition	
+WARN	missing_definition	cellular component organization or biogenesis	textual definition	
+WARN	missing_definition	cell periphery	textual definition	
+WARN	missing_definition	elastic fiber	textual definition	
+WARN	missing_definition	extracellular exosome assembly	textual definition	
+WARN	missing_definition	epithelial tube formation	textual definition	
+WARN	missing_definition	negative regulation of mesenchymal cell proliferation	textual definition	
+WARN	missing_definition	circulatory system development	textual definition	
+WARN	missing_definition	regulation of muscle system process	textual definition	
+WARN	missing_definition	ciliary plasm	textual definition	
+WARN	missing_definition	synaptic membrane	textual definition	
+WARN	missing_definition	intracellular vesicle	textual definition	
+WARN	missing_definition	extracellular exosome biogenesis	textual definition	
+WARN	missing_definition	plasma membrane region	textual definition	
+WARN	missing_definition	network-forming collagen trimer	textual definition	
+WARN	missing_definition	banded collagen fibril	textual definition	
+WARN	missing_definition	complex of collagen trimers	textual definition	
+WARN	missing_definition	collagen network	textual definition	
+WARN	missing_definition	basement membrane collagen trimer	textual definition	
+WARN	missing_definition	membrane protein complex	textual definition	
+WARN	missing_definition	plasma membrane protein complex	textual definition	
+WARN	missing_definition	regulation of action potential	textual definition	
+WARN	missing_definition	anterograde trans-synaptic signaling	textual definition	
+WARN	missing_definition	supramolecular complex	textual definition	
+WARN	missing_definition	supramolecular polymer	textual definition	
+WARN	missing_definition	regulation of trans-synaptic signaling	textual definition	
+WARN	missing_definition	supramolecular fiber	textual definition	
+WARN	missing_definition	synaptic signaling	textual definition	
+WARN	missing_definition	trans-synaptic signaling	textual definition	
+WARN	missing_definition	trans-synaptic signaling, modulating synaptic transmission	textual definition	
+WARN	missing_definition	cytoplasmic region	textual definition	
+WARN	missing_definition	signal release from synapse	textual definition	
+WARN	missing_definition	cell cortex region	textual definition	
+WARN	missing_definition	cellular anatomical entity	textual definition	
+WARN	missing_definition	plasma membrane bounded cell projection	textual definition	
+WARN	missing_definition	neuron projection cytoplasm	textual definition	
+WARN	missing_definition	extracellular vesicle biogenesis	textual definition	
+WARN	missing_definition	export from cell	textual definition	
+WARN	missing_definition	lipid export from cell	textual definition	
+WARN	missing_definition	nuclear protein-containing complex	textual definition	
+WARN	missing_definition	regulation of vasculature development	textual definition	
+WARN	missing_definition	negative regulation of vasculature development	textual definition	
+WARN	missing_definition	regulation of hematopoietic progenitor cell differentiation	textual definition	
+WARN	missing_definition	negative regulation of hematopoietic progenitor cell differentiation	textual definition	
+WARN	missing_definition	positive regulation of hematopoietic progenitor cell differentiation	textual definition	
+WARN	missing_definition	regulation of organelle assembly	textual definition	
+WARN	missing_definition	negative regulation of organelle assembly	textual definition	
+WARN	missing_definition	positive regulation of organelle assembly	textual definition	
+WARN	missing_definition	regulation of extracellular matrix organization	textual definition	
+WARN	missing_definition	negative regulation of extracellular matrix organization	textual definition	
+WARN	missing_definition	positive regulation of extracellular matrix organization	textual definition	
+WARN	missing_definition	regulation of blood circulation	textual definition	
+WARN	missing_definition	negative regulation of blood circulation	textual definition	
+WARN	missing_definition	positive regulation of blood circulation	textual definition	
+WARN	missing_definition	regulation of secretion by cell	textual definition	
+WARN	missing_definition	negative regulation of secretion by cell	textual definition	
+WARN	missing_definition	positive regulation of secretion by cell	textual definition	
+WARN	missing_definition	regulation of extracellular exosome assembly	textual definition	
+WARN	missing_definition	negative regulation of extracellular exosome assembly	textual definition	
+WARN	missing_definition	positive regulation of extracellular exosome assembly	textual definition	
+WARN	missing_definition	extracellular vesicle	textual definition	
+WARN	missing_definition	regulation of hemopoiesis	textual definition	
+WARN	missing_definition	negative regulation of hemopoiesis	textual definition	
+WARN	missing_definition	positive regulation of hemopoiesis	textual definition	
+WARN	missing_definition	negative regulation of respiratory gaseous exchange	textual definition	
+WARN	missing_definition	positive regulation of respiratory gaseous exchange	textual definition	
+WARN	missing_definition	positive regulation of vasculature development	textual definition	
+WARN	missing_definition	regulation of somatic stem cell division	textual definition	
+WARN	missing_definition	negative regulation of somatic stem cell division	textual definition	
+WARN	missing_definition	positive regulation of somatic stem cell division	textual definition	
+WARN	missing_definition	regulation of epithelial tube formation	textual definition	
+WARN	missing_definition	negative regulation of epithelial tube formation	textual definition	
+WARN	missing_definition	positive regulation of epithelial tube formation	textual definition	
+WARN	missing_definition	regulation of morphogenesis of an epithelium	textual definition	
+WARN	missing_definition	negative regulation of morphogenesis of an epithelium	textual definition	
+WARN	missing_definition	positive regulation of morphogenesis of an epithelium	textual definition	
+WARN	missing_definition	regulation of blood vessel branching	textual definition	
+WARN	missing_definition	negative regulation of vessel branching	textual definition	
+WARN	missing_definition	positive regulation of blood vessel branching	textual definition	
+WARN	missing_definition	regulation of mesoderm formation	textual definition	
+WARN	missing_definition	negative regulation of mesoderm formation	textual definition	
+WARN	missing_definition	positive regulation of mesoderm formation	textual definition	
+WARN	missing_definition	regulation of lipid localization	textual definition	
+WARN	missing_definition	negative regulation of lipid localization	textual definition	
+WARN	missing_definition	positive regulation of lipid localization	textual definition	
+WARN	missing_definition	regulation of multicellular organismal development	textual definition	
+WARN	missing_definition	regulation of stem cell division	textual definition	
+WARN	missing_definition	regulation of cell motility	textual definition	
+WARN	missing_definition	negative regulation of cell motility	textual definition	
+WARN	missing_definition	positive regulation of cell motility	textual definition	
+WARN	missing_definition	negative regulation of blood vessel morphogenesis	textual definition	
+WARN	missing_definition	regulation of reproductive process	textual definition	
+WARN	missing_definition	negative regulation of reproductive process	textual definition	
+WARN	missing_definition	positive regulation of reproductive process	textual definition	
+WARN	missing_definition	regulation of mesoderm development	textual definition	
+WARN	missing_definition	negative regulation of mesoderm development	textual definition	
+WARN	missing_definition	positive regulation of mesoderm development	textual definition	
+WARN	missing_definition	regulation of ectoderm development	textual definition	
+WARN	missing_definition	negative regulation of ectoderm development	textual definition	
+WARN	missing_definition	positive regulation of ectoderm development	textual definition	
+WARN	missing_definition	negative regulation of gastrulation	textual definition	
+WARN	missing_definition	positive regulation of gastrulation	textual definition	
+WARN	missing_definition	regulation of steroid hormone secretion	textual definition	
+WARN	missing_definition	negative regulation of steroid hormone secretion	textual definition	
+WARN	missing_definition	positive regulation of steroid hormone secretion	textual definition	
+WARN	missing_definition	regulation of androgen secretion	textual definition	
+WARN	missing_definition	negative regulation of androgen secretion	textual definition	
+WARN	missing_definition	positive regulation of androgen secretion	textual definition	
 WARN	missing_definition	has measurement value	textual definition	
 WARN	missing_definition	has measurement unit label	textual definition	
+WARN	missing_definition	editor note	textual definition	
+WARN	missing_definition	body part movement	textual definition	
+WARN	missing_definition	mouth movement	textual definition	
+WARN	missing_definition	chewing	textual definition	
+WARN	missing_definition	behavior process	textual definition	
+WARN	missing_definition	kinesthetic behavior	textual definition	
+WARN	missing_definition	jaw movement	textual definition	
 WARN	missing_definition	root	textual definition	
 WARN	missing_definition	Viruses	textual definition	
 WARN	missing_definition	Teleostomi	textual definition	
@@ -456,7 +1243,42 @@ WARN	missing_definition	Hominidae	textual definition
 WARN	missing_definition	Homo	textual definition	
 WARN	missing_definition	Homo sapiens	textual definition	
 WARN	missing_definition	qualitative	textual definition	
+WARN	missing_definition	closure	textual definition	
+WARN	missing_definition	branched	textual definition	
+WARN	missing_definition	flat	textual definition	
+WARN	missing_definition	closed	textual definition	
+WARN	missing_definition	transparent	textual definition	
+WARN	missing_definition	elasticity	textual definition	
+WARN	missing_definition	elastic	textual definition	
+WARN	missing_definition	contractility	textual definition	
+WARN	missing_definition	curvature	textual definition	
+WARN	missing_definition	contractile	textual definition	
+WARN	missing_definition	cylindrical	textual definition	
+WARN	missing_definition	saccular	textual definition	
+WARN	missing_definition	cellularity	textual definition	
+WARN	missing_definition	multicellular	textual definition	
+WARN	missing_definition	convex 3-D shape	textual definition	
+WARN	missing_definition	branchiness	textual definition	
+WARN	missing_definition	structure, cavities	textual definition	
+WARN	missing_definition	dendritic	textual definition	
+WARN	missing_definition	hollow	textual definition	
 WARN	missing_definition	sloped downward	textual definition	
+WARN	missing_definition	flattened	textual definition	
+WARN	missing_definition	3-D shape	textual definition	
+WARN	missing_definition	tubular	textual definition	
+WARN	missing_definition	acinar	textual definition	
+WARN	missing_definition	collagenous	textual definition	
+WARN	missing_definition	protein	textual definition	
+WARN	missing_definition	CD34 molecule	textual definition	
+WARN	missing_definition	cadherin	textual definition	
+WARN	missing_definition	cadherin-5	textual definition	
+WARN	missing_definition	transferrin receptor protein 1	textual definition	
+WARN	missing_definition	vascular endothelial growth factor receptor	textual definition	
+WARN	missing_definition	vascular endothelial growth factor receptor 2	textual definition	
+WARN	missing_definition	fibroblast growth factor 8	textual definition	
+WARN	missing_definition	sonic hedgehog protein	textual definition	
+WARN	missing_definition	T-cell acute lymphocytic leukemia protein 1	textual definition	
+WARN	missing_definition	amino acid chain	textual definition	
 WARN	missing_definition	radionuclide	textual definition	
 WARN	missing_definition	actinide	textual definition	
 WARN	missing_definition	actinium	textual definition	
@@ -513,48 +1335,30 @@ WARN	missing_definition	lifetime risk estimate	textual definition
 WARN	missing_definition	biological process	textual definition	
 WARN	missing_definition	cellular process	textual definition	
 WARN	missing_definition	mass number	textual definition	
-WARN	missing_definition	location_of	textual definition	
+WARN	missing_definition	contained in	textual definition	
 WARN	missing_definition	contains	textual definition	
-WARN	missing_definition	has boundary	textual definition	
 WARN	missing_definition	has component activity	textual definition	
 WARN	missing_definition	directly regulated by	textual definition	
 WARN	missing_definition	during which ends	textual definition	
 WARN	missing_definition	ends after	textual definition	
 WARN	missing_definition	immediately precedes	textual definition	
-WARN	missing_definition	continuous_with	textual definition	
-WARN	missing_definition	drains	textual definition	
 WARN	missing_definition	temporally related to	textual definition	
-WARN	missing_definition	starts with	textual definition	
-WARN	missing_definition	ends with	textual definition	
-WARN	missing_definition	developmentally_replaces	textual definition	
+WARN	missing_definition	part of developmental precursor of	textual definition	
 WARN	missing_definition	results in formation of	textual definition	
 WARN	missing_definition	causally upstream of, positive effect	textual definition	
 WARN	missing_definition	causally upstream of, negative effect	textual definition	
 WARN	missing_definition	enables	textual definition	
 WARN	missing_definition	formed as result of	textual definition	
-WARN	missing_definition	attaches_to	textual definition	
-WARN	missing_definition	tributary_of	textual definition	
-WARN	missing_definition	branching_part_of	textual definition	
 WARN	missing_definition	immediately causally downstream of	textual definition	
-WARN	missing_definition	contributes to morphology of	textual definition	
 WARN	missing_definition	phosphorylates	textual definition	
 WARN	missing_definition	helper property (not for use in curation)	textual definition	
 WARN	missing_definition	is kinase activity	textual definition	
-WARN	missing_definition	existence starts and ends during	textual definition	
-WARN	missing_definition	transformation of	textual definition	
-WARN	missing_definition	immediate transformation of	textual definition	
-WARN	missing_definition	existence starts during or after	textual definition	
-WARN	missing_definition	existence ends during or before	textual definition	
+WARN	missing_definition	relation between physical entity and a process or stage	textual definition	
 WARN	missing_definition	depends on	textual definition	
 WARN	missing_definition	causal relation between entities	textual definition	
 WARN	missing_definition	causally influenced by	textual definition	
 WARN	missing_definition	interaction relation helper property	textual definition	
 WARN	missing_definition	molecular interaction relation helper property	textual definition	
-WARN	missing_definition	has branching part	textual definition	
-WARN	missing_definition	luminal space of	textual definition	
-WARN	missing_definition	skeleton of	textual definition	
-WARN	missing_definition	produces	textual definition	
-WARN	missing_definition	produced_by	textual definition	
 WARN	missing_definition	acts upstream of or within, positive effect	textual definition	
 WARN	missing_definition	acts upstream of or within, negative effect	textual definition	
 WARN	missing_definition	causally upstream of or within, negative effect	textual definition	
@@ -564,25 +1368,39 @@ WARN	missing_definition	posterior region of body	textual definition
 WARN	missing_definition	subdivision of head	textual definition	
 WARN	missing_definition	posterior neural tube	textual definition	
 WARN	missing_definition	anterior neural tube	textual definition	
+WARN	missing_definition	right horn of sinus venosus	textual definition	
+WARN	missing_definition	outflow tract pulmonary component	textual definition	
 WARN	missing_definition	developing anatomical structure	textual definition	
+WARN	missing_definition	left dorsal aorta	textual definition	
+WARN	missing_definition	right dorsal aorta	textual definition	
+WARN	missing_definition	pre-muscle condensation	textual definition	
+WARN	missing_definition	zone of bone organ	textual definition	
 WARN	missing_definition	posterior surface of head	textual definition	
+WARN	missing_definition	common atrial chamber	textual definition	
 WARN	missing_definition	future spinal cord	textual definition	
 WARN	missing_definition	presumptive blood	textual definition	
 WARN	missing_definition	presumptive gut	textual definition	
 WARN	missing_definition	1st arch mandibular component	textual definition	
+WARN	missing_definition	respiratory primordium	textual definition	
 WARN	missing_definition	pharyngeal region of foregut	textual definition	
+WARN	missing_definition	indifferent external genitalia	textual definition	
 WARN	missing_definition	subdivision of trunk	textual definition	
 WARN	missing_definition	midbrain mantle layer	textual definition	
 WARN	missing_definition	spinal cord mantle layer	textual definition	
 WARN	missing_definition	midbrain hindbrain boundary neural plate	textual definition	
 WARN	missing_definition	trunk paraxial mesoderm	textual definition	
+WARN	missing_definition	artery of lip	textual definition	
 WARN	missing_definition	entire pharyngeal arch endoderm	textual definition	
+WARN	missing_definition	sac	textual definition	
 WARN	missing_definition	anterior lateral plate mesoderm	textual definition	
 WARN	missing_definition	optic neural crest	textual definition	
+WARN	missing_definition	aortic system	textual definition	
 WARN	missing_definition	germ layer / neural crest	textual definition	
 WARN	missing_definition	primary subdivision of cranial skeletal system	textual definition	
 WARN	missing_definition	intra-ocular muscle	textual definition	
+WARN	missing_definition	fibrous membrane of synovial tendon sheath	textual definition	
 WARN	missing_definition	embryonic skin basal layer	textual definition	
+WARN	missing_definition	lumen of gastrointestinal system	textual definition	
 WARN	missing_definition	future lower lip	textual definition	
 WARN	missing_definition	fibrous connective tissue	textual definition	
 WARN	missing_definition	collection of collagen fibrils	textual definition	
@@ -593,7 +1411,11 @@ WARN	missing_definition	subepicardial layer of epicardium	textual definition
 WARN	missing_definition	heart plus pericardium	textual definition	
 WARN	missing_definition	heterogeneous tissue	textual definition	
 WARN	missing_definition	lamina of gray matter of spinal cord	textual definition	
+WARN	missing_definition	fibrocollagenous connective tissue	textual definition	
+WARN	missing_definition	skeletal musculature	textual definition	
 WARN	missing_definition	cardiac muscle tissue of ventricle	textual definition	
+WARN	missing_definition	reproductive system mucosa	textual definition	
+WARN	missing_definition	carotid artery endothelium	textual definition	
 WARN	missing_definition	gray matter of hindbrain	textual definition	
 WARN	missing_definition	gray matter of midbrain	textual definition	
 WARN	missing_definition	sensory organ epithelium	textual definition	
@@ -605,14 +1427,25 @@ WARN	missing_definition	gland lumen	textual definition
 WARN	missing_definition	zone of organ	textual definition	
 WARN	missing_definition	epithelial layer of duct	textual definition	
 WARN	missing_definition	jaw epithelium	textual definition	
+WARN	missing_definition	branch of external carotid artery	textual definition	
 WARN	missing_definition	uveal vein	textual definition	
 WARN	missing_definition	cavity of cardiac chamber	textual definition	
 WARN	missing_definition	serous cavity	textual definition	
 WARN	missing_definition	wall of blood vessel	textual definition	
+WARN	missing_definition	respiratory primordium epithelium	textual definition	
+WARN	missing_definition	respiratory primordium mesenchyme	textual definition	
+WARN	missing_definition	fibroelastic connective tissue	textual definition	
 WARN	missing_definition	orifice of skull	textual definition	
+WARN	missing_definition	pelvic vein	textual definition	
+WARN	missing_definition	anterior wall of left ventricle	textual definition	
+WARN	missing_definition	myocardium of anterior wall of left ventricle	textual definition	
+WARN	missing_definition	myocardium of anterior wall of right ventricle	textual definition	
 WARN	missing_definition	vasculature of central nervous system plus retina	textual definition	
 WARN	missing_definition	vasculature of central nervous system	textual definition	
+WARN	missing_definition	wall of pulmonary artery	textual definition	
+WARN	missing_definition	wall of synovial tendon sheath	textual definition	
 WARN	missing_definition	wall of eyeball	textual definition	
+WARN	missing_definition	wall of common carotid artery	textual definition	
 WARN	missing_definition	unit	textual definition	
 WARN	missing_definition	electric current unit	textual definition	
 WARN	missing_definition	temperature unit	textual definition	
@@ -1085,6 +1918,7 @@ WARN	missing_definition	gray per minute based unit	textual definition
 WARN	missing_definition	abbreviation	textual definition	
 WARN	missing_definition	channel for	textual definition	
 WARN	missing_definition	channels_from	textual definition	
+WARN	missing_definition	channels_into	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
 WARN	missing_definition	creator	textual definition	
@@ -1140,16 +1974,44 @@ WARN	duplicate_scoped_synonym	immediately preceded by	alternative term	starts_at
 WARN	duplicate_scoped_synonym	immediately preceded by	has_exact_synonym	starts_at_end_of
 WARN	duplicate_scoped_synonym	zygote stage	has_exact_synonym	fertilized egg stage
 WARN	duplicate_scoped_synonym	zygote stage	oboInOwl:hasRelatedSynonym	fertilized egg stage
+WARN	duplicate_scoped_synonym	respiratory tube	has_exact_synonym	segment of tracheobronchial tree
+WARN	duplicate_scoped_synonym	respiratory tube	oboInOwl:hasNarrowSynonym	segment of tracheobronchial tree
 WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
 WARN	duplicate_scoped_synonym	respiratory system	oboInOwl:hasRelatedSynonym	apparatus respiratorius
 WARN	duplicate_scoped_synonym	sensory system	has_exact_synonym	organa sensuum
 WARN	duplicate_scoped_synonym	sensory system	oboInOwl:hasRelatedSynonym	organa sensuum
+WARN	duplicate_scoped_synonym	descending aorta	has_exact_synonym	pars descendens aortae
+WARN	duplicate_scoped_synonym	descending aorta	oboInOwl:hasRelatedSynonym	pars descendens aortae
+WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	abdominal part of aorta
+WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	pars abdominalis aortae
+WARN	duplicate_scoped_synonym	abdominal aorta	oboInOwl:hasRelatedSynonym	abdominal part of aorta
+WARN	duplicate_scoped_synonym	abdominal aorta	oboInOwl:hasRelatedSynonym	pars abdominalis aortae
 WARN	duplicate_scoped_synonym	optic choroid	has_exact_synonym	choroidea
 WARN	duplicate_scoped_synonym	optic choroid	oboInOwl:hasRelatedSynonym	choroidea
+WARN	duplicate_scoped_synonym	sinoatrial node	has_exact_synonym	nodus sinuatrialis
+WARN	duplicate_scoped_synonym	sinoatrial node	oboInOwl:hasRelatedSynonym	nodus sinuatrialis
+WARN	duplicate_scoped_synonym	atrioventricular node	has_exact_synonym	nodus atrioventricularis
+WARN	duplicate_scoped_synonym	atrioventricular node	oboInOwl:hasRelatedSynonym	nodus atrioventricularis
+WARN	duplicate_scoped_synonym	endocrine gland	has_exact_synonym	ductless gland
+WARN	duplicate_scoped_synonym	endocrine gland	oboInOwl:hasRelatedSynonym	ductless gland
+WARN	duplicate_scoped_synonym	esophagus mucosa	has_exact_synonym	tunica mucosa oesophagi
+WARN	duplicate_scoped_synonym	esophagus mucosa	oboInOwl:hasRelatedSynonym	tunica mucosa oesophagi
+WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_exact_synonym	hindlimb ectoderm
+WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	oboInOwl:hasNarrowSynonym	hindlimb ectoderm
+WARN	duplicate_scoped_synonym	abdominal wall	has_exact_synonym	paries abdominalis
+WARN	duplicate_scoped_synonym	abdominal wall	oboInOwl:hasRelatedSynonym	paries abdominalis
 WARN	duplicate_scoped_synonym	mouth mucosa	has_exact_synonym	tunica mucosa oris
 WARN	duplicate_scoped_synonym	mouth mucosa	oboInOwl:hasRelatedSynonym	tunica mucosa oris
 WARN	duplicate_scoped_synonym	cardiac vein	has_exact_synonym	coronary vein
 WARN	duplicate_scoped_synonym	cardiac vein	oboInOwl:hasRelatedSynonym	coronary vein
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	branchial aortic arches
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	oboInOwl:hasRelatedSynonym	branchial aortic arches
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	oboInOwl:hasRelatedSynonym	pharyngeal arch artery
+WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_exact_synonym	muscular interventricular septum
+WARN	duplicate_scoped_synonym	interventricular septum muscular part	oboInOwl:hasRelatedSynonym	muscular interventricular septum
+WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_exact_synonym	pulmonary conus
+WARN	duplicate_scoped_synonym	outflow part of right ventricle	oboInOwl:hasRelatedSynonym	pulmonary conus
 WARN	duplicate_scoped_synonym	corneo-scleral junction	has_exact_synonym	limbus corneae
 WARN	duplicate_scoped_synonym	corneo-scleral junction	oboInOwl:hasRelatedSynonym	limbus corneae
 WARN	duplicate_scoped_synonym	craniocervical region musculature	has_exact_synonym	head or neck muscle
@@ -1164,18 +2026,28 @@ INFO	lowercase_definition	specifically dependent continuant	textual definition	<
 INFO	lowercase_definition	specifically dependent continuant	textual definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
 INFO	lowercase_definition	role	IAO:0000600	<b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en>
 INFO	lowercase_definition	generically dependent continuant	textual definition	<b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en>
+INFO	lowercase_definition	part_of	textual definition	a core relation that holds between a part and its whole
 INFO	lowercase_definition	part_of	textual definition	a core relation that holds between a part and its whole@en
-INFO	lowercase_definition	has part	textual definition	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part
+INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
 INFO	lowercase_definition	realized in	IAO:0000600	<[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en>
 INFO	lowercase_definition	realizes	IAO:0000600	<to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en>
 INFO	lowercase_definition	preceded_by	textual definition	<x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
 INFO	lowercase_definition	precedes	textual definition	<x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en>
 INFO	lowercase_definition	occurs in	textual definition	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
 INFO	lowercase_definition	contains process	textual definition	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+INFO	lowercase_definition	anterior_to	textual definition	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
 INFO	lowercase_definition	anterior_to	textual definition	<x anterior_to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail: bearer>
+INFO	lowercase_definition	dorsal_to	textual definition	x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	dorsal_to	textual definition	x dorsal_to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
-INFO	lowercase_definition	posterior_to	textual definition	x posterior_to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail.
+INFO	lowercase_definition	posterior to	textual definition	x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
+INFO	lowercase_definition	posterior to	textual definition	x posterior_to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that bisects an organism from head end to opposite end of body or tail.
+INFO	lowercase_definition	ventral_to	textual definition	x ventral to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
+INFO	lowercase_definition	in_proximal_side_of	textual definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
+INFO	lowercase_definition	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
+INFO	lowercase_definition	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+INFO	lowercase_definition	immediately superficial to	textual definition	x immediately superficial to y iff x superficial to y and x is contiguous with y.
 INFO	lowercase_definition	partially_surrounded_by	textual definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
 INFO	lowercase_definition	is quality measurement of	textual definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en
 INFO	lowercase_definition	denoted by	textual definition	inverse of the relation 'denotes'@en
@@ -1198,39 +2070,65 @@ INFO	lowercase_definition	RARAF 5.5 MV microbeam	textual definition	<https://www
 INFO	lowercase_definition	Swift HALE	textual definition	<https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights>
 INFO	lowercase_definition	ER-2	textual definition	<https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html>
 INFO	lowercase_definition	WB-57	textual definition	<https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC>
+INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	function of	textual definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	quality of	textual definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	role of	textual definition	a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	has function	textual definition	a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	has quality	textual definition	a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	has role	textual definition	a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	has disposition	textual definition	a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence@en
+INFO	lowercase_definition	disposition of	textual definition	inverse of has disposition
 INFO	lowercase_definition	derives from	textual definition	a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en
+INFO	lowercase_definition	location_of	textual definition	a relation between two independent continuants, the location and the target, in which the target is entirely within the location@en
 INFO	lowercase_definition	located in	textual definition	a relation between two independent continuants, the target and the location, in which the target is entirely within the location@en
+INFO	lowercase_definition	2D boundary of	textual definition	a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity@en
+INFO	lowercase_definition	has 2D boundary	textual definition	a relation between a material entity and a 2D immaterial entity (the boundary), in which the boundary delimits the material entity@en
 INFO	lowercase_definition	has component process	textual definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
+INFO	lowercase_definition	overlaps	textual definition	x overlaps y iff they have some part in common.
+INFO	lowercase_definition	only in taxon	textual definition	x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.
+INFO	lowercase_definition	in taxon	textual definition	<x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed.>
+INFO	lowercase_definition	connected to	textual definition	a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b
+INFO	lowercase_definition	connects	textual definition	c connects a if and only if there exist some b such that a and b are similar parts of the same system, and c connects b, specifically, c connects a with b. When one structure connects two others it unites some aspect of the function or role they play within the system.
+INFO	lowercase_definition	attached to part of	textual definition	a is attached to part of b if a is attached to b, or a is attached to some p, where p is part of b.
+INFO	lowercase_definition	supplies	textual definition	relation between an artery and the structure is supplies with blood.
 INFO	lowercase_definition	has component	textual definition	w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	develops from	textual definition	x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y
 INFO	lowercase_definition	develops_into	textual definition	inverse of develops from
+INFO	lowercase_definition	directly develops into	textual definition	inverse of directly develops from
 INFO	lowercase_definition	regulates	textual definition	<process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.>
 INFO	lowercase_definition	capable of part of	textual definition	c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p.
 INFO	lowercase_definition	surrounded by	textual definition	x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x
 INFO	lowercase_definition	surrounded by	textual definition	<x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y>
 INFO	lowercase_definition	adjacent_to	textual definition	x adjacent to y if and only if x and y share a boundary.
 INFO	lowercase_definition	adjacent_to	textual definition	<x adjacent_to y iff: x and y share a boundary>
+INFO	lowercase_definition	surrounds	textual definition	inverse of surrounded by
 INFO	lowercase_definition	surrounds	textual definition	inverse of surrounded_by
+INFO	lowercase_definition	starts	textual definition	inverse of starts with
+INFO	lowercase_definition	starts with	textual definition	<x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) < ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.>
+INFO	lowercase_definition	develops from part of	textual definition	x develops from part of y if and only if there exists some z such that x develops from z and z is part of y
+INFO	lowercase_definition	develops in	textual definition	x develops_in y if x is located in y whilst x is developing
 INFO	lowercase_definition	ends	textual definition	inverse of ends with
+INFO	lowercase_definition	ends with	textual definition	<x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.>
+INFO	lowercase_definition	has start location	textual definition	x 'has starts location' y if and only if there exists some process z such that x 'starts with' z and z 'occurs in' y
+INFO	lowercase_definition	has end location	textual definition	x 'has end location' y if and only if there exists some process z such that x 'ends with' z and z 'occurs in' y
 INFO	lowercase_definition	has input	textual definition	<p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.>
 INFO	lowercase_definition	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.
 INFO	lowercase_definition	has developmental contribution from	textual definition	x has developmental contribution from y iff x has some part z such that z develops from y@en
 INFO	lowercase_definition	developmentally contributes to	textual definition	inverse of has developmental contribution from
 INFO	lowercase_definition	developmentally_induced_by	textual definition	<t1 developmentally_induced_by t2 if there is a process of organ induction (GO:0001759) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor tissue type T to T', where T' develops_from T.>
+INFO	lowercase_definition	developmentally_induced_by	textual definition	<t1 induced_by t2 if there is a process of developmental induction (GO:0031128) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor anatomical structure type T to T', where T' develops_from T>
 INFO	lowercase_definition	acts upstream of	textual definition	c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes.
 INFO	lowercase_definition	acts upstream of or within	textual definition	c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.
+INFO	lowercase_definition	developmentally replaces	textual definition	x developmentally replaces y if and only if there is some developmental process that causes x to move or to cease to exist, and for the site that was occupied by x to become occupied by y, where y either comes into existence in this site or moves to this site from somewhere else
 INFO	lowercase_definition	results in developmental progression of	textual definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
 INFO	lowercase_definition	has habitat	textual definition	<x 'has habitat' y if and only if: x is an organism, y is a habitat, and y can sustain and allow the growth of a population of xs.>
+INFO	lowercase_definition	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
 INFO	lowercase_definition	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
 INFO	lowercase_definition	part of structure that is capable of	textual definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
 INFO	lowercase_definition	involved in	textual definition	c involved_in p if and only if c enables some process p', and p' is part of p
@@ -1242,11 +2140,19 @@ INFO	lowercase_definition	member of	textual definition	is member of is a mereolo
 INFO	lowercase_definition	has member	textual definition	has member is a mereological relation between a collection and an item.
 INFO	lowercase_definition	input of	textual definition	inverse of has input
 INFO	lowercase_definition	output of	textual definition	inverse of has output
+INFO	lowercase_definition	attaches_to	textual definition	a is attached to b if and only if a and b are discrete objects or object parts, and there are physical connections between a and b such that a force pulling a will move b, or a force pulling b will move a
+INFO	lowercase_definition	has muscle insertion	textual definition	m has_muscle_insertion s iff m is attaches_to s, and it is the case that when m contracts, s moves. Insertions are usually connections of muscle via tendon to bone.
+INFO	lowercase_definition	has muscle insertion	textual definition	m has_muscle_insertion s iff m is attaches_to s, and it is the case that when m contracts, s moves. Insertions are usually connections of muscle via tendon to bone.@en
+INFO	lowercase_definition	tributary_of	textual definition	x tributary_of y if and only if x a channel for the flow of a substance into y, where y is larger than x. If x and y are hydrographic features, then y is the main stem of a river, or a lake or bay, but not the sea or ocean. If x and y are anatomical, then y is a vein.
+INFO	lowercase_definition	spatially coextensive with	textual definition	x spatially_coextensive_with y if and inly if x and y have the same location
+INFO	lowercase_definition	branching_part_of	textual definition	x is a branching part of y if and only if x is part of y and x is connected directly or indirectly to the main stem of y
 INFO	lowercase_definition	has developmental potential involving	textual definition	x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction).@en
 INFO	lowercase_definition	has potential to developmentally contribute to	textual definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y
 INFO	lowercase_definition	has potential to developmentally contribute to	textual definition	x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y@en
+INFO	lowercase_definition	has potential to developmentally induce	textual definition	x has potential to developmentally induce y iff x developmentally induces y or x is capable of developmentally inducing y@en
 INFO	lowercase_definition	has potential to develop into	textual definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y
 INFO	lowercase_definition	has potential to develop into	textual definition	x has the potential to develop into y iff x develops into y or if x is capable of developing into y@en
+INFO	lowercase_definition	has potential to directly develop into	textual definition	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y
 INFO	lowercase_definition	has potential to directly develop into	textual definition	x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y@en
 INFO	lowercase_definition	causally downstream of	textual definition	inverse of upstream of
 INFO	lowercase_definition	causally upstream of	textual definition	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
@@ -1258,20 +2164,42 @@ INFO	lowercase_definition	involved in positive regulation of	textual definition	
 INFO	lowercase_definition	involved in negative regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
 INFO	lowercase_definition	involved in or involved in regulation of	textual definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
 INFO	lowercase_definition	is active in	textual definition	c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.
+INFO	lowercase_definition	contributes to morphology of	textual definition	<p contributes to morphology of w if and only if a change in the morphology of p entails a change in the morphology of w. Examples: every skull contributes to morphology of the head which it is a part of. Counter-example: nuclei do not generally contribute to the morphology of the cell they are part of, as they are buffered by cytoplasm.>
 INFO	lowercase_definition	composed primarily of	textual definition	x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.
 INFO	lowercase_definition	composed primarily of	textual definition	<x composed_primarily_of y iff: more than half of the mass of x is made from parts of y>
 INFO	lowercase_definition	has part that occurs in	textual definition	p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.
+INFO	lowercase_definition	existence starts during	textual definition	<x existence starts during y if and only if the time point at which x starts is after or equivalent to the time point at which y starts and before or equivalent to the time point at which y ends. Formally: x existence starts during y iff α(x) >= α(y) & α(x) <= ω(y).>
+INFO	lowercase_definition	existence starts with	textual definition	<x starts ends with y if and only if the time point at which x starts is equivalent to the time point at which y starts. Formally: x existence starts with y iff α(x) = α(y).>
+INFO	lowercase_definition	existence overlaps	textual definition	<x existence overlaps y if and only if either (a) the start of x is part of y or (b) the end of x is part of y. Formally: x existence starts and ends during y iff (α(x) >= α(y) & α(x) <= ω(y)) OR (ω(x) <= ω(y) & ω(x) >= α(y))>
+INFO	lowercase_definition	existence starts and ends during	textual definition	<x exists during y if and only if: 1) the time point at which x begins to exist is after or equal to the time point at which y begins and 2) the time point at which x ceases to exist is before or equal to the point at which y ends. Formally: x existence starts and ends during y iff α(x) >= α(y) & α(x) <= ω(y) & ω(x) <= ω(y) & ω(x) >= α(y)>
+INFO	lowercase_definition	existence ends during	textual definition	<x existence ends during y if and only if the time point at which x ends is before or equivalent to the time point at which y ends and after or equivalent to the point at which y starts. Formally: x existence ends during y iff ω(x) <= ω(y) and ω(x) >= α(y).>
+INFO	lowercase_definition	existence ends with	textual definition	<x existence ends with y if and only if the time point at which x ends is equivalent to the time point at which y ends. Formally: x existence ends with y iff ω(x) = ω(y).>
+INFO	lowercase_definition	transformation of	textual definition	x transformation of y if x is the immediate transformation of y, or is linked to y through a chain of transformation relationships
+INFO	lowercase_definition	immediate transformation of	textual definition	x immediate transformation of y iff x immediately succeeds y temporally at a time boundary t, and all of the matter present in x at t is present in y at t, and all the matter in y at t is present in x at t
+INFO	lowercase_definition	existence starts during or after	textual definition	<x existence starts during or after y if and only if the time point at which x starts is after or equivalent to the time point at which y starts. Formally: x existence starts during or after y iff α (x) >= α (y).>
+INFO	lowercase_definition	existence ends during or before	textual definition	x existence ends during or before y if and only if the time point at which x ends is before or equivalent to the time point at which y ends.
 INFO	lowercase_definition	causal relation between processes	textual definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.
 INFO	lowercase_definition	determined by	textual definition	s determined by f if and only if s is a type of system, and f is a material entity that is part of s, such that f exerts a strong causal influence on the functioning of s, and the removal of f would cause the collapse of s.
 INFO	lowercase_definition	determined by part of	textual definition	s 'determined by part of' w if and only if there exists some f such that (1) s 'determined by' f and (2) f part_of w, or f=w.
+INFO	lowercase_definition	has branching part	textual definition	inverse of branching part of
+INFO	lowercase_definition	lumen of	textual definition	x lumen_of y iff x is the space or substance that is part of y and does not cross any of the inner membranes or boundaries of y that is maximal with respect to the volume of the convex hull.
+INFO	lowercase_definition	luminal space of	textual definition	s is luminal space of x iff s is lumen_of x and s is an immaterial entity
+INFO	lowercase_definition	skeleton of	textual definition	inverse of has skeleton
 INFO	lowercase_definition	has part structure that is capable of	textual definition	s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p
+INFO	lowercase_definition	produces	textual definition	<a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix.>
+INFO	lowercase_definition	produced_by	textual definition	a produced_by b iff some process that occurs_in b has_output a.
 INFO	lowercase_definition	acts upstream of, positive effect	textual definition	c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive
 INFO	lowercase_definition	acts upstream of, negative effect	textual definition	c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative
 INFO	lowercase_definition	realized in response to	textual definition	r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r.
 INFO	lowercase_definition	serous membrane	textual definition	multi-tissue structure that is comprised of a secretory epithelial layer (mesothelium) and a connective tissue layer.
 INFO	lowercase_definition	post-embryonic stage	textual definition	stage succeeding embryo, including mature structure
+INFO	lowercase_definition	cardiac neural crest	textual definition	portion of neural crest that develops from the dorsal neural tube. It overlaps the vagal neural crest and migrates to populate the pharyngeal arches 3, 4 and 6 (producing structures in the head) and to the heart, forming connective tissue that separates the great vessels of the heart. [Wikipedia]
+INFO	lowercase_definition	lung connective tissue	textual definition	the connective tissue located between the respiratory (airway and alveolar) epithelium, the capillary endothelium and pleural mesothelium; it contains basement membrane composed of collagen, elastin, proteoglycans, and fibronectin
+INFO	lowercase_definition	yellow bone marrow	textual definition	bone marrow in which the fat cells predominate in the meshes of the reticular network.
 INFO	lowercase_definition	cornea	textual definition	the transparent anterior portion of the fibrous coat of the eye that serves as the chief refractory structure
+INFO	lowercase_definition	ovary	textual definition	the gonad of a female organism which contains germ cells
 INFO	lowercase_definition	circulatory system	textual definition	organ system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells, etc. to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis[WP].
+INFO	lowercase_definition	thoracic aorta	textual definition	the part of the aorta that extends from the origin at the heart to the diaphragm, and from which arises numerous branches that supply oxygenated blood to the chest cage and the organs within the chest
 INFO	lowercase_definition	muscle of iris	textual definition	.
 INFO	lowercase_definition	occipital bone	textual definition	the bone at the lower, posterior part of the skull
 INFO	lowercase_definition	anterior chamber of eyeball	textual definition	the space in the eye, filled with aqueous humor, and bounded anteriorly by the cornea and a small portion of the sclera and posteriorly by a small portion of the ciliary body, the iris, and part of the crystalline lens
@@ -1280,9 +2208,11 @@ INFO	lowercase_definition	iris	textual definition	the adjustable membrane, compo
 INFO	lowercase_definition	corneal epithelium	textual definition	the smooth stratified squamous epithelium that covers the outer surface of the cornea
 INFO	lowercase_definition	ciliary body	textual definition	the thickened portion of the vascular tunic, which lies between the choroid and the iris, composed of ciliary muscle and ciliary processes
 INFO	lowercase_definition	optic choroid	textual definition	vascular layer containing connective tissue, of the eye lying between the retina and the sclera. The choroid provides oxygen and nourishment to the outer layers of the retina. Along with the ciliary body and iris, the choroid forms the uveal tract[WP].
+INFO	lowercase_definition	substantia propria of cornea	textual definition	the lamellated connective tissue of the cornea between the Bowman and Descemet membranes
 INFO	lowercase_definition	anterior segment of eyeball	textual definition	any of the parts of the eye that lie in front of, or ventral to, the lens (inclusive)
 INFO	lowercase_definition	posterior segment of eyeball	textual definition	any of the parts of the eye that lie in back of, or dorsal to, the lens (but not inclusive)
 INFO	lowercase_definition	capsule of lens	textual definition	the elastic, clear, membrane-like structure, that is outer most layer of the lens
+INFO	lowercase_definition	epithelium of esophagus	textual definition	the epithelial layer that lines the luminal space of the esophagus
 INFO	lowercase_definition	myocardium of atrium	textual definition	the atrial part of middle layer of the heart, comprised of involuntary muscle
 INFO	lowercase_definition	epicardium	textual definition	a region of the serous membrane that forms the innermost layer of the pericardium and the outer surface of the heart.
 INFO	lowercase_definition	myocardium	textual definition	the middle layer of the heart, comprised mainly of striated cardiac muscle fibers
@@ -1291,23 +2221,39 @@ INFO	lowercase_definition	pericardial sac	textual definition	a double-walled sac
 INFO	lowercase_definition	gland	textual definition	an organ that functions as a secretory or excretory organ
 INFO	lowercase_definition	cranial neural crest	textual definition	neural crest cells (NCCs) originating in the anterior part of the developing embryo and residing between the mid-diencephalon and the forming hindbrain; cranial NCCs migrate dorsolaterally to form the craniofacial mesenchyme that differentiates into various craniofacial cartilages and bones, cranial neurons, glia, and connective tissues of the face; these cells enter the pharyngeal pouches and arches where they give rise to thymic cells, bones of the middle ear and jaw (mandible), and the odontoblasts of the tooth primordia; like their counterparts in the trunk, cranial NCCs also contribute to the developing peripheral nervous system, along with the pigmented cell (i.e. melanocyte) lineage.
 INFO	lowercase_definition	smooth muscle of eye	textual definition	<any of the striated muscles that move the eye and include: superior rectus, inferior rectus, medial rectus, lateral rectus, superior oblique, inferior oblique, retractor bulbi>
+INFO	lowercase_definition	sinusoid	textual definition	small blood vessel similar to a capillary but with a fenestrated endothelium. Sinusoids are found in the liver, lymphoid tissue, endocrine organs, and hematopoietic organs such as the bone marrow and the spleen. Sinusoids found within terminal villi of the placenta are not comparable to these; they possess a continuous endothelium and complete basal lamina[WP].
+INFO	lowercase_definition	aorta smooth muscle tissue	textual definition	the nonstriated, involuntary muscle tissue located in the wall of the aorta
 INFO	lowercase_definition	blood vessel smooth muscle	textual definition	smooth muscle found within, and composing the majority of the wall of blood vessels.
+INFO	lowercase_definition	apical ectodermal ridge	textual definition	multilayered ectodermal region at the distal tip of a limb or fin bud necessary for the proper development of the underlying mesenchyme[MP,modified]. Along with the zone of polarizing activity, it is a crucial organizing region during limb development[WP].
+INFO	lowercase_definition	aorta tunica adventitia	textual definition	the outermost layer of the aorta wall, containing connective tissue and collagen and elastic fibers
+INFO	lowercase_definition	bulbus cordis	textual definition	a transient fetal dilation of the distal (or cranial) heart tube located where the arterial trunk joins the ventral roots of the aortic arches
 INFO	lowercase_definition	dermal skeletal element	textual definition	dermis-derived entity that is made of skeletal tissue.
 INFO	lowercase_definition	respiratory system mucosa	textual definition	the mucous membrane lining the respiratory tract
+INFO	lowercase_definition	respiratory tract epithelium	textual definition	the pseudostratified ciliated epithelium that lines much of the conducting portion of the airway, including part of the nasal cavity and larynx, the trachea, and bronchi
+INFO	lowercase_definition	aorta endothelium	textual definition	the thin layer of flat cells that line the aorta and form a barrier between circulating blood in the lumen and the rest of the vessel wall
 INFO	lowercase_definition	mandibular prominence	textual definition	the paired ventral prominences formed by bifurcation of the first pharyngeal arches in the embryo; the two prominences unite ventrally and fuse to form the mandible and lower lip
 INFO	lowercase_definition	corneo-scleral junction	textual definition	the edge of the cornea where it joins the sclera; the limbus is a common site for the occurrence of corneal epithelial neoplasm
 INFO	lowercase_definition	pigment epithelium of eye	textual definition	epithelial layer of the retina, ciliary body, or iris composed of cells containing pigment granules.
 INFO	lowercase_definition	early pharyngeal endoderm	textual definition	.
+INFO	lowercase_definition	neuroendocrine gland	textual definition	any of the organized aggregations of cells that function as secretory or excretory organs and that release hormones in response to neural stimuli
+INFO	lowercase_definition	pair of dorsal aortae	textual definition	the paired arterial structures of the embryo that supplies each developing somite via efferent segmental arteries; the dorsal aortae articulate with the umbilical arteries, which return mixed blood to the villi of the chorion for reoxygenation
 INFO	lowercase_definition	layer of sclera	textual definition	.
+INFO	lowercase_definition	cavity of left atrium	textual definition	luminal space of the left atrium of the heart.
+INFO	lowercase_definition	cavity of left ventricle	textual definition	luminal space of the left ventricle of the heart.
+INFO	lowercase_definition	cavity of right atrium	textual definition	luminal space of the right atrium of the heart.
 INFO	lowercase_definition	prechordal mesoderm	textual definition	the area of axial mesoderm that develops into the prechordal plate
 INFO	lowercase_definition	wall of heart	textual definition	wall of organ which has as its parts the endocardium, myocardium , epicardium, and the cardiac septum, surrounded by the pericardial sac proper and is continuous with the walls of the systemic and pulmonary arterial and venous trees.
 INFO	lowercase_definition	anteriorly connected to	textual definition	x anteriorly_connected_to y iff the anterior part of x is connected to y. i.e. x connected_to y and x posterior_to y.
 INFO	lowercase_definition	conduit for	textual definition	x is a conduit for y iff y passes through the lumen of x.
+INFO	lowercase_definition	distally connected to	textual definition	x distally_connected_to y iff the distal part of x is connected to y. i.e. x connected_to y and x proximal_to y.
 INFO	lowercase_definition	posteriorly connected to	textual definition	x posteriorly_connected_to y iff the posterior part of x is connected to y. i.e. x connected_to y and x anterior_to y.
+INFO	lowercase_definition	proximally connected to	textual definition	x proximally_connected_to y iff the proximal part of x is connected to y. i.e. x connected_to y and x distal_to y.
+INFO	lowercase_definition	site_of	textual definition	c site_of p if c is the bearer of a disposition that is realized by a process that has p as part
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	lowercase_definition	Suni	textual definition	"\""Suni, or Jalca, is one of the eight Natural Regions of Peru. It is located in the Andes at an altitude between 3,500 and 4,000 metres above sea level. Suni has a dry and cold weather and there are many glacial valleys. The flora includes gramineous plants and shrubs such as the taya-taya (Caesalpinia spinosa), the quishuar (Buddleja coriacea), and the cantuta (Cantua buxifolia) which was considered sacred by the Incas. Even though it is hard for plants to grow because of the weather, people are able to cultivate such crops as quinoa, qañiwa, broad beans and ulluku (Ullucus tuberosus). The main fauna is the guinea pig and, among numerous other highland birds, the Chiguanco thrush.\"""
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	role	rdfs:subClassOf	
+INFO	missing_superclass	cellular_component	rdfs:subClassOf	
 INFO	missing_superclass	organismal entity	rdfs:subClassOf	
 INFO	missing_superclass	processual entity	rdfs:subClassOf	
 INFO	missing_superclass	unit	rdfs:subClassOf	
