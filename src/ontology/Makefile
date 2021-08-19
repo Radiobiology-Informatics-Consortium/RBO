@@ -76,7 +76,7 @@ all_main: $(MAIN_FILES)
 
 
 
-IMPORTS =  ro bfo pato chmo envo obi uo chebi doid uberon cob
+IMPORTS =  ro bfo pato chmo envo obi uo chebi doid uberon cob efo
 
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
