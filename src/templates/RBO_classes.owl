@@ -82,6 +82,18 @@
     
 
 
+    <!-- bo:RBO_00002007 -->
+
+    <owl:Class rdf:about="bo:RBO_00002007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exposure to ionising radiation created by a man-made machine or exposure to a fixed source. For example  a cobalt source, an X ray machine, an acceleratororf a nucler weapon.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exposure to human generated radiation </obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anthropogenic radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -157,6 +169,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001488"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001852 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001852"/>
     
 
 
@@ -1218,6 +1236,1269 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009987</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001852"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process by which an entity is exposed to electromagnetic or acoustic radiation radiation energy internally or externally.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irradiation</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001744"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned exposure to radiation of any type in any environment or otherwise planned process.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental irradiation</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002002">
+        <rdfs:subClassOf rdf:resource="bo:RBO_00002007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned irradiation</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002008"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure of an organism  to radiation of any type, internally or externally, with the intention to effect a diagnosis of disease.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diagnostic irradiation</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical diagnostic radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned exposure to naturally occurring  radiation (NORM) of any type in any environment .</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental irradiation</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Naturally occurring radiation exposure ( NORM)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002008"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure of an organism  to radiation of any type, internally or externally, with the intention to effect a cure or mitigation of disease.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Therapeutic irradiation</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical therapeutic radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned exposure to anthropogenic radiation of any type in any environment ; for example radiation from nuclear waste, nuclear industry discharge or weapons.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental man-made radiation exposure</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental non-medical anthropogenic radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002008">
+        <rdfs:subClassOf rdf:resource="bo:RBO_00002007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned anthropogenic radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002009">
+        <rdfs:subClassOf rdf:resource="bo:RBO_00002007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental or incidental exposure to radiation from a man made process or machine. Covers both radiation accidents and routine occupational exposure.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental anthropogenic radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002009"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental exposure occurring during medical therapy or diagnostics, for example medical radiation accidents or overdoses.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental medical anthropogenic radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001744"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical  areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naturally occurring radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deliberate or knowing exposure to naturally occurring radiation in a natural or anthropogenic environment, such as a radon spa.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned naturally occurring radiation exposure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies relating to human society and the interrelation of social and educational factors with individual thought and behaviour including mental illness.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social and psychosocial studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies on the distribution of information or opinion by technological means of communication that reach large numbers of people.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.biolontology.org/ontology/CSP/1580-0981</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass media study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies on the civil, legal, and political preparedness for accidental or deliberate release of radioactive materials or radiation into the environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preparedness study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies in which research is conducted with human subjects or on material of human origin in which the investigator directly interacts with human subjects, including the dveelopment of new technologies, understanding of the mechanisms of disease, therapy, clinical trials, epidemiology  behaviousrand health services research.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/CSP/4006-0105</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the laws, statutes, ordinances, government or international treaty regulations or authoritative guidelines, as well as for legal controversy and court decisions, relating to the regulation of radiation safety, movement and containment of radioactive materials and the consequences for human health or the natural environment of radioactive contamination.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Legal and governance study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies relating to organisations and processes concerned with freedom from or resilience towards potential harm caused by hostile intent or circumstances (for example terrorism and illegal release of radioactive substances or radiation) towards the natural environment or human population,  and the enforcement of relevant laws and international treaties.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security and law enforcement study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study whose intention is to discover knowledge concerning the origins, nature diagnosis or therapy for neoplastic disease and cancer. This includes studies in humans, model organisms, the laboratory and in silico. This class includes experimental and epidemiological studies specifically aimed at cancer.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cancer study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The specific manner, characteristic, pattern of application, or the employment of any technology, approach or formal procedure  to implement the study plan to generate a study type.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study modality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies of the presence of radiation of any type in the natural or anthropogenic environment and its impact on animals, plants, and microorganisms. This includes studies measuring nuclide transfer in the environment, and interaction with meteorological phenomena. This excludes occupational exposure and the human working environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies concerned with the regulation, monitoring and operation of the nuclear industry. For example nuclear power station and reprocessing plants, isotope purification and manufactore, weapons manufacture and testing. This includes occupation health studies, impact of accidental  or deliberate release on the natural or man made environment and impact on organisms specifically affected directly or indirectly by contamination.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear industry study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research done in a laboratory. A laboratory study may use special equipment and cells or animals to investigate the effects of an experimental perturbation, discover fundamental molecular mechanisms, assay biological substances, or find out if a drug, procedure, or treatment is likely to be useful in humans. A laboratory investigation is  often characterised by a hypothesis and is carried out with controls.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28278</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Laboratory study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the status or origins of a mental position, feeling or emotion toward a fact or state with respect to information or experience  concerning radiation, radiation safety or ethicolegal constructs surrounding radiation and radiation safety and regulation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/CSP/2482-9501</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attitudinal study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study  concerning exchange or transmission of thoughts, messages, or information between people or between authorities and the general public (for example educational information, risk communication, safety communication) concerning exposure to and use of radiation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Communication study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study focussed on a set of people with some shared characteristic. The substance of shared element varies widely, from geography to a situation to interest to lives and values. The term is widely used to evoke sense of collectivity. For example communities collectively exposed to radioactive environmental contamination.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Community study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of political involvement in radiation and nuclear regulation, military use, and safety as shown by inclusion in political manifestos and messaging by established or informal groups and its impact on voting patterns and democracy.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Political and psephological study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study measuring &quot;psychological&quot; aspects of a person such as knowledge, skills, abilities, attitudes, or personality using defined scales.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psychometric study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Behavioural study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study dealing with group relationships, patterns of collective behavior, and social organization.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sociological study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies involving fields of inquiry into human constructs and concerns as opposed to natural processes . These are traditionally the study of literature, philosophy, and religion. Included in this definition are sociological studies, especially those concerned with the social impact of the humanities.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social science and humanities study </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifically an attitudinal study looking at how perception, for example of risk, and expectations affect behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perceptions, expectations and behaviours study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sociological, attitudinal, ethocolegal and regulatory approaches to governance of radiation and radioactive substance use.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holistic approaches to governance study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies on policy concerning socially and ethically responsible research and innovation</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Responsible Research and Innovation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies of the engagement between an organisational entity and those groups or individuals potentially or actually impacted by the actions of that entity over a range of activities and approaches.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stakeholder engagement study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study concerning the modes, efficacy and response to communication of risk and health impacts of radiation in all aspects.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Risk and health communication study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002013"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies concenring the attitudes to and practices of radiological protection in defined groups of people. For example the nuclear industry of a country or within a specific laboratory.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiological protection culture study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000083"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16160</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic population study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000083"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A type of study in which participants are enrolled into the study before they develop the disease or outcome in question.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C142646</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prospective study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000083"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observational studies which include an organized system that uses observational methods to collect uniform data (clinical and other) prospectively for a population defined by a particular disorder/disease, condition (including susceptibility to a disorder), or exposure (including products, health care services, and/or procedures) and that serves a predetermined scientific, clinical, or policy purpose. Patient registries may be single purpose or on-going data collection programs that address one or more questions. (AHRQ) An observational study that is also considered to be a Patient Registry. </obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/NCIT_C129000</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Registry study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000083"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study looking backwards in time using observations collected predominantly prior to subject selection and enrolment</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retrospective study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000083"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of the number of new cases of a given disease during a given period in a specified population. It also is used for the rate at which new events occur in a defined population. this class also includes PREVALENCE, which refers to all cases in the population at a given time.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incidence or prevalence study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies concerning the optimisation of situation awareness through gathering and analysing information, and methodologies for making decisions on that awareness, such as estimating the path of a radioactive fallout with respect to weather and population density and making a decision to evacuate a population.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Situation awareness and decision support study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study concerning the protection of the population from unexpected radioactive discharge or contamination, such as a dirty bomb, and civil safetyy coningency plans, such as deployment of emergency services and evacuation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civil protection study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies on planning for unexpected natural or man-made radiological  catastrophe of substantial extent causing significant property damage or destruction, loss of life or sometimes permanent changes to the natural environment. Broader scope than civil protection as may relate to livestock, food and water shortage, disease outbreak and extensive traumas caused by precipitating or consequential damage.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disaster planning study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies on plannig for or analysing a nuclear accident with release of airborn or waterborn contamination into the environment. Narrower than Disaster planning study but may be used to qualify an annotation to Disaster planning study if the source of contamination is a nuclear accident. A nuclear accident is not necessarily a disaster.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear accident study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A controlled study designed to assess the safety and efficacy of new drugs, devices, treatments, or preventive measures in humans by comparing two or more interventions or regimens</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/CSP/0690-6917</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clinical trial study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the  effects of radiation used in a medical  therapeutic or diagnostic context. Inlcudes radiation accidents in this context, excludes occupational exposure for health professionals.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical radiological safety study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study concerned with health and safety policy development, implementation and practice  in the workplace including investigating accidents at work, and chronic occupational  exposure. Includes monitoring compliance with health and safety legislation and study of the promotion and maintenance of physical and mental health in the work environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Occupational health study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study on the efficacy, outcomes and adverse consequences of exposure to medical diagnostic procedures using internal or external   irradiation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation based Diagnostics study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the efficacy, outcomes and adverse consequences of exposure to therapeutic use of ionizing and nonionizing radiation including  RADIONUCLIDE THERAPY,  therapeutic radiation with visible, laser, or ultraviolet light. Includes technical development of protocols and equipment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiotherapy study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study involvingdevelopment of  agents or procedures intended to produce an effect that is intended to mitigate or stop a pathologic process.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Therapeutics study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of the macroscopic and microscopic anatomical changes in diseased tissue.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/CSP/1448-3909</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histopathologic study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002018"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of legal and statutory instruments and legislation designed to regulate the safety, use and transport of radioactive materials, release of such materials into the environment, or external radiation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation legislation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002018"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the policy approaches and their implementation concerned with harmonising regulatory guidelines and legislation dealing with radiation and radioactive substances  between legislatures, generally internationally.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulatory harmonisation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002018"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the development, implementation and monitoring of nuclear non proliferation treaties between states.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear proliferation treaty study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies concerning intentional release of organisms (germs), toxic chemicals, or radioactive substances with intent to harm or kill people or the environment, or to inflict panic within a population.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/CSP/5000-0002</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bioterrorism study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of strategies and their implementation towards defence against radiation used as a weapon conducted by military powers and institutions. May also include civil defence where the military has a significant operational role, but not disaster preparedness.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Military Defence study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of biological processes that involve adding/removing chemical moieties to/from DNA, including methylation, phosphorylation, dephosphorylation, etc. Includes interventional DNA modification.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA modification study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of biological processes that involve adding/removing chemical moieties to/from histones, including methylation, acetylation,phosphorylation, dephosphorylation, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Histone modification study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study conducted by means of structured or unstructured interviews of persons of interest.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interview study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of genetic variation and the inheritance of a trait or traits within a population or an individual including examination of genetic material for the presence or absence of cytogenetic or molecular genetic abnormalities.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A radiographic study used to evaluate a specific anatomic location for a specific purpose. This may include the assessment of imaging modalities and the development of new techniques. Includes PET, MRI, CT and related techniques.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imaging study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study concerned with the construction, analysis, evaluation, refinement etc. of mathematical or statistical models of the properties or behaviour of a set of entities, such as molecules, physiological processes, environmental processes such as nuclide transfer, such that functions are developed to reliably predict the behaviour of those entities.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical Modelling study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study usually conducted in a laboratory where non human animals are used to model aspects of a disease process or its therapy to provide insights into human biology or pathobiology.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model organism study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study concerning the development, use, calibration or standardisation of technologies for the qualitative or quantitative measurement of radiation and radionuclides.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring technologies and metrology study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the chemistry of radioactive materials including radioactive tracer studies of metabolic processes</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiochemistry study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the development and implementation of public policy towards issues involving radiation</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Policy development study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the effects of acoustic radiation on cellular and organismal physiology and the effects of acoustic radiation emitted in response to exposure to ionising radiation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acoustic radiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of radiation levels and effects in the human built environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental study_ Abiotic_anthropogenic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of radiation levels and effects in the natural environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural environment studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The development and use of mathematical models and systems analysis for the description of naturally occurring non-human populations, and applications to measuring the effects of radiological contamination.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecological population modelling study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of environmental contamination with radiation and radioactive substances and the toxic effects on the ecosystem either through chemical toxicity or radiation exposure.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ecotoxicology study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of environmental contamination with radon and the toxic effects on biota including humans. Both natural and anthropogenic environments. Includes radiometrics, safety policies and mitigation technologies.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Radon study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical modelling of radionuclide transfer  and dispersal processes in water, earth or air, either directly or through the mediation of biota.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radionuclide dispersal modelling study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the ocurrence, levels and effects of naturally occurring radioactive materials such as Radon.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naturally occurring radioactive materials study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study involving the measurement of radiation levels,  or concentration of radionuclides, in the natural or man made environment. Usually in a time series.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental radiation monitoring study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study concerned with the measurement of transfer of radionuclides to biota from the environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental radionuclide transfer study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002022"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any study concenrd with the prevalence or effects on non-ionising radiations such as UV, acoustic, or RF.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non ionising electromagnetic radiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002023"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study concerning the safety, regulation, activities and engineering of nuclear installations including power stations, waste processing plant, radionuclide generation and purification plant, and military nuclear establishments. May include occupational health studies if broader than just occupationaal health in scope.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear installation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002023"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the process of generation of nuclear waste, its monitoring, regulation, disposal and inadvertent discharge.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear waste study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002023"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the engineering of nuclear installations such as power plants.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear engineering study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002023"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the process, regulation and monitoring of mines where exposure to naturally occurring radiation presents an occupational hazard for workers or the process itself, for example run off water or spoil, constitutes an environmental hazard.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mining  study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study using cells derived from an organism grown in artificial culture medium in a laboratory with the aim of understanding some aspect(s) of cell physiology, genetics or behaviour, generally as part of the testing of an hypothesis but also for diagnostic intent.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell culture study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study using an organ, part of an organ or an organoid culture, derived from an organism and grown in artificial culture medium in a laboratory with the aim of understanding some aspect(s) of cell physiology, genetics or behaviour, generally as part of the testing of an hypothesis but also for diagnostic intent. The system differs from cell culture in the generation or maintenance of multiple cell types with the spatial and functional relationship between them  derived from or reflecting the normal organisation in vivo.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organ culture study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any study involving the manipulation, measurement, or characterisation of DNA or RNA in a cell or organism.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular genetic study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elucidation of the physical structure of a macromolecule, protein, carbohydrate, DNA or RNA, its analysis and manipulation based on structure/function considerations.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular structural study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study using an intact organism, plant, animal, or microorganism</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whole organism study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the cellular phenomenon which radiation energy is not been directly deposited in cells by transfer of medium, proximity/justaposition, or other means, but results in their behaving as if they had been irradiated. </obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bystander effect study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study  of heritable phenotype changes that do not involve alterations in the DNA sequence. This may be in intact organisms or in cells and includes population analysis of epigenetic phenomena and molecular analysis of gene expression and epigenetic modifications of chromatin such as DNA methylation and histone acetylation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epigenetic study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002092 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the frequency of induction , nature and consequences of the production of genetic or epigenetic alterations by any technique, including chemicals, radiation, recombination, or other molecular biology methods.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mutagenesis study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002093 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies of  the status or origins of a mental position, feeling or emotion toward a fact or state with respect to information or experience  concerning radiation, radiation safety or  regulation of the nuclear industries.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attitudinal studies nuclear industry risk perception</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies of  the status or origins of a mental position, feeling or emotion toward a fact or state with respect to information or experience  concerning radiation, radiation safety or ecological integrity towards natural or anthropogenic ionising radiation in the environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attitudinal studies towards ionising radiation in the environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002095">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies of  the status or origins of a mental position, feeling or emotion toward a fact or state with respect to information or experience  concerning radiation, radiation safety or ecological integrity towards natural or anthropogenic non-ionising radiation in the natural  environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attitudinal studies towards non-ionising radiation in the environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies of  the status or origins of a mental position, feeling or emotion toward a fact or state with respect to information or experience  concerning radiation, radiation safety and efficacy in a clinical context where radiation is used for diagnostic or therapeutic procedures..</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attitudinal studies towards medical radiation procedures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002097 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies of  the status or origins of a mental position, feeling or emotion toward a fact or state with respect to information or experience  concerning radiation, radiation safety  towards natural or anthropogenic non-ionising radiation in the occupational environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attitudinal studies towards radiation in the occupational environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002098 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of social and individual trust in the position and activities of  legal or other competent advisory or regulatory authorities.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authority Trust study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002099 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002026"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study on the modality, efficacy and responses to communcation of information or advice  to populations or individuals, on the safety and risks of exposure to ionising radiation in any context.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Risk communication study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002100 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002026"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study on the modality, efficacy and responses to communication of information or advice to populations or individuals, on the safety and risks of exposure to ionising radiation in any context.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public communication study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002026"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study on the modality, efficacy and responses to communication of information or advice to populations on any aspect of radiation, conceived of as an educational programme, and including a wider scope than just safety and risk. For example basic nuclear physics, emergency action advice.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public education study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002027"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study involving attitudes, health status, social organisation of defined communities identified by common characteristics such as occupation type, geography, gender identity, with respect to radiation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Social affairs and community health study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002027"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies involving creation and assessment of plans for the future physical arrangement, well being, efficiency  and condition of a community. It may have the goals of improving health, promoting efficiency in the provision of services and resources on a comprehensive basis for a whole community. In the context of radiation this may be concerned with community planning for dealing with mitigation measures for local NORM, or organised community-wide continegency measures for nuclear accident or recovery from such.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Community planning study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002027"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study concerned with eliciting information in a  structured way concerning issues of interest from members of a community defined by common characteristics, for example occupation, geographical location, personal history or gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Community survey study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study concerned with  human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology at the level of slected individuals. May be carried out by observation or as individual responses to a questioannaire or interview in the case of humans where the person  records their own assessment of their behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual behaviour study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002030"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study concerned with  human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology within substantial populations of individuals. Likely to be carried out by mass observation or indirect inference.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Population behaviour study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002053"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mathematical  modelling for theraputic regime optimisation and for optimal tumor response, for example modelling spatiotemporal dynamics of tumor and blood volume fraction, and predicting response to radiation therapy. Also studies  for beam modelling and multiimaging techniques.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiotherapeutic modelling study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002071"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the radiolonuclide components and emissions from building materials</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Building materials radiological safety study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002071"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studies on radiological safety within buildings. Primary purpose os for buildings not specifially designed to hold radioactive materials  but anaylyis and mitigation of risks from radioactive exposure from the local environment or materials.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Building radiological safety study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002072"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the weather and atmospheric dynamics mainly with respect to dissemination of radionuclides.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meteorology study </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002072"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of non-living objects in the environment, such as soils or rocks.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental study_Abiotic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002072"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of non-human biota in the natural environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental study_Biota ( non human)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002072"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study which may include human and non-human biota in the environment.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental study_Panbiota (all)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002080"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the measurement, effects and regulation of wireless communication signals, for example mobile phone radiation and microwave communication.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wireless communication radiation study</rdfs:label>
     </owl:Class>
     
 
