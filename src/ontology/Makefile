@@ -233,6 +233,11 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 imports/doid_import.owl: 
 	cp mirror/doid.owl imports/doid_import.owl
 
+imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method STAR \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 imports/uberon_import.owl: mirror/uberon.owl imports/uberon_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uberon_terms_combined.txt --force true --method STAR \
     query --update ../sparql/inject-subset-declaration.ru \
@@ -284,6 +289,13 @@ mirror/ro.trigger: $(SRC)
 
 mirror/ro.owl: mirror/ro.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ro.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+# ONTOLOGY: EFO
+mirror/efo.trigger: $(SRC)
+mirror/efo.owl: mirror/efo.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.ebi.ac.uk/efo/efo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
