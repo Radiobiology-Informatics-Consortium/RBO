@@ -76,7 +76,7 @@ all_main: $(MAIN_FILES)
 
 
 
-IMPORTS =  ro bfo pato chmo envo obi uo chebi doid uberon cob go
+IMPORTS =  ro bfo pato pco chmo envo obi uo chebi doid uberon cob go
 
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
@@ -313,13 +313,23 @@ mirror/pato.owl: mirror/pato.trigger
 
 .PRECIOUS: mirror/%.owl
 
+## ONTOLOGY: pco
+## Copy of pco is re-downloaded whenever source changes
+mirror/pco.trigger: $(SRC)
+
+mirror/pco.owl: mirror/pco.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/pco.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
 
 ## ONTOLOGY: chmo
 ## Copy of chmo is re-downloaded whenever source changes
 mirror/chmo.trigger: $(SRC)
 
 mirror/chmo.owl: mirror/chmo.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/chmo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) remove -I $(URIBASE)/chmo.owl --term BFO:0000040 --select "self" --axioms subclass --signature true convert -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 

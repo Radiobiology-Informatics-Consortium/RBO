@@ -81,7 +81,7 @@ SubClassOf(obo:GO_0010212 ObjectSomeValuesFrom(obo:RO_0002608 obo:RBO_00000116))
 
 # Class: obo:RBO_00005068 (Indirect cellular response to radiation)
 
-SubClassOf(obo:RBO_00005068 ObjectAllValuesFrom(obo:RO_0009501 obo:ENVO_01001023))
+SubClassOf(obo:RBO_00005068 ObjectAllValuesFrom(obo:RO_0002404 obo:ENVO_01001023))
 
 
 )

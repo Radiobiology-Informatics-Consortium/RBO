@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-08-08/imports/chmo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-08</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-08-28/imports/chmo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -182,7 +182,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <oboInOwl:id>BFO:0000040</oboInOwl:id>
         <rdfs:label>material entity</rdfs:label>
     </owl:Class>
@@ -192,7 +191,7 @@
     <!-- http://purl.obolibrary.org/obo/CHMO_0000993 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000993">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:IAO_0000115>An independent material continuant that is self-connected and retains its identity over time.</obo:IAO_0000115>
         <oboInOwl:id>CHMO:0000993</oboInOwl:id>
         <rdfs:label>portion of material</rdfs:label>
@@ -319,7 +318,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obi:pppb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obi:pppb</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -338,6 +337,25 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>obi:obi</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <obo:IAO_0000115>A device that is used to generate X-rays.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>CHMO:0000944</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>X-ray generator</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>OBI:0001138</oboInOwl:id>
+        <rdfs:label>X-ray source</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A device that is used to generate X-rays.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obi:es</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 

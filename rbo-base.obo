@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: rbo/releases/2021-08-13/rbo-base.owl
+data-version: rbo/releases/2021-08-28/rbo-base.owl
 ontology: rbo/rbo-base
 property_value: http://purl.org/dc/elements/1.1/description "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Radiation Biology Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2021-08-13" xsd:string
+property_value: owl:versionInfo "2021-08-28" xsd:string
 
 [Term]
 id: DOID:4
@@ -99,7 +99,7 @@ property_value: IAO:0000112 "Thermoluminescent dosimeters and plastic nuclear tr
 [Term]
 id: RBO:00000013
 name: background ionizing radiation
-def: "The amount of radiation to which a member of the population on Earth is exposed from natural sources, such as terrestrial radiation from naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring ra" []
+def: "The amount of ionizing radiation to which a member of the population on Earth is exposed from natural sources, such as terrestrial radiation from naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring ra" []
 is_a: ENVO:01001023
 
 [Term]
@@ -757,10 +757,12 @@ is_a: RBO:010012 ! heavy ion
 
 [Term]
 id: RBO:00005009
-name: Spaceflight
+name: space flight
 def: "Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere." []
 synonym: "Space flight" EXACT []
 is_a: ENVO:03000010
+property_value: IAO:0000111 "space flight" xsd:string
+property_value: IAO:0000118 "spaceflight" xsd:string
 
 [Term]
 id: RBO:00005010
@@ -1111,8 +1113,8 @@ id: RBO:00005068
 name: Indirect cellular response to radiation
 def: "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of radiation acting on another cell and not on the responding cell. The process begins with detection of radiation by a cell or cells and ends with a change in state or activity of a different cell or cells." []
 is_a: RBO:00005067 ! Indirect cellular response to stimulus
-relationship: RO:0009501 ENVO:01001023
-property_value: IAO:0000112 "The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo & Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. L�ffler MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671" xsd:string
+relationship: RO:0002404 ENVO:01001023
+property_value: IAO:0000112 "The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo & Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. L?ffler MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671" xsd:string
 property_value: IAO:0000119 "Paul Schofield" xsd:string
 
 [Term]
@@ -1122,6 +1124,38 @@ def: "Any process that results in a change in state or activity of a cell (in te
 is_a: RBO:00005068 ! Indirect cellular response to radiation
 property_value: IAO:0000112 "Directly describes the bystander effect (Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo & Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) but can alo sbe used to describe phenomena related to the abscopal effect, manifest in whole organisms where irradiation of one part of the organism causes changes in another un-irradiated component." xsd:string
 property_value: IAO:0000119 "Paul Schofield" xsd:string
+
+[Term]
+id: RBO:00005070
+name: ionizing radiation device
+def: "A device for exposing materials or biological organisms to ionizing radiation for research or therapeutic purposes." []
+is_a: RBO:00005014 ! radiation source
+
+[Term]
+id: RBO:00005071
+name: high-altitude balloon
+def: "High-altitude balloons are crewed or uncrewed balloons, usually filled with helium or hydrogen, that are released into the stratosphere, generally attaining between 18 and 37 km (11 and 23 mi; 59,000 and 121,000 ft) above sea level." []
+is_a: ENVO:01001488
+property_value: IAO:0000117 "Jack Miller" xsd:string
+property_value: IAO:0000119 "Wikipedia" xsd:string
+
+[Term]
+id: RBO:00005072
+name: Space flight
+def: "Travel beyond the Earth's atmosphere" []
+is_a: PATO:0002062
+property_value: IAO:0000111 "spaceflight" xsd:string
+property_value: IAO:0000117 "Jack Miller" xsd:string
+
+[Term]
+id: RBO:00005074
+name: non-targeted effects of ionising radiation
+def: "Non-targeted effects of ionising radiation are characterised by cellular responses that occur in cells in which energy from ionizing radiation has not been deposited. The distinct classes of non-targeted effects include Genomic Instability, and Bystander effect which latter includes Abscopal effects and Bystander-mediated adaptive response. These can also arise non-clonally in the progeny of irradiated somatic or germ cells, resulting in radiation-induced genomic instability and transgenerational genomic instability respectively. (Kadhim M, Salomaa S, Wright E, et al. Non-targeted effects of ionising radiation--implications for low dose risk. Mutat Res. 2013;752(2):84-98. doi:10.1016/j.mrrev.2012.12.001)" []
+is_a: RBO:00005069 ! Indirect cellular response to ionising radiation
+property_value: IAO:0000111 "non-targeted effects of ionising radiation" xsd:string
+property_value: IAO:0000117 "Paul Schofield ORCID: 0000-0002-5111-7263" xsd:string
+property_value: IAO:0000118 "non-targeted effects" xsd:string
+property_value: IAO:0000118 "NTE" xsd:string
 
 [Term]
 id: RBO:010000
@@ -1157,7 +1191,7 @@ property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/th
 id: RBO:010003
 name: bystander effect
 def: "The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated  by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one." []
-is_a: RBO:00005069 ! Indirect cellular response to ionising radiation
+is_a: RBO:00005074 ! non-targeted effects of ionising radiation
 property_value: IAO:0000112 "The bystander effect can be  studied by identifying cells that were traversed by a charged particle." xsd:string
 property_value: IAO:0000117 "Jack Miller" xsd:string
 property_value: IAO:0000119 "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)" xsd:string
