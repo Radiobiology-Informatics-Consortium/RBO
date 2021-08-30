@@ -76,15 +76,15 @@ all_main: $(MAIN_FILES)
 
 
 
-IMPORTS =  ro bfo pato chmo envo obi uo chebi doid uberon cob
+IMPORTS =  ro bfo pato pco chmo envo obi uo chebi doid uberon cob go
 
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
-IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
-IMPORT_FILES = $(IMPORT_OWL_FILES)
+IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl) 
+IMPORT_FILES = $(IMPORT_OWL_FILES) imports/go_top_import.owl
 
 
-all_imports: $(IMPORT_FILES)
+all_imports: $(IMPORT_FILES) imports/go_top_import.owl
 
 ## -- subset targets --
 ##
@@ -242,6 +242,12 @@ imports/cob_import.owl: mirror/cob.owl imports/cob_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/cob_terms_combined.txt --force true --method STAR \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+	
+imports/go_top_import.owl: imports/go_import.owl
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i mirror/go.owl --branch-from-term "obo:GO_0006281"  --force true --method MIREOT   \
+	merge -i $< \
+	query --update ../sparql/inject-subset-declaration.ru \
+	annotate --ontology-iri $(ONTBASE)/$< $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl imports/go_import.owl && cp imports/go_import.owl imports/go_top_import.owl; fi
 
 imports/uo_import.owl: mirror/uo.owl imports/uo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uo_terms_combined.txt --force true --method BOT --individuals exclude \
@@ -307,13 +313,23 @@ mirror/pato.owl: mirror/pato.trigger
 
 .PRECIOUS: mirror/%.owl
 
+## ONTOLOGY: pco
+## Copy of pco is re-downloaded whenever source changes
+mirror/pco.trigger: $(SRC)
+
+mirror/pco.owl: mirror/pco.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/pco.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
 
 ## ONTOLOGY: chmo
 ## Copy of chmo is re-downloaded whenever source changes
 mirror/chmo.trigger: $(SRC)
 
 mirror/chmo.owl: mirror/chmo.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/chmo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) remove -I $(URIBASE)/chmo.owl --term BFO:0000040 --select "self" --axioms subclass --signature true convert -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
@@ -370,6 +386,15 @@ mirror/uberon.trigger: $(SRC)
 
 mirror/uberon.owl: mirror/uberon.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/uberon.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+## ONTOLOGY: go
+## Copy of go is re-downloaded whenever source changes
+mirror/go.trigger: $(SRC)
+
+mirror/go.owl: mirror/go.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/go.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 

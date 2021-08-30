@@ -70,6 +70,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001138 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001138"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000015"/>
@@ -441,6 +447,16 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB-57</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005073 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005073">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi: 10.2349/biij.2.1.e1</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faxitron CP160</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
