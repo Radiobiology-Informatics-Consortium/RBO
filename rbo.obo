@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2021-08-28
+data-version: releases/2021-08-30
 subsetdef: added_for_HCA ""
 subsetdef: attribute_slim ""
 subsetdef: cumbo ""
@@ -52,7 +52,7 @@ ontology: rbo
 property_value: dc-description "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments." xsd:string
 property_value: dc-title "Radiation Biology Ontology" xsd:string
 property_value: dcterms-license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2021-08-28" xsd:string
+property_value: owl:versionInfo "2021-08-30" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -228,6 +228,7 @@ property_value: example_of_usage "the disposition of your blood to coagulate" xs
 property_value: example_of_usage "the function of your reproductive organs" xsd:string
 property_value: example_of_usage "the role of being a doctor" xsd:string
 property_value: example_of_usage "the role of this boundary to delineate where Utah and Colorado meet" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0001-8815-0078 xsd:string
 property_value: IAO:0000600 "To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/058-002"}
 property_value: IAO:0000601 "All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/060-002"}
 property_value: IAO:0000602 "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/060-002"}
@@ -313,6 +314,28 @@ is_a: BFO:0000040 ! material entity
 id: BFO:0000027
 name: object aggregate
 is_a: BFO:0000040 ! material entity
+property_value: BFO:0000179 "object-aggregate" xsd:string
+property_value: BFO:0000180 "ObjectAggregate" xsd:string
+property_value: editor_note "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000301"}
+property_value: editor_note "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000011"}
+property_value: editor_note "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)." xsd:string
+property_value: example_of_usage "a collection of cells in a blood biobank." xsd:string
+property_value: example_of_usage "a swarm of bees is an aggregate of members who are linked together through natural bonds" xsd:string
+property_value: example_of_usage "a symphony orchestra" xsd:string
+property_value: example_of_usage "an organization is an aggregate whose member parts have roles of specific types (for example in a jazz band, a chess club, a football team)" xsd:string
+property_value: example_of_usage "defined by fiat: the aggregate of members of an organization" xsd:string
+property_value: example_of_usage "defined through physical attachment: the aggregate of atoms in a lump of granite" xsd:string
+property_value: example_of_usage "defined through physical containment: the aggregate of molecules of carbon dioxide in a sealed container" xsd:string
+property_value: example_of_usage "defined via attributive delimitations such as: the patients in this hospital" xsd:string
+property_value: example_of_usage "the aggregate of bearings in a constant velocity axle joint" xsd:string
+property_value: example_of_usage "the aggregate of blood cells in your body" xsd:string
+property_value: example_of_usage "the nitrogen atoms in the atmosphere" xsd:string
+property_value: example_of_usage "the restaurants in Palo Alto" xsd:string
+property_value: example_of_usage "your collection of Meissen ceramic plates." xsd:string
+property_value: IAO:0000119 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158." xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000300"}
+property_value: IAO:0000600 "b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/025-004"}
+property_value: IAO:0000602 "(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/025-004"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
 id: BFO:0000029
@@ -419,6 +442,15 @@ id: CARO:0000006
 name: material anatomical entity
 is_a: BFO:0000040 ! material entity
 is_a: CARO:0000000 ! anatomical entity
+
+[Term]
+id: CARO:0001010
+name: organism or virus or viroid
+def: "Material anatomical entity that is a member of an individual species or is a viral or viroid particle." []
+is_a: PCO:0000031 ! organismal entity
+property_value: http://purl.obolibrary.org/obo/IAO_created_by "Melissa Haendel" xsd:string
+property_value: http://purl.obolibrary.org/obo/IAO_creation_date "9/18/11" xsd:string
+property_value: IAO:0000589 "organism or virus" xsd:string
 
 [Term]
 id: CARO:0030000
@@ -9438,11 +9470,13 @@ id: GO:0003674
 name: molecular_function
 is_a: BFO:0000015 ! process
 property_value: IAO:0000589 "molecular process" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
 [Term]
 id: GO:0003824
 name: catalytic activity
 is_a: GO:0003674 ! molecular_function
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
 [Term]
 id: GO:0005575
@@ -10376,6 +10410,7 @@ is_a: GO:0006996 ! organelle organization
 id: GO:0016301
 name: kinase activity
 is_a: GO:0016772 ! transferase activity, transferring phosphorus-containing groups
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
 [Term]
 id: GO:0016331
@@ -10401,11 +10436,13 @@ relationship: negatively_regulates GO:0001525 ! angiogenesis
 id: GO:0016740
 name: transferase activity
 is_a: GO:0003824 ! catalytic activity
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
 [Term]
 id: GO:0016772
 name: transferase activity, transferring phosphorus-containing groups
 is_a: GO:0016740 ! transferase activity
+property_value: isDefinedBy http://purl.obolibrary.org/obo/go.owl
 
 [Term]
 id: GO:0017145
@@ -14338,6 +14375,7 @@ property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosop
 [Term]
 id: IAO:0000027
 name: data item
+def: "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
 is_a: IAO:0000030 ! information content entity
 property_value: editor_note "2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers." xsd:string
@@ -14352,6 +14390,7 @@ property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
 property_value: IAO:0000117 "PERSON: Jonathan Rees" xsd:string
 property_value: IAO:0000118 "data" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
 id: IAO:0000030
@@ -14538,6 +14577,7 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "person:Chris Stoeckert" xsd:string
 property_value: IAO:0000119 group:OBI xsd:string
 property_value: IAO:0000119 "OBI_0000305" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
 id: IAO:0000178
@@ -16110,6 +16150,7 @@ alt_id: PATO:0000072
 def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
 is_a: BFO:0000020 ! specifically dependent continuant
 property_value: IAO:0000589 "quality (PATO)" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000025
@@ -16314,6 +16355,7 @@ xref: Wikipedia:Physical_property
 is_a: PATO:0001241 ! physical object quality
 property_value: IAO:0000111 "physical quality" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001031
@@ -16345,6 +16387,7 @@ synonym: "quality of process" EXACT []
 synonym: "relational quality of occurrent" EXACT []
 is_a: PATO:0000001 ! quality
 disjoint_from: PATO:0001241 ! physical object quality
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001241
@@ -16367,6 +16410,7 @@ is_a: BFO:0000019 ! quality
 is_a: PATO:0000001 ! quality
 property_value: IAO:0000111 "physical object quality" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001291
@@ -16619,6 +16663,7 @@ name: physical quality of a process
 namespace: quality
 subset: attribute_slim
 is_a: PATO:0001236 ! process quality
+property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
 created_by: george
 creation_date: 2009-06-05T09:16:46Z
 
@@ -16714,7 +16759,13 @@ id: PCO:0000000
 name: collection of organisms
 def: "A material entity that consists of two or more organisms, viruses, or viroids." []
 comment: May be of the same or different species.
+is_a: BFO:0000027 ! object aggregate
 is_a: PCO:0000031 ! organismal entity
+intersection_of: BFO:0000027 ! object aggregate
+intersection_of: has_member CARO:0001010 {all_only="true"} ! organism or virus or viroid
+intersection_of: has_member CARO:0001010 {minCardinality="2"} ! organism or virus or viroid
+relationship: has_member CARO:0001010 ! organism or virus or viroid
+relationship: has_member CARO:0001010 ! organism or virus or viroid
 property_value: example_of_usage "Examples include: population, community, species (meaning the collection of organisms that makes up a species, not the taxonomic rank), and family." xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000118 "group of organism" xsd:string
@@ -16762,7 +16813,18 @@ property_value: IAO:0000114 IAO:0000123
 id: PCO:0000031
 name: organismal entity
 def: "A material entity that is one or more organisms, viruses or viroids." []
+is_a: BFO:0000040 ! material entity
+union_of: CARO:0001010 ! organism or virus or viroid
+union_of: PCO:0000000 ! collection of organisms
 property_value: IAO:0000114 IAO:0000120
+
+[Term]
+id: PCO:0001000
+name: pair of interacting organisms
+def: "A collection of organisms that consists of exactly two organism, viruses, or viroids that are interacting with each other." []
+is_a: PCO:0000000 ! collection of organisms
+intersection_of: PCO:0000000 ! collection of organisms
+intersection_of: has_member CARO:0001010 {cardinality="2"} ! organism or virus or viroid
 
 [Term]
 id: PO:0000003
@@ -48200,7 +48262,7 @@ property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 range: OBI:0000011 ! planned process
-is_a: participates_in ! participates_in
+is_a: participates_in ! participates in
 
 [Typedef]
 id: OBI:0000299
@@ -48229,7 +48291,7 @@ property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 range: OBI:0000011 ! planned process
-is_a: participates_in ! participates_in
+is_a: participates_in ! participates in
 
 [Typedef]
 id: OBI:0000417
@@ -48298,6 +48360,7 @@ property_value: example_of_usage "this process has participant this input materi
 property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:has_participant xsd:string
 property_value: IAO:0000111 "has participant" xsd:string
 property_value: IAO:0000118 "has_participant" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000003 ! occurrent
 range: BFO:0000002 ! continuant
 holds_over_chain: has_part RO:0000057
@@ -48468,6 +48531,7 @@ creation_date: 2017-05-24T09:49:21Z
 id: RO:0002022
 name: directly regulated by
 comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="GOC:dos"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002334 ! regulated by
 inverse_of: RO:0002578 ! directly regulates
 created_by: dos
@@ -48515,6 +48579,7 @@ name: ends after
 comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
 subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
 
@@ -48526,6 +48591,7 @@ subset: ro-eco
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0002575 BFO:0000063
 holds_over_chain: ends_with starts_with
 is_a: precedes ! precedes
@@ -48561,6 +48627,7 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
 property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 
@@ -48593,6 +48660,7 @@ subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "consumes" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000015 ! process
 holds_over_chain: starts_with RO:0002233
 is_a: RO:0000057 ! has participant
@@ -48626,6 +48694,7 @@ name: acts upstream of
 def: "c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: example_of_usage "A faulty traffic light (material entity) whose malfunctioning (a process) is causally upstream of a traffic collision (a process): the traffic light acts upstream of the collision." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of
 holds_over_chain: RO:0002327 RO:0002411
 is_a: RO:0002264 ! acts upstream of or within
@@ -48637,6 +48706,7 @@ def: "c acts upstream of or within p if c is enables f, and f is causally upstre
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 synonym: "affects" RELATED []
 property_value: example_of_usage "A gene product that has some activity, where that activity may be a part of a pathway or upstream of the pathway." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within
 holds_over_chain: RO:0002327 RO:0002418
 is_a: RO:0002500 ! causal agent in process
@@ -48674,6 +48744,7 @@ comment: holds between x and y if and only if x is causally upstream of y and th
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: http://purl.org/dc/terms/creator "cjm" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004049 RO:0002411
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004047 ! causally upstream of or within, positive effect
@@ -48683,6 +48754,7 @@ id: RO:0002305
 name: causally upstream of, negative effect
 comment: holds between x and y if and only if x is causally upstream of y and the progression of x decreases the frequency, rate or extent of y
 property_value: http://purl.org/dc/terms/creator "cjm" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004050 RO:0002411
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004046 ! causally upstream of or within, negative effect
@@ -48720,6 +48792,7 @@ name: mereotopologically related to
 def: "A mereological relationship or a topological relationship" []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0001900 RO:0001901
 
 [Typedef]
@@ -48742,6 +48815,7 @@ property_value: IAO:0000118 "is catalyzing" xsd:string
 property_value: IAO:0000118 "is executing" xsd:string
 property_value: IAO:0000232 "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized." xsd:string
 property_value: IAO:0000232 "This relation is currently used experimentally by the Gene Ontology Consortium. It may not be stable and may be obsoleted at some future time." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: capable_of ! capable_of
 inverse_of: RO:0002333 ! enabled by
 transitive_over: has_part ! has_part
@@ -48756,7 +48830,7 @@ property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
 property_value: seeAlso Involved:in
 holds_over_chain: RO:0002327 part_of
-is_a: participates_in ! participates_in
+is_a: participates_in ! participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
 transitive_over: part_of ! part_of
 
@@ -48766,6 +48840,7 @@ name: enabled by
 def: "inverse of enables" []
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: functionally_related_to ! functionally related to
 is_a: RO:0000057 ! has participant
 
@@ -48776,6 +48851,7 @@ def: "inverse of regulates" []
 subset: RO:0002259
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000589 "regulated by (processual)" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000015 ! process
 range: BFO:0000015 ! process
 is_transitive: true
@@ -48787,6 +48863,7 @@ name: negatively regulated by
 def: "inverse of negatively regulates" []
 subset: RO:0002259
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002334 ! regulated by
 
 [Typedef]
@@ -48795,6 +48872,7 @@ name: positively regulated by
 def: "inverse of positively regulates" []
 subset: RO:0002259
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002334 ! regulated by
 
 [Typedef]
@@ -48839,6 +48917,7 @@ name: causally downstream of
 def: "inverse of upstream of" []
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: preceded_by ! preceded_by
 is_a: RO:0002427 ! causally downstream of or within
 inverse_of: RO:0002411 ! causally upstream of
@@ -48848,6 +48927,7 @@ id: RO:0002405
 name: immediately causally downstream of
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: immediately_preceded_by ! immediately preceded by
 is_a: RO:0002404 ! causally downstream of
 inverse_of: RO:0002412 ! immediately causally upstream of
@@ -48860,6 +48940,7 @@ property_value: editor_note "This branch of the ontology deals with causal relat
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 
 [Typedef]
 id: RO:0002411
@@ -48869,6 +48950,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_transitive: true
 is_a: precedes ! precedes
 is_a: RO:0002418 ! causally upstream of or within
@@ -48879,6 +48961,7 @@ name: immediately causally upstream of
 def: "p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q." []
 property_value: IAO:0000114 IAO:0000428
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0002575 RO:0002411
 is_a: RO:0002090 ! immediately precedes
 is_a: RO:0002411 ! causally upstream of
@@ -48891,6 +48974,7 @@ synonym: "affects" RELATED []
 property_value: editor_note "We would like to make this disjoint with 'preceded by', but this is prohibited in OWL2" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "influences (processual)" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_transitive: true
 is_a: RO:0002501 ! causal relation between processes
 inverse_of: RO:0002427 ! causally downstream of or within
@@ -48902,6 +48986,7 @@ def: "inverse of causally upstream of or within" []
 subset: RO:0002259
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_transitive: true
 is_a: RO:0002501 ! causal relation between processes
 
@@ -48910,6 +48995,7 @@ id: RO:0002428
 name: involved in regulation of
 def: "c involved in regulation of p if c is involved in some p' and p' regulates some p" []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 holds_over_chain: RO:0002327 regulates
 holds_over_chain: RO:0002331 regulates
 is_a: RO:0002263 ! acts upstream of
@@ -48920,6 +49006,7 @@ id: RO:0002429
 name: involved in positive regulation of
 def: "c involved in regulation of p if c is involved in some p' and p' positively regulates some p" []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004049 RO:0002428
 holds_over_chain: RO:0002327 positively_regulates
 holds_over_chain: RO:0002331 positively_regulates
@@ -48930,6 +49017,7 @@ id: RO:0002430
 name: involved in negative regulation of
 def: "c involved in regulation of p if c is involved in some p' and p' negatively regulates some p" []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004050 RO:0002428
 holds_over_chain: RO:0002327 negatively_regulates
 holds_over_chain: RO:0002331 negatively_regulates
@@ -48942,6 +49030,7 @@ def: "c involved in or regulates p if and only if either (i) c is involved in p 
 property_value: editor_note "OWL does not allow defining object properties via a Union" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "involved in or reguates" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: functionally_related_to ! functionally related to
 is_a: RO:0002264 ! acts upstream of or within
 is_a: RO:0002500 ! causal agent in process
@@ -48963,8 +49052,11 @@ synonym: "in pairwise interaction with" EXACT []
 property_value: closeMatch http://purl.obolibrary.org/obo/MI_0914 xsd:anyURI
 property_value: editor_note "Considering relabeling as 'pairwise interacts with'" xsd:anyURI
 property_value: editor_note "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." xsd:string
+property_value: http://xmlns.com/foaf/0.1/page https://github.com/oborel/obo-relations/wiki/InteractionRelations xsd:anyURI
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000232 "Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: seeAlso http://purl.obolibrary.org/obo/MI_0914 xsd:anyURI
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/interaction-relations/ xsd:anyURI
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
@@ -48978,7 +49070,9 @@ property_value: closeMatch http://purl.obolibrary.org/obo/MI_0915 xsd:anyURI
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "binds" xsd:string
 property_value: IAO:0000118 "molecularly binds with" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: seeAlso ECO:0000353
+property_value: seeAlso http://purl.obolibrary.org/obo/MI_0915 xsd:anyURI
 is_symmetric: true
 is_a: RO:0002434 ! interacts with
 
@@ -48988,6 +49082,7 @@ name: phosphorylates
 property_value: editor_note "Axiomatization to GO to be added later" xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "An interaction relation between x and y in which x catalyzes a reaction in which a phosphate group is added to y." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002436 ! molecularly interacts with
 
 [Typedef]
@@ -48997,6 +49092,7 @@ def: "The entity A, immediately upstream of the entity B, has an activity that r
 synonym: "molecularly controls" EXACT []
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 "Vasundra Touré" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
 is_a: RO:0002436 ! molecularly interacts with
@@ -49031,6 +49127,7 @@ id: RO:0002464
 name: helper property (not for use in curation)
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000232 "This property or its subproperties is not to be used directly. These properties exist as helper properties that are used to support OWL reasoning." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 
 [Typedef]
 id: RO:0002479
@@ -49044,6 +49141,7 @@ holds_over_chain: has_part occurs_in {http://purl.obolibrary.org/obo/RO_0002581=
 id: RO:0002481
 name: is kinase activity
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002564 ! molecular interaction relation helper property
 
 [Typedef]
@@ -49062,6 +49160,7 @@ id: RO:0002500
 name: causal agent in process
 def: "A relationship between a material entity and a process where the material entity has some causal role that influences the process" []
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002595 ! causal relation between material entity and a process
 inverse_of: RO:0002608 ! process has causal agent
 
@@ -49072,6 +49171,7 @@ def: "p is causally related to q if and only if p or any part of p and q or any 
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 is_a: RO:0002410 ! causally related to
@@ -49089,6 +49189,7 @@ property_value: editor_note "The intent is that the process branch of the causal
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000232 "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000002 ! continuant
 range: BFO:0000002 ! continuant
 is_a: RO:0002410 ! causally related to
@@ -49124,13 +49225,16 @@ name: causally influenced by
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "causally influenced by (entity-centric)" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002506 ! causal relation between entities
 inverse_of: RO:0002566 ! causally influences
 
 [Typedef]
 id: RO:0002563
 name: interaction relation helper property
+property_value: http://xmlns.com/foaf/0.1/page https://github.com/oborel/obo-relations/wiki/InteractionRelations xsd:anyURI
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/interaction-relations/ xsd:anyURI
 is_a: RO:0002464 ! helper property (not for use in curation)
@@ -49139,6 +49243,7 @@ is_a: RO:0002464 ! helper property (not for use in curation)
 id: RO:0002564
 name: molecular interaction relation helper property
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002563 ! interaction relation helper property
 
 [Typedef]
@@ -49149,6 +49254,7 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 "Vasundra Touré" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "causally influences (entity-centric)" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000002 ! continuant
 range: BFO:0000002 ! continuant
 is_a: RO:0002506 ! causal relation between entities
@@ -49171,6 +49277,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "directly regulates (processual)" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0002575 RO:0002211
 is_a: regulates ! regulates
 is_a: RO:0002412 ! immediately causally upstream of
@@ -49192,6 +49299,7 @@ def: "A relationship that holds between a material entity and a process in which
 property_value: editor_note "Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect." xsd:string
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000040 ! material entity
 range: BFO:0000015 ! process
 is_a: RO:0002410 ! causally related to
@@ -49202,6 +49310,7 @@ name: capable of regulating
 def: "Holds between c and p if and only if c is capable of some activity a, and a regulates p." []
 property_value: example_of_usage "pyrethroid -> growth" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 holds_over_chain: capable_of regulates
 is_a: RO:0002500 ! causal agent in process
 
@@ -49210,6 +49319,7 @@ id: RO:0002597
 name: capable of negatively regulating
 def: "Holds between c and p if and only if c is capable of some activity a, and a negatively regulates p." []
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 holds_over_chain: capable_of negatively_regulates
 is_a: RO:0002596 ! capable of regulating
 
@@ -49219,6 +49329,7 @@ name: capable of positively regulating
 def: "Holds between c and p if and only if c is capable of some activity a, and a positively regulates p." []
 property_value: example_of_usage "renin -> arteriolar smooth muscle contraction" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 holds_over_chain: capable_of positively_regulates
 is_a: RO:0002596 ! capable of regulating
 
@@ -49227,6 +49338,7 @@ id: RO:0002608
 name: process has causal agent
 def: "Inverse of 'causal agent in process'" []
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: RO:0002410 ! causally related to
 
 [Typedef]
@@ -49279,6 +49391,7 @@ creation_date: 2018-01-25T23:20:13Z
 id: RO:0004032
 name: acts upstream of or within, positive effect
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004049 RO:0002264
 property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within,_positive_effect
 holds_over_chain: RO:0002327 RO:0004047
@@ -49290,6 +49403,7 @@ creation_date: 2018-01-26T23:49:30Z
 id: RO:0004033
 name: acts upstream of or within, negative effect
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004050 RO:0002264
 holds_over_chain: RO:0002327 RO:0004046
 is_a: RO:0002264 ! acts upstream of or within
@@ -49301,6 +49415,7 @@ id: RO:0004034
 name: acts upstream of, positive effect
 def: "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004049 RO:0002263
 property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_positive_effect
 holds_over_chain: RO:0002327 RO:0002304
@@ -49314,6 +49429,7 @@ id: RO:0004035
 name: acts upstream of, negative effect
 def: "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004050 RO:0002263
 property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_negative_effect
 holds_over_chain: RO:0002327 RO:0002305
@@ -49325,6 +49441,7 @@ creation_date: 2018-01-26T23:53:22Z
 [Typedef]
 id: RO:0004046
 name: causally upstream of or within, negative effect
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004050 RO:0002418
 is_a: RO:0002418 ! causally upstream of or within
 created_by: cjm
@@ -49333,6 +49450,7 @@ creation_date: 2018-03-13T23:55:05Z
 [Typedef]
 id: RO:0004047
 name: causally upstream of or within, positive effect
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004049 RO:0002418
 is_a: RO:0002418 ! causally upstream of or within
 created_by: cjm
@@ -49360,6 +49478,7 @@ id: RO:0011002
 name: regulates activity of
 def: "The entity A has an activity that regulates an activity of the entity B. For example, A and B are gene products where the catalytic activity of A regulates the kinase activity of B." []
 property_value: IAO:0000117 "Vasundra Touré" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
 is_a: RO:0002566 ! causally influences
@@ -49503,6 +49622,7 @@ property_value: IAO:0000118 "has function realized in" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20123131
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/21208450
 property_value: IAO:0000232 "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"." xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000015 ! process
 is_transitive: false
@@ -49517,6 +49637,8 @@ def: "c stands in this relationship to p if and only if there exists some p' suc
 xref: RO:0002216
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "has function in" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
+property_value: seeAlso "defining-property-chains-involving-reflexivity"
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
 holds_over_chain: capable_of part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
 is_a: functionally_related_to ! functionally related to
@@ -49863,6 +49985,7 @@ name: example of usage
 namespace: uberon
 def: "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold." []
 xref: IAO:0000112
+property_value: IAO:0000111 "example" xsd:string
 property_value: IAO:0000111 "example of usage" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "PERSON:Daniel Schober" xsd:string
@@ -49962,6 +50085,7 @@ def: "A grouping relationship for any relationship directly involving a function
 xref: RO:0002328
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000232 "This is a grouping relation that collects relations used for the purpose of connecting structure and function" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 
 [Typedef]
 id: has_boundary
@@ -50172,6 +50296,7 @@ synonym: "starts_at_end_of" EXACT []
 xref: RO:0002087
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "starts_at_end_of" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: seeAlso SIO:000251
 property_value: UBPROP:0000001 "A non-transitive temporal relation in which one process immediately precedes another process, such that there is no interval of time between the two processes[SIO:000251]." xsd:string {source="SIO:000251"}
 holds_over_chain: starts_with ends_with
@@ -50297,8 +50422,9 @@ subset: ro-eco
 subset: RO:0002259
 xref: RO:0002352
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 is_a: functionally_related_to ! functionally related to
-is_a: participates_in ! participates_in
+is_a: participates_in ! participates in
 
 [Typedef]
 id: located_in
@@ -50376,6 +50502,7 @@ xref: RO:0002212
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "negatively regulates (process to process)" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004050 RO:0002211
 holds_over_chain: ends_with negatively_regulates
 is_a: regulates ! regulates
@@ -50421,7 +50548,7 @@ subset: RO:0002259
 xref: RO:0002353
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 is_a: functionally_related_to ! functionally related to
-is_a: participates_in ! participates_in
+is_a: participates_in ! participates in
 
 [Typedef]
 id: overlaps
@@ -50435,6 +50562,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 subset: ro-eco
 xref: RO:0002131
 property_value: IAO:0000114 IAO:0000125
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0001900 RO:0001901
 holds_over_chain: has_part overlaps
 holds_over_chain: has_part part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
@@ -50514,6 +50642,7 @@ property_value: example_of_usage "this input material (or this output material) 
 property_value: example_of_usage "this investigator participates in this investigation" xsd:string
 property_value: IAO:0000111 "participates in" xsd:string
 property_value: IAO:0000118 "participates_in" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000002 ! continuant
 range: BFO:0000003 ! occurrent
 inverse_of: RO:0000057 ! has participant
@@ -50530,6 +50659,7 @@ xref: RO:0002213
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "positively regulates (process to process)" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 property_value: RO:0004049 RO:0002211
 holds_over_chain: ends_with positively_regulates
 holds_over_chain: negatively_regulates negatively_regulates
@@ -50573,6 +50703,7 @@ property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org
 property_value: IAO:0000111 "preceded by" xsd:string
 property_value: IAO:0000118 "is preceded by" xsd:string
 property_value: IAO:0000118 "preceded_by" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 holds_over_chain: part_of preceded_by
@@ -50588,6 +50719,7 @@ def: "x precedes y if and only if the time point at which x ends is before or eq
 subset: ro-eco
 xref: BFO:0000063
 property_value: IAO:0000111 "precedes" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
 holds_over_chain: part_of precedes
@@ -50640,6 +50772,7 @@ is_a: in_proximal_side_of ! in_proximal_side_of
 id: regulates
 name: regulates
 namespace: external
+def: "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2." []
 def: "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -50655,6 +50788,7 @@ property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relati
 property_value: IAO:0000232 "Regulation precludes parthood; the regulatory process may not be within the regulated process." xsd:string
 property_value: IAO:0000589 "regulates (processual)" xsd:string
 property_value: IAO:0000600 "false" xsd:boolean
+property_value: isDefinedBy http://purl.obolibrary.org/obo/ro.owl
 domain: BFO:0000015 ! process
 range: BFO:0000015 ! process
 holds_over_chain: ends_with regulates
