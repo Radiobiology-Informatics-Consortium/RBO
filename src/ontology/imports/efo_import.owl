@@ -1,0 +1,1272 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-08-19/imports/efo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-19</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label>example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001847 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001847"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_annotation_extension -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_gp2term -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_gp2term">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_go_ontology -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_go_ontology">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/valid_for_gocam -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/valid_for_gocam">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ncbitaxon#has_rank -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#has_rank"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/creator</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-creator</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-creator</oboInOwl:shorthand>
+        <rdfs:label>creator</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/ArrayExpress_label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/ArrayExpress_label"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_URI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EFO_URI"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/added_for_HCA -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/added_for_HCA">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/branch_class -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/branch_class"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/definition_citation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_citation"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/organizational_class -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/organizational_class"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/primary_source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/primary_source"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/source_definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/source_definition"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label>created_by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <obo:IAO_0000115>An alternative label for a given entity such as a commonly used abbreviation or synonym. </obo:IAO_0000115>
+        <rdfs:label>alternative_term</rdfs:label>
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonymType -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonymType"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111>is part of</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
+        <obo:IAO_0000112>my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112>my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000112>this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115>For continuants: C part_of C&apos; if and only if: given any c that instantiates C at a time t, there is some c&apos; such that c&apos; instantiates C&apos; at time t, and c *part_of* c&apos; at t. For processes: P part_of P&apos; if and only if: given any p that instantiates P at a time t, there is some p&apos; such that p&apos; instantiates P&apos; at time t, and p *part_of* p&apos; at t. (Here *part_of* is the instance-level part-relation.)</obo:IAO_0000115>
+        <obo:IAO_0000115>a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <obo:IAO_0000116>Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
+        <obo:IAO_0000116>Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116>Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000116>Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000118>part_of</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/part_of</efo:EFO_URI>
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>OBO_REL:part_of</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>part of</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>human_stages_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>relationship</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <rdfs:comment>EFO_0000822</rdfs:comment>
+        <rdfs:label>part of</rdfs:label>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label>part_of</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
+        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/has_part</efo:EFO_URI>
+        <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
+        <rdfs:label>has part</rdfs:label>
+        <rdfs:label>has_part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0301 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0301">
+        <rdfs:label xml:lang="en">hasAncestryStatus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0000829</efo:EFO_URI>
+        <oboInOwl:hasDbXref>RO:0000052</oboInOwl:hasDbXref>
+        <oboInOwl:id>inheres_in</oboInOwl:id>
+        <rdfs:label>inheres_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A relation between an entity and a dependent continuant; the reciprocal relation of inheres_in [GOC:cjm] example of usage: red eye bearer_of redness</obo:IAO_0000115>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001377</efo:EFO_URI>
+        <rdfs:label>bearer_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/has_quality</efo:EFO_URI>
+        <rdfs:label>has_quality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002180 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002180">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <oboInOwl:hasDbXref>RO:0002180</oboInOwl:hasDbXref>
+        <oboInOwl:id>qualifier</oboInOwl:id>
+        <oboInOwl:shorthand>qualifier</oboInOwl:shorthand>
+        <rdfs:comment>For use in recording has_part with a cardinality constraint.</rdfs:comment>
+        <rdfs:comment>placeholder relation to indicate normality/abnormality.</rdfs:comment>
+        <rdfs:label>has component</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <obo:IAO_0000115>A process is an entity that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity during the time it occurs.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001433</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/span#ProcessualEntity</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>NCIt:C29862</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:415178003</oboInOwl:hasDbXref>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <obo:IAO_0000112>For example, the disposition of vegetables to decay when not refrigerated, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease.</obo:IAO_0000112>
+        <obo:IAO_0000115>A disposition is an entity that causes a specific process or transformation in an entity in which it inheres, under specific circumstances and in conjunction with the laws of nature. For example, the disposition of vegetables to decay when not refrigerated, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone modified from original</obo:IAO_0000117>
+        <efo:ArrayExpress_label>disease property</efo:ArrayExpress_label>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001438</efo:EFO_URI>
+        <efo:branch_class>true</efo:branch_class>
+        <efo:source_definition>A realizable entity [snap:RealizableEntity] that essentially causes a specific process or transformation in the object [snap:Object] in which it inheres, under specific circumstances and in conjunction with the laws of nature. A general formula for dispositions is: X (object [snap:Object] has the disposition D to (transform, initiate a process) R under conditions C.</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#Disposition</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>NCIt:C41205</oboInOwl:hasDbXref>
+        <rdfs:label>disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <obo:IAO_0000112>For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</obo:IAO_0000112>
+        <obo:IAO_0000115>A role is an entity which is borne in a material entity in some kinds of natural, social or institutional contexts, but which is not essential to the fundamental definition of that material entity (i.e. the material entity exists with or without the role).  For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001440</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>A realizable entity [snap:RealizableEntity] the manifestation of which brings about some result or end that is not essential to a continuant [snap:Continuant] in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant [snap:Continuant] in some kinds of natural, social or institutional contexts.</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#Role</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>MeSH:D012380</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C48835</oboInOwl:hasDbXref>
+        <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <obo:IAO_0000112>A heart, a human, a fly, a microarray.</obo:IAO_0000112>
+        <obo:IAO_0000115>A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:ArrayExpress_label>sample factor</efo:ArrayExpress_label>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001434</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#MaterialEntity</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>material type</oboInOwl:hasExactSynonym>
+        <rdfs:label>material entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A drug, solvent, chemical, etc., with a property that can be measured such as concentration.</obo:IAO_0000115>
+        <obo:IAO_0000115>A molecular entity consisting of two or more chemical elements.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:branch_class>true</efo:branch_class>
+        <oboInOwl:hasExactSynonym>chemical compound</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heteroatomic molecular entities</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>heteroatomic molecular entity</oboInOwl:hasExactSynonym>
+        <rdfs:label>chemical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115>A role played by the molecular entity or part thereof within a biological context.</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <rdfs:label>biological role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <oboInOwl:hasDbXref>MeSH:D004602</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C1940</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C48792</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:290004009</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>atom</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>atome</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>atomo</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>atoms</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>atomus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>elements</oboInOwl:hasExactSynonym>
+        <rdfs:label>element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_51086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_51086">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000112>The role of a chemical to be an anti-inflammatory drug.</obo:IAO_0000112>
+        <obo:IAO_0000115>A role played by the molecular entity or part thereof within a chemical context.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001815</efo:EFO_URI>
+        <efo:primary_source>http://purl.org/obo/owl/CHEBI#CHEBI_51086</efo:primary_source>
+        <rdfs:label>chemical role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
+        <obo:IAO_0000115>Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>ancestral group</oboInOwl:hasExactSynonym>
+        <rdfs:label>ancestry category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0290 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0290">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0301"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0305"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <obo:IAO_0000115>A population with increased genetic homogeneity and reduced genetic variation due to cultural or geographic isolation</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>founder population</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>population isolate</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">genetically isolated population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0305">
+        <obo:IAO_0000115>Ancestry that is the result of cultural or geographic isolation. Generally characterised by increased genetic homogeneity and reduced genetic variation</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">genetically isolated ancestry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <obo:IAO_0000115>Mus (commonly mice) is a small mammal belonging to the order of rodents.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0002644</efo:EFO_URI>
+        <oboInOwl:hasDbXref>MeSH:D051379</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C14238</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:447482001</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>mice</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mouse</oboInOwl:hasExactSynonym>
+        <rdfs:label>Mus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10088"/>
+        <obo:IAO_0000117>Class imported / merged by efoimporter</obo:IAO_0000117>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_species"/>
+        <oboInOwl:hasExactSynonym>Mus formosanus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Ryukyu mouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ricefield mouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCBITaxon:10089</oboInOwl:id>
+        <rdfs:label>Mus caroli</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10089"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mus formosanus</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10089"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Ryukyu mouse</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10089"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ricefield mouse</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10088"/>
+        <obo:IAO_0000117>Class imported / merged by efoimporter</obo:IAO_0000117>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_species"/>
+        <oboInOwl:hasDbXref>NCIt:C45247</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:447612001</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Mus muscaris</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>house mouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mice C57BL/6xCBA/CaJ hybrid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>mouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCBITaxon:10090</oboInOwl:id>
+        <rdfs:label>Mus musculus</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mus muscaris</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#misnomer"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>house mouse</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>mice C57BL/6xCBA/CaJ hybrid</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#misspelling"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>mouse</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10088"/>
+        <obo:IAO_0000117>Class imported / merged by efoimporter</obo:IAO_0000117>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_species"/>
+        <oboInOwl:hasDbXref>NCIt:C71624</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Algerian mouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Mus musculus spretus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>western wild mouse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>NCBITaxon:10096</oboInOwl:id>
+        <rdfs:label>Mus spretus</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Algerian mouse</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Mus musculus spretus</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10096"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>western wild mouse</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2759 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001449</efo:EFO_URI>
+        <oboInOwl:hasDbXref>MeSH:D056890</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C25796</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:415671008</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Eucaryotae</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Eukarya</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>eucaryotes</oboInOwl:hasExactSynonym>
+        <rdfs:label>Eukaryota</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">population</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PMID12564891. Environ Sci Technol. 2003 Jan 15;37(2):223-8. Effects of historic PCB exposures on the reproductive success of the Hudson River striped bass population.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115>A population is a group of material entities consisting of individuals which share a particular characteristic such as inhabiting a particular region or area or ability to interbreed.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area</obo:IAO_0000115>
+        <obo:IAO_0000116>1/28/2013, BP, on the call it was raised that we may want to switch to an external ontology for all populatin terms: 
+http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
+        <obo:IAO_0000117>James Malone modified from original OBI definition</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak modified from original OBI definition</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">adapted from Oxford English Dictionnary</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">rem1: collection somehow always involve a selection process</obo:IAO_0000232>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0000664</efo:EFO_URI>
+        <efo:branch_class>true</efo:branch_class>
+        <oboInOwl:hasDbXref>MeSH:D011153</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:sao2254405550</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:385436007</oboInOwl:hasDbXref>
+        <rdfs:label>population</rdfs:label>
+        <rdfs:label xml:lang="en">population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <obo:IAO_0000111 xml:lang="en">protocol</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A protocol is an information entity which is a set of instructions that describe an how an experiment is done.</obo:IAO_0000115>
+        <obo:IAO_0000115>a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</obo:IAO_0000119>
+        <obo:OBI_0001847>study protocol</obo:OBI_0001847>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001442</efo:EFO_URI>
+        <efo:branch_class>true</efo:branch_class>
+        <oboInOwl:hasDbXref>MO:214</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C42651</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:260686004</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>method</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>method used in an experiment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>plan specification</oboInOwl:hasExactSynonym>
+        <rdfs:label>protocol</rdfs:label>
+        <rdfs:label xml:lang="en">protocol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
+        <obo:IAO_0000112>Drosophila melanogaster</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs. E.g Drosophila melanogaster</obo:IAO_0000115>
+        <obo:IAO_0000116>10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
+        <obo:IAO_0000116>13-02-2009:
+OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
+This issue is outside the scope of OBI.</obo:IAO_0000116>
+        <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0000634</efo:EFO_URI>
+        <efo:branch_class>true</efo:branch_class>
+        <oboInOwl:hasDbXref>MO:508</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C14250</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_376</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:410607006</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>species</oboInOwl:hasExactSynonym>
+        <rdfs:label>organism</rdfs:label>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000127">
+        <obo:IAO_0000115>A derived unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.</obo:IAO_0000115>
+        <rdfs:label>radiation unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000597 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>129 is a mouse strain as described in Jackson Laboratory http://www.informatics.jax.org/mgihome/nomen/strain_129.shtml</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:definition_citation>Simpson E. M., Linder C. C., Sargent E. E., Davisson M. T., Mobraaten L. E., and Sharp J. J. (1997) Genetic variation among 129 substrains and its importance for targeted mutagenesis in mice. Nature Genet. 16, 19-27.</efo:definition_citation>
+        <efo:definition_citation>http://www.informatics.jax.org/mgihome/nomen/strain_129.shtml</efo:definition_citation>
+        <rdfs:label>129 mouse strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000602 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000602">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>BALB/c is a mouse strain of albion mice.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:definition_citation>http://en.wikipedia.org/wiki/BALB/c</efo:definition_citation>
+        <efo:definition_citation>https://www.jax.org/strain/000651</efo:definition_citation>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_206</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>BALB/cJ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BALBc</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Description from https://www.jax.org/strain/000651:
+
+BALB/c mice are particularly well known for the production of plasmacytomas following injection with mineral oil forming the basis for the production of monoclonal antibodies. Although not all BALB/c substrains have been examined for plasmacytoma induction, substrains derived from the Andervont (An) lineage (which includes BALB/cByJ) typically are susceptible, while those descended from BALB/cJ are resistant (see: Potter M, 1985). Mammary tumor incidence is normally low but infection with mammary tumor virus by fostering to MMTV+ C3H mice dramatically increases tumor number and age of onset. BALB/c mice develop other cancers later in life including reticular neoplasms, primary lung tumors, and renal tumors. Rare spontaneous myoepitheliomas arising from myoepithelial cells of various exocrine glands have been observed in both BALB/cJ and BALB/cByJ substrains.
+
+White et al. reported a variation in thioglycolate medium-induced peritoneal leukocyte recruitment in 4 analyzed strains. The response of total leukocyte recruitment, from greatest to least, was C57BL/6J&gt;BALB/c&gt;CD1&gt;129X1/SvJ. Variations were also found in the timeline of response and cell types most impacted.
+
+BALB/c mice immunized with PLP180-199 develop an atypical form of experimental autoimmune encephalomyelitis (EAE) in which susceptibility is determined by location. In the spinal cord 60-70% mice develop pathological lesions and in the brain and cerebellum 100% of mice develop sever lesions.
+
+Dorso-ventral vaginal septa is observed in some BALB/cJ females, and may contribute to non-productive females in this strain. (Cunliffe-Beamer T, Lab Anim Sci, 1976)
+</rdfs:comment>
+        <rdfs:label>BALB/c</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000603 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>BALB is a mouse strain as described in Jackson Laboratory http://jaxmice.jax.org/strain/001026.html</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:definition_citation>http://jaxmice.jax.org/strain/001026.html</efo:definition_citation>
+        <rdfs:label>BALB/cByJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001327 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001327">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>A/J is a mouse strain as described in Jackson Laboratory http://jaxmice.jax.org/strain/000646.html</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:definition_citation>http://jaxmice.jax.org/strain/000646.html</efo:definition_citation>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_577</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>A</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>AJ</oboInOwl:hasExactSynonym>
+        <rdfs:label>A/J</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001329 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001329">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>C3H/HeJ is a mouse strain as described in Jackson Laboratory http://jaxmice.jax.org/strain/000659.html</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>JAX:000659</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>C3</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C3H</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>C3H Heston</oboInOwl:hasExactSynonym>
+        <rdfs:label>C3H/HeJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001339 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>CB6F1 is a mouse strain as described in Jackson Laboratory http://jaxmice.jax.org/strain/100007.html</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>JAX:100007</oboInOwl:hasDbXref>
+        <rdfs:label>CB6F1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0001340 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>B6C3F1 is a mouse strain as described in Jackson Laboratory http://jaxmice.jax.org/strain/100010.html</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>JAX:100010</oboInOwl:hasDbXref>
+        <rdfs:label>B6C3F1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0003013 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0003013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <rdfs:label>Mus musculus subspecies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004000 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>A designator of mouse strain information indicating the genetic homo or heterogenetity e.g. inbred strain</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <rdfs:label>Mus musculus strain type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004005 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004005">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004429"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004429"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An inbred strain carrying one or more phenotypic mutations. For example, the mutant strain C3H/H3eSn-bc3J/J carries the bouncy 3 Jackson phenotypic mutation.</obo:IAO_0000115>
+        <efo:definition_citation>http://www.findmice.org/glossary.jsp</efo:definition_citation>
+        <rdfs:label>inbred Mus musculus strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0004429 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004429">
+        <obo:IAO_0000115>Property of an organism which indicates that the organism&apos;s parents were genetically related (potentially for several generations). Inbreeding results in closer homozygosity.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <rdfs:label>inbred</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005180 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>The original group of Swiss mice that served as progenitors of this stock consisted of two male and seven female albino mice derived from a non-inbred stock in the laboratory of Dr. de Coulon, Centre Anticancereux Romand, Lausanne, Switzerland.</obo:IAO_0000115>
+        <efo:definition_citation>http://www.criver.com/en-US/ProdServ/ByType/ResModOver/ResMod/Pages/CD-1Mouse.aspx</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>CD-1 mus</oboInOwl:hasExactSynonym>
+        <rdfs:label>CD1 mus strain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0005184 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0005184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>Inbred Strain TJL Mating System: Sibling x Sibling (Female x Male) Species: laboratory mouse H2 Haplotype: d Generation: F219p (14-DEC-06) Appearance: dilute brown Related Genotype: a/a Tyrp1b/Tyrp1b Myo5ad/Myo5ad Important Note This strain is homozygous for Cdh23ahl, the age related hearing loss 1 mutation, which on this background results in progressive hearing loss that is already severe by 3 months of age. Strain Description DBA/2J is a widely used inbred strain that is valuable in a wide number of research areas including cardiovascular biology, neurobiology, and sensorineural research.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:definition_citation>Beck, J.A., et al., Genealogies of mouse inbred strains (2000), Nature, Jan2000, v24, p23</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>D2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>D2J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DBA2</oboInOwl:hasExactSynonym>
+        <rdfs:label>DBA/2J</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007726 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007726">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>Originally inbred at the Rockefeller Institute, AKR mice are widely used in cancer research for their high leukemia incidence (60-90%) and in immunology as a source of the Thy1.1 (theta AKR) antigen. AKR/J mice are viremic from birth, and express the ecotropic retrovirus AKV in all tissues. The hair interior defect (hid) mutation, a strain characteristic of AKR mice, causes alterations in hair development that is only evident microscopically. Adrenocortical lipid depletion (ald) in AKR mice is caused by a mutation in sterol O-acyltransferase 1 (Soat1), and leads to a truncated SOAT1 protein. AKR/J mice are relatively resistant to aortic lesion formation on a semi-synthetic high fat diet and are hyporesponsive to diets containing high levels of fat and cholesterol.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/000648</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>AK</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>AKR</oboInOwl:hasExactSynonym>
+        <rdfs:label>AKR/J</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007727 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007727">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>
+
+Both CAST/EiJ and CASA/RkJ (Stock No. 000735) were derived from wild mice trapped in Thailand. CAST is often combined with the common laboratory strains to generate F1 hybrids with high levels of heterozygosity for use in genetic mapping. Unlike the wild-derived strain SPRET, male F1 mice from a CAST cross are fertile.
+
+Like CASA, CAST is resistant to flavivirus infection. The flavivirus family includes pathogens responsible for dengue, yellow fever and several forms of encephalitis. Most common laboratory mice are sensitive to flavivirus infection. Resistance/sensitivity is conferred through the oligoA synthase Oas1b locus. In a comparison of multiple strains, CASA and CAST exhibit reduced numbers of retinal ganglion cells as compared to common laboratory strains and other wild-derived strains. In a 2015 study comparing CAST/Ei and the other Collaborative Cross inbred strains (A/J, C3H/HeJ, C57BL/6J, DBA/2J, 129S1/SvImJ, NOD/LtJ, NZO/HlLtJ, and WSB/EiJ), dorsal root ganglion neurons from CAST/Ei mice demonstrate a significantly improved ability to regenerate axons in an inhibitory environment as determined by an increase in number of neurons with neurites and longer axonal process per neuron under both naive and pre-injured conditions. In addition, as compared to neurons from C57BL/6 mice, CAST/Ei neurons exhibit more extensive axonal regeneration in the spinal cord and optic nerve following injury and show greater sprouting following ischemic stroke.
+
+Wild-derived mice are genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and are valuable tools for genetic mapping, evolution and systematics research.
+</obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/000928</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>CAST</oboInOwl:hasExactSynonym>
+        <rdfs:label>CAST/EiJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007728 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007728">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>FVB/NJ was inbred for the Fv1b allele which confers sensitivity to the Friend leukemia virus B strain. Due to the prominent pronuclei in their fertilized eggs and the large litter size, FVB/NJ mice are commonly used for transgenic injection. Compared to many other inbred strains, FVB/NJ is highly susceptible to asthma-like airway responsiveness with significant generation of antigen-specific IgE. Despite having the H2q MHC haplotype, FVB/NJ are resistant to collagen-induced arthritis. This resistance stems from coding polymorphisms in Tcra-V11.1 and a genomic deletion of some Tcrb-V genes that includes Tcrb-V8.2. FVB/NJ have higher than average activity, anxiety, and basal body temperature, low stress-induced hyperthermia, and are homozygous for the Pde6brd1 allele, which results in early onset retinal degeneration. Although FVB/N typically do not develop spontaneous tumors, they are highly susceptible to chemically induced squamous cell carcinomas with a high rate of malignant conversion from papilloma to carcinoma. </obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/001800</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>FVB</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Friend Virus B NIH Jackson</oboInOwl:hasExactSynonym>
+        <rdfs:label>FVB/NJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007729 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007729">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>NZO mice of both sexes exhibit high birth weights and are significantly heavier at weaning age. Severe obesity (including both visceral and subcuatneous fat depots) develops even when mice are maintained on a standard diet containing 4.5% fat. Both males and females of the NZO/Hl substrain exhibit impaired glucose tolerance (IGT), but subsequent type 2 maturity onset (NIDDM) diabetes development is limited to males, with a phenotype penetrance of 50% or less. NZO/Hl mice also show anti-insulin receptor antibodies, a defect in leptin transport, and hypertension. The genetic lesion appears to be within the islets of Langerhans as transfer of pancreatic islets from normal mice returns body weights and blood glucose levels to within normal range. Ovarian granulosa cell tumors, lymphomas, duodenal, and lung tumors have also been noted to occur in NZO mice at an elevated frequency. F1 hybrids of NON/ShiLt and NZO/Hl provide a new model of obesity-induced diabetes. Male (NON/ShiLt x NZO/Hl)F1 hybrids are obese (BW = 53.5 g by 16 weeks) and almost all develop maturity onset NIDDM. F1 males on a 4% diet will develop hyperglycemia around 20 to 24 weeks of age; increasing the fat content of the diet accelerates diabetes onset to 16 to 20 weeks of age. (NZO/Hl x NON/ShiLt)F1 hybrids will develop diabetes slightly faster than their reciprocal cross due to the NZO maternal environment; however this cross is difficult to produce due to the inherently poor breeding performance of NZO/HlJ female mice. F1 females exhibit a weight gain similar to the NZO parent, and have impaired glucose tolerance but are resistant to diabetes development. Diabetes development can be accelerated to eight to 12 weeks by fostering onto an F1 dam. Reciprocal backcrosses to the parental strains and analysis of (NON/ShiLt x NZO/Hl)F2 mice has led to the identification of a number of complex diabetes-predisposing (&quot;diabesity&quot;) QTLs. Dr. Leiter&apos;s research group at The Jackson Laboratory is currently developing a series of nine recombinant congenic strains (RCS) made by backcrossing the (NZO/Hl x NON/ShiLt)F1 for two generations onto the NON/ShiLt background before inbreeding (~12% NZO/Hl, 88% NON/ShiLt genomes). Preliminary analysis indicates that body weight gains of all RCS are higher than NON/ShiLt, but none are as obese as NZO/Hl; some of these RCS develop NIDDM while others are resistant. These new strains will be useful to further analyze diabesity QTLs and as new models for type 2 (NIDDM) diabetes. An additional benefit of the RCS is better breeding performance than NZO/Hl.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/002105</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>New Zealand Obese</oboInOwl:hasExactSynonym>
+        <rdfs:label>NZO/HlLtJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007730 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007730">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>PWK was derived from wild mice trapped near Prague, Czech Republic. PWK has a biochemical profile that is similar to the inbred strain PWD (also originating from the Czech Republic - Stock No. 004660) with the exception of the isoenzyme variant esterase 13 (Es13b). Wild-derived mice are genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and are valuable tools for genetic mapping, evolution and systematics research.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/003715</efo:definition_citation>
+        <rdfs:label>PWK/PhJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007731 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007731">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>Watkins Star Line B (WSB) was derived from wild mice trapped in Eastern Shore, Maryland. WSB is characterized by a distinct and consistent white head blaze, variable ventral spotting and a slight coat dilution on the agouti background. The variation in pigment is the result of the spontaneous mutation blaze (Kitlblz).Wild-derived mice are genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and are valuable tools for genetic mapping, evolution and systematics research.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/001145</efo:definition_citation>
+        <rdfs:label>WSB/EiJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007733 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007733">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>LP/J mice display a high susceptibility to audiogenic seizures. This strain is also reported to have a fairly high incidence of tumors that develop later in life, including mammary tumors, lymphoma, lung and soft-tissue sarcomas. LP/J mice are also homozygous for the spontaneous mutation piebald in the endothelin receptor type B gene (Ednrbs). The piebald spontaneous mutation is the result of a mutation in the endothelin receptor type B gene, Ednrb. Mice show irregular white spotting, the amount of which is greatly influenced by minor modifying genes. They also have dark eyes. The white areas of the coat are completely lacking in neural crest-derived melanocytes, and there is a reduction in the number of melanocytes in the choroid layer of the eye.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/000676</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>LP</oboInOwl:hasExactSynonym>
+        <rdfs:label>LP/J</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007734 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007734">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10096"/>
+        <obo:IAO_0000115>The wild-derived inbred strain SPRET/Ei is often used in crosses with common inbred strains to create highly polymorphic panels for genetic mapping. SPRET/Ei mice are resistant to high doses of tumor necrosis factor alpha (TNFa) (Staelens et al 2002). Mice from a C57BL/6 x SPRET/Ei F1 cross were protected from TNFa-induced arthritis and partially protected against induced allergic asthma (Staelens et al 2004). SPRET/Ei may be useful in understanding certain inflammatory diseases.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/001146</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>SPRET/Ei</oboInOwl:hasExactSynonym>
+        <rdfs:label>SPRET/EiJ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007734"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The wild-derived inbred strain SPRET/Ei is often used in crosses with common inbred strains to create highly polymorphic panels for genetic mapping. SPRET/Ei mice are resistant to high doses of tumor necrosis factor alpha (TNFa) (Staelens et al 2002). Mice from a C57BL/6 x SPRET/Ei F1 cross were protected from TNFa-induced arthritis and partially protected against induced allergic asthma (Staelens et al 2004). SPRET/Ei may be useful in understanding certain inflammatory diseases.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-3110-8220</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007735 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007735">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>CBA/J inbred mice are widely used as a general purpose strain. CBA/J strain is the only CBA substrain that carries the Pde6brd1 mutation, which causes blindness by wean age. CBA/J mice are not histocompatible with the CBA/CaJ (Stock No. 000654) substrain (Green and Kaufer, 1965).
+
+The CBA/J inbred mouse strain is used to study granulomatous experimental autoimmune thyroiditis (G-EAT), are relatively resistant to diet-induced atherosclerosis (Paigen et al. 1990), and develop a mild hearing loss late in life, with most of the hearing loss occurring in the higher frequencies (Sweet et al. 1988). Renal tubulointerstitial lesions have been observed in this strain at a high frequency (Rudofsky 1978). Some CBA/J mice spontaneously develop exocrine pancreatic insufficiency syndrome (Eppig and Leiter 1977, Leiter et al. 1977).
+</obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/000656</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>CBA Jackson</oboInOwl:hasExactSynonym>
+        <rdfs:label>CBA/J</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0007839 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0007839">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10089"/>
+        <obo:IAO_0000115>CAROLI was derived from wild mice trapped in Thailand and is from the species Mus caroli, which is distantly related to laboratory mice and does not breed with laboratory mice. These mice are characterized by black feet. This wild derived mouse strain is genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and is a valuable tool for sequence comparison, evolution and systematics research. </obo:IAO_0000115>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/000926</efo:definition_citation>
+        <oboInOwl:hasDbXref>JAX:000926</oboInOwl:hasDbXref>
+        <rdfs:label>CAROLI/EiJ</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.ebi.ac.uk/efo/EFO_0007839"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>CAROLI was derived from wild mice trapped in Thailand and is from the species Mus caroli, which is distantly related to laboratory mice and does not breed with laboratory mice. These mice are characterized by black feet. This wild derived mouse strain is genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and is a valuable tool for sequence comparison, evolution and systematics research. </owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-3110-8220</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0009917 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0009917">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>ICR/HaJ is a mouse strain as described in Jackson Laboratory strain index. This inbred strain is derived from the outbred strain ICR. It may be useful in therapeutic drug testing and genetic analysis of carcinogen-induced colon cancer.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dani Welter</obo:IAO_0000117>
+        <efo:definition_citation>https://www.jax.org/strain/009122</efo:definition_citation>
+        <oboInOwl:hasExactSynonym>ICR</oboInOwl:hasExactSynonym>
+        <rdfs:label>ICR/HaJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0010946 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0010946">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+        <obo:IAO_0000115>A Mus musculus individual that is a substrain of C57BL/6J (mother) and CAST/EiJ (father).</obo:IAO_0000115>
+        <dc:creator>paola</dc:creator>
+        <oboInOwl:hasDbXref>PMID:27668657</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-3163-0115</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset rdf:resource="http://www.ebi.ac.uk/efo/added_for_HCA"/>
+        <rdfs:label>C57BL/6JxCAST/EiJ</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
