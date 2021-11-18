@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/go_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-08-30/imports/go_top_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-30</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-11-01/imports/go_top_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -391,7 +391,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A system for the identification and correction of base-base mismatches, small insertion-deletion loops, and regions of heterology that are present in duplex DNA formed with strands from two recombining molecules. Correction of the mismatch can result in non-Mendelian segregation of alleles following meiosis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10357855</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -464,7 +464,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The error-free repair of a double-strand break in DNA in which the broken DNA molecule is repaired using homologous sequences. A strand in the broken DNA searches for a homologous region in an intact chromosome to serve as the template for DNA synthesis. The restoration of two intact DNA molecules results in the exchange, reciprocal or nonreciprocal, of genetic material between the intact DNA molecule and the broken DNA molecule.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10357855</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
@@ -514,7 +514,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The error-free repair of a double-strand break in DNA in which the centromere-proximal end of a broken chromosome searches for a homologous region in an intact chromosome. DNA synthesis initiates from the 3&apos; end of the invading DNA strand, using the intact chromosome as the template, and progresses to the end of the chromosome.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10357855</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2015,7 +2015,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>biopolymer metabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mtg_chebi_dec09</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_chebi_dec09</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2225,7 +2225,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044260"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>cellular biopolymer metabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mtg_chebi_dec09</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mtg_chebi_dec09</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2263,7 +2263,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0045003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>SDSA is a major mechanism of double-strand break repair in mitosis which allows for the error-free repair of a double-strand break without the exchange of adjacent sequences. The broken DNA searches for and base pairs with a homologous region in an intact chromosome. DNA synthesis initiates from the 3&apos; end of the invading DNA strand, using the intact chromosome as the template. Newly synthesized DNA is then displaced from the template and anneal with its complement on the other side of the double-strand break.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10357855</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2503,7 +2503,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0046787"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process of restoring viral DNA after damage or errors in replication.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0781718325</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0781718325</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

@@ -234,6 +234,7 @@ imports/doid_import.owl:
 
 imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method STAR \
+	remove -t "http://purl.obolibrary.org/obo/RO_0000053" \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
@@ -290,7 +291,7 @@ components/%: .FORCE
 #
 
 IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
+MIR=false # Global parameter to bypass mirror generation
 
 
 ## ONTOLOGY: ro
@@ -355,7 +356,13 @@ mirror/chmo.owl: mirror/chmo.trigger
 mirror/envo.trigger: $(SRC)
 
 mirror/envo.owl: mirror/envo.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/envo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) remove -I $(URIBASE)/envo.owl --select "self equivalents" --signature true  \
+	--term  http://purl.obolibrary.org/obo/ENVO_04000006 \
+	--term  http://purl.obolibrary.org/obo/ENVO_3100011 \
+	--term  http://purl.obolibrary.org/obo/ENVO_04000003 \
+	--term  http://purl.obolibrary.org/obo/ENVO_04000004 \
+	--term  http://purl.obolibrary.org/obo/ENVO_01001865 \
+	convert -o $@.tmp.owl  && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
