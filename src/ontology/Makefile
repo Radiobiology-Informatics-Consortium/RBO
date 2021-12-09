@@ -291,7 +291,7 @@ components/%: .FORCE
 #
 
 IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
+MIR=false # Global parameter to bypass mirror generation
 
 
 ## ONTOLOGY: ro
