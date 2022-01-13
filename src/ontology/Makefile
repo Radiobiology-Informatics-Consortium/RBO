@@ -230,7 +230,7 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 .PRECIOUS: imports/%_import.owl
 
 imports/doid_import.owl: 
-	cp mirror/doid.owl imports/doid_import.owl
+	if [ $(IMP) = true ]; then cp mirror/doid.owl imports/doid_import.owl; fi
 
 imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method STAR \
