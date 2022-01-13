@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/go_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-12-09/imports/go_top_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-01-12/imports/go_top_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -391,7 +391,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A system for the identification and correction of base-base mismatches, small insertion-deletion loops, and regions of heterology that are present in duplex DNA formed with strands from two recombining molecules. Correction of the mismatch can result in non-Mendelian segregation of alleles following meiosis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10357855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -464,7 +464,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The error-free repair of a double-strand break in DNA in which the broken DNA molecule is repaired using homologous sequences. A strand in the broken DNA searches for a homologous region in an intact chromosome to serve as the template for DNA synthesis. The restoration of two intact DNA molecules results in the exchange, reciprocal or nonreciprocal, of genetic material between the intact DNA molecule and the broken DNA molecule.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10357855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
@@ -485,7 +485,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0000725">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
-        <obo:IAO_0000115>A DNA repair process that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous region of DNA.</obo:IAO_0000115>
+        <obo:IAO_0000115>A DNA repair process that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous DNA region.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>Wikipedia:Recombinational_repair</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0000725</oboInOwl:id>
@@ -494,25 +494,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000725"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A DNA repair process that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous region of DNA.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0000726 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0000726">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
-        <obo:IAO_0000115>A DNA repair process in which that does not require the exchange of genetic material between the broken DNA molecule and a homologous region of DNA.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0000726</oboInOwl:id>
-        <rdfs:label>non-recombinational repair</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000726"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A DNA repair process in which that does not require the exchange of genetic material between the broken DNA molecule and a homologous region of DNA.</owl:annotatedTarget>
+        <owl:annotatedTarget>A DNA repair process that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous DNA region.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </owl:Axiom>
     
@@ -532,7 +514,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The error-free repair of a double-strand break in DNA in which the centromere-proximal end of a broken chromosome searches for a homologous region in an intact chromosome. DNA synthesis initiates from the 3&apos; end of the invading DNA strand, using the intact chromosome as the template, and progresses to the end of the chromosome.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10357855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -551,7 +533,6 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
@@ -703,7 +684,6 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
@@ -728,6 +708,7 @@
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006281</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
@@ -956,7 +937,6 @@
     <!-- http://purl.obolibrary.org/obo/GO_0006303 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006303">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000726"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006302"/>
         <obo:IAO_0000115>The repair of a double-strand break in DNA in which the two broken ends are rejoined with little or no sequence complementarity. Information at the DNA ends may be lost due to the modification of broken DNA ends. This term covers instances of separate pathways, called classical (or canonical) and alternative nonhomologous end joining (C-NHEJ and A-NHEJ). These in turn may further branch into sub-pathways, but evidence is still unclear.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>NHEJ</oboInOwl:hasExactSynonym>
@@ -1034,7 +1014,6 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
@@ -1092,7 +1071,6 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
@@ -1299,6 +1277,7 @@
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>single-organism cellular process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0009987</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
         <rdfs:label>cellular process</rdfs:label>
     </owl:Class>
@@ -1654,6 +1633,7 @@
         <oboInOwl:hasExactSynonym>regulation of cellular metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0031323</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:label>regulation of cellular metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1696,6 +1676,7 @@
         <oboInOwl:hasNarrowSynonym>inhibition of cellular metabolic process</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0031324</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:label>negative regulation of cellular metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1739,6 +1720,7 @@
         <oboInOwl:hasNarrowSynonym>stimulation of cellular metabolic process</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0031325</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:label>positive regulation of cellular metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1781,7 +1763,6 @@
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0034641</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <rdfs:label>cellular nitrogen compound metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1890,7 +1871,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0036298">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000725"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0036297"/>
-        <obo:IAO_0000115>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA by a mechanism that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous region of DNA.</obo:IAO_0000115>
+        <obo:IAO_0000115>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA by a mechanism that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous DNA region.</obo:IAO_0000115>
         <oboInOwl:created_by>bf</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-08-07T11:11:59Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>recombination-dependent interstrand cross-link repair</oboInOwl:hasExactSynonym>
@@ -1901,7 +1882,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036298"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA by a mechanism that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous region of DNA.</owl:annotatedTarget>
+        <owl:annotatedTarget>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA by a mechanism that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous DNA region.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:20658649</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -1917,7 +1898,6 @@
     <!-- http://purl.obolibrary.org/obo/GO_0036299 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0036299">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000726"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0036297"/>
         <obo:IAO_0000115>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA by a mechanism that does not involve homologous DNA recombination.</obo:IAO_0000115>
         <oboInOwl:created_by>bf</oboInOwl:created_by>
@@ -2068,8 +2048,10 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043228">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
         <obo:IAO_0000115>Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane. Includes ribosomes, the cytoskeleton and chromosomes.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/21881</obo:IAO_0000233>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao1456184038</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>non-membrane-enclosed organelle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>biological condensate</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0043228</oboInOwl:id>
         <rdfs:label>non-membrane-bounded organelle</rdfs:label>
@@ -2086,7 +2068,24 @@
     <!-- http://purl.obolibrary.org/obo/GO_0043229 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043229">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0043226"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0043229</oboInOwl:id>
@@ -2118,12 +2117,6 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043228"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043229"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane and occurring within the cell. Includes ribosomes, the cytoskeleton and chromosomes.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>intracellular non-membrane-enclosed organelle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
@@ -2171,6 +2164,7 @@
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>intermediary metabolism</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0044237</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:label>cellular metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2240,7 +2234,6 @@
     <!-- http://purl.obolibrary.org/obo/GO_0045002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0045002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000726"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006302"/>
         <obo:IAO_0000115>Repair of a DSB made between two repeated sequences oriented in the same direction occurs primarily by the single strand annealing pathway. The ends of the break are processed by a 5&apos; to 3&apos; exonuclease, exposing complementary single-strand regions of the direct repeats that can anneal, resulting in a deletion of the unique DNA between the direct repeats.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -2271,7 +2264,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0045003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>SDSA is a major mechanism of double-strand break repair in mitosis which allows for the error-free repair of a double-strand break without the exchange of adjacent sequences. The broken DNA searches for and base pairs with a homologous region in an intact chromosome. DNA synthesis initiates from the 3&apos; end of the invading DNA strand, using the intact chromosome as the template. Newly synthesized DNA is then displaced from the template and anneal with its complement on the other side of the double-strand break.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10357855</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2633,6 +2626,7 @@
         <oboInOwl:hasNarrowSynonym>stimulation of cellular process</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0048522</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:label>positive regulation of cellular process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2675,6 +2669,7 @@
         <oboInOwl:hasNarrowSynonym>inhibition of cellular process</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0048523</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:label>negative regulation of cellular process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2876,6 +2871,7 @@
         <oboInOwl:hasExactSynonym>regulation of cellular physiological process</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0050794</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:label>regulation of cellular process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -3939,6 +3935,26 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The removal of covalent cross-link between DNA and a protein.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:31921408</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0106400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0106400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
+        <obo:IAO_0000115>A mechanism of homologous recombination and DNA repair in which transcript RNA is used as a template for DSB repair.</obo:IAO_0000115>
+        <oboInOwl:created_by>hjd</oboInOwl:created_by>
+        <oboInOwl:creation_date>2021-10-11T20:48:06Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0106400</oboInOwl:id>
+        <rdfs:label>double-strand break repair via transcription-associated homologous recombination</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0106400"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A mechanism of homologous recombination and DNA repair in which transcript RNA is used as a template for DSB repair.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:25186730</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
