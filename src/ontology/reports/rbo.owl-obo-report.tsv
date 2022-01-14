@@ -19,8 +19,8 @@ ERROR	duplicate_definition	Luminex	textual definition	A supplier of flow cytomet
 ERROR	duplicate_definition	CytoBuoy	textual definition	A supplier of flow cytometry analyzers
 ERROR	duplicate_definition	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
 ERROR	duplicate_definition	heteroatomic molecular entity	textual definition	A molecular entity consisting of two or more chemical elements.
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	19fa04cf-91ed-455c-b8fe-270b626f4a1bgenid5419
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	19fa04cf-91ed-455c-b8fe-270b626f4a1bgenid5423
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	44dcc834-6307-4926-b0a6-a3c813fb331fgenid5419
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	44dcc834-6307-4926-b0a6-a3c813fb331fgenid5423
 ERROR	missing_label	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	rdf:PlainLiteral	label	
@@ -344,9 +344,9 @@ ERROR	multiple_labels	immediately causally upstream of	label	immediately causall
 ERROR	multiple_labels	immediately causally upstream of	label	immediately causally upstream of@en
 ERROR	multiple_labels	surface of bone	label	surface of bone
 ERROR	multiple_labels	surface of bone	label	surface of bone@en
-ERROR	multiple_labels	Creator	label	Creator
-ERROR	multiple_labels	Creator	label	Creator@en-us
-ERROR	multiple_labels	Creator	label	creator
+ERROR	multiple_labels	creator	label	Creator
+ERROR	multiple_labels	creator	label	Creator@en-us
+ERROR	multiple_labels	creator	label	creator
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
@@ -1221,11 +1221,6 @@ WARN	missing_definition	protein	textual definition
 WARN	missing_definition	fibroblast growth factor 8	textual definition	
 WARN	missing_definition	sonic hedgehog protein	textual definition	
 WARN	missing_definition	amino acid chain	textual definition	
-WARN	missing_definition	Fe-56 ion radiation	textual definition	
-WARN	missing_definition	C-12 ion radiation	textual definition	
-WARN	missing_definition	Si-28 ion radiation	textual definition	
-WARN	missing_definition	He-4 ion radiation	textual definition	
-WARN	missing_definition	Ne-20 ion radiation	textual definition	
 WARN	missing_definition	radionuclide	textual definition	
 WARN	missing_definition	actinide	textual definition	
 WARN	missing_definition	actinium	textual definition	
@@ -1281,15 +1276,6 @@ WARN	missing_definition	risk estimate	textual definition
 WARN	missing_definition	lifetime risk estimate	textual definition	
 WARN	missing_definition	biological process	textual definition	
 WARN	missing_definition	cellular process	textual definition	
-WARN	missing_definition	O-16 ion radiation	textual definition	
-WARN	missing_definition	Ar-40 ion radiation	textual definition	
-WARN	missing_definition	Ti-48 ion radiation	textual definition	
-WARN	missing_definition	Kr-84 ion radiation	textual definition	
-WARN	missing_definition	Nb-93 ion radiation	textual definition	
-WARN	missing_definition	Ag-107 ion radiation	textual definition	
-WARN	missing_definition	Xe-129 ion radiation	textual definition	
-WARN	missing_definition	Ta-181 ion radiation	textual definition	
-WARN	missing_definition	N-14 ion radiation	textual definition	
 WARN	missing_definition	mass number	textual definition	
 WARN	missing_definition	contained in	textual definition	
 WARN	missing_definition	contains	textual definition	
@@ -1879,7 +1865,7 @@ WARN	missing_definition	channels_from	textual definition
 WARN	missing_definition	channels_into	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	Creator	textual definition	
+WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	title	textual definition	
