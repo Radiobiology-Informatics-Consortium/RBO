@@ -1,8 +1,8 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	disease	rdfs:label	
-ERROR	missing_label	response to radiation	rdfs:label	
-ERROR	missing_label	response to ionizing radiation	rdfs:label	
-ERROR	missing_label	Indirect cellular response to radiation	rdfs:label	
+ERROR	missing_label	disease	label	
+ERROR	missing_label	response to radiation	label	
+ERROR	missing_label	response to ionizing radiation	label	
+ERROR	missing_label	Indirect cellular response to radiation	label	
 WARN	missing_definition	disease	definition	
 WARN	missing_definition	response to radiation	definition	
 WARN	missing_definition	response to ionizing radiation	definition	

@@ -19,8 +19,8 @@ ERROR	duplicate_definition	Luminex	textual definition	A supplier of flow cytomet
 ERROR	duplicate_definition	CytoBuoy	textual definition	A supplier of flow cytometry analyzers
 ERROR	duplicate_definition	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
 ERROR	duplicate_definition	heteroatomic molecular entity	textual definition	A molecular entity consisting of two or more chemical elements.
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	2a5080e7-2b1d-46b1-9e20-1ab0cd1d378cgenid5569
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	2a5080e7-2b1d-46b1-9e20-1ab0cd1d378cgenid5573
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	7b4ac3c0-09e9-476c-8e6e-a105ca6f1d97genid5572
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	7b4ac3c0-09e9-476c-8e6e-a105ca6f1d97genid5576
 ERROR	missing_label	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	rdf:PlainLiteral	label	
@@ -30,6 +30,8 @@ ERROR	duplicate_label	role	label	role
 ERROR	duplicate_label	role	label	role
 ERROR	duplicate_label	radiation quality	label	radiation quality
 ERROR	duplicate_label	radiation quality	label	radiation quality
+ERROR	duplicate_label	quality	label	quality
+ERROR	duplicate_label	characteristic	label	quality
 ERROR	duplicate_label	planned process	label	planned process
 ERROR	duplicate_label	planned process	label	planned process
 ERROR	duplicate_label	milli	label	milli
@@ -48,6 +50,7 @@ ERROR	multiple_definitions	process	textual definition	A process is an entity tha
 ERROR	multiple_definitions	process	textual definition	An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.@en
 ERROR	multiple_definitions	process	textual definition	<p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en>
 ERROR	multiple_definitions	specifically dependent continuant	textual definition	A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.@en
+ERROR	multiple_definitions	specifically dependent continuant	textual definition	An experimental factor which is a property or characteristic of some other entity.  For example, the mouse has the colour white.
 ERROR	multiple_definitions	specifically dependent continuant	textual definition	<b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1 i &lt; j n, ci and cj share no common parts, are such that for each 1 i n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])@en>
 ERROR	multiple_definitions	specifically dependent continuant	textual definition	<b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en>
 ERROR	multiple_definitions	role	textual definition	A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.@en
@@ -86,10 +89,10 @@ ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of
 ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
 ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure.
-ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
-ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
-ERROR	multiple_definitions	immediately deep to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
-ERROR	multiple_definitions	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
+ERROR	multiple_definitions	immediately_deep_to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
+ERROR	multiple_definitions	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	chemical entity	textual definition	A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.
 ERROR	multiple_definitions	chemical entity	textual definition	A drug, solvent, chemical, etc., with a property that can be measured such as concentration.
 ERROR	multiple_definitions	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
@@ -112,6 +115,8 @@ Any process that results in a change in state or activity of a cell (in terms of
 ERROR	multiple_definitions	cellular response to stimulus	textual definition	Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus by a cell and ends with a change in state or activity or the cell.
 ERROR	multiple_definitions	data item	textual definition	An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
 ERROR	multiple_definitions	data item	textual definition	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
+ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
+ERROR	multiple_definitions	information content entity	textual definition	An information entity is an entity that represents information about some other entity.  For example, a measurement, a clustered data set.
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	definition source	textual definition	<Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en>
@@ -172,6 +177,8 @@ ERROR	multiple_definitions	existence ends with	textual definition	Relation betwe
 ERROR	multiple_definitions	existence ends with	textual definition	<x existence ends with y if and only if the time point at which x ends is equivalent to the time point at which y ends. Formally: x existence ends with y iff ω(x) = ω(y).>
 ERROR	multiple_definitions	has skeleton	textual definition	A relation between a segment or subdivision of an organism and the maximal subdivision of material entities that provides structural support for that segment or subdivision.
 ERROR	multiple_definitions	has skeleton	textual definition	A relation between a subdivision of an organism and the single subdivision of skeleton that provides structural support for that subdivision.
+ERROR	multiple_definitions	prefix	textual definition	A derived unit is a unit which is derived from base units.
+ERROR	multiple_definitions	prefix	textual definition	A unit which is derived from base units.
 ERROR	multiple_definitions	radiation unit	textual definition	A derived unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.
 ERROR	multiple_definitions	radiation unit	textual definition	A unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.
 ERROR	multiple_definitions	absorbed dose unit	textual definition	A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.
@@ -185,6 +192,9 @@ ERROR	multiple_labels	disposition	label	disposition@en
 ERROR	multiple_labels	realizable entity	label	realizable@en
 ERROR	multiple_labels	realizable entity	label	realizable entity@en
 ERROR	multiple_labels	realizable entity	label	realizable_entity
+ERROR	multiple_labels	quality	label	quality
+ERROR	multiple_labels	quality	label	quality@en
+ERROR	multiple_labels	specifically dependent continuant	label	material property
 ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant
 ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant@en
 ERROR	multiple_labels	role	label	role
@@ -236,10 +246,10 @@ ERROR	multiple_labels	in distal side of	label	in distal side of
 ERROR	multiple_labels	in distal side of	label	in_distal_side_of
 ERROR	multiple_labels	in lateral side of	label	in lateral side of
 ERROR	multiple_labels	in lateral side of	label	in_lateral_side_of
-ERROR	multiple_labels	proximalmost part of	label	proximalmost part of
-ERROR	multiple_labels	proximalmost part of	label	proximalmost_part_of
-ERROR	multiple_labels	immediately deep to	label	immediately deep to
-ERROR	multiple_labels	immediately deep to	label	immediately_deep_to
+ERROR	multiple_labels	proximalmost_part_of	label	proximalmost part of
+ERROR	multiple_labels	proximalmost_part_of	label	proximalmost_part_of
+ERROR	multiple_labels	immediately_deep_to	label	immediately deep to
+ERROR	multiple_labels	immediately_deep_to	label	immediately_deep_to
 ERROR	multiple_labels	immediately superficial to	label	immediately superficial to
 ERROR	multiple_labels	immediately superficial to	label	immediately_superficial_to
 ERROR	multiple_labels	atom	label	atom
@@ -260,6 +270,7 @@ ERROR	multiple_labels	objective specification	label	objective specification@en
 ERROR	multiple_labels	information content entity	label	information
 ERROR	multiple_labels	information content entity	label	information content entity
 ERROR	multiple_labels	information content entity	label	information content entity@en
+ERROR	multiple_labels	information content entity	label	information entity
 ERROR	multiple_labels	directive information entity	label	directive information entity
 ERROR	multiple_labels	directive information entity	label	directive information entity@en
 ERROR	multiple_labels	plan specification	label	plan specification
@@ -333,6 +344,7 @@ ERROR	multiple_labels	has input	label	has input@en
 ERROR	multiple_labels	has habitat	label	has habitat
 ERROR	multiple_labels	has habitat	label	has habitat@en
 ERROR	multiple_labels	inheres in part of	label	characteristic of part of@en
+ERROR	multiple_labels	inheres in part of	label	inheres in part of
 ERROR	multiple_labels	inheres in part of	label	inheres in part of@en
 ERROR	multiple_labels	functionally related to	label	functionally related to
 ERROR	multiple_labels	functionally related to	label	functionally related to@en
@@ -356,6 +368,8 @@ ERROR	multiple_labels	immediately causally upstream of	label	immediately causall
 ERROR	multiple_labels	immediately causally upstream of	label	immediately causally upstream of@en
 ERROR	multiple_labels	surface of bone	label	surface of bone
 ERROR	multiple_labels	surface of bone	label	surface of bone@en
+ERROR	multiple_labels	prefix	label	derived unit
+ERROR	multiple_labels	prefix	label	prefix
 ERROR	multiple_labels	creator	label	Creator
 ERROR	multiple_labels	creator	label	Creator@en-us
 ERROR	multiple_labels	creator	label	creator
@@ -364,9 +378,9 @@ ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
 ERROR	multiple_labels	Description	label	Description@en-us
 ERROR	multiple_labels	Description	label	description
-ERROR	multiple_labels	Title	label	Title
-ERROR	multiple_labels	Title	label	Title@en-us
-ERROR	multiple_labels	Title	label	title
+ERROR	multiple_labels	title	label	Title
+ERROR	multiple_labels	title	label	Title@en-us
+ERROR	multiple_labels	title	label	title
 ERROR	label_whitespace	Social science and humanities study 	label	Social science and humanities study 
 ERROR	label_whitespace	Meteorology study 	label	Meteorology study 
 WARN	annotation_whitespace	continuant	IAO:0000602	<(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] >
@@ -437,20 +451,20 @@ WARN	annotation_whitespace	Stage IIA1 (FIGO)	textual definition	An International
 WARN	annotation_whitespace	Stage IIA2 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
 WARN	annotation_whitespace	Stage IIB (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
 WARN	annotation_whitespace	Anthropogenic radiation exposure	alternative term	Exposure to human generated radiation 
-WARN	annotation_whitespace	Behavioural study	textual definition	 A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology.
+WARN	annotation_whitespace	Behavioural study	obo:definition	 A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology.
 WARN	annotation_whitespace	Social science and humanities study 	label	Social science and humanities study 
-WARN	annotation_whitespace	Genetic population study	textual definition	 Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment.
-WARN	annotation_whitespace	Registry study	textual definition	Observational studies which include an organized system that uses observational methods to collect uniform data (clinical and other) prospectively for a population defined by a particular disorder/disease, condition (including susceptibility to a disorder), or exposure (including products, health care services, and/or procedures) and that serves a predetermined scientific, clinical, or policy purpose. Patient registries may be single purpose or on-going data collection programs that address one or more questions. (AHRQ) An observational study that is also considered to be a Patient Registry. 
-WARN	annotation_whitespace	Bystander effect study	textual definition	Study of the cellular phenomenon which radiation energy is not been directly deposited in cells by transfer of medium, proximity/justaposition, or other means, but results in their behaving as if they had been irradiated. 
+WARN	annotation_whitespace	Genetic population study	obo:definition	 Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment.
+WARN	annotation_whitespace	Registry study	obo:definition	Observational studies which include an organized system that uses observational methods to collect uniform data (clinical and other) prospectively for a population defined by a particular disorder/disease, condition (including susceptibility to a disorder), or exposure (including products, health care services, and/or procedures) and that serves a predetermined scientific, clinical, or policy purpose. Patient registries may be single purpose or on-going data collection programs that address one or more questions. (AHRQ) An observational study that is also considered to be a Patient Registry. 
+WARN	annotation_whitespace	Bystander effect study	obo:definition	Study of the cellular phenomenon which radiation energy is not been directly deposited in cells by transfer of medium, proximity/justaposition, or other means, but results in their behaving as if they had been irradiated. 
 WARN	annotation_whitespace	Meteorology study 	label	Meteorology study 
 WARN	annotation_whitespace	Iron-56 nucleus	obo:definition	An atomic nucleus with 26 protons and 30 neutrons 
 WARN	annotation_whitespace	Silicon-28 nucleus	obo:definition	An atomic nucleus with 14 protons and 14 neutrons 
 WARN	annotation_whitespace	Carbon-12 nucleus	obo:definition	An atomic nucleus with 6 protons and 6 neutrons 
 WARN	annotation_whitespace	Helium-4 nucleus	obo:definition	An atomic nucleus with 2 protons and 2 neutrons 
 WARN	annotation_whitespace	Neon-20 nucleus	obo:definition	An atomic nucleus with 10 protons and 10 neutrons 
-WARN	annotation_whitespace	ionizing radiation energy	textual definition	The kinetic energy carried by a particle or photon of ionizing radiation. 
-WARN	annotation_whitespace	non-irradiated	textual definition	An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation 
-WARN	annotation_whitespace	irradiation protocol	textual definition	A protocol for administering radiation to a sample 
+WARN	annotation_whitespace	ionizing radiation energy	obo:definition	The kinetic energy carried by a particle or photon of ionizing radiation. 
+WARN	annotation_whitespace	non-irradiated	obo:definition	An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation 
+WARN	annotation_whitespace	irradiation protocol	obo:definition	A protocol for administering radiation to a sample 
 WARN	annotation_whitespace	Niobium-93 nucleus	obo:definition	An atomic nucleus with 41 protons and 52 neutrons 
 WARN	annotation_whitespace	Silver-107 nucleus	obo:definition	An atomic nucleus with 47 protons and 60 neutrons 
 WARN	annotation_whitespace	Xenon-129 nucleus	obo:definition	An atomic nucleus with 54 protons and 75 neutrons 
@@ -462,15 +476,15 @@ WARN	annotation_whitespace	Argon-40 nucleus	obo:definition	An atomic nucleus wit
 WARN	annotation_whitespace	Titanium-48 nucleus	obo:definition	An atomic nucleus with 22 protons and 26 neutrons 
 WARN	annotation_whitespace	Krypton-84 nucleus	obo:definition	An atomic nucleus with 36 protons and 48 neutrons 
 WARN	annotation_whitespace	miliigray per second	alternative term	mGy/sec 
-WARN	annotation_whitespace	biodosimetry	textual definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
-WARN	annotation_whitespace	delta ray	textual definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
-WARN	annotation_whitespace	quality factor	textual definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
+WARN	annotation_whitespace	biodosimetry	obo:definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
+WARN	annotation_whitespace	delta ray	obo:definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
+WARN	annotation_whitespace	quality factor	obo:definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
 WARN	annotation_whitespace	relative biological effectiveness	example of usage	Neutrons have been found to have a higher RBE than electrons. 
 WARN	annotation_whitespace	spatially disjoint from	editor note	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
 WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 WARN	annotation_whitespace	siemens	has_exact_synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has_exact_synonym	E-field strength 
-WARN	annotation_whitespace	Title	Description	"
+WARN	annotation_whitespace	title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -523,6 +537,7 @@ WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
 WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
 WARN	equivalent_pair	role	owl:equivalentClass	<http://purl.obolibrary.org/obo/CHEBI_50906>
+WARN	duplicate_label_synonym	specifically dependent continuant	has_exact_synonym	specifically dependent continuant
 WARN	duplicate_label_synonym	part_of	alternative term	part_of
 WARN	duplicate_label_synonym	part_of	has_exact_synonym	part of
 WARN	duplicate_label_synonym	has_part	alternative term	has_part
@@ -566,6 +581,8 @@ WARN	duplicate_label_synonym	sea	has_exact_synonym	sea
 WARN	duplicate_label_synonym	depression	has_related_synonym	depression
 WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological process
 WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological_process
+WARN	duplicate_label_synonym	information content entity	has_exact_synonym	information content entity
+WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
 WARN	duplicate_label_synonym	lung bud	has_related_synonym	lung bud
 WARN	duplicate_label_synonym	organism substance	has_exact_synonym	organism substance
 WARN	duplicate_label_synonym	simple columnar epithelium	has_exact_synonym	simple columnar epithelium
@@ -1356,11 +1373,44 @@ WARN	missing_definition	protein	textual definition
 WARN	missing_definition	fibroblast growth factor 8	textual definition	
 WARN	missing_definition	sonic hedgehog protein	textual definition	
 WARN	missing_definition	amino acid chain	textual definition	
+WARN	missing_definition	ionizing radiation categorized by source	textual definition	
+WARN	missing_definition	space radiation	textual definition	
+WARN	missing_definition	ground radiation	textual definition	
+WARN	missing_definition	tissue equivalent material	textual definition	
 WARN	missing_definition	Fe-56 ion radiation	textual definition	
 WARN	missing_definition	C-12 ion radiation	textual definition	
 WARN	missing_definition	Si-28 ion radiation	textual definition	
 WARN	missing_definition	He-4 ion radiation	textual definition	
 WARN	missing_definition	Ne-20 ion radiation	textual definition	
+WARN	missing_definition	light ion	textual definition	
+WARN	missing_definition	active dosimeter	textual definition	
+WARN	missing_definition	passive dosimeter	textual definition	
+WARN	missing_definition	background ionizing radiation	textual definition	
+WARN	missing_definition	effective dose	textual definition	
+WARN	missing_definition	mixed radiation field	textual definition	
+WARN	missing_definition	radiation environment	textual definition	
+WARN	missing_definition	Earth surface	textual definition	
+WARN	missing_definition	Earth atmosphere	textual definition	
+WARN	missing_definition	low Earth orbit	textual definition	
+WARN	missing_definition	beyond low Earth orbit	textual definition	
+WARN	missing_definition	fractionated radiation exposure	textual definition	
+WARN	missing_definition	millirad	textual definition	
+WARN	missing_definition	equivalent dose	textual definition	
+WARN	missing_definition	dose fraction	textual definition	
+WARN	missing_definition	cosmic radiation	textual definition	
+WARN	missing_definition	galactic cosmic radiation	textual definition	
+WARN	missing_definition	solar cosmic radiation	textual definition	
+WARN	missing_definition	dose rate	textual definition	
+WARN	missing_definition	spacecraft	textual definition	
+WARN	missing_definition	spacecraft module	textual definition	
+WARN	missing_definition	International Space Station module	textual definition	
+WARN	missing_definition	space station	textual definition	
+WARN	missing_definition	particle accelerator beamline	textual definition	
+WARN	missing_definition	particle accelerator radiation	textual definition	
+WARN	missing_definition	nuclear reactor radiation	textual definition	
+WARN	missing_definition	Cesium-137 gamma radiation	textual definition	
+WARN	missing_definition	Cobalt-60 gamma radiation	textual definition	
+WARN	missing_definition	Cobalt-57 gamma radiation	textual definition	
 WARN	missing_definition	radionuclide	textual definition	
 WARN	missing_definition	actinide	textual definition	
 WARN	missing_definition	actinium	textual definition	
@@ -1370,6 +1420,7 @@ WARN	missing_definition	neptunium	textual definition
 WARN	missing_definition	plutonium	textual definition	
 WARN	missing_definition	thorium	textual definition	
 WARN	missing_definition	uranium	textual definition	
+WARN	missing_definition	ultraviolet radiation	textual definition	
 WARN	missing_definition	radioprotectant	textual definition	
 WARN	missing_definition	radionuclide chelator	textual definition	
 WARN	missing_definition	co-carcinogen	textual definition	
@@ -1412,8 +1463,17 @@ WARN	missing_definition	endocrine study	textual definition
 WARN	missing_definition	offspring study	textual definition	
 WARN	missing_definition	biokinetics study	textual definition	
 WARN	missing_definition	occupational role	textual definition	
+WARN	missing_definition	high linear energy transfer radiation	textual definition	
+WARN	missing_definition	low linear energy transfer radiation	textual definition	
+WARN	missing_definition	ionizing electromagnetic radiation	textual definition	
+WARN	missing_definition	radiation dosimeter device	textual definition	
+WARN	missing_definition	ionizing radiation	textual definition	
+WARN	missing_definition	charged particle radiation	textual definition	
 WARN	missing_definition	risk estimate	textual definition	
 WARN	missing_definition	lifetime risk estimate	textual definition	
+WARN	missing_definition	gamma radiation	textual definition	
+WARN	missing_definition	particle accelerator	textual definition	
+WARN	missing_definition	nuclear reactor	textual definition	
 WARN	missing_definition	biological process	textual definition	
 WARN	missing_definition	cellular process	textual definition	
 WARN	missing_definition	O-16 ion radiation	textual definition	
@@ -1426,11 +1486,162 @@ WARN	missing_definition	Xe-129 ion radiation	textual definition
 WARN	missing_definition	Ta-181 ion radiation	textual definition	
 WARN	missing_definition	Au-197 ion radiation	textual definition	
 WARN	missing_definition	N-14 ion radiation	textual definition	
+WARN	missing_definition	Radiation exposure	textual definition	
+WARN	missing_definition	Accidental radiation exposure	textual definition	
+WARN	missing_definition	Planned radiation exposure	textual definition	
+WARN	missing_definition	Medical diagnostic radiation exposure	textual definition	
+WARN	missing_definition	Naturally occurring radiation exposure (NORM)	textual definition	
+WARN	missing_definition	Medical therapeutic radiation exposure	textual definition	
+WARN	missing_definition	Accidental non-medical anthropogenic radiation exposure	textual definition	
+WARN	missing_definition	Anthropogenic radiation exposure	textual definition	
+WARN	missing_definition	Planned anthropogenic radiation exposure	textual definition	
+WARN	missing_definition	Accidental anthropogenic radiation exposure	textual definition	
+WARN	missing_definition	Accidental medical anthropogenic radiation exposure	textual definition	
+WARN	missing_definition	Naturally occurring radiation exposure	textual definition	
+WARN	missing_definition	Planned naturally occurring radiation exposure	textual definition	
+WARN	missing_definition	Social and psychosocial studies	textual definition	
+WARN	missing_definition	Mass media study	textual definition	
+WARN	missing_definition	Preparedness study	textual definition	
+WARN	missing_definition	Clinical study	textual definition	
+WARN	missing_definition	Legal and governance study	textual definition	
+WARN	missing_definition	Security and law enforcement study	textual definition	
+WARN	missing_definition	Cancer study	textual definition	
+WARN	missing_definition	Study modality	textual definition	
+WARN	missing_definition	Environmental studies	textual definition	
+WARN	missing_definition	Nuclear industry study	textual definition	
+WARN	missing_definition	Laboratory study	textual definition	
+WARN	missing_definition	Attitudinal study	textual definition	
+WARN	missing_definition	Communication study	textual definition	
+WARN	missing_definition	Community study	textual definition	
+WARN	missing_definition	Political and psephological study	textual definition	
+WARN	missing_definition	Psychometric study	textual definition	
+WARN	missing_definition	Behavioural study	textual definition	
+WARN	missing_definition	Sociological study	textual definition	
+WARN	missing_definition	Social science and humanities study 	textual definition	
+WARN	missing_definition	Perceptions, expectations and behaviours study	textual definition	
+WARN	missing_definition	Holistic approaches to governance study	textual definition	
+WARN	missing_definition	Responsible Research and Innovation study	textual definition	
+WARN	missing_definition	Stakeholder engagement study	textual definition	
+WARN	missing_definition	Risk and health communication study	textual definition	
+WARN	missing_definition	Radiological protection culture study	textual definition	
+WARN	missing_definition	Genetic population study	textual definition	
+WARN	missing_definition	Prospective study	textual definition	
+WARN	missing_definition	Registry study	textual definition	
+WARN	missing_definition	Retrospective study	textual definition	
+WARN	missing_definition	Incidence or prevalence study	textual definition	
+WARN	missing_definition	Situation awareness and decision support study	textual definition	
+WARN	missing_definition	Civil protection study	textual definition	
+WARN	missing_definition	Disaster planning study	textual definition	
+WARN	missing_definition	Nuclear accident study	textual definition	
+WARN	missing_definition	Clinical trial study	textual definition	
+WARN	missing_definition	Medical radiological safety study	textual definition	
+WARN	missing_definition	Occupational health study	textual definition	
+WARN	missing_definition	Radiation based Diagnostics study	textual definition	
+WARN	missing_definition	Radiotherapy study	textual definition	
+WARN	missing_definition	Therapeutics study	textual definition	
+WARN	missing_definition	Histopathologic study	textual definition	
+WARN	missing_definition	Radiation legislation study	textual definition	
+WARN	missing_definition	Regulatory harmonisation study	textual definition	
+WARN	missing_definition	Nuclear proliferation treaty study	textual definition	
+WARN	missing_definition	Bioterrorism study	textual definition	
+WARN	missing_definition	Military Defence study	textual definition	
+WARN	missing_definition	DNA modification study	textual definition	
+WARN	missing_definition	Histone modification study	textual definition	
+WARN	missing_definition	Interview study	textual definition	
+WARN	missing_definition	Genetic study	textual definition	
+WARN	missing_definition	Imaging study	textual definition	
+WARN	missing_definition	Mathematical Modelling study	textual definition	
+WARN	missing_definition	Model organism study	textual definition	
+WARN	missing_definition	Monitoring technologies and metrology study	textual definition	
+WARN	missing_definition	Radiochemistry study	textual definition	
+WARN	missing_definition	Policy development study	textual definition	
+WARN	missing_definition	Acoustic radiation study	textual definition	
+WARN	missing_definition	Environmental study_ Abiotic_anthropogenic	textual definition	
+WARN	missing_definition	Natural environment studies	textual definition	
+WARN	missing_definition	Ecological population modelling study	textual definition	
+WARN	missing_definition	Ecotoxicology study	textual definition	
+WARN	missing_definition	Environmental Radon study	textual definition	
+WARN	missing_definition	Radionuclide dispersal modelling study	textual definition	
+WARN	missing_definition	Naturally occurring radioactive materials study	textual definition	
+WARN	missing_definition	Environmental radiation monitoring study	textual definition	
+WARN	missing_definition	Environmental radionuclide transfer study	textual definition	
+WARN	missing_definition	Non ionising electromagnetic radiation study	textual definition	
+WARN	missing_definition	Nuclear installation study	textual definition	
+WARN	missing_definition	Nuclear waste study	textual definition	
+WARN	missing_definition	Nuclear engineering study	textual definition	
+WARN	missing_definition	Mining study	textual definition	
+WARN	missing_definition	Cell culture study	textual definition	
+WARN	missing_definition	Organ culture study	textual definition	
+WARN	missing_definition	Molecular genetic study	textual definition	
+WARN	missing_definition	Molecular structural study	textual definition	
+WARN	missing_definition	Whole organism study	textual definition	
+WARN	missing_definition	Bystander effect study	textual definition	
+WARN	missing_definition	Epigenetic study	textual definition	
+WARN	missing_definition	Mutagenesis study	textual definition	
+WARN	missing_definition	Attitudinal studies nuclear industry risk perception	textual definition	
+WARN	missing_definition	Attitudinal studies towards ionising radiation in the environment	textual definition	
+WARN	missing_definition	Attitudinal studies towards non-ionising radiation in the environment	textual definition	
+WARN	missing_definition	Attitudinal studies towards medical radiation procedures	textual definition	
+WARN	missing_definition	Attitudinal studies towards radiation in the occupational environment	textual definition	
+WARN	missing_definition	Authority Trust study	textual definition	
+WARN	missing_definition	Risk communication study	textual definition	
+WARN	missing_definition	Public communication study	textual definition	
+WARN	missing_definition	Public education study	textual definition	
+WARN	missing_definition	Social affairs and community health study	textual definition	
+WARN	missing_definition	Community planning study	textual definition	
+WARN	missing_definition	Community survey study	textual definition	
+WARN	missing_definition	Individual behaviour study	textual definition	
+WARN	missing_definition	Population behaviour study	textual definition	
+WARN	missing_definition	Radiotherapeutic modelling study	textual definition	
+WARN	missing_definition	Building materials radiological safety study	textual definition	
+WARN	missing_definition	Building radiological safety study	textual definition	
+WARN	missing_definition	Meteorology study 	textual definition	
+WARN	missing_definition	Environmental study_Abiotic	textual definition	
+WARN	missing_definition	Environmental study_Biota ( non human)	textual definition	
+WARN	missing_definition	Environmental study_Panbiota (all)	textual definition	
+WARN	missing_definition	Wireless communication radiation study	textual definition	
+WARN	missing_definition	heavy ion radiation	textual definition	
+WARN	missing_definition	light ion radiation	textual definition	
+WARN	missing_definition	charged particle	textual definition	
 WARN	missing_definition	Iron-56 nucleus	textual definition	
 WARN	missing_definition	Silicon-28 nucleus	textual definition	
 WARN	missing_definition	Carbon-12 nucleus	textual definition	
 WARN	missing_definition	Helium-4 nucleus	textual definition	
 WARN	missing_definition	Neon-20 nucleus	textual definition	
+WARN	missing_definition	space flight	textual definition	
+WARN	missing_definition	absorbed radiation dose	textual definition	
+WARN	missing_definition	absorbed radiation dose rate	textual definition	
+WARN	missing_definition	ionizing radiation energy	textual definition	
+WARN	missing_definition	x-ray radiation	textual definition	
+WARN	missing_definition	radiation source	textual definition	
+WARN	missing_definition	sham irradiation	textual definition	
+WARN	missing_definition	radiation fractionation protocol	textual definition	
+WARN	missing_definition	cis-lunar space	textual definition	
+WARN	missing_definition	lunar orbit	textual definition	
+WARN	missing_definition	lunar surface	textual definition	
+WARN	missing_definition	cis-Mars space	textual definition	
+WARN	missing_definition	Mars orbit	textual definition	
+WARN	missing_definition	Mars surface	textual definition	
+WARN	missing_definition	interplanetary space	textual definition	
+WARN	missing_definition	planet surface	textual definition	
+WARN	missing_definition	non-irradiated	textual definition	
+WARN	missing_definition	ground analog study	textual definition	
+WARN	missing_definition	ground control study	textual definition	
+WARN	missing_definition	irradiation protocol	textual definition	
+WARN	missing_definition	radiation fraction	textual definition	
+WARN	missing_definition	radiation fraction interval	textual definition	
+WARN	missing_definition	high altitude	textual definition	
+WARN	missing_definition	sham-irradiated	textual definition	
+WARN	missing_definition	parabolic flight aircraft	textual definition	
+WARN	missing_definition	high altitude research aircraft	textual definition	
+WARN	missing_definition	uncrewed aerial vehicle	textual definition	
+WARN	missing_definition	highly charged energetic nuclei	textual definition	
+WARN	missing_definition	adaptive radiation response study	textual definition	
+WARN	missing_definition	average fractionated dose rate	textual definition	
+WARN	missing_definition	gamma irradiator	textual definition	
+WARN	missing_definition	particle charge	textual definition	
+WARN	missing_definition	radiation dosimetry	textual definition	
+WARN	missing_definition	microbeam	textual definition	
 WARN	missing_definition	Niobium-93 nucleus	textual definition	
 WARN	missing_definition	Silver-107 nucleus	textual definition	
 WARN	missing_definition	Xenon-129 nucleus	textual definition	
@@ -1441,6 +1652,33 @@ WARN	missing_definition	Oxygen-16 nucleus	textual definition
 WARN	missing_definition	Argon-40 nucleus	textual definition	
 WARN	missing_definition	Titanium-48 nucleus	textual definition	
 WARN	missing_definition	Krypton-84 nucleus	textual definition	
+WARN	missing_definition	miliigray per second	textual definition	
+WARN	missing_definition	Indirect cellular response to stimulus	textual definition	
+WARN	missing_definition	Indirect cellular response to radiation	textual definition	
+WARN	missing_definition	Indirect cellular response to ionising radiation	textual definition	
+WARN	missing_definition	ionizing radiation device	textual definition	
+WARN	missing_definition	high-altitude balloon	textual definition	
+WARN	missing_definition	Space flight	textual definition	
+WARN	missing_definition	non-targeted effects of ionising radiation	textual definition	
+WARN	missing_definition	as low as reasonably achievable	textual definition	
+WARN	missing_definition	radiation attenuation	textual definition	
+WARN	missing_definition	biodosimetry	textual definition	
+WARN	missing_definition	bystander effect	textual definition	
+WARN	missing_definition	delta ray	textual definition	
+WARN	missing_definition	dose equivalent	textual definition	
+WARN	missing_definition	excess lifetime risk of cancer	textual definition	
+WARN	missing_definition	fast neutron	textual definition	
+WARN	missing_definition	fluence	textual definition	
+WARN	missing_definition	flux	textual definition	
+WARN	missing_definition	heavy ion	textual definition	
+WARN	missing_definition	linear energy transfer	textual definition	
+WARN	missing_definition	organ dose	textual definition	
+WARN	missing_definition	quality factor	textual definition	
+WARN	missing_definition	radiation dose	textual definition	
+WARN	missing_definition	radiation quality	textual definition	
+WARN	missing_definition	radiation weighting factor	textual definition	
+WARN	missing_definition	relative biological effectiveness	textual definition	
+WARN	missing_definition	tissue equivalence	textual definition	
 WARN	missing_definition	mass number	textual definition	
 WARN	missing_definition	contained in	textual definition	
 WARN	missing_definition	contains	textual definition	
@@ -1557,7 +1795,6 @@ WARN	missing_definition	wall of pulmonary artery	textual definition
 WARN	missing_definition	wall of synovial tendon sheath	textual definition	
 WARN	missing_definition	wall of eyeball	textual definition	
 WARN	missing_definition	wall of common carotid artery	textual definition	
-WARN	missing_definition	unit	textual definition	
 WARN	missing_definition	electric current unit	textual definition	
 WARN	missing_definition	temperature unit	textual definition	
 WARN	missing_definition	substance unit	textual definition	
@@ -1577,7 +1814,6 @@ WARN	missing_definition	millimole	textual definition
 WARN	missing_definition	femtomole	textual definition	
 WARN	missing_definition	attomole	textual definition	
 WARN	missing_definition	base unit	textual definition	
-WARN	missing_definition	prefix	textual definition	
 WARN	missing_definition	area unit	textual definition	
 WARN	missing_definition	acceleration unit	textual definition	
 WARN	missing_definition	angular velocity unit	textual definition	
@@ -2033,7 +2269,7 @@ WARN	missing_definition	subdivision of	textual definition
 WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
-WARN	missing_definition	Title	textual definition	
+WARN	missing_definition	title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	
@@ -2229,7 +2465,7 @@ INFO	lowercase_definition	ventral_to	textual definition	x ventral to y iff x is 
 INFO	lowercase_definition	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	in_proximal_side_of	textual definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
 INFO	lowercase_definition	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
-INFO	lowercase_definition	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+INFO	lowercase_definition	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 INFO	lowercase_definition	immediately superficial to	textual definition	x immediately superficial to y iff x superficial to y and x is contiguous with y.
 INFO	lowercase_definition	partially_surrounded_by	textual definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
 INFO	lowercase_definition	cellular process	textual definition	"
@@ -2264,16 +2500,6 @@ INFO	lowercase_definition	manufacturing objective	textual definition	is the obje
 INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
 INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
 INFO	lowercase_definition	leave one out cross validation method	textual definition	<is a data transformation : leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data>
-INFO	lowercase_definition	spacecraft module	textual definition	a self-contained unit of a spacecraft
-INFO	lowercase_definition	gamma radiation	textual definition	electromagnetic radiation with photon energies greater than approximately 100 keV
-INFO	lowercase_definition	Behavioural study	textual definition	 A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology.
-INFO	lowercase_definition	Genetic population study	textual definition	 Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment.
-INFO	lowercase_definition	Gammacell 40	textual definition	<http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf>
-INFO	lowercase_definition	RARAF 5.5 MV microbeam	textual definition	<https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility>
-INFO	lowercase_definition	Swift HALE	textual definition	<https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights>
-INFO	lowercase_definition	ER-2	textual definition	<https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html>
-INFO	lowercase_definition	WB-57	textual definition	<https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC>
-INFO	lowercase_definition	Faxitron CP160	textual definition	<doi: 10.2349/biij.2.1.e1>
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
@@ -2414,8 +2640,4 @@ Wild-derived mice are genetically distinct from common laboratory mice for a num
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	cellular_component	rdfs:subClassOf	
-INFO	missing_superclass	genetically isolated ancestry	rdfs:subClassOf	
 INFO	missing_superclass	processual entity	rdfs:subClassOf	
-INFO	missing_superclass	unit	rdfs:subClassOf	
-INFO	missing_superclass	prefix	rdfs:subClassOf	
-INFO	missing_superclass	inbred	rdfs:subClassOf	

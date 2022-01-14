@@ -16,8 +16,8 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/envo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2021-08-30/imports/envo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-30</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-01-13/imports/envo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3184,7 +3184,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref>Geonames:T.TAL</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SWEETRealm:Talus</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>TGN:21508</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>ENVO</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>TALUS</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>talus slope</oboInOwl:hasRelatedSynonym>
@@ -3195,7 +3195,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000194"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Broken rock that appears at the bottom of crags, mountain cliffs or valley shoulders.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scree</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000194"/>
@@ -5849,155 +5849,6 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
         <rdfs:comment>Formerly, this class was an experimental class and a subclass of &quot;environmental feature&quot;. It is now aligned to BFO. The class was not obsoleted as the core semantics maintained their stability through its transition.</rdfs:comment>
         <rdfs:label>environmental zone</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000538 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000538">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000539"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000540"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The layer of the atmosphere which is sandwiched between the troposphere and mesosphere. Of the energy that reaches the Earth from the sun, only 3% is absorbed in the stratosphere, but that includes the vitally important process of absorption of ultraviolet radiation by the stratospheric ozone layer. The stratosphere is cloudless and dust free, and almost unaffected by the turbulent conditions of the underlying level of the atmosphere. (Source: WRIGHT)</obo:IAO_0000115>
-        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <rdfs:comment>Definition from GEMET - will be refined.</rdfs:comment>
-        <rdfs:label>stratosphere</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000538"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The layer of the atmosphere which is sandwiched between the troposphere and mesosphere. Of the energy that reaches the Earth from the sun, only 3% is absorbed in the stratosphere, but that includes the vitally important process of absorption of ultraviolet radiation by the stratospheric ozone layer. The stratosphere is cloudless and dust free, and almost unaffected by the turbulent conditions of the underlying level of the atmosphere. (Source: WRIGHT)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GEMET:http://www.eionet.europa.eu/gemet/concept/8128</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000539 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000539">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000538"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000541"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The mesosphere is part of the earth&apos;s atmosphere which is between the stratosphere and the thermosphere in which temperature decreases with altitude to the atmosphere&apos;s absolute minimum</obo:IAO_0000115>
-        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <rdfs:label>mesosphere</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000539"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The mesosphere is part of the earth&apos;s atmosphere which is between the stratosphere and the thermosphere in which temperature decreases with altitude to the atmosphere&apos;s absolute minimum</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://www.merriam-webster.com/dictionary/mesosphere</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000540 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000540">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000324"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000538"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The lowest of the concentric layers of the atmosphere, occurring between the Earth&apos;s surface and the tropopause. It is the zone where atmospheric turbulence is at its greatest and where the bulk of the Earth&apos;s weather is generated. It contains almost all the water vapour and aerosols and three-quarters of the total gaseous mass of the atmosphere. Throughout the troposphere temperature decreases with height at a mean rate of 6.5°C/km and the whole zone is capped by either an inversion of temperature or an isothermal layer at the tropopause. (Source: WHIT)</obo:IAO_0000115>
-        <oboInOwl:created_by>ORCID:0000-0002-4366-3088</oboInOwl:created_by>
-        <rdfs:comment>Definition from GEMET - will be refined.</rdfs:comment>
-        <rdfs:label>troposphere</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000540"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The lowest of the concentric layers of the atmosphere, occurring between the Earth&apos;s surface and the tropopause. It is the zone where atmospheric turbulence is at its greatest and where the bulk of the Earth&apos;s weather is generated. It contains almost all the water vapour and aerosols and three-quarters of the total gaseous mass of the atmosphere. Throughout the troposphere temperature decreases with height at a mean rate of 6.5°C/km and the whole zone is capped by either an inversion of temperature or an isothermal layer at the tropopause. (Source: WHIT)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GEMET:http://www.eionet.europa.eu/gemet/concept/8695</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01000541 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000541">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000543"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000539"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The thermosphere is a part of the earth&apos;s atmosphere that begins at about 50 miles (80 kilometers) above the earth&apos;s surface, extends to outer space, and is characterized by steadily increasing temperature with height</obo:IAO_0000115>
-        <rdfs:label>thermosphere</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000541"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The thermosphere is a part of the earth&apos;s atmosphere that begins at about 50 miles (80 kilometers) above the earth&apos;s surface, extends to outer space, and is characterized by steadily increasing temperature with height</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>http://www.merriam-webster.com/dictionary/thermosphere</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -11275,41 +11126,6 @@ Some definitions include additional discussion of the the physics involved which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001776 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001776">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000408"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000799"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000267"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000637"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>An environmental zone which includes those regions of an astronomical body which are not exposed to its atmosphere or space.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-10-07T14:22:38Z</dc:date>
-        <rdfs:label xml:lang="en">subsurface zone of an astronomical body</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01001780 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001780">
@@ -11629,57 +11445,6 @@ Some definitions include additional discussion of the the physics involved which
         <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-18T14:39:20Z</dc:date>
         <rdfs:label xml:lang="en">liquid accumulation process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001865 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001865">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000033"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16526"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16526"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000267"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The concentration of carbon dioxide when measured in air that is part of an atmosphere.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-4366-3088"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-19T22:51:38Z</dc:date>
-        <oboInOwl:inSubset>envoAtmo</oboInOwl:inSubset>
-        <oboInOwl:inSubset>envoNceas</oboInOwl:inSubset>
-        <rdfs:label xml:lang="en">concentration of carbon dioxide in an atmosphere</rdfs:label>
     </owl:Class>
     
 
@@ -12260,156 +12025,6 @@ Some definitions include additional discussion of the the physics involved which
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_04000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_04000003">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000033"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16526"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16526"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001998"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The concentration of carbon dioxide when measured in soil.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0003-1264-1166"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-14T21:13:30Z</dc:date>
-        <oboInOwl:inSubset>envoNceas</oboInOwl:inSubset>
-        <rdfs:label xml:lang="en">concentration of carbon dioxide in soil</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_04000004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_04000004">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000033"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16526"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002005"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16526"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002005"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The concentration of carbon dioxide when measured in air.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0003-1264-1166"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-14T21:24:04Z</dc:date>
-        <oboInOwl:inSubset>envoNceas</oboInOwl:inSubset>
-        <rdfs:label xml:lang="en">concentration of carbon dioxide in air</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_04000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_04000006">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000033"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16526"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002149"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_16526"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002149"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The concentration of carbon dioxide when measured in seawater.</obo:IAO_0000115>
-        <dc:creator rdf:resource="http://orcid.org/0000-0003-1264-1166"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-14T21:35:30Z</dc:date>
-        <oboInOwl:inSubset>envoNceas</oboInOwl:inSubset>
-        <rdfs:label xml:lang="en">concentration of carbon dioxide in seawater</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_04000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_04000010">
@@ -12718,54 +12333,6 @@ Some definitions include additional discussion of the the physics involved which
         </rdfs:subClassOf>
         <obo:IAO_0000115>An environment which is determined by an anatomical entity.</obo:IAO_0000115>
         <rdfs:label>anatomical entity environment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_3100011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_3100011">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000033"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_15379"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_15379"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002006"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The concentration of dioxygen when measured in liquid water.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>liquid water dioxygen concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>concentration of dioxygen in liquid water</rdfs:label>
     </owl:Class>
     
 
@@ -14216,7 +13783,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedTarget>&apos;Part&apos; includes both proper parts and the whole plant. CARO:0000003 &apos;connected anatomical structure&apos; is defined as: Material anatomical entity that is a single connected structure with inherent 3D shape, generated by coordinated expression of the organism&apos;s own genome.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PO:cooperl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:cooperl</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -14257,7 +13824,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025131"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An anatomical entity that is or was part of a plant.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BFO:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -14921,29 +14488,6 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>third planet from the Sun in the Solar System</owl:annotatedTarget>
         <obo:IAO_0000119>https://www.wikidata.org/wiki/Q2</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- https://www.wikidata.org/wiki/Q2306597 -->
-
-    <owl:NamedIndividual rdf:about="https://www.wikidata.org/wiki/Q2306597">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000216"/>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000248"/>
-            </owl:Restriction>
-        </rdf:type>
-        <obo:IAO_0000115>&quot;Suni, or Jalca, is one of the eight Natural Regions of Peru. It is located in the Andes at an altitude between 3,500 and 4,000 metres above sea level. Suni has a dry and cold weather and there are many glacial valleys. The flora includes gramineous plants and shrubs such as the taya-taya (Caesalpinia spinosa), the quishuar (Buddleja coriacea), and the cantuta (Cantua buxifolia) which was considered sacred by the Incas. Even though it is hard for plants to grow because of the weather, people are able to cultivate such crops as quinoa, qañiwa, broad beans and ulluku (Ullucus tuberosus). The main fauna is the guinea pig and, among numerous other highland birds, the Chiguanco thrush.&quot;</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Jalca</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">Suni</rdfs:label>
-    </owl:NamedIndividual>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://www.wikidata.org/wiki/Q2306597"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>&quot;Suni, or Jalca, is one of the eight Natural Regions of Peru. It is located in the Andes at an altitude between 3,500 and 4,000 metres above sea level. Suni has a dry and cold weather and there are many glacial valleys. The flora includes gramineous plants and shrubs such as the taya-taya (Caesalpinia spinosa), the quishuar (Buddleja coriacea), and the cantuta (Cantua buxifolia) which was considered sacred by the Incas. Even though it is hard for plants to grow because of the weather, people are able to cultivate such crops as quinoa, qañiwa, broad beans and ulluku (Ullucus tuberosus). The main fauna is the guinea pig and, among numerous other highland birds, the Chiguanco thrush.&quot;</owl:annotatedTarget>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Suni_(geography)</obo:IAO_0000119>
     </owl:Axiom>
     
 
