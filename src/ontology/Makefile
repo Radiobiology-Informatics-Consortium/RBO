@@ -40,7 +40,7 @@ SRCMERGED=tmp/merged-$(SRC)
 SIMPLESEED=simple_seed.txt
 PRESEED=tmp/pre_seed.txt
 
-FORMATS = $(sort  owl obo owl)
+FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMAT) tsv)
 RELEASE_ARTEFACTS = $(sort  full base base full)
 
