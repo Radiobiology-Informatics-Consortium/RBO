@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-01-13/imports/efo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-13</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-01-14/imports/efo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -513,6 +513,8 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0000829</efo:EFO_URI>
         <oboInOwl:hasDbXref>RO:0000052</oboInOwl:hasDbXref>
@@ -525,6 +527,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <efo:EFO_URI>http://www.ebi.ac.uk/efo/has_quality</efo:EFO_URI>
         <rdfs:label>has_quality</rdfs:label>
     </owl:ObjectProperty>
@@ -547,6 +550,31 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002314 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002314">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002502"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000115>q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.</obo:IAO_0000115>
+        <obo:IAO_0000116>Because part_of is transitive, inheres in is a sub-relation of inheres in part of</obo:IAO_0000116>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <rdfs:label>inheres in part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
+        <rdfs:label>depends on</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -561,6 +589,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
         <obo:IAO_0000115>A process is an entity that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity during the time it occurs.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001433</efo:EFO_URI>
@@ -577,6 +606,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000112>For example, the disposition of vegetables to decay when not refrigerated, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease.</obo:IAO_0000112>
         <obo:IAO_0000115>A disposition is an entity that causes a specific process or transformation in an entity in which it inheres, under specific circumstances and in conjunction with the laws of nature. For example, the disposition of vegetables to decay when not refrigerated, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone modified from original</obo:IAO_0000117>
@@ -591,9 +621,47 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115>A quality is an entity that describes some aspect which is intrinsic to that particular object and is dependent on or more material entities in which it inheres in or is borne by. Example the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001436</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>A specifically dependent continuant [snap:SpecificallyDependentContinuant] that is exhibited if it inheres in an entity or entities at all (a categorical property).</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#Quality</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>NCIt:C25283</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:263496004</oboInOwl:hasDbXref>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
+        <obo:IAO_0000115>An experimental factor which is a property or characteristic of some other entity.  For example, the mouse has the colour white.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Sirarat Sarntivijai</obo:IAO_0000117>
+        <efo:ArrayExpress_label>sample characteristic</efo:ArrayExpress_label>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001443</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</efo:source_definition>
+        <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>BFO:0000020</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>SpecificallyDependentContinuant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>specifically dependent continuant</oboInOwl:hasExactSynonym>
+        <rdfs:label>material property</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000112>For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</obo:IAO_0000112>
         <obo:IAO_0000115>A role is an entity which is borne in a material entity in some kinds of natural, social or institutional contexts, but which is not essential to the fundamental definition of that material entity (i.e. the material entity exists with or without the role).  For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
@@ -611,6 +679,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
         <obo:IAO_0000112>A heart, a human, a fly, a microarray.</obo:IAO_0000112>
         <obo:IAO_0000115>A material entity is an entity that exists in full during the length of time of its existence, persists through this time while maintaining its identity and has no temporal parts. For example a heart, a human, a fly, a microarray.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
@@ -879,11 +948,56 @@ Note that this term is in the subset of terms that should not be used for direct
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0304">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0305"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0306"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>General characterisation of the ancestry of a population or individual</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ancestry status</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HANCESTRO_0305 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0304"/>
         <obo:IAO_0000115>Ancestry that is the result of cultural or geographic isolation. Generally characterised by increased genetic homogeneity and reduced genetic variation</obo:IAO_0000115>
         <rdfs:label xml:lang="en">genetically isolated ancestry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0306 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0306">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0304"/>
+        <obo:IAO_0000115>Ancestry which is an admixture of more than one defined ancestral population. The degree and type of admixture may vary within a population and the accuracy of classification requires well-defined reference samples</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">admixed ancestry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000001"/>
+        <obo:IAO_0000115>An information entity is an entity that represents information about some other entity.  For example, a measurement, a clustered data set.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:ArrayExpress_label>information</efo:ArrayExpress_label>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001435</efo:EFO_URI>
+        <efo:organizational_class>true</efo:organizational_class>
+        <efo:source_definition>an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</efo:source_definition>
+        <oboInOwl:hasExactSynonym>information content entity</oboInOwl:hasExactSynonym>
+        <rdfs:label>information entity</rdfs:label>
     </owl:Class>
     
 
@@ -922,6 +1036,12 @@ Note that this term is in the subset of terms that should not be used for direct
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10089"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>ricefield mouse</owl:annotatedTarget>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10089"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Mus formosanus</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#synonym"/>
     </owl:Axiom>
@@ -929,12 +1049,6 @@ Note that this term is in the subset of terms that should not be used for direct
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10089"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Ryukyu mouse</owl:annotatedTarget>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10089"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>ricefield mouse</owl:annotatedTarget>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon#common_name"/>
     </owl:Axiom>
     
@@ -1069,6 +1183,7 @@ http://code.google.com/p/popcomm-ontology/</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">protocol</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -1131,9 +1246,43 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>A unit of measurement is a standardized quantity of a physical quality.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001446</efo:EFO_URI>
+        <oboInOwl:hasDbXref>MO:3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C44278</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C68553</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NIFSTD:birnlex_2015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:258666001</oboInOwl:hasDbXref>
+        <rdfs:label>unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UO_0000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000000"/>
+        <obo:IAO_0000115>A derived unit is a unit which is derived from base units.</obo:IAO_0000115>
+        <obo:IAO_0000115>A unit which is derived from base units.</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001692</efo:EFO_URI>
+        <efo:definition_citation>UO_0000046</efo:definition_citation>
+        <rdfs:label>derived unit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_0000127 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000046"/>
         <obo:IAO_0000115>A derived unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.</obo:IAO_0000115>
         <obo:IAO_0000115>A unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.</obo:IAO_0000115>
         <rdfs:label>radiation unit</rdfs:label>
@@ -1148,6 +1297,26 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000115>A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
         <obo:IAO_0000115>A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
         <rdfs:label>absorbed dose unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000001 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000001">
+        <obo:IAO_0000115>An experimental factor in Array Express which are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This upper level class is really used to give a root class from which applications can rely on and not be tied to upper ontology classses which do change.</obo:IAO_0000115>
+        <obo:IAO_0000117>Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:organizational_class>true</efo:organizational_class>
+        <oboInOwl:created_by>Helen Parkinson</oboInOwl:created_by>
+        <oboInOwl:created_by>James Malone</oboInOwl:created_by>
+        <oboInOwl:created_by>Tomasz Adamusiak</oboInOwl:created_by>
+        <oboInOwl:hasDbXref>MO:10</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ExperimentalFactor</oboInOwl:hasExactSynonym>
+        <rdfs:comment>Concept naming convention is lower case natural naming with spaces, when necessary captials should be used, for example disease factor, HIV, breast carcinoma, Ewing&apos;s sarcoma</rdfs:comment>
+        <rdfs:label>experimental factor</rdfs:label>
     </owl:Class>
     
 
@@ -1308,6 +1477,7 @@ Dorso-ventral vaginal septa is observed in some BALB/cJ females, and may contrib
     <!-- http://www.ebi.ac.uk/efo/EFO_0004429 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0004429">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115>Property of an organism which indicates that the organism&apos;s parents were genetically related (potentially for several generations). Inbreeding results in closer homozygosity.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <rdfs:label>inbred</rdfs:label>

@@ -233,7 +233,7 @@ imports/doid_import.owl:
 	if [ $(IMP) = true ]; then cp mirror/doid.owl imports/doid_import.owl; fi
 
 imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method STAR \
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method BOT \
 	remove -t "http://purl.obolibrary.org/obo/RO_0000053" \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
@@ -296,8 +296,9 @@ components/%: .FORCE
 # ----------------------------------------
 #
 
-IMP=false # Global parameter to bypass import generation
-MIR=false # Global parameter to bypass mirror generation
+# True = do it, False = skip it
+IMP=true # Global parameter to bypass import generation
+MIR=true # Global parameter to bypass mirror generation
 
 
 ## ONTOLOGY: ro
