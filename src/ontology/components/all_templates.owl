@@ -90,23 +90,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_2000 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_2000">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has atomic number</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RBO_20000000 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_20000000">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has atomic number</rdfs:label>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_20000000"/>
     
 
 
@@ -423,20 +409,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2000"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:hasValue>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RBO_2001"/>
-                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:hasValue>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
