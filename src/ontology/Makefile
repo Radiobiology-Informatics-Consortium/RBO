@@ -40,7 +40,7 @@ SRCMERGED=tmp/merged-$(SRC)
 SIMPLESEED=simple_seed.txt
 PRESEED=tmp/pre_seed.txt
 
-FORMATS = $(sort  owl obo owl)
+FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMAT) tsv)
 RELEASE_ARTEFACTS = $(sort  full base base full)
 
@@ -75,8 +75,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-
-IMPORTS =  ro bfo pato pco chmo envo obi uo chebi doid uberon cob go
+IMPORTS =  ro bfo pato pco chmo envo obi uo chebi doid uberon cob go efo ncbitaxon
 
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
@@ -142,17 +141,17 @@ prepare_initial_release: prepare_release
 # ----------------------------------------
 
 
-$(ONT)-full.obo: $(ONT)-full.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
-$(ONT)-base.obo: $(ONT)-base.owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+#$(ONT)-full.obo: $(ONT)-full.owl
+#	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo & grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+#$(ONT)-base.obo: $(ONT)-base.owl
+#	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo & grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 # Main release artefacts
 $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT).obo: $(ONT).owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+#$(ONT).obo: $(ONT).owl
+#	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
 # ----------------------------------------
 # Initiating Step: Reason over source
 # ----------------------------------------
@@ -231,7 +230,25 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 .PRECIOUS: imports/%_import.owl
 
 imports/doid_import.owl: 
-	cp mirror/doid.owl imports/doid_import.owl
+	if [ $(IMP) = true ]; then cp mirror/doid.owl imports/doid_import.owl; fi
+
+imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method BOT \
+	remove -t "http://purl.obolibrary.org/obo/RO_0000053" \
+	remove -t "http://www.ebi.ac.uk/efo/EFO_0000001" \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method BOT \
+		remove -t "https://www.wikidata.org/wiki/Q2306597" \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+imports/ncbitaxon_import.owl: mirror/ncbitaxon.owl imports/ncbitaxon_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/ncbitaxon_terms_combined.txt --force true --method BOT \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/uberon_import.owl: mirror/uberon.owl imports/uberon_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uberon_terms_combined.txt --force true --method STAR \
@@ -280,8 +297,9 @@ components/%: .FORCE
 # ----------------------------------------
 #
 
-IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
+# True = do it, False = skip it
+IMP=false # Global parameter to bypass import generation
+MIR=false # Global parameter to bypass mirror generation
 
 
 ## ONTOLOGY: ro
@@ -290,6 +308,13 @@ mirror/ro.trigger: $(SRC)
 
 mirror/ro.owl: mirror/ro.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ro.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+# ONTOLOGY: EFO
+mirror/efo.trigger: $(SRC)
+mirror/efo.owl: mirror/efo.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.ebi.ac.uk/efo/efo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
@@ -339,7 +364,13 @@ mirror/chmo.owl: mirror/chmo.trigger
 mirror/envo.trigger: $(SRC)
 
 mirror/envo.owl: mirror/envo.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/envo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) remove -I $(URIBASE)/envo.owl --select "self equivalents" --signature true  \
+	--term  http://purl.obolibrary.org/obo/ENVO_04000006 \
+	--term  http://purl.obolibrary.org/obo/ENVO_3100011 \
+	--term  http://purl.obolibrary.org/obo/ENVO_04000003 \
+	--term  http://purl.obolibrary.org/obo/ENVO_04000004 \
+	--term  http://purl.obolibrary.org/obo/ENVO_01001865 \
+	convert -o $@.tmp.owl  && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
@@ -395,6 +426,13 @@ mirror/go.trigger: $(SRC)
 
 mirror/go.owl: mirror/go.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/go.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+mirror/ncbitaxon.trigger: $(SRC)
+
+mirror/ncbitaxon.owl: mirror/ncbitaxon.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/ncbitaxon.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 

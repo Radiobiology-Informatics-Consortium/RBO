@@ -28,7 +28,7 @@ reasoner: ELK
 release_artefacts:
 - full
 - base
-robot_java_args: ''
+robot_java_args: '-Xmx8G'
 robot_report:
   custom_profile: false
   fail_on: null
