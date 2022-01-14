@@ -19,8 +19,8 @@ ERROR	duplicate_definition	Luminex	textual definition	A supplier of flow cytomet
 ERROR	duplicate_definition	CytoBuoy	textual definition	A supplier of flow cytometry analyzers
 ERROR	duplicate_definition	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
 ERROR	duplicate_definition	heteroatomic molecular entity	textual definition	A molecular entity consisting of two or more chemical elements.
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	50098b5f-f5d3-46f9-a9cf-aa21a8684191genid5419
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	50098b5f-f5d3-46f9-a9cf-aa21a8684191genid5423
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	19fa04cf-91ed-455c-b8fe-270b626f4a1bgenid5419
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	19fa04cf-91ed-455c-b8fe-270b626f4a1bgenid5423
 ERROR	missing_label	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	rdf:PlainLiteral	label	
@@ -86,8 +86,8 @@ ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of
 ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
 ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure.
-ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
-ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
 ERROR	multiple_definitions	immediately_deep_to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
 ERROR	multiple_definitions	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	chemical entity	textual definition	A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.
@@ -224,8 +224,8 @@ ERROR	multiple_labels	in distal side of	label	in distal side of
 ERROR	multiple_labels	in distal side of	label	in_distal_side_of
 ERROR	multiple_labels	in lateral side of	label	in lateral side of
 ERROR	multiple_labels	in lateral side of	label	in_lateral_side_of
-ERROR	multiple_labels	proximalmost part of	label	proximalmost part of
-ERROR	multiple_labels	proximalmost part of	label	proximalmost_part_of
+ERROR	multiple_labels	proximalmost_part_of	label	proximalmost part of
+ERROR	multiple_labels	proximalmost_part_of	label	proximalmost_part_of
 ERROR	multiple_labels	immediately_deep_to	label	immediately deep to
 ERROR	multiple_labels	immediately_deep_to	label	immediately_deep_to
 ERROR	multiple_labels	immediately superficial to	label	immediately superficial to
@@ -1221,6 +1221,11 @@ WARN	missing_definition	protein	textual definition
 WARN	missing_definition	fibroblast growth factor 8	textual definition	
 WARN	missing_definition	sonic hedgehog protein	textual definition	
 WARN	missing_definition	amino acid chain	textual definition	
+WARN	missing_definition	Fe-56 ion radiation	textual definition	
+WARN	missing_definition	C-12 ion radiation	textual definition	
+WARN	missing_definition	Si-28 ion radiation	textual definition	
+WARN	missing_definition	He-4 ion radiation	textual definition	
+WARN	missing_definition	Ne-20 ion radiation	textual definition	
 WARN	missing_definition	radionuclide	textual definition	
 WARN	missing_definition	actinide	textual definition	
 WARN	missing_definition	actinium	textual definition	
@@ -1276,6 +1281,15 @@ WARN	missing_definition	risk estimate	textual definition
 WARN	missing_definition	lifetime risk estimate	textual definition	
 WARN	missing_definition	biological process	textual definition	
 WARN	missing_definition	cellular process	textual definition	
+WARN	missing_definition	O-16 ion radiation	textual definition	
+WARN	missing_definition	Ar-40 ion radiation	textual definition	
+WARN	missing_definition	Ti-48 ion radiation	textual definition	
+WARN	missing_definition	Kr-84 ion radiation	textual definition	
+WARN	missing_definition	Nb-93 ion radiation	textual definition	
+WARN	missing_definition	Ag-107 ion radiation	textual definition	
+WARN	missing_definition	Xe-129 ion radiation	textual definition	
+WARN	missing_definition	Ta-181 ion radiation	textual definition	
+WARN	missing_definition	N-14 ion radiation	textual definition	
 WARN	missing_definition	mass number	textual definition	
 WARN	missing_definition	contained in	textual definition	
 WARN	missing_definition	contains	textual definition	
