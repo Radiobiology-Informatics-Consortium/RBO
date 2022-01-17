@@ -42,7 +42,7 @@ PRESEED=tmp/pre_seed.txt
 
 FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMAT) tsv)
-RELEASE_ARTEFACTS = $(sort  full base base full)
+RELEASE_ARTEFACTS = $(sort  full base)
 
 # ----------------------------------------
 # Top-level targets
@@ -240,10 +240,16 @@ imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method BOT \
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/envo_terms_combined.txt --force true --method BOT \
 		remove -t "https://www.wikidata.org/wiki/Q2306597" \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+imports/pato_import.owl: mirror/pato.owl imports/pato_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/pato_terms_combined.txt --force true --method TOP \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 
 imports/ncbitaxon_import.owl: mirror/ncbitaxon.owl imports/ncbitaxon_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/ncbitaxon_terms_combined.txt --force true --method BOT \
@@ -298,8 +304,8 @@ components/%: .FORCE
 #
 
 # True = do it, False = skip it
-IMP=false # Global parameter to bypass import generation
-MIR=false # Global parameter to bypass mirror generation
+IMP=true # Global parameter to bypass import generation
+MIR=true # Global parameter to bypass mirror generation
 
 
 ## ONTOLOGY: ro
