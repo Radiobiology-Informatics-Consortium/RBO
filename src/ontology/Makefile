@@ -240,7 +240,7 @@ imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method BOT \
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/envo_terms_combined.txt --force true --method BOT \
 		remove -t "https://www.wikidata.org/wiki/Q2306597" \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi

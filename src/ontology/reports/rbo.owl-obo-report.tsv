@@ -19,8 +19,8 @@ ERROR	duplicate_definition	Luminex	textual definition	A supplier of flow cytomet
 ERROR	duplicate_definition	CytoBuoy	textual definition	A supplier of flow cytometry analyzers
 ERROR	duplicate_definition	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
 ERROR	duplicate_definition	heteroatomic molecular entity	textual definition	A molecular entity consisting of two or more chemical elements.
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	7b4ac3c0-09e9-476c-8e6e-a105ca6f1d97genid5572
-ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	7b4ac3c0-09e9-476c-8e6e-a105ca6f1d97genid5576
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	ea2cf83f-50cf-43d0-8c79-9bba82719089genid5572
+ERROR	multiple_equivalent_classes	epithelium	owl:equivalentClass	ea2cf83f-50cf-43d0-8c79-9bba82719089genid5576
 ERROR	missing_label	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	rdf:PlainLiteral	label	
@@ -89,10 +89,10 @@ ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of
 ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
 ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure.
-ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
-ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
-ERROR	multiple_definitions	immediately_deep_to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
-ERROR	multiple_definitions	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
+ERROR	multiple_definitions	immediately deep to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
+ERROR	multiple_definitions	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	chemical entity	textual definition	A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.
 ERROR	multiple_definitions	chemical entity	textual definition	A drug, solvent, chemical, etc., with a property that can be measured such as concentration.
 ERROR	multiple_definitions	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
@@ -246,10 +246,10 @@ ERROR	multiple_labels	in distal side of	label	in distal side of
 ERROR	multiple_labels	in distal side of	label	in_distal_side_of
 ERROR	multiple_labels	in lateral side of	label	in lateral side of
 ERROR	multiple_labels	in lateral side of	label	in_lateral_side_of
-ERROR	multiple_labels	proximalmost_part_of	label	proximalmost part of
-ERROR	multiple_labels	proximalmost_part_of	label	proximalmost_part_of
-ERROR	multiple_labels	immediately_deep_to	label	immediately deep to
-ERROR	multiple_labels	immediately_deep_to	label	immediately_deep_to
+ERROR	multiple_labels	proximalmost part of	label	proximalmost part of
+ERROR	multiple_labels	proximalmost part of	label	proximalmost_part_of
+ERROR	multiple_labels	immediately deep to	label	immediately deep to
+ERROR	multiple_labels	immediately deep to	label	immediately_deep_to
 ERROR	multiple_labels	immediately superficial to	label	immediately superficial to
 ERROR	multiple_labels	immediately superficial to	label	immediately_superficial_to
 ERROR	multiple_labels	atom	label	atom
@@ -2465,7 +2465,7 @@ INFO	lowercase_definition	ventral_to	textual definition	x ventral to y iff x is 
 INFO	lowercase_definition	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	in_proximal_side_of	textual definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
 INFO	lowercase_definition	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
-INFO	lowercase_definition	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+INFO	lowercase_definition	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 INFO	lowercase_definition	immediately superficial to	textual definition	x immediately superficial to y iff x superficial to y and x is contiguous with y.
 INFO	lowercase_definition	partially_surrounded_by	textual definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
 INFO	lowercase_definition	cellular process	textual definition	"
