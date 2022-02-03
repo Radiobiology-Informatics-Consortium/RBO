@@ -251,7 +251,11 @@ imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
 imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/envo_terms_combined.txt --force true --method BOT \
 		remove -t "https://www.wikidata.org/wiki/Q2306597" \
-		remove -t "PO:0007033" -t BFO:0000003 --trim false --axioms subclass --signature true \
+		remove -t "PO:0007033" -t BFO:0000003 --trim false --axioms subclass --signature true --preserve-structure false \
+		remove -t "PO:0025337" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
+		remove -t "PO:0028002" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
+		remove -t "PO:0009012" -t BFO:0000015 --trim false --axioms subclass --signature true --preserve-structure false\
+		remove -t "ENVO:02500000" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 

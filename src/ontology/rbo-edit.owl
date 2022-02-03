@@ -82,6 +82,10 @@ SubClassOf(obo:CHEBI_50906 obo:BFO_0000017)
 
 SubClassOf(obo:DOID_4 obo:BFO_0000016)
 
+# Class: obo:GO_0005575 (cellular_component)
+
+SubClassOf(obo:GO_0005575 obo:BFO_0000004)
+
 # Class: obo:GO_0009314 (response to radiation)
 
 SubClassOf(obo:GO_0009314 ObjectSomeValuesFrom(obo:RO_0002608 obo:ENVO_01001023))
@@ -89,10 +93,6 @@ SubClassOf(obo:GO_0009314 ObjectSomeValuesFrom(obo:RO_0002608 obo:ENVO_01001023)
 # Class: obo:GO_0010212 (response to ionizing radiation)
 
 SubClassOf(obo:GO_0010212 ObjectSomeValuesFrom(obo:RO_0002608 obo:RBO_00000116))
-
-# Class: obo:PO_0009012 (plant structure development stage)
-
-SubClassOf(obo:PO_0009012 obo:BFO_0000015)
 
 # Class: obo:RBO_00005068 (Indirect cellular response to radiation)
 
