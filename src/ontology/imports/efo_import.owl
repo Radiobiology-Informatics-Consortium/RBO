@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-01-14/imports/efo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-14</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-02-03/imports/efo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -659,7 +659,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000112>For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</obo:IAO_0000112>
         <obo:IAO_0000115>A role is an entity which is borne in a material entity in some kinds of natural, social or institutional contexts, but which is not essential to the fundamental definition of that material entity (i.e. the material entity exists with or without the role).  For example, the role of a person as a surgeon, the role of an artificial heart in pumping blood, the role of a chemical compound in an experiment, the role of a drug in the treatment of a disease.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
@@ -1242,6 +1241,16 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PO_0009012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009012">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000399"/>
+        <obo:IAO_0000115>A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes.</obo:IAO_0000115>
+        <rdfs:label>plant structure development stage</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000">
@@ -1293,6 +1302,26 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000115>A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
         <obo:IAO_0000115>A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
         <rdfs:label>absorbed dose unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/EFO_0000399 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A developmental stage is spatiotemporal region encompassing some part of the life cycle of an organism, e.g. blastula stage</obo:IAO_0000115>
+        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
+        <efo:branch_class>true</efo:branch_class>
+        <oboInOwl:hasDbXref>MO:878</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C43531</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>development stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>developmental_stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>life cycle stage</oboInOwl:hasExactSynonym>
+        <rdfs:comment>This branch will be replaced by, and if necessary merged with an Uberon import in future.</rdfs:comment>
+        <rdfs:label>developmental stage</rdfs:label>
     </owl:Class>
     
 

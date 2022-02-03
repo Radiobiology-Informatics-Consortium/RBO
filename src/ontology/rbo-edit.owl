@@ -19,15 +19,15 @@ Import(<http://purl.obolibrary.org/obo/rbo/components/all_templates.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/cob_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/envo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/go_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rbo/imports/ncbitaxon_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/pco_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/uberon_import.owl>)
-Import(<http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl>)
-Import(<http://purl.obolibrary.org/obo/rbo/imports/ncbitaxon_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/uo_import.owl>)
 Annotation(dce:description "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.")
 Annotation(dce:title "Radiation Biology Ontology")
@@ -70,9 +70,21 @@ AnnotationAssertion(rdfs:label obo:RBO_2000 "has atomic mass"@en)
 #   Classes
 ############################
 
+# Class: obo:BFO_0000023 (role)
+
+EquivalentClasses(obo:BFO_0000023 obo:CHEBI_50906)
+
+# Class: obo:CHEBI_50906 (role)
+
+SubClassOf(obo:CHEBI_50906 obo:BFO_0000017)
+
 # Class: obo:DOID_4 (disease)
 
 SubClassOf(obo:DOID_4 obo:BFO_0000016)
+
+# Class: obo:GO_0005575 (cellular_component)
+
+SubClassOf(obo:GO_0005575 obo:BFO_0000004)
 
 # Class: obo:GO_0009314 (response to radiation)
 
@@ -85,6 +97,10 @@ SubClassOf(obo:GO_0010212 ObjectSomeValuesFrom(obo:RO_0002608 obo:RBO_00000116))
 # Class: obo:RBO_00005068 (Indirect cellular response to radiation)
 
 SubClassOf(obo:RBO_00005068 ObjectAllValuesFrom(obo:RO_0002404 obo:ENVO_01001023))
+
+# Class: obo:UBERON_0000000 (processual entity)
+
+SubClassOf(obo:UBERON_0000000 obo:BFO_0000003)
 
 
 )
