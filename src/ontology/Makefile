@@ -266,6 +266,7 @@ imports/ncbitaxon_import.owl: mirror/ncbitaxon.owl imports/ncbitaxon_terms_combi
 
 imports/uberon_import.owl: mirror/uberon.owl imports/uberon_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uberon_terms_combined.txt --force true --method STAR \
+		remove -t "http://purl.obolibrary.org/obo/CARO_0000000" --preserve-structure false \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 	
