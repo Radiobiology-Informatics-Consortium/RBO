@@ -312,7 +312,7 @@ components/%: .FORCE
 #
 
 # True = do it, False = skip it
-IMP=false # Global parameter to bypass import generation
+IMP=true # Global parameter to bypass import generation
 MIR=false # Global parameter to bypass mirror generation
 
 
