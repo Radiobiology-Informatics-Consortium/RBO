@@ -283,5 +283,6 @@ obo:RBO_00002117	irradiation				An energy transfer process in which energy in th
 http://purl.obolibrary.org/obo/OBI_0302889															obo:RBO_00002117																			
 obo:RBO_00002118	radioactive decay				A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus										http://purl.obolibrary.org/obo/ENVO_01001852																			
 obo:CHEBI_36356																																		
-obo:RBO_00002119	unplanned anthropogenic irradiation														obo:RBO_00002117																			
-obo:RBO_00002120	unplanned non-anthropogenic irradiation														obo:RBO_00002117																			
+obo:RBO_00002119	unplanned irradiation				Irradiation that is not the result of a planned process										obo:RBO_00002117																			
+obo:RBO_00002120	unplanned anthropogenic irradiation				Unplanned irradiation that is of anthropogenic origin										obo:RBO_00002119																			
+obo:RBO_00002121	unplanned non-anthropogenic irradiation				Unplanned irradiation that is non-anthropogenic in origin										obo:RBO_00002119																			
