@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-02-03/imports/efo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-03</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-03-12/imports/efo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -757,6 +757,38 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>
+The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.
+</obo:IAO_0000115>
+        <obo:IAO_0000115>The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasAlternativeId>GO:0008372</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>NIF_Subcellular:sao1337158144</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>cellular component</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>cellular_component</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>cellular component unknown</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0005575</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gosubset_prok"/>
+        <rdfs:comment>
+Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+</rdfs:comment>
+        <rdfs:label>cellular component</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
@@ -765,7 +797,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
 </obo:IAO_0000115>
         <obo:IAO_0000115>The activities of living organisms that support life in single- or multi-cellular organisms from their origin through the progression of life.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
-        <efo:gwas_trait>true</efo:gwas_trait>
         <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>GO:0008150</oboInOwl:hasDbXref>
@@ -800,7 +831,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
         <obo:IAO_0000115>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an electromagnetic radiation stimulus.</obo:IAO_0000115>
-        <efo:gwas_trait>true</efo:gwas_trait>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</efo:gwas_trait>
         <oboInOwl:hasDbXref>GO:0009314</oboInOwl:hasDbXref>
         <rdfs:label>response to radiation</rdfs:label>
     </owl:Class>
@@ -1241,16 +1272,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PO_0009012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009012">
-        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000399"/>
-        <obo:IAO_0000115>A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes.</obo:IAO_0000115>
-        <rdfs:label>plant structure development stage</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/UO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000000">
@@ -1302,26 +1323,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000115>A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
         <obo:IAO_0000115>A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
         <rdfs:label>absorbed dose unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ebi.ac.uk/efo/EFO_0000399 -->
-
-    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000399">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>A developmental stage is spatiotemporal region encompassing some part of the life cycle of an organism, e.g. blastula stage</obo:IAO_0000115>
-        <obo:IAO_0000117>James Malone</obo:IAO_0000117>
-        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:branch_class>true</efo:branch_class>
-        <oboInOwl:hasDbXref>MO:878</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NCIt:C43531</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym>development stage</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>developmental_stage</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>life cycle stage</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This branch will be replaced by, and if necessary merged with an Uberon import in future.</rdfs:comment>
-        <rdfs:label>developmental stage</rdfs:label>
     </owl:Class>
     
 

@@ -112,6 +112,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_30212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_33250 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250"/>
@@ -229,6 +235,14 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0002983 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002983"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302889 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302889">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002117"/>
+    </owl:Class>
     
 
 
@@ -2514,6 +2528,43 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
         <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study of the measurement, effects and regulation of wireless communication signals, for example mobile phone radiation and microwave communication.</obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wireless communication radiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The sample was irradiated with Cs-137 gamma ray photons.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Britannica.com</obo:IAO_0000119>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photons having energies that are greater than tens of thousands of electron volts (eV).  </obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma ray photon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30212"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The sample was irradiated with  x-ray photons.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Britannica.com</obo:IAO_0000119>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A photon with energies from about 100 eV (electron volts) to 1 MeV (million electron volts).</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-ray photon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001852"/>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irradiation of the sample was with  x-ray photons.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0003-1741-8297</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000119>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An energy transfer process in which energy in the form of particles or waves is transferred from one entity to another</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">irradiation</rdfs:label>
     </owl:Class>
     
 
