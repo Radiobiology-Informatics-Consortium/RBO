@@ -130,6 +130,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36356"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0002796 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002796"/>
@@ -169,6 +175,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001852 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001852"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_02500041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_02500041"/>
     
 
 
@@ -2565,6 +2577,98 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000119>
         <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An energy transfer process in which energy in the form of particles or waves is transferred from one entity to another</obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">irradiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001852"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioactive decay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002117"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irradiation that is not the result of a planned process</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unplanned irradiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002119"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned irradiation that is of anthropogenic origin</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unplanned anthropogenic irradiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002119"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned irradiation that is non-anthropogenic in origin</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unplanned non-anthropogenic irradiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500041"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental monitoring that includes continual assay for radiation dose or quality.</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental radiation monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500041"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring within an environment which was not man-made.</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural environment monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002124">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500041"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring within a man-made or constructed environment</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropogenic environment monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002122"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002124"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring for radiation dose or quality within a man-made or constructed environment such as a building or a vehicle.</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anthropogenic environment radiation monitoring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00002126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002122"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002123"/>
+        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monitoring for radiation dose or quality within a natural environment.</obo:definition>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural environment radiation monitoring</rdfs:label>
     </owl:Class>
     
 
