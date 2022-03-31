@@ -75,7 +75,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ro bfo pato pco chmo envo obi uo chebi doid cob go efo ncbitaxon
+IMPORTS =  ro bfo pato pco chmo envo obi uo chebi doid cob go efo ncbitaxon uberon
 
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))

@@ -17,6 +17,7 @@ Ontology(<http://purl.obolibrary.org/obo/RBO.owl>
 Import(<http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/components/all_templates.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rbo/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl>)
@@ -74,6 +75,10 @@ AnnotationAssertion(rdfs:label obo:RBO_2000 "has atomic mass"@en)
 
 EquivalentClasses(obo:BFO_0000023 obo:CHEBI_50906)
 
+# Class: obo:CHEBI_33252 (atomic nucleus)
+
+SubClassOf(obo:CHEBI_33252 ObjectSomeValuesFrom(obo:RO_0002493 obo:RBO_00002118))
+
 # Class: obo:CHEBI_50906 (role)
 
 SubClassOf(obo:CHEBI_50906 obo:BFO_0000017)
@@ -93,6 +98,15 @@ SubClassOf(obo:GO_0009314 ObjectSomeValuesFrom(obo:RO_0002608 obo:ENVO_01001023)
 # Class: obo:GO_0010212 (response to ionizing radiation)
 
 SubClassOf(obo:GO_0010212 ObjectSomeValuesFrom(obo:RO_0002608 obo:RBO_00000116))
+
+# Class: obo:RBO_00002118 (radioactive decay)
+
+SubClassOf(obo:RBO_00002118 ObjectSomeValuesFrom(obo:OBI_0000299 obo:ENVO_01001023))
+SubClassOf(obo:RBO_00002118 ObjectMinCardinality(1 obo:OBI_0000293 obo:CHEBI_33252))
+
+# Class: obo:RBO_00002122 (environmental radiation monitoring)
+
+SubClassOf(obo:RBO_00002122 ObjectSomeValuesFrom(obo:RO_0002234 obo:RBO_010016))
 
 # Class: obo:RBO_00005068 (Indirect cellular response to radiation)
 
