@@ -75,7 +75,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ro bfo pato pco chmo envo obi uo chebi doid uberon cob go efo ncbitaxon
+IMPORTS =  ro bfo pato pco chmo envo obi uo chebi doid cob go efo ncbitaxon
 
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
@@ -264,9 +264,11 @@ imports/ncbitaxon_import.owl: mirror/ncbitaxon.owl imports/ncbitaxon_terms_combi
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+		#remove -t "http://purl.obolibrary.org/obo/CARO_0000000" --preserve-structure false \
+
 imports/uberon_import.owl: mirror/uberon.owl imports/uberon_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uberon_terms_combined.txt --force true --method STAR \
-		remove -t "http://purl.obolibrary.org/obo/CARO_0000000" --preserve-structure false \
+		rename --mappings ./imports/rename_uberon.tsv \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 	
