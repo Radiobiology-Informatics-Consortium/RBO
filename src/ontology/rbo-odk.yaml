@@ -41,7 +41,7 @@ robot_report:
   fail_on: null
   report_on:
   - edit
-  - .owl
+  - rbo.owl
   use_labels: true
 uribase: http://purl.obolibrary.org/obo
 use_dosdps: false
