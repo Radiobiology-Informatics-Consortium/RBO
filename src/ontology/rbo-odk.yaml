@@ -18,10 +18,17 @@ import_group:
   - id: pato
   - id: chmo
   - id: envo
+  - id: pco
   - id: obi
   - id: uo
   - id: doid
     mirror_from: http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl
+  - id: uberon
+  - id: cob
+  - id: go
+  - id: efo
+    mirror_from: https://www.ebi.ac.uk/efo/efo.owl
+  - id: ncbitaxon
 obo_format_options: ''
 primary_release: full
 reasoner: ELK
