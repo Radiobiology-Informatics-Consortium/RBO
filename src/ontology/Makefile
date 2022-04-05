@@ -276,7 +276,8 @@ IMP_LARGE=true # Global parameter to bypass handling of large imports
 mirror/ro.trigger: $(SRC)
 
 mirror/ro.owl: mirror/ro.trigger
-.PRECIOUS: mirror/%.owl
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ro.owl --create-dirs -o mirror/ro.owl --retry 4 --max-time 200 && $(ROBOT) convert -i mirror/ro.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/ro.owl
 
 # ONTOLOGY: EFO
 mirror/efo.trigger: $(SRC)
