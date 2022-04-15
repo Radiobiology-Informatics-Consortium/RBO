@@ -6,6 +6,11 @@
 
 ##################### CUSTOM IMPORTS#########
 
+imports/chebi_import.owl: mirror/chebi.owl imports/chebi_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/chebi_terms_combined.txt --force true --method BOT \
+			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+
 imports/doid_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/doid.owl imports/doid_import.owl; fi
 
@@ -38,7 +43,6 @@ imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
 
 imports/ncbitaxon_import.owl: mirror/ncbitaxon.owl imports/ncbitaxon_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/ncbitaxon_terms_combined.txt --force true --method BOT \
-    query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/uberon_import.owl: mirror/uberon.owl imports/uberon_terms_combined.txt
@@ -51,11 +55,14 @@ imports/cob_import.owl: mirror/cob.owl imports/cob_terms_combined.txt
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 	
-imports/go_top_import.owl: imports/go_import.owl
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i mirror/go.owl --branch-from-term "obo:GO_0006281"  --force true --method MIREOT   \
-	merge -i $< \
-	query --update ../sparql/inject-subset-declaration.ru \
-	annotate --ontology-iri $(ONTBASE)/$< $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl imports/go_import.owl && cp imports/go_import.owl imports/go_top_import.owl; fi
+imports/go_import.owl: mirror/go.owl imports/go_terms_combined.txt
+	if [ $(IMP) = true ]; then \
+	$(ROBOT) extract -i mirror/go.owl --branch-from-term "obo:GO_0006281"  --force true --method MIREOT --output imports/go_top.tmp.owl && \
+	$(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+        extract -T imports/go_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+        query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+        annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+	$(ROBOT) merge --input $@.tmp.owl --input imports/go_top.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/uo_import.owl: mirror/uo.owl imports/uo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uo_terms_combined.txt --force true --method BOT --individuals exclude \

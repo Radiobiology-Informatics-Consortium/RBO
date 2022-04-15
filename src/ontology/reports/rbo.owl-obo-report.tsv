@@ -1,24 +1,33 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	eBioscience	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Cytopeia	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Exalpha Biological	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Apogee Flow Systems	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Exbio Antibodies	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Becton Dickinson (BD Biosciences)	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Dako Cytomation	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Millipore	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Antigenix	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Partec	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Beckman Coulter	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Advanced Instruments Inc. (AI Companies)	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Miltenyi Biotec	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	AES Chemunex	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Bentley Instruments	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Invitrogen	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	Luminex	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	CytoBuoy	textual definition	A supplier of flow cytometry analyzers
-ERROR	duplicate_definition	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
-ERROR	duplicate_definition	heteroatomic molecular entity	textual definition	A molecular entity consisting of two or more chemical elements.
+ERROR	duplicate_label	root	label	root
+ERROR	duplicate_label	root	label	root
+ERROR	duplicate_label	role	label	role
+ERROR	duplicate_label	role	label	role
+ERROR	duplicate_label	radiation quality	label	radiation quality
+ERROR	duplicate_label	radiation quality	label	radiation quality
+ERROR	duplicate_label	quality	label	quality
+ERROR	duplicate_label	characteristic	label	quality
+ERROR	duplicate_label	protein	label	protein
+ERROR	duplicate_label	protein	label	protein
+ERROR	duplicate_label	primordium	label	primordium
+ERROR	duplicate_label	primordium	label	primordium
+ERROR	duplicate_label	planned process	label	planned process
+ERROR	duplicate_label	planned process	label	planned process
+ERROR	duplicate_label	milli	label	milli
+ERROR	duplicate_label	milli	label	milli
+ERROR	duplicate_label	micromole	label	micromole
+ERROR	duplicate_label	micromole	label	micromole
+ERROR	duplicate_label	has participant	label	has participant
+ERROR	duplicate_label	has participant	label	has participant
+ERROR	duplicate_label	gill	label	gill
+ERROR	duplicate_label	gill	label	gill
+ERROR	duplicate_label	cellular process	label	cellular process
+ERROR	duplicate_label	cellular process	label	cellular process
+ERROR	duplicate_label	biological_process	label	biological process
+ERROR	duplicate_label	biological process	label	biological process
+ERROR	deprecated_boolean_datatype	Cobalt-57 gamma radiation	owl:deprecated	radionuclide
+ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
+ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
 ERROR	label_whitespace	Social science and humanities study 	label	Social science and humanities study 
 ERROR	label_whitespace	Meteorology study 	label	Meteorology study 
 ERROR	multiple_labels	continuant	label	continuant
@@ -146,6 +155,19 @@ ERROR	multiple_labels	population	label	population
 ERROR	multiple_labels	population	label	population@en
 ERROR	multiple_labels	protocol	label	protocol
 ERROR	multiple_labels	protocol	label	protocol@en
+ERROR	multiple_labels	has_input	label	has specified input@en
+ERROR	multiple_labels	has_input	label	has_input
+ERROR	multiple_labels	has_input	label	has_specified_input
+ERROR	multiple_labels	has_input	label	has_specified_input@en
+ERROR	multiple_labels	is specified input of	label	is specified input of@en
+ERROR	multiple_labels	is specified input of	label	is_input_of
+ERROR	multiple_labels	is specified input of	label	is_specified_input_of@en
+ERROR	multiple_labels	has_output	label	has specified output@en
+ERROR	multiple_labels	has_output	label	has_output
+ERROR	multiple_labels	has_output	label	has_specified_output
+ERROR	multiple_labels	has_output	label	has_specified_output@en
+ERROR	multiple_labels	is_specified_output_of	label	is specified output of@en
+ERROR	multiple_labels	is_specified_output_of	label	is_specified_output_of@en
 ERROR	multiple_labels	organism	label	organism
 ERROR	multiple_labels	organism	label	organism@en
 ERROR	multiple_labels	characteristic	label	characteristic@en
@@ -162,6 +184,7 @@ ERROR	multiple_labels	participates in	label	participates in@en
 ERROR	multiple_labels	participates in	label	participates_in
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
+ERROR	multiple_labels	has participant	label	has_participant
 ERROR	multiple_labels	has quality	label	has quality
 ERROR	multiple_labels	has quality	label	has quality@en
 ERROR	multiple_labels	has quality	label	has_quality
@@ -190,6 +213,8 @@ ERROR	multiple_labels	surrounded by	label	surrounded by
 ERROR	multiple_labels	surrounded by	label	surrounded by@en
 ERROR	multiple_labels	has input	label	has input
 ERROR	multiple_labels	has input	label	has input@en
+ERROR	multiple_labels	has output	label	has output
+ERROR	multiple_labels	has output	label	has output@en
 ERROR	multiple_labels	has habitat	label	has habitat
 ERROR	multiple_labels	has habitat	label	has habitat@en
 ERROR	multiple_labels	inheres in part of	label	characteristic of part of@en
@@ -207,6 +232,8 @@ ERROR	multiple_labels	positively regulated by	label	positively regulated by
 ERROR	multiple_labels	positively regulated by	label	positively regulated by@en
 ERROR	multiple_labels	input of	label	input of
 ERROR	multiple_labels	input of	label	input of@en
+ERROR	multiple_labels	output of	label	output of
+ERROR	multiple_labels	output of	label	output of@en
 ERROR	multiple_labels	causally downstream of	label	causally downstream of
 ERROR	multiple_labels	causally downstream of	label	causally downstream of@en
 ERROR	multiple_labels	immediately causally downstream of	label	immediately causally downstream of
@@ -217,51 +244,37 @@ ERROR	multiple_labels	immediately causally upstream of	label	immediately causall
 ERROR	multiple_labels	immediately causally upstream of	label	immediately causally upstream of@en
 ERROR	multiple_labels	prefix	label	derived unit
 ERROR	multiple_labels	prefix	label	prefix
-ERROR	multiple_labels	Creator	label	Creator
-ERROR	multiple_labels	Creator	label	Creator@en-us
-ERROR	multiple_labels	Creator	label	creator
+ERROR	multiple_labels	creator	label	Creator
+ERROR	multiple_labels	creator	label	Creator@en-us
+ERROR	multiple_labels	creator	label	creator
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
 ERROR	multiple_labels	Description	label	Description@en-us
 ERROR	multiple_labels	Description	label	description
-ERROR	multiple_labels	title	label	Title
-ERROR	multiple_labels	title	label	Title@en-us
-ERROR	multiple_labels	title	label	title
-ERROR	duplicate_label	root	label	root
-ERROR	duplicate_label	root	label	root
-ERROR	duplicate_label	role	label	role
-ERROR	duplicate_label	role	label	role
-ERROR	duplicate_label	radiation quality	label	radiation quality
-ERROR	duplicate_label	radiation quality	label	radiation quality
-ERROR	duplicate_label	quality	label	quality
-ERROR	duplicate_label	characteristic	label	quality
-ERROR	duplicate_label	protein	label	protein
-ERROR	duplicate_label	protein	label	protein
-ERROR	duplicate_label	primordium	label	primordium
-ERROR	duplicate_label	primordium	label	primordium
-ERROR	duplicate_label	planned process	label	planned process
-ERROR	duplicate_label	planned process	label	planned process
-ERROR	duplicate_label	milli	label	milli
-ERROR	duplicate_label	milli	label	milli
-ERROR	duplicate_label	micromole	label	micromole
-ERROR	duplicate_label	micromole	label	micromole
-ERROR	duplicate_label	has participant	label	has participant
-ERROR	duplicate_label	has participant	label	has participant
-ERROR	duplicate_label	gill	label	gill
-ERROR	duplicate_label	gill	label	gill
-ERROR	duplicate_label	cellular process	label	cellular process
-ERROR	duplicate_label	cellular process	label	cellular process
-ERROR	duplicate_label	biological_process	label	biological process
-ERROR	duplicate_label	biological process	label	biological process
-ERROR	missing_label	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	label	
-ERROR	missing_label	oboInOwl:creation_date	label	
-ERROR	missing_label	rdf:PlainLiteral	label	
-ERROR	missing_label	xsd:boolean	label	
-ERROR	missing_label	xsd:string	label	
-ERROR	deprecated_boolean_datatype	Cobalt-57 gamma radiation	owl:deprecated	radionuclide
-ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
-ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
+ERROR	multiple_labels	Title	label	Title
+ERROR	multiple_labels	Title	label	Title@en-us
+ERROR	multiple_labels	Title	label	title
+ERROR	duplicate_definition	eBioscience	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Cytopeia	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Exalpha Biological	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Apogee Flow Systems	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Exbio Antibodies	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Becton Dickinson (BD Biosciences)	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Dako Cytomation	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Millipore	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Antigenix	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Partec	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Beckman Coulter	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Advanced Instruments Inc. (AI Companies)	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Miltenyi Biotec	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	AES Chemunex	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Bentley Instruments	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Invitrogen	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	Luminex	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	CytoBuoy	textual definition	A supplier of flow cytometry analyzers
+ERROR	duplicate_definition	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
+ERROR	duplicate_definition	heteroatomic molecular entity	textual definition	A molecular entity consisting of two or more chemical elements.
 ERROR	multiple_definitions	independent continuant	textual definition	A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.@en
 ERROR	multiple_definitions	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 ERROR	multiple_definitions	process	textual definition	A process is an entity that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity during the time it occurs.
@@ -357,6 +370,10 @@ ERROR	multiple_definitions	inheres in	textual definition	a relation between a sp
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
 ERROR	multiple_definitions	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+ERROR	multiple_definitions	participates in	textual definition	Participates in is a primitive instance-level relation between a continuant and a process in which it participates. For example a scanner participates in a scanning process at some specific time.
+ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+ERROR	multiple_definitions	has participant	textual definition	Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the A continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.
+ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	only in taxon	textual definition	S only_in_taxon T iff: S SubClassOf in_taxon only T.
 ERROR	multiple_definitions	only in taxon	textual definition	U only_in_taxon T: U is a feature found in only in organisms of species of taxon T. The feature cannot be found in an organism of any species outside of (not subsumed by) that taxon. Down-propagates in U hierarchy, up-propagates in T hierarchy (species taxonomy). Implies applicable_to_taxon.
 ERROR	multiple_definitions	only in taxon	textual definition	x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.
@@ -378,6 +395,8 @@ ERROR	multiple_definitions	starts	textual definition	Relation between occurrents
 ERROR	multiple_definitions	starts	textual definition	inverse of starts with
 ERROR	multiple_definitions	ends	textual definition	Relation between occurrents, shares an end boundary with.
 ERROR	multiple_definitions	ends	textual definition	inverse of ends with
+ERROR	multiple_definitions	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.
+ERROR	multiple_definitions	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.
 ERROR	multiple_definitions	developmentally induced by	textual definition	t1 developmentally_induced_by t2 if there is a process of organ induction (GO:0001759) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor tissue type T to T', where T' develops_from T.
 ERROR	multiple_definitions	developmentally induced by	textual definition	t1 induced_by t2 if there is a process of developmental induction (GO:0031128) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor anatomical structure type T to T', where T' develops_from T
 ERROR	multiple_definitions	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
@@ -408,6 +427,227 @@ ERROR	multiple_definitions	radiation unit	textual definition	A derived unit whic
 ERROR	multiple_definitions	radiation unit	textual definition	A unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.
 ERROR	multiple_definitions	absorbed dose unit	textual definition	A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.
 ERROR	multiple_definitions	absorbed dose unit	textual definition	A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.
+ERROR	missing_label	GO:0010212	label	
+ERROR	missing_label	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	label	
+ERROR	missing_label	oboInOwl:creation_date	label	
+ERROR	missing_label	rdf:PlainLiteral	label	
+ERROR	missing_label	xsd:boolean	label	
+ERROR	missing_label	xsd:string	label	
+WARN	duplicate_scoped_synonym	nonmetal atom	has_exact_synonym	nonmetal
+WARN	duplicate_scoped_synonym	nonmetal atom	has_related_synonym	nonmetal
+WARN	duplicate_scoped_synonym	oxygen atom	has_exact_synonym	oxygen
+WARN	duplicate_scoped_synonym	oxygen atom	has_related_synonym	oxygen
+WARN	duplicate_scoped_synonym	phosphate	has_exact_synonym	phosphates
+WARN	duplicate_scoped_synonym	phosphate	has_related_synonym	phosphates
+WARN	duplicate_scoped_synonym	carbon atom	has_exact_synonym	carbon
+WARN	duplicate_scoped_synonym	carbon atom	has_related_synonym	carbon
+WARN	duplicate_scoped_synonym	phosphorus atom	has_exact_synonym	phosphorus
+WARN	duplicate_scoped_synonym	phosphorus atom	has_related_synonym	phosphorus
+WARN	duplicate_scoped_synonym	helium atom	has_exact_synonym	helium
+WARN	duplicate_scoped_synonym	helium atom	has_related_synonym	helium
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atome
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atomo
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atoms
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atomus
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	elements
+WARN	duplicate_scoped_synonym	atom	has_related_synonym	atome
+WARN	duplicate_scoped_synonym	atom	has_related_synonym	atomo
+WARN	duplicate_scoped_synonym	atom	has_related_synonym	atoms
+WARN	duplicate_scoped_synonym	atom	has_related_synonym	atomus
+WARN	duplicate_scoped_synonym	atom	has_related_synonym	elements
+WARN	duplicate_scoped_synonym	noble gas atom	has_exact_synonym	noble gas
+WARN	duplicate_scoped_synonym	noble gas atom	has_related_synonym	noble gas
+WARN	duplicate_scoped_synonym	hydrogen atom	has_exact_synonym	hydrogen
+WARN	duplicate_scoped_synonym	hydrogen atom	has_related_synonym	hydrogen
+WARN	duplicate_scoped_synonym	Euteleostomi	alternative term	bony vertebrates
+WARN	duplicate_scoped_synonym	Euteleostomi	has_exact_synonym	bony vertebrates
+WARN	duplicate_scoped_synonym	Bacteria	alternative term	eubacteria
+WARN	duplicate_scoped_synonym	Bacteria	has_exact_synonym	eubacteria
+WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eucaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eukaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	Eucaryotae
+WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	Eukarya
+WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eucaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eukaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	Eucaryotae
+WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	Eukarya
+WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	eukaryotes
+WARN	duplicate_scoped_synonym	Phaeophyceae	has_exact_synonym	brown algae
+WARN	duplicate_scoped_synonym	Phaeophyceae	has_related_synonym	brown algae
+WARN	duplicate_scoped_synonym	Embryophyta	has_exact_synonym	land plants
+WARN	duplicate_scoped_synonym	Embryophyta	has_related_synonym	land plants
+WARN	duplicate_scoped_synonym	Bryophyta	has_exact_synonym	mosses
+WARN	duplicate_scoped_synonym	Bryophyta	has_related_synonym	mosses
+WARN	duplicate_scoped_synonym	Tetrapoda	alternative term	tetrapods
+WARN	duplicate_scoped_synonym	Tetrapoda	has_exact_synonym	tetrapods
+WARN	duplicate_scoped_synonym	Amniota	alternative term	amniotes
+WARN	duplicate_scoped_synonym	Amniota	has_exact_synonym	amniotes
+WARN	duplicate_scoped_synonym	Viridiplantae	has_exact_synonym	green plants
+WARN	duplicate_scoped_synonym	Viridiplantae	has_related_synonym	green plants
+WARN	duplicate_scoped_synonym	Carnivora	has_exact_synonym	carnivores
+WARN	duplicate_scoped_synonym	Carnivora	has_related_synonym	carnivores
+WARN	duplicate_scoped_synonym	Magnoliopsida	has_exact_synonym	flowering plants
+WARN	duplicate_scoped_synonym	Magnoliopsida	has_related_synonym	flowering plants
+WARN	duplicate_scoped_synonym	Apoidea	has_exact_synonym	bees
+WARN	duplicate_scoped_synonym	Apoidea	has_related_synonym	bees
+WARN	duplicate_scoped_synonym	Papilionoidea	has_exact_synonym	butterflies
+WARN	duplicate_scoped_synonym	Papilionoidea	has_related_synonym	butterflies
+WARN	duplicate_scoped_synonym	Mammalia	alternative term	mammals
+WARN	duplicate_scoped_synonym	Mammalia	has_exact_synonym	mammals
+WARN	duplicate_scoped_synonym	Mammalia	has_related_synonym	mammals
+WARN	duplicate_scoped_synonym	Liliopsida	has_exact_synonym	monocots
+WARN	duplicate_scoped_synonym	Liliopsida	has_related_synonym	monocots
+WARN	duplicate_scoped_synonym	Tracheophyta	has_exact_synonym	vascular plants
+WARN	duplicate_scoped_synonym	Tracheophyta	has_related_synonym	vascular plants
+WARN	duplicate_scoped_synonym	Spermatophyta	has_exact_synonym	seed plants
+WARN	duplicate_scoped_synonym	Spermatophyta	has_related_synonym	seed plants
+WARN	duplicate_scoped_synonym	Platyhelminthes	has_exact_synonym	flatworms
+WARN	duplicate_scoped_synonym	Platyhelminthes	has_related_synonym	flatworms
+WARN	duplicate_scoped_synonym	Nematoda	has_exact_synonym	nematodes
+WARN	duplicate_scoped_synonym	Nematoda	has_related_synonym	nematodes
+WARN	duplicate_scoped_synonym	Mollusca	has_exact_synonym	molluscs
+WARN	duplicate_scoped_synonym	Mollusca	has_related_synonym	molluscs
+WARN	duplicate_scoped_synonym	Arthropoda	has_exact_synonym	arthropods
+WARN	duplicate_scoped_synonym	Arthropoda	has_related_synonym	arthropods
+WARN	duplicate_scoped_synonym	Crustacea	has_exact_synonym	crustaceans
+WARN	duplicate_scoped_synonym	Crustacea	has_related_synonym	crustaceans
+WARN	duplicate_scoped_synonym	Lepidoptera	has_exact_synonym	moths
+WARN	duplicate_scoped_synonym	Lepidoptera	has_related_synonym	moths
+WARN	duplicate_scoped_synonym	Diptera	has_exact_synonym	flies
+WARN	duplicate_scoped_synonym	Diptera	has_related_synonym	flies
+WARN	duplicate_scoped_synonym	Hymenoptera	has_exact_synonym	hymenopterans
+WARN	duplicate_scoped_synonym	Hymenoptera	has_related_synonym	hymenopterans
+WARN	duplicate_scoped_synonym	Apocrita	has_exact_synonym	wasps, ants, and bees
+WARN	duplicate_scoped_synonym	Apocrita	has_related_synonym	wasps, ants, and bees
+WARN	duplicate_scoped_synonym	Chordata	has_exact_synonym	chordates
+WARN	duplicate_scoped_synonym	Chordata	has_related_synonym	chordates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	Vertebrata
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	Vertebrata
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_related_synonym	vertebrates
+WARN	duplicate_scoped_synonym	Amphibia	has_exact_synonym	amphibians
+WARN	duplicate_scoped_synonym	Amphibia	has_related_synonym	amphibians
+WARN	duplicate_scoped_synonym	Aves	has_exact_synonym	birds
+WARN	duplicate_scoped_synonym	Aves	has_related_synonym	birds
+WARN	duplicate_scoped_synonym	Eutheria	has_exact_synonym	placentals
+WARN	duplicate_scoped_synonym	Eutheria	has_related_synonym	placentals
+WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
+WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	man
+WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	human
+WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	man
+WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	has_exact_synonym	ionising radiation
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative term	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	has_exact_synonym	ALARA
+WARN	duplicate_scoped_synonym	delta ray	alternative term	delta electron
+WARN	duplicate_scoped_synonym	delta ray	has_exact_synonym	delta electron
+WARN	duplicate_scoped_synonym	linear energy transfer	alternative term	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	has_exact_synonym	LET
+WARN	duplicate_scoped_synonym	relative biological effectiveness	alternative term	RBE
+WARN	duplicate_scoped_synonym	relative biological effectiveness	has_exact_synonym	RBE
+WARN	duplicate_scoped_synonym	immediately preceded by	alternative term	starts_at_end_of
+WARN	duplicate_scoped_synonym	immediately preceded by	has_exact_synonym	starts_at_end_of
+WARN	duplicate_scoped_synonym	zygote stage	has_exact_synonym	fertilized egg stage
+WARN	duplicate_scoped_synonym	zygote stage	has_related_synonym	fertilized egg stage
+WARN	duplicate_scoped_synonym	respiratory tube	has_exact_synonym	segment of tracheobronchial tree
+WARN	duplicate_scoped_synonym	respiratory tube	has_narrow_synonym	segment of tracheobronchial tree
+WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	respiratory system	has_related_synonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	sensory system	has_exact_synonym	organa sensuum
+WARN	duplicate_scoped_synonym	sensory system	has_related_synonym	organa sensuum
+WARN	duplicate_scoped_synonym	pectoral girdle region	has_exact_synonym	cingulum membri superioris
+WARN	duplicate_scoped_synonym	pectoral girdle region	has_narrow_synonym	cingulum membri superioris
+WARN	duplicate_scoped_synonym	ascending aorta	has_exact_synonym	pars ascendens aortae
+WARN	duplicate_scoped_synonym	ascending aorta	has_related_synonym	pars ascendens aortae
+WARN	duplicate_scoped_synonym	descending aorta	has_exact_synonym	pars descendens aortae
+WARN	duplicate_scoped_synonym	descending aorta	has_related_synonym	pars descendens aortae
+WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	abdominal part of aorta
+WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	pars abdominalis aortae
+WARN	duplicate_scoped_synonym	abdominal aorta	has_related_synonym	abdominal part of aorta
+WARN	duplicate_scoped_synonym	abdominal aorta	has_related_synonym	pars abdominalis aortae
+WARN	duplicate_scoped_synonym	brachiocephalic artery	has_exact_synonym	truncus brachiocephalicus
+WARN	duplicate_scoped_synonym	brachiocephalic artery	has_related_synonym	truncus brachiocephalicus
+WARN	duplicate_scoped_synonym	subclavian artery	has_exact_synonym	arteria subclavia
+WARN	duplicate_scoped_synonym	subclavian artery	has_related_synonym	arteria subclavia
+WARN	duplicate_scoped_synonym	optic choroid	has_exact_synonym	choroidea
+WARN	duplicate_scoped_synonym	optic choroid	has_related_synonym	choroidea
+WARN	duplicate_scoped_synonym	esophagus mucosa	has_exact_synonym	tunica mucosa oesophagi
+WARN	duplicate_scoped_synonym	esophagus mucosa	has_related_synonym	tunica mucosa oesophagi
+WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_exact_synonym	hindlimb ectoderm
+WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_narrow_synonym	hindlimb ectoderm
+WARN	duplicate_scoped_synonym	abdominal wall	has_exact_synonym	paries abdominalis
+WARN	duplicate_scoped_synonym	abdominal wall	has_related_synonym	paries abdominalis
+WARN	duplicate_scoped_synonym	brachiocephalic vein	has_exact_synonym	innominate vein
+WARN	duplicate_scoped_synonym	brachiocephalic vein	has_related_synonym	innominate vein
+WARN	duplicate_scoped_synonym	mouth mucosa	has_exact_synonym	tunica mucosa oris
+WARN	duplicate_scoped_synonym	mouth mucosa	has_related_synonym	tunica mucosa oris
+WARN	duplicate_scoped_synonym	cardiac vein	has_exact_synonym	coronary vein
+WARN	duplicate_scoped_synonym	cardiac vein	has_related_synonym	coronary vein
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	branchial aortic arches
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_related_synonym	branchial aortic arches
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_related_synonym	pharyngeal arch artery
+WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_exact_synonym	muscular interventricular septum
+WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_related_synonym	muscular interventricular septum
+WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_exact_synonym	pulmonary conus
+WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_related_synonym	pulmonary conus
+WARN	duplicate_scoped_synonym	corneo-scleral junction	has_exact_synonym	limbus corneae
+WARN	duplicate_scoped_synonym	corneo-scleral junction	has_related_synonym	limbus corneae
+WARN	duplicate_scoped_synonym	craniocervical region musculature	has_exact_synonym	head or neck muscle
+WARN	duplicate_scoped_synonym	craniocervical region musculature	has_related_synonym	head or neck muscle
+WARN	duplicate_scoped_synonym	ciliary processes	has_exact_synonym	processus ciliares
+WARN	duplicate_scoped_synonym	ciliary processes	has_related_synonym	processus ciliares
+WARN	equivalent_class_axiom_no_genus	chemical role	inheres in	chemical entity
+WARN	equivalent_class_axiom_no_genus	information representation	concretizes	information content entity
+WARN	equivalent_class_axiom_no_genus	public building	participates in	usage of an environment for community and social services
+WARN	equivalent_class_axiom_no_genus	regulation of behavior	regulates	behavior process
+WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
+WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
+WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
+WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
+WARN	equivalent_class_axiom_no_genus	decision tree building data transformation	achieves_planned_objective	decision tree induction objective
+WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_planned_objective	cross validation objective
+WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
+WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
+WARN	equivalent_class_axiom_no_genus	inbred Mus musculus strain	has quality	inbred
+WARN	missing_subset_declaration	obo:doid#DO_AGR_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#DO_CFDE_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#DO_FlyBase_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#DO_GXD_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#DO_MGI_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#DO_RAD_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#DO_cancer_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#DO_rare_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#NCIthesaurus	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	obo:doid#TopNodes_DOcancerslim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	invalid_xref	anteriorly connected to	database_cross_reference	anteriorly_connected_to
+WARN	invalid_xref	channel for	database_cross_reference	channel_for
+WARN	invalid_xref	channels_from	database_cross_reference	channels_from
+WARN	invalid_xref	channels_into	database_cross_reference	channels_into
+WARN	invalid_xref	conduit for	database_cross_reference	conduit_for
+WARN	invalid_xref	distally connected to	database_cross_reference	distally_connected_to
+WARN	invalid_xref	filtered through	database_cross_reference	filtered_through
+WARN	invalid_xref	posteriorly connected to	database_cross_reference	posteriorly_connected_to
+WARN	invalid_xref	protects	database_cross_reference	protects
+WARN	invalid_xref	proximally connected to	database_cross_reference	proximally_connected_to
+WARN	invalid_xref	subdivision of	database_cross_reference	subdivision_of
 WARN	missing_synonymtype_declaration	obo:chebi#IUPAC_NAME	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:ncbitaxon#blast_name	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:ncbitaxon#common_name	rdfs:subPropertyOf	
@@ -436,168 +676,6 @@ WARN	missing_synonymtype_declaration	obo:uberon/core#LATIN	rdfs:subPropertyOf
 WARN	missing_synonymtype_declaration	obo:uberon/core#PENDING_REVIEW	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:uberon/core#PLURAL	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:uberon/core#SENSU	rdfs:subPropertyOf	
-WARN	duplicate_exact_synonym	Stage IVB (AJCC 7th)	alternative term	Stage IVB
-WARN	duplicate_exact_synonym	Stage IVB (FIGO)	alternative term	Stage IVB
-WARN	duplicate_exact_synonym	Stage IVA (AJCC 7th)	alternative term	Stage IVA
-WARN	duplicate_exact_synonym	Stage IVA (FIGO)	alternative term	Stage IVA
-WARN	duplicate_exact_synonym	Stage IIIB (AJCC 7th)	alternative term	Stage IIIB
-WARN	duplicate_exact_synonym	Stage IIIB (FIGO)	alternative term	Stage IIIB
-WARN	duplicate_exact_synonym	Stage IIIA (AJCC 7th)	alternative term	Stage IIIA
-WARN	duplicate_exact_synonym	Stage IIIA (FIGO)	alternative term	Stage IIIA
-WARN	duplicate_exact_synonym	Stage IIB (AJCC 7th)	alternative term	Stage IIB
-WARN	duplicate_exact_synonym	Stage IIB (FIGO)	alternative term	Stage IIB
-WARN	duplicate_exact_synonym	Stage IIA (AJCC 7th)	alternative term	Stage IIA
-WARN	duplicate_exact_synonym	Stage IIA (FIGO)	alternative term	Stage IIA
-WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum according to AJCC 7th edition	alternative term	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
-WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	alternative term	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
-WARN	duplicate_exact_synonym	mass volume percentage	alternative term	percent vol per vol
-WARN	duplicate_exact_synonym	volume percentage	alternative term	percent vol per vol
-WARN	duplicate_exact_synonym	Mus	has_exact_synonym	mouse
-WARN	duplicate_exact_synonym	Mus musculus	has_exact_synonym	mouse
-WARN	duplicate_exact_synonym	Platyrrhini	has_exact_synonym	monkeys
-WARN	duplicate_exact_synonym	Cercopithecidae	has_exact_synonym	monkeys
-WARN	duplicate_exact_synonym	Platyrrhini	has_exact_synonym	monkey
-WARN	duplicate_exact_synonym	Cercopithecidae	has_exact_synonym	monkey
-WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative term	G4
-WARN	duplicate_exact_synonym	G4 (WHO)	alternative term	G4
-WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative term	G3
-WARN	duplicate_exact_synonym	G3 (WHO)	alternative term	G3
-WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
-WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
-WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
-WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
-WARN	duplicate_label_synonym	specifically dependent continuant	has_exact_synonym	specifically dependent continuant
-WARN	duplicate_label_synonym	part_of	alternative term	part_of
-WARN	duplicate_label_synonym	part_of	has_exact_synonym	part of
-WARN	duplicate_label_synonym	has_part	alternative term	has_part
-WARN	duplicate_label_synonym	electron	has_exact_synonym	electron
-WARN	duplicate_label_synonym	hydron	has_exact_synonym	hydron
-WARN	duplicate_label_synonym	anion	has_exact_synonym	anion
-WARN	duplicate_label_synonym	cofactor	has_exact_synonym	cofactor
-WARN	duplicate_label_synonym	molecular entity	has_exact_synonym	molecular entity
-WARN	duplicate_label_synonym	chemical entity	has_exact_synonym	chemical entity
-WARN	duplicate_label_synonym	group	has_exact_synonym	group
-WARN	duplicate_label_synonym	proton	has_exact_synonym	proton
-WARN	duplicate_label_synonym	oxoacid	has_exact_synonym	oxoacid
-WARN	duplicate_label_synonym	ion	has_exact_synonym	ion
-WARN	duplicate_label_synonym	metabolite	has_exact_synonym	metabolite
-WARN	duplicate_label_synonym	oxide	has_exact_synonym	oxide
-WARN	duplicate_label_synonym	oxygen molecular entity	has_exact_synonym	oxygen molecular entity
-WARN	duplicate_label_synonym	phosphate	has_exact_synonym	phosphate
-WARN	duplicate_label_synonym	phosphoric acid	has_exact_synonym	phosphoric acid
-WARN	duplicate_label_synonym	photon	has_exact_synonym	photon
-WARN	duplicate_label_synonym	alpha-particle	has_exact_synonym	alpha-particle
-WARN	duplicate_label_synonym	neutron	has_exact_synonym	neutron
-WARN	duplicate_label_synonym	atom	has_exact_synonym	atom
-WARN	duplicate_label_synonym	nucleon	has_exact_synonym	nucleon
-WARN	duplicate_label_synonym	pnictogen molecular entity	has_exact_synonym	pnictogen molecular entity
-WARN	duplicate_label_synonym	chalcogen	has_exact_synonym	chalcogen
-WARN	duplicate_label_synonym	chalcogen molecular entity	has_exact_synonym	chalcogen molecular entity
-WARN	duplicate_label_synonym	helium(2+)	has_exact_synonym	helium(2+)
-WARN	duplicate_label_synonym	phosphorus oxoacid	has_exact_synonym	phosphorus oxoacid
-WARN	duplicate_label_synonym	pnictogen oxoanion	has_exact_synonym	pnictogen oxoanion
-WARN	duplicate_label_synonym	phosphorus oxoanion	has_exact_synonym	phosphorus oxoanion
-WARN	duplicate_label_synonym	carbon group molecular entity	has_exact_synonym	carbon group molecular entity
-WARN	duplicate_label_synonym	noble gas molecular entity	has_exact_synonym	noble gas molecular entity
-WARN	duplicate_label_synonym	s-block molecular entity	has_exact_synonym	s-block molecular entity
-WARN	duplicate_label_synonym	helium molecular entity	has_exact_synonym	helium molecular entity
-WARN	duplicate_label_synonym	oxoanion	has_exact_synonym	oxoanion
-WARN	duplicate_label_synonym	fermion	has_exact_synonym	fermion
-WARN	duplicate_label_synonym	boson	has_exact_synonym	boson
-WARN	duplicate_label_synonym	nuclear particle	has_exact_synonym	nuclear particle
-WARN	duplicate_label_synonym	pi meson	has_exact_synonym	pi meson
-WARN	duplicate_label_synonym	muon	has_exact_synonym	muon
-WARN	duplicate_label_synonym	phosphorus oxoacid derivative	has_exact_synonym	phosphorus oxoacid derivative
-WARN	duplicate_label_synonym	cation	has_exact_synonym	cation
-WARN	duplicate_label_synonym	acid	has_exact_synonym	acid
-WARN	duplicate_label_synonym	heteroatomic molecular entity	has_exact_synonym	heteroatomic molecular entity
-WARN	duplicate_label_synonym	Bronsted acid	has_exact_synonym	Bronsted acid
-WARN	duplicate_label_synonym	dihydrogenphosphate	has_exact_synonym	dihydrogenphosphate
-WARN	duplicate_label_synonym	hydroxy group	has_exact_synonym	hydroxy group
-WARN	duplicate_label_synonym	hydrogenphosphate	has_exact_synonym	hydrogenphosphate
-WARN	duplicate_label_synonym	dosimeter	has_exact_synonym	dosimeter
-WARN	duplicate_label_synonym	myocyte of sinoatrial node	has_exact_synonym	myocyte of sinoatrial node
-WARN	duplicate_label_synonym	lymphoid leukemia	has_exact_synonym	lymphoid leukemia
-WARN	duplicate_label_synonym	ocean	has_exact_synonym	ocean
-WARN	duplicate_label_synonym	sea	has_exact_synonym	sea
-WARN	duplicate_label_synonym	building	has_exact_synonym	building
-WARN	duplicate_label_synonym	ocean current	has_exact_synonym	ocean current
-WARN	duplicate_label_synonym	cellular_component	has_exact_synonym	cellular component
-WARN	duplicate_label_synonym	cellular_component	has_exact_synonym	cellular_component
-WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological process
-WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological_process
-WARN	duplicate_label_synonym	information content entity	has_exact_synonym	information content entity
-WARN	duplicate_label_synonym	plan specification	has_exact_synonym	plan specification
-WARN	duplicate_label_synonym	biological process	has_exact_synonym	biological process
-WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
-WARN	duplicate_label_synonym	Space flight	has_exact_synonym	Space flight
-WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
-WARN	duplicate_label_synonym	organism substance	has_exact_synonym	organism substance
-WARN	duplicate_label_synonym	simple columnar epithelium	has_exact_synonym	simple columnar epithelium
-WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
-WARN	duplicate_label_synonym	musculature	has_exact_synonym	musculature
-WARN	duplicate_label_synonym	posterior vena cava	has_exact_synonym	posterior vena cava
-WARN	duplicate_label_synonym	uvea	has_exact_synonym	uvea
-WARN	duplicate_label_synonym	rhombomere	has_exact_synonym	rhombomere
-WARN	duplicate_label_synonym	submucosa of esophagus	has_exact_synonym	submucosa of esophagus
-WARN	duplicate_label_synonym	gray matter	has_exact_synonym	gray matter
-WARN	duplicate_label_synonym	right cardiac atrium	has_exact_synonym	right cardiac atrium
-WARN	duplicate_label_synonym	left cardiac atrium	has_exact_synonym	left cardiac atrium
-WARN	duplicate_label_synonym	appendicular skeleton	has_exact_synonym	appendicular skeleton
-WARN	duplicate_label_synonym	artery smooth muscle tissue	has_exact_synonym	artery smooth muscle tissue
-WARN	duplicate_label_synonym	gray matter of spinal cord	has_exact_synonym	gray matter of spinal cord
-WARN	duplicate_label_synonym	cartilage tissue	has_exact_synonym	cartilage tissue
-WARN	duplicate_label_synonym	esophagus mucosa	has_exact_synonym	esophagus mucosa
-WARN	duplicate_label_synonym	iris epithelium	has_exact_synonym	iris epithelium
-WARN	duplicate_label_synonym	skeletal muscle tissue of eye	has_exact_synonym	skeletal muscle tissue of eye
-WARN	duplicate_label_synonym	cardiac muscle tissue of interventricular septum	has_exact_synonym	cardiac muscle tissue of interventricular septum
-WARN	duplicate_label_synonym	skeletal muscle tissue of pharynx	has_exact_synonym	skeletal muscle tissue of pharynx
-WARN	duplicate_label_synonym	gland of digestive tract	has_exact_synonym	gland of digestive tract
-WARN	duplicate_label_synonym	facial bone	has_exact_synonym	facial bone
-WARN	duplicate_label_synonym	mouth mucosa	has_exact_synonym	mouth mucosa
-WARN	duplicate_label_synonym	mesencephalic neural crest	has_exact_synonym	mesencephalic neural crest
-WARN	duplicate_label_synonym	skeletal muscle tissue of trunk	has_exact_synonym	skeletal muscle tissue of trunk
-WARN	duplicate_label_synonym	reproductive gland	has_exact_synonym	reproductive gland
-WARN	duplicate_label_synonym	germinal neuroepithelium	has_exact_synonym	germinal neuroepithelium
-WARN	duplicate_label_synonym	primary heart field	has_exact_synonym	primary heart field
-WARN	duplicate_label_synonym	cardiac vein	has_exact_synonym	cardiac vein
-WARN	duplicate_label_synonym	external genitalia	has_exact_synonym	external genitalia
-WARN	duplicate_label_synonym	paired limb/fin bud	has_exact_synonym	paired limb/fin bud
-WARN	duplicate_label_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
-WARN	duplicate_label_synonym	anterior limiting lamina of cornea	has_exact_synonym	anterior limiting lamina of cornea
-WARN	duplicate_label_synonym	pelvic appendage	has_exact_synonym	pelvic appendage
-WARN	duplicate_label_synonym	neuromere	has_exact_synonym	neuromere
-WARN	duplicate_label_synonym	primitive heart tube	has_exact_synonym	primitive heart tube
-WARN	duplicate_label_synonym	paired limb/fin field	has_exact_synonym	paired limb/fin field
-WARN	duplicate_label_synonym	head mesenchyme from mesoderm	has_exact_synonym	head mesenchyme from mesoderm
-WARN	duplicate_label_synonym	lumen of digestive tract	has_exact_synonym	lumen of digestive tract
-WARN	duplicate_label_synonym	ovary stroma	has_exact_synonym	ovary stroma
-WARN	duplicate_label_synonym	anatomical junction	has_exact_synonym	anatomical junction
-WARN	duplicate_label_synonym	pelvic girdle skeleton	has_exact_synonym	pelvic girdle skeleton
-WARN	duplicate_label_synonym	ciliary processes	has_exact_synonym	ciliary processes
-WARN	duplicate_label_synonym	facial skeleton	has_exact_synonym	facial skeleton
-WARN	duplicate_label_synonym	hematopoietic tissue	has_exact_synonym	hematopoietic tissue
-WARN	duplicate_label_synonym	foramen of skull	has_exact_synonym	foramen of skull
-WARN	duplicate_label_synonym	arterial blood	has_exact_synonym	arterial blood
-WARN	duplicate_label_synonym	venous blood	has_exact_synonym	venous blood
-WARN	duplicate_label_synonym	thoracic skeleton	has_exact_synonym	thoracic skeleton
-WARN	duplicate_label_synonym	abdominal viscera	has_exact_synonym	abdominal viscera
-WARN	duplicate_label_synonym	lung field	has_exact_synonym	lung field
-WARN	duplicate_label_synonym	fraction	alternative term	fraction
-WARN	duplicate_label_synonym	pH	has_exact_synonym	pH
-WARN	equivalent_class_axiom_no_genus	chemical role	inheres in	chemical entity
-WARN	equivalent_class_axiom_no_genus	information representation	concretizes	information content entity
-WARN	equivalent_class_axiom_no_genus	public building	participates in	usage of an environment for community and social services
-WARN	equivalent_class_axiom_no_genus	regulation of behavior	regulates	behavior process
-WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
-WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
-WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
-WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
-WARN	equivalent_class_axiom_no_genus	decision tree building data transformation	achieves_planned_objective	decision tree induction objective
-WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_planned_objective	cross validation objective
-WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
-WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
-WARN	equivalent_class_axiom_no_genus	inbred Mus musculus strain	has quality	inbred
 WARN	missing_definition	fiat object part	textual definition	
 WARN	missing_definition	site	textual definition	
 WARN	missing_definition	object	textual definition	
@@ -860,6 +938,7 @@ WARN	missing_definition	fibrillar collagen trimer	textual definition
 WARN	missing_definition	collagen type IV trimer	textual definition	
 WARN	missing_definition	basement membrane	textual definition	
 WARN	missing_definition	extracellular space	textual definition	
+WARN	missing_definition	intracellular anatomical structure	textual definition	
 WARN	missing_definition	cytoplasm	textual definition	
 WARN	missing_definition	plasma membrane	textual definition	
 WARN	missing_definition	cell-cell junction	textual definition	
@@ -895,6 +974,7 @@ WARN	missing_definition	embryo development	textual definition
 WARN	missing_definition	post-embryonic development	textual definition	
 WARN	missing_definition	embryo development ending in birth or egg hatching	textual definition	
 WARN	missing_definition	tissue development	textual definition	
+WARN	missing_definition	GO:0010212	textual definition	
 WARN	missing_definition	mesenchymal cell proliferation	textual definition	
 WARN	missing_definition	regulation of mesenchymal cell proliferation	textual definition	
 WARN	missing_definition	regulation of gastrulation	textual definition	
@@ -955,7 +1035,9 @@ WARN	missing_definition	cell projection	textual definition
 WARN	missing_definition	neuron projection	textual definition	
 WARN	missing_definition	chordate embryonic development	textual definition	
 WARN	missing_definition	neuronal cell body	textual definition	
+WARN	missing_definition	organelle	textual definition	
 WARN	missing_definition	membrane-bounded organelle	textual definition	
+WARN	missing_definition	intracellular organelle	textual definition	
 WARN	missing_definition	extracellular organelle	textual definition	
 WARN	missing_definition	intracellular membrane-bounded organelle	textual definition	
 WARN	missing_definition	regulation of respiratory gaseous exchange	textual definition	
@@ -980,12 +1062,19 @@ WARN	missing_definition	secretion	textual definition
 WARN	missing_definition	mesoderm morphogenesis	textual definition	
 WARN	missing_definition	animal organ development	textual definition	
 WARN	missing_definition	blood vessel morphogenesis	textual definition	
+WARN	missing_definition	positive regulation of biological process	textual definition	
+WARN	missing_definition	negative regulation of biological process	textual definition	
 WARN	missing_definition	positive regulation of behavior	textual definition	
 WARN	missing_definition	negative regulation of behavior	textual definition	
+WARN	missing_definition	positive regulation of cellular process	textual definition	
+WARN	missing_definition	negative regulation of cellular process	textual definition	
 WARN	missing_definition	hematopoietic or lymphoid organ development	textual definition	
 WARN	missing_definition	regulation of post-embryonic development	textual definition	
 WARN	missing_definition	negative regulation of post-embryonic development	textual definition	
 WARN	missing_definition	positive regulation of post-embryonic development	textual definition	
+WARN	missing_definition	regulation of response to stimulus	textual definition	
+WARN	missing_definition	positive regulation of response to stimulus	textual definition	
+WARN	missing_definition	negative regulation of response to stimulus	textual definition	
 WARN	missing_definition	embryonic morphogenesis	textual definition	
 WARN	missing_definition	multicellular organismal reproductive process	textual definition	
 WARN	missing_definition	anatomical structure formation involved in morphogenesis	textual definition	
@@ -996,7 +1085,9 @@ WARN	missing_definition	pigment granule	textual definition
 WARN	missing_definition	anatomical structure development	textual definition	
 WARN	missing_definition	cell motility	textual definition	
 WARN	missing_definition	multicellular organismal homeostasis	textual definition	
+WARN	missing_definition	regulation of biological process	textual definition	
 WARN	missing_definition	regulation of developmental process	textual definition	
+WARN	missing_definition	regulation of cellular process	textual definition	
 WARN	missing_definition	regulation of behavior	textual definition	
 WARN	missing_definition	nervous system process	textual definition	
 WARN	missing_definition	detection of stimulus involved in sensory perception	textual definition	
@@ -1043,6 +1134,7 @@ WARN	missing_definition	negative regulation of cartilage development	textual def
 WARN	missing_definition	morphogenesis of a branching epithelium	textual definition	
 WARN	missing_definition	connective tissue development	textual definition	
 WARN	missing_definition	collagen-containing extracellular matrix	textual definition	
+WARN	missing_definition	biological regulation	textual definition	
 WARN	missing_definition	regulation of biological quality	textual definition	
 WARN	missing_definition	regulation of molecular function	textual definition	
 WARN	missing_definition	extracellular membrane-bounded organelle	textual definition	
@@ -1068,6 +1160,7 @@ WARN	missing_definition	supramolecular polymer	textual definition
 WARN	missing_definition	supramolecular fiber	textual definition	
 WARN	missing_definition	cytoplasmic region	textual definition	
 WARN	missing_definition	cell cortex region	textual definition	
+WARN	missing_definition	cellular anatomical entity	textual definition	
 WARN	missing_definition	plasma membrane bounded cell projection	textual definition	
 WARN	missing_definition	neuron projection cytoplasm	textual definition	
 WARN	missing_definition	regulation of vasculature development	textual definition	
@@ -2319,10 +2412,10 @@ WARN	missing_definition	channels_from	textual definition
 WARN	missing_definition	channels_into	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	Creator	textual definition	
+WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
-WARN	missing_definition	title	textual definition	
+WARN	missing_definition	Title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	
@@ -2338,6 +2431,154 @@ WARN	missing_definition	in_subset	textual definition
 WARN	missing_definition	rdf:PlainLiteral	textual definition	
 WARN	missing_definition	xsd:boolean	textual definition	
 WARN	missing_definition	xsd:string	textual definition	
+WARN	duplicate_exact_synonym	Stage IVB (AJCC 7th)	alternative term	Stage IVB
+WARN	duplicate_exact_synonym	Stage IVB (FIGO)	alternative term	Stage IVB
+WARN	duplicate_exact_synonym	Stage IVA (AJCC 7th)	alternative term	Stage IVA
+WARN	duplicate_exact_synonym	Stage IVA (FIGO)	alternative term	Stage IVA
+WARN	duplicate_exact_synonym	Stage IIIB (AJCC 7th)	alternative term	Stage IIIB
+WARN	duplicate_exact_synonym	Stage IIIB (FIGO)	alternative term	Stage IIIB
+WARN	duplicate_exact_synonym	Stage IIIA (AJCC 7th)	alternative term	Stage IIIA
+WARN	duplicate_exact_synonym	Stage IIIA (FIGO)	alternative term	Stage IIIA
+WARN	duplicate_exact_synonym	Stage IIB (AJCC 7th)	alternative term	Stage IIB
+WARN	duplicate_exact_synonym	Stage IIB (FIGO)	alternative term	Stage IIB
+WARN	duplicate_exact_synonym	Stage IIA (AJCC 7th)	alternative term	Stage IIA
+WARN	duplicate_exact_synonym	Stage IIA (FIGO)	alternative term	Stage IIA
+WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum according to AJCC 7th edition	alternative term	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
+WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	alternative term	pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
+WARN	duplicate_exact_synonym	mass volume percentage	alternative term	percent vol per vol
+WARN	duplicate_exact_synonym	volume percentage	alternative term	percent vol per vol
+WARN	duplicate_exact_synonym	Mus	has_exact_synonym	mouse
+WARN	duplicate_exact_synonym	Mus musculus	has_exact_synonym	mouse
+WARN	duplicate_exact_synonym	Platyrrhini	has_exact_synonym	monkeys
+WARN	duplicate_exact_synonym	Cercopithecidae	has_exact_synonym	monkeys
+WARN	duplicate_exact_synonym	Platyrrhini	has_exact_synonym	monkey
+WARN	duplicate_exact_synonym	Cercopithecidae	has_exact_synonym	monkey
+WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative term	G4
+WARN	duplicate_exact_synonym	G4 (WHO)	alternative term	G4
+WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative term	G3
+WARN	duplicate_exact_synonym	G3 (WHO)	alternative term	G3
+WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
+WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
+WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
+WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
+WARN	duplicate_label_synonym	specifically dependent continuant	has_exact_synonym	specifically dependent continuant
+WARN	duplicate_label_synonym	part_of	alternative term	part_of
+WARN	duplicate_label_synonym	part_of	has_exact_synonym	part of
+WARN	duplicate_label_synonym	has_part	alternative term	has_part
+WARN	duplicate_label_synonym	electron	has_exact_synonym	electron
+WARN	duplicate_label_synonym	hydron	has_exact_synonym	hydron
+WARN	duplicate_label_synonym	anion	has_exact_synonym	anion
+WARN	duplicate_label_synonym	cofactor	has_exact_synonym	cofactor
+WARN	duplicate_label_synonym	molecular entity	has_exact_synonym	molecular entity
+WARN	duplicate_label_synonym	chemical entity	has_exact_synonym	chemical entity
+WARN	duplicate_label_synonym	group	has_exact_synonym	group
+WARN	duplicate_label_synonym	proton	has_exact_synonym	proton
+WARN	duplicate_label_synonym	oxoacid	has_exact_synonym	oxoacid
+WARN	duplicate_label_synonym	ion	has_exact_synonym	ion
+WARN	duplicate_label_synonym	metabolite	has_exact_synonym	metabolite
+WARN	duplicate_label_synonym	oxide	has_exact_synonym	oxide
+WARN	duplicate_label_synonym	oxygen molecular entity	has_exact_synonym	oxygen molecular entity
+WARN	duplicate_label_synonym	phosphate	has_exact_synonym	phosphate
+WARN	duplicate_label_synonym	phosphoric acid	has_exact_synonym	phosphoric acid
+WARN	duplicate_label_synonym	photon	has_exact_synonym	photon
+WARN	duplicate_label_synonym	alpha-particle	has_exact_synonym	alpha-particle
+WARN	duplicate_label_synonym	neutron	has_exact_synonym	neutron
+WARN	duplicate_label_synonym	atom	has_exact_synonym	atom
+WARN	duplicate_label_synonym	nucleon	has_exact_synonym	nucleon
+WARN	duplicate_label_synonym	pnictogen molecular entity	has_exact_synonym	pnictogen molecular entity
+WARN	duplicate_label_synonym	chalcogen	has_exact_synonym	chalcogen
+WARN	duplicate_label_synonym	chalcogen molecular entity	has_exact_synonym	chalcogen molecular entity
+WARN	duplicate_label_synonym	helium(2+)	has_exact_synonym	helium(2+)
+WARN	duplicate_label_synonym	phosphorus oxoacid	has_exact_synonym	phosphorus oxoacid
+WARN	duplicate_label_synonym	pnictogen oxoanion	has_exact_synonym	pnictogen oxoanion
+WARN	duplicate_label_synonym	phosphorus oxoanion	has_exact_synonym	phosphorus oxoanion
+WARN	duplicate_label_synonym	carbon group molecular entity	has_exact_synonym	carbon group molecular entity
+WARN	duplicate_label_synonym	noble gas molecular entity	has_exact_synonym	noble gas molecular entity
+WARN	duplicate_label_synonym	s-block molecular entity	has_exact_synonym	s-block molecular entity
+WARN	duplicate_label_synonym	helium molecular entity	has_exact_synonym	helium molecular entity
+WARN	duplicate_label_synonym	oxoanion	has_exact_synonym	oxoanion
+WARN	duplicate_label_synonym	fermion	has_exact_synonym	fermion
+WARN	duplicate_label_synonym	boson	has_exact_synonym	boson
+WARN	duplicate_label_synonym	nuclear particle	has_exact_synonym	nuclear particle
+WARN	duplicate_label_synonym	pi meson	has_exact_synonym	pi meson
+WARN	duplicate_label_synonym	muon	has_exact_synonym	muon
+WARN	duplicate_label_synonym	phosphorus oxoacid derivative	has_exact_synonym	phosphorus oxoacid derivative
+WARN	duplicate_label_synonym	cation	has_exact_synonym	cation
+WARN	duplicate_label_synonym	acid	has_exact_synonym	acid
+WARN	duplicate_label_synonym	heteroatomic molecular entity	has_exact_synonym	heteroatomic molecular entity
+WARN	duplicate_label_synonym	Bronsted acid	has_exact_synonym	Bronsted acid
+WARN	duplicate_label_synonym	dihydrogenphosphate	has_exact_synonym	dihydrogenphosphate
+WARN	duplicate_label_synonym	hydroxy group	has_exact_synonym	hydroxy group
+WARN	duplicate_label_synonym	hydrogenphosphate	has_exact_synonym	hydrogenphosphate
+WARN	duplicate_label_synonym	dosimeter	has_exact_synonym	dosimeter
+WARN	duplicate_label_synonym	myocyte of sinoatrial node	has_exact_synonym	myocyte of sinoatrial node
+WARN	duplicate_label_synonym	ocean	has_exact_synonym	ocean
+WARN	duplicate_label_synonym	sea	has_exact_synonym	sea
+WARN	duplicate_label_synonym	building	has_exact_synonym	building
+WARN	duplicate_label_synonym	ocean current	has_exact_synonym	ocean current
+WARN	duplicate_label_synonym	cellular_component	has_exact_synonym	cellular component
+WARN	duplicate_label_synonym	cellular_component	has_exact_synonym	cellular_component
+WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological process
+WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological_process
+WARN	duplicate_label_synonym	information content entity	has_exact_synonym	information content entity
+WARN	duplicate_label_synonym	plan specification	has_exact_synonym	plan specification
+WARN	duplicate_label_synonym	biological process	has_exact_synonym	biological process
+WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
+WARN	duplicate_label_synonym	Space flight	has_exact_synonym	Space flight
+WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
+WARN	duplicate_label_synonym	organism substance	has_exact_synonym	organism substance
+WARN	duplicate_label_synonym	simple columnar epithelium	has_exact_synonym	simple columnar epithelium
+WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
+WARN	duplicate_label_synonym	musculature	has_exact_synonym	musculature
+WARN	duplicate_label_synonym	posterior vena cava	has_exact_synonym	posterior vena cava
+WARN	duplicate_label_synonym	uvea	has_exact_synonym	uvea
+WARN	duplicate_label_synonym	rhombomere	has_exact_synonym	rhombomere
+WARN	duplicate_label_synonym	submucosa of esophagus	has_exact_synonym	submucosa of esophagus
+WARN	duplicate_label_synonym	gray matter	has_exact_synonym	gray matter
+WARN	duplicate_label_synonym	right cardiac atrium	has_exact_synonym	right cardiac atrium
+WARN	duplicate_label_synonym	left cardiac atrium	has_exact_synonym	left cardiac atrium
+WARN	duplicate_label_synonym	appendicular skeleton	has_exact_synonym	appendicular skeleton
+WARN	duplicate_label_synonym	artery smooth muscle tissue	has_exact_synonym	artery smooth muscle tissue
+WARN	duplicate_label_synonym	gray matter of spinal cord	has_exact_synonym	gray matter of spinal cord
+WARN	duplicate_label_synonym	cartilage tissue	has_exact_synonym	cartilage tissue
+WARN	duplicate_label_synonym	esophagus mucosa	has_exact_synonym	esophagus mucosa
+WARN	duplicate_label_synonym	iris epithelium	has_exact_synonym	iris epithelium
+WARN	duplicate_label_synonym	skeletal muscle tissue of eye	has_exact_synonym	skeletal muscle tissue of eye
+WARN	duplicate_label_synonym	cardiac muscle tissue of interventricular septum	has_exact_synonym	cardiac muscle tissue of interventricular septum
+WARN	duplicate_label_synonym	skeletal muscle tissue of pharynx	has_exact_synonym	skeletal muscle tissue of pharynx
+WARN	duplicate_label_synonym	gland of digestive tract	has_exact_synonym	gland of digestive tract
+WARN	duplicate_label_synonym	facial bone	has_exact_synonym	facial bone
+WARN	duplicate_label_synonym	mouth mucosa	has_exact_synonym	mouth mucosa
+WARN	duplicate_label_synonym	mesencephalic neural crest	has_exact_synonym	mesencephalic neural crest
+WARN	duplicate_label_synonym	skeletal muscle tissue of trunk	has_exact_synonym	skeletal muscle tissue of trunk
+WARN	duplicate_label_synonym	reproductive gland	has_exact_synonym	reproductive gland
+WARN	duplicate_label_synonym	germinal neuroepithelium	has_exact_synonym	germinal neuroepithelium
+WARN	duplicate_label_synonym	primary heart field	has_exact_synonym	primary heart field
+WARN	duplicate_label_synonym	cardiac vein	has_exact_synonym	cardiac vein
+WARN	duplicate_label_synonym	external genitalia	has_exact_synonym	external genitalia
+WARN	duplicate_label_synonym	paired limb/fin bud	has_exact_synonym	paired limb/fin bud
+WARN	duplicate_label_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
+WARN	duplicate_label_synonym	anterior limiting lamina of cornea	has_exact_synonym	anterior limiting lamina of cornea
+WARN	duplicate_label_synonym	pelvic appendage	has_exact_synonym	pelvic appendage
+WARN	duplicate_label_synonym	neuromere	has_exact_synonym	neuromere
+WARN	duplicate_label_synonym	primitive heart tube	has_exact_synonym	primitive heart tube
+WARN	duplicate_label_synonym	paired limb/fin field	has_exact_synonym	paired limb/fin field
+WARN	duplicate_label_synonym	head mesenchyme from mesoderm	has_exact_synonym	head mesenchyme from mesoderm
+WARN	duplicate_label_synonym	lumen of digestive tract	has_exact_synonym	lumen of digestive tract
+WARN	duplicate_label_synonym	ovary stroma	has_exact_synonym	ovary stroma
+WARN	duplicate_label_synonym	anatomical junction	has_exact_synonym	anatomical junction
+WARN	duplicate_label_synonym	pelvic girdle skeleton	has_exact_synonym	pelvic girdle skeleton
+WARN	duplicate_label_synonym	ciliary processes	has_exact_synonym	ciliary processes
+WARN	duplicate_label_synonym	facial skeleton	has_exact_synonym	facial skeleton
+WARN	duplicate_label_synonym	hematopoietic tissue	has_exact_synonym	hematopoietic tissue
+WARN	duplicate_label_synonym	foramen of skull	has_exact_synonym	foramen of skull
+WARN	duplicate_label_synonym	arterial blood	has_exact_synonym	arterial blood
+WARN	duplicate_label_synonym	venous blood	has_exact_synonym	venous blood
+WARN	duplicate_label_synonym	thoracic skeleton	has_exact_synonym	thoracic skeleton
+WARN	duplicate_label_synonym	abdominal viscera	has_exact_synonym	abdominal viscera
+WARN	duplicate_label_synonym	lung field	has_exact_synonym	lung field
+WARN	duplicate_label_synonym	fraction	alternative term	fraction
+WARN	duplicate_label_synonym	pH	has_exact_synonym	pH
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
@@ -2493,7 +2734,7 @@ WARN	annotation_whitespace	spatially disjoint from	editor note	There are two way
 WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 WARN	annotation_whitespace	siemens	has_exact_synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has_exact_synonym	E-field strength 
-WARN	annotation_whitespace	title	Description	"
+WARN	annotation_whitespace	Title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -2522,211 +2763,11 @@ The CBA/J inbred mouse strain is used to study granulomatous experimental autoim
 "
 WARN	annotation_whitespace	CAROLI/EiJ	textual definition	CAROLI was derived from wild mice trapped in Thailand and is from the species Mus caroli, which is distantly related to laboratory mice and does not breed with laboratory mice. These mice are characterized by black feet. This wild derived mouse strain is genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and is a valuable tool for sequence comparison, evolution and systematics research. 
 WARN	annotation_whitespace	has_exact_synonym	textual definition	An alternative label for a given entity such as a commonly used abbreviation or synonym. 
-WARN	missing_subset_declaration	obo:doid#DO_AGR_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:doid#DO_FlyBase_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:doid#DO_GXD_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:doid#DO_MGI_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:doid#DO_RAD_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:doid#DO_cancer_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:doid#DO_rare_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:doid#NCIthesaurus	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	obo:doid#TopNodes_DOcancerslim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	equivalent_pair	role	owl:equivalentClass	role
 WARN	equivalent_pair	protein	owl:equivalentClass	protein
-WARN	invalid_xref	anteriorly connected to	database_cross_reference	anteriorly_connected_to
-WARN	invalid_xref	channel for	database_cross_reference	channel_for
-WARN	invalid_xref	channels_from	database_cross_reference	channels_from
-WARN	invalid_xref	channels_into	database_cross_reference	channels_into
-WARN	invalid_xref	conduit for	database_cross_reference	conduit_for
-WARN	invalid_xref	distally connected to	database_cross_reference	distally_connected_to
-WARN	invalid_xref	filtered through	database_cross_reference	filtered_through
-WARN	invalid_xref	posteriorly connected to	database_cross_reference	posteriorly_connected_to
-WARN	invalid_xref	protects	database_cross_reference	protects
-WARN	invalid_xref	proximally connected to	database_cross_reference	proximally_connected_to
-WARN	invalid_xref	subdivision of	database_cross_reference	subdivision_of
-WARN	duplicate_scoped_synonym	nonmetal atom	has_exact_synonym	nonmetal
-WARN	duplicate_scoped_synonym	nonmetal atom	has_related_synonym	nonmetal
-WARN	duplicate_scoped_synonym	oxygen atom	has_exact_synonym	oxygen
-WARN	duplicate_scoped_synonym	oxygen atom	has_related_synonym	oxygen
-WARN	duplicate_scoped_synonym	phosphate	has_exact_synonym	phosphates
-WARN	duplicate_scoped_synonym	phosphate	has_related_synonym	phosphates
-WARN	duplicate_scoped_synonym	carbon atom	has_exact_synonym	carbon
-WARN	duplicate_scoped_synonym	carbon atom	has_related_synonym	carbon
-WARN	duplicate_scoped_synonym	phosphorus atom	has_exact_synonym	phosphorus
-WARN	duplicate_scoped_synonym	phosphorus atom	has_related_synonym	phosphorus
-WARN	duplicate_scoped_synonym	helium atom	has_exact_synonym	helium
-WARN	duplicate_scoped_synonym	helium atom	has_related_synonym	helium
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atome
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atomo
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atoms
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atomus
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	elements
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	atome
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	atomo
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	atoms
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	atomus
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	elements
-WARN	duplicate_scoped_synonym	noble gas atom	has_exact_synonym	noble gas
-WARN	duplicate_scoped_synonym	noble gas atom	has_related_synonym	noble gas
-WARN	duplicate_scoped_synonym	hydrogen atom	has_exact_synonym	hydrogen
-WARN	duplicate_scoped_synonym	hydrogen atom	has_related_synonym	hydrogen
-WARN	duplicate_scoped_synonym	Euteleostomi	alternative term	bony vertebrates
-WARN	duplicate_scoped_synonym	Euteleostomi	has_exact_synonym	bony vertebrates
-WARN	duplicate_scoped_synonym	Bacteria	alternative term	eubacteria
-WARN	duplicate_scoped_synonym	Bacteria	has_exact_synonym	eubacteria
-WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eucaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eukaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	Eucaryotae
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	Eukarya
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eucaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eukaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	Eucaryotae
-WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	Eukarya
-WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	eukaryotes
-WARN	duplicate_scoped_synonym	Phaeophyceae	has_exact_synonym	brown algae
-WARN	duplicate_scoped_synonym	Phaeophyceae	has_related_synonym	brown algae
-WARN	duplicate_scoped_synonym	Embryophyta	has_exact_synonym	land plants
-WARN	duplicate_scoped_synonym	Embryophyta	has_related_synonym	land plants
-WARN	duplicate_scoped_synonym	Bryophyta	has_exact_synonym	mosses
-WARN	duplicate_scoped_synonym	Bryophyta	has_related_synonym	mosses
-WARN	duplicate_scoped_synonym	Tetrapoda	alternative term	tetrapods
-WARN	duplicate_scoped_synonym	Tetrapoda	has_exact_synonym	tetrapods
-WARN	duplicate_scoped_synonym	Amniota	alternative term	amniotes
-WARN	duplicate_scoped_synonym	Amniota	has_exact_synonym	amniotes
-WARN	duplicate_scoped_synonym	Viridiplantae	has_exact_synonym	green plants
-WARN	duplicate_scoped_synonym	Viridiplantae	has_related_synonym	green plants
-WARN	duplicate_scoped_synonym	Carnivora	has_exact_synonym	carnivores
-WARN	duplicate_scoped_synonym	Carnivora	has_related_synonym	carnivores
-WARN	duplicate_scoped_synonym	Magnoliopsida	has_exact_synonym	flowering plants
-WARN	duplicate_scoped_synonym	Magnoliopsida	has_related_synonym	flowering plants
-WARN	duplicate_scoped_synonym	Apoidea	has_exact_synonym	bees
-WARN	duplicate_scoped_synonym	Apoidea	has_related_synonym	bees
-WARN	duplicate_scoped_synonym	Papilionoidea	has_exact_synonym	butterflies
-WARN	duplicate_scoped_synonym	Papilionoidea	has_related_synonym	butterflies
-WARN	duplicate_scoped_synonym	Mammalia	alternative term	mammals
-WARN	duplicate_scoped_synonym	Mammalia	has_exact_synonym	mammals
-WARN	duplicate_scoped_synonym	Mammalia	has_related_synonym	mammals
-WARN	duplicate_scoped_synonym	Liliopsida	has_exact_synonym	monocots
-WARN	duplicate_scoped_synonym	Liliopsida	has_related_synonym	monocots
-WARN	duplicate_scoped_synonym	Tracheophyta	has_exact_synonym	vascular plants
-WARN	duplicate_scoped_synonym	Tracheophyta	has_related_synonym	vascular plants
-WARN	duplicate_scoped_synonym	Spermatophyta	has_exact_synonym	seed plants
-WARN	duplicate_scoped_synonym	Spermatophyta	has_related_synonym	seed plants
-WARN	duplicate_scoped_synonym	Platyhelminthes	has_exact_synonym	flatworms
-WARN	duplicate_scoped_synonym	Platyhelminthes	has_related_synonym	flatworms
-WARN	duplicate_scoped_synonym	Nematoda	has_exact_synonym	nematodes
-WARN	duplicate_scoped_synonym	Nematoda	has_related_synonym	nematodes
-WARN	duplicate_scoped_synonym	Mollusca	has_exact_synonym	molluscs
-WARN	duplicate_scoped_synonym	Mollusca	has_related_synonym	molluscs
-WARN	duplicate_scoped_synonym	Arthropoda	has_exact_synonym	arthropods
-WARN	duplicate_scoped_synonym	Arthropoda	has_related_synonym	arthropods
-WARN	duplicate_scoped_synonym	Crustacea	has_exact_synonym	crustaceans
-WARN	duplicate_scoped_synonym	Crustacea	has_related_synonym	crustaceans
-WARN	duplicate_scoped_synonym	Lepidoptera	has_exact_synonym	moths
-WARN	duplicate_scoped_synonym	Lepidoptera	has_related_synonym	moths
-WARN	duplicate_scoped_synonym	Diptera	has_exact_synonym	flies
-WARN	duplicate_scoped_synonym	Diptera	has_related_synonym	flies
-WARN	duplicate_scoped_synonym	Hymenoptera	has_exact_synonym	hymenopterans
-WARN	duplicate_scoped_synonym	Hymenoptera	has_related_synonym	hymenopterans
-WARN	duplicate_scoped_synonym	Apocrita	has_exact_synonym	wasps, ants, and bees
-WARN	duplicate_scoped_synonym	Apocrita	has_related_synonym	wasps, ants, and bees
-WARN	duplicate_scoped_synonym	Chordata	has_exact_synonym	chordates
-WARN	duplicate_scoped_synonym	Chordata	has_related_synonym	chordates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	Vertebrata
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	Vertebrata
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_related_synonym	vertebrates
-WARN	duplicate_scoped_synonym	Amphibia	has_exact_synonym	amphibians
-WARN	duplicate_scoped_synonym	Amphibia	has_related_synonym	amphibians
-WARN	duplicate_scoped_synonym	Aves	has_exact_synonym	birds
-WARN	duplicate_scoped_synonym	Aves	has_related_synonym	birds
-WARN	duplicate_scoped_synonym	Eutheria	has_exact_synonym	placentals
-WARN	duplicate_scoped_synonym	Eutheria	has_related_synonym	placentals
-WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
-WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	man
-WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	human
-WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	man
-WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
-WARN	duplicate_scoped_synonym	ionizing radiation	has_exact_synonym	ionising radiation
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative term	ALARA
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	has_exact_synonym	ALARA
-WARN	duplicate_scoped_synonym	delta ray	alternative term	delta electron
-WARN	duplicate_scoped_synonym	delta ray	has_exact_synonym	delta electron
-WARN	duplicate_scoped_synonym	linear energy transfer	alternative term	LET
-WARN	duplicate_scoped_synonym	linear energy transfer	has_exact_synonym	LET
-WARN	duplicate_scoped_synonym	relative biological effectiveness	alternative term	RBE
-WARN	duplicate_scoped_synonym	relative biological effectiveness	has_exact_synonym	RBE
-WARN	duplicate_scoped_synonym	immediately preceded by	alternative term	starts_at_end_of
-WARN	duplicate_scoped_synonym	immediately preceded by	has_exact_synonym	starts_at_end_of
-WARN	duplicate_scoped_synonym	zygote stage	has_exact_synonym	fertilized egg stage
-WARN	duplicate_scoped_synonym	zygote stage	has_related_synonym	fertilized egg stage
-WARN	duplicate_scoped_synonym	respiratory tube	has_exact_synonym	segment of tracheobronchial tree
-WARN	duplicate_scoped_synonym	respiratory tube	has_narrow_synonym	segment of tracheobronchial tree
-WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
-WARN	duplicate_scoped_synonym	respiratory system	has_related_synonym	apparatus respiratorius
-WARN	duplicate_scoped_synonym	sensory system	has_exact_synonym	organa sensuum
-WARN	duplicate_scoped_synonym	sensory system	has_related_synonym	organa sensuum
-WARN	duplicate_scoped_synonym	pectoral girdle region	has_exact_synonym	cingulum membri superioris
-WARN	duplicate_scoped_synonym	pectoral girdle region	has_narrow_synonym	cingulum membri superioris
-WARN	duplicate_scoped_synonym	ascending aorta	has_exact_synonym	pars ascendens aortae
-WARN	duplicate_scoped_synonym	ascending aorta	has_related_synonym	pars ascendens aortae
-WARN	duplicate_scoped_synonym	descending aorta	has_exact_synonym	pars descendens aortae
-WARN	duplicate_scoped_synonym	descending aorta	has_related_synonym	pars descendens aortae
-WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	abdominal part of aorta
-WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	pars abdominalis aortae
-WARN	duplicate_scoped_synonym	abdominal aorta	has_related_synonym	abdominal part of aorta
-WARN	duplicate_scoped_synonym	abdominal aorta	has_related_synonym	pars abdominalis aortae
-WARN	duplicate_scoped_synonym	brachiocephalic artery	has_exact_synonym	truncus brachiocephalicus
-WARN	duplicate_scoped_synonym	brachiocephalic artery	has_related_synonym	truncus brachiocephalicus
-WARN	duplicate_scoped_synonym	subclavian artery	has_exact_synonym	arteria subclavia
-WARN	duplicate_scoped_synonym	subclavian artery	has_related_synonym	arteria subclavia
-WARN	duplicate_scoped_synonym	optic choroid	has_exact_synonym	choroidea
-WARN	duplicate_scoped_synonym	optic choroid	has_related_synonym	choroidea
-WARN	duplicate_scoped_synonym	esophagus mucosa	has_exact_synonym	tunica mucosa oesophagi
-WARN	duplicate_scoped_synonym	esophagus mucosa	has_related_synonym	tunica mucosa oesophagi
-WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_exact_synonym	hindlimb ectoderm
-WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_narrow_synonym	hindlimb ectoderm
-WARN	duplicate_scoped_synonym	abdominal wall	has_exact_synonym	paries abdominalis
-WARN	duplicate_scoped_synonym	abdominal wall	has_related_synonym	paries abdominalis
-WARN	duplicate_scoped_synonym	brachiocephalic vein	has_exact_synonym	innominate vein
-WARN	duplicate_scoped_synonym	brachiocephalic vein	has_related_synonym	innominate vein
-WARN	duplicate_scoped_synonym	mouth mucosa	has_exact_synonym	tunica mucosa oris
-WARN	duplicate_scoped_synonym	mouth mucosa	has_related_synonym	tunica mucosa oris
-WARN	duplicate_scoped_synonym	cardiac vein	has_exact_synonym	coronary vein
-WARN	duplicate_scoped_synonym	cardiac vein	has_related_synonym	coronary vein
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	branchial aortic arches
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_related_synonym	branchial aortic arches
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_related_synonym	pharyngeal arch artery
-WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_exact_synonym	muscular interventricular septum
-WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_related_synonym	muscular interventricular septum
-WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_exact_synonym	pulmonary conus
-WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_related_synonym	pulmonary conus
-WARN	duplicate_scoped_synonym	corneo-scleral junction	has_exact_synonym	limbus corneae
-WARN	duplicate_scoped_synonym	corneo-scleral junction	has_related_synonym	limbus corneae
-WARN	duplicate_scoped_synonym	craniocervical region musculature	has_exact_synonym	head or neck muscle
-WARN	duplicate_scoped_synonym	craniocervical region musculature	has_related_synonym	head or neck muscle
-WARN	duplicate_scoped_synonym	ciliary processes	has_exact_synonym	processus ciliares
-WARN	duplicate_scoped_synonym	ciliary processes	has_related_synonym	processus ciliares
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	cell	rdfs:subClassOf	
+INFO	missing_superclass	DNA repair	rdfs:subClassOf	
 INFO	missing_superclass	plant structure development stage	rdfs:subClassOf	
 INFO	missing_superclass	gene	rdfs:subClassOf	
 INFO	lowercase_definition	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
@@ -2850,6 +2891,7 @@ INFO	lowercase_definition	has start location	textual definition	x 'has starts lo
 INFO	lowercase_definition	has end location	textual definition	x 'has end location' y if and only if there exists some process z such that x 'ends with' z and z 'occurs in' y
 INFO	lowercase_definition	has input	textual definition	p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.
 INFO	lowercase_definition	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of p.
+INFO	lowercase_definition	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.
 INFO	lowercase_definition	has developmental contribution from	textual definition	x has developmental contribution from y iff x has some part z such that z develops from y@en
 INFO	lowercase_definition	developmentally contributes to	textual definition	inverse of has developmental contribution from
 INFO	lowercase_definition	developmentally induced by	textual definition	t1 developmentally_induced_by t2 if there is a process of organ induction (GO:0001759) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor tissue type T to T', where T' develops_from T.
