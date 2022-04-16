@@ -15,13 +15,34 @@ import_group:
   products:
   - id: ro
   - id: bfo
+  - id: chebi
+    module_type: custom
   - id: pato
+    module_type: custom
   - id: chmo
+    module_type: custom
   - id: envo
+    module_type: custom
+  - id: pco
   - id: obi
   - id: uo
+    module_type: custom
   - id: doid
     mirror_from: http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl
+    module_type: custom
+  - id: uberon
+    module_type: custom
+  - id: cob
+    module_type: custom
+  - id: go
+    use_gzipped: TRUE
+    is_large: TRUE
+    module_type: custom
+  - id: efo
+    mirror_from: https://www.ebi.ac.uk/efo/efo.owl
+    module_type: custom
+  - id: ncbitaxon
+    module_type: custom
 obo_format_options: ''
 primary_release: full
 reasoner: ELK
@@ -34,7 +55,7 @@ robot_report:
   fail_on: null
   report_on:
   - edit
-  - .owl
+  - rbo.owl
   use_labels: true
 uribase: http://purl.obolibrary.org/obo
 use_dosdps: false

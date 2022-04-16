@@ -15,7 +15,7 @@ obo:RBO_00000017	Earth surface				That part of the Earth exposed to the Earth at
 obo:RBO_00000018	Earth atmosphere				The region between the Earth's surface and an altitude of approximately 100 km										radiation environment																			
 obo:RBO_00000019	low Earth orbit	LEO			The region of outer space between the Earth's atmosphere and the innermost Earth radiation belt										ENVO:01000637	LEO																		
 obo:RBO_00000020	beyond low Earth orbit	BLEO			That part of outer space beyond the Earth's radiation belts.										ENVO:01000637	BLEO																		
-obo:RBO_00000021	fractionated radiation exposure	fractionated			A radiation dose administered in two or more exposures at specified time intervals										obo:RBO_00000082																			
+obo:RBO_00000021	fractionated radiation exposure	fractionated			A radiation dose administered in two or more exposures at specified time intervals										obo:RBO_00002000																			
 obo:RBO_00000022	millirad				A unit of absorbed dose equal to 1/1000 of a rad										UO:1000135	mrad																		
 obo:RBO_00000023	equivalent dose				The product of the mean absorbed dose in an organ or tissue and the radiation weighting factor (w_R )of the radiation type of interest		The equivalent dose was calculated to be 300 mSv.								radiation dose																			
 obo:RBO_00000024	dose fraction				The absorbed radiation dose administered in a single one of a series comprising a fractionated radiation exposure		The total dose was administered in five dose fractions.								radiation dose																			
