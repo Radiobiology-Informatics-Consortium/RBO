@@ -1,35 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_label	root	label	root
-ERROR	duplicate_label	root	label	root
-ERROR	duplicate_label	role	label	role
-ERROR	duplicate_label	role	label	role
-ERROR	duplicate_label	radiation quality	label	radiation quality
-ERROR	duplicate_label	radiation quality	label	radiation quality
-ERROR	duplicate_label	quality	label	quality
-ERROR	duplicate_label	characteristic	label	quality
-ERROR	duplicate_label	protein	label	protein
-ERROR	duplicate_label	protein	label	protein
-ERROR	duplicate_label	primordium	label	primordium
-ERROR	duplicate_label	primordium	label	primordium
-ERROR	duplicate_label	planned process	label	planned process
-ERROR	duplicate_label	planned process	label	planned process
-ERROR	duplicate_label	milli	label	milli
-ERROR	duplicate_label	milli	label	milli
-ERROR	duplicate_label	micromole	label	micromole
-ERROR	duplicate_label	micromole	label	micromole
-ERROR	duplicate_label	has participant	label	has participant
-ERROR	duplicate_label	has participant	label	has participant
-ERROR	duplicate_label	gill	label	gill
-ERROR	duplicate_label	gill	label	gill
-ERROR	duplicate_label	cellular process	label	cellular process
-ERROR	duplicate_label	cellular process	label	cellular process
-ERROR	duplicate_label	biological_process	label	biological process
-ERROR	duplicate_label	biological process	label	biological process
-ERROR	deprecated_boolean_datatype	Cobalt-57 gamma radiation	owl:deprecated	radionuclide
-ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
-ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
-ERROR	label_whitespace	Social science and humanities study 	label	Social science and humanities study 
-ERROR	label_whitespace	Meteorology study 	label	Meteorology study 
 ERROR	multiple_labels	continuant	label	continuant
 ERROR	multiple_labels	continuant	label	continuant@en
 ERROR	multiple_labels	process	label	process
@@ -93,8 +62,8 @@ ERROR	multiple_labels	in distal side of	label	in distal side of
 ERROR	multiple_labels	in distal side of	label	in_distal_side_of
 ERROR	multiple_labels	in lateral side of	label	in lateral side of
 ERROR	multiple_labels	in lateral side of	label	in_lateral_side_of
-ERROR	multiple_labels	proximalmost part of	label	proximalmost part of
-ERROR	multiple_labels	proximalmost part of	label	proximalmost_part_of
+ERROR	multiple_labels	proximalmost_part_of	label	proximalmost part of
+ERROR	multiple_labels	proximalmost_part_of	label	proximalmost_part_of
 ERROR	multiple_labels	immediately_deep_to	label	immediately deep to
 ERROR	multiple_labels	immediately_deep_to	label	immediately_deep_to
 ERROR	multiple_labels	immediately superficial to	label	immediately superficial to
@@ -106,6 +75,8 @@ ERROR	multiple_labels	atomic nucleus	label	atomic nucleus
 ERROR	multiple_labels	atomic nucleus	label	atomic nucleus@en
 ERROR	multiple_labels	subatomic particle	label	subatomic particle
 ERROR	multiple_labels	subatomic particle	label	subatomic particle@en
+ERROR	multiple_labels	cell	label	cell
+ERROR	multiple_labels	cell	label	cell@en
 ERROR	multiple_labels	supporting cell	label	supporting cell
 ERROR	multiple_labels	supporting cell	label	supportive cell
 ERROR	multiple_labels	skeletal muscle fiber	label	skeletal muscle fiber
@@ -196,6 +167,8 @@ ERROR	multiple_labels	immediately_precedes	label	immediately precedes@en
 ERROR	multiple_labels	immediately_precedes	label	immediately_precedes
 ERROR	multiple_labels	overlaps	label	overlaps
 ERROR	multiple_labels	overlaps	label	overlaps@en
+ERROR	multiple_labels	only in taxon	label	only in taxon
+ERROR	multiple_labels	only in taxon	label	only_in_taxon
 ERROR	multiple_labels	has component	label	has component
 ERROR	multiple_labels	has component	label	has component@en
 ERROR	multiple_labels	regulates	label	regulates
@@ -242,6 +215,8 @@ ERROR	multiple_labels	causally upstream of	label	causally upstream of
 ERROR	multiple_labels	causally upstream of	label	causally upstream of@en
 ERROR	multiple_labels	immediately causally upstream of	label	immediately causally upstream of
 ERROR	multiple_labels	immediately causally upstream of	label	immediately causally upstream of@en
+ERROR	multiple_labels	anatomical entity	label	anatomical entity
+ERROR	multiple_labels	anatomical entity	label	anatomical entity@en
 ERROR	multiple_labels	prefix	label	derived unit
 ERROR	multiple_labels	prefix	label	prefix
 ERROR	multiple_labels	creator	label	Creator
@@ -320,13 +295,15 @@ ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of
 ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
 ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure.
-ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
-ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
 ERROR	multiple_definitions	immediately_deep_to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
 ERROR	multiple_definitions	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	chemical entity	textual definition	A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.
 ERROR	multiple_definitions	chemical entity	textual definition	A drug, solvent, chemical, etc., with a property that can be measured such as concentration.
 ERROR	multiple_definitions	chemical entity	textual definition	A molecular entity consisting of two or more chemical elements.
+ERROR	multiple_definitions	cell	textual definition	A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.
+ERROR	multiple_definitions	cell	textual definition	A material entity that has a plasma membrane and results from cellular division.
 ERROR	multiple_definitions	cellular_component	textual definition	"
 The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.
 "
@@ -427,190 +404,165 @@ ERROR	multiple_definitions	radiation unit	textual definition	A derived unit whic
 ERROR	multiple_definitions	radiation unit	textual definition	A unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.
 ERROR	multiple_definitions	absorbed dose unit	textual definition	A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.
 ERROR	multiple_definitions	absorbed dose unit	textual definition	A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.
-ERROR	missing_label	GO:0010212	label	
+ERROR	deprecated_boolean_datatype	Cobalt-57 gamma radiation	owl:deprecated	radionuclide
+ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
+ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
+ERROR	duplicate_label	root	label	root
+ERROR	duplicate_label	root	label	root
+ERROR	duplicate_label	role	label	role
+ERROR	duplicate_label	role	label	role
+ERROR	duplicate_label	radiation quality	label	radiation quality
+ERROR	duplicate_label	radiation quality	label	radiation quality
+ERROR	duplicate_label	quality	label	quality
+ERROR	duplicate_label	characteristic	label	quality
+ERROR	duplicate_label	protein	label	protein
+ERROR	duplicate_label	protein	label	protein
+ERROR	duplicate_label	primordium	label	primordium
+ERROR	duplicate_label	primordium	label	primordium
+ERROR	duplicate_label	planned process	label	planned process
+ERROR	duplicate_label	planned process	label	planned process
+ERROR	duplicate_label	milli	label	milli
+ERROR	duplicate_label	milli	label	milli
+ERROR	duplicate_label	micromole	label	micromole
+ERROR	duplicate_label	micromole	label	micromole
+ERROR	duplicate_label	has participant	label	has participant
+ERROR	duplicate_label	has participant	label	has participant
+ERROR	duplicate_label	gill	label	gill
+ERROR	duplicate_label	gill	label	gill
+ERROR	duplicate_label	cellular process	label	cellular process
+ERROR	duplicate_label	cellular process	label	cellular process
+ERROR	duplicate_label	biological_process	label	biological process
+ERROR	duplicate_label	biological process	label	biological process
+ERROR	duplicate_label	anatomical entity	label	anatomical entity@en
+ERROR	duplicate_label	anatomical entity	label	anatomical entity@en
 ERROR	missing_label	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	label	
 ERROR	missing_label	oboInOwl:creation_date	label	
 ERROR	missing_label	rdf:PlainLiteral	label	
 ERROR	missing_label	xsd:boolean	label	
 ERROR	missing_label	xsd:string	label	
-WARN	duplicate_scoped_synonym	nonmetal atom	has_exact_synonym	nonmetal
-WARN	duplicate_scoped_synonym	nonmetal atom	has_related_synonym	nonmetal
-WARN	duplicate_scoped_synonym	oxygen atom	has_exact_synonym	oxygen
-WARN	duplicate_scoped_synonym	oxygen atom	has_related_synonym	oxygen
-WARN	duplicate_scoped_synonym	phosphate	has_exact_synonym	phosphates
-WARN	duplicate_scoped_synonym	phosphate	has_related_synonym	phosphates
-WARN	duplicate_scoped_synonym	carbon atom	has_exact_synonym	carbon
-WARN	duplicate_scoped_synonym	carbon atom	has_related_synonym	carbon
-WARN	duplicate_scoped_synonym	phosphorus atom	has_exact_synonym	phosphorus
-WARN	duplicate_scoped_synonym	phosphorus atom	has_related_synonym	phosphorus
-WARN	duplicate_scoped_synonym	helium atom	has_exact_synonym	helium
-WARN	duplicate_scoped_synonym	helium atom	has_related_synonym	helium
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atome
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atomo
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atoms
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atomus
-WARN	duplicate_scoped_synonym	atom	has_exact_synonym	elements
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	atome
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	atomo
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	atoms
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	atomus
-WARN	duplicate_scoped_synonym	atom	has_related_synonym	elements
-WARN	duplicate_scoped_synonym	noble gas atom	has_exact_synonym	noble gas
-WARN	duplicate_scoped_synonym	noble gas atom	has_related_synonym	noble gas
-WARN	duplicate_scoped_synonym	hydrogen atom	has_exact_synonym	hydrogen
-WARN	duplicate_scoped_synonym	hydrogen atom	has_related_synonym	hydrogen
-WARN	duplicate_scoped_synonym	Euteleostomi	alternative term	bony vertebrates
-WARN	duplicate_scoped_synonym	Euteleostomi	has_exact_synonym	bony vertebrates
-WARN	duplicate_scoped_synonym	Bacteria	alternative term	eubacteria
-WARN	duplicate_scoped_synonym	Bacteria	has_exact_synonym	eubacteria
-WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eucaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eukaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	Eucaryotae
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	Eukarya
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eucaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eukaryotes
-WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	Eucaryotae
-WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	Eukarya
-WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	eukaryotes
-WARN	duplicate_scoped_synonym	Phaeophyceae	has_exact_synonym	brown algae
-WARN	duplicate_scoped_synonym	Phaeophyceae	has_related_synonym	brown algae
-WARN	duplicate_scoped_synonym	Embryophyta	has_exact_synonym	land plants
-WARN	duplicate_scoped_synonym	Embryophyta	has_related_synonym	land plants
-WARN	duplicate_scoped_synonym	Bryophyta	has_exact_synonym	mosses
-WARN	duplicate_scoped_synonym	Bryophyta	has_related_synonym	mosses
-WARN	duplicate_scoped_synonym	Tetrapoda	alternative term	tetrapods
-WARN	duplicate_scoped_synonym	Tetrapoda	has_exact_synonym	tetrapods
-WARN	duplicate_scoped_synonym	Amniota	alternative term	amniotes
-WARN	duplicate_scoped_synonym	Amniota	has_exact_synonym	amniotes
-WARN	duplicate_scoped_synonym	Viridiplantae	has_exact_synonym	green plants
-WARN	duplicate_scoped_synonym	Viridiplantae	has_related_synonym	green plants
-WARN	duplicate_scoped_synonym	Carnivora	has_exact_synonym	carnivores
-WARN	duplicate_scoped_synonym	Carnivora	has_related_synonym	carnivores
-WARN	duplicate_scoped_synonym	Magnoliopsida	has_exact_synonym	flowering plants
-WARN	duplicate_scoped_synonym	Magnoliopsida	has_related_synonym	flowering plants
-WARN	duplicate_scoped_synonym	Apoidea	has_exact_synonym	bees
-WARN	duplicate_scoped_synonym	Apoidea	has_related_synonym	bees
-WARN	duplicate_scoped_synonym	Papilionoidea	has_exact_synonym	butterflies
-WARN	duplicate_scoped_synonym	Papilionoidea	has_related_synonym	butterflies
-WARN	duplicate_scoped_synonym	Mammalia	alternative term	mammals
-WARN	duplicate_scoped_synonym	Mammalia	has_exact_synonym	mammals
-WARN	duplicate_scoped_synonym	Mammalia	has_related_synonym	mammals
-WARN	duplicate_scoped_synonym	Liliopsida	has_exact_synonym	monocots
-WARN	duplicate_scoped_synonym	Liliopsida	has_related_synonym	monocots
-WARN	duplicate_scoped_synonym	Tracheophyta	has_exact_synonym	vascular plants
-WARN	duplicate_scoped_synonym	Tracheophyta	has_related_synonym	vascular plants
-WARN	duplicate_scoped_synonym	Spermatophyta	has_exact_synonym	seed plants
-WARN	duplicate_scoped_synonym	Spermatophyta	has_related_synonym	seed plants
-WARN	duplicate_scoped_synonym	Platyhelminthes	has_exact_synonym	flatworms
-WARN	duplicate_scoped_synonym	Platyhelminthes	has_related_synonym	flatworms
-WARN	duplicate_scoped_synonym	Nematoda	has_exact_synonym	nematodes
-WARN	duplicate_scoped_synonym	Nematoda	has_related_synonym	nematodes
-WARN	duplicate_scoped_synonym	Mollusca	has_exact_synonym	molluscs
-WARN	duplicate_scoped_synonym	Mollusca	has_related_synonym	molluscs
-WARN	duplicate_scoped_synonym	Arthropoda	has_exact_synonym	arthropods
-WARN	duplicate_scoped_synonym	Arthropoda	has_related_synonym	arthropods
-WARN	duplicate_scoped_synonym	Crustacea	has_exact_synonym	crustaceans
-WARN	duplicate_scoped_synonym	Crustacea	has_related_synonym	crustaceans
-WARN	duplicate_scoped_synonym	Lepidoptera	has_exact_synonym	moths
-WARN	duplicate_scoped_synonym	Lepidoptera	has_related_synonym	moths
-WARN	duplicate_scoped_synonym	Diptera	has_exact_synonym	flies
-WARN	duplicate_scoped_synonym	Diptera	has_related_synonym	flies
-WARN	duplicate_scoped_synonym	Hymenoptera	has_exact_synonym	hymenopterans
-WARN	duplicate_scoped_synonym	Hymenoptera	has_related_synonym	hymenopterans
-WARN	duplicate_scoped_synonym	Apocrita	has_exact_synonym	wasps, ants, and bees
-WARN	duplicate_scoped_synonym	Apocrita	has_related_synonym	wasps, ants, and bees
-WARN	duplicate_scoped_synonym	Chordata	has_exact_synonym	chordates
-WARN	duplicate_scoped_synonym	Chordata	has_related_synonym	chordates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	Vertebrata
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	Vertebrata
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	vertebrates
-WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_related_synonym	vertebrates
-WARN	duplicate_scoped_synonym	Amphibia	has_exact_synonym	amphibians
-WARN	duplicate_scoped_synonym	Amphibia	has_related_synonym	amphibians
-WARN	duplicate_scoped_synonym	Aves	has_exact_synonym	birds
-WARN	duplicate_scoped_synonym	Aves	has_related_synonym	birds
-WARN	duplicate_scoped_synonym	Eutheria	has_exact_synonym	placentals
-WARN	duplicate_scoped_synonym	Eutheria	has_related_synonym	placentals
-WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
-WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	man
-WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	human
-WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	man
-WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
-WARN	duplicate_scoped_synonym	ionizing radiation	has_exact_synonym	ionising radiation
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative term	ALARA
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	has_exact_synonym	ALARA
-WARN	duplicate_scoped_synonym	delta ray	alternative term	delta electron
-WARN	duplicate_scoped_synonym	delta ray	has_exact_synonym	delta electron
-WARN	duplicate_scoped_synonym	linear energy transfer	alternative term	LET
-WARN	duplicate_scoped_synonym	linear energy transfer	has_exact_synonym	LET
-WARN	duplicate_scoped_synonym	relative biological effectiveness	alternative term	RBE
-WARN	duplicate_scoped_synonym	relative biological effectiveness	has_exact_synonym	RBE
-WARN	duplicate_scoped_synonym	immediately preceded by	alternative term	starts_at_end_of
-WARN	duplicate_scoped_synonym	immediately preceded by	has_exact_synonym	starts_at_end_of
-WARN	duplicate_scoped_synonym	zygote stage	has_exact_synonym	fertilized egg stage
-WARN	duplicate_scoped_synonym	zygote stage	has_related_synonym	fertilized egg stage
-WARN	duplicate_scoped_synonym	respiratory tube	has_exact_synonym	segment of tracheobronchial tree
-WARN	duplicate_scoped_synonym	respiratory tube	has_narrow_synonym	segment of tracheobronchial tree
-WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
-WARN	duplicate_scoped_synonym	respiratory system	has_related_synonym	apparatus respiratorius
-WARN	duplicate_scoped_synonym	sensory system	has_exact_synonym	organa sensuum
-WARN	duplicate_scoped_synonym	sensory system	has_related_synonym	organa sensuum
-WARN	duplicate_scoped_synonym	pectoral girdle region	has_exact_synonym	cingulum membri superioris
-WARN	duplicate_scoped_synonym	pectoral girdle region	has_narrow_synonym	cingulum membri superioris
-WARN	duplicate_scoped_synonym	ascending aorta	has_exact_synonym	pars ascendens aortae
-WARN	duplicate_scoped_synonym	ascending aorta	has_related_synonym	pars ascendens aortae
-WARN	duplicate_scoped_synonym	descending aorta	has_exact_synonym	pars descendens aortae
-WARN	duplicate_scoped_synonym	descending aorta	has_related_synonym	pars descendens aortae
-WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	abdominal part of aorta
-WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	pars abdominalis aortae
-WARN	duplicate_scoped_synonym	abdominal aorta	has_related_synonym	abdominal part of aorta
-WARN	duplicate_scoped_synonym	abdominal aorta	has_related_synonym	pars abdominalis aortae
-WARN	duplicate_scoped_synonym	brachiocephalic artery	has_exact_synonym	truncus brachiocephalicus
-WARN	duplicate_scoped_synonym	brachiocephalic artery	has_related_synonym	truncus brachiocephalicus
-WARN	duplicate_scoped_synonym	subclavian artery	has_exact_synonym	arteria subclavia
-WARN	duplicate_scoped_synonym	subclavian artery	has_related_synonym	arteria subclavia
-WARN	duplicate_scoped_synonym	optic choroid	has_exact_synonym	choroidea
-WARN	duplicate_scoped_synonym	optic choroid	has_related_synonym	choroidea
-WARN	duplicate_scoped_synonym	esophagus mucosa	has_exact_synonym	tunica mucosa oesophagi
-WARN	duplicate_scoped_synonym	esophagus mucosa	has_related_synonym	tunica mucosa oesophagi
-WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_exact_synonym	hindlimb ectoderm
-WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_narrow_synonym	hindlimb ectoderm
-WARN	duplicate_scoped_synonym	abdominal wall	has_exact_synonym	paries abdominalis
-WARN	duplicate_scoped_synonym	abdominal wall	has_related_synonym	paries abdominalis
-WARN	duplicate_scoped_synonym	brachiocephalic vein	has_exact_synonym	innominate vein
-WARN	duplicate_scoped_synonym	brachiocephalic vein	has_related_synonym	innominate vein
-WARN	duplicate_scoped_synonym	mouth mucosa	has_exact_synonym	tunica mucosa oris
-WARN	duplicate_scoped_synonym	mouth mucosa	has_related_synonym	tunica mucosa oris
-WARN	duplicate_scoped_synonym	cardiac vein	has_exact_synonym	coronary vein
-WARN	duplicate_scoped_synonym	cardiac vein	has_related_synonym	coronary vein
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	branchial aortic arches
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_related_synonym	branchial aortic arches
-WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_related_synonym	pharyngeal arch artery
-WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_exact_synonym	muscular interventricular septum
-WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_related_synonym	muscular interventricular septum
-WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_exact_synonym	pulmonary conus
-WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_related_synonym	pulmonary conus
-WARN	duplicate_scoped_synonym	corneo-scleral junction	has_exact_synonym	limbus corneae
-WARN	duplicate_scoped_synonym	corneo-scleral junction	has_related_synonym	limbus corneae
-WARN	duplicate_scoped_synonym	craniocervical region musculature	has_exact_synonym	head or neck muscle
-WARN	duplicate_scoped_synonym	craniocervical region musculature	has_related_synonym	head or neck muscle
-WARN	duplicate_scoped_synonym	ciliary processes	has_exact_synonym	processus ciliares
-WARN	duplicate_scoped_synonym	ciliary processes	has_related_synonym	processus ciliares
-WARN	equivalent_class_axiom_no_genus	chemical role	inheres in	chemical entity
-WARN	equivalent_class_axiom_no_genus	information representation	concretizes	information content entity
-WARN	equivalent_class_axiom_no_genus	public building	participates in	usage of an environment for community and social services
-WARN	equivalent_class_axiom_no_genus	regulation of behavior	regulates	behavior process
-WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
-WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
-WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
-WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
-WARN	equivalent_class_axiom_no_genus	decision tree building data transformation	achieves_planned_objective	decision tree induction objective
-WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_planned_objective	cross validation objective
-WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
-WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
-WARN	equivalent_class_axiom_no_genus	inbred Mus musculus strain	has quality	inbred
+ERROR	label_whitespace	Social science and humanities study 	label	Social science and humanities study 
+ERROR	label_whitespace	Meteorology study 	label	Meteorology study 
+WARN	equivalent_pair	protein	owl:equivalentClass	protein
+WARN	duplicate_label_synonym	specifically dependent continuant	has_exact_synonym	specifically dependent continuant
+WARN	duplicate_label_synonym	part_of	alternative term	part_of
+WARN	duplicate_label_synonym	part_of	has_exact_synonym	part of
+WARN	duplicate_label_synonym	has_part	alternative term	has_part
+WARN	duplicate_label_synonym	electron	has_exact_synonym	electron
+WARN	duplicate_label_synonym	hydron	has_exact_synonym	hydron
+WARN	duplicate_label_synonym	anion	has_exact_synonym	anion
+WARN	duplicate_label_synonym	cofactor	has_exact_synonym	cofactor
+WARN	duplicate_label_synonym	molecular entity	has_exact_synonym	molecular entity
+WARN	duplicate_label_synonym	chemical entity	has_exact_synonym	chemical entity
+WARN	duplicate_label_synonym	group	has_exact_synonym	group
+WARN	duplicate_label_synonym	proton	has_exact_synonym	proton
+WARN	duplicate_label_synonym	oxoacid	has_exact_synonym	oxoacid
+WARN	duplicate_label_synonym	ion	has_exact_synonym	ion
+WARN	duplicate_label_synonym	metabolite	has_exact_synonym	metabolite
+WARN	duplicate_label_synonym	oxide	has_exact_synonym	oxide
+WARN	duplicate_label_synonym	oxygen molecular entity	has_exact_synonym	oxygen molecular entity
+WARN	duplicate_label_synonym	phosphate	has_exact_synonym	phosphate
+WARN	duplicate_label_synonym	phosphoric acid	has_exact_synonym	phosphoric acid
+WARN	duplicate_label_synonym	photon	has_exact_synonym	photon
+WARN	duplicate_label_synonym	alpha-particle	has_exact_synonym	alpha-particle
+WARN	duplicate_label_synonym	neutron	has_exact_synonym	neutron
+WARN	duplicate_label_synonym	atom	has_exact_synonym	atom
+WARN	duplicate_label_synonym	nucleon	has_exact_synonym	nucleon
+WARN	duplicate_label_synonym	pnictogen molecular entity	has_exact_synonym	pnictogen molecular entity
+WARN	duplicate_label_synonym	chalcogen	has_exact_synonym	chalcogen
+WARN	duplicate_label_synonym	chalcogen molecular entity	has_exact_synonym	chalcogen molecular entity
+WARN	duplicate_label_synonym	helium(2+)	has_exact_synonym	helium(2+)
+WARN	duplicate_label_synonym	phosphorus oxoacid	has_exact_synonym	phosphorus oxoacid
+WARN	duplicate_label_synonym	pnictogen oxoanion	has_exact_synonym	pnictogen oxoanion
+WARN	duplicate_label_synonym	phosphorus oxoanion	has_exact_synonym	phosphorus oxoanion
+WARN	duplicate_label_synonym	carbon group molecular entity	has_exact_synonym	carbon group molecular entity
+WARN	duplicate_label_synonym	noble gas molecular entity	has_exact_synonym	noble gas molecular entity
+WARN	duplicate_label_synonym	s-block molecular entity	has_exact_synonym	s-block molecular entity
+WARN	duplicate_label_synonym	helium molecular entity	has_exact_synonym	helium molecular entity
+WARN	duplicate_label_synonym	oxoanion	has_exact_synonym	oxoanion
+WARN	duplicate_label_synonym	fermion	has_exact_synonym	fermion
+WARN	duplicate_label_synonym	boson	has_exact_synonym	boson
+WARN	duplicate_label_synonym	nuclear particle	has_exact_synonym	nuclear particle
+WARN	duplicate_label_synonym	pi meson	has_exact_synonym	pi meson
+WARN	duplicate_label_synonym	muon	has_exact_synonym	muon
+WARN	duplicate_label_synonym	phosphorus oxoacid derivative	has_exact_synonym	phosphorus oxoacid derivative
+WARN	duplicate_label_synonym	cation	has_exact_synonym	cation
+WARN	duplicate_label_synonym	acid	has_exact_synonym	acid
+WARN	duplicate_label_synonym	heteroatomic molecular entity	has_exact_synonym	heteroatomic molecular entity
+WARN	duplicate_label_synonym	Bronsted acid	has_exact_synonym	Bronsted acid
+WARN	duplicate_label_synonym	dihydrogenphosphate	has_exact_synonym	dihydrogenphosphate
+WARN	duplicate_label_synonym	hydroxy group	has_exact_synonym	hydroxy group
+WARN	duplicate_label_synonym	hydrogenphosphate	has_exact_synonym	hydrogenphosphate
+WARN	duplicate_label_synonym	dosimeter	has_exact_synonym	dosimeter
+WARN	duplicate_label_synonym	myocyte of sinoatrial node	has_exact_synonym	myocyte of sinoatrial node
+WARN	duplicate_label_synonym	ocean	has_exact_synonym	ocean
+WARN	duplicate_label_synonym	sea	has_exact_synonym	sea
+WARN	duplicate_label_synonym	building	has_exact_synonym	building
+WARN	duplicate_label_synonym	ocean current	has_exact_synonym	ocean current
+WARN	duplicate_label_synonym	cellular_component	has_exact_synonym	cellular component
+WARN	duplicate_label_synonym	cellular_component	has_exact_synonym	cellular_component
+WARN	duplicate_label_synonym	nucleus	has_exact_synonym	nucleus
+WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological process
+WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological_process
+WARN	duplicate_label_synonym	information content entity	has_exact_synonym	information content entity
+WARN	duplicate_label_synonym	plan specification	has_exact_synonym	plan specification
+WARN	duplicate_label_synonym	biological process	has_exact_synonym	biological process
+WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
+WARN	duplicate_label_synonym	Space flight	has_exact_synonym	Space flight
+WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
+WARN	duplicate_label_synonym	life cycle stage	has_exact_synonym	life cycle stage
+WARN	duplicate_label_synonym	organism substance	has_exact_synonym	organism substance
+WARN	duplicate_label_synonym	simple columnar epithelium	has_exact_synonym	simple columnar epithelium
+WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
+WARN	duplicate_label_synonym	musculature	has_exact_synonym	musculature
+WARN	duplicate_label_synonym	posterior vena cava	has_exact_synonym	posterior vena cava
+WARN	duplicate_label_synonym	uvea	has_exact_synonym	uvea
+WARN	duplicate_label_synonym	rhombomere	has_exact_synonym	rhombomere
+WARN	duplicate_label_synonym	submucosa of esophagus	has_exact_synonym	submucosa of esophagus
+WARN	duplicate_label_synonym	gray matter	has_exact_synonym	gray matter
+WARN	duplicate_label_synonym	right cardiac atrium	has_exact_synonym	right cardiac atrium
+WARN	duplicate_label_synonym	left cardiac atrium	has_exact_synonym	left cardiac atrium
+WARN	duplicate_label_synonym	appendicular skeleton	has_exact_synonym	appendicular skeleton
+WARN	duplicate_label_synonym	artery smooth muscle tissue	has_exact_synonym	artery smooth muscle tissue
+WARN	duplicate_label_synonym	gray matter of spinal cord	has_exact_synonym	gray matter of spinal cord
+WARN	duplicate_label_synonym	cartilage tissue	has_exact_synonym	cartilage tissue
+WARN	duplicate_label_synonym	esophagus mucosa	has_exact_synonym	esophagus mucosa
+WARN	duplicate_label_synonym	iris epithelium	has_exact_synonym	iris epithelium
+WARN	duplicate_label_synonym	skeletal muscle tissue of eye	has_exact_synonym	skeletal muscle tissue of eye
+WARN	duplicate_label_synonym	cardiac muscle tissue of interventricular septum	has_exact_synonym	cardiac muscle tissue of interventricular septum
+WARN	duplicate_label_synonym	skeletal muscle tissue of pharynx	has_exact_synonym	skeletal muscle tissue of pharynx
+WARN	duplicate_label_synonym	gland of digestive tract	has_exact_synonym	gland of digestive tract
+WARN	duplicate_label_synonym	facial bone	has_exact_synonym	facial bone
+WARN	duplicate_label_synonym	mouth mucosa	has_exact_synonym	mouth mucosa
+WARN	duplicate_label_synonym	mesencephalic neural crest	has_exact_synonym	mesencephalic neural crest
+WARN	duplicate_label_synonym	skeletal muscle tissue of trunk	has_exact_synonym	skeletal muscle tissue of trunk
+WARN	duplicate_label_synonym	reproductive gland	has_exact_synonym	reproductive gland
+WARN	duplicate_label_synonym	germinal neuroepithelium	has_exact_synonym	germinal neuroepithelium
+WARN	duplicate_label_synonym	primary heart field	has_exact_synonym	primary heart field
+WARN	duplicate_label_synonym	cardiac vein	has_exact_synonym	cardiac vein
+WARN	duplicate_label_synonym	external genitalia	has_exact_synonym	external genitalia
+WARN	duplicate_label_synonym	paired limb/fin bud	has_exact_synonym	paired limb/fin bud
+WARN	duplicate_label_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
+WARN	duplicate_label_synonym	anterior limiting lamina of cornea	has_exact_synonym	anterior limiting lamina of cornea
+WARN	duplicate_label_synonym	pelvic appendage	has_exact_synonym	pelvic appendage
+WARN	duplicate_label_synonym	neuromere	has_exact_synonym	neuromere
+WARN	duplicate_label_synonym	primitive heart tube	has_exact_synonym	primitive heart tube
+WARN	duplicate_label_synonym	paired limb/fin field	has_exact_synonym	paired limb/fin field
+WARN	duplicate_label_synonym	head mesenchyme from mesoderm	has_exact_synonym	head mesenchyme from mesoderm
+WARN	duplicate_label_synonym	lumen of digestive tract	has_exact_synonym	lumen of digestive tract
+WARN	duplicate_label_synonym	ovary stroma	has_exact_synonym	ovary stroma
+WARN	duplicate_label_synonym	anatomical junction	has_exact_synonym	anatomical junction
+WARN	duplicate_label_synonym	pelvic girdle skeleton	has_exact_synonym	pelvic girdle skeleton
+WARN	duplicate_label_synonym	ciliary processes	has_exact_synonym	ciliary processes
+WARN	duplicate_label_synonym	facial skeleton	has_exact_synonym	facial skeleton
+WARN	duplicate_label_synonym	hematopoietic tissue	has_exact_synonym	hematopoietic tissue
+WARN	duplicate_label_synonym	foramen of skull	has_exact_synonym	foramen of skull
+WARN	duplicate_label_synonym	arterial blood	has_exact_synonym	arterial blood
+WARN	duplicate_label_synonym	venous blood	has_exact_synonym	venous blood
+WARN	duplicate_label_synonym	thoracic skeleton	has_exact_synonym	thoracic skeleton
+WARN	duplicate_label_synonym	abdominal viscera	has_exact_synonym	abdominal viscera
+WARN	duplicate_label_synonym	lung field	has_exact_synonym	lung field
+WARN	duplicate_label_synonym	fraction	alternative term	fraction
+WARN	duplicate_label_synonym	pH	has_exact_synonym	pH
 WARN	missing_subset_declaration	obo:doid#DO_AGR_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_CFDE_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_FlyBase_slim	rdfs:subPropertyOf	
@@ -637,51 +589,214 @@ WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	invalid_xref	anteriorly connected to	database_cross_reference	anteriorly_connected_to
-WARN	invalid_xref	channel for	database_cross_reference	channel_for
-WARN	invalid_xref	channels_from	database_cross_reference	channels_from
-WARN	invalid_xref	channels_into	database_cross_reference	channels_into
-WARN	invalid_xref	conduit for	database_cross_reference	conduit_for
-WARN	invalid_xref	distally connected to	database_cross_reference	distally_connected_to
-WARN	invalid_xref	filtered through	database_cross_reference	filtered_through
-WARN	invalid_xref	posteriorly connected to	database_cross_reference	posteriorly_connected_to
-WARN	invalid_xref	protects	database_cross_reference	protects
-WARN	invalid_xref	proximally connected to	database_cross_reference	proximally_connected_to
-WARN	invalid_xref	subdivision of	database_cross_reference	subdivision_of
-WARN	missing_synonymtype_declaration	obo:chebi#IUPAC_NAME	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#blast_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#common_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#equivalent_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#genbank_common_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#in_part	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#misnomer	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#misspelling	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#scientific_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon#synonym	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#blast_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#common_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#genbank_common_name	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#synonym	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Plural	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:pr#Gene-based	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:pr#PRO-short-label	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	abbreviation	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:uberon/core#DEPRECATED	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:uberon/core#DUBIOUS	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:uberon/core#HUMAN_PREFERRED	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:uberon/core#INCONSISTENT	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:uberon/core#LATIN	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:uberon/core#PENDING_REVIEW	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:uberon/core#PLURAL	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:uberon/core#SENSU	rdfs:subPropertyOf	
+WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
+WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
+WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
+WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 
+WARN	annotation_whitespace	occurrent	IAO:0000602	(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 
+WARN	annotation_whitespace	occurrent	IAO:0000602	(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 
+WARN	annotation_whitespace	independent continuant	IAO:0000602	(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 
+WARN	annotation_whitespace	independent continuant	IAO:0000602	(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 
+WARN	annotation_whitespace	independent continuant	IAO:0000602	(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 
+WARN	annotation_whitespace	spatial region	IAO:0000602	(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 
+WARN	annotation_whitespace	spatial region	IAO:0000602	(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 
+WARN	annotation_whitespace	process	IAO:0000602	(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 
+WARN	annotation_whitespace	disposition	IAO:0000602	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 
+WARN	annotation_whitespace	disposition	IAO:0000602	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 
+WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 
+WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
+WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
+WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
+WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] 
+WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
+WARN	annotation_whitespace	role	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
+WARN	annotation_whitespace	object aggregate	editor note	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
+WARN	annotation_whitespace	object aggregate	IAO:0000602	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
+WARN	annotation_whitespace	generically dependent continuant	IAO:0000602	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 
+WARN	annotation_whitespace	function	IAO:0000602	(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 
+WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
+WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
+WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
+WARN	annotation_whitespace	cell	database_cross_reference	"CALOHA:TS-2035
+"
+WARN	annotation_whitespace	cell	database_cross_reference	FMA:68646 
+WARN	annotation_whitespace	cell	database_cross_reference	GO:0005623
+WARN	annotation_whitespace	cell	database_cross_reference	"KUPO:0000002
+
+"
+WARN	annotation_whitespace	cell	database_cross_reference	VHOG:0001533
+WARN	annotation_whitespace	cell	database_cross_reference	WBbt:0004017
+WARN	annotation_whitespace	cell	database_cross_reference	XAO:0003012
+WARN	annotation_whitespace	cellular_component	textual definition	"
+The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.
+"
+WARN	annotation_whitespace	cellular_component	rdfs:comment	"
+Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+"
+WARN	annotation_whitespace	biological_process	textual definition	"Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.
+"
+WARN	annotation_whitespace	biological_process	rdfs:comment	"Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+"
+WARN	annotation_whitespace	cellular process	textual definition	"
+Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.
+"
+WARN	annotation_whitespace	cell part	textual definition	"
+Any constituent part of a cell, the basic structural and functional unit of all organisms.
+"
+WARN	annotation_whitespace	cell part	rdfs:comment	"
+Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+"
+WARN	annotation_whitespace	single-organism process	textual definition	"
+A biological process that involves only one organism.
+"
+WARN	annotation_whitespace	single-organism cellular process	textual definition	"
+Any process that is carried out at the cellular level, occurring within a single organism.
+"
+WARN	annotation_whitespace	response to stimulus	textual definition	"
+Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.
+"
+WARN	annotation_whitespace	response to stimulus	rdfs:comment	"
+Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+"
+WARN	annotation_whitespace	cellular response to stimulus	textual definition	"
+Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus by a cell and ends with a change in state or activity or the cell.
+"
+WARN	annotation_whitespace	cellular response to stimulus	rdfs:comment	"
+Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+"
+WARN	annotation_whitespace	datum label	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+"
+WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	annotation_whitespace	is_supported_by_data	example of usage	"The relation between the conclusion \""Gene tpbA is involved in EPS production\"" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. "
+WARN	annotation_whitespace	drawing a conclusion based on data	example of usage	Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. 
+WARN	annotation_whitespace	categorical label	example of usage	The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. 
+WARN	annotation_whitespace	device	editor note	"2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \""device\"", and are enumerating the types of roles that a reagent can perform.
+
+2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:
+
+(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.
+
+(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.
+
+(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.
+
+In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.  "
+WARN	annotation_whitespace	questionnaire	editor note	"JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. 
+JZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. @en"
+WARN	annotation_whitespace	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
+WARN	annotation_whitespace	conclusion based on data	editor note	"In the Philly 2013 workshop, we recognized the limitations of \""conclusion textual entity\"", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate. "
+WARN	annotation_whitespace	histologic grade for ovarian tumor according to a two-tier grading system	textual definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. 
+WARN	annotation_whitespace	Stage 0 (AJCC 7th)	textual definition	A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. 
+WARN	annotation_whitespace	Stage IIA (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. 
+WARN	annotation_whitespace	Stage IIA1 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. 
+WARN	annotation_whitespace	Stage IIA2 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
+WARN	annotation_whitespace	Stage IIB (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
+WARN	annotation_whitespace	Anthropogenic radiation exposure	alternative term	Exposure to human generated radiation 
+WARN	annotation_whitespace	Behavioural study	obo:definition	 A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology.
+WARN	annotation_whitespace	Social science and humanities study 	label	Social science and humanities study 
+WARN	annotation_whitespace	Genetic population study	obo:definition	 Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment.
+WARN	annotation_whitespace	Registry study	obo:definition	Observational studies which include an organized system that uses observational methods to collect uniform data (clinical and other) prospectively for a population defined by a particular disorder/disease, condition (including susceptibility to a disorder), or exposure (including products, health care services, and/or procedures) and that serves a predetermined scientific, clinical, or policy purpose. Patient registries may be single purpose or on-going data collection programs that address one or more questions. (AHRQ) An observational study that is also considered to be a Patient Registry. 
+WARN	annotation_whitespace	Bystander effect study	obo:definition	Study of the cellular phenomenon which radiation energy is not been directly deposited in cells by transfer of medium, proximity/justaposition, or other means, but results in their behaving as if they had been irradiated. 
+WARN	annotation_whitespace	Meteorology study 	label	Meteorology study 
+WARN	annotation_whitespace	gamma ray photon	obo:definition	Photons having energies that are greater than tens of thousands of electron volts (eV).  
+WARN	annotation_whitespace	Iron-56 nucleus	alternative term	Fe-56 ion;Fe-56 nucleus;Fe-56 
+WARN	annotation_whitespace	Iron-56 nucleus	obo:definition	An atomic nucleus with 26 protons and 30 neutrons 
+WARN	annotation_whitespace	Silicon-28 nucleus	alternative term	Si-28 ion;Si-28 nucleus;Si-28 
+WARN	annotation_whitespace	Silicon-28 nucleus	obo:definition	An atomic nucleus with 14 protons and 14 neutrons 
+WARN	annotation_whitespace	Carbon-12 nucleus	alternative term	C-12 ion;C-12 nucleus;C-12 
+WARN	annotation_whitespace	Carbon-12 nucleus	obo:definition	An atomic nucleus with 6 protons and 6 neutrons 
+WARN	annotation_whitespace	Helium-4 nucleus	alternative term	He-4 ion;He-4 nucleus;He-4 
+WARN	annotation_whitespace	Helium-4 nucleus	obo:definition	An atomic nucleus with 2 protons and 2 neutrons 
+WARN	annotation_whitespace	Neon-20 nucleus	alternative term	Ne-20 ion;Ne-20 nucleus;Ne-20 
+WARN	annotation_whitespace	Neon-20 nucleus	obo:definition	An atomic nucleus with 10 protons and 10 neutrons 
+WARN	annotation_whitespace	ionizing radiation energy	obo:definition	The kinetic energy carried by a particle or photon of ionizing radiation. 
+WARN	annotation_whitespace	non-irradiated	obo:definition	An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation 
+WARN	annotation_whitespace	irradiation protocol	obo:definition	A protocol for administering radiation to a sample 
+WARN	annotation_whitespace	Niobium-93 nucleus	alternative term	Nb-93 ion;Nb-93 nucleus;Nb-93 
+WARN	annotation_whitespace	Niobium-93 nucleus	obo:definition	An atomic nucleus with 41 protons and 52 neutrons 
+WARN	annotation_whitespace	Silver-107 nucleus	alternative term	Ag-107 ion;Ag-107 nucleus;Ag-107 
+WARN	annotation_whitespace	Silver-107 nucleus	obo:definition	An atomic nucleus with 47 protons and 60 neutrons 
+WARN	annotation_whitespace	Xenon-129 nucleus	alternative term	Xe-129 ion;Xe-129 nucleus;Xe-129 
+WARN	annotation_whitespace	Xenon-129 nucleus	obo:definition	An atomic nucleus with 54 protons and 75 neutrons 
+WARN	annotation_whitespace	Tantalum-181 nucleus	alternative term	Ta-181 ion;Ta-181 nucleus;Ta-181 
+WARN	annotation_whitespace	Tantalum-181 nucleus	obo:definition	An atomic nucleus with 73 protons and 108 neutrons 
+WARN	annotation_whitespace	Gold-197 nucleus	alternative term	Au-197 ion;Au-197 nucleus;Au-197 
+WARN	annotation_whitespace	Gold-197 nucleus	obo:definition	An atomic nucleus with 79 protons and 118 neutrons 
+WARN	annotation_whitespace	Nitrogen-14 nucleus	alternative term	N-14 ion;N-14 nucleus;N-14 
+WARN	annotation_whitespace	Nitrogen-14 nucleus	obo:definition	An atomic nucleus with 7 protons and 7 neutrons 
+WARN	annotation_whitespace	Oxygen-16 nucleus	alternative term	O-16 ion;O-16 nucleus;O-16 
+WARN	annotation_whitespace	Oxygen-16 nucleus	obo:definition	An atomic nucleus with 8 protons and 8 neutrons 
+WARN	annotation_whitespace	Argon-40 nucleus	alternative term	Ar-40  ion;Ar-40  nucleus;Ar-40  
+WARN	annotation_whitespace	Argon-40 nucleus	obo:definition	An atomic nucleus with 18 protons and 22 neutrons 
+WARN	annotation_whitespace	Titanium-48 nucleus	alternative term	Ti-48  ion;Ti-48  nucleus;Ti-48  
+WARN	annotation_whitespace	Titanium-48 nucleus	obo:definition	An atomic nucleus with 22 protons and 26 neutrons 
+WARN	annotation_whitespace	Krypton-84 nucleus	alternative term	Kr-84 ion;Kr-84 nucleus;Kr-84 
+WARN	annotation_whitespace	Krypton-84 nucleus	obo:definition	An atomic nucleus with 36 protons and 48 neutrons 
+WARN	annotation_whitespace	miliigray per second	alternative term	mGy/sec 
+WARN	annotation_whitespace	biodosimetry	obo:definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
+WARN	annotation_whitespace	delta ray	obo:definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
+WARN	annotation_whitespace	quality factor	obo:definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
+WARN	annotation_whitespace	relative biological effectiveness	example of usage	Neutrons have been found to have a higher RBE than electrons. 
+WARN	annotation_whitespace	spatially disjoint from	editor note	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
+WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+WARN	annotation_whitespace	siemens	has_exact_synonym	mho 
+WARN	annotation_whitespace	electric field strength unit	has_exact_synonym	E-field strength 
+WARN	annotation_whitespace	Title	Description	"
+        Typically, a Title will be a name by which the resource is
+         formally known.
+    @en-us"
+WARN	annotation_whitespace	BALB/c	rdfs:comment	"Description from https://www.jax.org/strain/000651:
+
+BALB/c mice are particularly well known for the production of plasmacytomas following injection with mineral oil forming the basis for the production of monoclonal antibodies. Although not all BALB/c substrains have been examined for plasmacytoma induction, substrains derived from the Andervont (An) lineage (which includes BALB/cByJ) typically are susceptible, while those descended from BALB/cJ are resistant (see: Potter M, 1985). Mammary tumor incidence is normally low but infection with mammary tumor virus by fostering to MMTV+ C3H mice dramatically increases tumor number and age of onset. BALB/c mice develop other cancers later in life including reticular neoplasms, primary lung tumors, and renal tumors. Rare spontaneous myoepitheliomas arising from myoepithelial cells of various exocrine glands have been observed in both BALB/cJ and BALB/cByJ substrains.
+
+White et al. reported a variation in thioglycolate medium-induced peritoneal leukocyte recruitment in 4 analyzed strains. The response of total leukocyte recruitment, from greatest to least, was C57BL/6J>BALB/c>CD1>129X1/SvJ. Variations were also found in the timeline of response and cell types most impacted.
+
+BALB/c mice immunized with PLP180-199 develop an atypical form of experimental autoimmune encephalomyelitis (EAE) in which susceptibility is determined by location. In the spinal cord 60-70% mice develop pathological lesions and in the brain and cerebellum 100% of mice develop sever lesions.
+
+Dorso-ventral vaginal septa is observed in some BALB/cJ females, and may contribute to non-productive females in this strain. (Cunliffe-Beamer T, Lab Anim Sci, 1976)
+"
+WARN	annotation_whitespace	CAST/EiJ	textual definition	"
+
+Both CAST/EiJ and CASA/RkJ (Stock No. 000735) were derived from wild mice trapped in Thailand. CAST is often combined with the common laboratory strains to generate F1 hybrids with high levels of heterozygosity for use in genetic mapping. Unlike the wild-derived strain SPRET, male F1 mice from a CAST cross are fertile.
+
+Like CASA, CAST is resistant to flavivirus infection. The flavivirus family includes pathogens responsible for dengue, yellow fever and several forms of encephalitis. Most common laboratory mice are sensitive to flavivirus infection. Resistance/sensitivity is conferred through the oligoA synthase Oas1b locus. In a comparison of multiple strains, CASA and CAST exhibit reduced numbers of retinal ganglion cells as compared to common laboratory strains and other wild-derived strains. In a 2015 study comparing CAST/Ei and the other Collaborative Cross inbred strains (A/J, C3H/HeJ, C57BL/6J, DBA/2J, 129S1/SvImJ, NOD/LtJ, NZO/HlLtJ, and WSB/EiJ), dorsal root ganglion neurons from CAST/Ei mice demonstrate a significantly improved ability to regenerate axons in an inhibitory environment as determined by an increase in number of neurons with neurites and longer axonal process per neuron under both naive and pre-injured conditions. In addition, as compared to neurons from C57BL/6 mice, CAST/Ei neurons exhibit more extensive axonal regeneration in the spinal cord and optic nerve following injury and show greater sprouting following ischemic stroke.
+
+Wild-derived mice are genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and are valuable tools for genetic mapping, evolution and systematics research.
+"
+WARN	annotation_whitespace	FVB/NJ	textual definition	FVB/NJ was inbred for the Fv1b allele which confers sensitivity to the Friend leukemia virus B strain. Due to the prominent pronuclei in their fertilized eggs and the large litter size, FVB/NJ mice are commonly used for transgenic injection. Compared to many other inbred strains, FVB/NJ is highly susceptible to asthma-like airway responsiveness with significant generation of antigen-specific IgE. Despite having the H2q MHC haplotype, FVB/NJ are resistant to collagen-induced arthritis. This resistance stems from coding polymorphisms in Tcra-V11.1 and a genomic deletion of some Tcrb-V genes that includes Tcrb-V8.2. FVB/NJ have higher than average activity, anxiety, and basal body temperature, low stress-induced hyperthermia, and are homozygous for the Pde6brd1 allele, which results in early onset retinal degeneration. Although FVB/N typically do not develop spontaneous tumors, they are highly susceptible to chemically induced squamous cell carcinomas with a high rate of malignant conversion from papilloma to carcinoma. 
+WARN	annotation_whitespace	CBA/J	textual definition	"CBA/J inbred mice are widely used as a general purpose strain. CBA/J strain is the only CBA substrain that carries the Pde6brd1 mutation, which causes blindness by wean age. CBA/J mice are not histocompatible with the CBA/CaJ (Stock No. 000654) substrain (Green and Kaufer, 1965).
+
+The CBA/J inbred mouse strain is used to study granulomatous experimental autoimmune thyroiditis (G-EAT), are relatively resistant to diet-induced atherosclerosis (Paigen et al. 1990), and develop a mild hearing loss late in life, with most of the hearing loss occurring in the higher frequencies (Sweet et al. 1988). Renal tubulointerstitial lesions have been observed in this strain at a high frequency (Rudofsky 1978). Some CBA/J mice spontaneously develop exocrine pancreatic insufficiency syndrome (Eppig and Leiter 1977, Leiter et al. 1977).
+"
+WARN	annotation_whitespace	CAROLI/EiJ	textual definition	CAROLI was derived from wild mice trapped in Thailand and is from the species Mus caroli, which is distantly related to laboratory mice and does not breed with laboratory mice. These mice are characterized by black feet. This wild derived mouse strain is genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and is a valuable tool for sequence comparison, evolution and systematics research. 
+WARN	annotation_whitespace	has_exact_synonym	textual definition	An alternative label for a given entity such as a commonly used abbreviation or synonym. 
 WARN	missing_definition	fiat object part	textual definition	
 WARN	missing_definition	site	textual definition	
 WARN	missing_definition	object	textual definition	
 WARN	missing_definition	has participant	textual definition	
 WARN	missing_definition	immaterial entity	textual definition	
 WARN	missing_definition	anatomical entity	textual definition	
+WARN	missing_definition	connected anatomical structure	textual definition	
+WARN	missing_definition	material anatomical entity	textual definition	
 WARN	missing_definition	biological entity	textual definition	
 WARN	missing_definition	electron donor	textual definition	
 WARN	missing_definition	water	textual definition	
@@ -938,11 +1053,7 @@ WARN	missing_definition	fibrillar collagen trimer	textual definition
 WARN	missing_definition	collagen type IV trimer	textual definition	
 WARN	missing_definition	basement membrane	textual definition	
 WARN	missing_definition	extracellular space	textual definition	
-WARN	missing_definition	intracellular anatomical structure	textual definition	
-WARN	missing_definition	cytoplasm	textual definition	
-WARN	missing_definition	plasma membrane	textual definition	
 WARN	missing_definition	cell-cell junction	textual definition	
-WARN	missing_definition	cell cortex	textual definition	
 WARN	missing_definition	transport	textual definition	
 WARN	missing_definition	movement of cell or subcellular component	textual definition	
 WARN	missing_definition	muscle contraction	textual definition	
@@ -974,12 +1085,10 @@ WARN	missing_definition	embryo development	textual definition
 WARN	missing_definition	post-embryonic development	textual definition	
 WARN	missing_definition	embryo development ending in birth or egg hatching	textual definition	
 WARN	missing_definition	tissue development	textual definition	
-WARN	missing_definition	GO:0010212	textual definition	
 WARN	missing_definition	mesenchymal cell proliferation	textual definition	
 WARN	missing_definition	regulation of mesenchymal cell proliferation	textual definition	
 WARN	missing_definition	regulation of gastrulation	textual definition	
 WARN	missing_definition	vesicle membrane	textual definition	
-WARN	missing_definition	membrane	textual definition	
 WARN	missing_definition	morphogenesis of embryonic epithelium	textual definition	
 WARN	missing_definition	cell migration	textual definition	
 WARN	missing_definition	negative regulation of angiogenesis	textual definition	
@@ -1001,7 +1110,6 @@ WARN	missing_definition	positive regulation of cell migration	textual definition
 WARN	missing_definition	negative regulation of cell migration	textual definition	
 WARN	missing_definition	cytoplasmic vesicle membrane	textual definition	
 WARN	missing_definition	extracellular matrix	textual definition	
-WARN	missing_definition	organelle membrane	textual definition	
 WARN	missing_definition	cytoplasmic vesicle	textual definition	
 WARN	missing_definition	regulation of nervous system process	textual definition	
 WARN	missing_definition	negative regulation of nervous system process	textual definition	
@@ -1035,11 +1143,7 @@ WARN	missing_definition	cell projection	textual definition
 WARN	missing_definition	neuron projection	textual definition	
 WARN	missing_definition	chordate embryonic development	textual definition	
 WARN	missing_definition	neuronal cell body	textual definition	
-WARN	missing_definition	organelle	textual definition	
-WARN	missing_definition	membrane-bounded organelle	textual definition	
-WARN	missing_definition	intracellular organelle	textual definition	
 WARN	missing_definition	extracellular organelle	textual definition	
-WARN	missing_definition	intracellular membrane-bounded organelle	textual definition	
 WARN	missing_definition	regulation of respiratory gaseous exchange	textual definition	
 WARN	missing_definition	regulation of multi-organism process	textual definition	
 WARN	missing_definition	regulation of system process	textual definition	
@@ -1062,19 +1166,12 @@ WARN	missing_definition	secretion	textual definition
 WARN	missing_definition	mesoderm morphogenesis	textual definition	
 WARN	missing_definition	animal organ development	textual definition	
 WARN	missing_definition	blood vessel morphogenesis	textual definition	
-WARN	missing_definition	positive regulation of biological process	textual definition	
-WARN	missing_definition	negative regulation of biological process	textual definition	
 WARN	missing_definition	positive regulation of behavior	textual definition	
 WARN	missing_definition	negative regulation of behavior	textual definition	
-WARN	missing_definition	positive regulation of cellular process	textual definition	
-WARN	missing_definition	negative regulation of cellular process	textual definition	
 WARN	missing_definition	hematopoietic or lymphoid organ development	textual definition	
 WARN	missing_definition	regulation of post-embryonic development	textual definition	
 WARN	missing_definition	negative regulation of post-embryonic development	textual definition	
 WARN	missing_definition	positive regulation of post-embryonic development	textual definition	
-WARN	missing_definition	regulation of response to stimulus	textual definition	
-WARN	missing_definition	positive regulation of response to stimulus	textual definition	
-WARN	missing_definition	negative regulation of response to stimulus	textual definition	
 WARN	missing_definition	embryonic morphogenesis	textual definition	
 WARN	missing_definition	multicellular organismal reproductive process	textual definition	
 WARN	missing_definition	anatomical structure formation involved in morphogenesis	textual definition	
@@ -1085,9 +1182,7 @@ WARN	missing_definition	pigment granule	textual definition
 WARN	missing_definition	anatomical structure development	textual definition	
 WARN	missing_definition	cell motility	textual definition	
 WARN	missing_definition	multicellular organismal homeostasis	textual definition	
-WARN	missing_definition	regulation of biological process	textual definition	
 WARN	missing_definition	regulation of developmental process	textual definition	
-WARN	missing_definition	regulation of cellular process	textual definition	
 WARN	missing_definition	regulation of behavior	textual definition	
 WARN	missing_definition	nervous system process	textual definition	
 WARN	missing_definition	detection of stimulus involved in sensory perception	textual definition	
@@ -1134,12 +1229,10 @@ WARN	missing_definition	negative regulation of cartilage development	textual def
 WARN	missing_definition	morphogenesis of a branching epithelium	textual definition	
 WARN	missing_definition	connective tissue development	textual definition	
 WARN	missing_definition	collagen-containing extracellular matrix	textual definition	
-WARN	missing_definition	biological regulation	textual definition	
 WARN	missing_definition	regulation of biological quality	textual definition	
 WARN	missing_definition	regulation of molecular function	textual definition	
 WARN	missing_definition	extracellular membrane-bounded organelle	textual definition	
 WARN	missing_definition	anchoring junction	textual definition	
-WARN	missing_definition	cell periphery	textual definition	
 WARN	missing_definition	elastic fiber	textual definition	
 WARN	missing_definition	epithelial tube formation	textual definition	
 WARN	missing_definition	negative regulation of mesenchymal cell proliferation	textual definition	
@@ -1147,7 +1240,6 @@ WARN	missing_definition	circulatory system development	textual definition
 WARN	missing_definition	regulation of muscle system process	textual definition	
 WARN	missing_definition	glial cell projection	textual definition	
 WARN	missing_definition	intracellular vesicle	textual definition	
-WARN	missing_definition	plasma membrane region	textual definition	
 WARN	missing_definition	network-forming collagen trimer	textual definition	
 WARN	missing_definition	banded collagen fibril	textual definition	
 WARN	missing_definition	complex of collagen trimers	textual definition	
@@ -1158,9 +1250,6 @@ WARN	missing_definition	plasma membrane protein complex	textual definition
 WARN	missing_definition	supramolecular complex	textual definition	
 WARN	missing_definition	supramolecular polymer	textual definition	
 WARN	missing_definition	supramolecular fiber	textual definition	
-WARN	missing_definition	cytoplasmic region	textual definition	
-WARN	missing_definition	cell cortex region	textual definition	
-WARN	missing_definition	cellular anatomical entity	textual definition	
 WARN	missing_definition	plasma membrane bounded cell projection	textual definition	
 WARN	missing_definition	neuron projection cytoplasm	textual definition	
 WARN	missing_definition	regulation of vasculature development	textual definition	
@@ -2421,12 +2510,8 @@ WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRule
 WARN	missing_definition	Mus musculus subspecies	textual definition	
 WARN	missing_definition	created_by	textual definition	
 WARN	missing_definition	oboInOwl:creation_date	textual definition	
-WARN	missing_definition	has_alternative_id	textual definition	
 WARN	missing_definition	has_broad_synonym	textual definition	
 WARN	missing_definition	database_cross_reference	textual definition	
-WARN	missing_definition	has_narrow_synonym	textual definition	
-WARN	missing_definition	has_obo_namespace	textual definition	
-WARN	missing_definition	has_related_synonym	textual definition	
 WARN	missing_definition	in_subset	textual definition	
 WARN	missing_definition	rdf:PlainLiteral	textual definition	
 WARN	missing_definition	xsd:boolean	textual definition	
@@ -2461,315 +2546,229 @@ WARN	duplicate_exact_synonym	G2: Moderately differentiated	alternative term	G2
 WARN	duplicate_exact_synonym	G2 (WHO)	alternative term	G2
 WARN	duplicate_exact_synonym	G1: Well differentiated	alternative term	G1
 WARN	duplicate_exact_synonym	G1 (WHO)	alternative term	G1
-WARN	duplicate_label_synonym	specifically dependent continuant	has_exact_synonym	specifically dependent continuant
-WARN	duplicate_label_synonym	part_of	alternative term	part_of
-WARN	duplicate_label_synonym	part_of	has_exact_synonym	part of
-WARN	duplicate_label_synonym	has_part	alternative term	has_part
-WARN	duplicate_label_synonym	electron	has_exact_synonym	electron
-WARN	duplicate_label_synonym	hydron	has_exact_synonym	hydron
-WARN	duplicate_label_synonym	anion	has_exact_synonym	anion
-WARN	duplicate_label_synonym	cofactor	has_exact_synonym	cofactor
-WARN	duplicate_label_synonym	molecular entity	has_exact_synonym	molecular entity
-WARN	duplicate_label_synonym	chemical entity	has_exact_synonym	chemical entity
-WARN	duplicate_label_synonym	group	has_exact_synonym	group
-WARN	duplicate_label_synonym	proton	has_exact_synonym	proton
-WARN	duplicate_label_synonym	oxoacid	has_exact_synonym	oxoacid
-WARN	duplicate_label_synonym	ion	has_exact_synonym	ion
-WARN	duplicate_label_synonym	metabolite	has_exact_synonym	metabolite
-WARN	duplicate_label_synonym	oxide	has_exact_synonym	oxide
-WARN	duplicate_label_synonym	oxygen molecular entity	has_exact_synonym	oxygen molecular entity
-WARN	duplicate_label_synonym	phosphate	has_exact_synonym	phosphate
-WARN	duplicate_label_synonym	phosphoric acid	has_exact_synonym	phosphoric acid
-WARN	duplicate_label_synonym	photon	has_exact_synonym	photon
-WARN	duplicate_label_synonym	alpha-particle	has_exact_synonym	alpha-particle
-WARN	duplicate_label_synonym	neutron	has_exact_synonym	neutron
-WARN	duplicate_label_synonym	atom	has_exact_synonym	atom
-WARN	duplicate_label_synonym	nucleon	has_exact_synonym	nucleon
-WARN	duplicate_label_synonym	pnictogen molecular entity	has_exact_synonym	pnictogen molecular entity
-WARN	duplicate_label_synonym	chalcogen	has_exact_synonym	chalcogen
-WARN	duplicate_label_synonym	chalcogen molecular entity	has_exact_synonym	chalcogen molecular entity
-WARN	duplicate_label_synonym	helium(2+)	has_exact_synonym	helium(2+)
-WARN	duplicate_label_synonym	phosphorus oxoacid	has_exact_synonym	phosphorus oxoacid
-WARN	duplicate_label_synonym	pnictogen oxoanion	has_exact_synonym	pnictogen oxoanion
-WARN	duplicate_label_synonym	phosphorus oxoanion	has_exact_synonym	phosphorus oxoanion
-WARN	duplicate_label_synonym	carbon group molecular entity	has_exact_synonym	carbon group molecular entity
-WARN	duplicate_label_synonym	noble gas molecular entity	has_exact_synonym	noble gas molecular entity
-WARN	duplicate_label_synonym	s-block molecular entity	has_exact_synonym	s-block molecular entity
-WARN	duplicate_label_synonym	helium molecular entity	has_exact_synonym	helium molecular entity
-WARN	duplicate_label_synonym	oxoanion	has_exact_synonym	oxoanion
-WARN	duplicate_label_synonym	fermion	has_exact_synonym	fermion
-WARN	duplicate_label_synonym	boson	has_exact_synonym	boson
-WARN	duplicate_label_synonym	nuclear particle	has_exact_synonym	nuclear particle
-WARN	duplicate_label_synonym	pi meson	has_exact_synonym	pi meson
-WARN	duplicate_label_synonym	muon	has_exact_synonym	muon
-WARN	duplicate_label_synonym	phosphorus oxoacid derivative	has_exact_synonym	phosphorus oxoacid derivative
-WARN	duplicate_label_synonym	cation	has_exact_synonym	cation
-WARN	duplicate_label_synonym	acid	has_exact_synonym	acid
-WARN	duplicate_label_synonym	heteroatomic molecular entity	has_exact_synonym	heteroatomic molecular entity
-WARN	duplicate_label_synonym	Bronsted acid	has_exact_synonym	Bronsted acid
-WARN	duplicate_label_synonym	dihydrogenphosphate	has_exact_synonym	dihydrogenphosphate
-WARN	duplicate_label_synonym	hydroxy group	has_exact_synonym	hydroxy group
-WARN	duplicate_label_synonym	hydrogenphosphate	has_exact_synonym	hydrogenphosphate
-WARN	duplicate_label_synonym	dosimeter	has_exact_synonym	dosimeter
-WARN	duplicate_label_synonym	myocyte of sinoatrial node	has_exact_synonym	myocyte of sinoatrial node
-WARN	duplicate_label_synonym	ocean	has_exact_synonym	ocean
-WARN	duplicate_label_synonym	sea	has_exact_synonym	sea
-WARN	duplicate_label_synonym	building	has_exact_synonym	building
-WARN	duplicate_label_synonym	ocean current	has_exact_synonym	ocean current
-WARN	duplicate_label_synonym	cellular_component	has_exact_synonym	cellular component
-WARN	duplicate_label_synonym	cellular_component	has_exact_synonym	cellular_component
-WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological process
-WARN	duplicate_label_synonym	biological_process	has_exact_synonym	biological_process
-WARN	duplicate_label_synonym	information content entity	has_exact_synonym	information content entity
-WARN	duplicate_label_synonym	plan specification	has_exact_synonym	plan specification
-WARN	duplicate_label_synonym	biological process	has_exact_synonym	biological process
-WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
-WARN	duplicate_label_synonym	Space flight	has_exact_synonym	Space flight
-WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
-WARN	duplicate_label_synonym	organism substance	has_exact_synonym	organism substance
-WARN	duplicate_label_synonym	simple columnar epithelium	has_exact_synonym	simple columnar epithelium
-WARN	duplicate_label_synonym	respiratory system	has_exact_synonym	respiratory system
-WARN	duplicate_label_synonym	musculature	has_exact_synonym	musculature
-WARN	duplicate_label_synonym	posterior vena cava	has_exact_synonym	posterior vena cava
-WARN	duplicate_label_synonym	uvea	has_exact_synonym	uvea
-WARN	duplicate_label_synonym	rhombomere	has_exact_synonym	rhombomere
-WARN	duplicate_label_synonym	submucosa of esophagus	has_exact_synonym	submucosa of esophagus
-WARN	duplicate_label_synonym	gray matter	has_exact_synonym	gray matter
-WARN	duplicate_label_synonym	right cardiac atrium	has_exact_synonym	right cardiac atrium
-WARN	duplicate_label_synonym	left cardiac atrium	has_exact_synonym	left cardiac atrium
-WARN	duplicate_label_synonym	appendicular skeleton	has_exact_synonym	appendicular skeleton
-WARN	duplicate_label_synonym	artery smooth muscle tissue	has_exact_synonym	artery smooth muscle tissue
-WARN	duplicate_label_synonym	gray matter of spinal cord	has_exact_synonym	gray matter of spinal cord
-WARN	duplicate_label_synonym	cartilage tissue	has_exact_synonym	cartilage tissue
-WARN	duplicate_label_synonym	esophagus mucosa	has_exact_synonym	esophagus mucosa
-WARN	duplicate_label_synonym	iris epithelium	has_exact_synonym	iris epithelium
-WARN	duplicate_label_synonym	skeletal muscle tissue of eye	has_exact_synonym	skeletal muscle tissue of eye
-WARN	duplicate_label_synonym	cardiac muscle tissue of interventricular septum	has_exact_synonym	cardiac muscle tissue of interventricular septum
-WARN	duplicate_label_synonym	skeletal muscle tissue of pharynx	has_exact_synonym	skeletal muscle tissue of pharynx
-WARN	duplicate_label_synonym	gland of digestive tract	has_exact_synonym	gland of digestive tract
-WARN	duplicate_label_synonym	facial bone	has_exact_synonym	facial bone
-WARN	duplicate_label_synonym	mouth mucosa	has_exact_synonym	mouth mucosa
-WARN	duplicate_label_synonym	mesencephalic neural crest	has_exact_synonym	mesencephalic neural crest
-WARN	duplicate_label_synonym	skeletal muscle tissue of trunk	has_exact_synonym	skeletal muscle tissue of trunk
-WARN	duplicate_label_synonym	reproductive gland	has_exact_synonym	reproductive gland
-WARN	duplicate_label_synonym	germinal neuroepithelium	has_exact_synonym	germinal neuroepithelium
-WARN	duplicate_label_synonym	primary heart field	has_exact_synonym	primary heart field
-WARN	duplicate_label_synonym	cardiac vein	has_exact_synonym	cardiac vein
-WARN	duplicate_label_synonym	external genitalia	has_exact_synonym	external genitalia
-WARN	duplicate_label_synonym	paired limb/fin bud	has_exact_synonym	paired limb/fin bud
-WARN	duplicate_label_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
-WARN	duplicate_label_synonym	anterior limiting lamina of cornea	has_exact_synonym	anterior limiting lamina of cornea
-WARN	duplicate_label_synonym	pelvic appendage	has_exact_synonym	pelvic appendage
-WARN	duplicate_label_synonym	neuromere	has_exact_synonym	neuromere
-WARN	duplicate_label_synonym	primitive heart tube	has_exact_synonym	primitive heart tube
-WARN	duplicate_label_synonym	paired limb/fin field	has_exact_synonym	paired limb/fin field
-WARN	duplicate_label_synonym	head mesenchyme from mesoderm	has_exact_synonym	head mesenchyme from mesoderm
-WARN	duplicate_label_synonym	lumen of digestive tract	has_exact_synonym	lumen of digestive tract
-WARN	duplicate_label_synonym	ovary stroma	has_exact_synonym	ovary stroma
-WARN	duplicate_label_synonym	anatomical junction	has_exact_synonym	anatomical junction
-WARN	duplicate_label_synonym	pelvic girdle skeleton	has_exact_synonym	pelvic girdle skeleton
-WARN	duplicate_label_synonym	ciliary processes	has_exact_synonym	ciliary processes
-WARN	duplicate_label_synonym	facial skeleton	has_exact_synonym	facial skeleton
-WARN	duplicate_label_synonym	hematopoietic tissue	has_exact_synonym	hematopoietic tissue
-WARN	duplicate_label_synonym	foramen of skull	has_exact_synonym	foramen of skull
-WARN	duplicate_label_synonym	arterial blood	has_exact_synonym	arterial blood
-WARN	duplicate_label_synonym	venous blood	has_exact_synonym	venous blood
-WARN	duplicate_label_synonym	thoracic skeleton	has_exact_synonym	thoracic skeleton
-WARN	duplicate_label_synonym	abdominal viscera	has_exact_synonym	abdominal viscera
-WARN	duplicate_label_synonym	lung field	has_exact_synonym	lung field
-WARN	duplicate_label_synonym	fraction	alternative term	fraction
-WARN	duplicate_label_synonym	pH	has_exact_synonym	pH
-WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
-WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
-WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
-WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 
-WARN	annotation_whitespace	occurrent	IAO:0000602	(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 
-WARN	annotation_whitespace	occurrent	IAO:0000602	(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 
-WARN	annotation_whitespace	independent continuant	IAO:0000602	(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 
-WARN	annotation_whitespace	independent continuant	IAO:0000602	(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 
-WARN	annotation_whitespace	independent continuant	IAO:0000602	(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 
-WARN	annotation_whitespace	spatial region	IAO:0000602	(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 
-WARN	annotation_whitespace	spatial region	IAO:0000602	(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 
-WARN	annotation_whitespace	process	IAO:0000602	(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 
-WARN	annotation_whitespace	disposition	IAO:0000602	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 
-WARN	annotation_whitespace	disposition	IAO:0000602	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 
-WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 
-WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
-WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
-WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
-WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] 
-WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
-WARN	annotation_whitespace	role	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
-WARN	annotation_whitespace	object aggregate	editor note	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
-WARN	annotation_whitespace	object aggregate	IAO:0000602	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
-WARN	annotation_whitespace	generically dependent continuant	IAO:0000602	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 
-WARN	annotation_whitespace	function	IAO:0000602	(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 
-WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
-WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
-WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
-WARN	annotation_whitespace	cellular_component	textual definition	"
-The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.
+WARN	invalid_xref	cell	database_cross_reference	FMA:68646 
+WARN	invalid_xref	cell	database_cross_reference	"KUPO:0000002
+
 "
-WARN	annotation_whitespace	cellular_component	rdfs:comment	"
-Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
-"
-WARN	annotation_whitespace	biological_process	textual definition	"Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.
-"
-WARN	annotation_whitespace	biological_process	rdfs:comment	"Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
-"
-WARN	annotation_whitespace	cellular process	textual definition	"
-Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.
-"
-WARN	annotation_whitespace	single-organism process	textual definition	"
-A biological process that involves only one organism.
-"
-WARN	annotation_whitespace	single-organism cellular process	textual definition	"
-Any process that is carried out at the cellular level, occurring within a single organism.
-"
-WARN	annotation_whitespace	response to stimulus	textual definition	"
-Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.
-"
-WARN	annotation_whitespace	response to stimulus	rdfs:comment	"
-Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
-"
-WARN	annotation_whitespace	cellular response to stimulus	textual definition	"
-Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus by a cell and ends with a change in state or activity or the cell.
-"
-WARN	annotation_whitespace	cellular response to stimulus	rdfs:comment	"
-Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
-"
-WARN	annotation_whitespace	datum label	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
-"
-WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
-Barry Smith
-
-The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
-
-Can you fix to something like:
-
-A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
-
-Alan Ruttenberg
-
-Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
-
-On the specifics of the proposed definition:
-
-We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
-
-Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
-
-We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
-WARN	annotation_whitespace	is_supported_by_data	example of usage	"The relation between the conclusion \""Gene tpbA is involved in EPS production\"" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. "
-WARN	annotation_whitespace	drawing a conclusion based on data	example of usage	Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. 
-WARN	annotation_whitespace	categorical label	example of usage	The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. 
-WARN	annotation_whitespace	device	editor note	"2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \""device\"", and are enumerating the types of roles that a reagent can perform.
-
-2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:
-
-(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.
-
-(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.
-
-(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.
-
-In the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.  "
-WARN	annotation_whitespace	questionnaire	editor note	"JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. 
-JZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. @en"
-WARN	annotation_whitespace	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
-WARN	annotation_whitespace	conclusion based on data	editor note	"In the Philly 2013 workshop, we recognized the limitations of \""conclusion textual entity\"", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate. "
-WARN	annotation_whitespace	histologic grade for ovarian tumor according to a two-tier grading system	textual definition	A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. 
-WARN	annotation_whitespace	Stage 0 (AJCC 7th)	textual definition	A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. 
-WARN	annotation_whitespace	Stage IIA (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. 
-WARN	annotation_whitespace	Stage IIA1 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. 
-WARN	annotation_whitespace	Stage IIA2 (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. 
-WARN	annotation_whitespace	Stage IIB (FIGO)	textual definition	An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. 
-WARN	annotation_whitespace	Anthropogenic radiation exposure	alternative term	Exposure to human generated radiation 
-WARN	annotation_whitespace	Behavioural study	obo:definition	 A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology.
-WARN	annotation_whitespace	Social science and humanities study 	label	Social science and humanities study 
-WARN	annotation_whitespace	Genetic population study	obo:definition	 Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment.
-WARN	annotation_whitespace	Registry study	obo:definition	Observational studies which include an organized system that uses observational methods to collect uniform data (clinical and other) prospectively for a population defined by a particular disorder/disease, condition (including susceptibility to a disorder), or exposure (including products, health care services, and/or procedures) and that serves a predetermined scientific, clinical, or policy purpose. Patient registries may be single purpose or on-going data collection programs that address one or more questions. (AHRQ) An observational study that is also considered to be a Patient Registry. 
-WARN	annotation_whitespace	Bystander effect study	obo:definition	Study of the cellular phenomenon which radiation energy is not been directly deposited in cells by transfer of medium, proximity/justaposition, or other means, but results in their behaving as if they had been irradiated. 
-WARN	annotation_whitespace	Meteorology study 	label	Meteorology study 
-WARN	annotation_whitespace	gamma ray photon	obo:definition	Photons having energies that are greater than tens of thousands of electron volts (eV).  
-WARN	annotation_whitespace	Iron-56 nucleus	alternative term	Fe-56 ion;Fe-56 nucleus;Fe-56 
-WARN	annotation_whitespace	Iron-56 nucleus	obo:definition	An atomic nucleus with 26 protons and 30 neutrons 
-WARN	annotation_whitespace	Silicon-28 nucleus	alternative term	Si-28 ion;Si-28 nucleus;Si-28 
-WARN	annotation_whitespace	Silicon-28 nucleus	obo:definition	An atomic nucleus with 14 protons and 14 neutrons 
-WARN	annotation_whitespace	Carbon-12 nucleus	alternative term	C-12 ion;C-12 nucleus;C-12 
-WARN	annotation_whitespace	Carbon-12 nucleus	obo:definition	An atomic nucleus with 6 protons and 6 neutrons 
-WARN	annotation_whitespace	Helium-4 nucleus	alternative term	He-4 ion;He-4 nucleus;He-4 
-WARN	annotation_whitespace	Helium-4 nucleus	obo:definition	An atomic nucleus with 2 protons and 2 neutrons 
-WARN	annotation_whitespace	Neon-20 nucleus	alternative term	Ne-20 ion;Ne-20 nucleus;Ne-20 
-WARN	annotation_whitespace	Neon-20 nucleus	obo:definition	An atomic nucleus with 10 protons and 10 neutrons 
-WARN	annotation_whitespace	ionizing radiation energy	obo:definition	The kinetic energy carried by a particle or photon of ionizing radiation. 
-WARN	annotation_whitespace	non-irradiated	obo:definition	An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation 
-WARN	annotation_whitespace	irradiation protocol	obo:definition	A protocol for administering radiation to a sample 
-WARN	annotation_whitespace	Niobium-93 nucleus	alternative term	Nb-93 ion;Nb-93 nucleus;Nb-93 
-WARN	annotation_whitespace	Niobium-93 nucleus	obo:definition	An atomic nucleus with 41 protons and 52 neutrons 
-WARN	annotation_whitespace	Silver-107 nucleus	alternative term	Ag-107 ion;Ag-107 nucleus;Ag-107 
-WARN	annotation_whitespace	Silver-107 nucleus	obo:definition	An atomic nucleus with 47 protons and 60 neutrons 
-WARN	annotation_whitespace	Xenon-129 nucleus	alternative term	Xe-129 ion;Xe-129 nucleus;Xe-129 
-WARN	annotation_whitespace	Xenon-129 nucleus	obo:definition	An atomic nucleus with 54 protons and 75 neutrons 
-WARN	annotation_whitespace	Tantalum-181 nucleus	alternative term	Ta-181 ion;Ta-181 nucleus;Ta-181 
-WARN	annotation_whitespace	Tantalum-181 nucleus	obo:definition	An atomic nucleus with 73 protons and 108 neutrons 
-WARN	annotation_whitespace	Gold-197 nucleus	alternative term	Au-197 ion;Au-197 nucleus;Au-197 
-WARN	annotation_whitespace	Gold-197 nucleus	obo:definition	An atomic nucleus with 79 protons and 118 neutrons 
-WARN	annotation_whitespace	Nitrogen-14 nucleus	alternative term	N-14 ion;N-14 nucleus;N-14 
-WARN	annotation_whitespace	Nitrogen-14 nucleus	obo:definition	An atomic nucleus with 7 protons and 7 neutrons 
-WARN	annotation_whitespace	Oxygen-16 nucleus	alternative term	O-16 ion;O-16 nucleus;O-16 
-WARN	annotation_whitespace	Oxygen-16 nucleus	obo:definition	An atomic nucleus with 8 protons and 8 neutrons 
-WARN	annotation_whitespace	Argon-40 nucleus	alternative term	Ar-40  ion;Ar-40  nucleus;Ar-40  
-WARN	annotation_whitespace	Argon-40 nucleus	obo:definition	An atomic nucleus with 18 protons and 22 neutrons 
-WARN	annotation_whitespace	Titanium-48 nucleus	alternative term	Ti-48  ion;Ti-48  nucleus;Ti-48  
-WARN	annotation_whitespace	Titanium-48 nucleus	obo:definition	An atomic nucleus with 22 protons and 26 neutrons 
-WARN	annotation_whitespace	Krypton-84 nucleus	alternative term	Kr-84 ion;Kr-84 nucleus;Kr-84 
-WARN	annotation_whitespace	Krypton-84 nucleus	obo:definition	An atomic nucleus with 36 protons and 48 neutrons 
-WARN	annotation_whitespace	miliigray per second	alternative term	mGy/sec 
-WARN	annotation_whitespace	biodosimetry	obo:definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
-WARN	annotation_whitespace	delta ray	obo:definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
-WARN	annotation_whitespace	quality factor	obo:definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
-WARN	annotation_whitespace	relative biological effectiveness	example of usage	Neutrons have been found to have a higher RBE than electrons. 
-WARN	annotation_whitespace	spatially disjoint from	editor note	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
-WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
-WARN	annotation_whitespace	siemens	has_exact_synonym	mho 
-WARN	annotation_whitespace	electric field strength unit	has_exact_synonym	E-field strength 
-WARN	annotation_whitespace	Title	Description	"
-        Typically, a Title will be a name by which the resource is
-         formally known.
-    @en-us"
-WARN	annotation_whitespace	BALB/c	rdfs:comment	"Description from https://www.jax.org/strain/000651:
-
-BALB/c mice are particularly well known for the production of plasmacytomas following injection with mineral oil forming the basis for the production of monoclonal antibodies. Although not all BALB/c substrains have been examined for plasmacytoma induction, substrains derived from the Andervont (An) lineage (which includes BALB/cByJ) typically are susceptible, while those descended from BALB/cJ are resistant (see: Potter M, 1985). Mammary tumor incidence is normally low but infection with mammary tumor virus by fostering to MMTV+ C3H mice dramatically increases tumor number and age of onset. BALB/c mice develop other cancers later in life including reticular neoplasms, primary lung tumors, and renal tumors. Rare spontaneous myoepitheliomas arising from myoepithelial cells of various exocrine glands have been observed in both BALB/cJ and BALB/cByJ substrains.
-
-White et al. reported a variation in thioglycolate medium-induced peritoneal leukocyte recruitment in 4 analyzed strains. The response of total leukocyte recruitment, from greatest to least, was C57BL/6J>BALB/c>CD1>129X1/SvJ. Variations were also found in the timeline of response and cell types most impacted.
-
-BALB/c mice immunized with PLP180-199 develop an atypical form of experimental autoimmune encephalomyelitis (EAE) in which susceptibility is determined by location. In the spinal cord 60-70% mice develop pathological lesions and in the brain and cerebellum 100% of mice develop sever lesions.
-
-Dorso-ventral vaginal septa is observed in some BALB/cJ females, and may contribute to non-productive females in this strain. (Cunliffe-Beamer T, Lab Anim Sci, 1976)
-"
-WARN	annotation_whitespace	CAST/EiJ	textual definition	"
-
-Both CAST/EiJ and CASA/RkJ (Stock No. 000735) were derived from wild mice trapped in Thailand. CAST is often combined with the common laboratory strains to generate F1 hybrids with high levels of heterozygosity for use in genetic mapping. Unlike the wild-derived strain SPRET, male F1 mice from a CAST cross are fertile.
-
-Like CASA, CAST is resistant to flavivirus infection. The flavivirus family includes pathogens responsible for dengue, yellow fever and several forms of encephalitis. Most common laboratory mice are sensitive to flavivirus infection. Resistance/sensitivity is conferred through the oligoA synthase Oas1b locus. In a comparison of multiple strains, CASA and CAST exhibit reduced numbers of retinal ganglion cells as compared to common laboratory strains and other wild-derived strains. In a 2015 study comparing CAST/Ei and the other Collaborative Cross inbred strains (A/J, C3H/HeJ, C57BL/6J, DBA/2J, 129S1/SvImJ, NOD/LtJ, NZO/HlLtJ, and WSB/EiJ), dorsal root ganglion neurons from CAST/Ei mice demonstrate a significantly improved ability to regenerate axons in an inhibitory environment as determined by an increase in number of neurons with neurites and longer axonal process per neuron under both naive and pre-injured conditions. In addition, as compared to neurons from C57BL/6 mice, CAST/Ei neurons exhibit more extensive axonal regeneration in the spinal cord and optic nerve following injury and show greater sprouting following ischemic stroke.
-
-Wild-derived mice are genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and are valuable tools for genetic mapping, evolution and systematics research.
-"
-WARN	annotation_whitespace	FVB/NJ	textual definition	FVB/NJ was inbred for the Fv1b allele which confers sensitivity to the Friend leukemia virus B strain. Due to the prominent pronuclei in their fertilized eggs and the large litter size, FVB/NJ mice are commonly used for transgenic injection. Compared to many other inbred strains, FVB/NJ is highly susceptible to asthma-like airway responsiveness with significant generation of antigen-specific IgE. Despite having the H2q MHC haplotype, FVB/NJ are resistant to collagen-induced arthritis. This resistance stems from coding polymorphisms in Tcra-V11.1 and a genomic deletion of some Tcrb-V genes that includes Tcrb-V8.2. FVB/NJ have higher than average activity, anxiety, and basal body temperature, low stress-induced hyperthermia, and are homozygous for the Pde6brd1 allele, which results in early onset retinal degeneration. Although FVB/N typically do not develop spontaneous tumors, they are highly susceptible to chemically induced squamous cell carcinomas with a high rate of malignant conversion from papilloma to carcinoma. 
-WARN	annotation_whitespace	CBA/J	textual definition	"CBA/J inbred mice are widely used as a general purpose strain. CBA/J strain is the only CBA substrain that carries the Pde6brd1 mutation, which causes blindness by wean age. CBA/J mice are not histocompatible with the CBA/CaJ (Stock No. 000654) substrain (Green and Kaufer, 1965).
-
-The CBA/J inbred mouse strain is used to study granulomatous experimental autoimmune thyroiditis (G-EAT), are relatively resistant to diet-induced atherosclerosis (Paigen et al. 1990), and develop a mild hearing loss late in life, with most of the hearing loss occurring in the higher frequencies (Sweet et al. 1988). Renal tubulointerstitial lesions have been observed in this strain at a high frequency (Rudofsky 1978). Some CBA/J mice spontaneously develop exocrine pancreatic insufficiency syndrome (Eppig and Leiter 1977, Leiter et al. 1977).
-"
-WARN	annotation_whitespace	CAROLI/EiJ	textual definition	CAROLI was derived from wild mice trapped in Thailand and is from the species Mus caroli, which is distantly related to laboratory mice and does not breed with laboratory mice. These mice are characterized by black feet. This wild derived mouse strain is genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and is a valuable tool for sequence comparison, evolution and systematics research. 
-WARN	annotation_whitespace	has_exact_synonym	textual definition	An alternative label for a given entity such as a commonly used abbreviation or synonym. 
-WARN	equivalent_pair	role	owl:equivalentClass	role
-WARN	equivalent_pair	protein	owl:equivalentClass	protein
-INFO	missing_superclass	entity	rdfs:subClassOf	
-INFO	missing_superclass	cell	rdfs:subClassOf	
-INFO	missing_superclass	DNA repair	rdfs:subClassOf	
-INFO	missing_superclass	plant structure development stage	rdfs:subClassOf	
-INFO	missing_superclass	gene	rdfs:subClassOf	
+WARN	invalid_xref	cell	database_cross_reference	VHOG:0001533
+WARN	invalid_xref	cell	database_cross_reference	XAO:0003012
+WARN	invalid_xref	anteriorly connected to	database_cross_reference	anteriorly_connected_to
+WARN	invalid_xref	channel for	database_cross_reference	channel_for
+WARN	invalid_xref	channels_from	database_cross_reference	channels_from
+WARN	invalid_xref	channels_into	database_cross_reference	channels_into
+WARN	invalid_xref	conduit for	database_cross_reference	conduit_for
+WARN	invalid_xref	distally connected to	database_cross_reference	distally_connected_to
+WARN	invalid_xref	filtered through	database_cross_reference	filtered_through
+WARN	invalid_xref	posteriorly connected to	database_cross_reference	posteriorly_connected_to
+WARN	invalid_xref	protects	database_cross_reference	protects
+WARN	invalid_xref	proximally connected to	database_cross_reference	proximally_connected_to
+WARN	invalid_xref	subdivision of	database_cross_reference	subdivision_of
+WARN	missing_synonymtype_declaration	obo:chebi#IUPAC_NAME	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#blast_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#common_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#equivalent_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#genbank_common_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#in_part	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#misnomer	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#misspelling	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#scientific_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon#synonym	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#blast_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#common_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#genbank_common_name	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#synonym	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Plural	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:pr#Gene-based	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:pr#PRO-short-label	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	abbreviation	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:uberon/core#DEPRECATED	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:uberon/core#DUBIOUS	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:uberon/core#HUMAN_PREFERRED	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:uberon/core#INCONSISTENT	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:uberon/core#LATIN	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:uberon/core#PENDING_REVIEW	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:uberon/core#PLURAL	rdfs:subPropertyOf	
+WARN	missing_synonymtype_declaration	obo:uberon/core#SENSU	rdfs:subPropertyOf	
+WARN	duplicate_scoped_synonym	nonmetal atom	has_exact_synonym	nonmetal
+WARN	duplicate_scoped_synonym	nonmetal atom	oboInOwl:hasRelatedSynonym	nonmetal
+WARN	duplicate_scoped_synonym	oxygen atom	has_exact_synonym	oxygen
+WARN	duplicate_scoped_synonym	oxygen atom	oboInOwl:hasRelatedSynonym	oxygen
+WARN	duplicate_scoped_synonym	phosphate	has_exact_synonym	phosphates
+WARN	duplicate_scoped_synonym	phosphate	oboInOwl:hasRelatedSynonym	phosphates
+WARN	duplicate_scoped_synonym	carbon atom	has_exact_synonym	carbon
+WARN	duplicate_scoped_synonym	carbon atom	oboInOwl:hasRelatedSynonym	carbon
+WARN	duplicate_scoped_synonym	phosphorus atom	has_exact_synonym	phosphorus
+WARN	duplicate_scoped_synonym	phosphorus atom	oboInOwl:hasRelatedSynonym	phosphorus
+WARN	duplicate_scoped_synonym	helium atom	has_exact_synonym	helium
+WARN	duplicate_scoped_synonym	helium atom	oboInOwl:hasRelatedSynonym	helium
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atome
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atomo
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atoms
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	atomus
+WARN	duplicate_scoped_synonym	atom	has_exact_synonym	elements
+WARN	duplicate_scoped_synonym	atom	oboInOwl:hasRelatedSynonym	atome
+WARN	duplicate_scoped_synonym	atom	oboInOwl:hasRelatedSynonym	atomo
+WARN	duplicate_scoped_synonym	atom	oboInOwl:hasRelatedSynonym	atoms
+WARN	duplicate_scoped_synonym	atom	oboInOwl:hasRelatedSynonym	atomus
+WARN	duplicate_scoped_synonym	atom	oboInOwl:hasRelatedSynonym	elements
+WARN	duplicate_scoped_synonym	noble gas atom	has_exact_synonym	noble gas
+WARN	duplicate_scoped_synonym	noble gas atom	oboInOwl:hasRelatedSynonym	noble gas
+WARN	duplicate_scoped_synonym	hydrogen atom	has_exact_synonym	hydrogen
+WARN	duplicate_scoped_synonym	hydrogen atom	oboInOwl:hasRelatedSynonym	hydrogen
+WARN	duplicate_scoped_synonym	Euteleostomi	alternative term	bony vertebrates
+WARN	duplicate_scoped_synonym	Euteleostomi	has_exact_synonym	bony vertebrates
+WARN	duplicate_scoped_synonym	Bacteria	alternative term	eubacteria
+WARN	duplicate_scoped_synonym	Bacteria	has_exact_synonym	eubacteria
+WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eucaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	alternative term	eukaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	Eucaryotae
+WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	Eukarya
+WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eucaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	has_exact_synonym	eukaryotes
+WARN	duplicate_scoped_synonym	Eukaryota	oboInOwl:hasRelatedSynonym	Eucaryotae
+WARN	duplicate_scoped_synonym	Eukaryota	oboInOwl:hasRelatedSynonym	Eukarya
+WARN	duplicate_scoped_synonym	Eukaryota	oboInOwl:hasRelatedSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	Phaeophyceae	has_exact_synonym	brown algae
+WARN	duplicate_scoped_synonym	Phaeophyceae	oboInOwl:hasRelatedSynonym	brown algae
+WARN	duplicate_scoped_synonym	Embryophyta	has_exact_synonym	land plants
+WARN	duplicate_scoped_synonym	Embryophyta	oboInOwl:hasRelatedSynonym	land plants
+WARN	duplicate_scoped_synonym	Bryophyta	has_exact_synonym	mosses
+WARN	duplicate_scoped_synonym	Bryophyta	oboInOwl:hasRelatedSynonym	mosses
+WARN	duplicate_scoped_synonym	Tetrapoda	alternative term	tetrapods
+WARN	duplicate_scoped_synonym	Tetrapoda	has_exact_synonym	tetrapods
+WARN	duplicate_scoped_synonym	Amniota	alternative term	amniotes
+WARN	duplicate_scoped_synonym	Amniota	has_exact_synonym	amniotes
+WARN	duplicate_scoped_synonym	Viridiplantae	has_exact_synonym	green plants
+WARN	duplicate_scoped_synonym	Viridiplantae	oboInOwl:hasRelatedSynonym	green plants
+WARN	duplicate_scoped_synonym	Carnivora	has_exact_synonym	carnivores
+WARN	duplicate_scoped_synonym	Carnivora	oboInOwl:hasRelatedSynonym	carnivores
+WARN	duplicate_scoped_synonym	Magnoliopsida	has_exact_synonym	flowering plants
+WARN	duplicate_scoped_synonym	Magnoliopsida	oboInOwl:hasRelatedSynonym	flowering plants
+WARN	duplicate_scoped_synonym	Apoidea	has_exact_synonym	bees
+WARN	duplicate_scoped_synonym	Apoidea	oboInOwl:hasRelatedSynonym	bees
+WARN	duplicate_scoped_synonym	Papilionoidea	has_exact_synonym	butterflies
+WARN	duplicate_scoped_synonym	Papilionoidea	oboInOwl:hasRelatedSynonym	butterflies
+WARN	duplicate_scoped_synonym	Mammalia	alternative term	mammals
+WARN	duplicate_scoped_synonym	Mammalia	has_exact_synonym	mammals
+WARN	duplicate_scoped_synonym	Mammalia	oboInOwl:hasRelatedSynonym	mammals
+WARN	duplicate_scoped_synonym	Liliopsida	has_exact_synonym	monocots
+WARN	duplicate_scoped_synonym	Liliopsida	oboInOwl:hasRelatedSynonym	monocots
+WARN	duplicate_scoped_synonym	Tracheophyta	has_exact_synonym	vascular plants
+WARN	duplicate_scoped_synonym	Tracheophyta	oboInOwl:hasRelatedSynonym	vascular plants
+WARN	duplicate_scoped_synonym	Spermatophyta	has_exact_synonym	seed plants
+WARN	duplicate_scoped_synonym	Spermatophyta	oboInOwl:hasRelatedSynonym	seed plants
+WARN	duplicate_scoped_synonym	Platyhelminthes	has_exact_synonym	flatworms
+WARN	duplicate_scoped_synonym	Platyhelminthes	oboInOwl:hasRelatedSynonym	flatworms
+WARN	duplicate_scoped_synonym	Nematoda	has_exact_synonym	nematodes
+WARN	duplicate_scoped_synonym	Nematoda	oboInOwl:hasRelatedSynonym	nematodes
+WARN	duplicate_scoped_synonym	Mollusca	has_exact_synonym	molluscs
+WARN	duplicate_scoped_synonym	Mollusca	oboInOwl:hasRelatedSynonym	molluscs
+WARN	duplicate_scoped_synonym	Arthropoda	has_exact_synonym	arthropods
+WARN	duplicate_scoped_synonym	Arthropoda	oboInOwl:hasRelatedSynonym	arthropods
+WARN	duplicate_scoped_synonym	Crustacea	has_exact_synonym	crustaceans
+WARN	duplicate_scoped_synonym	Crustacea	oboInOwl:hasRelatedSynonym	crustaceans
+WARN	duplicate_scoped_synonym	Lepidoptera	has_exact_synonym	moths
+WARN	duplicate_scoped_synonym	Lepidoptera	oboInOwl:hasRelatedSynonym	moths
+WARN	duplicate_scoped_synonym	Diptera	has_exact_synonym	flies
+WARN	duplicate_scoped_synonym	Diptera	oboInOwl:hasRelatedSynonym	flies
+WARN	duplicate_scoped_synonym	Hymenoptera	has_exact_synonym	hymenopterans
+WARN	duplicate_scoped_synonym	Hymenoptera	oboInOwl:hasRelatedSynonym	hymenopterans
+WARN	duplicate_scoped_synonym	Apocrita	has_exact_synonym	wasps, ants, and bees
+WARN	duplicate_scoped_synonym	Apocrita	oboInOwl:hasRelatedSynonym	wasps, ants, and bees
+WARN	duplicate_scoped_synonym	Chordata	has_exact_synonym	chordates
+WARN	duplicate_scoped_synonym	Chordata	oboInOwl:hasRelatedSynonym	chordates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	Vertebrata
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	alternative term	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	Vertebrata
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	has_exact_synonym	vertebrates
+WARN	duplicate_scoped_synonym	Vertebrata <vertebrates>	oboInOwl:hasRelatedSynonym	vertebrates
+WARN	duplicate_scoped_synonym	Amphibia	has_exact_synonym	amphibians
+WARN	duplicate_scoped_synonym	Amphibia	oboInOwl:hasRelatedSynonym	amphibians
+WARN	duplicate_scoped_synonym	Aves	has_exact_synonym	birds
+WARN	duplicate_scoped_synonym	Aves	oboInOwl:hasRelatedSynonym	birds
+WARN	duplicate_scoped_synonym	Eutheria	has_exact_synonym	placentals
+WARN	duplicate_scoped_synonym	Eutheria	oboInOwl:hasRelatedSynonym	placentals
+WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
+WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	man
+WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	human
+WARN	duplicate_scoped_synonym	Homo sapiens	has_exact_synonym	man
+WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	has_exact_synonym	ionising radiation
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	alternative term	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	has_exact_synonym	ALARA
+WARN	duplicate_scoped_synonym	delta ray	alternative term	delta electron
+WARN	duplicate_scoped_synonym	delta ray	has_exact_synonym	delta electron
+WARN	duplicate_scoped_synonym	linear energy transfer	alternative term	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	has_exact_synonym	LET
+WARN	duplicate_scoped_synonym	relative biological effectiveness	alternative term	RBE
+WARN	duplicate_scoped_synonym	relative biological effectiveness	has_exact_synonym	RBE
+WARN	duplicate_scoped_synonym	immediately preceded by	alternative term	starts_at_end_of
+WARN	duplicate_scoped_synonym	immediately preceded by	has_exact_synonym	starts_at_end_of
+WARN	duplicate_scoped_synonym	zygote stage	has_exact_synonym	fertilized egg stage
+WARN	duplicate_scoped_synonym	zygote stage	oboInOwl:hasRelatedSynonym	fertilized egg stage
+WARN	duplicate_scoped_synonym	respiratory tube	has_exact_synonym	segment of tracheobronchial tree
+WARN	duplicate_scoped_synonym	respiratory tube	oboInOwl:hasNarrowSynonym	segment of tracheobronchial tree
+WARN	duplicate_scoped_synonym	respiratory system	has_exact_synonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	respiratory system	oboInOwl:hasRelatedSynonym	apparatus respiratorius
+WARN	duplicate_scoped_synonym	sensory system	has_exact_synonym	organa sensuum
+WARN	duplicate_scoped_synonym	sensory system	oboInOwl:hasRelatedSynonym	organa sensuum
+WARN	duplicate_scoped_synonym	pectoral girdle region	has_exact_synonym	cingulum membri superioris
+WARN	duplicate_scoped_synonym	pectoral girdle region	oboInOwl:hasNarrowSynonym	cingulum membri superioris
+WARN	duplicate_scoped_synonym	ascending aorta	has_exact_synonym	pars ascendens aortae
+WARN	duplicate_scoped_synonym	ascending aorta	oboInOwl:hasRelatedSynonym	pars ascendens aortae
+WARN	duplicate_scoped_synonym	descending aorta	has_exact_synonym	pars descendens aortae
+WARN	duplicate_scoped_synonym	descending aorta	oboInOwl:hasRelatedSynonym	pars descendens aortae
+WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	abdominal part of aorta
+WARN	duplicate_scoped_synonym	abdominal aorta	has_exact_synonym	pars abdominalis aortae
+WARN	duplicate_scoped_synonym	abdominal aorta	oboInOwl:hasRelatedSynonym	abdominal part of aorta
+WARN	duplicate_scoped_synonym	abdominal aorta	oboInOwl:hasRelatedSynonym	pars abdominalis aortae
+WARN	duplicate_scoped_synonym	brachiocephalic artery	has_exact_synonym	truncus brachiocephalicus
+WARN	duplicate_scoped_synonym	brachiocephalic artery	oboInOwl:hasRelatedSynonym	truncus brachiocephalicus
+WARN	duplicate_scoped_synonym	subclavian artery	has_exact_synonym	arteria subclavia
+WARN	duplicate_scoped_synonym	subclavian artery	oboInOwl:hasRelatedSynonym	arteria subclavia
+WARN	duplicate_scoped_synonym	optic choroid	has_exact_synonym	choroidea
+WARN	duplicate_scoped_synonym	optic choroid	oboInOwl:hasRelatedSynonym	choroidea
+WARN	duplicate_scoped_synonym	esophagus mucosa	has_exact_synonym	tunica mucosa oesophagi
+WARN	duplicate_scoped_synonym	esophagus mucosa	oboInOwl:hasRelatedSynonym	tunica mucosa oesophagi
+WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has_exact_synonym	hindlimb ectoderm
+WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	oboInOwl:hasNarrowSynonym	hindlimb ectoderm
+WARN	duplicate_scoped_synonym	abdominal wall	has_exact_synonym	paries abdominalis
+WARN	duplicate_scoped_synonym	abdominal wall	oboInOwl:hasRelatedSynonym	paries abdominalis
+WARN	duplicate_scoped_synonym	brachiocephalic vein	has_exact_synonym	innominate vein
+WARN	duplicate_scoped_synonym	brachiocephalic vein	oboInOwl:hasRelatedSynonym	innominate vein
+WARN	duplicate_scoped_synonym	mouth mucosa	has_exact_synonym	tunica mucosa oris
+WARN	duplicate_scoped_synonym	mouth mucosa	oboInOwl:hasRelatedSynonym	tunica mucosa oris
+WARN	duplicate_scoped_synonym	cardiac vein	has_exact_synonym	coronary vein
+WARN	duplicate_scoped_synonym	cardiac vein	oboInOwl:hasRelatedSynonym	coronary vein
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	branchial aortic arches
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	has_exact_synonym	pharyngeal arch artery
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	oboInOwl:hasRelatedSynonym	branchial aortic arches
+WARN	duplicate_scoped_synonym	pharyngeal arch artery	oboInOwl:hasRelatedSynonym	pharyngeal arch artery
+WARN	duplicate_scoped_synonym	interventricular septum muscular part	has_exact_synonym	muscular interventricular septum
+WARN	duplicate_scoped_synonym	interventricular septum muscular part	oboInOwl:hasRelatedSynonym	muscular interventricular septum
+WARN	duplicate_scoped_synonym	outflow part of right ventricle	has_exact_synonym	pulmonary conus
+WARN	duplicate_scoped_synonym	outflow part of right ventricle	oboInOwl:hasRelatedSynonym	pulmonary conus
+WARN	duplicate_scoped_synonym	corneo-scleral junction	has_exact_synonym	limbus corneae
+WARN	duplicate_scoped_synonym	corneo-scleral junction	oboInOwl:hasRelatedSynonym	limbus corneae
+WARN	duplicate_scoped_synonym	craniocervical region musculature	has_exact_synonym	head or neck muscle
+WARN	duplicate_scoped_synonym	craniocervical region musculature	oboInOwl:hasRelatedSynonym	head or neck muscle
+WARN	duplicate_scoped_synonym	ciliary processes	has_exact_synonym	processus ciliares
+WARN	duplicate_scoped_synonym	ciliary processes	oboInOwl:hasRelatedSynonym	processus ciliares
+WARN	equivalent_class_axiom_no_genus	chemical role	inheres in	chemical entity
+WARN	equivalent_class_axiom_no_genus	information representation	concretizes	information content entity
+WARN	equivalent_class_axiom_no_genus	public building	participates in	usage of an environment for community and social services
+WARN	equivalent_class_axiom_no_genus	regulation of behavior	regulates	behavior process
+WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
+WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
+WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
+WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
+WARN	equivalent_class_axiom_no_genus	decision tree building data transformation	achieves_planned_objective	decision tree induction objective
+WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_planned_objective	cross validation objective
+WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
+WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
+WARN	equivalent_class_axiom_no_genus	inbred Mus musculus strain	has quality	inbred
 INFO	lowercase_definition	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 INFO	lowercase_definition	process	textual definition	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
 INFO	lowercase_definition	disposition	IAO:0000600	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en
@@ -2811,6 +2810,9 @@ The part of a cell or its extracellular environment in which a gene product is l
 "
 INFO	lowercase_definition	cellular process	textual definition	"
 Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.
+"
+INFO	lowercase_definition	cell part	textual definition	"
+Any constituent part of a cell, the basic structural and functional unit of all organisms.
 "
 INFO	lowercase_definition	single-organism process	textual definition	"
 A biological process that involves only one organism.
@@ -2980,3 +2982,5 @@ Like CASA, CAST is resistant to flavivirus infection. The flavivirus family incl
 Wild-derived mice are genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and are valuable tools for genetic mapping, evolution and systematics research.
 "
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
+INFO	missing_superclass	entity	rdfs:subClassOf	
+INFO	missing_superclass	gene	rdfs:subClassOf	

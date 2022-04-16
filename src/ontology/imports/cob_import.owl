@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/cob_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-04-14/imports/cob_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-14</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-04-16/imports/cob_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -334,6 +334,18 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36342">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label xml:lang="en">subatomic particle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material entity that has a plasma membrane and results from cellular division.</obo:IAO_0000115>
+        <rdfs:comment>CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.</rdfs:comment>
+        <rdfs:comment>We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.</rdfs:comment>
+        <rdfs:label xml:lang="en">cell</rdfs:label>
     </owl:Class>
     
 

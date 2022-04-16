@@ -4,25 +4,18 @@ ERROR	label_whitespace	Meteorology study 	rdfs:label	Meteorology study
 ERROR	deprecated_boolean_datatype	Cobalt-57 gamma radiation	owl:deprecated	radionuclide
 ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
 ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
+ERROR	missing_label	BFO:0000023	rdfs:label	
 ERROR	missing_label	CHEBI:33252	rdfs:label	
 ERROR	missing_label	CHEBI:50906	rdfs:label	
+ERROR	missing_label	CL:0000000	rdfs:label	
 ERROR	missing_label	DOID:4	rdfs:label	
 ERROR	missing_label	GO:0005575	rdfs:label	
 ERROR	missing_label	GO:0009314	rdfs:label	
 ERROR	missing_label	GO:0010212	rdfs:label	
 ERROR	missing_label	OBI:0302889	rdfs:label	
+ERROR	missing_label	PO:0009012	rdfs:label	
 ERROR	missing_label	UBERON:0000000	rdfs:label	
 ERROR	missing_label	UO:0000127	rdfs:label	
-WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
-WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
-WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
-WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
-WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
-WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
-WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
-WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
 WARN	annotation_whitespace	Anthropogenic radiation exposure	IAO:0000118	Exposure to human generated radiation 
 WARN	annotation_whitespace	Behavioural study	obo:definition	 A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology.
 WARN	annotation_whitespace	Genetic population study	obo:definition	 Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment.
@@ -67,15 +60,29 @@ WARN	annotation_whitespace	biodosimetry	obo:definition	Use of a biological respo
 WARN	annotation_whitespace	delta ray	obo:definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
 WARN	annotation_whitespace	quality factor	obo:definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
 WARN	annotation_whitespace	relative biological effectiveness	IAO:0000112	Neutrons have been found to have a higher RBE than electrons. 
-WARN	equivalent_pair	BFO:0000023	owl:equivalentClass	CHEBI:50906
+WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
+WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
+WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
+WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
+WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
+WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
+WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
+WARN	duplicate_label_synonym	Space flight	oboInOwl:hasExactSynonym	Space flight
+WARN	missing_definition	BFO:0000023	IAO:0000115	
 WARN	missing_definition	CHEBI:33252	IAO:0000115	
 WARN	missing_definition	CHEBI:50906	IAO:0000115	
+WARN	missing_definition	CL:0000000	IAO:0000115	
 WARN	missing_definition	has atomic number	IAO:0000115	
 WARN	missing_definition	DOID:4	IAO:0000115	
 WARN	missing_definition	GO:0005575	IAO:0000115	
 WARN	missing_definition	GO:0009314	IAO:0000115	
 WARN	missing_definition	GO:0010212	IAO:0000115	
 WARN	missing_definition	OBI:0302889	IAO:0000115	
+WARN	missing_definition	PO:0009012	IAO:0000115	
 WARN	missing_definition	ionizing radiation categorized by source	IAO:0000115	
 WARN	missing_definition	space radiation	IAO:0000115	
 WARN	missing_definition	ground radiation	IAO:0000115	
@@ -397,5 +404,3 @@ WARN	missing_definition	tissue equivalence	IAO:0000115
 WARN	missing_definition	mass number	IAO:0000115	
 WARN	missing_definition	UBERON:0000000	IAO:0000115	
 WARN	missing_definition	UO:0000127	IAO:0000115	
-WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
-WARN	duplicate_label_synonym	Space flight	oboInOwl:hasExactSynonym	Space flight

@@ -10,6 +10,12 @@ imports/chebi_import.owl: mirror/chebi.owl imports/chebi_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/chebi_terms_combined.txt --force true --method BOT \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+imports/chmo_import.owl: mirror/chmo.owl imports/chmo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+		extract -T imports/chmo_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000040" --axioms subclass --trim false --signature true \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/doid_import.owl: 
 	if [ $(IMP) = true ]; then cp mirror/doid.owl imports/doid_import.owl; fi
@@ -38,6 +44,7 @@ imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
 		remove -t "PO:0028002" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
 		remove -t "PO:0009012" -t BFO:0000015 --trim false --axioms subclass --signature true --preserve-structure false\
 		remove -t "ENVO:02500000" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
+		remove -t "ENVO:01001174"  --select self --trim true --signature true --preserve-structure false\
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
