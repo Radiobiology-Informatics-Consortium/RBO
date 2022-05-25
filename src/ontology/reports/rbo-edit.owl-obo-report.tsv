@@ -1,9 +1,8 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	label_whitespace	Social science and humanities study 	rdfs:label	Social science and humanities study 
-ERROR	label_whitespace	Meteorology study 	rdfs:label	Meteorology study 
-ERROR	deprecated_boolean_datatype	Cobalt-57 gamma radiation	owl:deprecated	radionuclide
-ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
-ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
+ERROR	duplicate_label	space flight	rdfs:label	space flight
+ERROR	duplicate_label	space flight	rdfs:label	space flight
+ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
+ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
 ERROR	missing_label	BFO:0000023	rdfs:label	
 ERROR	missing_label	CHEBI:33252	rdfs:label	
 ERROR	missing_label	CHEBI:50906	rdfs:label	
@@ -16,12 +15,13 @@ ERROR	missing_label	OBI:0302889	rdfs:label
 ERROR	missing_label	PO:0009012	rdfs:label	
 ERROR	missing_label	UBERON:0000000	rdfs:label	
 ERROR	missing_label	UO:0000127	rdfs:label	
-WARN	annotation_whitespace	Anthropogenic radiation exposure	IAO:0000118	Exposure to human generated radiation 
-WARN	annotation_whitespace	Behavioural study	obo:definition	 A study of human or animal activity, in terms of motivation, direction, result, emotion, perception, or etiology.
-WARN	annotation_whitespace	Genetic population study	obo:definition	 Genetic study done at the population level or among population groups, generally to find the cause, incidence or spread of a disease or to see the response to a treatment, nutrition or environment.
-WARN	annotation_whitespace	Registry study	obo:definition	Observational studies which include an organized system that uses observational methods to collect uniform data (clinical and other) prospectively for a population defined by a particular disorder/disease, condition (including susceptibility to a disorder), or exposure (including products, health care services, and/or procedures) and that serves a predetermined scientific, clinical, or policy purpose. Patient registries may be single purpose or on-going data collection programs that address one or more questions. (AHRQ) An observational study that is also considered to be a Patient Registry. 
-WARN	annotation_whitespace	Bystander effect study	obo:definition	Study of the cellular phenomenon which radiation energy is not been directly deposited in cells by transfer of medium, proximity/justaposition, or other means, but results in their behaving as if they had been irradiated. 
-WARN	annotation_whitespace	gamma ray photon	obo:definition	Photons having energies that are greater than tens of thousands of electron volts (eV).  
+ERROR	deprecated_boolean_datatype	Cobalt-57 gamma radiation	owl:deprecated	radionuclide
+ERROR	deprecated_boolean_datatype	therapeutics study	owl:deprecated	A owl:deprecated
+ERROR	deprecated_boolean_datatype	nuclear accident study	owl:deprecated	A owl:deprecated
+ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
+ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
+WARN	annotation_whitespace	radionuclide chelator	obo:definition	Radionuclide chelators are small organic molecules or in some cases larger peptides that chemically sequester the radionuclide ion by forming a complex that determines the thermodynamic stability and kinetic inertness of the radionuclide. 
+WARN	annotation_whitespace	radiation response modifier	obo:definition	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
 WARN	annotation_whitespace	Iron-56 nucleus	IAO:0000118	Fe-56 ion;Fe-56 nucleus;Fe-56 
 WARN	annotation_whitespace	Iron-56 nucleus	obo:definition	An atomic nucleus with 26 protons and 30 neutrons 
 WARN	annotation_whitespace	Silicon-28 nucleus	IAO:0000118	Si-28 ion;Si-28 nucleus;Si-28 
@@ -32,9 +32,6 @@ WARN	annotation_whitespace	Helium-4 nucleus	IAO:0000118	He-4 ion;He-4 nucleus;He
 WARN	annotation_whitespace	Helium-4 nucleus	obo:definition	An atomic nucleus with 2 protons and 2 neutrons 
 WARN	annotation_whitespace	Neon-20 nucleus	IAO:0000118	Ne-20 ion;Ne-20 nucleus;Ne-20 
 WARN	annotation_whitespace	Neon-20 nucleus	obo:definition	An atomic nucleus with 10 protons and 10 neutrons 
-WARN	annotation_whitespace	ionizing radiation energy	obo:definition	The kinetic energy carried by a particle or photon of ionizing radiation. 
-WARN	annotation_whitespace	non-irradiated	obo:definition	An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation 
-WARN	annotation_whitespace	irradiation protocol	obo:definition	A protocol for administering radiation to a sample 
 WARN	annotation_whitespace	Niobium-93 nucleus	IAO:0000118	Nb-93 ion;Nb-93 nucleus;Nb-93 
 WARN	annotation_whitespace	Niobium-93 nucleus	obo:definition	An atomic nucleus with 41 protons and 52 neutrons 
 WARN	annotation_whitespace	Silver-107 nucleus	IAO:0000118	Ag-107 ion;Ag-107 nucleus;Ag-107 
@@ -55,11 +52,7 @@ WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000118	Ti-48  ion;Ti-48  nuc
 WARN	annotation_whitespace	Titanium-48 nucleus	obo:definition	An atomic nucleus with 22 protons and 26 neutrons 
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000118	Kr-84 ion;Kr-84 nucleus;Kr-84 
 WARN	annotation_whitespace	Krypton-84 nucleus	obo:definition	An atomic nucleus with 36 protons and 48 neutrons 
-WARN	annotation_whitespace	miliigray per second	IAO:0000118	mGy/sec 
-WARN	annotation_whitespace	biodosimetry	obo:definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that 
-WARN	annotation_whitespace	delta ray	obo:definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a 
-WARN	annotation_whitespace	quality factor	obo:definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed 
-WARN	annotation_whitespace	relative biological effectiveness	IAO:0000112	Neutrons have been found to have a higher RBE than electrons. 
+WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
 WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
 WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
 WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
@@ -70,8 +63,6 @@ WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
 WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
 WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
 WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
-WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
-WARN	duplicate_label_synonym	Space flight	oboInOwl:hasExactSynonym	Space flight
 WARN	missing_definition	BFO:0000023	IAO:0000115	
 WARN	missing_definition	CHEBI:33252	IAO:0000115	
 WARN	missing_definition	CHEBI:50906	IAO:0000115	
@@ -196,120 +187,120 @@ WARN	missing_definition	Xe-129 ion radiation	IAO:0000115
 WARN	missing_definition	Ta-181 ion radiation	IAO:0000115	
 WARN	missing_definition	Au-197 ion radiation	IAO:0000115	
 WARN	missing_definition	N-14 ion radiation	IAO:0000115	
-WARN	missing_definition	Radiation exposure	IAO:0000115	
-WARN	missing_definition	Accidental radiation exposure	IAO:0000115	
-WARN	missing_definition	Planned radiation exposure	IAO:0000115	
-WARN	missing_definition	Medical diagnostic radiation exposure	IAO:0000115	
-WARN	missing_definition	Naturally occurring radiation exposure (NORM)	IAO:0000115	
-WARN	missing_definition	Medical therapeutic radiation exposure	IAO:0000115	
-WARN	missing_definition	Accidental non-medical anthropogenic radiation exposure	IAO:0000115	
-WARN	missing_definition	Anthropogenic radiation exposure	IAO:0000115	
-WARN	missing_definition	Planned anthropogenic radiation exposure	IAO:0000115	
-WARN	missing_definition	Accidental anthropogenic radiation exposure	IAO:0000115	
-WARN	missing_definition	Accidental medical anthropogenic radiation exposure	IAO:0000115	
-WARN	missing_definition	Naturally occurring radiation exposure	IAO:0000115	
-WARN	missing_definition	Planned naturally occurring radiation exposure	IAO:0000115	
-WARN	missing_definition	Social and psychosocial studies	IAO:0000115	
-WARN	missing_definition	Mass media study	IAO:0000115	
-WARN	missing_definition	Preparedness study	IAO:0000115	
-WARN	missing_definition	Clinical study	IAO:0000115	
-WARN	missing_definition	Legal and governance study	IAO:0000115	
-WARN	missing_definition	Security and law enforcement study	IAO:0000115	
-WARN	missing_definition	Cancer study	IAO:0000115	
-WARN	missing_definition	Study modality	IAO:0000115	
-WARN	missing_definition	Environmental studies	IAO:0000115	
-WARN	missing_definition	Nuclear industry study	IAO:0000115	
-WARN	missing_definition	Laboratory study	IAO:0000115	
-WARN	missing_definition	Attitudinal study	IAO:0000115	
-WARN	missing_definition	Communication study	IAO:0000115	
-WARN	missing_definition	Community study	IAO:0000115	
-WARN	missing_definition	Political and psephological study	IAO:0000115	
-WARN	missing_definition	Psychometric study	IAO:0000115	
-WARN	missing_definition	Behavioural study	IAO:0000115	
-WARN	missing_definition	Sociological study	IAO:0000115	
-WARN	missing_definition	Social science and humanities study 	IAO:0000115	
-WARN	missing_definition	Perceptions, expectations and behaviours study	IAO:0000115	
-WARN	missing_definition	Holistic approaches to governance study	IAO:0000115	
-WARN	missing_definition	Responsible Research and Innovation study	IAO:0000115	
-WARN	missing_definition	Stakeholder engagement study	IAO:0000115	
-WARN	missing_definition	Risk and health communication study	IAO:0000115	
-WARN	missing_definition	Radiological protection culture study	IAO:0000115	
-WARN	missing_definition	Genetic population study	IAO:0000115	
-WARN	missing_definition	Prospective study	IAO:0000115	
-WARN	missing_definition	Registry study	IAO:0000115	
-WARN	missing_definition	Retrospective study	IAO:0000115	
-WARN	missing_definition	Incidence or prevalence study	IAO:0000115	
-WARN	missing_definition	Situation awareness and decision support study	IAO:0000115	
-WARN	missing_definition	Civil protection study	IAO:0000115	
-WARN	missing_definition	Disaster planning study	IAO:0000115	
-WARN	missing_definition	Nuclear accident study	IAO:0000115	
-WARN	missing_definition	Clinical trial study	IAO:0000115	
-WARN	missing_definition	Medical radiological safety study	IAO:0000115	
-WARN	missing_definition	Occupational health study	IAO:0000115	
-WARN	missing_definition	Radiation based Diagnostics study	IAO:0000115	
-WARN	missing_definition	Radiotherapy study	IAO:0000115	
+WARN	missing_definition	radiation exposure	IAO:0000115	
+WARN	missing_definition	accidental radiation exposure	IAO:0000115	
+WARN	missing_definition	planned radiation exposure	IAO:0000115	
+WARN	missing_definition	medical diagnostic radiation exposure	IAO:0000115	
+WARN	missing_definition	naturally occurring radiation exposure (NORM)	IAO:0000115	
+WARN	missing_definition	medical therapeutic radiation exposure	IAO:0000115	
+WARN	missing_definition	accidental non-medical anthropogenic radiation exposure	IAO:0000115	
+WARN	missing_definition	anthropogenic radiation exposure	IAO:0000115	
+WARN	missing_definition	planned anthropogenic radiation exposure	IAO:0000115	
+WARN	missing_definition	accidental anthropogenic radiation exposure	IAO:0000115	
+WARN	missing_definition	accidental medical anthropogenic radiation exposure	IAO:0000115	
+WARN	missing_definition	naturally occurring radiation exposure	IAO:0000115	
+WARN	missing_definition	planned naturally occurring radiation exposure	IAO:0000115	
+WARN	missing_definition	social and psychosocial studies	IAO:0000115	
+WARN	missing_definition	mass media study	IAO:0000115	
+WARN	missing_definition	pPreparedness study	IAO:0000115	
+WARN	missing_definition	clinical study	IAO:0000115	
+WARN	missing_definition	legal and governance study	IAO:0000115	
+WARN	missing_definition	security and law enforcement study	IAO:0000115	
+WARN	missing_definition	cancer study	IAO:0000115	
+WARN	missing_definition	study modality	IAO:0000115	
+WARN	missing_definition	environmental studies	IAO:0000115	
+WARN	missing_definition	nuclear industry study	IAO:0000115	
+WARN	missing_definition	laboratory study	IAO:0000115	
+WARN	missing_definition	attitudinal study	IAO:0000115	
+WARN	missing_definition	communication study	IAO:0000115	
+WARN	missing_definition	community study	IAO:0000115	
+WARN	missing_definition	political and psephological study	IAO:0000115	
+WARN	missing_definition	psychometric study	IAO:0000115	
+WARN	missing_definition	behavioural study	IAO:0000115	
+WARN	missing_definition	sociological study	IAO:0000115	
+WARN	missing_definition	sSocial science and humanities study	IAO:0000115	
+WARN	missing_definition	perceptions, expectations and behaviours study	IAO:0000115	
+WARN	missing_definition	holistic approaches to governance study	IAO:0000115	
+WARN	missing_definition	responsible research and innovation study	IAO:0000115	
+WARN	missing_definition	stakeholder engagement study	IAO:0000115	
+WARN	missing_definition	risk and health communication study	IAO:0000115	
+WARN	missing_definition	radiological protection culture study	IAO:0000115	
+WARN	missing_definition	genetic population study	IAO:0000115	
+WARN	missing_definition	prospective study	IAO:0000115	
+WARN	missing_definition	registry study	IAO:0000115	
+WARN	missing_definition	retrospective study	IAO:0000115	
+WARN	missing_definition	incidence or prevalence study	IAO:0000115	
+WARN	missing_definition	situation awareness and decision support study	IAO:0000115	
+WARN	missing_definition	civil protection study	IAO:0000115	
+WARN	missing_definition	disaster planning study	IAO:0000115	
+WARN	missing_definition	nuclear accident study	IAO:0000115	
+WARN	missing_definition	clinical trial study	IAO:0000115	
+WARN	missing_definition	medical radiological safety study	IAO:0000115	
+WARN	missing_definition	occupational health study	IAO:0000115	
+WARN	missing_definition	radiation based Diagnostics study	IAO:0000115	
+WARN	missing_definition	radiotherapy study	IAO:0000115	
 WARN	missing_definition	Therapeutics study	IAO:0000115	
 WARN	missing_definition	Histopathologic study	IAO:0000115	
 WARN	missing_definition	Radiation legislation study	IAO:0000115	
-WARN	missing_definition	Regulatory harmonisation study	IAO:0000115	
-WARN	missing_definition	Nuclear proliferation treaty study	IAO:0000115	
-WARN	missing_definition	Bioterrorism study	IAO:0000115	
-WARN	missing_definition	Military Defence study	IAO:0000115	
+WARN	missing_definition	regulatory harmonisation study	IAO:0000115	
+WARN	missing_definition	nuclear proliferation treaty study	IAO:0000115	
+WARN	missing_definition	bioterrorism study	IAO:0000115	
+WARN	missing_definition	military Defence study	IAO:0000115	
 WARN	missing_definition	DNA modification study	IAO:0000115	
-WARN	missing_definition	Histone modification study	IAO:0000115	
-WARN	missing_definition	Interview study	IAO:0000115	
-WARN	missing_definition	Genetic study	IAO:0000115	
-WARN	missing_definition	Imaging study	IAO:0000115	
-WARN	missing_definition	Mathematical Modelling study	IAO:0000115	
-WARN	missing_definition	Model organism study	IAO:0000115	
-WARN	missing_definition	Monitoring technologies and metrology study	IAO:0000115	
-WARN	missing_definition	Radiochemistry study	IAO:0000115	
-WARN	missing_definition	Policy development study	IAO:0000115	
-WARN	missing_definition	Acoustic radiation study	IAO:0000115	
-WARN	missing_definition	Environmental study_ Abiotic_anthropogenic	IAO:0000115	
-WARN	missing_definition	Natural environment studies	IAO:0000115	
-WARN	missing_definition	Ecological population modelling study	IAO:0000115	
-WARN	missing_definition	Ecotoxicology study	IAO:0000115	
-WARN	missing_definition	Environmental Radon study	IAO:0000115	
-WARN	missing_definition	Radionuclide dispersal modelling study	IAO:0000115	
-WARN	missing_definition	Naturally occurring radioactive materials study	IAO:0000115	
-WARN	missing_definition	Environmental radiation monitoring study	IAO:0000115	
-WARN	missing_definition	Environmental radionuclide transfer study	IAO:0000115	
-WARN	missing_definition	Non ionising electromagnetic radiation study	IAO:0000115	
-WARN	missing_definition	Nuclear installation study	IAO:0000115	
-WARN	missing_definition	Nuclear waste study	IAO:0000115	
-WARN	missing_definition	Nuclear engineering study	IAO:0000115	
-WARN	missing_definition	Mining study	IAO:0000115	
-WARN	missing_definition	Cell culture study	IAO:0000115	
-WARN	missing_definition	Organ culture study	IAO:0000115	
-WARN	missing_definition	Molecular genetic study	IAO:0000115	
-WARN	missing_definition	Molecular structural study	IAO:0000115	
-WARN	missing_definition	Whole organism study	IAO:0000115	
-WARN	missing_definition	Bystander effect study	IAO:0000115	
-WARN	missing_definition	Epigenetic study	IAO:0000115	
-WARN	missing_definition	Mutagenesis study	IAO:0000115	
-WARN	missing_definition	Attitudinal studies nuclear industry risk perception	IAO:0000115	
-WARN	missing_definition	Attitudinal studies towards ionising radiation in the environment	IAO:0000115	
-WARN	missing_definition	Attitudinal studies towards non-ionising radiation in the environment	IAO:0000115	
-WARN	missing_definition	Attitudinal studies towards medical radiation procedures	IAO:0000115	
-WARN	missing_definition	Attitudinal studies towards radiation in the occupational environment	IAO:0000115	
-WARN	missing_definition	Authority Trust study	IAO:0000115	
-WARN	missing_definition	Risk communication study	IAO:0000115	
-WARN	missing_definition	Public communication study	IAO:0000115	
-WARN	missing_definition	Public education study	IAO:0000115	
-WARN	missing_definition	Social affairs and community health study	IAO:0000115	
-WARN	missing_definition	Community planning study	IAO:0000115	
-WARN	missing_definition	Community survey study	IAO:0000115	
-WARN	missing_definition	Individual behaviour study	IAO:0000115	
-WARN	missing_definition	Population behaviour study	IAO:0000115	
-WARN	missing_definition	Radiotherapeutic modelling study	IAO:0000115	
-WARN	missing_definition	Building materials radiological safety study	IAO:0000115	
-WARN	missing_definition	Building radiological safety study	IAO:0000115	
-WARN	missing_definition	Meteorology study 	IAO:0000115	
-WARN	missing_definition	Environmental study_Abiotic	IAO:0000115	
-WARN	missing_definition	Environmental study_Biota ( non human)	IAO:0000115	
-WARN	missing_definition	Environmental study_Panbiota (all)	IAO:0000115	
-WARN	missing_definition	Wireless communication radiation study	IAO:0000115	
+WARN	missing_definition	histone modification study	IAO:0000115	
+WARN	missing_definition	interview study	IAO:0000115	
+WARN	missing_definition	genetic study	IAO:0000115	
+WARN	missing_definition	imaging study	IAO:0000115	
+WARN	missing_definition	mathematical Modelling study	IAO:0000115	
+WARN	missing_definition	model organism study	IAO:0000115	
+WARN	missing_definition	monitoring technologies and metrology study	IAO:0000115	
+WARN	missing_definition	radiochemistry study	IAO:0000115	
+WARN	missing_definition	policy development study	IAO:0000115	
+WARN	missing_definition	acoustic radiation study	IAO:0000115	
+WARN	missing_definition	environmental study_ Abiotic_anthropogenic	IAO:0000115	
+WARN	missing_definition	natural environment studies	IAO:0000115	
+WARN	missing_definition	ecological population modelling study	IAO:0000115	
+WARN	missing_definition	ecotoxicology study	IAO:0000115	
+WARN	missing_definition	environmental Radon study	IAO:0000115	
+WARN	missing_definition	radionuclide dispersal modelling study	IAO:0000115	
+WARN	missing_definition	naturally occurring radioactive materials study	IAO:0000115	
+WARN	missing_definition	environmental radiation monitoring study	IAO:0000115	
+WARN	missing_definition	environmental radionuclide transfer study	IAO:0000115	
+WARN	missing_definition	non ionising electromagnetic radiation study	IAO:0000115	
+WARN	missing_definition	nuclear installation study	IAO:0000115	
+WARN	missing_definition	nuclear waste study	IAO:0000115	
+WARN	missing_definition	nuclear engineering study	IAO:0000115	
+WARN	missing_definition	mining study	IAO:0000115	
+WARN	missing_definition	cell culture study	IAO:0000115	
+WARN	missing_definition	organ culture study	IAO:0000115	
+WARN	missing_definition	molecular genetic study	IAO:0000115	
+WARN	missing_definition	molecular structural study	IAO:0000115	
+WARN	missing_definition	whole organism study	IAO:0000115	
+WARN	missing_definition	bystander effect study	IAO:0000115	
+WARN	missing_definition	epigenetic study	IAO:0000115	
+WARN	missing_definition	mutagenesis study	IAO:0000115	
+WARN	missing_definition	attitudinal studies nuclear industry risk perception	IAO:0000115	
+WARN	missing_definition	attitudinal studies towards ionising radiation in the environment	IAO:0000115	
+WARN	missing_definition	attitudinal studies towards non-ionising radiation in the environment	IAO:0000115	
+WARN	missing_definition	attitudinal studies towards medical radiation procedures	IAO:0000115	
+WARN	missing_definition	attitudinal studies towards radiation in the occupational environment	IAO:0000115	
+WARN	missing_definition	authority Trust study	IAO:0000115	
+WARN	missing_definition	risk communication study	IAO:0000115	
+WARN	missing_definition	public communication study	IAO:0000115	
+WARN	missing_definition	public education study	IAO:0000115	
+WARN	missing_definition	social affairs and community health study	IAO:0000115	
+WARN	missing_definition	community planning study	IAO:0000115	
+WARN	missing_definition	community survey study	IAO:0000115	
+WARN	missing_definition	individual behaviour study	IAO:0000115	
+WARN	missing_definition	population behaviour study	IAO:0000115	
+WARN	missing_definition	radiotherapeutic modelling study	IAO:0000115	
+WARN	missing_definition	building materials radiological safety study	IAO:0000115	
+WARN	missing_definition	building radiological safety study	IAO:0000115	
+WARN	missing_definition	meteorology study	IAO:0000115	
+WARN	missing_definition	environmental study_Abiotic	IAO:0000115	
+WARN	missing_definition	environmental study_Biota ( non human)	IAO:0000115	
+WARN	missing_definition	environmental study_Panbiota (all)	IAO:0000115	
+WARN	missing_definition	wireless communication radiation study	IAO:0000115	
 WARN	missing_definition	gamma ray photon	IAO:0000115	
 WARN	missing_definition	x-ray photon	IAO:0000115	
 WARN	missing_definition	irradiation	IAO:0000115	
@@ -375,12 +366,12 @@ WARN	missing_definition	Argon-40 nucleus	IAO:0000115
 WARN	missing_definition	Titanium-48 nucleus	IAO:0000115	
 WARN	missing_definition	Krypton-84 nucleus	IAO:0000115	
 WARN	missing_definition	miliigray per second	IAO:0000115	
-WARN	missing_definition	Indirect cellular response to stimulus	IAO:0000115	
-WARN	missing_definition	Indirect cellular response to radiation	IAO:0000115	
-WARN	missing_definition	Indirect cellular response to ionising radiation	IAO:0000115	
+WARN	missing_definition	indirect cellular response to stimulus	IAO:0000115	
+WARN	missing_definition	indirect cellular response to radiation	IAO:0000115	
+WARN	missing_definition	indirect cellular response to ionising radiation	IAO:0000115	
 WARN	missing_definition	ionizing radiation device	IAO:0000115	
 WARN	missing_definition	high-altitude balloon	IAO:0000115	
-WARN	missing_definition	Space flight	IAO:0000115	
+WARN	missing_definition	space flight	IAO:0000115	
 WARN	missing_definition	non-targeted effects of ionising radiation	IAO:0000115	
 WARN	missing_definition	as low as reasonably achievable	IAO:0000115	
 WARN	missing_definition	radiation attenuation	IAO:0000115	

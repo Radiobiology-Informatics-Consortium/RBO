@@ -10,7 +10,6 @@ edit_format: owl
 exclude_tautologies: structural
 export_formats:
 - owl
-- obo
 import_group:
   products:
   - id: ro
