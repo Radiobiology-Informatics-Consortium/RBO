@@ -638,7 +638,6 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:RBO_00000060</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-57</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalt-57 gamma radiation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radionuclide</owl:deprecated>
     </owl:Class>
     
 
@@ -762,11 +761,7 @@
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioprotector</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.G. amifostine. </obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A substance present at the time of irradiation that mitigates or prevents the biological effects of irradiation.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richard T. Hoppe, Theodore Locke Phillips, Mack Roach,
-Leibel and Phillips Textbook of Radiation Oncology (Third Edition),
-W.B. Saunders, (2010), ISBN 9781416058977,
-https://doi.org/10.1016/B978-1-4160-5897-7.00093-7.
-(https://www.sciencedirect.com/science/article/pii/B9781416058977000937)</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richard T. Hoppe, Theodore Locke Phillips, Mack Roach, Leibel and Phillips Textbook of Radiation Oncology (Third Edition), W.B. Saunders, (2010), ISBN 9781416058977, https://doi.org/10.1016/B978-1-4160-5897-7.00093-7.</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioprotectant</rdfs:label>
     </owl:Class>
     
