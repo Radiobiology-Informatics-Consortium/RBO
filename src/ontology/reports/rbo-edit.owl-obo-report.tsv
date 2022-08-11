@@ -1,11 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_label	space flight	rdfs:label	space flight
-ERROR	duplicate_label	space flight	rdfs:label	space flight
-ERROR	deprecated_boolean_datatype	Cobalt-57 gamma radiation	owl:deprecated	radionuclide
-ERROR	deprecated_boolean_datatype	therapeutics study	owl:deprecated	A owl:deprecated
-ERROR	deprecated_boolean_datatype	nuclear accident study	owl:deprecated	A owl:deprecated
-ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
-ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
 ERROR	missing_label	BFO:0000023	rdfs:label	
 ERROR	missing_label	CHEBI:33252	rdfs:label	
 ERROR	missing_label	CHEBI:50906	rdfs:label	
@@ -18,6 +11,8 @@ ERROR	missing_label	OBI:0302889	rdfs:label
 ERROR	missing_label	PO:0009012	rdfs:label	
 ERROR	missing_label	UBERON:0000000	rdfs:label	
 ERROR	missing_label	UO:0000127	rdfs:label	
+ERROR	duplicate_label	space flight	rdfs:label	space flight
+ERROR	duplicate_label	space flight	rdfs:label	space flight
 WARN	annotation_whitespace	radionuclide chelator	IAO:0000115	Radionuclide chelators are small organic molecules or in some cases larger peptides that chemically sequester the radionuclide ion by forming a complex that determines the thermodynamic stability and kinetic inertness of the radionuclide. 
 WARN	annotation_whitespace	radiation response modifier	IAO:0000115	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
 WARN	annotation_whitespace	Iron-56 nucleus	IAO:0000115	An atomic nucleus with 26 protons and 30 neutrons 
@@ -50,18 +45,6 @@ WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000115	An atomic nucleus wit
 WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000118	Ti-48  ion;Ti-48  nucleus;Ti-48  
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000115	An atomic nucleus with 36 protons and 48 neutrons 
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000118	Kr-84 ion;Kr-84 nucleus;Kr-84 
-WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
-WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
-WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
-WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
-WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
-WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
-WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
-WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
-WARN	duplicate_label_synonym	Irradiation	IAO:0000118	Irradiation
-WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
 WARN	missing_definition	BFO:0000023	IAO:0000115	
 WARN	missing_definition	CHEBI:33252	IAO:0000115	
 WARN	missing_definition	CHEBI:50906	IAO:0000115	
@@ -97,11 +80,21 @@ WARN	missing_definition	cellular process	IAO:0000115
 WARN	missing_definition	mass number	IAO:0000115	
 WARN	missing_definition	UBERON:0000000	IAO:0000115	
 WARN	missing_definition	UO:0000127	IAO:0000115	
+WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
+WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
+WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
+WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
+WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
+WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
 INFO	lowercase_definition	spacecraft module	IAO:0000115	a self-contained unit of a spacecraft
 INFO	lowercase_definition	gamma radiation	IAO:0000115	electromagnetic radiation with photon energies greater than approximately 100 keV
-INFO	lowercase_definition	Gammacell 40	IAO:0000115	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
-INFO	lowercase_definition	RARAF 5.5 MV microbeam	IAO:0000115	https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility
-INFO	lowercase_definition	Swift HALE	IAO:0000115	https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights
-INFO	lowercase_definition	ER-2	IAO:0000115	https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html
-INFO	lowercase_definition	WB-57	IAO:0000115	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
-INFO	lowercase_definition	Faxitron CP160	IAO:0000115	doi: 10.2349/biij.2.1.e1
+INFO	lowercase_definition	Gammacell 40	IAO:0000115	<http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf>
+INFO	lowercase_definition	RARAF 5.5 MV microbeam	IAO:0000115	<https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility>
+INFO	lowercase_definition	Swift HALE	IAO:0000115	<https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights>
+INFO	lowercase_definition	ER-2	IAO:0000115	<https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html>
+INFO	lowercase_definition	WB-57	IAO:0000115	<https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC>
+INFO	lowercase_definition	Faxitron CP160	IAO:0000115	<doi: 10.2349/biij.2.1.e1>
