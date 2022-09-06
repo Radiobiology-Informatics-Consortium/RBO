@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-08-26/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-06/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -3321,7 +3321,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001488"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">irradiation protocol</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protocol for administering radiation to a sample</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>

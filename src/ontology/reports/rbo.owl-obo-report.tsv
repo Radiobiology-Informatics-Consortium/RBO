@@ -103,8 +103,8 @@ ERROR	multiple_definitions	in distal side of	textual definition	X distal_side_of
 ERROR	multiple_definitions	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
 ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral side of Y <=> if X is in left side of Y or X is in right side of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure.
-ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
-ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
+ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
+ERROR	multiple_definitions	proximalmost part of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y.
 ERROR	multiple_definitions	immediately deep to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
 ERROR	multiple_definitions	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	chemical entity	textual definition	A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.
@@ -159,9 +159,9 @@ ERROR	multiple_definitions	participates in	textual definition	Participates in is
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	has participant	textual definition	Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the A continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
-ERROR	multiple_definitions	only_in_taxon	textual definition	S only_in_taxon T iff: S SubClassOf in_taxon only T.
-ERROR	multiple_definitions	only_in_taxon	textual definition	U only_in_taxon T: U is a feature found in only in organisms of species of taxon T. The feature cannot be found in an organism of any species outside of (not subsumed by) that taxon. Down-propagates in U hierarchy, up-propagates in T hierarchy (species taxonomy). Implies applicable_to_taxon.
-ERROR	multiple_definitions	only_in_taxon	textual definition	x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.
+ERROR	multiple_definitions	only in taxon	textual definition	S only_in_taxon T iff: S SubClassOf in_taxon only T.
+ERROR	multiple_definitions	only in taxon	textual definition	U only_in_taxon T: U is a feature found in only in organisms of species of taxon T. The feature cannot be found in an organism of any species outside of (not subsumed by) that taxon. Down-propagates in U hierarchy, up-propagates in T hierarchy (species taxonomy). Implies applicable_to_taxon.
+ERROR	multiple_definitions	only in taxon	textual definition	x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.
 ERROR	multiple_definitions	connected to	textual definition	Binary relationship: x connected_to y if and only if there exists some z such that z connects x and y in a ternary connected_to(x,y,z) relationship.
 ERROR	multiple_definitions	connected to	textual definition	a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b
 ERROR	multiple_definitions	connects	textual definition	Binary relationship: z connects x if and only if there exists some y such that z connects x and y in a ternary connected_to(x,y,z) relationship.
@@ -275,8 +275,8 @@ ERROR	multiple_labels	in distal side of	label	in distal side of
 ERROR	multiple_labels	in distal side of	label	in_distal_side_of
 ERROR	multiple_labels	in lateral side of	label	in lateral side of
 ERROR	multiple_labels	in lateral side of	label	in_lateral_side_of
-ERROR	multiple_labels	proximalmost_part_of	label	proximalmost part of
-ERROR	multiple_labels	proximalmost_part_of	label	proximalmost_part_of
+ERROR	multiple_labels	proximalmost part of	label	proximalmost part of
+ERROR	multiple_labels	proximalmost part of	label	proximalmost_part_of
 ERROR	multiple_labels	immediately deep to	label	immediately deep to
 ERROR	multiple_labels	immediately deep to	label	immediately_deep_to
 ERROR	multiple_labels	immediately superficial to	label	immediately superficial to
@@ -380,8 +380,8 @@ ERROR	multiple_labels	immediately_precedes	label	immediately precedes@en
 ERROR	multiple_labels	immediately_precedes	label	immediately_precedes
 ERROR	multiple_labels	overlaps	label	overlaps
 ERROR	multiple_labels	overlaps	label	overlaps@en
-ERROR	multiple_labels	only_in_taxon	label	only in taxon
-ERROR	multiple_labels	only_in_taxon	label	only_in_taxon
+ERROR	multiple_labels	only in taxon	label	only in taxon
+ERROR	multiple_labels	only in taxon	label	only_in_taxon
 ERROR	multiple_labels	has component	label	has component
 ERROR	multiple_labels	has component	label	has component@en
 ERROR	multiple_labels	regulates	label	regulates
@@ -440,9 +440,9 @@ ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
 ERROR	multiple_labels	Description	label	Description@en-us
 ERROR	multiple_labels	Description	label	description
-ERROR	multiple_labels	title	label	Title
-ERROR	multiple_labels	title	label	Title@en-us
-ERROR	multiple_labels	title	label	title
+ERROR	multiple_labels	Title	label	Title
+ERROR	multiple_labels	Title	label	Title@en-us
+ERROR	multiple_labels	Title	label	title
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
@@ -601,7 +601,7 @@ WARN	annotation_whitespace	spatially disjoint from	editor note	There are two way
 WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
 WARN	annotation_whitespace	siemens	has_exact_synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has_exact_synonym	E-field strength 
-WARN	annotation_whitespace	title	Description	"
+WARN	annotation_whitespace	Title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -2412,7 +2412,7 @@ WARN	missing_definition	subdivision of	textual definition
 WARN	missing_definition	Creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
-WARN	missing_definition	title	textual definition	
+WARN	missing_definition	Title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	
@@ -2575,7 +2575,7 @@ INFO	lowercase_definition	2D boundary of	textual definition	a relation between a
 INFO	lowercase_definition	has 2D boundary	textual definition	a relation between a material entity and a 2D immaterial entity (the boundary), in which the boundary delimits the material entity@en
 INFO	lowercase_definition	has component process	textual definition	w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.
 INFO	lowercase_definition	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
-INFO	lowercase_definition	only_in_taxon	textual definition	x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.
+INFO	lowercase_definition	only in taxon	textual definition	x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.
 INFO	lowercase_definition	in taxon	textual definition	x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed.
 INFO	lowercase_definition	connected to	textual definition	a is connected to b if and only if a and b are discrete structure, and there exists some connecting structure c, such that c connects a and b
 INFO	lowercase_definition	connects	textual definition	c connects a if and only if there exist some b such that a and b are similar parts of the same system, and c connects b, specifically, c connects a with b. When one structure connects two others it unites some aspect of the function or role they play within the system.
