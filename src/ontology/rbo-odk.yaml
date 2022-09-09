@@ -35,7 +35,7 @@ import_group:
   - id: cob
     module_type: custom
   - id: go
-    use_gzipped: TRUE
+    use_gzipped: FALSE
     is_large: TRUE
     module_type: custom
   - id: efo
