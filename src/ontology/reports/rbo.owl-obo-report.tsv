@@ -82,8 +82,8 @@ ERROR	multiple_definitions	in lateral side of	textual definition	X in lateral si
 ERROR	multiple_definitions	in lateral side of	textual definition	X in_lateral_side_of Y <=> if X is in_left_side_of Y or X is in_right_side_of Y. X is often, but not always a paired structure
 ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost part of Y <=> X is in proximal side of Y and X is adjacent to the proximal boundary of Y
 ERROR	multiple_definitions	proximalmost_part_of	textual definition	X proximalmost_part_of Y <=> X is part_of Y and X is adjacent_to the proximal boundary of Y
-ERROR	multiple_definitions	immediately deep to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
-ERROR	multiple_definitions	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+ERROR	multiple_definitions	immediately_deep_to	textual definition	This relation holds when both the deep_to and ajdacent_to relationship similarly hold.
+ERROR	multiple_definitions	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 ERROR	multiple_definitions	distalmost part of	textual definition	X distalmost part of Y <=> X is in distal side of Y and X is adjacent to the distal boundary of Y
 ERROR	multiple_definitions	distalmost part of	textual definition	X distalmost_part_of Y <=> X is part_of Y and X is adjacent_to the distal boundary of Y
 ERROR	multiple_definitions	chemical entity	textual definition	A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.
@@ -256,8 +256,8 @@ ERROR	multiple_labels	in lateral side of	label	in lateral side of
 ERROR	multiple_labels	in lateral side of	label	in_lateral_side_of
 ERROR	multiple_labels	proximalmost_part_of	label	proximalmost part of
 ERROR	multiple_labels	proximalmost_part_of	label	proximalmost_part_of
-ERROR	multiple_labels	immediately deep to	label	immediately deep to
-ERROR	multiple_labels	immediately deep to	label	immediately_deep_to
+ERROR	multiple_labels	immediately_deep_to	label	immediately deep to
+ERROR	multiple_labels	immediately_deep_to	label	immediately_deep_to
 ERROR	multiple_labels	distalmost part of	label	distalmost part of
 ERROR	multiple_labels	distalmost part of	label	distalmost_part_of
 ERROR	multiple_labels	atom	label	atom
@@ -2454,7 +2454,7 @@ INFO	lowercase_definition	ventral_to	textual definition	x ventral to y iff x is 
 INFO	lowercase_definition	ventral_to	textual definition	x ventral_to y iff x is further along the dorso-ventral axis than y, towards the front. A dorso-ventral axis is an axis that bisects an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	in_proximal_side_of	textual definition	x in proximal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the proximal portion.
 INFO	lowercase_definition	in distal side of	textual definition	x in distal side of y <=> if y is subdivided into two proximal and distal portions, y is part of the distal portion.
-INFO	lowercase_definition	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
+INFO	lowercase_definition	immediately_deep_to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 INFO	lowercase_definition	immediately superficial to	textual definition	x immediately superficial to y iff x superficial to y and x is contiguous with y.
 INFO	lowercase_definition	partially_surrounded_by	textual definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
 INFO	lowercase_definition	ore	textual definition	a type of rock that contains sufficient minerals with important elements including metals that can be economically extracted from the rock.

@@ -16,8 +16,8 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/envo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-09/imports/envo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-15/imports/envo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4217,7 +4217,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref rdf:resource="http://sweetontology.net/realmSoil/Permafrost"/>
         <oboInOwl:hasDbXref>EcoLexicon:permafrost</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>LTER:408</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Permafrost</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:comment>Ice is not always present, as may be in the case of nonporous bedrock, but it frequently occurs and it may be in amounts exceeding the potential hydraulic saturation of the ground material.</rdfs:comment>
@@ -4228,7 +4228,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Soil or rock and included ice or organic material at or below the freezing point of water (0 degrees Celsius or 32 degrees Fahrenheit) for two or more years.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000134"/>
@@ -4278,7 +4278,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000147"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The region occupied by any more or less continuous, directed movement of ocean water that flows in one of the Earth&apos;s oceans. Ocean Currents are rivers of hot or cold water within the ocean. The currents are generated from the forces acting upon the water like the earth&apos;s rotation, the wind, the temperature and salinity differences and the gravitation of the moon. The depth contours, the shoreline and other movements influence the direction and strength of the movements of water that forms a given current.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BS:bs</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BS:bs</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000147"/>
@@ -5460,7 +5460,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A rock formed by deposition of either clastic sediments, organic matter, or chemical precipitates (evaporites), followed by compaction of the particulate matter and cementation during diagenesis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Rock_%28geology%29</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Rock_%28geology%29</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8829,7 +8829,7 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000340"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An altitudinal condition which inheres in a bearer by virtue of the bearer having a monthly mean temperature is less than 10 degrees Celsius and being located at altitudes above the tree line and below the snowline.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Altitudinal_zonation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Altitudinal_zonation</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8849,13 +8849,13 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000342"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An altitudinal condition which inheres in a bearer by virtue of the bearer being located at an altitude between mid-altitude forests and the tree line.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Altitudinal_zonation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Altitudinal_zonation</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000342"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedTarget>The exact level of the tree line varies with local climate, but typically the tree line is found where mean monthly soil temperatures never exceed 10.0 degrees C and the mean annual soil temperatures are around 6.7 degrees C. In the tropics, this region is typified by montane rain forest (above 3,000 ft) while at higher latitudes coniferous forests often dominate.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Altitudinal_zonation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Altitudinal_zonation</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -8874,7 +8874,7 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000343"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An altitudinal condition is an environmental condition in which ranges of factors such as temperature, humidity, soil composition, solar irradiation, and tree density vary with ranges in altitude.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Altitudinal_zonation</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Altitudinal_zonation</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -23129,7 +23129,24 @@ consider revising &apos;pond&apos; semantics</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/PATO_0001291 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001291">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001739"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A physical quality that inheres in an bearer by virtue of how that bearer interacts with electromagnetic radiation.</obo:IAO_0000115>
         <rdfs:label>electromagnetic (EM) radiation quality</rdfs:label>
     </owl:Class>
@@ -23425,7 +23442,6 @@ consider revising &apos;pond&apos; semantics</obo:IAO_0000116>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A quality that inheres in an bearer by virtue of how that bearer interacts with radiation.</obo:IAO_0000115>
         <rdfs:label>radiation quality</rdfs:label>
     </owl:Class>
     
@@ -23854,7 +23870,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>suffrutex (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:99508f62-7116-4e2b-90c0-19ff55ebd967</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FNA:99508f62-7116-4e2b-90c0-19ff55ebd967</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000003"/>
@@ -23931,7 +23947,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A portion of meristem tissue (PO:0009013) which is the organogenic region of the meristem, characterized by higher rates of cell division.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0521288959</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR_curator:Leonore_Reiser</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAIR_curator:Leonore_Reiser</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000225"/>
@@ -24411,7 +24427,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plant structure (PO:0009011) that consists predominantly of similarly specialized plant cells (PO:0009002) of one or more types.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR_curator:Leonore_Reiser</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAIR_curator:Leonore_Reiser</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
@@ -25005,7 +25021,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025128"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A primordium (PO:0025127) that develops from a phyllome anlagen (PO:0025430) and is part of a shoot apex (PO:0000037) and is committed to the development of a phyllome (PO:0006001).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:11572953</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11572953</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -25055,14 +25071,14 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>cjm</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025131"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An anatomical entity that is or was part of a plant.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BFO:0000004</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -25083,7 +25099,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025131"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedTarget>Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 &apos;anatomical entity&apos; is defined as: A part of a cellular organism that is either an immaterial entity or a material entity with granularity aboove the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.  Refers to BFO:0000004 &apos;independent continuant&apos;.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>CAROC:Brownsville2014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAROC:Brownsville2014</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 

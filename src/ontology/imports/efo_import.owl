@@ -15,8 +15,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-09/imports/efo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-15/imports/efo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -310,6 +310,12 @@
     <!-- http://www.ebi.ac.uk/efo/definition_citation -->
 
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_citation"/>
+    
+
+
+    <!-- http://www.ebi.ac.uk/efo/gwas_trait -->
+
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/gwas_trait"/>
     
 
 
@@ -1007,6 +1013,7 @@ Note that, in addition to forming the root of the cellular component ontology, t
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0009314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
         <obo:IAO_0000115>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an electromagnetic radiation stimulus.</obo:IAO_0000115>
+        <efo:gwas_trait rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</efo:gwas_trait>
         <oboInOwl:hasDbXref>GO:0009314</oboInOwl:hasDbXref>
         <rdfs:label>response to radiation</rdfs:label>
     </owl:Class>

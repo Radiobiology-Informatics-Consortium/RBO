@@ -23,8 +23,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/pato_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-09/imports/pato_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-15/imports/pato_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5259,6 +5259,33 @@ For example, A and B may be gene products and binding of B by A positively regul
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A nucleate quality inhering in a bearer by virtue of the bearer&apos;s having one nucleus.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biology-online:Biology-online</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001739 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001739">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <obo:IAO_0000115>A quality of radiation that reflects the fluence spectrum of charged and neutral particles within the material or medium where dose is being deposited.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001739</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/pato#attribute_slim"/>
+        <rdfs:comment>Radiation quality is often expressed in terms of the linear energy transfer of the ionising particles that deliver the absorbed dose, but this is an over simplification.</rdfs:comment>
+        <rdfs:label>radiation quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001739"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A quality of radiation that reflects the fluence spectrum of charged and neutral particles within the material or medium where dose is being deposited.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>DOI:10.20348/STOREDB/1173/1250</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0002-5111-7263</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001739"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <owl:annotatedTarget>Radiation quality is often expressed in terms of the linear energy transfer of the ionising particles that deliver the absorbed dose, but this is an over simplification.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>DOI:10.2307/3570787</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
