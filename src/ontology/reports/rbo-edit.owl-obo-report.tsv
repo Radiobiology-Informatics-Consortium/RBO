@@ -1,10 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_boolean_datatype	therapeutics study	owl:deprecated	A owl:deprecated
-ERROR	deprecated_boolean_datatype	nuclear accident study	owl:deprecated	A owl:deprecated
-ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
-ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
-ERROR	duplicate_label	space flight	rdfs:label	space flight
-ERROR	duplicate_label	space flight	rdfs:label	space flight
 ERROR	missing_label	BFO:0000023	rdfs:label	
 ERROR	missing_label	CHEBI:33252	rdfs:label	
 ERROR	missing_label	CHEBI:50906	rdfs:label	
@@ -17,6 +11,8 @@ ERROR	missing_label	OBI:0302889	rdfs:label
 ERROR	missing_label	PO:0009012	rdfs:label	
 ERROR	missing_label	UBERON:0000000	rdfs:label	
 ERROR	missing_label	UO:0000127	rdfs:label	
+ERROR	duplicate_label	space flight	rdfs:label	space flight
+ERROR	duplicate_label	space flight	rdfs:label	space flight
 WARN	annotation_whitespace	radioprotectant	IAO:0000112	E.G. amifostine. 
 WARN	annotation_whitespace	radionuclide chelator	IAO:0000115	Radionuclide chelators are small organic molecules or in some cases larger peptides that chemically sequester the radionuclide ion by forming a complex that determines the thermodynamic stability and kinetic inertness of the radionuclide. 
 WARN	annotation_whitespace	radiation response modifier	IAO:0000115	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
@@ -50,18 +46,6 @@ WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000118	Ti-48  ion;Ti-48  nuc
 WARN	annotation_whitespace	Titanium-48 nucleus	obo:definition	An atomic nucleus with 22 protons and 26 neutrons 
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000118	Kr-84 ion;Kr-84 nucleus;Kr-84 
 WARN	annotation_whitespace	Krypton-84 nucleus	obo:definition	An atomic nucleus with 36 protons and 48 neutrons 
-WARN	duplicate_label_synonym	Irradiation	IAO:0000118	Irradiation
-WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
-WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
-WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
-WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
-WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
-WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
-WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
-WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
-WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
 WARN	missing_definition	BFO:0000023	IAO:0000115	
 WARN	missing_definition	CHEBI:33252	IAO:0000115	
 WARN	missing_definition	CHEBI:50906	IAO:0000115	
@@ -115,5 +99,15 @@ WARN	missing_definition	Krypton-84 nucleus	IAO:0000115
 WARN	missing_definition	mass number	IAO:0000115	
 WARN	missing_definition	UBERON:0000000	IAO:0000115	
 WARN	missing_definition	UO:0000127	IAO:0000115	
+WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
+WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
+WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
+WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
+WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
+WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
 INFO	lowercase_definition	spacecraft module	IAO:0000115	a self-contained unit of a spacecraft
 INFO	lowercase_definition	gamma radiation	IAO:0000115	electromagnetic radiation with photon energies greater than approximately 100 keV

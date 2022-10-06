@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-06/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-10-06/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -180,6 +180,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254"/>
@@ -305,12 +311,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001744 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001744"/>
     
 
 
@@ -1543,7 +1543,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001744"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned exposure to radiation of any type in any environment or otherwise planned process.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental irradiation</obo:IAO_0000118>
@@ -1555,7 +1555,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
@@ -1628,7 +1628,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
@@ -1662,7 +1662,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001744"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naturally occurring radiation exposure</rdfs:label>
@@ -1673,7 +1673,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002004"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deliberate or knowing exposure to naturally occurring radiation in a natural or anthropogenic environment, such as a radon spa.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
@@ -3283,7 +3283,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001744"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-irradiated</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>

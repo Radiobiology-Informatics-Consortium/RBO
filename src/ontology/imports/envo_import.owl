@@ -16,8 +16,8 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/envo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-09-15/imports/envo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-09-15</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-10-05/imports/envo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4217,7 +4217,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasDbXref rdf:resource="http://sweetontology.net/realmSoil/Permafrost"/>
         <oboInOwl:hasDbXref>EcoLexicon:permafrost</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>LTER:408</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Permafrost</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset>envoPolar</oboInOwl:inSubset>
         <rdfs:comment>Ice is not always present, as may be in the case of nonporous bedrock, but it frequently occurs and it may be in amounts exceeding the potential hydraulic saturation of the ground material.</rdfs:comment>
@@ -4228,7 +4228,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Soil or rock and included ice or organic material at or below the freezing point of water (0 degrees Celsius or 32 degrees Fahrenheit) for two or more years.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Permafrost</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000134"/>
@@ -7587,8 +7587,8 @@ According to the E. Neef climate classification, the subtropical zone is divided
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000248"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A dense settlement biome is an anthropogenic terrestrial biome which is primarily used for human habitation, recreation, and industry within built structures with little other land use.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1111/j.1466-8238.2010.00540.x</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1890/070062</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOI:10.1111/j.1466-8238.2010.00540.x</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>DOI:10.1890/070062</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9528,7 +9528,7 @@ https://en.wikipedia.org/wiki/  Ecozones correspond to the floristic kingdoms of
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000458"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Concrete is a composite material composed of an aggregate bonded together with a fluid cement which hardens over time.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Concrete</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Concrete</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -23946,8 +23946,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000225"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A portion of meristem tissue (PO:0009013) which is the organogenic region of the meristem, characterized by higher rates of cell division.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0521288959</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TAIR_curator:Leonore_Reiser</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0521288959</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR_curator:Leonore_Reiser</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0000225"/>
@@ -24030,7 +24030,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0005029"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A primordium (PO:0025127) that develops from a root anlagen (PO:0025433) and is committed to the development of a root (PO:0009005).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0521288959</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0521288959</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -24223,7 +24223,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PO_0025007"/>
         <obo:IAO_0000115>A cell which is a plant structure (PO:0009011).</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>cell (broad)</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>GO:0005623</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005623</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PO_GIT:56</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>c&amp;#233lula vegetal (Spanish, exact)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>植物細胞 (Japanese, exact)</oboInOwl:hasExactSynonym>
@@ -24239,7 +24239,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A cell which is a plant structure (PO:0009011).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GO:0005623</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005623</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -24302,10 +24302,10 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plant axis (PO:0025004) that lacks shoot axis nodes (PO:0005004) and usually grows indeterminately.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:978-0879015329</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ISBN:9780964022157</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0879015329</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780964022157</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Brandon_Sinn</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NYBG:Dario_Cavaliere</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -24320,13 +24320,13 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>radices (exact, plural)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:3c46e84c-23e4-416b-91cd-2f7c42e4b13d</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>radix (exact)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:e6315684-fc99-4976-b39d-b356c4b7e7fd</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
@@ -24339,7 +24339,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009005"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>climbing root (narrow)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:bf0ce902-e91c-401a-92a8-26b20142ce5f</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24390,14 +24390,14 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>thalli (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:d1431b5c-7b86-46a0-8d3c-bd426fe12c85</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/po#Plural"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009006"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>thallus (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:02756ad4-a09c-48d7-8754-903254e557a9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:02756ad4-a09c-48d7-8754-903254e557a9</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24427,7 +24427,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plant structure (PO:0009011) that consists predominantly of similarly specialized plant cells (PO:0009002) of one or more types.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>TAIR_curator:Leonore_Reiser</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR_curator:Leonore_Reiser</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009007"/>
@@ -24487,7 +24487,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009008"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>simple plant organ (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PATO:01503</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:01503</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24510,7 +24510,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>CARO:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -24531,7 +24531,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009011"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
         <owl:annotatedTarget>&apos;Part&apos; includes both proper parts and the whole plant. CARO:0000003 &apos;connected anatomical structure&apos; is defined as: Material anatomical entity that is a single connected structure with inherent 3D shape, generated by coordinated expression of the organism&apos;s own genome.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PO:cooperl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PO:cooperl</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24555,8 +24555,8 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A stage in the life of a plant structure (PO:0009011) during which the plant structure undergoes developmental processes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>BFO:0000003</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GO:0032502</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BFO:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0032502</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:curators</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -24570,7 +24570,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009012"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Arabidopsis growth (related)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>TAIR:0000205</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAIR:0000205</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -24600,7 +24600,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0009013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A portion of plant tissue (PO:0009007) in which plant cells (PO:0009002) have retained their embryonic characteristics, or have reverted to them secondarily, and that divide to produce new cells that can undergo differentiation to form mature tissues, i.e. they have a capacity for morphogenesis and growth.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>APweb:Glossary</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APweb:Glossary</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gramene:Pankaj_Jaiswal</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -24695,7 +24695,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A shoot system meristem (PO:0006079) formed at the apex of the shoot axis (PO:0025029), including those originating from an axillary bud meristem (PO:0000232).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POC:Laurel_Cooper</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>UMSL_curator:fz</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMSL_curator:fz</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0020148"/>
@@ -24747,7 +24747,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>plant axes (exact, plural)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:2355281f-ab10-4ae2-a3d8-672cace068a8</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:2355281f-ab10-4ae2-a3d8-672cace068a8</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025004"/>
@@ -24838,7 +24838,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025025"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>root (broad)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>FNA:b7ce680b-c6ed-4d2e-81e6-66970f7deff9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FNA:b7ce680b-c6ed-4d2e-81e6-66970f7deff9</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PO_0025025"/>
