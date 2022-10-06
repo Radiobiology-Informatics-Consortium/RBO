@@ -142,6 +142,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254"/>
@@ -261,12 +267,6 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PATO_0001744 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001744"/>
     
 
 
@@ -638,7 +638,6 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:RBO_00000060</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-57</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cobalt-57 gamma radiation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radionuclide</owl:deprecated>
     </owl:Class>
     
 
@@ -647,6 +646,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000060">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33250"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isotopes that exhibit radioactivity and undergo radioactive decay. (From Grant &amp; Hackh&apos;s Chemical Dictionary, 5th ed &amp; McGraw-Hill Dictionary of Scientific and Technical Terms, 4th ed)</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D011868</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radionuclide</rdfs:label>
     </owl:Class>
     
@@ -656,6 +657,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000060"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of radioactive elements from ACTINIUM, atomic number 89, to and including LAWRENCIUM, atomic number 103</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D008671</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actinide</rdfs:label>
     </owl:Class>
     
@@ -665,6 +668,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000061"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A trivalent radioactive element and the prototypical member of the actinide family. It has the atomic symbol Ac, and atomic number 89. Its principal isotope is 227 and it decays primarily by beta-emission.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D000186</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actinium</rdfs:label>
     </owl:Class>
     
@@ -674,6 +679,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000063">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000061"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A completely man-made radioactive actinide with atomic symbol Am, and atomic number 95. Its valence can range from +3 to +6. Because of its nonmagnetic ground state, it is an excellent superconductor. It is also used in bone mineral analysis and as a radiation source for radiotherapy</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D000576</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">americium</rdfs:label>
     </owl:Class>
     
@@ -683,6 +690,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000061"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A man-made radioactive actinide with atomic symbol Cf, atomic number 98, and atomic weight 251. Its valence can be +2 or +3. Californium has medical use as a radiation source for radiotherapy</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D002142</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">californium</rdfs:label>
     </owl:Class>
     
@@ -692,6 +701,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000061"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A radioactive element of the actinide metals family. It has the atomic symbol Np, and atomic number 93.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D009405</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neptunium</rdfs:label>
     </owl:Class>
     
@@ -701,6 +712,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000061"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A naturally radioactive element of the actinide metals series. It has the atomic symbol Pu, and atomic number 94. Plutonium is used as a nuclear fuel, to produce radioisotopes for research, in radionuclide batteries for pacemakers, and as the agent of fission in nuclear weapons.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D011005</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plutonium</rdfs:label>
     </owl:Class>
     
@@ -710,6 +723,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000067">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000061"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A radioactive element of the actinide series of metals. It has an atomic symbol Th, atomic number 90, and atomic weight 232.04. It is used as fuel in nuclear reactors to produce fissionable uranium isotopes. Because of its radioopacity, various thorium compounds are used to facilitate visualization in roentgenography.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D013910</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thorium</rdfs:label>
     </owl:Class>
     
@@ -719,6 +734,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000061"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A radioactive element of the actinide series of metals. It has an atomic symbol U, atomic number 92, and atomic weight 238.03. U-235 is used as the fissionable fuel in nuclear weapons and as fuel in nuclear power reactors.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MESH/D014501</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uranium</rdfs:label>
     </owl:Class>
     
@@ -741,6 +758,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioprotector</obo:IAO_0000111>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.G. amifostine. </obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A substance present at the time of irradiation that mitigates or prevents the biological effects of irradiation.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richard T. Hoppe, Theodore Locke Phillips, Mack Roach, Leibel and Phillips Textbook of Radiation Oncology (Third Edition), W.B. Saunders, (2010), ISBN 9781416058977, https://doi.org/10.1016/B978-1-4160-5897-7.00093-7.</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioprotectant</rdfs:label>
     </owl:Class>
     
@@ -1069,6 +1090,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study that aims at the discovery, development or assessment of efficacy of therapeutic agents or processes designed to mitigate or cure the effects of radiation exposure.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">therapeutics study</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A owl:deprecated</owl:deprecated>
     </owl:Class>
@@ -1099,6 +1121,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of the contributing factors consequences and prevention of nuclear accidents</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nuclear accident study</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A owl:deprecated</owl:deprecated>
     </owl:Class>
@@ -1338,7 +1361,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
@@ -1411,7 +1434,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
@@ -1456,7 +1479,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002004"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deliberate or knowing exposure to naturally occurring radiation in a natural or anthropogenic environment, such as a radon spa.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
@@ -2941,7 +2964,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001744"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-irradiated</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -2979,7 +3002,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005028">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001488"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">irradiation protocol</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protocol for administering radiation to a sample</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>

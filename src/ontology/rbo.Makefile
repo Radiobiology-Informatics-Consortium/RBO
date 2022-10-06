@@ -24,7 +24,7 @@ imports/pato_import.owl: mirror/pato.owl imports/pato_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/pato_terms_combined.txt --force true --method BOT \
 		remove -t "http://purl.obolibrary.org/obo/BFO_0000023" -t "http://purl.obolibrary.org/obo/CHEBI_50906" --axioms subclass --trim false --signature true \
 		remove -t "http://purl.obolibrary.org/obo/BFO_0000023" -t "http://purl.obolibrary.org/obo/CHEBI_50906" --axioms equivalent --trim false --signature true \
-			query --update ../sparql/inject-subset-declaration.ru \
+		query --update ../sparql/inject-subset-declaration.ru \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 
@@ -45,6 +45,7 @@ imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
 		remove -t "PO:0009012" -t BFO:0000015 --trim false --axioms subclass --signature true --preserve-structure false\
 		remove -t "ENVO:02500000" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
 		remove -t "ENVO:01001174"  --select self --trim true --signature true --preserve-structure false\
+		remove -t "http://purl.obolibrary.org/obo/PATO_0001739" -t "IAO:0000115" --axioms annotation --trim false --signature true \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
@@ -55,6 +56,7 @@ imports/ncbitaxon_import.owl: mirror/ncbitaxon.owl imports/ncbitaxon_terms_combi
 imports/uberon_import.owl: mirror/uberon.owl imports/uberon_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uberon_terms_combined.txt --force true --method STAR \
 		rename --mappings ./imports/rename_uberon.tsv \
+		remove -t "http://purl.obolibrary.org/obo/NCBITaxon_Union_0000023" \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 	
