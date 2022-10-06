@@ -1,6 +1,6 @@
 title: Radiation Biology Ontology
 id: rbo
-github_org: DanBerrios
+github_org: Radiobiology-Informatics-Consortium
 repo: RBO
 allow_equivalents: all
 description: None
@@ -10,7 +10,6 @@ edit_format: owl
 exclude_tautologies: structural
 export_formats:
 - owl
-- obo
 import_group:
   products:
   - id: ro

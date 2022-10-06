@@ -22,15 +22,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/definition -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/definition"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     
 
 
@@ -79,7 +79,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 26 protons and 30 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 26 protons and 30 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-56 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -89,7 +89,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 6 protons and 6 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 6 protons and 6 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-12 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -99,7 +99,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 14 protons and 14 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 14 protons and 14 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si-28 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -109,7 +109,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He-4 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -119,7 +119,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 10 protons and 10 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 10 protons and 10 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne-20 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -129,7 +129,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000125">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 8 protons and 8 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 8 protons and 8 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-16 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -139,7 +139,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 18 protons and 22 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 18 protons and 22 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ar-40  ion radiation</rdfs:label>
     </owl:Class>
     
@@ -149,7 +149,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 22 protons and 26 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 22 protons and 26 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ti-48  ion radiation</rdfs:label>
     </owl:Class>
     
@@ -159,7 +159,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 36 protons and 48 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 36 protons and 48 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kr-84 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -169,7 +169,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 41 protons and 52 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 41 protons and 52 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nb-93 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -179,7 +179,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 47 protons and 60 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 47 protons and 60 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ag-107 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -189,7 +189,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 54 protons and 75 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 54 protons and 75 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xe-129 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -199,7 +199,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 73 protons and 108 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 73 protons and 108 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta-181 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -209,7 +209,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000133">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 79 protons and 118 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 79 protons and 118 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Au-197 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -219,7 +219,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 7 protons and 7 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, each with 7 protons and 7 neutrons with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-14 ion radiation</rdfs:label>
     </owl:Class>
     
@@ -255,8 +255,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 26 protons and 30 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-56 ion;Fe-56 nucleus;Fe-56 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 26 protons and 30 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron-56 nucleus</rdfs:label>
     </owl:Class>
     
@@ -280,8 +280,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 14 protons and 14 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Si-28 ion;Si-28 nucleus;Si-28 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 14 protons and 14 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silicon-28 nucleus</rdfs:label>
     </owl:Class>
     
@@ -305,8 +305,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 6 protons and 6 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-12 ion;C-12 nucleus;C-12 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 6 protons and 6 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carbon-12 nucleus</rdfs:label>
     </owl:Class>
     
@@ -330,8 +330,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 2 protons and 2 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He-4 ion;He-4 nucleus;He-4 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 2 protons and 2 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helium-4 nucleus</rdfs:label>
     </owl:Class>
     
@@ -355,8 +355,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 10 protons and 10 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ne-20 ion;Ne-20 nucleus;Ne-20 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 10 protons and 10 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neon-20 nucleus</rdfs:label>
     </owl:Class>
     
@@ -380,8 +380,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 41 protons and 52 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nb-93 ion;Nb-93 nucleus;Nb-93 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 41 protons and 52 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Niobium-93 nucleus</rdfs:label>
     </owl:Class>
     
@@ -405,8 +405,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 47 protons and 60 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ag-107 ion;Ag-107 nucleus;Ag-107 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 47 protons and 60 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silver-107 nucleus</rdfs:label>
     </owl:Class>
     
@@ -430,8 +430,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 54 protons and 75 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xe-129 ion;Xe-129 nucleus;Xe-129 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 54 protons and 75 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xenon-129 nucleus</rdfs:label>
     </owl:Class>
     
@@ -455,8 +455,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 73 protons and 108 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ta-181 ion;Ta-181 nucleus;Ta-181 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 73 protons and 108 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tantalum-181 nucleus</rdfs:label>
     </owl:Class>
     
@@ -480,8 +480,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 79 protons and 118 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Au-197 ion;Au-197 nucleus;Au-197 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 79 protons and 118 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gold-197 nucleus</rdfs:label>
     </owl:Class>
     
@@ -505,8 +505,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 7 protons and 7 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-14 ion;N-14 nucleus;N-14 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 7 protons and 7 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitrogen-14 nucleus</rdfs:label>
     </owl:Class>
     
@@ -530,8 +530,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 8 protons and 8 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-16 ion;O-16 nucleus;O-16 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 8 protons and 8 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxygen-16 nucleus</rdfs:label>
     </owl:Class>
     
@@ -555,8 +555,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 18 protons and 22 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ar-40  ion;Ar-40  nucleus;Ar-40  </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 18 protons and 22 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argon-40  nucleus</rdfs:label>
     </owl:Class>
     
@@ -580,8 +580,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 22 protons and 26 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ti-48  ion;Ti-48  nucleus;Ti-48  </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 22 protons and 26 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titanium-48  nucleus</rdfs:label>
     </owl:Class>
     
@@ -605,8 +605,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 36 protons and 48 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kr-84 ion;Kr-84 nucleus;Kr-84 </obo:IAO_0000118>
-        <obo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus with 36 protons and 48 neutrons </obo:definition>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Krypton-84 nucleus</rdfs:label>
     </owl:Class>
     

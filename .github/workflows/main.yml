@@ -31,7 +31,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
- #         cd $GITHUB_WORKSPACE
- #         cd src/ontology
- #         ./run.sh make all
+        run: cd $GITHUB_WORKSPACE && cd src/ontology && ./run.sh make all
