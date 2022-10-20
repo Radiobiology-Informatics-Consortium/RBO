@@ -129,6 +129,7 @@ SubClassOf(obo:CL_0017503 obo:GO_0005737)
 SubClassOf(obo:CL_0017504 obo:GO_0005737)
 
 SubClassOf(obo:SO_0000704 obo:BFO_0000040)
+SubClassOf(obo:CHEBI_36080 obo:CHEBI_33695)
 
 
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000160 "micromole per square meter per second")
