@@ -401,9 +401,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00005043 -->
+    <!-- http://purl.obolibrary.org/obo/RBO_00005073 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005043">
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005073">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gammacell 40</rdfs:label>
@@ -411,9 +411,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00005044 -->
+    <!-- http://purl.obolibrary.org/obo/RBO_00005075 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005044">
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005075">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005042"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RARAF 5.5 MV microbeam</rdfs:label>
@@ -421,9 +421,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00005045 -->
+    <!-- http://purl.obolibrary.org/obo/RBO_00005076 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005045">
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005076">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swift HALE</rdfs:label>
@@ -431,9 +431,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00005046 -->
+    <!-- http://purl.obolibrary.org/obo/RBO_00005077 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005046">
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005077">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ER-2</rdfs:label>
@@ -441,9 +441,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00005047 -->
+    <!-- http://purl.obolibrary.org/obo/RBO_00005078 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005047">
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005078">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WB-57</rdfs:label>
@@ -451,12 +451,22 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00005073 -->
+    <!-- http://purl.obolibrary.org/obo/RBO_00005079 -->
 
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005073">
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005079">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">doi: 10.2349/biij.2.1.e1</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faxitron CP160</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005080 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005080">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X-Rad320</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

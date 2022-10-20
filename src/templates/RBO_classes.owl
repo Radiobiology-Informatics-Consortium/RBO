@@ -1349,7 +1349,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001744"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned exposure to radiation of any type in any environment or otherwise planned process.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accidental irradiation</obo:IAO_0000118>
@@ -1468,7 +1468,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001744"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naturally occurring radiation exposure</rdfs:label>
