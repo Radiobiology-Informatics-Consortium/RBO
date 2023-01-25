@@ -64,7 +64,7 @@ all: odkversion test all_assets
 
 .PHONY: test
 test: odkversion sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
-	$(ROBOT) reason --input $(SRC) --reasoner ELK  --equivalent-classes-allowed all --exclude-tautologies structural --output test.owl && rm test.owl && echo "Success"
+	$(ROBOT) reason --input $(SRC) --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural --output test.owl && rm test.owl && echo "Success"
 
 .PHONY: odkversion
 odkversion:
