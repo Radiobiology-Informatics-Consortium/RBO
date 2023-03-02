@@ -109,7 +109,8 @@ SubClassOf(obo:PO_0009012 obo:BFO_0000015)
 
 # Class: obo:RBO_00002118 (Radioactive decay)
 
-SubClassOf(obo:RBO_00002118 ObjectSomeValuesFrom(obo:OBI_0000299 obo:ENVO_01001023))
+# change to the 115 radiation new thing concept
+SubClassOf(obo:RBO_00002118 ObjectSomeValuesFrom(obo:OBI_0000299 obo:RBO_00015000))
 SubClassOf(obo:RBO_00002118 ObjectMinCardinality(1 obo:OBI_0000293 obo:CHEBI_33252))
 
 # Class: obo:RBO_00002122 (Environmental radiation monitoring)
