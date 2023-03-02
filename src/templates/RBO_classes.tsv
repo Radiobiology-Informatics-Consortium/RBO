@@ -89,7 +89,7 @@ obo:RBO_00000112	high linear energy transfer radiation				"Neutrons or charged p
 obo:RBO_00000113	low linear energy transfer radiation				X and gamma rays or light charged particles such as electrons that produce sparse ionizing events far apart on a molecular scale.	NCRP https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf									obo:RBO_00000116	low LET|low-LET			NCIT:C17052															
 obo:RBO_00000114	ionizing electromagnetic radiation				Electromagnetic radiation having sufficient energy to remove one or more electrons from an atom										obo:RBO_00000116																			
 obo:RBO_00000115	radiation dosimeter device	radiation dosimeter		radiation dosimeter	A device that is used to measure the amount of ionizing radiation exposure or absorption.	NCIT									OBI:0000968	dosimeter			NCIT:C150121															
-obo:RBO_00000116	ionizing radiation			ionising radiation	Particle or electromagnetic radiation with sufficient energy to liberate one or more electrons from an atom.										RBO:00015000	ionising radiation			NCIT:C17052															
+obo:RBO_00000116	ionizing radiation			ionising radiation	Particle or electromagnetic radiation with sufficient energy to liberate one or more electrons from an atom.										obo:RBO_00015000	ionising radiation			NCIT:C17052															
 obo:RBO_00000117	charged particle radiation	charged particle		charged particle	Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)										BFO_0000040				NCIT:C18982															
 obo:RBO_00000118	risk estimate														OBI:0001909				NCIT:C19015															
 obo:RBO_00000119	lifetime risk estimate														obo:RBO_00000118				NCIT:C19662															

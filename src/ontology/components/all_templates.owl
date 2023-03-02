@@ -114,12 +114,6 @@
     
 
 
-    <!-- RBO:00015000 -->
-
-    <owl:Class rdf:about="RBO:00015000"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -1315,7 +1309,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000116 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000116">
-        <rdfs:subClassOf rdf:resource="RBO:00015000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle or electromagnetic radiation with sufficient energy to liberate one or more electrons from an atom.</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionising radiation</obo:IAO_0000118>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT:C17052</oboInOwl:hasDbXref>
