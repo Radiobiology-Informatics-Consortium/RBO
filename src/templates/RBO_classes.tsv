@@ -98,7 +98,7 @@ obo:RBO_00000121	particle accelerator				A device used to impart kinetic energy 
 obo:RBO_00000122	nuclear reactor				A device in which nuclear fission may be initiated and controlled in a self-sustaining chain reaction to generate energy or produce useful radiation.										OBI:0000968|obo:RBO_00005014				MESH:D009688															
 obo:RBO_00000123	biological process														BFO:0000015				GO:0008150	owl:deprecated														
 obo:RBO_00000124	cellular process														obo:RBO_00000123				GO:0009987	owl:deprecated														
-obo:RBO_00005001	heavy ion radiation				Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means										obo:RBO_00000117																			
+obo:RBO_00005001	heavy ion radiation				Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means										obo:RBO_00005003																			
 obo:RBO_00005002	light ion radiation				Atomic nuclei, variously defined as having atomic number 2, 3, 4, 5 or 6 and kinetic energy imparted by natural or artificial means										obo:RBO_00000117																			
 obo:RBO_00005003	charged particle				A particle with a positive or negative electric charge										BFO:0000040																			
 obo:RBO_00005009	space flight	space flight		spaceflight	Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere.										ENVO:03000010	Space flight																		
