@@ -147,7 +147,7 @@ obo:RBO_00005032	sham-irradiated	sham			A radiation quality resulting from a mat
 obo:RBO_00005033	parabolic flight aircraft	parabolic flight		Vomit Comet	An aircraft which flies a series of parabolic arcs to simulate micrgravity.				Jack Miller						ENVO:01001488																			
 obo:RBO_00005034	high altitude research aircraft				An aircraft which flies at altitudes greater than commercial aircraft altitudes for research purposes.				Jack Miller						ENVO:01001488																			
 obo:RBO_00005035	uncrewed aerial vehicle	UAV		UAV	An research aircraft designed to operate without crew members, either autonomously or under control from a ground station				Jack Miller						ENVO:01001488																			
-obo:RBO_00005036	highly charged energetic nuclei	HZE		HZE	Fully ionized atomic nuclei with 2 or more protons and energies in excess of tens of MeV per nucleon				Jack Miller						charged particle																			
+obo:RBO_00005036	highly charged energetic nuclei	HZE		HZE	Fully ionized atomic nuclei with 2 or more protons and energies in excess of tens of MeV per nucleon				Jack Miller						CHEBI:36347																			
 obo:RBO_00005037	adaptive radiation response study			adaptive	A study of a response to radiation conditioned by prior administration of radiation of a different type and/or at a different dose or dose rate				Jack Miller						obo:RBO_00000082																			
 obo:RBO_00005038	average fractionated dose rate				The total dose administered in a series of radiation fractions divided by the elapsed time between the beginning of the first exposure fraction and the end of the last exposure fraction				Jack Miller						dose rate																			
 obo:RBO_00005039	gamma irradiator				A device which exposes samples to gamma radiation.				Jack Miller						radiation source																			
@@ -282,7 +282,6 @@ obo:RBO_00002116	X-ray photon				A photon with energies from about 100 eV (elect
 obo:RBO_00002117	Irradiation				An energy transfer process in which energy in the form of particles or waves is transferred from one entity to another	Jack Miller	Irradiation of the sample was with x-ray photons.		0000-0003-1741-8297						http://purl.obolibrary.org/obo/ENVO_01001852				obo:RBO_0002000	TRUE														
 http://purl.obolibrary.org/obo/OBI_0302889															obo:RBO_00002117																			
 obo:RBO_00002118	Radioactive decay				A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus										http://purl.obolibrary.org/obo/ENVO_01001852																			
-obo:CHEBI_36356																																		
 obo:RBO_00002119	Unplanned irradiation				Irradiation that is not the result of a planned process										obo:RBO: 00002000																			
 obo:RBO_00002120	Unplanned anthropogenic irradiation				Unplanned irradiation that is of anthropogenic origin										obo:RBO_00002119																			
 obo:RBO_00002121	Unplanned non-anthropogenic irradiation				Unplanned irradiation that is non-anthropogenic in origin										obo:RBO_00002119																			
