@@ -282,7 +282,7 @@ obo:RBO_00002116	X-ray photon				A photon with energies from about 100 eV (elect
 obo:RBO_00002117	Irradiation				An energy transfer process in which energy in the form of particles or waves is transferred from one entity to another	Jack Miller	Irradiation of the sample was with x-ray photons.		0000-0003-1741-8297						http://purl.obolibrary.org/obo/ENVO_01001852				obo:RBO_0002000	TRUE														
 http://purl.obolibrary.org/obo/OBI_0302889															obo:RBO_00002117																			
 obo:RBO_00002118	Radioactive decay				A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus										obo:RBO_00015006																			
-obo:RBO_00002119	Unplanned irradiation				Irradiation that is not the result of a planned process										obo:RBO: 00002000																			
+obo:RBO_00002119	Unplanned irradiation				Irradiation that is not the result of a planned process										obo:RBO_00002000																			
 obo:RBO_00002120	Unplanned anthropogenic irradiation				Unplanned irradiation that is of anthropogenic origin										obo:RBO_00002119																			
 obo:RBO_00002121	Unplanned non-anthropogenic irradiation				Unplanned irradiation that is non-anthropogenic in origin										obo:RBO_00002119																			
 obo:RBO_00002122	Environmental radiation monitoring				Environmental monitoring that includes continual assay for radiation dose or quality.										http://purl.obolibrary.org/obo/ENVO_02500041																			
@@ -297,3 +297,4 @@ obo:RBO_00015003	microdosimetry assay				An assay of the pattern (frequency and 
 obo:RBO_00015004	alpha decay				Nuclear decay in which an alpha particle is emitted.	https://goldbook.iupac.org/terms/view/A00005									http://purl.obolibrary.org/obo/ENVO_01001024	alpha-decay			http://purl.obolibrary.org/obo/REX_0000017															
 obo:RBO_00015005	beta decay				Radioactive decay in which a beta particle is emitted or in which orbital electron capture occurs.	http://goldbook.iupac.org/B00572.html									http://purl.obolibrary.org/obo/ENVO_01001024	beta-decay			http://purl.obolibrary.org/obo/REX_0000007															
 obo:RBO_00015006	subatomic process				Processes in which electrons or components of the atomic nucleus are participants.										BFO:0000015																			
+obo:RBO_00015007	nanodosimetric measurement datum				Measurement of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers"										obo:RBO_010016																			
