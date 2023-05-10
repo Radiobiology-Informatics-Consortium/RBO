@@ -281,7 +281,7 @@ obo:RBO_00002115	Gamma ray photon				Photons having energies that are greater th
 obo:RBO_00002116	X-ray photon				A photon with energies from about 100 eV (electron volts) to 1 MeV (million electron volts).	Britannica.com	The sample was irradiated with x-ray photons.								CHEBI:30212																			
 obo:RBO_00002117	Irradiation				An energy transfer process in which energy in the form of particles or waves is transferred from one entity to another	Jack Miller	Irradiation of the sample was with x-ray photons.		0000-0003-1741-8297						http://purl.obolibrary.org/obo/ENVO_01001852				obo:RBO_0002000	TRUE														
 http://purl.obolibrary.org/obo/OBI_0302889															obo:RBO_00002117																			
-obo:RBO_00002118	Radioactive decay				A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus										http://purl.obolibrary.org/obo/ENVO_01001852																			
+obo:RBO_00002118	Radioactive decay				A process involving the emission of energy from an atomic nucleus resulting in change in the character of the nucleus										obo:RBO_00015006																			
 obo:RBO_00002119	Unplanned irradiation				Irradiation that is not the result of a planned process										obo:RBO: 00002000																			
 obo:RBO_00002120	Unplanned anthropogenic irradiation				Unplanned irradiation that is of anthropogenic origin										obo:RBO_00002119																			
 obo:RBO_00002121	Unplanned non-anthropogenic irradiation				Unplanned irradiation that is non-anthropogenic in origin										obo:RBO_00002119																			
