@@ -302,3 +302,4 @@ obo:RBO_00015008	specific energy measurement datum				In microdosimetry the spec
 obo:RBO_00015009	particle track				The path of a particle in matter, delineated by sites where the particle deposits energy.										BFO:0000015																			
 obo:RBO_00015010	nanodosimetry				A pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers.										PATO:0001241																			
 obo:RBO_00015011	particle track structure				The complete set of spatial coordinates of energy deposition events along a particle track in matter										PATO:0001236																			
+obo:RBO_00015012	ionization cluster				A group of ionization events closely related in time and space, occurring in a specified target volume and originating from a single primary ionizing particle.										UBERON:0000000																			
