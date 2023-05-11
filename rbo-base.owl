@@ -12,12 +12,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2023-03-02/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2023-05-11/rbo-base.owl"/>
         <dc:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dc:description>
         <dc:title>Radiation Biology Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-03-02</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-05-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -345,9 +345,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_36356 -->
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36347 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36356"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36347"/>
     
 
 
@@ -426,6 +426,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001023"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001024"/>
     
 
 
@@ -523,6 +529,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000112"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
@@ -570,6 +582,18 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001236"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241"/>
     
 
 
@@ -1120,7 +1144,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioprotector</obo:IAO_0000111>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.G. amifostine. </obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E.G. amifostine.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A substance present at the time of irradiation that mitigates or prevents the biological effects of irradiation.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Richard T. Hoppe, Theodore Locke Phillips, Mack Roach, Leibel and Phillips Textbook of Radiation Oncology (Third Edition), W.B. Saunders, (2010), ISBN 9781416058977, https://doi.org/10.1016/B978-1-4160-5897-7.00093-7.</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioprotectant</rdfs:label>
@@ -1132,7 +1156,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radionuclide chelators are small organic molecules or in some cases larger peptides that chemically sequester the radionuclide ion by forming a complex that determines the thermodynamic stability and kinetic inertness of the radionuclide. </obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radionuclide chelators are small organic molecules or in some cases larger peptides that chemically sequester the radionuclide ion by forming a complex that determines the thermodynamic stability and kinetic inertness of the radionuclide.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radionuclide chelator</rdfs:label>
     </owl:Class>
     
@@ -1607,7 +1631,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000118>
@@ -1929,10 +1953,10 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002004"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naturally occurring radiation exposure</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned naturally occurring radiation exposure</rdfs:label>
     </owl:Class>
     
 
@@ -1940,7 +1964,6 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002004"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deliberate or knowing exposure to naturally occurring radiation in a natural or anthropogenic environment, such as a radon spa.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
@@ -3102,7 +3125,9 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An energy transfer process in which energy in the form of particles or waves is transferred from one entity to another</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0003-1741-8297</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obo:RBO_0002000</oboInOwl:hasDbXref>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irradiation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRUE</owl:deprecated>
     </owl:Class>
     
 
@@ -3110,7 +3135,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002118 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002118">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001852"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -3133,7 +3158,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002119 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002119">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irradiation that is not the result of a planned process</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unplanned irradiation</rdfs:label>
     </owl:Class>
@@ -3221,7 +3246,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000117"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heavy ion radiation</rdfs:label>
     </owl:Class>
@@ -3499,7 +3524,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-irradiated</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -3589,7 +3614,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005025"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sham</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A radiation quality resulting from a material entity being kept under similar conditions as an irradiated material entity</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The class should be used in cases where it is clear that the control sample was treated in precisely the same way as the experimental samples or sham irradiation is specified. It is therefore a more restricted quality definition than &quot;non-irradiated&quot;. It is likely to be used more often with external radiation exposure or exposure to a beam, and with a biological rather than abiotic sample.</obo:IAO_0000112>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality of a biotic or abiotic sample or individual which is part of an experiment that tests the effects of radiation on organisms or materials by isolating variables as dictated by the scientific method in order to make a conclusion about the effect of such variables. In sham irradiation the precise treatment of the sample must be identical to that of the experimental samples and should be made explicit in the description of the method.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sham-irradiated</rdfs:label>
     </owl:Class>
@@ -3636,7 +3662,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36347"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HZE</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fully ionized atomic nuclei with 2 or more protons and energies in excess of tens of MeV per nucleon</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
@@ -3943,7 +3969,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00015001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uncharged  particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutral particle radiation</rdfs:label>
     </owl:Class>
@@ -3970,6 +3996,133 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259�265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Usually a track structure assay at micrometre scale</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microdosimetry assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear decay in which an alpha particle is emitted.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://goldbook.iupac.org/terms/view/A00005</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/REX_0000017</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-decay</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha decay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radioactive decay in which a beta particle is emitted or in which orbital electron capture occurs.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://goldbook.iupac.org/B00572.html</obo:IAO_0000119>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/REX_0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-decay</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta decay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes in which electrons or components of the atomic nucleus are participants.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subatomic process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanodosimetric measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In microdosimetry the specific energy, z, is the energy deposited by radiation ( in one or more deposition events) in a specified micrometric (or smaller) site divided my the mass of the site. Measured in Gy.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specific energy measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The path of a particle in matter, delineated by sites where the particle deposits energy.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particle track</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nanodosimetry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The complete set of spatial coordinates of energy deposition events along a particle track in matter</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particle track structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A group of ionization events closely related in time and space, occurring in a specified target volume and originating from a single primary ionizing particle.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ionization cluster</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 micrometers.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microdosimetric measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A volume of matter characterised by linear dimensions of the order of 0.5- 10&apos;s of microns, referred to as the &quot;site&quot; in microdosimetry.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micrometric volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000112"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A control specimen role of a biotic or abiotic sample or individual describes a specimen by its purpose, and therefore treatment, within a planned experimental process that tests hypotheses by isolating variables as dictated by the scientific method in order to make a conclusion about the effect of such variables. The quality of control inhering in the sample role exists as a result of the historical treatment of the sample. In a controlled experiment, two or more virtually identical experiments are conducted, but the factor being tested is varied in only one of them. This serves to isolate any causal phenomena. A control may have been subject to treatments during the experiment that might alter its state or behaviour and is therefore distinguishable from the sample as initial input into the experiment. However such treatments should in all cases but that of the variable under scrutiny, be the same as the experimental sample.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C64355</oboInOwl:hasDbXref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">control specimen role</rdfs:label>
     </owl:Class>
     
 
