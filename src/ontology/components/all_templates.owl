@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2023-05-11/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2023-05-15/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -1346,7 +1346,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO:00000116"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000118>
@@ -4101,6 +4101,12 @@
     <!-- http://purl.obolibrary.org/obo/UO_1000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO:00000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO:00000116"/>
     
 
 
