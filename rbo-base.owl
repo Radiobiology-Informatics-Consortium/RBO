@@ -12,12 +12,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2023-06-13/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2023-06-15/rbo-base.owl"/>
         <dc:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dc:description>
         <dc:title>Radiation Biology Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-06-13</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-06-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1631,7 +1631,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO:00000116"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000116"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000118>
@@ -4421,12 +4421,6 @@
     <!-- http://purl.obolibrary.org/obo/UO_1000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO:00000116 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO:00000116"/>
     
 
 
