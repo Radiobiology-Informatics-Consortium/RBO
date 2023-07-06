@@ -79,6 +79,10 @@ SubClassOf(obo:BFO_0000023 obo:BFO_0000017)
 
 SubClassOf(obo:CHEBI_33252 ObjectSomeValuesFrom(obo:RO_0002493 obo:RBO_00002118))
 
+# Class: obo:CHEBI_36080 (protein)
+
+SubClassOf(obo:CHEBI_36080 obo:CHEBI_33695)
+
 # Class: obo:CHEBI_50906 (role)
 
 SubClassOf(obo:CHEBI_50906 obo:BFO_0000017)
@@ -86,6 +90,18 @@ SubClassOf(obo:CHEBI_50906 obo:BFO_0000017)
 # Class: obo:CL_0000000 (cell)
 
 SubClassOf(obo:CL_0000000 obo:BFO_0000040)
+
+# Class: obo:CL_0017502 (acidophilic cytoplasm)
+
+SubClassOf(obo:CL_0017502 obo:GO_0005737)
+
+# Class: obo:CL_0017503 (basophilic cytoplasm)
+
+SubClassOf(obo:CL_0017503 obo:GO_0005737)
+
+# Class: obo:CL_0017504 (polychromatophilic cytoplasm)
+
+SubClassOf(obo:CL_0017504 obo:GO_0005737)
 
 # Class: obo:DOID_4 (disease)
 
@@ -109,7 +125,6 @@ SubClassOf(obo:PO_0009012 obo:BFO_0000015)
 
 # Class: obo:RBO_00002118 (Radioactive decay)
 
-# change to the 115 radiation new thing concept
 SubClassOf(obo:RBO_00002118 ObjectSomeValuesFrom(obo:OBI_0000299 obo:RBO_00015000))
 SubClassOf(obo:RBO_00002118 ObjectMinCardinality(1 obo:OBI_0000293 obo:CHEBI_33252))
 
@@ -121,16 +136,17 @@ SubClassOf(obo:RBO_00002122 ObjectSomeValuesFrom(obo:RO_0002234 obo:RBO_010016))
 
 SubClassOf(obo:RBO_00005068 ObjectAllValuesFrom(obo:RO_0002404 obo:ENVO_01001023))
 
+# Class: obo:RBO_00015022 (track formation)
+
+EquivalentClasses(obo:RBO_00015022 ObjectSomeValuesFrom(obo:OBI_0000299 obo:RBO_00015023))
+
+# Class: obo:SO_0000704 (gene)
+
+SubClassOf(obo:SO_0000704 obo:BFO_0000040)
+
 # Class: obo:UBERON_0000000 (processual entity)
 
 SubClassOf(obo:UBERON_0000000 obo:BFO_0000003)
-
-SubClassOf(obo:CL_0017502 obo:GO_0005737)
-SubClassOf(obo:CL_0017503 obo:GO_0005737)
-SubClassOf(obo:CL_0017504 obo:GO_0005737)
-
-SubClassOf(obo:SO_0000704 obo:BFO_0000040)
-SubClassOf(obo:CHEBI_36080 obo:CHEBI_33695)
 
 
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:UO_0000160 "micromole per square meter per second")
