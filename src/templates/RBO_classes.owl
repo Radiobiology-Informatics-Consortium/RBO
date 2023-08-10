@@ -1264,7 +1264,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000117 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000117">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_0001500"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charged particles with kinetic energy imparted by natural or artificial means (such as by a particle accelerator)</obo:IAO_0000115>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charged particle</obo:IAO_0000118>
@@ -3301,12 +3301,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_0001500 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_0001500"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RBO_00015000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015000">
@@ -3526,8 +3520,8 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00015020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015017"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_0002008"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally by the ingestion, inhalation or implantation of a source of radiation.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Research subjects participating in a clinical trial using an internally implanted radiation source have an internal experimental radiation exposure</rdfs:comment>
@@ -3561,12 +3555,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">track</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_0002008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_0002008"/>
     
 
 
