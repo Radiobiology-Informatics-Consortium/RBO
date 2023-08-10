@@ -394,11 +394,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000049"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed radiation</obo:IAO_0000111>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The samples were exposed to a mixed radiation field consisting of several ions at different energies.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of exposing the same sample to more than one type and/or energy of radiation, in sequence or simultaneously.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed field|mixed radiation</oboInOwl:hasExactSynonym>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed radiation field</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed field|mixed radiation field</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed radiation</rdfs:label>
     </owl:Class>
     
 
@@ -920,6 +919,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of the impact of radiation on the composition of or processes within the natural or anthropogenic environment.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental study</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A owl:deprecated</owl:deprecated>
     </owl:Class>
     
 
