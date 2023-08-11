@@ -8,6 +8,7 @@
 
 imports/chebi_import.owl: mirror/chebi.owl imports/chebi_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/chebi_terms_combined.txt --force true --method BOT \
+	    extract -T imports/chebi_terms_top.txt --force true --method TOP \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/chmo_import.owl: mirror/chmo.owl imports/chmo_terms_combined.txt
