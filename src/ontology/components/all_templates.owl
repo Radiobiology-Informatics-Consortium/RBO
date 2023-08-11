@@ -3757,7 +3757,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00015009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015009">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The path of a particle in matter, delineated by sites where the particle deposits energy.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particle track</rdfs:label>
     </owl:Class>
@@ -3898,15 +3898,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">track formation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RBO_00015023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">track</rdfs:label>
     </owl:Class>
     
 
