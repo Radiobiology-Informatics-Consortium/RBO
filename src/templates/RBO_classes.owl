@@ -897,6 +897,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The theme or modality of an experimental, theoretical, critical or summative study involving radiation, radioactive materials including their impacts on orgnisms and society.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiobiology investigation</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiobiology study type</rdfs:label>
     </owl:Class>
     
@@ -1588,10 +1589,10 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The specific manner, characteristic, pattern of application, or the employment of any technology, approach or formal procedure to implement the study plan to generate a study type.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000-0002-5111-7263</obo:IAO_0000117>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study modality</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study modality</rdfs:label>
     </owl:Class>
     
 
@@ -2761,7 +2762,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000117"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heavy ion radiation</rdfs:label>
     </owl:Class>
@@ -3487,7 +3488,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> Experimental internal radiation exposure of rodents to radon gas through inhalation.</obo:IAO_0000112>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental internal radiation exposure of rodents to radon gas through inhalation.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exposure to an inhaled, ingested, injected or implanted source of radiation of any origin as part of a planned or accidental process.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">internal radiation exposure</rdfs:label>
     </owl:Class>
@@ -3545,6 +3546,91 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">track formation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mixed irradiation study typically involves exposing a sample or system to a combination of different types of radiation. This could include exposure to various forms of ionizing radiation, such as gamma rays, X-rays, and particle radiation. Exposure might be simultaneous or sequential and from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed irradiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015023"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mixed ion and photon irradiation study typically involves exposing a sample or system to a combination of these types of radiation. This could include exposure to various forms of ionizing radiation, such as gamma rays, X-rays, and particle radiation. Exposure might be simultaneous or sequential and from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed ion and photon irradiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mixed ion and photon simultaneous irradiation study typically involves simultaneously exposing a sample or system to a combination of these types of radiation. This could include exposure to various forms of ionizing radiation, such as gamma rays, X-rays, and particle radiation. Exposure might be from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed ion and photon simultaneous irradiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015024"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mixed ion and photon sequential irradiation study typically involves sequentially exposing a sample or system to a combination of these types of radiation. This could include exposure to various forms of ionizing radiation, such as gamma rays, X-rays, and particle radiation. Exposure might be from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixed ion and photon sequential irradiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015023"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multiple ion irradiation study typically involves exposing a sample or system to a combination of different types of charged particle radiation. Exposure might be simultaneous or sequential and from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple ion mixed irradiation study</obo:IAO_0000118>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple ion irradiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015027"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multiple ion simultaneous irradiation study typically involves simultaneously exposing a sample or system to a combination of ions. This could include exposure to various forms of particle radiation, for example ion beams. Exposure might be from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple ion simultaneous irradiation study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015027"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A multiple ion sequential irradiation study involves exposing a sample or system to a combination of different ions. This could include exposure to various forms of particle radiation such as ion beams. Exposure might be from anthropogenic or natural sources of radiation. The goal is to understand how the different types of radiation interact with each other and their combined effects on the material or biological system under investigation.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple ion sequential irradiation study</rdfs:label>
     </owl:Class>
     
 
