@@ -7,7 +7,7 @@
 ##################### CUSTOM IMPORTS#########
 
 imports/chebi_import.owl: mirror/chebi.owl imports/chebi_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/chebi_terms_combined.txt --force true --method STAR \
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/chebi_terms_combined.txt --force true --method BOT \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 imports/chebi_top_import.owl: mirror/chebi.owl
