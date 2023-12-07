@@ -4219,6 +4219,12 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00015022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015022">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RBO_00015009"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">track formation</rdfs:label>
     </owl:Class>
