@@ -3772,7 +3772,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_010012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252;obo:RBO_00005003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
@@ -3919,6 +3919,12 @@
     <!-- http://purl.obolibrary.org/obo/UO_1000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33252;obo:RBO_00005003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33252;obo:RBO_00005003"/>
 </rdf:RDF>
 
 
