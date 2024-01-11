@@ -165,7 +165,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000710"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A system for the identification and correction of base-base mismatches, small insertion-deletion loops, and regions of heterology that are present in duplex DNA formed with strands from two recombining molecules. Correction of the mismatch can result in non-Mendelian segregation of alleles following meiosis.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -185,7 +185,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000719"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of UV-induced T-T, C-T and C-C dimers by directly reversing the damage to restore the original pyrimidines.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10915863</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -206,7 +206,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000720"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of UV-induced T-T, C-T, and C-C dimers by the recognition and removal of the damaged DNA strand from the DNA helix as an oligonucleotide. The small gap left in the DNA helix is filled in by the sequential action of DNA polymerase and DNA ligase.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -232,26 +232,26 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The error-free repair of a double-strand break in DNA in which the broken DNA molecule is repaired using homologous sequences. A strand in the broken DNA searches for a homologous region in an intact chromosome to serve as the template for DNA synthesis. The restoration of two intact DNA molecules results in the exchange, reciprocal or nonreciprocal, of genetic material between the intact DNA molecule and the broken DNA molecule.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>HDR</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vk</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vk</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>Rad51-dependent recombinational repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>homology-directed repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vk</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vk</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -270,7 +270,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000725"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A DNA repair process that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous DNA region.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -288,7 +288,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000727"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The error-free repair of a double-strand break in DNA in which the centromere-proximal end of a broken chromosome searches for a homologous region in an intact chromosome. DNA synthesis initiates from the 3&apos; end of the invading DNA strand, using the intact chromosome as the template, and progresses to the end of the chromosome.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -335,33 +335,33 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006283"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The nucleotide-excision repair process that carries out preferential repair of DNA lesions on the actively transcribed strand of the DNA duplex. In addition, the transcription-coupled nucleotide-excision repair pathway is required for the recognition and repair of a small subset of lesions that are not recognized by the global genome nucleotide excision repair pathway.</annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:10197977</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10197977</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11900249</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006283"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>TC-NER</annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:10197977</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10197977</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006283"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>transcription-coupled NER</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006283"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>transcription-coupled repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18794354</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006283"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <annotatedTarget>TCR</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18794354</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -382,7 +382,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006284"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>In base excision repair, an altered base is removed by a DNA glycosylase enzyme, followed by excision of the resulting sugar phosphate. The small gap left in the DNA helix is filled in by the sequential action of DNA polymerase and DNA ligase.</annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0815316194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815316194</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -405,7 +405,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006289"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A DNA repair process in which a small region of the strand surrounding the damage is removed from the DNA helix as an oligonucleotide. The small gap left in the DNA helix is filled in by the sequential action of DNA polymerase and DNA ligase. Nucleotide excision repair recognizes a wide range of substrates, including damage caused by UV irradiation (pyrimidine dimers and 6-4 photoproducts) and chemicals (intrastrand cross-links and bulky adducts).</annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:10197977</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10197977</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -423,7 +423,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006290"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of UV-induced T-T, C-T and C-C dimers.</annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0815316194</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815316194</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -447,7 +447,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006298"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A system for the correction of errors in which an incorrect base, which cannot form hydrogen bonds with the corresponding base in the parent strand, is incorporated into the daughter strand. The mismatch repair system promotes genomic fidelity by repairing base-base mismatches, insertion-deletion loops and heterologies generated during DNA replication and recombination.</annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0198506732</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11687886</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -468,7 +468,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006301"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The conversion of DNA-damage induced single-stranded gaps into large molecular weight DNA after replication. Includes pathways that remove replication-blocking lesions in conjunction with DNA replication.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -487,7 +487,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006302"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of double-strand breaks in DNA via homologous and nonhomologous mechanisms to reform a continuous DNA helix.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -506,7 +506,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006303"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of a double-strand break in DNA in which the two broken ends are rejoined with little or no sequence complementarity. Information at the DNA ends may be lost due to the modification of broken DNA ends. This term covers instances of separate pathways, called classical (or canonical) and alternative nonhomologous end joining (C-NHEJ and A-NHEJ). These in turn may further branch into sub-pathways, but evidence is still unclear.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:rph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10827453</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24837021</oboInOwl:hasDbXref>
     </Axiom>
@@ -551,8 +551,8 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010776"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A system for the identification and correction of base-base mismatches, small insertion-deletion loops, and regions of heterology that are present in duplex DNA formed with strands from two recombining molecules resulting in meiotic gene conversion. Meiotic gene conversion is the cell cycle process in which genetic information is transferred from one helix to another.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -570,8 +570,8 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0010777"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A system for the identification and correction of base-base mismatches, small insertion-deletion loops, and regions of heterology that are present in duplex DNA formed with strands from two recombining molecules resulting in meiotic recombination. Meiotic recombination is the cell cycle process in which double strand breaks are formed and repaired through a double Holliday junction intermediate.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -590,15 +590,15 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019985"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The replication of damaged DNA by synthesis across a lesion in the template strand; a specialized DNA polymerase or replication complex inserts a defined nucleotide across from the lesion which allows DNA synthesis to continue beyond the lesion. This process can be mutagenic depending on the damaged nucleotide and the inserted nucleotide.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10535901</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019985"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>bypass DNA synthesis</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -619,7 +619,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036297"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA. DNA interstrand crosslinks occur when both strands of duplex DNA are covalently tethered together (e.g. by an exogenous or endogenous agent), thus preventing the strand unwinding necessary for essential DNA functions such as transcription and replication.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:16464006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:22064477</oboInOwl:hasDbXref>
     </Axiom>
@@ -642,7 +642,6 @@
         <oboInOwl:creation_date>2012-08-07T11:11:59Z</oboInOwl:creation_date>
         <oboInOwl:hasExactSynonym>recombination-dependent interstrand cross-link repair</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>Fanconi pathway</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0036298</oboInOwl:id>
         <rdfs:label>recombinational interstrand cross-link repair</rdfs:label>
     </Class>
@@ -650,20 +649,14 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036298"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA by a mechanism that involves the exchange, reciprocal or nonreciprocal, of genetic material between the broken DNA molecule and a homologous DNA region.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:20658649</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036298"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>recombination-dependent interstrand cross-link repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036298"/>
-        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <annotatedTarget>Fanconi pathway</annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:31563844</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -685,7 +678,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036299"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA by a mechanism that does not involve homologous DNA recombination.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11154259</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:22064477</oboInOwl:hasDbXref>
     </Axiom>
@@ -693,13 +686,13 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036299"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>recombination-independent ICL repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036299"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>recombination-independent interstrand cross-link repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -720,8 +713,8 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0042275"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The conversion of DNA-damage induced single-stranded gaps into large molecular weight DNA via processes such as template switching, which does not remove the replication-blocking lesions but does not increase the endogenous mutation rate.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jl</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11459630</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -743,21 +736,21 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0042276"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The conversion of DNA-damage induced single-stranded gaps into large molecular weight DNA after replication by using a specialized DNA polymerase or replication complex to insert a defined nucleotide across the lesion. This process does not remove the replication-blocking lesions and causes an increase in the endogenous mutation level. For example, in E. coli, a low fidelity DNA polymerase, pol V, copies lesions that block replication fork progress. This produces mutations specifically targeted to DNA template damage sites, but it can also produce mutations at undamaged sites.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:jl</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11485998</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0042276"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <annotatedTarget>error-prone postreplication DNA repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0042276"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <annotatedTarget>mutagenic postreplication DNA repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -833,7 +826,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0045004"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>Correction of replication errors by DNA polymerase using a 3&apos;-5&apos; exonuclease activity.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:ai</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -872,15 +865,15 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070716"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A mismatch repair process that corrects errors introduced that ensures the accuracy of DNA replication.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:BHF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070716"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <annotatedTarget>mismatch repair involved in maintenance of fidelity during DNA-dependent DNA replication</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:tb</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -905,40 +898,40 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070911"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The nucleotide-excision repair process in which DNA lesions are removed from nontranscribed strands and from transcriptionally silent regions over the entire genome.</annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:10197977</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10197977</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18794354</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070911"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>GG-NER</annotatedTarget>
-        <oboInOwl:hasDbXref>PMID:10197977</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10197977</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070911"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>GGR</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18794354</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070911"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>global genome NER</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070911"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>global genomic nucleotide-excision repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070911"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>global genomic repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18794354</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -964,41 +957,41 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070914"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A DNA repair process that is initiated by an endonuclease that introduces a single-strand incision immediately 5&apos; of a UV-induced damage site. UV-damage excision repair acts on both cyclobutane pyrimidine dimers (CPDs) and pyrimidine-pyrimidone 6-4 photoproducts (6-4PPs).</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:9619100</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070914"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>UV-damaged DNA endonuclease-dependent excision repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070914"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>UVDE-dependent excision repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:9619100</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070914"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>UVER</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:9619100</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070914"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <annotatedTarget>AER</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10704216</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070914"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <annotatedTarget>alternative excision repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10704216</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -1020,7 +1013,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070987"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The conversion of DNA-damage induced single-stranded gaps into large molecular weight DNA after replication by using a specialized DNA polymerase or replication complex to insert a defined nucleotide across the lesion. This process does not remove the replication-blocking lesions but does not causes an increase in the endogenous mutation level. For S. cerevisiae, RAD30 encodes DNA polymerase eta, which incorporates two adenines. When incorporated across a thymine-thymine dimer, it does not increase the endogenous mutation level.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -1042,7 +1035,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0097551"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of double-strand breaks in mitochondrial DNA via homologous and nonhomologous mechanisms to reform a continuous DNA helix.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:di</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:di</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:22214610</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -1066,7 +1059,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0097552"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of a double-strand break in mitochondrial DNA in which the broken DNA molecule is repaired using homologous sequences.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:di</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:di</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:22214610</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -1089,7 +1082,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0097680"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>An instance of double-strand break repair via nonhomologous end joining that requires a number of factors important for V(D)J recombination, including the KU70/80 heterodimer (KU), XRCC4, ligase IV, and DNA-PKcs in mammals. It does not produce translocations (as opposed to the alternative nonhomologous end joining).</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:rph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18584027</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -1114,7 +1107,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0097681"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>An instance of double-strand break repair via nonhomologous end joining that is independent of factors important for V(D)J recombination (as opposed to classical nonhomologous end joining). It often results in a deletion with microhomology (i.e. 5-25bp homology) at the repair junction. Among different subclasses of nonhomologous end joining (NHEJ), alternative NHEJ appears to play a significant role in the etiology of mutations that arise during cancer development and treatment.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:rph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18584027</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:21655080</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Microhomology-mediated_end_joining</oboInOwl:hasDbXref>
@@ -1137,8 +1130,8 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0097698"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A telomere maintenance process that occurs by base-excision repair of telomeric DNA in response to DNA damage. Telomeric sequences are particularly susceptible to oxidative DNA damage, due to their G-rich nature.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:BHF_telomere</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:BHF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:BHF_telomere</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:jbu</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24703901</oboInOwl:hasDbXref>
     </Axiom>
@@ -1204,26 +1197,26 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901255"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>Any nucleotide-excision repair that is involved in interstrand cross-link repair.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:22064477</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901255"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>NER involved in ICL repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901255"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>NER involved in interstrand cross-link repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901255"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>nucleotide-excision repair involved in ICL repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -1247,7 +1240,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903823"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>Single strand break repair that takes place in a telomere.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GO_REF:0000062</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24374808</oboInOwl:hasDbXref>
     </Axiom>
@@ -1255,7 +1248,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1903823"/>
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>single strand break repair in telomere</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:TermGenie</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -1277,7 +1270,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1990396"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The error-free repair of a single-strand break in DNA in which the broken DNA molecule is repaired using homologous sequences. A strand in the broken DNA searches for a homologous region in an intact chromosome to serve as the template for DNA synthesis. The restoration of two intact DNA molecules results in the exchange, reciprocal or nonreciprocal, of genetic material between the intact DNA molecule and the broken DNA molecule.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:bhm</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:bhm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24339919</oboInOwl:hasDbXref>
     </Axiom>
     
@@ -1299,7 +1292,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1990414"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of a replication-born double-strand DNA break in which the DNA molecule is repaired using the homologous sequence of the sister chromatid which serves as a template to repair the breaks.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:rb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:rb</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:12820977</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:16888651</oboInOwl:hasDbXref>
     </Axiom>
@@ -1342,7 +1335,7 @@
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1990918"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The repair of double-strand breaks in DNA via homologous and nonhomologous mechanisms to reform a continuous DNA helix that contributes to reciprocal meiotic recombination.</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:mah</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:15238514</oboInOwl:hasDbXref>
     </Axiom>
 </rdf:RDF>

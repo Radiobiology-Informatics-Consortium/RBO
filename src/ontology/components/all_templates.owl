@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2023-12-18/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-01-11/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -189,12 +189,6 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000637"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001024"/>
     
 
 
@@ -3702,7 +3696,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00015004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002118"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear decay in which an alpha particle is emitted.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://goldbook.iupac.org/terms/view/A00005</obo:IAO_0000119>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/REX_0000017</oboInOwl:hasDbXref>
@@ -3715,7 +3709,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00015005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002118"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radioactive decay in which a beta particle is emitted or in which orbital electron capture occurs.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://goldbook.iupac.org/B00572.html</obo:IAO_0000119>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/REX_0000007</oboInOwl:hasDbXref>

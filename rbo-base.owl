@@ -12,12 +12,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2023-12-07/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-01-11/rbo-base.owl"/>
         <dc:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dc:description>
         <dc:title>Radiation Biology Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-12-07</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-01-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -432,12 +432,6 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01001023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001023"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ENVO_01001024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001024"/>
     
 
 
@@ -4018,7 +4012,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00015004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002118"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuclear decay in which an alpha particle is emitted.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://goldbook.iupac.org/terms/view/A00005</obo:IAO_0000119>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/REX_0000017</oboInOwl:hasDbXref>
@@ -4031,7 +4025,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00015005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002118"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radioactive decay in which a beta particle is emitted or in which orbital electron capture occurs.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://goldbook.iupac.org/B00572.html</obo:IAO_0000119>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/REX_0000007</oboInOwl:hasDbXref>
@@ -4453,7 +4447,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_010012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252;obo:RBO_00005003"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
@@ -4610,6 +4604,12 @@
     <!-- http://purl.obolibrary.org/obo/UO_1000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33252;obo:RBO_00005003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33252;obo:RBO_00005003"/>
     
 
 
