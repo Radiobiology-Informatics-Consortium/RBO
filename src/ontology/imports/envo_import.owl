@@ -21288,34 +21288,6 @@ consider revising &apos;pond&apos; semantics</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ENVO_09200002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_09200002">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001236"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The quality of a environmental system process.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>quality of environmental system process</oboInOwl:hasExactSynonym>
-        <rdfs:label>environmental system process quality</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_09200004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_09200004">
