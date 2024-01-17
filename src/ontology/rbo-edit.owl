@@ -139,7 +139,7 @@ SubClassOf(obo:RBO_00005068 ObjectAllValuesFrom(obo:RO_0002404 obo:ENVO_01001023
 
 # Class: obo:RBO_00015022 (track formation)
 
-EquivalentClasses(obo:RBO_00015022 ObjectSomeValuesFrom(obo:OBI_0000299 obo:RBO_00015023))
+EquivalentClasses(obo:RBO_00015022 ObjectSomeValuesFrom(obo:OBI_0000299 obo:RBO_00015009))
 EquivalentClasses(obo:RBO_00015009 ObjectSomeValuesFrom(obo:RO_0000086 obo:RBO_00015011))
 
 # Class: obo:SO_0000704 (gene)
