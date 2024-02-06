@@ -338,9 +338,9 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # Mirroring upstream ontologies
 # ----------------------------------------
 
-IMP=false # Global parameter to bypass import generation
-MIR=false # Global parameter to bypass mirror generation
-IMP_LARGE=false # Global parameter to bypass handling of large imports
+IMP=true # Global parameter to bypass import generation
+MIR=false# Global parameter to bypass mirror generation
+IMP_LARGE=true# Global parameter to bypass handling of large imports
 
 
 
@@ -362,7 +362,7 @@ mirror-bfo: | $(TMPDIR)
 .PHONY: mirror-chebi
 .PRECIOUS: $(MIRRORDIR)/chebi.owl
 mirror-chebi: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/chebi.owl --create-dirs -o $(MIRRORDIR)/chebi.owl --retry 4 --max-time 200 && $(ROBOT) convert -i $(MIRRORDIR)/chebi.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L --connect-timeout 500.0 --max-time 36000 $(URIBASE)/chebi.owl --create-dirs -o $(MIRRORDIR)/chebi.owl && $(ROBOT) convert -i $(MIRRORDIR)/chebi.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: pato
@@ -533,10 +533,10 @@ $(ONT)-base.owl: $(SRC) $(OTHER_SRC)
 # Full: The full artefacts with imports merged, reasoned
 $(ONT)-full.owl: $(SRC) $(OTHER_SRC) $(IMPORT_FILES)
 	$(ROBOT) merge --input $< \
-		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural \
-		relax \
-		reduce -r ELK \
-		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural -D debug.owl 
+#		relax \
+#		reduce -r ELK \
+#		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 
 # ----------------------------------------
 # Debugging Tools
