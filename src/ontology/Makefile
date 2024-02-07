@@ -339,8 +339,8 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=true # Global parameter to bypass import generation
-MIR=false# Global parameter to bypass mirror generation
-IMP_LARGE=true# Global parameter to bypass handling of large imports
+MIR=false # Global parameter to bypass mirror generation
+IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 
 
@@ -383,7 +383,7 @@ mirror-chmo: | $(TMPDIR)
 .PHONY: mirror-envo
 .PRECIOUS: $(MIRRORDIR)/envo.owl
 mirror-envo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/envo.owl --create-dirs -o $(MIRRORDIR)/envo.owl --retry 4 --max-time 200 && $(ROBOT) convert -i $(MIRRORDIR)/envo.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://raw.githubusercontent.com/EnvironmentOntology/envo/master/subsets/envo-basic.owl --create-dirs -o $(MIRRORDIR)/envo.owl --retry 4 --max-time 200 && $(ROBOT) convert -i $(MIRRORDIR)/envo.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: pco
