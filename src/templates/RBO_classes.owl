@@ -142,12 +142,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254"/>
@@ -1374,7 +1368,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
