@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-02-06/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-04-26/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -1635,7 +1635,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
