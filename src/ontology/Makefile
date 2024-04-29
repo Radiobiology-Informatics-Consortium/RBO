@@ -339,7 +339,7 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=true # Global parameter to bypass import generation
-MIR=false # Global parameter to bypass mirror generation
+MIR=true# Global parameter to bypass mirror generation
 IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 
