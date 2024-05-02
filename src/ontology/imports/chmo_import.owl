@@ -9,11 +9,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:chmo="http://purl.obolibrary.org/obo/chmo#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2022-10-05/imports/chmo_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-05-02/imports/chmo_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-05</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-05-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -106,6 +107,24 @@
     <!-- http://purl.obolibrary.org/obo/chmo#isDefinedBy -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/chmo#isDefinedBy"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -324,7 +343,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>An independent material continuant that is self-connected and retains its identity over time.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -341,7 +360,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002793"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A piece of apparatus that is used to measure a physical quantity.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://orcid.org/0000-0001-5985-7429</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -364,7 +383,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002796"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Measurement of the dose of a substance taken up by an object.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/9781847559753-00013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/9781847559753-00013</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -381,7 +400,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002797"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A sensor that is used to measure the dose of a substance taken by up an object.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1039/9781847559753-00013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>https://doi.org/10.1039/9781847559753-00013</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -442,7 +461,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obi:pppb</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obi:pppb</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -479,7 +498,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A device that is used to generate X-rays.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obi:es</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>obi:es</oboInOwl:hasDbXref>
     </owl:Axiom>
 </rdf:RDF>
 
