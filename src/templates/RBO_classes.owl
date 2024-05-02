@@ -3726,6 +3726,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00015035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000025"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiation field composition refers to the spectrum of types and characteristics of radiation present in a specific area or region where radiation is being used, emitted, absorbed, or measured. It describes the combination of different types of particles or waves that make up the radiation in a given field.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0003-4312-9552</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://orcid.org/0000-0003-1741-8297</obo:IAO_0000117>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation field composition</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_010000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010000">
