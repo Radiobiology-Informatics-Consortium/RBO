@@ -1746,29 +1746,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_0000129 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000129">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000127"/>
-        <obo:IAO_0000115>A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
-        <obo:IAO_0000115>A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
-        <rdfs:label>absorbed dose unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UO_0000160 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000160">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000127"/>
-        <obo:IAO_0000117>Jon Ison</obo:IAO_0000117>
-        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0004377</efo:EFO_URI>
-        <oboInOwl:hasExactSynonym>microeinstein per second and square meter</oboInOwl:hasExactSynonym>
-        <rdfs:label>microeinstein per square meter per second</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/EFO_0000399 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000399">
@@ -2194,6 +2171,28 @@ The CBA/J inbred mouse strain is used to study granulomatous experimental autoim
         <oboInOwl:hasExactSynonym>XXXIX</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">CBA</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000129">
+        <rdfs:label>absorbed dose unit</rdfs:label>
+        <obo:IAO_0000115>A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
+        <obo:IAO_0000115>A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000160">
+        <oboInOwl:hasExactSynonym>microeinstein per second and square meter</oboInOwl:hasExactSynonym>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0004377</efo:EFO_URI>
+        <obo:IAO_0000117>Jon Ison</obo:IAO_0000117>
+        <rdfs:label>microeinstein per square meter per second</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
