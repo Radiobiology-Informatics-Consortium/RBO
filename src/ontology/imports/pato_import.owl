@@ -24,8 +24,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/pato_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-02-01/imports/pato_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-02-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-02-06/imports/pato_import.owl"/>
+        <owl:versionInfo>2024-02-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -787,8 +787,8 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
-        <rdfs:label>part of</rdfs:label>
         <rdfs:label xml:lang="en">part of</rdfs:label>
+        <rdfs:label>part of</rdfs:label>
         <rdfs:label>part_of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
@@ -823,8 +823,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
-        <rdfs:label>has part</rdfs:label>
         <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:label>has part</rdfs:label>
         <rdfs:label>has_part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -854,8 +854,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>preceded_by</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>preceded_by</oboInOwl:shorthand>
-        <rdfs:label>preceded by</rdfs:label>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
+        <rdfs:label>preceded by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -879,8 +879,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>precedes</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>precedes</oboInOwl:shorthand>
-        <rdfs:label>precedes</rdfs:label>
         <rdfs:label xml:lang="en">precedes</rdfs:label>
+        <rdfs:label>precedes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -920,8 +920,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>bearer_of</oboInOwl:id>
         <oboInOwl:shorthand>bearer_of</oboInOwl:shorthand>
-        <rdfs:label>bearer of</rdfs:label>
         <rdfs:label xml:lang="en">has characteristic</rdfs:label>
+        <rdfs:label>bearer of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -943,8 +943,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>participates_in</oboInOwl:id>
         <oboInOwl:shorthand>participates_in</oboInOwl:shorthand>
-        <rdfs:label>participates in</rdfs:label>
         <rdfs:label xml:lang="en">participates in</rdfs:label>
+        <rdfs:label>participates in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -970,8 +970,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>has_participant</oboInOwl:id>
         <oboInOwl:shorthand>has_participant</oboInOwl:shorthand>
-        <rdfs:label>has participant</rdfs:label>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
+        <rdfs:label>has participant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1053,8 +1053,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>has_quality</oboInOwl:id>
         <oboInOwl:shorthand>has_quality</oboInOwl:shorthand>
-        <rdfs:label>has quality</rdfs:label>
         <rdfs:label xml:lang="en">has quality</rdfs:label>
+        <rdfs:label>has quality</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1281,8 +1281,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>immediately_preceded_by</oboInOwl:id>
         <oboInOwl:shorthand>immediately_preceded_by</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
-        <rdfs:label>immediately preceded by</rdfs:label>
         <rdfs:label xml:lang="en">immediately preceded by</rdfs:label>
+        <rdfs:label>immediately preceded by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1306,8 +1306,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>immediately_precedes</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
-        <rdfs:label>immediately precedes</rdfs:label>
         <rdfs:label xml:lang="en">immediately precedes</rdfs:label>
+        <rdfs:label>immediately precedes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1345,8 +1345,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>overlaps</oboInOwl:shorthand>
-        <rdfs:label>overlaps</rdfs:label>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
+        <rdfs:label>overlaps</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
@@ -1444,8 +1444,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>has_component</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>has_component</oboInOwl:shorthand>
-        <rdfs:label>has component</rdfs:label>
         <rdfs:label xml:lang="en">has component</rdfs:label>
+        <rdfs:label>has component</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:Componency"/>
     </owl:ObjectProperty>
     
@@ -1487,8 +1487,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>regulates</oboInOwl:shorthand>
-        <rdfs:label>regulates</rdfs:label>
         <rdfs:label xml:lang="en">regulates</rdfs:label>
+        <rdfs:label>regulates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1515,8 +1515,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>negatively_regulates</oboInOwl:shorthand>
-        <rdfs:label>negatively regulates</rdfs:label>
         <rdfs:label xml:lang="en">negatively regulates</rdfs:label>
+        <rdfs:label>negatively regulates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1548,8 +1548,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>positively_regulates</oboInOwl:shorthand>
-        <rdfs:label>positively regulates</rdfs:label>
         <rdfs:label xml:lang="en">positively regulates</rdfs:label>
+        <rdfs:label>positively regulates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1574,8 +1574,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>capable_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>capable_of</oboInOwl:shorthand>
-        <rdfs:label>capable of</rdfs:label>
         <rdfs:label xml:lang="en">capable of</rdfs:label>
+        <rdfs:label>capable of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1597,8 +1597,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>capable_of_part_of</oboInOwl:id>
         <oboInOwl:shorthand>capable_of_part_of</oboInOwl:shorthand>
-        <rdfs:label>capable of part of</rdfs:label>
         <rdfs:label xml:lang="en">capable of part of</rdfs:label>
+        <rdfs:label>capable of part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
     </owl:ObjectProperty>
     <owl:Axiom>
@@ -1646,8 +1646,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>starts</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>starts</oboInOwl:shorthand>
-        <rdfs:label>starts</rdfs:label>
         <rdfs:label xml:lang="en">starts</rdfs:label>
+        <rdfs:label>starts</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1670,8 +1670,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>starts_with</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>starts_with</oboInOwl:shorthand>
-        <rdfs:label>starts with</rdfs:label>
         <rdfs:label xml:lang="en">starts with</rdfs:label>
+        <rdfs:label>starts with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1691,8 +1691,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>ends</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>ends</oboInOwl:shorthand>
-        <rdfs:label>ends</rdfs:label>
         <rdfs:label xml:lang="en">ends</rdfs:label>
+        <rdfs:label>ends</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1714,8 +1714,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>ends_with</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>ends_with</oboInOwl:shorthand>
-        <rdfs:label>ends with</rdfs:label>
         <rdfs:label xml:lang="en">ends with</rdfs:label>
+        <rdfs:label>ends with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1742,8 +1742,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>has_input</oboInOwl:shorthand>
-        <rdfs:label>has input</rdfs:label>
         <rdfs:label xml:lang="en">has input</rdfs:label>
+        <rdfs:label>has input</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1769,8 +1769,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>has_output</oboInOwl:shorthand>
-        <rdfs:label>has output</rdfs:label>
         <rdfs:label xml:lang="en">has output</rdfs:label>
+        <rdfs:label>has output</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1823,8 +1823,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>results_in_developmental_progression_of</oboInOwl:id>
         <oboInOwl:shorthand>results_in_developmental_progression_of</oboInOwl:shorthand>
-        <rdfs:label>results in developmental progression of</rdfs:label>
         <rdfs:label xml:lang="en">results in developmental progression of</rdfs:label>
+        <rdfs:label>results in developmental progression of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://wiki.geneontology.org/index.php/Ontology_extensions"/>
     </owl:ObjectProperty>
     
@@ -1836,8 +1836,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002295"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002354"/>
-        <obo:IAO_0000112>an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">every &quot;endocardial cushion formation&quot; (GO:0003272) results_in_formation_of some &quot;endocardial cushion&quot; (UBERON:0002062)</obo:IAO_0000112>
+        <obo:IAO_0000112>an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119>GOC:mtg_berkeley_2013</obo:IAO_0000119>
@@ -1848,8 +1848,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>results_in_formation_of</oboInOwl:shorthand>
-        <rdfs:label>results in formation of</rdfs:label>
         <rdfs:label xml:lang="en">results in formation of</rdfs:label>
+        <rdfs:label>results in formation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1998,8 +1998,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>functionally_related_to</oboInOwl:id>
         <oboInOwl:shorthand>functionally_related_to</oboInOwl:shorthand>
-        <rdfs:label>functionally related to</rdfs:label>
         <rdfs:label xml:lang="en">functionally related to</rdfs:label>
+        <rdfs:label>functionally related to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2080,8 +2080,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>regulated_by</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:shorthand>regulated_by</oboInOwl:shorthand>
-        <rdfs:label>regulated by</rdfs:label>
         <rdfs:label xml:lang="en">regulated by</rdfs:label>
+        <rdfs:label>regulated by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2097,8 +2097,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>negatively_regulated_by</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:shorthand>negatively_regulated_by</oboInOwl:shorthand>
-        <rdfs:label>negatively regulated by</rdfs:label>
         <rdfs:label xml:lang="en">negatively regulated by</rdfs:label>
+        <rdfs:label>negatively regulated by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2114,8 +2114,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:id>positively_regulated_by</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:shorthand>positively_regulated_by</oboInOwl:shorthand>
-        <rdfs:label>positively regulated by</rdfs:label>
         <rdfs:label xml:lang="en">positively regulated by</rdfs:label>
+        <rdfs:label>positively regulated by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2133,8 +2133,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>input_of</oboInOwl:shorthand>
-        <rdfs:label>input of</rdfs:label>
         <rdfs:label xml:lang="en">input of</rdfs:label>
+        <rdfs:label>input of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2153,8 +2153,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <oboInOwl:shorthand>output_of</oboInOwl:shorthand>
-        <rdfs:label>output of</rdfs:label>
         <rdfs:label xml:lang="en">output of</rdfs:label>
+        <rdfs:label>output of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2182,8 +2182,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>causally_downstream_of</oboInOwl:id>
         <oboInOwl:shorthand>causally_downstream_of</oboInOwl:shorthand>
-        <rdfs:label>causally downstream of</rdfs:label>
         <rdfs:label xml:lang="en">causally downstream of</rdfs:label>
+        <rdfs:label>causally downstream of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2200,8 +2200,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>immediately_causally_downstream_of</oboInOwl:id>
         <oboInOwl:shorthand>immediately_causally_downstream_of</oboInOwl:shorthand>
-        <rdfs:label>immediately causally downstream of</rdfs:label>
         <rdfs:label xml:lang="en">immediately causally downstream of</rdfs:label>
+        <rdfs:label>immediately causally downstream of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2310,8 +2310,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>causally_upstream_of</oboInOwl:shorthand>
-        <rdfs:label>causally upstream of</rdfs:label>
         <rdfs:label xml:lang="en">causally upstream of</rdfs:label>
+        <rdfs:label>causally upstream of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2328,8 +2328,8 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>immediately_causally_upstream_of</oboInOwl:id>
         <oboInOwl:shorthand>immediately_causally_upstream_of</oboInOwl:shorthand>
-        <rdfs:label>immediately causally upstream of</rdfs:label>
         <rdfs:label xml:lang="en">immediately causally upstream of</rdfs:label>
+        <rdfs:label>immediately causally upstream of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -20479,5 +20479,5 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
 
