@@ -17,8 +17,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-05-02/imports/efo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-05-02</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-05-09/imports/efo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024-05-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1735,13 +1735,13 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_0000127 -->
+    <!-- http://purl.obolibrary.org/obo/UO_0000160 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000127">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000046"/>
-        <obo:IAO_0000115>A derived unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.</obo:IAO_0000115>
-        <obo:IAO_0000115>A unit which is a standard measure of the amount of radiation emitted by a given radiation source as well as the amount of radiation absorbed or deposited in a specific material by a radiation source.</obo:IAO_0000115>
-        <rdfs:label>radiation unit</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000160">
+        <obo:IAO_0000117>Jon Ison</obo:IAO_0000117>
+        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0004377</efo:EFO_URI>
+        <oboInOwl:hasExactSynonym>microeinstein per second and square meter</oboInOwl:hasExactSynonym>
+        <rdfs:label>microeinstein per square meter per second</rdfs:label>
     </owl:Class>
     
 
@@ -2186,12 +2186,6 @@ The CBA/J inbred mouse strain is used to study granulomatous experimental autoim
         <rdfs:label>absorbed dose unit</rdfs:label>
         <obo:IAO_0000115>A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
         <obo:IAO_0000115>A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.</obo:IAO_0000115>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UO_0000160">
-        <oboInOwl:hasExactSynonym>microeinstein per second and square meter</oboInOwl:hasExactSynonym>
-        <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0004377</efo:EFO_URI>
-        <obo:IAO_0000117>Jon Ison</obo:IAO_0000117>
-        <rdfs:label>microeinstein per square meter per second</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
