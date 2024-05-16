@@ -31,11 +31,12 @@ imports/pato_import.owl: mirror/pato.owl imports/pato_terms_combined.txt
 		query --update ../sparql/inject-subset-declaration.ru \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-
 imports/efo_import.owl: mirror/efo.owl imports/efo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/efo_terms_combined.txt --force true --method BOT \
 	remove -t "http://purl.obolibrary.org/obo/RO_0000053" \
 	remove -t "http://www.ebi.ac.uk/efo/EFO_0000001" \
+	remove -t "http://purl.obolibrary.org/obo/UO_0000127" --preserve-structure false \
+	remove -t "http://purl.obolibrary.org/obo/UO_0000129" --select "self descendants" --trim false --signature true \
 	remove -t "http://purl.obolibrary.org/obo/BFO_0000023" -t "http://purl.obolibrary.org/obo/BFO_0000020" --axioms subclass --trim false --signature true \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
