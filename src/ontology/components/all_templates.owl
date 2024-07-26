@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-05-31/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-07-26/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -90,9 +90,9 @@
     
 
 
-    <!-- COB:0000800 -->
+    <!-- http://purl.obolibrary.org/obo/COB_0000800 -->
 
-    <owl:DatatypeProperty rdf:about="COB:0000800">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/COB_0000800">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005002"/>
         <rdfs:label>has atomic number</rdfs:label>
     </owl:DatatypeProperty>
