@@ -12,9 +12,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-02-06/imports/chmo_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-08-23/imports/chmo_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/chmo/releases/2022-04-19/chmo.owl"/>
-        <owl:versionInfo>2024-02-06</owl:versionInfo>
+        <owl:versionInfo>2024-08-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -202,16 +202,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
         <oboInOwl:id>BFO:0000057</oboInOwl:id>
         <rdfs:label>has participant</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-        <oboInOwl:id>OBI:0000293</oboInOwl:id>
-        <rdfs:label>has_specified_input</rdfs:label>
     </owl:ObjectProperty>
     
 

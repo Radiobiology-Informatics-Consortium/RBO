@@ -96,6 +96,8 @@ ERROR	multiple_definitions	protocol	textual definition	a protocol is a plan spec
 ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.
 ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.@en
 ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs. E.g Drosophila melanogaster
+ERROR	multiple_definitions	radiation quality	textual definition	A quality of radiation that reflects the fluence spectrum of charged and neutral particles within the material or medium where dose is being deposited.
+ERROR	multiple_definitions	radiation quality	textual definition	A quality that inheres in an bearer by virtue of how that bearer interacts with radiation.
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
@@ -243,13 +245,6 @@ ERROR	multiple_labels	population	label	population
 ERROR	multiple_labels	population	label	population@en
 ERROR	multiple_labels	protocol	label	protocol
 ERROR	multiple_labels	protocol	label	protocol@en
-ERROR	multiple_labels	has_input	label	has specified input@en
-ERROR	multiple_labels	has_input	label	has_input
-ERROR	multiple_labels	has_input	label	has_specified_input
-ERROR	multiple_labels	has_input	label	has_specified_input@en
-ERROR	multiple_labels	is specified input of	label	is specified input of@en
-ERROR	multiple_labels	is specified input of	label	is_input_of
-ERROR	multiple_labels	is specified input of	label	is_specified_input_of@en
 ERROR	multiple_labels	has_output	label	has specified output@en
 ERROR	multiple_labels	has_output	label	has_output
 ERROR	multiple_labels	has_output	label	has_specified_output
@@ -416,9 +411,9 @@ ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
 ERROR	multiple_labels	Description	label	Description@en-us
 ERROR	multiple_labels	Description	label	description
-ERROR	multiple_labels	Title	label	Title
-ERROR	multiple_labels	Title	label	Title@en-us
-ERROR	multiple_labels	Title	label	title
+ERROR	multiple_labels	title	label	Title
+ERROR	multiple_labels	title	label	Title@en-us
+ERROR	multiple_labels	title	label	title
 ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
@@ -533,7 +528,7 @@ WARN	annotation_whitespace	results in maturation of	example of usage	 an annotat
 WARN	annotation_whitespace	results in transport along	textual definition	Holds between p and l when p is a transportation or localization process and the outcome of this process is to move c from one location to another, and the route taken by c follows a path that is aligned_with l 
 WARN	annotation_whitespace	siemens	has exact synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has exact synonym	E-field strength 
-WARN	annotation_whitespace	Title	Description	"
+WARN	annotation_whitespace	title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -3031,7 +3026,7 @@ WARN	missing_definition	subdivision of	textual definition
 WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
-WARN	missing_definition	Title	textual definition	
+WARN	missing_definition	title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	
@@ -3183,6 +3178,7 @@ INFO	lowercase_definition	ER-2	textual definition	https://www.nasa.gov/centers/a
 INFO	lowercase_definition	WB-57	textual definition	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
 INFO	lowercase_definition	Faxitron CP160	textual definition	doi: 10.2349/biij.2.1.e1
 INFO	lowercase_definition	X-Rad320	textual definition	https://precisionxray.com/x-rad/xrad-320/
+INFO	lowercase_definition	epithermal neutron	textual definition	a neutron with energy greater than a thermal neutron, but less than a fast neutron. The approximate energy range is 0.025-0.4 eV.
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	bearer of	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en

@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-07-26/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-08-23/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -40,6 +40,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
@@ -472,9 +478,9 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015038"/>
         <obo:IAO_0000115>The amount of ionizing radiation to which a member of the population on Earth is exposed from natural sources, such as terrestrial radiation from naturally-occurring radionuclides in the soil, cosmic radiation originating in outer space, and naturally-occurring ra</obo:IAO_0000115>
-        <rdfs:label>background ionizing radiation</rdfs:label>
+        <rdfs:label>ionizing background radiation</rdfs:label>
     </owl:Class>
     
 
@@ -2965,7 +2971,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000117"/>
-        <obo:IAO_0000115>Atomic nuclei, with atomic number 2 or greater and kinetic energy imparted by natural or artificial means</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of ionizing radiation consisting of charged particles that are relatively massive compared to other types of radiation, such as alpha, beta, and gamma radiation. Heavy ion radiation is composed of atomic nuclei that have been stripped of their electrons, resulting in positively charged particles.</obo:IAO_0000115>
+        <obo:IAO_0000116>Heavy ion radiation has several notable characteristics and contexts:
+
+High Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues.
+
+Enhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.
+
+Space Radiation: Heavy ions are a component of the galactic cosmic radiation present in space.
+
+In common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, &quot;heavy&quot; is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10.</obo:IAO_0000116>
         <rdfs:label>heavy ion radiation</rdfs:label>
     </owl:Class>
     
@@ -4011,7 +4026,7 @@
         <obo:IAO_0000117>https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym>ambient radiation</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>background radiation</oboInOwl:hasBroadSynonym>
-        <rdfs:label>anthropogenic background radiation</rdfs:label>
+        <rdfs:label>anthropogenic ionizing background radiation</rdfs:label>
     </owl:Class>
     
 
@@ -4023,7 +4038,7 @@
         <obo:IAO_0000115>Radiation originating in the terrestrial or extra-terrestrial environment.</obo:IAO_0000115>
         <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
-        <rdfs:label>natural background radiation</rdfs:label>
+        <rdfs:label>natural ionizing background radiation</rdfs:label>
     </owl:Class>
     
 
@@ -4083,6 +4098,81 @@
         <obo:IAO_0000117>https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
         <obo:IAO_0000117>https://orcid.org/0000-0003-1741-8297</obo:IAO_0000117>
         <rdfs:label>radiation field composition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015001"/>
+        <obo:IAO_0000111>thermal neutron</obo:IAO_0000111>
+        <obo:IAO_0000115>A neutron that has (by collision with other particles) reached an energy state equal to that of its surroundings, typically on the order of 0.025 eV.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.nrc.gov/reading-rm/basic-ref/glossary/neutron-thermal.html</obo:IAO_0000119>
+        <rdfs:label>thermal neutron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015001"/>
+        <obo:IAO_0000111>epithermal neutron</obo:IAO_0000111>
+        <obo:IAO_0000115>a neutron with energy greater than a thermal neutron, but less than a fast neutron. The approximate energy range is 0.025-0.4 eV.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263,https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000119>https://ns.ph.liv.ac.uk/~ajb/radiometrics/glossary/epithermal_neutron.html</obo:IAO_0000119>
+        <rdfs:label>epithermal neutron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015000"/>
+        <obo:IAO_0000111>background radiation</obo:IAO_0000111>
+        <obo:IAO_0000115>The ambient radiation in a defined environment emanating from natural or anthropogenic sources.</obo:IAO_0000115>
+        <obo:IAO_0000116>For uses involving experimentation or radiation therapy, use &quot;anthropogenic background radiation&quot; instead. Use this concept to indicate source is a mixture of anthropogenic and naturally occurring (ambient), or unknown or if the discrimination is not sought.</obo:IAO_0000116>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label>background radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015038"/>
+        <obo:IAO_0000111>non-ionizing background radiation</obo:IAO_0000111>
+        <obo:IAO_0000115>Background radiation that does not result in ionization of target material</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label>non-ionizing background radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015039"/>
+        <obo:IAO_0000111>anthropogenic non-ionizing background radiation</obo:IAO_0000111>
+        <obo:IAO_0000115>Non-ionizing background radiation that is the result of a human planned process.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label>anthropogenic non-ionizing background radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015039"/>
+        <obo:IAO_0000111>natural non-ionizing background radiation</obo:IAO_0000111>
+        <obo:IAO_0000115>Non-ionizing background radiation that is not the result of a human planned process.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <rdfs:label>natural non-ionizing background radiation</rdfs:label>
     </owl:Class>
     
 

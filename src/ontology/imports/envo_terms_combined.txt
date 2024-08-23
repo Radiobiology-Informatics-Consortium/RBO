@@ -1,5 +1,4 @@
 
-COB:0000800
 http://creativecommons.org/licenses/by/3.0/
 http://purl.obolibrary.org/obo/BFO_0000003
 http://purl.obolibrary.org/obo/BFO_0000004
@@ -7,6 +6,7 @@ http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/BFO_0000016
 http://purl.obolibrary.org/obo/BFO_0000017
 http://purl.obolibrary.org/obo/BFO_0000023
+http://purl.obolibrary.org/obo/BFO_0000027
 http://purl.obolibrary.org/obo/BFO_0000040
 http://purl.obolibrary.org/obo/BFO_0000050
 http://purl.obolibrary.org/obo/BFO_0000182
@@ -23,7 +23,7 @@ http://purl.obolibrary.org/obo/CL_0000000
 http://purl.obolibrary.org/obo/CL_0017502
 http://purl.obolibrary.org/obo/CL_0017503
 http://purl.obolibrary.org/obo/CL_0017504
-http://purl.obolibrary.org/obo/COB_0000082
+http://purl.obolibrary.org/obo/COB_0000800
 http://purl.obolibrary.org/obo/DOID_4
 http://purl.obolibrary.org/obo/ENVO_00000070
 http://purl.obolibrary.org/obo/ENVO_00000073
@@ -192,13 +192,13 @@ http://purl.obolibrary.org/obo/IAO_0000109
 http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000112
 http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000116
 http://purl.obolibrary.org/obo/IAO_0000117
 http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/OBI_0000011
 http://purl.obolibrary.org/obo/OBI_0000112
 http://purl.obolibrary.org/obo/OBI_0000272
-http://purl.obolibrary.org/obo/OBI_0000293
 http://purl.obolibrary.org/obo/OBI_0000299
 http://purl.obolibrary.org/obo/OBI_0000968
 http://purl.obolibrary.org/obo/OBI_0000984
@@ -206,9 +206,11 @@ http://purl.obolibrary.org/obo/OBI_0001138
 http://purl.obolibrary.org/obo/OBI_0001909
 http://purl.obolibrary.org/obo/OBI_0002983
 http://purl.obolibrary.org/obo/OBI_0302889
+http://purl.obolibrary.org/obo/PATO_0000025
 http://purl.obolibrary.org/obo/PATO_0001018
 http://purl.obolibrary.org/obo/PATO_0001236
 http://purl.obolibrary.org/obo/PATO_0001241
+http://purl.obolibrary.org/obo/PATO_0001739
 http://purl.obolibrary.org/obo/PATO_0002062
 http://purl.obolibrary.org/obo/PO_0000003
 http://purl.obolibrary.org/obo/PO_0009005
@@ -217,6 +219,7 @@ http://purl.obolibrary.org/obo/PO_0009012
 http://purl.obolibrary.org/obo/PO_0025025
 http://purl.obolibrary.org/obo/PO_0025034
 http://purl.obolibrary.org/obo/PO_0025131
+http://purl.obolibrary.org/obo/RBO.owl
 http://purl.obolibrary.org/obo/RBO_00000001
 http://purl.obolibrary.org/obo/RBO_00000002
 http://purl.obolibrary.org/obo/RBO_00000003
@@ -572,6 +575,18 @@ http://purl.obolibrary.org/obo/RBO_00015026
 http://purl.obolibrary.org/obo/RBO_00015027
 http://purl.obolibrary.org/obo/RBO_00015028
 http://purl.obolibrary.org/obo/RBO_00015029
+http://purl.obolibrary.org/obo/RBO_00015030
+http://purl.obolibrary.org/obo/RBO_00015031
+http://purl.obolibrary.org/obo/RBO_00015032
+http://purl.obolibrary.org/obo/RBO_00015033
+http://purl.obolibrary.org/obo/RBO_00015034
+http://purl.obolibrary.org/obo/RBO_00015035
+http://purl.obolibrary.org/obo/RBO_00015036
+http://purl.obolibrary.org/obo/RBO_00015037
+http://purl.obolibrary.org/obo/RBO_00015038
+http://purl.obolibrary.org/obo/RBO_00015039
+http://purl.obolibrary.org/obo/RBO_00015040
+http://purl.obolibrary.org/obo/RBO_00015041
 http://purl.obolibrary.org/obo/RBO_010000
 http://purl.obolibrary.org/obo/RBO_010001
 http://purl.obolibrary.org/obo/RBO_010002
@@ -593,7 +608,6 @@ http://purl.obolibrary.org/obo/RBO_010019
 http://purl.obolibrary.org/obo/RBO_010020
 http://purl.obolibrary.org/obo/RBO_2000
 http://purl.obolibrary.org/obo/RBO_2001
-http://purl.obolibrary.org/obo/RBO.owl
 http://purl.obolibrary.org/obo/RO_0000086
 http://purl.obolibrary.org/obo/RO_0002180
 http://purl.obolibrary.org/obo/RO_0002233
@@ -603,12 +617,12 @@ http://purl.obolibrary.org/obo/RO_0002493
 http://purl.obolibrary.org/obo/RO_0002608
 http://purl.obolibrary.org/obo/SO_0000704
 http://purl.obolibrary.org/obo/UBERON_0000000
-http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION
 http://purl.obolibrary.org/obo/UO_0000127
 http://purl.obolibrary.org/obo/UO_0000129
 http://purl.obolibrary.org/obo/UO_0000160
 http://purl.obolibrary.org/obo/UO_0000219
 http://purl.obolibrary.org/obo/UO_1000135
+http://purl.obolibrary.org/obo/uberon/core#ABBREVIATION
 http://purl.org/dc/elements/1.1/creator
 http://purl.org/dc/elements/1.1/date
 http://purl.org/dc/elements/1.1/description
