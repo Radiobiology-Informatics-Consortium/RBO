@@ -8,6 +8,15 @@ ERROR	deprecated_boolean_datatype	unplanned naturally occurring radiation exposu
 ERROR	deprecated_boolean_datatype	irradiation	owl:deprecated	TRUE
 ERROR	deprecated_boolean_datatype	miligray per second	owl:deprecated	TRUE
 ERROR	deprecated_boolean_datatype	radiation quality	owl:deprecated	TRUE
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	portion of material
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	sensor
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	manufactured product
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	processed material entity
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	X-ray source
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	spacecraft
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	radiation dosimeter device
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	particle accelerator
+ERROR	deprecated_class_reference	device	rdfs:subClassOf	nuclear reactor
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	thorium	label	thorium
@@ -88,16 +97,18 @@ ERROR	multiple_definitions	alternative term	textual definition	A label for a cla
 ERROR	multiple_definitions	alternative term	textual definition	An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)@en
 ERROR	multiple_definitions	definition source	textual definition	Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en
 ERROR	multiple_definitions	definition source	textual definition	formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en
+ERROR	multiple_definitions	processed material entity	textual definition	A material entity processed by human activity with an intent to produce
+ERROR	multiple_definitions	processed material entity	textual definition	Is a material entity that is created or changed during material processing.@en
 ERROR	multiple_definitions	population	textual definition	A population is a group of material entities consisting of individuals which share a particular characteristic such as inhabiting a particular region or area or ability to interbreed.
 ERROR	multiple_definitions	population	textual definition	a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area@en
 ERROR	multiple_definitions	protocol	textual definition	A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.@en
 ERROR	multiple_definitions	protocol	textual definition	A protocol is an information entity which is a set of instructions that describe an how an experiment is done.
 ERROR	multiple_definitions	protocol	textual definition	a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.
+ERROR	multiple_definitions	X-ray source	textual definition	A device that is used to generate X-rays.
+ERROR	multiple_definitions	X-ray source	textual definition	A device that is used to generate X-rays.@en
 ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.
 ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.@en
 ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs. E.g Drosophila melanogaster
-ERROR	multiple_definitions	radiation quality	textual definition	A quality of radiation that reflects the fluence spectrum of charged and neutral particles within the material or medium where dose is being deposited.
-ERROR	multiple_definitions	radiation quality	textual definition	A quality that inheres in an bearer by virtue of how that bearer interacts with radiation.
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	bearer of	textual definition	Inverse of characteristic_of@en
@@ -236,11 +247,15 @@ ERROR	multiple_labels	alternative term	label	alternative term
 ERROR	multiple_labels	alternative term	label	alternative term@en
 ERROR	multiple_labels	definition source	label	definition source
 ERROR	multiple_labels	definition source	label	definition source@en
+ERROR	multiple_labels	is about	label	is about
+ERROR	multiple_labels	is about	label	is about@en
 ERROR	multiple_labels	Mus <genus>	label	Mus
 ERROR	multiple_labels	Mus <genus>	label	Mus <genus>
 ERROR	multiple_labels	planned process	label	completely executed planned process@en
 ERROR	multiple_labels	planned process	label	planned process
 ERROR	multiple_labels	planned process	label	planned process@en
+ERROR	multiple_labels	processed material entity	label	processed material@en
+ERROR	multiple_labels	processed material entity	label	processed material entity@en
 ERROR	multiple_labels	population	label	population
 ERROR	multiple_labels	population	label	population@en
 ERROR	multiple_labels	protocol	label	protocol
@@ -249,8 +264,6 @@ ERROR	multiple_labels	has_output	label	has specified output@en
 ERROR	multiple_labels	has_output	label	has_output
 ERROR	multiple_labels	has_output	label	has_specified_output
 ERROR	multiple_labels	has_output	label	has_specified_output@en
-ERROR	multiple_labels	is_specified_output_of	label	is specified output of@en
-ERROR	multiple_labels	is_specified_output_of	label	is_specified_output_of@en
 ERROR	multiple_labels	organism	label	organism
 ERROR	multiple_labels	organism	label	organism@en
 ERROR	multiple_labels	inheres in	label	characteristic of@en
@@ -403,9 +416,9 @@ ERROR	multiple_labels	produced by	label	produced by
 ERROR	multiple_labels	produced by	label	produced by@en
 ERROR	multiple_labels	prefix	label	derived unit
 ERROR	multiple_labels	prefix	label	prefix
-ERROR	multiple_labels	creator	label	Creator
-ERROR	multiple_labels	creator	label	Creator@en-us
-ERROR	multiple_labels	creator	label	creator
+ERROR	multiple_labels	Creator	label	Creator
+ERROR	multiple_labels	Creator	label	Creator@en-us
+ERROR	multiple_labels	Creator	label	creator
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
@@ -438,7 +451,6 @@ WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x t) (if (Real
 WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
 WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
 WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
-WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] 
 WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
 WARN	annotation_whitespace	role	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
 WARN	annotation_whitespace	object aggregate	editor note	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
@@ -458,8 +470,6 @@ WARN	annotation_whitespace	cell	database_cross_reference	"KUPO:0000002
 WARN	annotation_whitespace	cell	database_cross_reference	VHOG:0001533
 WARN	annotation_whitespace	cell	database_cross_reference	WBbt:0004017
 WARN	annotation_whitespace	cell	database_cross_reference	XAO:0003012
-WARN	annotation_whitespace	datum label	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
-"
 WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
 Barry Smith
 
@@ -480,6 +490,7 @@ We don't have definitions of 'meaning' or 'expression' or 'property'. For 'refer
 Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
 
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	annotation_whitespace	domain entity does not exist	editor note	This obsolesence reason should be used conservatively. For example: Obsoleting class that describes a breed of cow based on a record in an existing database, that was later retracted as faulty (breed does not exist). Do not use this term to obsolete a historic concept (that was once valid, but not anymore). @en
 WARN	annotation_whitespace	radiation response modifier	textual definition	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
 WARN	annotation_whitespace	Iron-56 nucleus	textual definition	An atomic nucleus with 26 protons and 30 neutrons 
 WARN	annotation_whitespace	Iron-56 nucleus	alternative term	Fe-56 ion;Fe-56 nucleus;Fe-56 
@@ -811,6 +822,7 @@ WARN	duplicate_label_synonym	overlaps	alternative term	overlaps
 WARN	duplicate_label_synonym	connected to	alternative term	connected to
 WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
 WARN	duplicate_label_synonym	produces	alternative term	produces
+WARN	duplicate_label_synonym	executes	alternative term	executes
 WARN	duplicate_label_synonym	sympathetic nervous system	has exact synonym	sympathetic nervous system
 WARN	duplicate_label_synonym	endocrine pancreas	has exact synonym	endocrine pancreas
 WARN	duplicate_label_synonym	exocrine pancreas	has exact synonym	exocrine pancreas
@@ -1576,10 +1588,10 @@ WARN	duplicate_scoped_synonym	microgram per liter	alternative term	ug/L
 WARN	duplicate_scoped_synonym	microgram per liter	has exact synonym	ug/L
 WARN	equivalent_class_axiom_no_genus	information representation	concretizes	information content entity
 WARN	equivalent_class_axiom_no_genus	regulation of behavior	regulates (processual)	behavior process
-WARN	equivalent_class_axiom_no_genus	classified data set	is_specified_output_of	class prediction data transformation
+WARN	equivalent_class_axiom_no_genus	classified data set	is specified output of	class prediction data transformation
 WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
 WARN	equivalent_class_axiom_no_genus	manufacturing	achieves_planned_objective	manufacturing objective
-WARN	equivalent_class_axiom_no_genus	clustered data set	is_specified_output_of	class discovery data transformation
+WARN	equivalent_class_axiom_no_genus	clustered data set	is specified output of	class discovery data transformation
 WARN	equivalent_class_axiom_no_genus	decision tree building data transformation	achieves_planned_objective	decision tree induction objective
 WARN	equivalent_class_axiom_no_genus	statistical model validation	achieves_planned_objective	cross validation objective
 WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_objective	data transformation objective
@@ -1933,11 +1945,13 @@ WARN	missing_definition	lung endothelial cell	textual definition
 WARN	missing_definition	pulmonary artery endothelial cell	textual definition	
 WARN	missing_definition	lacks_part	textual definition	
 WARN	missing_definition	lacks_plasma_membrane_part	textual definition	
+WARN	missing_definition	executed by	textual definition	
 WARN	missing_definition	action specification	textual definition	
 WARN	missing_definition	concretizes	textual definition	
 WARN	missing_definition	intended to realize	textual definition	
 WARN	missing_definition	realizes	textual definition	
 WARN	missing_definition	information representation	textual definition	
+WARN	missing_definition	measurement datum	textual definition	
 WARN	missing_definition	physical information carrier	textual definition	
 WARN	missing_definition	has number of atomic nuclei	textual definition	
 WARN	missing_definition	atherosclerosis	textual definition	
@@ -1988,7 +2002,6 @@ WARN	missing_definition	integumental system environment	textual definition
 WARN	missing_definition	results in distribution of	textual definition	
 WARN	missing_definition	results in fission of	textual definition	
 WARN	missing_definition	hasAncestryStatus	textual definition	
-WARN	missing_definition	has measurement value	textual definition	
 WARN	missing_definition	has measurement unit label	textual definition	
 WARN	missing_definition	jaw movement	textual definition	
 WARN	missing_definition	root	textual definition	
@@ -2346,7 +2359,6 @@ WARN	missing_definition	Ovis aries	textual definition
 WARN	missing_definition	Caprinae	textual definition	
 WARN	missing_definition	Lagomorpha	textual definition	
 WARN	missing_definition	Rodentia	textual definition	
-WARN	missing_definition	plan	textual definition	
 WARN	missing_definition	qualitative	textual definition	
 WARN	missing_definition	physical quality of a process	textual definition	
 WARN	missing_definition	sloped downward	textual definition	
@@ -2361,6 +2373,7 @@ WARN	missing_definition	biological process	textual definition
 WARN	missing_definition	cellular process	textual definition	
 WARN	missing_definition	track formation	textual definition	
 WARN	missing_definition	mass number	textual definition	
+WARN	missing_definition	is concretized as	textual definition	
 WARN	missing_definition	contained in	textual definition	
 WARN	missing_definition	contains	textual definition	
 WARN	missing_definition	innervated_by	textual definition	
@@ -2398,6 +2411,7 @@ WARN	missing_definition	causally upstream of or within, negative effect	textual 
 WARN	missing_definition	causally upstream of or within, positive effect	textual definition	
 WARN	missing_definition	results in fusion of	textual definition	
 WARN	missing_definition	agent role	textual definition	
+WARN	missing_definition	executes	textual definition	
 WARN	missing_definition	chemosensory organ	textual definition	
 WARN	missing_definition	anterior region of body	textual definition	
 WARN	missing_definition	posterior region of body	textual definition	
@@ -2541,6 +2555,9 @@ WARN	missing_definition	sigmoid vein	textual definition
 WARN	missing_definition	pancreatic artery	textual definition	
 WARN	missing_definition	axial vasculature	textual definition	
 WARN	missing_definition	panarthropod head	textual definition	
+WARN	missing_definition	length unit	textual definition	
+WARN	missing_definition	mass unit	textual definition	
+WARN	missing_definition	time unit	textual definition	
 WARN	missing_definition	electric current unit	textual definition	
 WARN	missing_definition	temperature unit	textual definition	
 WARN	missing_definition	substance unit	textual definition	
@@ -3023,13 +3040,14 @@ WARN	missing_definition	channels_into	textual definition
 WARN	missing_definition	layer part of	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	creator	textual definition	
+WARN	missing_definition	Creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	
+WARN	missing_definition	Obsolete Class	textual definition	
 WARN	missing_definition	created_by	textual definition	
 WARN	missing_definition	creation date	textual definition	
 WARN	missing_definition	has_alternative_id	textual definition	
@@ -3039,6 +3057,7 @@ WARN	missing_definition	has_related_synonym	textual definition
 WARN	missing_definition	in_subset	textual definition	
 WARN	missing_definition	xsd:boolean	textual definition	
 WARN	missing_definition	xsd:string	textual definition	
+WARN	missing_obsolete_label	device	label	device
 WARN	missing_subset_declaration	obo:doid#DO_AGR_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_CFDE_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_FlyBase_slim	rdfs:subPropertyOf	
@@ -3151,8 +3170,6 @@ INFO	lowercase_definition	ore	textual definition	a type of rock that contains su
 INFO	lowercase_definition	nuclear energy	textual definition	potential energy that binds nucleons to form the atomic nucleus (and nuclear reactions).
 INFO	lowercase_definition	data item	textual definition	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
 INFO	lowercase_definition	definition source	textual definition	formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en
-INFO	lowercase_definition	is quality measurement of	textual definition	m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en
-INFO	lowercase_definition	is quality measured as	textual definition	inverse of the relation of is quality measurement of@en
 INFO	lowercase_definition	behavior process	textual definition	"\""The action, reaction, or performance of an organism in response to external or internal stimuli.\"" [GO:GO\:0007610]"
 INFO	lowercase_definition	kinesthetic behavior	textual definition	"\""Movement behavior of the body or its parts.\"""
 INFO	lowercase_definition	regulation of behavior	textual definition	"\""Any process that modulates the frequency, rate or extent of behavior, the specific actions or reactions of an organism in response to external or internal stimuli.\"" [GO:0050795]"
@@ -3166,9 +3183,9 @@ INFO	lowercase_definition	zip	textual definition	zip is a format standard of a d
 INFO	lowercase_definition	tar	textual definition	tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en
 INFO	lowercase_definition	material transformation objective	textual definition	an objective specifiction that creates an specific output object from input materials.@en
 INFO	lowercase_definition	manufacturing objective	textual definition	is the objective to manufacture a material of a certain function (device)@en
-INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.
-INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person
-INFO	lowercase_definition	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data
+INFO	lowercase_definition	GenePattern software	textual definition	a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.@en
+INFO	lowercase_definition	service provider role	textual definition	is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person@en
+INFO	lowercase_definition	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data@en
 INFO	lowercase_definition	spacecraft module	textual definition	a self-contained unit of a spacecraft
 INFO	lowercase_definition	gamma radiation	textual definition	electromagnetic radiation with photon energies greater than approximately 100 keV
 INFO	lowercase_definition	Gammacell 40	textual definition	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
@@ -3344,3 +3361,4 @@ Wild-derived mice are genetically distinct from common laboratory mice for a num
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	cellular response to toxic substance	rdfs:subClassOf	
+INFO	missing_superclass	Obsolete Class	rdfs:subClassOf	

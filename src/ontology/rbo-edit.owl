@@ -16,7 +16,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Ontology(<http://purl.obolibrary.org/obo/RBO.owl>
 Import(<http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/components/all_templates.owl>)
-Import(<http://purl.obolibrary.org/obo/rbo/imports/bfo_import.owl>)
+#Import(<http://purl.obolibrary.org/obo/rbo/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/chebi_top_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rbo/imports/chmo_import.owl>)

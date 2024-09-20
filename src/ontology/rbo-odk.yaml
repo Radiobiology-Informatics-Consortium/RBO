@@ -13,9 +13,12 @@ export_formats:
 import_group:
   products:
   - id: ro
-  - id: bfo
+  - id: cob
+  - id: obi
+    mirror_from: https://github.com/obi-ontology/obi/raw/d5ca6099acdfc548931fb461b42aa32e1ea1a064/obi.owl
   - id: chebi
     module_type: custom
+    is_large: TRUE
   - id: pato
     module_type: custom
   - id: chmo
@@ -23,7 +26,6 @@ import_group:
   - id: envo
     module_type: custom
   - id: pco
-  - id: obi
   - id: uo
     module_type: custom
   - id: doid
@@ -42,6 +44,7 @@ import_group:
     module_type: custom
   - id: ncbitaxon
     module_type: custom
+    is_large: TRUE
 obo_format_options: ''
 primary_release: full
 reasoner: ELK
