@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro cob obi chebi pato chmo envo pco uo doid uberon cob go efo ncbitaxon
+IMPORTS =  ro cob obi chebi pato chmo envo pco uo doid uberon cob go efo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -410,9 +410,9 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # Mirroring upstream ontologies
 # ----------------------------------------
 
-IMP=false# Global parameter to bypass import generation
+IMP=true# Global parameter to bypass import generation
 MIR=false # Global parameter to bypass mirror generation
-IMP_LARGE=false# Global parameter to bypass handling of large imports
+IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 
 
