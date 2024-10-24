@@ -1,4 +1,23 @@
 Level	Rule Name	Subject	Property	Value
+ERROR	deprecated_boolean_datatype	environmental study	owl:deprecated	A owl:deprecated
+ERROR	deprecated_boolean_datatype	therapeutics study	owl:deprecated	A owl:deprecated
+ERROR	deprecated_boolean_datatype	nuclear accident study	owl:deprecated	A owl:deprecated
+ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	owl:deprecated
+ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	owl:deprecated
+ERROR	deprecated_boolean_datatype	unplanned naturally occurring radiation exposure	owl:deprecated	TRUE
+ERROR	deprecated_boolean_datatype	irradiation	owl:deprecated	TRUE
+ERROR	deprecated_boolean_datatype	miligray per second	owl:deprecated	TRUE
+ERROR	deprecated_boolean_datatype	radiation quality	owl:deprecated	TRUE
+ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
+ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
+ERROR	duplicate_label	therapeutics study	rdfs:label	therapeutics study
+ERROR	duplicate_label	therapeutics study	rdfs:label	therapeutics study
+ERROR	duplicate_label	space flight	rdfs:label	space flight
+ERROR	duplicate_label	space flight	rdfs:label	space flight
+ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
+ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
+ERROR	duplicate_label	environmental study	rdfs:label	environmental study
+ERROR	duplicate_label	environmental study	rdfs:label	environmental study
 ERROR	missing_label	BFO:0000023	rdfs:label	
 ERROR	missing_label	CHEBI:33252	rdfs:label	
 ERROR	missing_label	CHEBI:36080	rdfs:label	
@@ -17,16 +36,6 @@ ERROR	missing_label	SO:0000704	rdfs:label
 ERROR	missing_label	UBERON:0000000	rdfs:label	
 ERROR	missing_label	UO:0000127	rdfs:label	
 ERROR	missing_label	UO:0000160	rdfs:label	
-ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
-ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
-ERROR	duplicate_label	therapeutics study	rdfs:label	therapeutics study
-ERROR	duplicate_label	therapeutics study	rdfs:label	therapeutics study
-ERROR	duplicate_label	space flight	rdfs:label	space flight
-ERROR	duplicate_label	space flight	rdfs:label	space flight
-ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
-ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
-ERROR	duplicate_label	environmental study	rdfs:label	environmental study
-ERROR	duplicate_label	environmental study	rdfs:label	environmental study
 WARN	annotation_whitespace	radiation response modifier	IAO:0000115	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
 WARN	annotation_whitespace	Iron-56 nucleus	IAO:0000115	An atomic nucleus with 26 protons and 30 neutrons 
 WARN	annotation_whitespace	Iron-56 nucleus	IAO:0000118	Fe-56 ion;Fe-56 nucleus;Fe-56 
@@ -59,7 +68,19 @@ WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000118	Ti-48  ion;Ti-48  nuc
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000115	An atomic nucleus with 36 protons and 48 neutrons 
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000118	Kr-84 ion;Kr-84 nucleus;Kr-84 
 WARN	annotation_whitespace	external radiation exposure	IAO:0000112	 Mice exposed to external radiation from a Sr source.
-WARN	missing_definition	has atomic number	IAO:0000115	
+WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
+WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
+WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
+WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
+WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
+WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
+WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
+WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
+WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
+WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
+WARN	equivalent_class_axiom_no_genus	particle track	RO:0000086	particle track structure
+WARN	equivalent_class_axiom_no_genus	track formation	OBI:0000299	particle track
 WARN	missing_definition	BFO:0000023	IAO:0000115	
 WARN	missing_definition	CHEBI:33252	IAO:0000115	
 WARN	missing_definition	CHEBI:36080	IAO:0000115	
@@ -68,6 +89,7 @@ WARN	missing_definition	CL:0000000	IAO:0000115
 WARN	missing_definition	CL:0017502	IAO:0000115	
 WARN	missing_definition	CL:0017503	IAO:0000115	
 WARN	missing_definition	CL:0017504	IAO:0000115	
+WARN	missing_definition	has atomic number	IAO:0000115	
 WARN	missing_definition	DOID:4	IAO:0000115	
 WARN	missing_definition	GO:0005575	IAO:0000115	
 WARN	missing_definition	GO:0009314	IAO:0000115	
@@ -89,22 +111,13 @@ WARN	missing_definition	SO:0000704	IAO:0000115
 WARN	missing_definition	UBERON:0000000	IAO:0000115	
 WARN	missing_definition	UO:0000127	IAO:0000115	
 WARN	missing_definition	UO:0000160	IAO:0000115	
-WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
-WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
-WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
-WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
-WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
-WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
-WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
-WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
-WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
 INFO	lowercase_definition	spacecraft module	IAO:0000115	a self-contained unit of a spacecraft
 INFO	lowercase_definition	gamma radiation	IAO:0000115	electromagnetic radiation with photon energies greater than approximately 100 keV
-INFO	lowercase_definition	Gammacell 40	IAO:0000115	<http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf>
-INFO	lowercase_definition	RARAF 5.5 MV microbeam	IAO:0000115	<https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility>
-INFO	lowercase_definition	Swift HALE	IAO:0000115	<https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights>
-INFO	lowercase_definition	ER-2	IAO:0000115	<https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html>
-INFO	lowercase_definition	WB-57	IAO:0000115	<https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC>
-INFO	lowercase_definition	Faxitron CP160	IAO:0000115	<doi: 10.2349/biij.2.1.e1>
-INFO	lowercase_definition	X-Rad320	IAO:0000115	<https://precisionxray.com/x-rad/xrad-320/>
+INFO	lowercase_definition	Gammacell 40	IAO:0000115	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
+INFO	lowercase_definition	RARAF 5.5 MV microbeam	IAO:0000115	https://www.crr.columbia.edu/services/ion-beam-and-neutron-core-facility
+INFO	lowercase_definition	Swift HALE	IAO:0000115	https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights
+INFO	lowercase_definition	ER-2	IAO:0000115	https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html
+INFO	lowercase_definition	WB-57	IAO:0000115	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
+INFO	lowercase_definition	Faxitron CP160	IAO:0000115	doi: 10.2349/biij.2.1.e1
+INFO	lowercase_definition	X-Rad320	IAO:0000115	https://precisionxray.com/x-rad/xrad-320/
+INFO	lowercase_definition	epithermal neutron	IAO:0000115	a neutron with energy greater than a thermal neutron, but less than a fast neutron. The approximate energy range is 0.025-0.4 eV.

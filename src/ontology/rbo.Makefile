@@ -28,6 +28,7 @@ imports/pato_import.owl: mirror/pato.owl imports/pato_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/pato_terms_combined.txt --force true --method BOT \
 		remove -t "http://purl.obolibrary.org/obo/BFO_0000023" -t "http://purl.obolibrary.org/obo/CHEBI_50906" --axioms subclass --trim false --signature true \
 		remove -t "http://purl.obolibrary.org/obo/BFO_0000023" -t "http://purl.obolibrary.org/obo/CHEBI_50906" --axioms equivalent --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/PATO_0001291" --trim false --signature true \
 		query --update ../sparql/inject-subset-declaration.ru \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 

@@ -40,8 +40,9 @@ import_group:
   - id: efo
     mirror_from: https://www.ebi.ac.uk/efo/efo.owl
     module_type: custom
-  - id: ncbitaxon
-    module_type: custom
+#  - id: ncbitaxon
+#    module_type: custom
+#    is_large: TRUE
 obo_format_options: ''
 primary_release: full
 reasoner: ELK
