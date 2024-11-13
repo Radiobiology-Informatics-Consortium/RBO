@@ -13,12 +13,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-10-23/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2024-11-13/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2024-10-23</owl:versionInfo>
+        <owl:versionInfo>2024-11-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -433,6 +433,12 @@
     <!-- http://purl.obolibrary.org/obo/ENVO_01000637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000637"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_01000951 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000951"/>
     
 
 
@@ -4489,6 +4495,43 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>Non-ionizing background radiation that is not the result of a human planned process.</obo:IAO_0000115>
         <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
         <rdfs:label>natural non-ionizing background radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <obo:IAO_0000115>The toroidal zones surrounding the Earth, comprised of charged particles trapped by the Earth&apos;s magnetic field. There are two permanent belts, an inner and an outer belt. A transient third belt may form during periods of high solar activity.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000119>https://doi.org/10.1029/2018JA025940</obo:IAO_0000119>
+        <rdfs:label>Van Allen belts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03000010"/>
+        <obo:IAO_0000115>The emission and acceleration of large numbers of energetic charged particles, mainly protons, from the Sun. Sources include solar flares and coronal mass ejections (CME).</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000118>SPE</obo:IAO_0000118>
+        <obo:IAO_0000119>https://three.jsc.nasa.gov/articles/Hu-SPEs.pdf</obo:IAO_0000119>
+        <rdfs:label>solar particle event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000951"/>
+        <obo:IAO_0000115>The geomagnetosphere is the region of space surrounding Earth where the dominant magnetic field is the magnetic field of Earth, rather than the magnetic field of interplanetary space. The geomagnetosphere is formed by the interaction of the solar wind with Earth�s magnetic field.</obo:IAO_0000115>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263, https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.swpc.noaa.gov/phenomena/earths-magnetosphere</obo:IAO_0000119>
+        <rdfs:label>geomagnetosphere</rdfs:label>
     </owl:Class>
     
 

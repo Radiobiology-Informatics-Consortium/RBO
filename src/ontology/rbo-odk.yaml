@@ -16,6 +16,7 @@ import_group:
   - id: bfo
   - id: chebi
     module_type: custom
+    is_large: TRUE
   - id: pato
     module_type: custom
   - id: chmo

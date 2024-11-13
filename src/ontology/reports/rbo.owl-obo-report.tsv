@@ -416,17 +416,17 @@ ERROR	multiple_labels	produced by	label	produced by
 ERROR	multiple_labels	produced by	label	produced by@en
 ERROR	multiple_labels	prefix	label	derived unit
 ERROR	multiple_labels	prefix	label	prefix
-ERROR	multiple_labels	Creator	label	Creator
-ERROR	multiple_labels	Creator	label	Creator@en-us
-ERROR	multiple_labels	Creator	label	creator
+ERROR	multiple_labels	creator	label	Creator
+ERROR	multiple_labels	creator	label	Creator@en-us
+ERROR	multiple_labels	creator	label	creator
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
 ERROR	multiple_labels	Description	label	Description@en-us
 ERROR	multiple_labels	Description	label	description
-ERROR	multiple_labels	Title	label	Title
-ERROR	multiple_labels	Title	label	Title@en-us
-ERROR	multiple_labels	Title	label	title
+ERROR	multiple_labels	title	label	Title
+ERROR	multiple_labels	title	label	Title@en-us
+ERROR	multiple_labels	title	label	title
 ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
@@ -539,7 +539,7 @@ WARN	annotation_whitespace	results in maturation of	example of usage	 an annotat
 WARN	annotation_whitespace	results in transport along	textual definition	Holds between p and l when p is a transportation or localization process and the outcome of this process is to move c from one location to another, and the route taken by c follows a path that is aligned_with l 
 WARN	annotation_whitespace	siemens	has exact synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has exact synonym	E-field strength 
-WARN	annotation_whitespace	Title	Description	"
+WARN	annotation_whitespace	title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -600,6 +600,10 @@ WARN	duplicate_exact_synonym	Mus <genus>	has exact synonym	Mus
 WARN	duplicate_exact_synonym	Mus <subgenus>	has exact synonym	Mus
 WARN	duplicate_exact_synonym	Mus <genus>	has exact synonym	mouse
 WARN	duplicate_exact_synonym	Mus musculus	has exact synonym	mouse
+WARN	duplicate_exact_synonym	Platyrrhini	has exact synonym	monkeys
+WARN	duplicate_exact_synonym	Cercopithecidae	has exact synonym	monkeys
+WARN	duplicate_exact_synonym	Platyrrhini	has exact synonym	monkey
+WARN	duplicate_exact_synonym	Cercopithecidae	has exact synonym	monkey
 WARN	duplicate_exact_synonym	millimeter	has exact synonym	mm
 WARN	duplicate_exact_synonym	millimolal	has exact synonym	mm
 WARN	duplicate_exact_synonym	meter	has exact synonym	m
@@ -607,6 +611,8 @@ WARN	duplicate_exact_synonym	molar	has exact synonym	M
 WARN	duplicate_exact_synonym	molal	has exact synonym	m
 WARN	duplicate_exact_synonym	mega	has exact synonym	M
 WARN	duplicate_exact_synonym	milli	has exact synonym	m
+WARN	duplicate_exact_synonym	Insecta	has exact synonym	insects
+WARN	duplicate_exact_synonym	Hexapoda	has exact synonym	insects
 WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative term	G4
 WARN	duplicate_exact_synonym	G4 (WHO)	alternative term	G4
 WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative term	G3
@@ -1330,8 +1336,12 @@ WARN	duplicate_scoped_synonym	Eukaryota	has exact synonym	eukaryotes
 WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	Eucaryotae
 WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	Eukarya
 WARN	duplicate_scoped_synonym	Eukaryota	has_related_synonym	eukaryotes
+WARN	duplicate_scoped_synonym	Phaeophyceae	has exact synonym	brown algae
+WARN	duplicate_scoped_synonym	Phaeophyceae	has_related_synonym	brown algae
 WARN	duplicate_scoped_synonym	Embryophyta	has exact synonym	land plants
 WARN	duplicate_scoped_synonym	Embryophyta	has_related_synonym	land plants
+WARN	duplicate_scoped_synonym	Bryophyta	has exact synonym	mosses
+WARN	duplicate_scoped_synonym	Bryophyta	has_related_synonym	mosses
 WARN	duplicate_scoped_synonym	Tetrapoda	alternative term	tetrapods
 WARN	duplicate_scoped_synonym	Tetrapoda	has exact synonym	tetrapods
 WARN	duplicate_scoped_synonym	Amniota	alternative term	amniotes
@@ -1342,11 +1352,21 @@ WARN	duplicate_scoped_synonym	Metazoa	alternative term	metazoans
 WARN	duplicate_scoped_synonym	Metazoa	alternative term	multicellular animals
 WARN	duplicate_scoped_synonym	Metazoa	has exact synonym	metazoans
 WARN	duplicate_scoped_synonym	Metazoa	has exact synonym	multicellular animals
+WARN	duplicate_scoped_synonym	Carnivora	has exact synonym	carnivores
+WARN	duplicate_scoped_synonym	Carnivora	has_related_synonym	carnivores
 WARN	duplicate_scoped_synonym	Magnoliopsida	has exact synonym	flowering plants
 WARN	duplicate_scoped_synonym	Magnoliopsida	has_related_synonym	flowering plants
+WARN	duplicate_scoped_synonym	Apoidea	has exact synonym	bees
+WARN	duplicate_scoped_synonym	Apoidea	has_related_synonym	bees
+WARN	duplicate_scoped_synonym	Papilionoidea	has exact synonym	butterflies
+WARN	duplicate_scoped_synonym	Papilionoidea	has_related_synonym	butterflies
 WARN	duplicate_scoped_synonym	Mammalia	alternative term	mammals
 WARN	duplicate_scoped_synonym	Mammalia	has exact synonym	mammals
 WARN	duplicate_scoped_synonym	Mammalia	has_related_synonym	mammals
+WARN	duplicate_scoped_synonym	Liliopsida	has exact synonym	monocots
+WARN	duplicate_scoped_synonym	Liliopsida	has_related_synonym	monocots
+WARN	duplicate_scoped_synonym	Insecta	has exact synonym	insects
+WARN	duplicate_scoped_synonym	Insecta	has_related_synonym	insects
 WARN	duplicate_scoped_synonym	Tracheophyta	has exact synonym	vascular plants
 WARN	duplicate_scoped_synonym	Tracheophyta	has_related_synonym	vascular plants
 WARN	duplicate_scoped_synonym	Spermatophyta	has exact synonym	seed plants
@@ -1359,10 +1379,22 @@ WARN	duplicate_scoped_synonym	Platyhelminthes	has exact synonym	flatworms
 WARN	duplicate_scoped_synonym	Platyhelminthes	has_related_synonym	flatworms
 WARN	duplicate_scoped_synonym	Nematoda	has exact synonym	nematodes
 WARN	duplicate_scoped_synonym	Nematoda	has_related_synonym	nematodes
+WARN	duplicate_scoped_synonym	Mollusca	has exact synonym	molluscs
+WARN	duplicate_scoped_synonym	Mollusca	has_related_synonym	molluscs
 WARN	duplicate_scoped_synonym	Arthropoda	has exact synonym	arthropods
 WARN	duplicate_scoped_synonym	Arthropoda	has_related_synonym	arthropods
+WARN	duplicate_scoped_synonym	Crustacea	has exact synonym	crustaceans
+WARN	duplicate_scoped_synonym	Crustacea	has_related_synonym	crustaceans
+WARN	duplicate_scoped_synonym	Hexapoda	has exact synonym	hexapods
+WARN	duplicate_scoped_synonym	Hexapoda	has_related_synonym	hexapods
+WARN	duplicate_scoped_synonym	Lepidoptera	has exact synonym	moths
+WARN	duplicate_scoped_synonym	Lepidoptera	has_related_synonym	moths
 WARN	duplicate_scoped_synonym	Diptera	has exact synonym	flies
 WARN	duplicate_scoped_synonym	Diptera	has_related_synonym	flies
+WARN	duplicate_scoped_synonym	Hymenoptera	has exact synonym	hymenopterans
+WARN	duplicate_scoped_synonym	Hymenoptera	has_related_synonym	hymenopterans
+WARN	duplicate_scoped_synonym	Apocrita	has exact synonym	wasps, ants & bees
+WARN	duplicate_scoped_synonym	Apocrita	has_related_synonym	wasps, ants & bees
 WARN	duplicate_scoped_synonym	Chordata	has exact synonym	chordates
 WARN	duplicate_scoped_synonym	Chordata	has_related_synonym	chordates
 WARN	duplicate_scoped_synonym	Tunicata	has exact synonym	tunicates
@@ -1382,6 +1414,8 @@ WARN	duplicate_scoped_synonym	Amphibia	has exact synonym	amphibians
 WARN	duplicate_scoped_synonym	Amphibia	has_related_synonym	amphibians
 WARN	duplicate_scoped_synonym	Aves	has exact synonym	birds
 WARN	duplicate_scoped_synonym	Aves	has_related_synonym	birds
+WARN	duplicate_scoped_synonym	Artiodactyla	has exact synonym	even-toed ungulates & whales
+WARN	duplicate_scoped_synonym	Artiodactyla	has_related_synonym	even-toed ungulates & whales
 WARN	duplicate_scoped_synonym	Eutheria	has exact synonym	placentals
 WARN	duplicate_scoped_synonym	Eutheria	has_related_synonym	placentals
 WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
@@ -1979,16 +2013,27 @@ WARN	missing_definition	hasAncestryStatus	textual definition
 WARN	missing_definition	has measurement unit label	textual definition	
 WARN	missing_definition	jaw movement	textual definition	
 WARN	missing_definition	root	textual definition	
+WARN	missing_definition	Cricetinae	textual definition	
+WARN	missing_definition	Mesocricetus	textual definition	
 WARN	missing_definition	Muridae	textual definition	
 WARN	missing_definition	Mus caroli	textual definition	
 WARN	missing_definition	Mus musculus	textual definition	
 WARN	missing_definition	Mus spretus	textual definition	
 WARN	missing_definition	Rattus	textual definition	
 WARN	missing_definition	Viruses	textual definition	
+WARN	missing_definition	Obtectomera	textual definition	
+WARN	missing_definition	Lumbricinae	textual definition	
+WARN	missing_definition	Lumbricus terrestris complex	textual definition	
+WARN	missing_definition	Lumbricus rubellus complex	textual definition	
 WARN	missing_definition	Sedentaria	textual definition	
 WARN	missing_definition	Canalipalpata	textual definition	
 WARN	missing_definition	Xenoturbellida	textual definition	
 WARN	missing_definition	Xenoturbella	textual definition	
+WARN	missing_definition	Sarsostraca	textual definition	
+WARN	missing_definition	Phyllopoda	textual definition	
+WARN	missing_definition	Anomopoda	textual definition	
+WARN	missing_definition	Eubrachyura	textual definition	
+WARN	missing_definition	Heterotremata	textual definition	
 WARN	missing_definition	Myxini	textual definition	
 WARN	missing_definition	Teleostomi	textual definition	
 WARN	missing_definition	Euteleostomi	textual definition	
@@ -2011,7 +2056,10 @@ WARN	missing_definition	Dipnotetrapodomorpha	textual definition
 WARN	missing_definition	Eumycetozoa	textual definition	
 WARN	missing_definition	Boreoeutheria	textual definition	
 WARN	missing_definition	Acrogymnospermae	textual definition	
+WARN	missing_definition	Mesangiospermae	textual definition	
+WARN	missing_definition	Petrosaviidae	textual definition	
 WARN	missing_definition	Gnetidae	textual definition	
+WARN	missing_definition	Pinales	textual definition	
 WARN	missing_definition	Acoelomorpha	textual definition	
 WARN	missing_definition	Saccharomycotina	textual definition	
 WARN	missing_definition	Schizosaccharomycetes	textual definition	
@@ -2019,8 +2067,10 @@ WARN	missing_definition	Cyclostomata	textual definition
 WARN	missing_definition	Osteoglossocephalai	textual definition	
 WARN	missing_definition	Euteleosteomorpha	textual definition	
 WARN	missing_definition	Percomorphaceae	textual definition	
+WARN	missing_definition	Carangaria	textual definition	
 WARN	missing_definition	Eupercaria	textual definition	
 WARN	missing_definition	Xenoturbellidae	textual definition	
+WARN	missing_definition	Galloanserae	textual definition	
 WARN	missing_definition	Acipenseroidei	textual definition	
 WARN	missing_definition	Actinopteri	textual definition	
 WARN	missing_definition	Clupeocephala	textual definition	
@@ -2035,30 +2085,45 @@ WARN	missing_definition	Dictyosteliaceae	textual definition
 WARN	missing_definition	Dictyosteliales	textual definition	
 WARN	missing_definition	Homininae	textual definition	
 WARN	missing_definition	Archaea	textual definition	
+WARN	missing_definition	Multicrustacea	textual definition	
+WARN	missing_definition	Hirudinida	textual definition	
 WARN	missing_definition	Rhabditina	textual definition	
 WARN	missing_definition	Rhabditomorpha	textual definition	
 WARN	missing_definition	Evosea	textual definition	
 WARN	missing_definition	Discoba	textual definition	
 WARN	missing_definition	Xenopus <subgenus>	textual definition	
 WARN	missing_definition	Zygnematophycidae	textual definition	
+WARN	missing_definition	Ochrophyta	textual definition	
 WARN	missing_definition	Spiralia	textual definition	
 WARN	missing_definition	Sar	textual definition	
 WARN	missing_definition	Danionidae	textual definition	
 WARN	missing_definition	Danioninae	textual definition	
 WARN	missing_definition	Eukaryota	textual definition	
+WARN	missing_definition	Bovinae	textual definition	
+WARN	missing_definition	Crassiclitellata	textual definition	
+WARN	missing_definition	Conifers I	textual definition	
+WARN	missing_definition	Phaeophyceae	textual definition	
+WARN	missing_definition	Oryzomys	textual definition	
+WARN	missing_definition	Cancroidea	textual definition	
 WARN	missing_definition	Pipoidea	textual definition	
+WARN	missing_definition	Ranoidea <superfamily>	textual definition	
+WARN	missing_definition	Anthophila <bees>	textual definition	
 WARN	missing_definition	Cyprinoidei	textual definition	
+WARN	missing_definition	Pleuronectoidei	textual definition	
 WARN	missing_definition	Tetraodontiformes	textual definition	
 WARN	missing_definition	Tetraodontoidei	textual definition	
 WARN	missing_definition	Tetraodontidae	textual definition	
 WARN	missing_definition	Takifugu	textual definition	
 WARN	missing_definition	Takifugu rubripes	textual definition	
+WARN	missing_definition	Laurasiatheria	textual definition	
 WARN	missing_definition	Euarchontoglires	textual definition	
 WARN	missing_definition	Glires	textual definition	
 WARN	missing_definition	Simiiformes	textual definition	
+WARN	missing_definition	Cercopithecoidea	textual definition	
 WARN	missing_definition	Hominoidea	textual definition	
 WARN	missing_definition	Zygnematales	textual definition	
 WARN	missing_definition	Embryophyta	textual definition	
+WARN	missing_definition	Bryophyta	textual definition	
 WARN	missing_definition	Sophophora	textual definition	
 WARN	missing_definition	melanogaster group	textual definition	
 WARN	missing_definition	melanogaster subgroup	textual definition	
@@ -2073,28 +2138,49 @@ WARN	missing_definition	Sauria	textual definition
 WARN	missing_definition	Dictyostelia	textual definition	
 WARN	missing_definition	Viridiplantae	textual definition	
 WARN	missing_definition	Coniferophyta	textual definition	
+WARN	missing_definition	Pinidae	textual definition	
 WARN	missing_definition	Opisthokonta	textual definition	
+WARN	missing_definition	Pinaceae	textual definition	
 WARN	missing_definition	Metazoa	textual definition	
 WARN	missing_definition	Bilateria	textual definition	
 WARN	missing_definition	Protostomia	textual definition	
 WARN	missing_definition	Neoptera	textual definition	
 WARN	missing_definition	Endopterygota	textual definition	
 WARN	missing_definition	Deuterostomia	textual definition	
+WARN	missing_definition	Carnivora	textual definition	
 WARN	missing_definition	Alveolata	textual definition	
+WARN	missing_definition	Stramenopiles	textual definition	
 WARN	missing_definition	Euglenozoa	textual definition	
 WARN	missing_definition	Gnetopsida	textual definition	
+WARN	missing_definition	Cricetidae	textual definition	
 WARN	missing_definition	Muroidea	textual definition	
 WARN	missing_definition	Gnetales	textual definition	
+WARN	missing_definition	Felinae	textual definition	
 WARN	missing_definition	Magnoliopsida	textual definition	
 WARN	missing_definition	Schizosaccharomycetales	textual definition	
+WARN	missing_definition	Apoidea	textual definition	
 WARN	missing_definition	Streptophyta	textual definition	
+WARN	missing_definition	Suina	textual definition	
+WARN	missing_definition	Pecora	textual definition	
+WARN	missing_definition	Ditrysia	textual definition	
+WARN	missing_definition	Papilionoidea	textual definition	
 WARN	missing_definition	Haplorrhini	textual definition	
+WARN	missing_definition	Feliformia	textual definition	
+WARN	missing_definition	Caniformia	textual definition	
+WARN	missing_definition	Artemiidae	textual definition	
 WARN	missing_definition	Glaucocystophyceae	textual definition	
+WARN	missing_definition	Poales	textual definition	
 WARN	missing_definition	Murinae	textual definition	
+WARN	missing_definition	Sigmodontinae	textual definition	
 WARN	missing_definition	Mammalia	textual definition	
+WARN	missing_definition	Glossata	textual definition	
+WARN	missing_definition	Neolepidoptera	textual definition	
+WARN	missing_definition	Heteroneura	textual definition	
 WARN	missing_definition	Siboglinidae	textual definition	
 WARN	missing_definition	Neopterygii	textual definition	
 WARN	missing_definition	Batrachia	textual definition	
+WARN	missing_definition	Protacanthopterygii	textual definition	
+WARN	missing_definition	Clitellata	textual definition	
 WARN	missing_definition	Dinosauria	textual definition	
 WARN	missing_definition	Saurischia	textual definition	
 WARN	missing_definition	Theropoda	textual definition	
@@ -2104,9 +2190,12 @@ WARN	missing_definition	Schizophora	textual definition
 WARN	missing_definition	Acalyptratae	textual definition	
 WARN	missing_definition	Ephydroidea	textual definition	
 WARN	missing_definition	Drosophilinae	textual definition	
+WARN	missing_definition	Liliopsida	textual definition	
+WARN	missing_definition	Poaceae	textual definition	
 WARN	missing_definition	Dikarya	textual definition	
 WARN	missing_definition	Taphrinomycotina	textual definition	
 WARN	missing_definition	Drosophilini	textual definition	
+WARN	missing_definition	commelinids	textual definition	
 WARN	missing_definition	Fungi	textual definition	
 WARN	missing_definition	Cyclorrhapha	textual definition	
 WARN	missing_definition	Eremoneura	textual definition	
@@ -2119,11 +2208,15 @@ WARN	missing_definition	Schizosaccharomyces	textual definition
 WARN	missing_definition	Schizosaccharomyces pombe	textual definition	
 WARN	missing_definition	Saccharomyces	textual definition	
 WARN	missing_definition	Saccharomyces cerevisiae	textual definition	
+WARN	missing_definition	Salmoninae	textual definition	
 WARN	missing_definition	Insecta	textual definition	
 WARN	missing_definition	Amoebozoa	textual definition	
+WARN	missing_definition	Hirudinea	textual definition	
 WARN	missing_definition	Rhabditoidea	textual definition	
 WARN	missing_definition	Peloderinae	textual definition	
+WARN	missing_definition	PX clade	textual definition	
 WARN	missing_definition	Dictyostelium	textual definition	
+WARN	missing_definition	Pinopsida	textual definition	
 WARN	missing_definition	Tracheophyta	textual definition	
 WARN	missing_definition	Spermatophyta	textual definition	
 WARN	missing_definition	Porifera	textual definition	
@@ -2138,20 +2231,49 @@ WARN	missing_definition	Rhabditidae	textual definition
 WARN	missing_definition	Annelida	textual definition	
 WARN	missing_definition	Polychaeta	textual definition	
 WARN	missing_definition	Sabellida	textual definition	
+WARN	missing_definition	Oligochaeta <segmented worms>	textual definition	
+WARN	missing_definition	Lumbricina	textual definition	
+WARN	missing_definition	Lumbricidae	textual definition	
+WARN	missing_definition	Eisenia <segmented worms>	textual definition	
+WARN	missing_definition	Eisenia fetida	textual definition	
+WARN	missing_definition	Lumbricus	textual definition	
+WARN	missing_definition	Lumbricus terrestris	textual definition	
+WARN	missing_definition	Hirudiniformes	textual definition	
+WARN	missing_definition	Hirudinidae	textual definition	
+WARN	missing_definition	Mollusca	textual definition	
 WARN	missing_definition	Arthropoda	textual definition	
+WARN	missing_definition	Crustacea	textual definition	
+WARN	missing_definition	Branchiopoda	textual definition	
+WARN	missing_definition	Anostraca	textual definition	
+WARN	missing_definition	Artemia	textual definition	
+WARN	missing_definition	Cladocera	textual definition	
+WARN	missing_definition	Daphnia	textual definition	
+WARN	missing_definition	Malacostraca	textual definition	
+WARN	missing_definition	Eucarida	textual definition	
+WARN	missing_definition	Decapoda	textual definition	
+WARN	missing_definition	Pleocyemata	textual definition	
+WARN	missing_definition	Brachyura	textual definition	
+WARN	missing_definition	Cancridae	textual definition	
 WARN	missing_definition	Hexapoda	textual definition	
+WARN	missing_definition	Lepidoptera	textual definition	
 WARN	missing_definition	Diptera	textual definition	
 WARN	missing_definition	saccharomyceta	textual definition	
 WARN	missing_definition	Brachycera	textual definition	
+WARN	missing_definition	Eumalacostraca	textual definition	
 WARN	missing_definition	Drosophilidae	textual definition	
 WARN	missing_definition	Drosophila <flies,genus>	textual definition	
 WARN	missing_definition	Drosophila melanogaster	textual definition	
+WARN	missing_definition	Hymenoptera	textual definition	
+WARN	missing_definition	Apocrita	textual definition	
+WARN	missing_definition	Aculeata <wasps, ants & bees>	textual definition	
+WARN	missing_definition	Apidae	textual definition	
 WARN	missing_definition	Pterygota <insects>	textual definition	
 WARN	missing_definition	Chordata	textual definition	
 WARN	missing_definition	Tunicata	textual definition	
 WARN	missing_definition	Vertebrata <vertebrates>	textual definition	
 WARN	missing_definition	Myxiniformes	textual definition	
 WARN	missing_definition	Myxinidae	textual definition	
+WARN	missing_definition	Daphniidae	textual definition	
 WARN	missing_definition	Gnathostomata <vertebrates>	textual definition	
 WARN	missing_definition	Chondrichthyes	textual definition	
 WARN	missing_definition	Euphyllophyta	textual definition	
@@ -2165,6 +2287,12 @@ WARN	missing_definition	Acipenser	textual definition
 WARN	missing_definition	Cypriniformes	textual definition	
 WARN	missing_definition	Danio	textual definition	
 WARN	missing_definition	Danio rerio	textual definition	
+WARN	missing_definition	Salmoniformes	textual definition	
+WARN	missing_definition	Salmonidae	textual definition	
+WARN	missing_definition	Oncorhynchus	textual definition	
+WARN	missing_definition	Salmo	textual definition	
+WARN	missing_definition	Pleuronectiformes	textual definition	
+WARN	missing_definition	Pleuronectidae	textual definition	
 WARN	missing_definition	Sarcopterygii	textual definition	
 WARN	missing_definition	Amphibia	textual definition	
 WARN	missing_definition	Anura	textual definition	
@@ -2172,9 +2300,14 @@ WARN	missing_definition	Pipidae	textual definition
 WARN	missing_definition	Xenopus <genus>	textual definition	
 WARN	missing_definition	Xenopus laevis	textual definition	
 WARN	missing_definition	Xenopodinae	textual definition	
+WARN	missing_definition	Ranidae	textual definition	
+WARN	missing_definition	Neobatrachia	textual definition	
+WARN	missing_definition	Diplostraca	textual definition	
 WARN	missing_definition	Sauropsida	textual definition	
 WARN	missing_definition	Archosauria	textual definition	
 WARN	missing_definition	Dicondylia	textual definition	
+WARN	missing_definition	Artemia salina	textual definition	
+WARN	missing_definition	Amphiesmenoptera	textual definition	
 WARN	missing_definition	Mus <subgenus>	textual definition	
 WARN	missing_definition	Aves	textual definition	
 WARN	missing_definition	Palaeognathae	textual definition	
@@ -2183,19 +2316,51 @@ WARN	missing_definition	Struthionidae	textual definition
 WARN	missing_definition	Struthio	textual definition	
 WARN	missing_definition	Struthio camelus	textual definition	
 WARN	missing_definition	Neognathae	textual definition	
+WARN	missing_definition	Anseriformes	textual definition	
+WARN	missing_definition	Anatidae	textual definition	
 WARN	missing_definition	Panarthropoda	textual definition	
 WARN	missing_definition	Columbiformes	textual definition	
 WARN	missing_definition	Columbidae	textual definition	
 WARN	missing_definition	Craniata <chordates>	textual definition	
+WARN	missing_definition	Galliformes	textual definition	
+WARN	missing_definition	Phasianidae	textual definition	
+WARN	missing_definition	Gallus	textual definition	
+WARN	missing_definition	Gallus gallus	textual definition	
+WARN	missing_definition	Phasianinae	textual definition	
+WARN	missing_definition	Artiodactyla	textual definition	
 WARN	missing_definition	Prototheria	textual definition	
 WARN	missing_definition	Monotremata	textual definition	
 WARN	missing_definition	Tachyglossidae	textual definition	
 WARN	missing_definition	Eutheria	textual definition	
 WARN	missing_definition	Primates	textual definition	
+WARN	missing_definition	Platyrrhini	textual definition	
 WARN	missing_definition	Catarrhini	textual definition	
+WARN	missing_definition	Cercopithecidae	textual definition	
+WARN	missing_definition	Cercopithecinae	textual definition	
+WARN	missing_definition	Macaca	textual definition	
+WARN	missing_definition	Macaca mulatta	textual definition	
 WARN	missing_definition	Hominidae	textual definition	
 WARN	missing_definition	Homo	textual definition	
 WARN	missing_definition	Homo sapiens	textual definition	
+WARN	missing_definition	Canidae	textual definition	
+WARN	missing_definition	Canis	textual definition	
+WARN	missing_definition	Vulpes	textual definition	
+WARN	missing_definition	Felidae	textual definition	
+WARN	missing_definition	Felis	textual definition	
+WARN	missing_definition	Felis catus	textual definition	
+WARN	missing_definition	Suidae	textual definition	
+WARN	missing_definition	Sus	textual definition	
+WARN	missing_definition	Ruminantia	textual definition	
+WARN	missing_definition	Cervidae	textual definition	
+WARN	missing_definition	Rangifer	textual definition	
+WARN	missing_definition	Odocoileinae	textual definition	
+WARN	missing_definition	Bovidae	textual definition	
+WARN	missing_definition	Bos	textual definition	
+WARN	missing_definition	Bos taurus	textual definition	
+WARN	missing_definition	Ovis	textual definition	
+WARN	missing_definition	Ovis aries	textual definition	
+WARN	missing_definition	Caprinae	textual definition	
+WARN	missing_definition	Lagomorpha	textual definition	
 WARN	missing_definition	Rodentia	textual definition	
 WARN	missing_definition	qualitative	textual definition	
 WARN	missing_definition	physical quality of a process	textual definition	
@@ -2878,10 +3043,10 @@ WARN	missing_definition	channels_into	textual definition
 WARN	missing_definition	layer part of	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	Creator	textual definition	
+WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
-WARN	missing_definition	Title	textual definition	
+WARN	missing_definition	title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	
