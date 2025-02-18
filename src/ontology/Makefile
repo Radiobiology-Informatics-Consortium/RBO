@@ -108,7 +108,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro bfo chebi pato chmo envo pco obi uo doid uberon cob go efo
+IMPORTS =  ro bfo chebi pato chmo envo pco obi uo doid uberon cob go efo ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -349,6 +349,10 @@ $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl
 
 $(IMPORTDIR)/efo_import.owl: $(MIRRORDIR)/efo.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in rbo.Makefile!" && false
+## Module for ontology: ncbitaxon
+
+$(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in rbo.Makefile!" && false
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -533,6 +537,14 @@ mirror-go: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/efo.owl
 mirror-efo: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.ebi.ac.uk/efo/efo.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: ncbitaxon
+.PHONY: mirror-ncbitaxon
+.PRECIOUS: $(MIRRORDIR)/ncbitaxon.owl
+mirror-ncbitaxon: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) convert -I https://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

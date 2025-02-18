@@ -16,6 +16,7 @@ import_group:
   - id: bfo
   - id: chebi
     module_type: custom
+    is_large: TRUE
   - id: pato
     module_type: custom
   - id: chmo
@@ -40,9 +41,10 @@ import_group:
   - id: efo
     mirror_from: https://www.ebi.ac.uk/efo/efo.owl
     module_type: custom
-#  - id: ncbitaxon
-#    module_type: custom
-#    is_large: TRUE
+  - id: ncbitaxon
+    module_type: custom
+    is_large: TRUE
+    mirror_from: https://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
 obo_format_options: ''
 primary_release: full
 reasoner: ELK
