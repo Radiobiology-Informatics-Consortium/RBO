@@ -12,9 +12,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/go_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-02-18/imports/go_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-02-28/imports/go_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/go/releases/2024-01-17/go.owl"/>
-        <owl:versionInfo>2025-02-18</owl:versionInfo>
+        <owl:versionInfo>2025-02-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -53,6 +53,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000700 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000700"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002161 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002161"/>
     
 
 
@@ -2937,6 +2943,35 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0090398 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0090398">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0033554"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cell aging process stimulated in response to cellular stress, whereby normal cells lose the ability to divide through irreversible cell cycle arrest.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/22788</obo:IAO_0000233>
+        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:created_by>tb</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-01-05T02:27:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0090398</oboInOwl:id>
+        <rdfs:label>cellular senescence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cell aging process stimulated in response to cellular stress, whereby normal cells lose the ability to divide through irreversible cell cycle arrest.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:28682291</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0090734 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0090734">
@@ -3536,6 +3571,119 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>positive regulation of cellular response to X-ray radiation stimulus</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:obol</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_2000772 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_2000772">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031323"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of cellular senescence.</obo:IAO_0000115>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-06-22T01:57:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:2000772</oboInOwl:id>
+        <rdfs:label>regulation of cellular senescence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_2000772"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of cellular senescence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_2000773 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_2000773">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031324"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_2000772"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that stops, prevents or reduces the frequency, rate or extent of cellular senescence.</obo:IAO_0000115>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-06-22T01:57:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:2000773</oboInOwl:id>
+        <rdfs:label>negative regulation of cellular senescence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_2000773"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that stops, prevents or reduces the frequency, rate or extent of cellular senescence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_2000774 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_2000774">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_2000772"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of cellular senescence.</obo:IAO_0000115>
+        <oboInOwl:created_by>bf</oboInOwl:created_by>
+        <oboInOwl:creation_date>2011-06-22T01:57:12Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:2000774</oboInOwl:id>
+        <rdfs:label>positive regulation of cellular senescence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_2000774"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of cellular senescence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
