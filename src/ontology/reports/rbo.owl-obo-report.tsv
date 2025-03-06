@@ -416,17 +416,17 @@ ERROR	multiple_labels	produced by	label	produced by
 ERROR	multiple_labels	produced by	label	produced by@en
 ERROR	multiple_labels	prefix	label	derived unit
 ERROR	multiple_labels	prefix	label	prefix
-ERROR	multiple_labels	creator	label	Creator
-ERROR	multiple_labels	creator	label	Creator@en-us
-ERROR	multiple_labels	creator	label	creator
+ERROR	multiple_labels	Creator	label	Creator
+ERROR	multiple_labels	Creator	label	Creator@en-us
+ERROR	multiple_labels	Creator	label	creator
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
 ERROR	multiple_labels	Description	label	Description@en-us
 ERROR	multiple_labels	Description	label	description
-ERROR	multiple_labels	Title	label	Title
-ERROR	multiple_labels	Title	label	Title@en-us
-ERROR	multiple_labels	Title	label	title
+ERROR	multiple_labels	title	label	Title
+ERROR	multiple_labels	title	label	Title@en-us
+ERROR	multiple_labels	title	label	title
 ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
@@ -539,7 +539,7 @@ WARN	annotation_whitespace	results in maturation of	example of usage	 an annotat
 WARN	annotation_whitespace	results in transport along	textual definition	Holds between p and l when p is a transportation or localization process and the outcome of this process is to move c from one location to another, and the route taken by c follows a path that is aligned_with l 
 WARN	annotation_whitespace	siemens	has exact synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has exact synonym	E-field strength 
-WARN	annotation_whitespace	Title	Description	"
+WARN	annotation_whitespace	title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -3043,10 +3043,10 @@ WARN	missing_definition	channels_into	textual definition
 WARN	missing_definition	layer part of	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	creator	textual definition	
+WARN	missing_definition	Creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
-WARN	missing_definition	Title	textual definition	
+WARN	missing_definition	title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	

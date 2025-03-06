@@ -13,12 +13,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-02-18/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-03-06/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2025-02-18</owl:versionInfo>
+        <owl:versionInfo>2025-03-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -515,6 +515,12 @@
     <!-- http://purl.obolibrary.org/obo/GO_0051716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051716"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0090398 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0090398"/>
     
 
 
@@ -4540,7 +4546,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
-        <obo:IAO_0000115>A radiation exposure in which the delivery of energy to the target is considered to be &quot;high dose&quot; in a given context.</obo:IAO_0000115>
+        <obo:IAO_0000115>A radiation exposure in which the delivery of energy to the target is considered to be &quot;high dose rate&quot; in a given context.</obo:IAO_0000115>
         <obo:IAO_0000116>The context here is determined by the type of radiation and application of the exposure.</obo:IAO_0000116>
         <rdfs:label>high dose rate irradiation</rdfs:label>
     </owl:Class>
@@ -4553,6 +4559,60 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).</obo:IAO_0000115>
         <rdfs:label>space radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+        <obo:IAO_0000115>Senescence caused by radiation and associated with the dismantling of a cell as a response to oxidative stress, e.g. high levels of reactive oxygen species, such as superoxide anions, hydrogen peroxide, and hydroxyl radicals.</obo:IAO_0000115>
+        <rdfs:label>radiation-induced senescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000012"/>
+        <obo:IAO_0000115>A radiation detector which, when exposed to ionizing radiation, stores energy and when stimulated with light, releases the stored energy as luminescence, the intensity of which depends on the amount of radiation absorbed.</obo:IAO_0000115>
+        <obo:IAO_0000118>OSLD</obo:IAO_0000118>
+        <rdfs:label>optically stimulated luminescence dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000012"/>
+        <obo:IAO_0000115>A device which measures ionizing radiation dose by storing and then releasing the energy produced by the radiation. Energy is stored in the form of excited electrons. When the dosimeter is heated the electrons return to the ground state, resulting in the emission of light. The intensity of the emitted light directly corresponds to the radiation dose received, allowing for quantifiable measurements.</obo:IAO_0000115>
+        <obo:IAO_0000118>TLD</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.landauer.com/blog/unveiling-science-thermoluminescent-dosimeters-key-radiation-safety-and-measurement</obo:IAO_0000119>
+        <rdfs:label>thermoluminescent dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000011"/>
+        <obo:IAO_0000115>An active dosimeter in which ionizing radiation creates electron-hole pairs in a semiconductor which are collected by electrodes across which a voltage is applied. The resulting current is proportional to the energy deposited in the semiconductor by the incident radiation.</obo:IAO_0000115>
+        <rdfs:label>semiconductor radiation detector</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000011"/>
+        <obo:IAO_0000115>An active dosimeter which estimates the amount of incident ionizing radiation by measuring the number of electrons liberated from the gas molecules by the radiation in a suitable housing.</obo:IAO_0000115>
+        <obo:IAO_0000118>ion chamber</obo:IAO_0000118>
+        <rdfs:label>ionization chamber</rdfs:label>
     </owl:Class>
     
 
