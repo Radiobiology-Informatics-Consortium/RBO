@@ -1,31 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_boolean_datatype	environmental study	owl:deprecated	true
-ERROR	deprecated_boolean_datatype	therapeutics study	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	nuclear accident study	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	biological process	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	cellular process	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	unplanned naturally occurring radiation exposure	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	irradiation	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	miligray per second	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	as low as reasonably achievable	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	radiation attenuation	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	biodosimetry	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	bystander effect	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	delta ray	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	dose equivalent	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	excess lifetime risk of cancer	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	fast neutron	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	fluence	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	flux	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	heavy ion	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	linear energy transfer	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	organ dose	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	quality factor	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	radiation dose	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	radiation quality	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	radiation weighting factor	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	relative biological effectiveness	owl:deprecated	TRUE
-ERROR	deprecated_boolean_datatype	tissue equivalence	owl:deprecated	TRUE
 ERROR	deprecated_class_reference	device	rdfs:subClassOf	portion of material
 ERROR	deprecated_class_reference	device	rdfs:subClassOf	sensor
 ERROR	deprecated_class_reference	device	rdfs:subClassOf	manufactured product
@@ -35,6 +8,7 @@ ERROR	deprecated_class_reference	device	rdfs:subClassOf	spacecraft
 ERROR	deprecated_class_reference	device	rdfs:subClassOf	radiation dosimeter device
 ERROR	deprecated_class_reference	device	rdfs:subClassOf	particle accelerator
 ERROR	deprecated_class_reference	device	rdfs:subClassOf	nuclear reactor
+ERROR	deprecated_class_reference	environmental study	rdfs:subClassOf	radiobiology study type
 ERROR	duplicate_definition	biodosimetry	textual definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
 ERROR	duplicate_definition	biodosimetry	textual definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
 ERROR	duplicate_definition	bystander effect	textual definition	The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.
@@ -514,9 +488,9 @@ ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
 ERROR	multiple_labels	Description	label	Description@en-us
 ERROR	multiple_labels	Description	label	description
-ERROR	multiple_labels	title	label	Title
-ERROR	multiple_labels	title	label	Title@en-us
-ERROR	multiple_labels	title	label	title
+ERROR	multiple_labels	Title	label	Title
+ERROR	multiple_labels	Title	label	Title@en-us
+ERROR	multiple_labels	Title	label	title
 ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
@@ -629,7 +603,7 @@ WARN	annotation_whitespace	results in maturation of	example of usage	 an annotat
 WARN	annotation_whitespace	results in transport along	textual definition	Holds between p and l when p is a transportation or localization process and the outcome of this process is to move c from one location to another, and the route taken by c follows a path that is aligned_with l 
 WARN	annotation_whitespace	siemens	has exact synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has exact synonym	E-field strength 
-WARN	annotation_whitespace	title	Description	"
+WARN	annotation_whitespace	Title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -3160,7 +3134,7 @@ WARN	missing_definition	subdivision of	textual definition
 WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
-WARN	missing_definition	title	textual definition	
+WARN	missing_definition	Title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	
@@ -3175,6 +3149,7 @@ WARN	missing_definition	in_subset	textual definition
 WARN	missing_definition	xsd:boolean	textual definition	
 WARN	missing_definition	xsd:string	textual definition	
 WARN	missing_obsolete_label	device	label	device
+WARN	missing_obsolete_label	environmental study	label	environmental study
 WARN	missing_subset_declaration	obo:doid#DO_AGR_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_CFDE_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_FlyBase_slim	rdfs:subPropertyOf	
