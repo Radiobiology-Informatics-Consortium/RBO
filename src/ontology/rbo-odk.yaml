@@ -10,6 +10,7 @@ edit_format: owl
 exclude_tautologies: structural
 export_formats:
 - owl
+- json
 import_group:
   products:
   - id: ro
