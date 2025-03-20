@@ -1,6 +1,6 @@
 Ontology ID	Label	CLASS TYPE	Logical Type	Parent	Class Def	definition	alternative term	Domain	Range
 ID	LABEL	CLASS_TYPE	TYPE	CI	C %	A IAO:0000115	A IAO:0000118	DOMAIN	RANGE
-obo:RBO_00010021	mass number		data property					obo:RBO_00005001	xsd:nonNegativeInteger
+obo:RBO_00010021	mass number		data property			"The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit)."		obo:RBO_00005001	xsd:nonNegativeInteger
 COB:0000800	has atomic number		data property					obo:RBO_00005002	
 obo:RBO_00000008	He-4 ion radiation	subclass	class	obo:RBO_00005001		"Atomic nuclei, each with 2 protons and 2 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"			
 obo:RBO_00000006	C-12 ion radiation	subclass	class	obo:RBO_00005001		"Atomic nuclei, each with 6 protons and 6 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator"			
