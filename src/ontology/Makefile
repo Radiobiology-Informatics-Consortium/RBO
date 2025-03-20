@@ -54,7 +54,7 @@ OTHER_SRC =                 $(COMPONENTSDIR)/all_templates.owl
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
-FORMATS = $(sort  owl owl)
+FORMATS = $(sort  owl json owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
 RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base )
 
@@ -410,8 +410,8 @@ $(COMPONENTSDIR)/%: | $(COMPONENTSDIR)
 # Mirroring upstream ontologies
 # ----------------------------------------
 
-IMP=false # Global parameter to bypass import generation
-MIR=false # Global parameter to bypass mirror generation
+IMP=true # Global parameter to bypass import generation
+MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 
@@ -438,7 +438,7 @@ mirror-bfo: | $(TMPDIR)
 .PHONY: mirror-chebi
 .PRECIOUS: $(MIRRORDIR)/chebi.owl
 mirror-chebi: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/chebi.owl --create-dirs -o $(MIRRORDIR)/chebi.owl --retry 4 --max-time 200 &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then curl -L $(OBOBASE)/chebi.owl --create-dirs -o $(MIRRORDIR)/chebi.owl --retry 4 --max-time 200 &&\
 		$(ROBOT) convert -i $(MIRRORDIR)/chebi.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
@@ -492,8 +492,7 @@ mirror-obi: | $(TMPDIR)
 .PHONY: mirror-uo
 .PRECIOUS: $(MIRRORDIR)/uo.owl
 mirror-uo: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/uo.owl --create-dirs -o $(MIRRORDIR)/uo.owl --retry 4 --max-time 200 &&\
-		$(ROBOT) convert -i $(MIRRORDIR)/uo.owl -o $@.tmp.owl &&\
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
@@ -568,6 +567,10 @@ $(SUBSETDIR)/%.owl: $(ONT).owl | $(SUBSETDIR)
 .PRECIOUS: $(SUBSETDIR)/%.owl
 
 
+$(SUBSETDIR)/%.json: $(SUBSETDIR)/%.owl
+	$(ROBOT) convert --input $< --check false -f json -o $@.tmp.json &&\
+	mv $@.tmp.json $@
+
 
 # ---------------------------------------------
 # Sparql queries: Table exports / Query Reports
@@ -587,6 +590,14 @@ endif
 # ----------------------------------------
 
 
+$(ONT)-full.json: $(ONT)-full.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+		mv $@.tmp.json $@
+$(ONT)-base.json: $(ONT)-base.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+		mv $@.tmp.json $@
 # ----------------------------------------
 # Release artefacts: main release artefacts
 # ----------------------------------------
@@ -595,6 +606,10 @@ $(ONT).owl: $(ONT)-full.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
+$(ONT).json: $(ONT).owl
+	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+		mv $@.tmp.json $@
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------

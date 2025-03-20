@@ -28,6 +28,7 @@ import_group:
   - id: obi
   - id: uo
     module_type: custom
+    mirror_from: https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl
   - id: doid
     mirror_from: http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl
     module_type: custom

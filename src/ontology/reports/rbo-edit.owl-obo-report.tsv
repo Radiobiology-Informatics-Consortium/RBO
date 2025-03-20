@@ -1,5 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	environmental study	rdfs:subClassOf	radiobiology study type
 ERROR	duplicate_definition	biodosimetry	IAO:0000115	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
 ERROR	duplicate_definition	biodosimetry	IAO:0000115	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
 ERROR	duplicate_definition	bystander effect	IAO:0000115	The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.
@@ -132,6 +131,7 @@ WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000118	Ti-48  ion;Ti-48  nuc
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000115	An atomic nucleus with 36 protons and 48 neutrons 
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000118	Kr-84 ion;Kr-84 nucleus;Kr-84 
 WARN	annotation_whitespace	external radiation exposure	IAO:0000112	 Mice exposed to external radiation from a Sr source.
+WARN	annotation_whitespace	senolytic	IAO:0000115	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
 WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	RBE
 WARN	duplicate_exact_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
 WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	RBE
@@ -193,13 +193,11 @@ WARN	missing_definition	risk estimate	IAO:0000115
 WARN	missing_definition	lifetime risk estimate	IAO:0000115	
 WARN	missing_definition	biological process	IAO:0000115	
 WARN	missing_definition	cellular process	IAO:0000115	
-WARN	missing_definition	mass number	IAO:0000115	
 WARN	missing_definition	track formation	IAO:0000115	
 WARN	missing_definition	SO:0000704	IAO:0000115	
 WARN	missing_definition	UBERON:0000000	IAO:0000115	
 WARN	missing_definition	UO:0000127	IAO:0000115	
 WARN	missing_definition	UO:0000160	IAO:0000115	
-WARN	missing_obsolete_label	environmental study	rdfs:label	environmental study
 INFO	lowercase_definition	spacecraft module	IAO:0000115	a self-contained unit of a spacecraft
 INFO	lowercase_definition	gamma radiation	IAO:0000115	electromagnetic radiation with photon energies greater than approximately 100 keV
 INFO	lowercase_definition	Gammacell 40	IAO:0000115	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf

@@ -804,9 +804,9 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref>NCI:C2902</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:64779008</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS_CUI:C0005779</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>coagulation protein disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">postpartum coagulation defect</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">postpartum coagulation defect with delivery</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>coagulation protein disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>inherited blood coagulation disease</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DOID:1247</oboInOwl:id>
@@ -2194,8 +2194,8 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref>NCI:C3149</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:266612003</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS_CUI:C0022658</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym xml:lang="en">nephropathy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>impaired renal function disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">nephropathy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DOID:557</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/doid#DO_FlyBase_slim"/>
@@ -2621,10 +2621,10 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_9119"/>
         <obo:IAO_0000115>An acute myeloid leukemia that derives from blood-forming tissue in which megakaryocytes proliferate in the bone marrow and circulate in the blood in large numbers.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>DOID:9009</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>ICDO:9910/3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GARD:524</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD10CM:C94.2</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ICD9CM:207.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ICDO:9910/3</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MESH:D007947</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCI:C3170</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:52220008</oboInOwl:hasDbXref>
@@ -2775,9 +2775,9 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref>SNOMEDCT_US_2021_09_01:128822004</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS_CUI:C0023449</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>UMLS_CUI:C1335469</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>ALL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">acute lymphoblastic leukaemia</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">acute lymphocytic leukaemia</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>ALL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>precursor lymphoblastic lymphoma/leukemia</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:id>DOID:9952</oboInOwl:id>

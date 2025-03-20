@@ -160,6 +160,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254"/>
@@ -253,12 +259,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
     
 
 
@@ -577,7 +577,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000112>The Apollo spacecraft took 24 astronauts to the Moon between 1968 and 1972.</obo:IAO_0000112>
         <obo:IAO_0000115>Vehicles, crewed or uncrewed, which are designed to orbit about the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space.</obo:IAO_0000115>
         <obo:IAO_0000119>NASA Thesaurus, 1988</obo:IAO_0000119>
@@ -951,7 +951,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the impact of radiation on the composition of or processes within the natural or anthropogenic environment.</obo:IAO_0000115>
         <rdfs:label>environmental study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1269,7 +1269,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000115">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000111>radiation dosimeter</obo:IAO_0000111>
         <obo:IAO_0000115>A device that is used to measure the amount of ionizing radiation exposure or absorption.</obo:IAO_0000115>
         <obo:IAO_0000118>radiation dosimeter</obo:IAO_0000118>
@@ -1342,7 +1342,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000121">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005014"/>
         <obo:IAO_0000115>A device used to impart kinetic energy to subatomic particles by means of electric and magnetic fields</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C94854</oboInOwl:hasDbXref>
@@ -1354,7 +1354,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000122">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005014"/>
         <obo:IAO_0000115>A device in which nuclear fission may be initiated and controlled in a self-sustaining chain reaction to generate energy or produce useful radiation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>MESH:D009688</oboInOwl:hasDbXref>
@@ -4186,6 +4186,19 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>An active dosimeter which estimates the amount of incident ionizing radiation by measuring the number of electrons liberated from the gas molecules by the radiation in a suitable housing.</obo:IAO_0000115>
         <obo:IAO_0000118>ion chamber</obo:IAO_0000118>
         <rdfs:label>ionization chamber</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00015052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000073"/>
+        <obo:IAO_0000115>A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. </obo:IAO_0000115>
+        <obo:IAO_0000116>Senolytics work by targeting specific survival pathways that senescent cells rely on, such as the BCL-2 family proteins, PI3K/AKT pathway, or p53-related mechanisms. By eliminating these cells, senolytics have shown potential in improving tissue function, delaying age-related diseases, and enhancing healthspan in preclinical studies.</obo:IAO_0000116>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263,https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000119>See: Lelarge, V., Capelle, R., Oger, F. et al. Senolytics: from pharmacological inhibitors to immunotherapies, a promising future for patients� treatment. npj Aging 10, 12 (2024). https://doi.org/10.1038/s41514-024-00138-4</obo:IAO_0000119>
+        <rdfs:label>senolytic</rdfs:label>
     </owl:Class>
     
 

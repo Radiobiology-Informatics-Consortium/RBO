@@ -1,14 +1,4 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	portion of material
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	sensor
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	manufactured product
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	processed material entity
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	X-ray source
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	spacecraft
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	radiation dosimeter device
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	particle accelerator
-ERROR	deprecated_class_reference	device	rdfs:subClassOf	nuclear reactor
-ERROR	deprecated_class_reference	environmental study	rdfs:subClassOf	radiobiology study type
 ERROR	duplicate_definition	biodosimetry	textual definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
 ERROR	duplicate_definition	biodosimetry	textual definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
 ERROR	duplicate_definition	bystander effect	textual definition	The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.
@@ -77,18 +67,20 @@ ERROR	duplicate_label	protein	label	protein
 ERROR	duplicate_label	protein	label	protein
 ERROR	duplicate_label	primordium	label	primordium
 ERROR	duplicate_label	primordium	label	primordium
-ERROR	duplicate_label	planned process	label	planned process
-ERROR	duplicate_label	planned process	label	planned process
+ERROR	duplicate_label	planned process	label	planned process@en
+ERROR	duplicate_label	planned process	label	planned process@en
+ERROR	duplicate_label	organism	label	organism@en
+ERROR	duplicate_label	organism	label	organism@en
 ERROR	duplicate_label	organ dose	label	organ dose
 ERROR	duplicate_label	organ dose	label	organ dose
 ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
 ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
-ERROR	duplicate_label	normal	label	normal
-ERROR	duplicate_label	normal	label	normal
 ERROR	duplicate_label	milli	label	milli
 ERROR	duplicate_label	milli	label	milli
 ERROR	duplicate_label	micromole	label	micromole
 ERROR	duplicate_label	micromole	label	micromole
+ERROR	duplicate_label	material processing	label	material processing@en
+ERROR	duplicate_label	material processing	label	material processing@en
 ERROR	duplicate_label	linear energy transfer	label	linear energy transfer
 ERROR	duplicate_label	linear energy transfer	label	linear energy transfer
 ERROR	duplicate_label	heavy ion	label	heavy ion
@@ -140,34 +132,33 @@ ERROR	multiple_definitions	material entity	textual definition	A material entity 
 ERROR	multiple_definitions	material entity	textual definition	An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.@en
 ERROR	multiple_definitions	part_of	textual definition	For continuants: C part_of C' if and only if: given any c that instantiates C at a time t, there is some c' such that c' instantiates C' at time t, and c *part_of* c' at t. For processes: P part_of P' if and only if: given any p that instantiates P at a time t, there is some p' such that p' instantiates P' at time t, and p *part_of* p' at t. (Here *part_of* is the instance-level part-relation.)
 ERROR	multiple_definitions	part_of	textual definition	a core relation that holds between a part and its whole@en
-ERROR	multiple_definitions	cell	textual definition	A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.
-ERROR	multiple_definitions	cell	textual definition	A material entity that has a plasma membrane and results from cellular division.
-ERROR	multiple_definitions	cellular_component	textual definition	A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome).
-ERROR	multiple_definitions	cellular_component	textual definition	A location, relative to cellular compartments and structures, occupied by a macromolecular machine. There are three types of  cellular components described in the gene ontology: (1) the cellular anatomical entity where a gene product carries out a molecular function (e.g., plasma membrane, cytoskeleton) or membrane-enclosed compartments (e.g., mitochondrion); (2) virion components, where viral proteins act, and (3) the stable macromolecular complexes of which gene product are parts (e.g., the clathrin complex).
-ERROR	multiple_definitions	cellular_component	textual definition	A location, relative to cellular compartments and structures, occupied by a macromolecular machine. There are three types of cellular components described in the gene ontology: (1) the cellular anatomical entity where a gene product carries out a molecular function (e.g., plasma membrane, cytoskeleton) or membrane-enclosed compartments (e.g., mitochondrion); (2) virion components, where viral proteins act, and (3) the stable macromolecular complexes of which gene product are parts (e.g., the clathrin complex).
-ERROR	multiple_definitions	biological_process	textual definition	A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.
-ERROR	multiple_definitions	biological_process	textual definition	A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.
-ERROR	multiple_definitions	gene expression	textual definition	The process in which a gene's sequence is converted into a mature gene product (protein or RNA). This includes the production of an RNA transcript and its processing, as well as translation and maturation for protein-coding genes.
-ERROR	multiple_definitions	gene expression	textual definition	The process in which a gene's sequence is converted into a mature gene product (protein or RNA). This includes the production of an RNA transcript and its processing, translation and maturation for protein-coding genes.
+ERROR	multiple_definitions	NMR chemical shift reference compound	textual definition	Any compound that produces a peak used as reference frequency in the delta chemical shift scale.
+ERROR	multiple_definitions	NMR chemical shift reference compound	textual definition	Any compound that produces a peak used to reference an NMR spectrum during data pre-processing.
+ERROR	multiple_definitions	alpha-amino-acid zwitterion	textual definition	An amino acid zwitterion obtained by transfer of a proton from the carboxy to the amino group of any alpha-amino acid; major species at pH 7.3.
+ERROR	multiple_definitions	alpha-amino-acid zwitterion	textual definition	An amino acid-zwitterion obtained by transfer of a proton from the carboxy to the amino group of any alpha-amino acid; major species at pH 7.3.
+ERROR	multiple_definitions	metabolic process	textual definition	A cellular process consisting of the biochemical pathways by which a living organism transforms chemical substances. This includes including anabolism (biosynthetic process) and catabolism (catabolic process). Metabolic processes includes the transformation of small molecules, as well  macromolecular processes such as DNA repair and replication, protein synthesis and degradation.
+ERROR	multiple_definitions	metabolic process	textual definition	The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation.
+ERROR	multiple_definitions	cellular anatomical structure	textual definition	A part of a cellular organism consisting of a material entity with granularity above the level of a protein complex but below that of an anatomical system. Note that cellular organisms exclude viruses.
+ERROR	multiple_definitions	cellular anatomical structure	textual definition	A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.
 ERROR	multiple_definitions	data item	textual definition	An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
 ERROR	multiple_definitions	data item	textual definition	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en
 ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
 ERROR	multiple_definitions	information content entity	textual definition	An information entity is an entity that represents information about some other entity.  For example, a measurement, a clustered data set.
-ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
-ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
 ERROR	multiple_definitions	alternative term	textual definition	A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like.@en
 ERROR	multiple_definitions	alternative term	textual definition	An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)@en
 ERROR	multiple_definitions	definition source	textual definition	Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en
 ERROR	multiple_definitions	definition source	textual definition	formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en
-ERROR	multiple_definitions	processed material entity	textual definition	A material entity processed by human activity with an intent to produce
-ERROR	multiple_definitions	processed material entity	textual definition	Is a material entity that is created or changed during material processing.@en
-ERROR	multiple_definitions	population	textual definition	A population is a group of material entities consisting of individuals which share a particular characteristic such as inhabiting a particular region or area or ability to interbreed.
-ERROR	multiple_definitions	population	textual definition	a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area@en
 ERROR	multiple_definitions	protocol	textual definition	A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.@en
 ERROR	multiple_definitions	protocol	textual definition	A protocol is an information entity which is a set of instructions that describe an how an experiment is done.
 ERROR	multiple_definitions	protocol	textual definition	a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.
+ERROR	multiple_definitions	has specified input	textual definition	The inverse property of is specified input of
+ERROR	multiple_definitions	has specified input	textual definition	The inverse property of is specified input of@en
+ERROR	multiple_definitions	has_output	textual definition	The inverse property of is specified output of
+ERROR	multiple_definitions	has_output	textual definition	The inverse property of is specified output of@en
+ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.
+ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.@en
 ERROR	multiple_definitions	X-ray source	textual definition	A device that is used to generate X-rays.
 ERROR	multiple_definitions	X-ray source	textual definition	A device that is used to generate X-rays.@en
 ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.
@@ -181,6 +172,7 @@ ERROR	multiple_definitions	participates in	textual definition	Participates in is
 ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	has participant	textual definition	Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the A continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
+ERROR	multiple_definitions	overlaps	textual definition	A overlaps B if they share some part in common.
 ERROR	multiple_definitions	overlaps	textual definition	x overlaps y if and only if there exists some z such that x has part z and z part of y
 ERROR	multiple_definitions	overlaps	textual definition	x overlaps y iff they have some part in common.
 ERROR	multiple_definitions	regulates (processual)	textual definition	p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q.
@@ -189,8 +181,10 @@ ERROR	multiple_definitions	negatively regulates	textual definition	Process(P1) n
 ERROR	multiple_definitions	negatively regulates	textual definition	p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q.
 ERROR	multiple_definitions	positively regulates	textual definition	Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2.
 ERROR	multiple_definitions	positively regulates	textual definition	p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q.
-ERROR	multiple_definitions	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
-ERROR	multiple_definitions	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.
+ERROR	multiple_definitions	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
+ERROR	multiple_definitions	characteristic of part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+ERROR	multiple_definitions	characteristic of part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
 ERROR	multiple_definitions	causally related to	textual definition	This relation groups causal relations between material entities and causal relations between processes
 ERROR	multiple_definitions	causally related to	textual definition	relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.
 ERROR	multiple_definitions	causally upstream of	textual definition	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
@@ -199,8 +193,6 @@ ERROR	multiple_definitions	immediately causally upstream of	textual definition	p
 ERROR	multiple_definitions	immediately causally upstream of	textual definition	p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q.
 ERROR	multiple_definitions	causally upstream of or within	textual definition	p 'causally upstream or within' q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.
 ERROR	multiple_definitions	causally upstream of or within	textual definition	p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.
-ERROR	multiple_definitions	existence ends during	textual definition	Relation between continuant c and occurrent s, such that every instance of c ceases to exist during some s, if it does not die prematurely.
-ERROR	multiple_definitions	existence ends during	textual definition	x existence ends during y if and only if the time point at which x ends is before or equivalent to the time point at which y ends and after or equivalent to the point at which y starts. Formally: x existence ends during y iff ω(x) <= ω(y) and ω(x) >= α(y).
 ERROR	multiple_definitions	causal relation between processes	textual definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.
 ERROR	multiple_definitions	causal relation between processes	textual definition	p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.
 ERROR	multiple_definitions	directly regulates	textual definition	Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2.
@@ -209,28 +201,8 @@ ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical grou
 ERROR	multiple_definitions	anatomical cluster	textual definition	Anatomical group whose component anatomical structures lie in close proximity to each other.
 ERROR	multiple_definitions	prefix	textual definition	A derived unit is a unit which is derived from base units.
 ERROR	multiple_definitions	prefix	textual definition	A unit which is derived from base units.
-ERROR	multiple_definitions	absorbed dose unit	textual definition	A derived unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.
-ERROR	multiple_definitions	absorbed dose unit	textual definition	A unit which is a standard measure of the energy imparted by ionizing radiation to unit mass of matter such as tissue.
 ERROR	multiple_definitions	has exact synonym	textual definition	An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.
 ERROR	multiple_definitions	has exact synonym	textual definition	An alternative label for a given entity such as a commonly used abbreviation or synonym. 
-ERROR	multiple_equivalent_class_definitions	response to light stimulus	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to organic substance	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to inorganic substance	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to organonitrogen compound	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to organic cyclic compound	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	RNA biosynthetic process	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to chemical	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to amino acid	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	membrane biogenesis	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to carbamate	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to ammonium ion	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	nuclear membrane biogenesis	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	catalytic activity, acting on a protein	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	catalytic activity, acting on RNA	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	catalytic activity, acting on a nucleic acid	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to peptide	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to nitrogen compound	owl:equivalentClass	blank node
-ERROR	multiple_equivalent_class_definitions	response to oxygen-containing compound	owl:equivalentClass	blank node
 ERROR	multiple_labels	continuant	label	continuant
 ERROR	multiple_labels	continuant	label	continuant@en
 ERROR	multiple_labels	independent continuant	label	independent continuant
@@ -239,12 +211,10 @@ ERROR	multiple_labels	process	label	process
 ERROR	multiple_labels	process	label	process@en
 ERROR	multiple_labels	disposition	label	disposition
 ERROR	multiple_labels	disposition	label	disposition@en
-ERROR	multiple_labels	realizable entity	label	realizable@en
 ERROR	multiple_labels	realizable entity	label	realizable entity@en
 ERROR	multiple_labels	realizable entity	label	realizable_entity
 ERROR	multiple_labels	quality	label	quality
 ERROR	multiple_labels	quality	label	quality@en
-ERROR	multiple_labels	specifically dependent continuant	label	characteristic@en
 ERROR	multiple_labels	specifically dependent continuant	label	material property
 ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant
 ERROR	multiple_labels	specifically dependent continuant	label	specifically dependent continuant@en
@@ -268,23 +238,28 @@ ERROR	multiple_labels	precedes	label	precedes
 ERROR	multiple_labels	precedes	label	precedes@en
 ERROR	multiple_labels	contains process	label	contains process
 ERROR	multiple_labels	contains process	label	contains process@en
-ERROR	multiple_labels	atom	label	atom
-ERROR	multiple_labels	atom	label	uncharged atom
-ERROR	multiple_labels	atomic nucleus	label	atomic nucleus
-ERROR	multiple_labels	atomic nucleus	label	atomic nucleus@en
-ERROR	multiple_labels	subatomic particle	label	subatomic particle
-ERROR	multiple_labels	subatomic particle	label	subatomic particle@en
-ERROR	multiple_labels	cell	label	cell
-ERROR	multiple_labels	cell	label	cell@en
+ERROR	multiple_labels	amino acid zwitterion	label	amino acid zwitterion
+ERROR	multiple_labels	amino acid zwitterion	label	amino-acid zwitterion
+ERROR	multiple_labels	alpha-amino-acid zwitterion	label	alpha-amino acid zwitterion
+ERROR	multiple_labels	alpha-amino-acid zwitterion	label	alpha-amino-acid zwitterion
 ERROR	multiple_labels	has atomic number	label	has atomic number
 ERROR	multiple_labels	has atomic number	label	has atomic number@en
 ERROR	multiple_labels	results in distribution of	label	results in distribution of
 ERROR	multiple_labels	results in distribution of	label	results_in_distribution_of
 ERROR	multiple_labels	results in fission of	label	results in fission of
 ERROR	multiple_labels	results in fission of	label	results_in_fission_of
-ERROR	multiple_labels	objective specification	label	objective specification
-ERROR	multiple_labels	objective specification	label	objective specification@en
-ERROR	multiple_labels	information content entity	label	information
+ERROR	multiple_labels	molecular_function	label	gene product or complex activity@en
+ERROR	multiple_labels	molecular_function	label	molecular_function
+ERROR	multiple_labels	biological process	label	biological process@en
+ERROR	multiple_labels	biological process	label	biological_process
+ERROR	multiple_labels	membraneless organelle	label	membraneless organelle
+ERROR	multiple_labels	membraneless organelle	label	non-membrane-bounded organelle
+ERROR	multiple_labels	intracellular membraneless organelle	label	intracellular membraneless organelle
+ERROR	multiple_labels	intracellular membraneless organelle	label	intracellular non-membrane-bounded organelle
+ERROR	multiple_labels	cellular anatomical structure	label	cellular anatomical entity
+ERROR	multiple_labels	cellular anatomical structure	label	cellular anatomical structure
+ERROR	multiple_labels	ancestry status	label	ancestry status
+ERROR	multiple_labels	ancestry status	label	ancestry status@en
 ERROR	multiple_labels	information content entity	label	information content entity
 ERROR	multiple_labels	information content entity	label	information content entity@en
 ERROR	multiple_labels	information content entity	label	information entity
@@ -311,23 +286,15 @@ ERROR	multiple_labels	alternative term	label	alternative term
 ERROR	multiple_labels	alternative term	label	alternative term@en
 ERROR	multiple_labels	definition source	label	definition source
 ERROR	multiple_labels	definition source	label	definition source@en
-ERROR	multiple_labels	is about	label	is about
-ERROR	multiple_labels	is about	label	is about@en
 ERROR	multiple_labels	Mus <genus>	label	Mus
 ERROR	multiple_labels	Mus <genus>	label	Mus <genus>
-ERROR	multiple_labels	planned process	label	completely executed planned process@en
 ERROR	multiple_labels	planned process	label	planned process
 ERROR	multiple_labels	planned process	label	planned process@en
-ERROR	multiple_labels	processed material entity	label	processed material@en
-ERROR	multiple_labels	processed material entity	label	processed material entity@en
-ERROR	multiple_labels	population	label	population
-ERROR	multiple_labels	population	label	population@en
 ERROR	multiple_labels	protocol	label	protocol
 ERROR	multiple_labels	protocol	label	protocol@en
 ERROR	multiple_labels	has_output	label	has specified output@en
 ERROR	multiple_labels	has_output	label	has_output
 ERROR	multiple_labels	has_output	label	has_specified_output
-ERROR	multiple_labels	has_output	label	has_specified_output@en
 ERROR	multiple_labels	organism	label	organism
 ERROR	multiple_labels	organism	label	organism@en
 ERROR	multiple_labels	inheres in	label	characteristic of@en
@@ -336,7 +303,6 @@ ERROR	multiple_labels	inheres in	label	inheres in@en
 ERROR	multiple_labels	inheres in	label	inheres_in
 ERROR	multiple_labels	bearer of	label	bearer of
 ERROR	multiple_labels	bearer of	label	bearer of@en
-ERROR	multiple_labels	bearer of	label	has characteristic
 ERROR	multiple_labels	bearer of	label	has characteristic@en
 ERROR	multiple_labels	participates in	label	participates in
 ERROR	multiple_labels	participates in	label	participates in@en
@@ -432,20 +398,14 @@ ERROR	multiple_labels	developmentally replaces	label	developmentally replaces
 ERROR	multiple_labels	developmentally replaces	label	developmentally replaces@en
 ERROR	multiple_labels	results in developmental progression of	label	results in developmental progression of
 ERROR	multiple_labels	results in developmental progression of	label	results in developmental progression of@en
-ERROR	multiple_labels	results in formation of	label	results in formation of
-ERROR	multiple_labels	results in formation of	label	results in formation of@en
+ERROR	multiple_labels	results in formation of anatomical entity	label	results in formation of
+ERROR	multiple_labels	results in formation of anatomical entity	label	results in formation of anatomical entity@en
 ERROR	multiple_labels	has habitat	label	has habitat
 ERROR	multiple_labels	has habitat	label	has habitat@en
-ERROR	multiple_labels	inheres in part of	label	characteristic of part of@en
-ERROR	multiple_labels	inheres in part of	label	inheres in part of
+ERROR	multiple_labels	characteristic of part of	label	characteristic of part of@en
+ERROR	multiple_labels	characteristic of part of	label	inheres in part of
 ERROR	multiple_labels	functionally related to	label	functionally related to
 ERROR	multiple_labels	functionally related to	label	functionally related to@en
-ERROR	multiple_labels	regulated by	label	regulated by
-ERROR	multiple_labels	regulated by	label	regulated by@en
-ERROR	multiple_labels	negatively regulated by	label	negatively regulated by
-ERROR	multiple_labels	negatively regulated by	label	negatively regulated by@en
-ERROR	multiple_labels	positively regulated by	label	positively regulated by
-ERROR	multiple_labels	positively regulated by	label	positively regulated by@en
 ERROR	multiple_labels	has member	label	has member
 ERROR	multiple_labels	has member	label	has member@en
 ERROR	multiple_labels	input of	label	input of
@@ -468,12 +428,8 @@ ERROR	multiple_labels	has potential to develop into	label	has potential to devel
 ERROR	multiple_labels	has potential to develop into	label	has potential to develop into@en
 ERROR	multiple_labels	causally downstream of	label	causally downstream of
 ERROR	multiple_labels	causally downstream of	label	causally downstream of@en
-ERROR	multiple_labels	immediately causally downstream of	label	immediately causally downstream of
-ERROR	multiple_labels	immediately causally downstream of	label	immediately causally downstream of@en
 ERROR	multiple_labels	causally upstream of	label	causally upstream of
 ERROR	multiple_labels	causally upstream of	label	causally upstream of@en
-ERROR	multiple_labels	immediately causally upstream of	label	immediately causally upstream of
-ERROR	multiple_labels	immediately causally upstream of	label	immediately causally upstream of@en
 ERROR	multiple_labels	produces	label	produces
 ERROR	multiple_labels	produces	label	produces@en
 ERROR	multiple_labels	produced by	label	produced by
@@ -488,13 +444,15 @@ ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
 ERROR	multiple_labels	Description	label	Description@en-us
 ERROR	multiple_labels	Description	label	description
-ERROR	multiple_labels	Title	label	Title
-ERROR	multiple_labels	Title	label	Title@en-us
-ERROR	multiple_labels	Title	label	title
+ERROR	multiple_labels	title	label	Title
+ERROR	multiple_labels	title	label	Title@en-us
+ERROR	multiple_labels	title	label	title
 ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
 ERROR	multiple_labels	has_broad_synonym	label	has_broad_synonym
+ERROR	multiple_labels	has cross-reference	label	database_cross_reference
+ERROR	multiple_labels	has cross-reference	label	has cross-reference
 ERROR	multiple_labels	has exact synonym	label	has exact synonym@en
 ERROR	multiple_labels	has exact synonym	label	has_exact_synonym
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
@@ -515,6 +473,7 @@ WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x t) (if (Real
 WARN	annotation_whitespace	realizable entity	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
 WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
 WARN	annotation_whitespace	quality	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
+WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] 
 WARN	annotation_whitespace	specifically dependent continuant	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
 WARN	annotation_whitespace	role	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
 WARN	annotation_whitespace	object aggregate	editor note	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
@@ -524,16 +483,16 @@ WARN	annotation_whitespace	function	IAO:0000602	(forall (x) (if (Function x) (Di
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
-WARN	annotation_whitespace	cell	database_cross_reference	"CALOHA:TS-2035
+WARN	annotation_whitespace	cell	has cross-reference	"CALOHA:TS-2035
 "
-WARN	annotation_whitespace	cell	database_cross_reference	FMA:68646 
-WARN	annotation_whitespace	cell	database_cross_reference	GO:0005623
-WARN	annotation_whitespace	cell	database_cross_reference	"KUPO:0000002
+WARN	annotation_whitespace	cell	has cross-reference	FMA:68646 
+WARN	annotation_whitespace	cell	has cross-reference	GO:0005623
+WARN	annotation_whitespace	cell	has cross-reference	"KUPO:0000002
 
 "
-WARN	annotation_whitespace	cell	database_cross_reference	VHOG:0001533
-WARN	annotation_whitespace	cell	database_cross_reference	WBbt:0004017
-WARN	annotation_whitespace	cell	database_cross_reference	XAO:0003012
+WARN	annotation_whitespace	cell	has cross-reference	VHOG:0001533
+WARN	annotation_whitespace	cell	has cross-reference	WBbt:0004017
+WARN	annotation_whitespace	cell	has cross-reference	XAO:0003012
 WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
 Barry Smith
 
@@ -588,22 +547,18 @@ WARN	annotation_whitespace	Krypton-84 nucleus	textual definition	An atomic nucle
 WARN	annotation_whitespace	Krypton-84 nucleus	alternative term	Kr-84 ion;Kr-84 nucleus;Kr-84 
 WARN	annotation_whitespace	external radiation exposure	example of usage	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	internal experimental radiation exposure	rdfs:comment	 Research subjects participating in a clinical trial using an internally implanted radiation source have an internal experimental radiation exposure
-WARN	annotation_whitespace	contained in	editor note	"Intended meaning:
-domain: material entity
-range: spatial region or site (immaterial continuant)
-        @en"
+WARN	annotation_whitespace	senolytic	textual definition	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
 WARN	annotation_whitespace	ends during	rdfs:comment	X ends_during Y iff: ((start(Y) before_or_simultaneous_with end(X)) AND end(X) before_or_simultaneous_with end(Y). @en
 WARN	annotation_whitespace	synapsed by	textual definition	Relation between an anatomical structure (including cells) and a neuron that chemically synapses to it. @en
 WARN	annotation_whitespace	synapsed to	textual definition	" Relation between a neuron and an anatomical structure (including cells) that it chemically synapses to.
         @en"
 WARN	annotation_whitespace	spatially disjoint from	editor note	There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. @en
 WARN	annotation_whitespace	capable of	textual definition	A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. 
-WARN	annotation_whitespace	developmentally induced by	definition source	 Developmental Biology, Gilbert, 8th edition, figure 6.5(F)
 WARN	annotation_whitespace	results in maturation of	example of usage	 an annotation of gene X to cell maturation with results_in_maturation_of CL:0000057 (fibroblast) means that the fibroblast is mature at the end of the process
 WARN	annotation_whitespace	results in transport along	textual definition	Holds between p and l when p is a transportation or localization process and the outcome of this process is to move c from one location to another, and the route taken by c follows a path that is aligned_with l 
 WARN	annotation_whitespace	siemens	has exact synonym	mho 
 WARN	annotation_whitespace	electric field strength unit	has exact synonym	E-field strength 
-WARN	annotation_whitespace	Title	Description	"
+WARN	annotation_whitespace	title	Description	"
         Typically, a Title will be a name by which the resource is
          formally known.
     @en-us"
@@ -683,8 +638,6 @@ WARN	duplicate_exact_synonym	linear energy transfer	alternative term	LET
 WARN	duplicate_exact_synonym	linear energy transfer	has exact synonym	LET
 WARN	duplicate_exact_synonym	linear energy transfer	alternative term	LET
 WARN	duplicate_exact_synonym	linear energy transfer	has exact synonym	LET
-WARN	duplicate_exact_synonym	Insecta	has exact synonym	insects
-WARN	duplicate_exact_synonym	Hexapoda	has exact synonym	insects
 WARN	duplicate_exact_synonym	G4: Undifferentiated	alternative term	G4
 WARN	duplicate_exact_synonym	G4 (WHO)	alternative term	G4
 WARN	duplicate_exact_synonym	G3: Poorly differentiated	alternative term	G3
@@ -746,6 +699,7 @@ WARN	duplicate_label_synonym	sulfate	has exact synonym	sulfate
 WARN	duplicate_label_synonym	carbohydrate	has exact synonym	carbohydrate
 WARN	duplicate_label_synonym	glucose	has exact synonym	glucose
 WARN	duplicate_label_synonym	hydrogencarbonate	has exact synonym	hydrogencarbonate
+WARN	duplicate_label_synonym	D-glucose	has exact synonym	D-glucose
 WARN	duplicate_label_synonym	glycosaminoglycan	has exact synonym	glycosaminoglycan
 WARN	duplicate_label_synonym	5beta-cholane	has exact synonym	5beta-cholane
 WARN	duplicate_label_synonym	acyl group	has exact synonym	acyl group
@@ -763,13 +717,10 @@ WARN	duplicate_label_synonym	proton	has exact synonym	proton
 WARN	duplicate_label_synonym	oxoacid	has exact synonym	oxoacid
 WARN	duplicate_label_synonym	salt	has exact synonym	salt
 WARN	duplicate_label_synonym	ion	has exact synonym	ion
-WARN	duplicate_label_synonym	iron molecular entity	has exact synonym	iron molecular entity
 WARN	duplicate_label_synonym	metabolite	has exact synonym	metabolite
 WARN	duplicate_label_synonym	molecule	has exact synonym	molecule
 WARN	duplicate_label_synonym	oxide	has exact synonym	oxide
 WARN	duplicate_label_synonym	oxygen molecular entity	has exact synonym	oxygen molecular entity
-WARN	duplicate_label_synonym	phosphate	has exact synonym	phosphate
-WARN	duplicate_label_synonym	phosphoric acid	has exact synonym	phosphoric acid
 WARN	duplicate_label_synonym	sulfates	has exact synonym	sulfates
 WARN	duplicate_label_synonym	sulfur molecular entity	has exact synonym	sulfur molecular entity
 WARN	duplicate_label_synonym	sulfuric acid	has exact synonym	sulfuric acid
@@ -809,9 +760,6 @@ WARN	duplicate_label_synonym	thorium	has exact synonym	thorium
 WARN	duplicate_label_synonym	fermium	has exact synonym	fermium
 WARN	duplicate_label_synonym	nobelium	has exact synonym	nobelium
 WARN	duplicate_label_synonym	sulfur oxoacid derivative	has exact synonym	sulfur oxoacid derivative
-WARN	duplicate_label_synonym	phosphorus oxoacid	has exact synonym	phosphorus oxoacid
-WARN	duplicate_label_synonym	pnictogen oxoanion	has exact synonym	pnictogen oxoanion
-WARN	duplicate_label_synonym	phosphorus oxoanion	has exact synonym	phosphorus oxoanion
 WARN	duplicate_label_synonym	sulfur oxoanion	has exact synonym	sulfur oxoanion
 WARN	duplicate_label_synonym	chalcogen oxoacid	has exact synonym	chalcogen oxoacid
 WARN	duplicate_label_synonym	chalcogen oxoanion	has exact synonym	chalcogen oxoanion
@@ -820,7 +768,6 @@ WARN	duplicate_label_synonym	carboxylic acid	has exact synonym	carboxylic acid
 WARN	duplicate_label_synonym	carbon group molecular entity	has exact synonym	carbon group molecular entity
 WARN	duplicate_label_synonym	noble gas molecular entity	has exact synonym	noble gas molecular entity
 WARN	duplicate_label_synonym	s-block molecular entity	has exact synonym	s-block molecular entity
-WARN	duplicate_label_synonym	d-block molecular entity	has exact synonym	d-block molecular entity
 WARN	duplicate_label_synonym	helium molecular entity	has exact synonym	helium molecular entity
 WARN	duplicate_label_synonym	oxygen hydride	has exact synonym	oxygen hydride
 WARN	duplicate_label_synonym	ribonucleic acid	has exact synonym	ribonucleic acid
@@ -828,7 +775,6 @@ WARN	duplicate_label_synonym	alpha-amino acid	has exact synonym	alpha-amino acid
 WARN	duplicate_label_synonym	amino-acid residue	has exact synonym	amino-acid residue
 WARN	duplicate_label_synonym	carbohydrate acid	has exact synonym	carbohydrate acid
 WARN	duplicate_label_synonym	carbohydrate acid anion	has exact synonym	carbohydrate acid anion
-WARN	duplicate_label_synonym	iron group molecular entity	has exact synonym	iron group molecular entity
 WARN	duplicate_label_synonym	macromolecule	has exact synonym	macromolecule
 WARN	duplicate_label_synonym	phenols	has exact synonym	phenols
 WARN	duplicate_label_synonym	reagent	has exact synonym	reagent
@@ -849,7 +795,6 @@ WARN	duplicate_label_synonym	boson	has exact synonym	boson
 WARN	duplicate_label_synonym	nuclear particle	has exact synonym	nuclear particle
 WARN	duplicate_label_synonym	pi meson	has exact synonym	pi meson
 WARN	duplicate_label_synonym	muon	has exact synonym	muon
-WARN	duplicate_label_synonym	phosphorus oxoacid derivative	has exact synonym	phosphorus oxoacid derivative
 WARN	duplicate_label_synonym	chalcogen hydride	has exact synonym	chalcogen hydride
 WARN	duplicate_label_synonym	cation	has exact synonym	cation
 WARN	duplicate_label_synonym	carbon-13 atom	has exact synonym	carbon-13 atom
@@ -860,6 +805,7 @@ WARN	duplicate_label_synonym	amino-acid anion	has exact synonym	amino-acid anion
 WARN	duplicate_label_synonym	glucan	has exact synonym	glucan
 WARN	duplicate_label_synonym	homopolysaccharide	has exact synonym	homopolysaccharide
 WARN	duplicate_label_synonym	acid	has exact synonym	acid
+WARN	duplicate_label_synonym	glucopyranose	has exact synonym	glucopyranose
 WARN	duplicate_label_synonym	thallium-203	has exact synonym	thallium-203
 WARN	duplicate_label_synonym	thallium-205	has exact synonym	thallium-205
 WARN	duplicate_label_synonym	thallium-201	has exact synonym	thallium-201
@@ -870,10 +816,9 @@ WARN	duplicate_label_synonym	carboxylic acid dianion	has exact synonym	carboxyli
 WARN	duplicate_label_synonym	Bronsted acid	has exact synonym	Bronsted acid
 WARN	duplicate_label_synonym	Bronsted base	has exact synonym	Bronsted base
 WARN	duplicate_label_synonym	Lewis base	has exact synonym	Lewis base
-WARN	duplicate_label_synonym	dihydrogenphosphate	has exact synonym	dihydrogenphosphate
 WARN	duplicate_label_synonym	carbonate	has exact synonym	carbonate
+WARN	duplicate_label_synonym	D-glucopyranose	has exact synonym	D-glucopyranose
 WARN	duplicate_label_synonym	hydroxy group	has exact synonym	hydroxy group
-WARN	duplicate_label_synonym	hydrogenphosphate	has exact synonym	hydrogenphosphate
 WARN	duplicate_label_synonym	hydrogensulfate	has exact synonym	hydrogensulfate
 WARN	duplicate_label_synonym	mineral	has exact synonym	mineral
 WARN	duplicate_label_synonym	polar solvent	has exact synonym	polar solvent
@@ -886,11 +831,16 @@ WARN	duplicate_label_synonym	molybdenum-95	has exact synonym	molybdenum-95
 WARN	duplicate_label_synonym	dosimeter	has exact synonym	dosimeter
 WARN	duplicate_label_synonym	nucleus	has exact synonym	nucleus
 WARN	duplicate_label_synonym	behavior	has exact synonym	behavior
+WARN	duplicate_label_synonym	myofibril	has exact synonym	myofibril
+WARN	duplicate_label_synonym	membraneless organelle	has exact synonym	non-membrane-bounded organelle
+WARN	duplicate_label_synonym	intracellular membraneless organelle	has exact synonym	intracellular non-membrane-bounded organelle
 WARN	duplicate_label_synonym	mastication	has exact synonym	mastication
+WARN	duplicate_label_synonym	cellular anatomical structure	has exact synonym	cellular anatomical entity
 WARN	duplicate_label_synonym	information content entity	has exact synonym	information content entity
 WARN	duplicate_label_synonym	plan specification	has exact synonym	plan specification
 WARN	duplicate_label_synonym	chewing	has exact synonym	chewing
 WARN	duplicate_label_synonym	Mus <genus>	has exact synonym	Mus
+WARN	duplicate_label_synonym	quantitative	has exact synonym	quantitative
 WARN	duplicate_label_synonym	actinium	has exact synonym	actinium
 WARN	duplicate_label_synonym	americium	has exact synonym	americium
 WARN	duplicate_label_synonym	californium	has exact synonym	californium
@@ -901,10 +851,8 @@ WARN	duplicate_label_synonym	uranium	has exact synonym	uranium
 WARN	duplicate_label_synonym	biological process	has exact synonym	biological process
 WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
 WARN	duplicate_label_synonym	overlaps	alternative term	overlaps
-WARN	duplicate_label_synonym	connected to	alternative term	connected to
-WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
+WARN	duplicate_label_synonym	characteristic of part of	alternative term	inheres in part of
 WARN	duplicate_label_synonym	produces	alternative term	produces
-WARN	duplicate_label_synonym	executes	alternative term	executes
 WARN	duplicate_label_synonym	sympathetic nervous system	has exact synonym	sympathetic nervous system
 WARN	duplicate_label_synonym	endocrine pancreas	has exact synonym	endocrine pancreas
 WARN	duplicate_label_synonym	exocrine pancreas	has exact synonym	exocrine pancreas
@@ -916,12 +864,13 @@ WARN	duplicate_label_synonym	simple columnar epithelium	has exact synonym	simple
 WARN	duplicate_label_synonym	endocrine system	has exact synonym	endocrine system
 WARN	duplicate_label_synonym	respiratory system	has exact synonym	respiratory system
 WARN	duplicate_label_synonym	musculature	has exact synonym	musculature
-WARN	duplicate_label_synonym	posterior vena cava	has exact synonym	posterior vena cava
+WARN	duplicate_label_synonym	crypt of Lieberkuhn of small intestine	has exact synonym	crypt of Lieberkuhn of small intestine
 WARN	duplicate_label_synonym	orbit of skull	has exact synonym	orbit of skull
 WARN	duplicate_label_synonym	cranial ganglion	has exact synonym	cranial ganglion
 WARN	duplicate_label_synonym	uvea	has exact synonym	uvea
 WARN	duplicate_label_synonym	rhombomere	has exact synonym	rhombomere
 WARN	duplicate_label_synonym	submucosa of esophagus	has exact synonym	submucosa of esophagus
+WARN	duplicate_label_synonym	crypt of Lieberkuhn	has exact synonym	crypt of Lieberkuhn
 WARN	duplicate_label_synonym	gray matter	has exact synonym	gray matter
 WARN	duplicate_label_synonym	right cardiac atrium	has exact synonym	right cardiac atrium
 WARN	duplicate_label_synonym	left cardiac atrium	has exact synonym	left cardiac atrium
@@ -956,9 +905,7 @@ WARN	duplicate_label_synonym	paired limb/fin bud	has exact synonym	paired limb/f
 WARN	duplicate_label_synonym	pharyngeal arch artery	has exact synonym	pharyngeal arch artery
 WARN	duplicate_label_synonym	anterior limiting lamina of cornea	has exact synonym	anterior limiting lamina of cornea
 WARN	duplicate_label_synonym	raphe nuclei	has exact synonym	raphe nuclei
-WARN	duplicate_label_synonym	pelvic appendage	has exact synonym	pelvic appendage
 WARN	duplicate_label_synonym	neuromere	has exact synonym	neuromere
-WARN	duplicate_label_synonym	gland of anal canal	has exact synonym	gland of anal canal
 WARN	duplicate_label_synonym	parenchyma of central nervous system	has exact synonym	parenchyma of central nervous system
 WARN	duplicate_label_synonym	cervical region	has exact synonym	cervical region
 WARN	duplicate_label_synonym	primitive heart tube	has exact synonym	primitive heart tube
@@ -968,9 +915,9 @@ WARN	duplicate_label_synonym	lumen of digestive tract	has exact synonym	lumen of
 WARN	duplicate_label_synonym	ovary stroma	has exact synonym	ovary stroma
 WARN	duplicate_label_synonym	pancreatic lobule	has exact synonym	pancreatic lobule
 WARN	duplicate_label_synonym	anatomical junction	has exact synonym	anatomical junction
-WARN	duplicate_label_synonym	pelvic girdle skeleton	has exact synonym	pelvic girdle skeleton
 WARN	duplicate_label_synonym	ciliary processes	has exact synonym	ciliary processes
 WARN	duplicate_label_synonym	facial skeleton	has exact synonym	facial skeleton
+WARN	duplicate_label_synonym	bronchial lumen	has exact synonym	bronchial lumen
 WARN	duplicate_label_synonym	hematopoietic tissue	has exact synonym	hematopoietic tissue
 WARN	duplicate_label_synonym	foramen of skull	has exact synonym	foramen of skull
 WARN	duplicate_label_synonym	arterial blood	has exact synonym	arterial blood
@@ -980,8 +927,6 @@ WARN	duplicate_label_synonym	thoracic spinal cord ventral horn	has exact synonym
 WARN	duplicate_label_synonym	cervical spinal cord gray matter	has exact synonym	cervical spinal cord gray matter
 WARN	duplicate_label_synonym	cervical spinal cord ventral horn	has exact synonym	cervical spinal cord ventral horn
 WARN	duplicate_label_synonym	thoracic spinal cord gray matter	has exact synonym	thoracic spinal cord gray matter
-WARN	duplicate_label_synonym	right crus of diaphragm	has exact synonym	right crus of diaphragm
-WARN	duplicate_label_synonym	left crus of diaphragm	has exact synonym	left crus of diaphragm
 WARN	duplicate_label_synonym	anal canal epithelium	has exact synonym	anal canal epithelium
 WARN	duplicate_label_synonym	abdominal viscera	has exact synonym	abdominal viscera
 WARN	duplicate_label_synonym	lung field	has exact synonym	lung field
@@ -989,8 +934,6 @@ WARN	duplicate_label_synonym	rad	has exact synonym	rad
 WARN	duplicate_label_synonym	mass per unit volume	has exact synonym	mass per unit volume
 WARN	duplicate_label_synonym	fraction	alternative term	fraction
 WARN	duplicate_label_synonym	pH	has exact synonym	pH
-WARN	duplicate_scoped_synonym	deoxyribonucleic acid	has exact synonym	deoxyribonucleic acids
-WARN	duplicate_scoped_synonym	deoxyribonucleic acid	has_related_synonym	deoxyribonucleic acids
 WARN	duplicate_scoped_synonym	ketone	has exact synonym	ketones
 WARN	duplicate_scoped_synonym	ketone	has_related_synonym	ketones
 WARN	duplicate_scoped_synonym	iron atom	has exact synonym	iron
@@ -1021,8 +964,6 @@ WARN	duplicate_scoped_synonym	nonmetal atom	has exact synonym	nonmetal
 WARN	duplicate_scoped_synonym	nonmetal atom	has_related_synonym	nonmetal
 WARN	duplicate_scoped_synonym	oxygen atom	has exact synonym	oxygen
 WARN	duplicate_scoped_synonym	oxygen atom	has_related_synonym	oxygen
-WARN	duplicate_scoped_synonym	phosphate	has exact synonym	phosphates
-WARN	duplicate_scoped_synonym	phosphate	has_related_synonym	phosphates
 WARN	duplicate_scoped_synonym	potassium atom	has exact synonym	potassium
 WARN	duplicate_scoped_synonym	potassium atom	has_related_synonym	potassium
 WARN	duplicate_scoped_synonym	sodium atom	has exact synonym	sodium
@@ -1209,6 +1150,8 @@ WARN	duplicate_scoped_synonym	oxygen-16 atom	has exact synonym	oxygen-16
 WARN	duplicate_scoped_synonym	oxygen-16 atom	has_related_synonym	oxygen-16
 WARN	duplicate_scoped_synonym	oxygen-17 atom	has exact synonym	oxygen-17
 WARN	duplicate_scoped_synonym	oxygen-17 atom	has_related_synonym	oxygen-17
+WARN	duplicate_scoped_synonym	amino acid zwitterion	has exact synonym	amino acid zwitterion
+WARN	duplicate_scoped_synonym	amino acid zwitterion	has_related_synonym	amino acid zwitterion
 WARN	duplicate_scoped_synonym	carbon-14 atom	has exact synonym	carbon-14
 WARN	duplicate_scoped_synonym	carbon-14 atom	has_related_synonym	carbon-14
 WARN	duplicate_scoped_synonym	carbon-13 atom	has exact synonym	carbon-13
@@ -1572,8 +1515,6 @@ WARN	duplicate_scoped_synonym	esophagus mucosa	has exact synonym	tunica mucosa o
 WARN	duplicate_scoped_synonym	esophagus mucosa	has_related_synonym	tunica mucosa oesophagi
 WARN	duplicate_scoped_synonym	pontine tegmentum	has exact synonym	tegmentum pontis
 WARN	duplicate_scoped_synonym	pontine tegmentum	has_related_synonym	tegmentum pontis
-WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	has exact synonym	hindlimb ectoderm
-WARN	duplicate_scoped_synonym	pelvic appendage bud ectoderm	oboInOwl:hasNarrowSynonym	hindlimb ectoderm
 WARN	duplicate_scoped_synonym	abdominal wall	has exact synonym	paries abdominalis
 WARN	duplicate_scoped_synonym	abdominal wall	has_related_synonym	paries abdominalis
 WARN	duplicate_scoped_synonym	brachiocephalic vein	has exact synonym	innominate vein
@@ -1682,7 +1623,6 @@ WARN	duplicate_scoped_synonym	gram per deciliter	alternative term	g/dl
 WARN	duplicate_scoped_synonym	gram per deciliter	has exact synonym	g/dl
 WARN	duplicate_scoped_synonym	microgram per liter	alternative term	ug/L
 WARN	duplicate_scoped_synonym	microgram per liter	has exact synonym	ug/L
-WARN	equivalent_class_axiom_no_genus	information representation	concretizes	information content entity
 WARN	equivalent_class_axiom_no_genus	regulation of behavior	regulates (processual)	behavior process
 WARN	equivalent_class_axiom_no_genus	classified data set	is specified output of	class prediction data transformation
 WARN	equivalent_class_axiom_no_genus	material processing	achieves_planned_objective	material transformation objective
@@ -1694,16 +1634,14 @@ WARN	equivalent_class_axiom_no_genus	data transformation	achieves_planned_object
 WARN	equivalent_class_axiom_no_genus	partitioning data transformation	achieves_planned_objective	partitioning objective
 WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track structure
 WARN	equivalent_class_axiom_no_genus	track formation	has_output	particle track
-WARN	equivalent_pair	role	owl:equivalentClass	role
 WARN	equivalent_pair	protein	owl:equivalentClass	protein
-WARN	invalid_xref	cell	database_cross_reference	FMA:68646 
-WARN	invalid_xref	cell	database_cross_reference	"KUPO:0000002
+WARN	invalid_xref	cell	has cross-reference	FMA:68646 
+WARN	invalid_xref	cell	has cross-reference	"KUPO:0000002
 
 "
-WARN	invalid_xref	cell	database_cross_reference	VHOG:0001533
-WARN	invalid_xref	cell	database_cross_reference	XAO:0003012
+WARN	invalid_xref	cell	has cross-reference	VHOG:0001533
+WARN	invalid_xref	cell	has cross-reference	XAO:0003012
 WARN	missing_definition	fiat object part	textual definition	
-WARN	missing_definition	site	textual definition	
 WARN	missing_definition	object	textual definition	
 WARN	missing_definition	has participant	textual definition	
 WARN	missing_definition	immaterial entity	textual definition	
@@ -1752,8 +1690,6 @@ WARN	missing_definition	organic ion	textual definition
 WARN	missing_definition	organic oxide	textual definition	
 WARN	missing_definition	oxygen atom	textual definition	
 WARN	missing_definition	oxygen molecular entity	textual definition	
-WARN	missing_definition	phosphoric acid derivative	textual definition	
-WARN	missing_definition	phosphorus molecular entity	textual definition	
 WARN	missing_definition	potassium atom	textual definition	
 WARN	missing_definition	sodium atom	textual definition	
 WARN	missing_definition	sodium chloride	textual definition	
@@ -1872,10 +1808,7 @@ WARN	missing_definition	mendelevium atom	textual definition
 WARN	missing_definition	nobelium	textual definition	
 WARN	missing_definition	lawrencium atom	textual definition	
 WARN	missing_definition	sulfur oxoacid	textual definition	
-WARN	missing_definition	pnictogen oxoacid	textual definition	
 WARN	missing_definition	sulfur oxoacid derivative	textual definition	
-WARN	missing_definition	pnictogen oxoanion	textual definition	
-WARN	missing_definition	phosphorus oxoanion	textual definition	
 WARN	missing_definition	elemental pnictogen	textual definition	
 WARN	missing_definition	sulfur oxoanion	textual definition	
 WARN	missing_definition	chalcogen oxoacid	textual definition	
@@ -1883,6 +1816,7 @@ WARN	missing_definition	chalcogen oxoanion	textual definition
 WARN	missing_definition	radon-220 atom	textual definition	
 WARN	missing_definition	radon-222 atom	textual definition	
 WARN	missing_definition	radon-219 atom	textual definition	
+WARN	missing_definition	transition element molecular entity	textual definition	
 WARN	missing_definition	actinoid molecular entity	textual definition	
 WARN	missing_definition	uranium molecular entity	textual definition	
 WARN	missing_definition	alkali metal cation	textual definition	
@@ -1894,12 +1828,15 @@ WARN	missing_definition	carbon group molecular entity	textual definition
 WARN	missing_definition	hydrogen molecular entity	textual definition	
 WARN	missing_definition	polycyclic compound	textual definition	
 WARN	missing_definition	organic aromatic compound	textual definition	
+WARN	missing_definition	d-block molecular entity	textual definition	
 WARN	missing_definition	f-block molecular entity	textual definition	
 WARN	missing_definition	helium molecular entity	textual definition	
 WARN	missing_definition	elemental helium	textual definition	
 WARN	missing_definition	oxygen hydride	textual definition	
 WARN	missing_definition	information biomacromolecule	textual definition	
 WARN	missing_definition	proteinogenic amino-acid residue	textual definition	
+WARN	missing_definition	amino-acid cation	textual definition	
+WARN	missing_definition	alpha-amino-acid cation	textual definition	
 WARN	missing_definition	carbohydrate acid	textual definition	
 WARN	missing_definition	carbohydrate acid anion	textual definition	
 WARN	missing_definition	iron group molecular entity	textual definition	
@@ -1908,7 +1845,6 @@ WARN	missing_definition	nickel group molecular entity	textual definition
 WARN	missing_definition	platinum molecular entity	textual definition	
 WARN	missing_definition	canonical nucleoside residue	textual definition	
 WARN	missing_definition	canonical ribonucleoside residue	textual definition	
-WARN	missing_definition	canonical deoxyribonucleoside residue	textual definition	
 WARN	missing_definition	halide salt	textual definition	
 WARN	missing_definition	gold molecular entity	textual definition	
 WARN	missing_definition	nitrogen hydride	textual definition	
@@ -1928,8 +1864,6 @@ WARN	missing_definition	inorganic chloride	textual definition
 WARN	missing_definition	bile acid anion	textual definition	
 WARN	missing_definition	5beta-cholanic acid	textual definition	
 WARN	missing_definition	cholanic acids	textual definition	
-WARN	missing_definition	phosphorus oxoacid derivative	textual definition	
-WARN	missing_definition	phosphorus oxoacids and derivatives	textual definition	
 WARN	missing_definition	chalcogen hydride	textual definition	
 WARN	missing_definition	argon molecular entity	textual definition	
 WARN	missing_definition	inorganic ion	textual definition	
@@ -1962,6 +1896,7 @@ WARN	missing_definition	polonium-201 atom	textual definition
 WARN	missing_definition	polonium-202 atom	textual definition	
 WARN	missing_definition	polonium-204 atom	textual definition	
 WARN	missing_definition	halide	textual definition	
+WARN	missing_definition	glucopyranose	textual definition	
 WARN	missing_definition	sulfuric acid derivative	textual definition	
 WARN	missing_definition	organic heteropolycyclic compound	textual definition	
 WARN	missing_definition	polycyclic heteroarene	textual definition	
@@ -1983,7 +1918,6 @@ WARN	missing_definition	praseodymium atom	textual definition
 WARN	missing_definition	rhenium atom	textual definition	
 WARN	missing_definition	xenon atom	textual definition	
 WARN	missing_definition	canonical nucleotide residue	textual definition	
-WARN	missing_definition	canonical deoxyribonucleotide residue	textual definition	
 WARN	missing_definition	canonical ribonucleotide residue	textual definition	
 WARN	missing_definition	onium compound	textual definition	
 WARN	missing_definition	nucleotide residue	textual definition	
@@ -1996,60 +1930,21 @@ WARN	missing_definition	physiological role	textual definition
 WARN	missing_definition	inorganic hydroxy compound	textual definition	
 WARN	missing_definition	greenhouse gas	textual definition	
 WARN	missing_definition	environmental contaminant	textual definition	
-WARN	missing_definition	neuronal receptor cell	textual definition	
-WARN	missing_definition	neural crest derived neuron	textual definition	
+WARN	missing_definition	epithelial fate stem cell	textual definition	
 WARN	missing_definition	branched duct epithelial cell	textual definition	
-WARN	missing_definition	squamous epithelial cell	textual definition	
 WARN	missing_definition	neuron associated cell	textual definition	
-WARN	missing_definition	CNS neuron (sensu Vertebrata)	textual definition	
 WARN	missing_definition	visual pigment cell	textual definition	
-WARN	missing_definition	protein secreting cell	textual definition	
 WARN	missing_definition	seromucus secreting cell	textual definition	
-WARN	missing_definition	peptide hormone secreting cell	textual definition	
-WARN	missing_definition	insulin secreting cell	textual definition	
-WARN	missing_definition	somatostatin secreting cell	textual definition	
-WARN	missing_definition	steroid hormone secreting cell	textual definition	
-WARN	missing_definition	binucleate cell	textual definition	
-WARN	missing_definition	eukaryotic cell	textual definition	
-WARN	missing_definition	Eumycetozoan cell	textual definition	
-WARN	missing_definition	eye photoreceptor cell	textual definition	
 WARN	missing_definition	crystallin accumulating cell	textual definition	
-WARN	missing_definition	mucus secreting cell	textual definition	
 WARN	missing_definition	extracellular matrix secreting cell	textual definition	
-WARN	missing_definition	oxygen accumulating cell	textual definition	
-WARN	missing_definition	extraembryonic cell	textual definition	
-WARN	missing_definition	ganglion interneuron	textual definition	
+WARN	missing_definition	tracheoblast	textual definition	
 WARN	missing_definition	endopolyploid cell	textual definition	
 WARN	missing_definition	carbohydrate secreting cell	textual definition	
 WARN	missing_definition	biogenic amine secreting cell	textual definition	
-WARN	missing_definition	fungal cell	textual definition	
-WARN	missing_definition	fibroblast of dermis	textual definition	
-WARN	missing_definition	epithelial cell of lower respiratory tract	textual definition	
-WARN	missing_definition	visual system neuron	textual definition	
-WARN	missing_definition	microcirculation associated smooth muscle cell	textual definition	
-WARN	missing_definition	cardiac blood vessel endothelial cell	textual definition	
-WARN	missing_definition	His-Purkinje system cell	textual definition	
-WARN	missing_definition	cardiac endothelial cell	textual definition	
-WARN	missing_definition	camera-type eye photoreceptor cell	textual definition	
-WARN	missing_definition	cardiac glial cell	textual definition	
-WARN	missing_definition	cardiac myoblast	textual definition	
-WARN	missing_definition	stomach neuroendocrine cell	textual definition	
-WARN	missing_definition	lung ciliated cell	textual definition	
-WARN	missing_definition	lung secretory cell	textual definition	
 WARN	missing_definition	trophectodermal cell	textual definition	
-WARN	missing_definition	lung endothelial cell	textual definition	
-WARN	missing_definition	pulmonary artery endothelial cell	textual definition	
 WARN	missing_definition	lacks_part	textual definition	
 WARN	missing_definition	lacks_plasma_membrane_part	textual definition	
-WARN	missing_definition	executed by	textual definition	
-WARN	missing_definition	action specification	textual definition	
-WARN	missing_definition	concretizes	textual definition	
-WARN	missing_definition	intended to realize	textual definition	
-WARN	missing_definition	realizes	textual definition	
-WARN	missing_definition	information representation	textual definition	
-WARN	missing_definition	measurement datum	textual definition	
-WARN	missing_definition	physical information carrier	textual definition	
-WARN	missing_definition	has number of atomic nuclei	textual definition	
+WARN	missing_definition	completely executed planned process	textual definition	
 WARN	missing_definition	atherosclerosis	textual definition	
 WARN	missing_definition	iris disease	textual definition	
 WARN	missing_definition	liver disease	textual definition	
@@ -2062,23 +1957,24 @@ WARN	missing_definition	gold mine	textual definition
 WARN	missing_definition	coal mine	textual definition	
 WARN	missing_definition	contaminated water	textual definition	
 WARN	missing_definition	coal mine waste material	textual definition	
-WARN	missing_definition	temperate grassland biome	textual definition	
 WARN	missing_definition	litter layer	textual definition	
 WARN	missing_definition	human house	textual definition	
 WARN	missing_definition	swamp forest	textual definition	
 WARN	missing_definition	needleleaf forest	textual definition	
-WARN	missing_definition	sclerophyllous forest	textual definition	
-WARN	missing_definition	montane forest	textual definition	
 WARN	missing_definition	ceiling	textual definition	
 WARN	missing_definition	atmospheric wind	textual definition	
 WARN	missing_definition	water raindrop	textual definition	
 WARN	missing_definition	algal material	textual definition	
 WARN	missing_definition	forest canopy	textual definition	
 WARN	missing_definition	gill tissue material	textual definition	
-WARN	missing_definition	aquatic ecosystem	textual definition	
 WARN	missing_definition	marine ecosystem	textual definition	
-WARN	missing_definition	terrestrial ecosystem	textual definition	
-WARN	missing_definition	temperate grassland	textual definition	
+WARN	missing_definition	temperate ecosystem	textual definition	
+WARN	missing_definition	tropical ecosystem	textual definition	
+WARN	missing_definition	subtropical ecosystem	textual definition	
+WARN	missing_definition	polar ecosystem	textual definition	
+WARN	missing_definition	subpolar ecosystem	textual definition	
+WARN	missing_definition	alpine ecosystem	textual definition	
+WARN	missing_definition	temperate sclerophyllous dry forest biome	textual definition	
 WARN	missing_definition	iron mine	textual definition	
 WARN	missing_definition	uranium mine	textual definition	
 WARN	missing_definition	iron ore	textual definition	
@@ -2086,6 +1982,7 @@ WARN	missing_definition	gold ore	textual definition
 WARN	missing_definition	platinum ore	textual definition	
 WARN	missing_definition	cement dust	textual definition	
 WARN	missing_definition	dust from plant parts	textual definition	
+WARN	missing_definition	anthropogenic modulation of pollution	textual definition	
 WARN	missing_definition	forest process	textual definition	
 WARN	missing_definition	forest area expansion	textual definition	
 WARN	missing_definition	generation of energy from coal	textual definition	
@@ -2097,7 +1994,9 @@ WARN	missing_definition	tidal power plant	textual definition
 WARN	missing_definition	integumental system environment	textual definition	
 WARN	missing_definition	results in distribution of	textual definition	
 WARN	missing_definition	results in fission of	textual definition	
-WARN	missing_definition	hasAncestryStatus	textual definition	
+WARN	missing_definition	catalytic activity	textual definition	
+WARN	missing_definition	transferase activity	textual definition	
+WARN	missing_definition	transferase activity, transferring phosphorus-containing groups	textual definition	
 WARN	missing_definition	has measurement unit label	textual definition	
 WARN	missing_definition	jaw movement	textual definition	
 WARN	missing_definition	root	textual definition	
@@ -2156,7 +2055,6 @@ WARN	missing_definition	Osteoglossocephalai	textual definition
 WARN	missing_definition	Euteleosteomorpha	textual definition	
 WARN	missing_definition	Percomorphaceae	textual definition	
 WARN	missing_definition	Carangaria	textual definition	
-WARN	missing_definition	Eupercaria	textual definition	
 WARN	missing_definition	Xenoturbellidae	textual definition	
 WARN	missing_definition	Galloanserae	textual definition	
 WARN	missing_definition	Acipenseroidei	textual definition	
@@ -2197,12 +2095,9 @@ WARN	missing_definition	Pipoidea	textual definition
 WARN	missing_definition	Ranoidea <superfamily>	textual definition	
 WARN	missing_definition	Anthophila <bees>	textual definition	
 WARN	missing_definition	Cyprinoidei	textual definition	
+WARN	missing_definition	Columbimorphae	textual definition	
+WARN	missing_definition	Neoaves	textual definition	
 WARN	missing_definition	Pleuronectoidei	textual definition	
-WARN	missing_definition	Tetraodontiformes	textual definition	
-WARN	missing_definition	Tetraodontoidei	textual definition	
-WARN	missing_definition	Tetraodontidae	textual definition	
-WARN	missing_definition	Takifugu	textual definition	
-WARN	missing_definition	Takifugu rubripes	textual definition	
 WARN	missing_definition	Laurasiatheria	textual definition	
 WARN	missing_definition	Euarchontoglires	textual definition	
 WARN	missing_definition	Glires	textual definition	
@@ -2217,7 +2112,6 @@ WARN	missing_definition	melanogaster group	textual definition
 WARN	missing_definition	melanogaster subgroup	textual definition	
 WARN	missing_definition	Chondrostei	textual definition	
 WARN	missing_definition	Teleostei	textual definition	
-WARN	missing_definition	Tetradontoidea	textual definition	
 WARN	missing_definition	Ostariophysi	textual definition	
 WARN	missing_definition	Tetrapoda	textual definition	
 WARN	missing_definition	Amniota	textual definition	
@@ -2393,6 +2287,10 @@ WARN	missing_definition	Neobatrachia	textual definition
 WARN	missing_definition	Diplostraca	textual definition	
 WARN	missing_definition	Sauropsida	textual definition	
 WARN	missing_definition	Archosauria	textual definition	
+WARN	missing_definition	Lepidosauria	textual definition	
+WARN	missing_definition	Sphenodontia	textual definition	
+WARN	missing_definition	Sphenodontidae	textual definition	
+WARN	missing_definition	Sphenodon	textual definition	
 WARN	missing_definition	Dicondylia	textual definition	
 WARN	missing_definition	Artemia salina	textual definition	
 WARN	missing_definition	Amphiesmenoptera	textual definition	
@@ -2450,7 +2348,6 @@ WARN	missing_definition	Ovis aries	textual definition
 WARN	missing_definition	Caprinae	textual definition	
 WARN	missing_definition	Lagomorpha	textual definition	
 WARN	missing_definition	Rodentia	textual definition	
-WARN	missing_definition	qualitative	textual definition	
 WARN	missing_definition	physical quality of a process	textual definition	
 WARN	missing_definition	sloped downward	textual definition	
 WARN	missing_definition	astronaut	textual definition	
@@ -2462,11 +2359,7 @@ WARN	missing_definition	risk estimate	textual definition
 WARN	missing_definition	lifetime risk estimate	textual definition	
 WARN	missing_definition	biological process	textual definition	
 WARN	missing_definition	cellular process	textual definition	
-WARN	missing_definition	mass number	textual definition	
 WARN	missing_definition	track formation	textual definition	
-WARN	missing_definition	is concretized as	textual definition	
-WARN	missing_definition	contained in	textual definition	
-WARN	missing_definition	contains	textual definition	
 WARN	missing_definition	innervated_by	textual definition	
 WARN	missing_definition	has component activity	textual definition	
 WARN	missing_definition	directly regulated by	textual definition	
@@ -2478,7 +2371,7 @@ WARN	missing_definition	immediately precedes	textual definition
 WARN	missing_definition	ends during	textual definition	
 WARN	missing_definition	temporally related to	textual definition	
 WARN	missing_definition	part of developmental precursor of	textual definition	
-WARN	missing_definition	results in formation of	textual definition	
+WARN	missing_definition	results in formation of anatomical entity	textual definition	
 WARN	missing_definition	results in growth of	textual definition	
 WARN	missing_definition	results in transport to from or in	textual definition	
 WARN	missing_definition	formed as result of	textual definition	
@@ -2501,8 +2394,6 @@ WARN	missing_definition	acts upstream of or within, negative effect	textual defi
 WARN	missing_definition	causally upstream of or within, negative effect	textual definition	
 WARN	missing_definition	causally upstream of or within, positive effect	textual definition	
 WARN	missing_definition	results in fusion of	textual definition	
-WARN	missing_definition	agent role	textual definition	
-WARN	missing_definition	executes	textual definition	
 WARN	missing_definition	chemosensory organ	textual definition	
 WARN	missing_definition	anterior region of body	textual definition	
 WARN	missing_definition	posterior region of body	textual definition	
@@ -2531,7 +2422,6 @@ WARN	missing_definition	chemosensory system	textual definition
 WARN	missing_definition	extraembryonic mesoderm	textual definition	
 WARN	missing_definition	spinal cord segment	textual definition	
 WARN	missing_definition	pre-muscle condensation	textual definition	
-WARN	missing_definition	zone of bone organ	textual definition	
 WARN	missing_definition	neurocranial trabecula	textual definition	
 WARN	missing_definition	posterior surface of head	textual definition	
 WARN	missing_definition	common atrial chamber	textual definition	
@@ -2557,8 +2447,8 @@ WARN	missing_definition	midbrain mantle layer	textual definition
 WARN	missing_definition	spinal cord mantle layer	textual definition	
 WARN	missing_definition	midbrain hindbrain boundary neural plate	textual definition	
 WARN	missing_definition	trunk paraxial mesoderm	textual definition	
+WARN	missing_definition	trachea non-cartilage connective tissue	textual definition	
 WARN	missing_definition	artery of lip	textual definition	
-WARN	missing_definition	gut mesentery	textual definition	
 WARN	missing_definition	dorsal pancreas	textual definition	
 WARN	missing_definition	ventral pancreas	textual definition	
 WARN	missing_definition	entire pharyngeal arch endoderm	textual definition	
@@ -2604,6 +2494,8 @@ WARN	missing_definition	mucous gland of lung	textual definition
 WARN	missing_definition	gray matter of hindbrain	textual definition	
 WARN	missing_definition	gray matter of midbrain	textual definition	
 WARN	missing_definition	sensory organ epithelium	textual definition	
+WARN	missing_definition	epithelium of crypt of Lieberkuhn of small intestine	textual definition	
+WARN	missing_definition	epithelium of crypt of Lieberkuhn of large intestine	textual definition	
 WARN	missing_definition	surface of eyeball	textual definition	
 WARN	missing_definition	splenic arteriole	textual definition	
 WARN	missing_definition	hindbrain marginal layer	textual definition	
@@ -2620,13 +2512,13 @@ WARN	missing_definition	branch of external carotid artery	textual definition
 WARN	missing_definition	uveal vein	textual definition	
 WARN	missing_definition	colic artery	textual definition	
 WARN	missing_definition	cavity of cardiac chamber	textual definition	
+WARN	missing_definition	intrapulmonary bronchus	textual definition	
 WARN	missing_definition	serous cavity	textual definition	
 WARN	missing_definition	wall of blood vessel	textual definition	
 WARN	missing_definition	respiratory primordium epithelium	textual definition	
 WARN	missing_definition	respiratory primordium mesenchyme	textual definition	
 WARN	missing_definition	fibroelastic connective tissue	textual definition	
 WARN	missing_definition	orifice of skull	textual definition	
-WARN	missing_definition	pelvic vein	textual definition	
 WARN	missing_definition	anterior wall of left ventricle	textual definition	
 WARN	missing_definition	myocardium of anterior wall of left ventricle	textual definition	
 WARN	missing_definition	myocardium of anterior wall of right ventricle	textual definition	
@@ -3134,22 +3026,18 @@ WARN	missing_definition	subdivision of	textual definition
 WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
-WARN	missing_definition	Title	textual definition	
+WARN	missing_definition	title	textual definition	
 WARN	missing_definition	license	textual definition	
 WARN	missing_definition	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	textual definition	
 WARN	missing_definition	Mus musculus subspecies	textual definition	
-WARN	missing_definition	Obsolete Class	textual definition	
 WARN	missing_definition	created_by	textual definition	
 WARN	missing_definition	creation date	textual definition	
 WARN	missing_definition	has_alternative_id	textual definition	
-WARN	missing_definition	database_cross_reference	textual definition	
 WARN	missing_definition	has_obo_namespace	textual definition	
 WARN	missing_definition	has_related_synonym	textual definition	
 WARN	missing_definition	in_subset	textual definition	
 WARN	missing_definition	xsd:boolean	textual definition	
 WARN	missing_definition	xsd:string	textual definition	
-WARN	missing_obsolete_label	device	label	device
-WARN	missing_obsolete_label	environmental study	label	environmental study
 WARN	missing_subset_declaration	obo:doid#DO_AGR_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_CFDE_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_FlyBase_slim	rdfs:subPropertyOf	
@@ -3160,22 +3048,6 @@ WARN	missing_subset_declaration	obo:doid#DO_cancer_slim	rdfs:subPropertyOf
 WARN	missing_subset_declaration	obo:doid#DO_rare_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#NCIthesaurus	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#TopNodes_DOcancerslim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	OMO:0003000	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	OMO:0003002	rdfs:subPropertyOf	
@@ -3201,7 +3073,6 @@ WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#common_name	r
 WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#genbank_common_name	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:ncbitaxon/subsets/taxslim#synonym	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:po#Japanese	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	obo:po#Plural	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:po#Spanish	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:pr#Gene-based	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:pr#PRO-short-label	rdfs:subPropertyOf	
@@ -3210,24 +3081,6 @@ WARN	missing_synonymtype_declaration	obo:uberon/core#HUMAN_PREFERRED	rdfs:subPro
 WARN	missing_synonymtype_declaration	obo:uberon/core#INCONSISTENT	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:uberon/core#PENDING_REVIEW	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:uberon/core#SENSU	rdfs:subPropertyOf	
-WARN	multiple_equivalent_classes	response to light stimulus	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to organic substance	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to inorganic substance	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to organonitrogen compound	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to organic cyclic compound	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	RNA biosynthetic process	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to chemical	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to amino acid	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	membrane biogenesis	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to carbamate	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to ammonium ion	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	nuclear membrane biogenesis	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	catalytic activity, acting on a protein	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	catalytic activity, acting on RNA	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	catalytic activity, acting on a nucleic acid	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to peptide	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to nitrogen compound	owl:equivalentClass	blank node
-WARN	multiple_equivalent_classes	response to oxygen-containing compound	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	obsolescence reason specification	owl:equivalentClass	blank node
 INFO	lowercase_definition	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])
 INFO	lowercase_definition	independent continuant	textual definition	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
@@ -3247,7 +3100,6 @@ INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if a
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	occurs in	textual definition	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
 INFO	lowercase_definition	contains process	textual definition	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
-INFO	lowercase_definition	continuant fiat boundary	textual definition	b is a continuant fiat boundary = Def. b is an immaterial entity that is of zero, one or two dimensions and does not include a spatial region as part. (axiom label in BFO2 Reference: [029-001])@en
 INFO	lowercase_definition	anterior to	textual definition	x anterior to y iff x is further along the antero-posterior axis than y, towards the head. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
 INFO	lowercase_definition	dorsal to	textual definition	x dorsal to y iff x is further along the dorso-ventral axis than y, towards the back. A dorso-ventral axis is an axis that extends through an organism from back (e.g. spinal column) to front (e.g. belly).
 INFO	lowercase_definition	posterior to	textual definition	x posterior to y iff x is further along the antero-posterior axis than y, towards the body/tail. An antero-posterior axis is an axis that extends through an organism from head end to opposite end of body or tail.
@@ -3257,6 +3109,9 @@ INFO	lowercase_definition	in distal side of	textual definition	x in distal side 
 INFO	lowercase_definition	immediately deep to	textual definition	x immediately deep to y iff x deep_to y and x is contiguous with y.
 INFO	lowercase_definition	immediately superficial to	textual definition	x immediately superficial to y iff x superficial to y and x is contiguous with y.
 INFO	lowercase_definition	lipid	textual definition	'Lipids' is a loosely defined term for substances of biological origin that are soluble in nonpolar solvents. They consist of saponifiable lipids, such as glycerides (fats and oils) and phospholipids, as well as nonsaponifiable lipids, principally steroids.
+INFO	lowercase_definition	temperate desert biome	textual definition	.A temperate desert ecosytem which is in its climactic successional state
+INFO	lowercase_definition	subtropical desert biome	textual definition	.A subtropical desert ecosytem which is in its climactic successional state.
+INFO	lowercase_definition	polar desert biome	textual definition	.A polar desert ecosytem which is in its climactic successional state.
 INFO	lowercase_definition	partially_surrounded_by	textual definition	x partially_surrounded_by y if and only if (1) x is adjacent to y and for the region r that is adjacent to x, r partially overlaps y (2) the shared boundary between x and y occupies  a non-trivial proportion of the outermost boundary of x
 INFO	lowercase_definition	ore	textual definition	a type of rock that contains sufficient minerals with important elements including metals that can be economically extracted from the rock.
 INFO	lowercase_definition	nuclear energy	textual definition	potential energy that binds nucleons to form the atomic nucleus (and nuclear reactions).
@@ -3268,8 +3123,6 @@ INFO	lowercase_definition	regulation of behavior	textual definition	"\""Any proc
 INFO	lowercase_definition	regulator role	textual definition	a regulatory role involved with making and/or enforcing relevant legislation and governmental orders@en
 INFO	lowercase_definition	regulatory role	textual definition	a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.@en
 INFO	lowercase_definition	material supplier role	textual definition	a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation.@en
-INFO	lowercase_definition	specimen role	textual definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
-INFO	lowercase_definition	population	textual definition	a population is a collection of individuals from the same taxonomic class living, counted or sampled at a particular site or in a particular area@en
 INFO	lowercase_definition	protocol	textual definition	a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.
 INFO	lowercase_definition	zip	textual definition	zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification  (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/)@en
 INFO	lowercase_definition	tar	textual definition	tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en
@@ -3353,8 +3206,8 @@ INFO	lowercase_definition	results in development of	textual definition	p 'result
 INFO	lowercase_definition	has habitat	textual definition	x 'has habitat' y if and only if: x is an organism, y is a habitat, and y can sustain and allow the growth of a population of xs.
 INFO	lowercase_definition	causally upstream of, positive effect	textual definition	p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.
 INFO	lowercase_definition	causally upstream of, negative effect	textual definition	p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q.
-INFO	lowercase_definition	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
-INFO	lowercase_definition	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	characteristic of part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	characteristic of part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
 INFO	lowercase_definition	enables	textual definition	c enables p iff c is capable of p and c acts to execute p.
 INFO	lowercase_definition	part of structure that is capable of	textual definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
 INFO	lowercase_definition	involved in	textual definition	c involved_in p if and only if c enables some process p', and p' is part of p
@@ -3392,7 +3245,6 @@ INFO	lowercase_definition	involved in regulation of	textual definition	c involve
 INFO	lowercase_definition	involved in positive regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' positively regulates some p
 INFO	lowercase_definition	involved in negative regulation of	textual definition	c involved in regulation of p if c is involved in some p' and p' negatively regulates some p
 INFO	lowercase_definition	involved in or involved in regulation of	textual definition	c involved in or regulates p if and only if either (i) c is involved in p or (ii) c is involved in regulation of p
-INFO	lowercase_definition	is active in	textual definition	c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.
 INFO	lowercase_definition	contributes to morphology of	textual definition	p contributes to morphology of w if and only if a change in the morphology of p entails a change in the morphology of w. Examples: every skull contributes to morphology of the head which it is a part of. Counter-example: nuclei do not generally contribute to the morphology of the cell they are part of, as they are buffered by cytoplasm.
 INFO	lowercase_definition	composed primarily of	textual definition	x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y.
 INFO	lowercase_definition	has part that occurs in	textual definition	p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c.
@@ -3432,9 +3284,9 @@ INFO	lowercase_definition	realized in response to	textual definition	r 'realized
 INFO	lowercase_definition	acts on population of	textual definition	p acts on population of c iff c' is a collection, has members of type c, and p has participant c
 INFO	lowercase_definition	indirectly causally upstream of	textual definition	p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q.
 INFO	lowercase_definition	indirectly regulates	textual definition	p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q.
-INFO	lowercase_definition	different in magnitude relative to	textual definition	q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.
-INFO	lowercase_definition	increased in magnitude relative to	textual definition	q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale.
 INFO	lowercase_definition	has cross section	textual definition	s3 has_cross_section s3 if and only if : there exists some 2d plane that intersects the bearer of s3, and the impression of s3 upon that plane has shape quality s2.
+INFO	lowercase_definition	vessel supplies blood to	textual definition	x vessel supplies blood to y if and only if x is a vessel that supplies blood directly or indirectly to an anatomical structure y.
+INFO	lowercase_definition	vessel drains blood from	textual definition	x vessel drains blood from y if and only if x is a vessel that drains blood directly or indirectly from an anatomical structure y.
 INFO	lowercase_definition	results in changes to anatomical or cellular structure	textual definition	p has anatomical participant c iff p has participant c, and c is an anatomical entity
 INFO	lowercase_definition	anteriorly connected to	textual definition	x anteriorly_connected_to y iff the anterior part of x is connected to y. i.e. x connected_to y and x posterior_to y.
 INFO	lowercase_definition	distally connected to	textual definition	x distally_connected_to y iff the distal part of x is connected to y. i.e. x connected_to y and x proximal_to y.
@@ -3453,4 +3305,3 @@ Wild-derived mice are genetically distinct from common laboratory mice for a num
 INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	missing_superclass	entity	rdfs:subClassOf	
 INFO	missing_superclass	cellular response to toxic substance	rdfs:subClassOf	
-INFO	missing_superclass	Obsolete Class	rdfs:subClassOf	

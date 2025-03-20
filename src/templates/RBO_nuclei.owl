@@ -59,6 +59,7 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_00010021">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <obo:IAO_0000115>The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).</obo:IAO_0000115>
         <rdfs:label>mass number</rdfs:label>
     </owl:DatatypeProperty>
     
