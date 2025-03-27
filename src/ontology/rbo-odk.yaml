@@ -34,6 +34,7 @@ import_group:
     module_type: custom
   - id: uberon
     module_type: custom
+    mirror_from: https://github.com/obophenotype/uberon/releases/download/v2023-02-14/uberon.owl
   - id: cob
     module_type: custom
   - id: go
