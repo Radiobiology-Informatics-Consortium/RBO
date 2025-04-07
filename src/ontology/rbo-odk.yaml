@@ -10,6 +10,7 @@ edit_format: owl
 exclude_tautologies: structural
 export_formats:
 - owl
+- json
 import_group:
   products:
   - id: ro
@@ -27,11 +28,13 @@ import_group:
   - id: obi
   - id: uo
     module_type: custom
+    mirror_from: https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl
   - id: doid
     mirror_from: http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl
     module_type: custom
   - id: uberon
     module_type: custom
+    mirror_from: https://github.com/obophenotype/uberon/releases/download/v2023-02-14/uberon.owl
   - id: cob
     module_type: custom
   - id: go

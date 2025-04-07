@@ -160,6 +160,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01000254 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254"/>
@@ -253,12 +259,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000968 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000968"/>
     
 
 
@@ -412,7 +412,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>The effective dose was calculated to be 300 mSv.</obo:IAO_0000112>
         <obo:IAO_0000115>The sum of the equivalent doses to all organs in the body, each adjusted to account for the sensitivity of the organ to radiation. Effective dose is calculated for the whole body. Effective dose is expressed in millisieverts (mSv).</obo:IAO_0000115>
         <rdfs:label>effective dose</rdfs:label>
@@ -512,7 +512,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>The equivalent dose was calculated to be 300 mSv.</obo:IAO_0000112>
         <obo:IAO_0000115>The product of the mean absorbed dose in an organ or tissue and the radiation weighting factor (w_R )of the radiation type of interest</obo:IAO_0000115>
         <rdfs:label>equivalent dose</rdfs:label>
@@ -523,7 +523,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>The total dose was administered in five dose fractions.</obo:IAO_0000112>
         <obo:IAO_0000115>The absorbed radiation dose administered in a single one of a series comprising a fractionated radiation exposure</obo:IAO_0000115>
         <rdfs:label>dose fraction</rdfs:label>
@@ -577,7 +577,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000033">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000112>The Apollo spacecraft took 24 astronauts to the Moon between 1968 and 1972.</obo:IAO_0000112>
         <obo:IAO_0000115>Vehicles, crewed or uncrewed, which are designed to orbit about the Earth or another celestial body or be placed into a trajectory to another celestial body or location in space.</obo:IAO_0000115>
         <obo:IAO_0000119>NASA Thesaurus, 1988</obo:IAO_0000119>
@@ -951,7 +951,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the impact of radiation on the composition of or processes within the natural or anthropogenic environment.</obo:IAO_0000115>
         <rdfs:label>environmental study</rdfs:label>
-        <owl:deprecated>A owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1142,7 +1142,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study that aims at the discovery, development or assessment of efficacy of therapeutic agents or processes designed to mitigate or cure the effects of radiation exposure.</obo:IAO_0000115>
         <rdfs:label>therapeutics study</rdfs:label>
-        <owl:deprecated>A owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1173,7 +1173,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the contributing factors consequences and prevention of nuclear accidents</obo:IAO_0000115>
         <rdfs:label>nuclear accident study</rdfs:label>
-        <owl:deprecated>A owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1269,7 +1269,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000115">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <obo:IAO_0000111>radiation dosimeter</obo:IAO_0000111>
         <obo:IAO_0000115>A device that is used to measure the amount of ionizing radiation exposure or absorption.</obo:IAO_0000115>
         <obo:IAO_0000118>radiation dosimeter</obo:IAO_0000118>
@@ -1342,7 +1342,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000121">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005014"/>
         <obo:IAO_0000115>A device used to impart kinetic energy to subatomic particles by means of electric and magnetic fields</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NCIT:C94854</oboInOwl:hasDbXref>
@@ -1354,7 +1354,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000122">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005014"/>
         <obo:IAO_0000115>A device in which nuclear fission may be initiated and controlled in a self-sustaining chain reaction to generate energy or produce useful radiation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>MESH:D009688</oboInOwl:hasDbXref>
@@ -1369,7 +1369,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <oboInOwl:hasDbXref>GO:0008150</oboInOwl:hasDbXref>
         <rdfs:label>biological process</rdfs:label>
-        <owl:deprecated>owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1380,7 +1380,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
         <oboInOwl:hasDbXref>GO:0009987</oboInOwl:hasDbXref>
         <rdfs:label>cellular process</rdfs:label>
-        <owl:deprecated>owl:deprecated</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -1523,7 +1523,7 @@
         <obo:IAO_0000115>Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
         <rdfs:label>unplanned naturally occurring radiation exposure</rdfs:label>
-        <owl:deprecated>TRUE</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -2694,7 +2694,7 @@
         <obo:IAO_0000119>Jack Miller</obo:IAO_0000119>
         <oboInOwl:hasDbXref>obo:RBO_0002000</oboInOwl:hasDbXref>
         <rdfs:label>irradiation</rdfs:label>
-        <owl:deprecated>TRUE</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3253,7 +3253,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>mGy/sec</obo:IAO_0000118>
         <oboInOwl:hasDbXref>UO:0010065</oboInOwl:hasDbXref>
         <rdfs:label>miligray per second</rdfs:label>
-        <owl:deprecated>TRUE</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3339,6 +3339,248 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>NTE</obo:IAO_0000118>
         <obo:IAO_0000118>non-targeted effects</obo:IAO_0000118>
         <rdfs:label>non-targeted effects of ionising radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000111>ALARA</obo:IAO_0000111>
+        <obo:IAO_0000112>One of the measures to ensure ALARA is to minimize the time spent working around radioactive materials.</obo:IAO_0000112>
+        <obo:IAO_0000115>A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000118>ALARA</obo:IAO_0000118>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>ALARA</oboInOwl:hasExactSynonym>
+        <rdfs:label>as low as reasonably achievable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000182"/>
+        <obo:IAO_0000112>Attenuation in concrete or leadshielding is a common method of radiation protection on Earth, but is impractical in space due to mass constraints.</obo:IAO_0000112>
+        <obo:IAO_0000115>The reduction of radiation intensity upon passage of radiation through matter</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>radiation attenuation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHMO_0002796"/>
+        <obo:IAO_0000112>Biodosimetry was used to measure the exposure of some victims of the Chernobyl nuclear accident.</obo:IAO_0000112>
+        <obo:IAO_0000115>Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>biodosimetry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005074"/>
+        <obo:IAO_0000112>The bystander effect can be studied by identifying cells that were traversed by a charged particle.</obo:IAO_0000112>
+        <obo:IAO_0000115>The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>bystander effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000117"/>
+        <obo:IAO_0000112>Delta ray energies increase with the velocity of the incident particle.</obo:IAO_0000112>
+        <obo:IAO_0000115>Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., &gt;1,000 eV), allowing it to travel a</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000118>delta electron</obo:IAO_0000118>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>delta electron</oboInOwl:hasExactSynonym>
+        <rdfs:label>delta ray</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
+        <obo:IAO_0000112>The average annual dose equivalent for crew members on the ISS is approximately 300 mSv.</obo:IAO_0000112>
+        <obo:IAO_0000115>The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>dose equivalent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000119"/>
+        <obo:IAO_0000115>The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>excess lifetime risk of cancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015001"/>
+        <obo:IAO_0000112>The sample was irradiated with fast neutrons.</obo:IAO_0000112>
+        <obo:IAO_0000115>Neutrons of energies above a few hundred kiloelectron volts (keV)</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>fast neutron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112>The value of the fluence was approximately 1 particle per cm2.</obo:IAO_0000112>
+        <obo:IAO_0000115>The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2]).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>fluence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112>The flux of cosmic ray muons per cm2 at the surface of the Earth is approximately 1.0.</obo:IAO_0000112>
+        <obo:IAO_0000115>The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>flux</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005003"/>
+        <obo:IAO_0000115>An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>heavy ion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112>Biological effects are a function of LET.</obo:IAO_0000112>
+        <obo:IAO_0000115>The energy deposited by an ionizing charged particle or photon in any medium per unit path length.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000118>LET</obo:IAO_0000118>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>LET</oboInOwl:hasExactSynonym>
+        <rdfs:label>linear energy transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
+        <obo:IAO_0000112>Radiation protection standards take into account organ dose as well as whole body dose.</obo:IAO_0000112>
+        <obo:IAO_0000115>The mean absorbed radiation dose in a specified tissue or organ of the human body.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>organ dose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
+        <obo:IAO_0000112>Neutrons have a high quality factor compared to photons.</obo:IAO_0000112>
+        <obo:IAO_0000115>Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>quality factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000984"/>
+        <obo:IAO_0000112>The samples received a dose of 1 Gy. (The use of the gray unit implies that &quot;dose&quot; refers to a measured quantity, typically absorbed dose or organ dose.)</obo:IAO_0000112>
+        <obo:IAO_0000112>The samples received a dose of 1 Sv. (The use of the sievert unit implies that &quot;dose&quot; refers to a der</obo:IAO_0000112>
+        <obo:IAO_0000115>A measurement datum of the quantity of radiation absorbed by a substance or organism. The term &quot;radiation dose&quot; may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <rdfs:label>radiation dose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
+        <obo:IAO_0000112>Radiation weighting factors may change as more data on biological effects are obtained.</obo:IAO_0000112>
+        <obo:IAO_0000115>A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>radiation weighting factor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000112>Neutrons have been found to have a higher RBE than electrons.</obo:IAO_0000112>
+        <obo:IAO_0000115>Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000118>RBE</obo:IAO_0000118>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym>RBE</oboInOwl:hasExactSynonym>
+        <rdfs:label>relative biological effectiveness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <obo:IAO_0000112>Tissue equivalent materials can be used to study radiation effects at depth in the human body.</obo:IAO_0000112>
+        <obo:IAO_0000115>Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
+        <rdfs:label>tissue equivalence</rdfs:label>
     </owl:Class>
     
 
@@ -3948,6 +4190,19 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00015052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000073"/>
+        <obo:IAO_0000115>A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. </obo:IAO_0000115>
+        <obo:IAO_0000116>Senolytics work by targeting specific survival pathways that senescent cells rely on, such as the BCL-2 family proteins, PI3K/AKT pathway, or p53-related mechanisms. By eliminating these cells, senolytics have shown potential in improving tissue function, delaying age-related diseases, and enhancing healthspan in preclinical studies.</obo:IAO_0000116>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263,https://orcid.org/0000-0001-9227-0670</obo:IAO_0000117>
+        <obo:IAO_0000119>See: Lelarge, V., Capelle, R., Oger, F. et al. Senolytics: from pharmacological inhibitors to immunotherapies, a promising future for patients� treatment. npj Aging 10, 12 (2024). https://doi.org/10.1038/s41514-024-00138-4</obo:IAO_0000119>
+        <rdfs:label>senolytic</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_010000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010000">
@@ -3960,6 +4215,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>ALARA</oboInOwl:hasExactSynonym>
         <rdfs:label>as low as reasonably achievable</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3973,6 +4229,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation attenuation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3986,6 +4243,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>biodosimetry</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3999,6 +4257,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>bystander effect</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4014,6 +4273,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>delta electron</oboInOwl:hasExactSynonym>
         <rdfs:label>delta ray</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4021,12 +4281,13 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_010007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>The average annual dose equivalent for crew members on the ISS is approximately 300 mSv.</obo:IAO_0000112>
         <obo:IAO_0000115>The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>dose equivalent</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4039,6 +4300,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>excess lifetime risk of cancer</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4052,6 +4314,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>fast neutron</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4065,6 +4328,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>fluence</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4078,6 +4342,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>flux</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4091,6 +4356,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>heavy ion</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4106,6 +4372,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>LET</oboInOwl:hasExactSynonym>
         <rdfs:label>linear energy transfer</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4113,12 +4380,13 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_010014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010016"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010016"/>
         <obo:IAO_0000112>Radiation protection standards take into account organ dose as well as whole body dose.</obo:IAO_0000112>
         <obo:IAO_0000115>The mean absorbed radiation dose in a specified tissue or organ of the human body.</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>organ dose</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4132,6 +4400,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>quality factor</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4145,6 +4414,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A measurement datum of the quantity of radiation absorbed by a substance or organism. The term &quot;radiation dose&quot; may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>radiation dose</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4158,7 +4428,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf) and see https://melodi-online.eu/wp-content/uploads/2021/04/02-What-is-radiation-quality-Goodhead.pdf</obo:IAO_0000119>
         <rdfs:label>radiation quality</rdfs:label>
-        <owl:deprecated>TRUE</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4172,6 +4442,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation weighting factor</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4187,6 +4458,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>RBE</oboInOwl:hasExactSynonym>
         <rdfs:label>relative biological effectiveness</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4200,6 +4472,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>tissue equivalence</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 

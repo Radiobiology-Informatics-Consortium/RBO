@@ -54,11 +54,12 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_2001 -->
+    <!-- http://purl.obolibrary.org/obo/RBO_00010021 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_2001">
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_00010021">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <obo:IAO_0000115>The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).</obo:IAO_0000115>
         <rdfs:label>mass number</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -240,7 +241,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 26 protons and 30 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Fe-56 ion;Fe-56 nucleus;Fe-56 </obo:IAO_0000118>
         <rdfs:label>Iron-56 nucleus</rdfs:label>
@@ -251,7 +252,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 14 protons and 14 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Si-28 ion;Si-28 nucleus;Si-28 </obo:IAO_0000118>
         <rdfs:label>Silicon-28 nucleus</rdfs:label>
@@ -262,7 +263,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 6 protons and 6 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>C-12 ion;C-12 nucleus;C-12 </obo:IAO_0000118>
         <rdfs:label>Carbon-12 nucleus</rdfs:label>
@@ -273,7 +274,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 2 protons and 2 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>He-4 ion;He-4 nucleus;He-4 </obo:IAO_0000118>
         <rdfs:label>Helium-4 nucleus</rdfs:label>
@@ -284,7 +285,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 10 protons and 10 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ne-20 ion;Ne-20 nucleus;Ne-20 </obo:IAO_0000118>
         <rdfs:label>Neon-20 nucleus</rdfs:label>
@@ -295,7 +296,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005048 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 41 protons and 52 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Nb-93 ion;Nb-93 nucleus;Nb-93 </obo:IAO_0000118>
         <rdfs:label>Niobium-93 nucleus</rdfs:label>
@@ -306,7 +307,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005049">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 47 protons and 60 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ag-107 ion;Ag-107 nucleus;Ag-107 </obo:IAO_0000118>
         <rdfs:label>Silver-107 nucleus</rdfs:label>
@@ -317,7 +318,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005050">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 54 protons and 75 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Xe-129 ion;Xe-129 nucleus;Xe-129 </obo:IAO_0000118>
         <rdfs:label>Xenon-129 nucleus</rdfs:label>
@@ -328,7 +329,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 73 protons and 108 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ta-181 ion;Ta-181 nucleus;Ta-181 </obo:IAO_0000118>
         <rdfs:label>Tantalum-181 nucleus</rdfs:label>
@@ -339,7 +340,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 79 protons and 118 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Au-197 ion;Au-197 nucleus;Au-197 </obo:IAO_0000118>
         <rdfs:label>Gold-197 nucleus</rdfs:label>
@@ -350,7 +351,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005053 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005053">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 7 protons and 7 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>N-14 ion;N-14 nucleus;N-14 </obo:IAO_0000118>
         <rdfs:label>Nitrogen-14 nucleus</rdfs:label>
@@ -361,7 +362,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 8 protons and 8 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>O-16 ion;O-16 nucleus;O-16 </obo:IAO_0000118>
         <rdfs:label>Oxygen-16 nucleus</rdfs:label>
@@ -372,7 +373,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 18 protons and 22 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ar-40  ion;Ar-40  nucleus;Ar-40  </obo:IAO_0000118>
         <rdfs:label>Argon-40  nucleus</rdfs:label>
@@ -383,7 +384,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005056">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 22 protons and 26 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Ti-48  ion;Ti-48  nucleus;Ti-48  </obo:IAO_0000118>
         <rdfs:label>Titanium-48  nucleus</rdfs:label>
@@ -394,7 +395,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00005057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005057">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_010012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010012"/>
         <obo:IAO_0000115>An atomic nucleus with 36 protons and 48 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Kr-84 ion;Kr-84 nucleus;Kr-84 </obo:IAO_0000118>
         <rdfs:label>Krypton-84 nucleus</rdfs:label>
@@ -402,9 +403,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_010012 -->
+    <!-- http://purl.obolibrary.org/obo/RBO_00010012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010012"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010012"/>
 </rdf:RDF>
 
 
