@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-03-20/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-05-30/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -110,8 +110,6 @@
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_00010021">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-        <obo:IAO_0000115>The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).</obo:IAO_0000115>
-        <rdfs:label>mass number</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3939,6 +3937,144 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00010021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000115"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000011"/>
+        <obo:IAO_0000115>An active dosimeter for radon.</obo:IAO_0000115>
+        <rdfs:label>active radon dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000012"/>
+        <obo:IAO_0000115>An passive dosimeter for radon.</obo:IAO_0000115>
+        <rdfs:label>passive radon dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010022"/>
+        <obo:IAO_0000115>An active radon dosimeter that uses a phosphor-coated zinc sulfide screen or a liquid scintillator that emits light when hit by alpha particles from radon decay. The emitted light is measured with a photomultiplier tube. They have high sensitivity, fast response time.</obo:IAO_0000115>
+        <rdfs:label>scintillation radon dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010026"/>
+        <obo:IAO_0000115>An active radon dosimeter that measure the concentration of radon decay products (polonium-218, lead-214, and bismuth-214) using alpha spectroscopy or particle collection on a filter. They provide working level (WL) values, which indicate the potential radiation dose from radon decay products.</obo:IAO_0000115>
+        <obo:IAO_0000116>Provides direct measurement of biologically relevant radiation exposure. Expensive, mainly used in occupational settings.</obo:IAO_0000116>
+        <obo:IAO_0000118>CWLM</obo:IAO_0000118>
+        <rdfs:label>continuous working level radon dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010022"/>
+        <obo:IAO_0000115>An active radon dosimeter that uses various sensors (e.g., scintillation detectors, ion chambers, or solid-state silicon detectors) to measure radon decay in real-time. They typically record radon levels at hourly intervals.</obo:IAO_0000115>
+        <obo:IAO_0000116>Provides near real-time results, detects fluctuations over time, useful for home inspections.</obo:IAO_0000116>
+        <obo:IAO_0000118>CRM</obo:IAO_0000118>
+        <rdfs:label>continuous radon monitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010023"/>
+        <obo:IAO_0000115>A passive radon dosimeter that contain an electret (a charged Teflon disc) inside an ionization chamber. Radon decay ionizes the air, causing a measurable voltage drop in the electret, which correlates with radon concentration.</obo:IAO_0000115>
+        <obo:IAO_0000116>Can be read without a lab, provides both short- and long-term measurements.</obo:IAO_0000116>
+        <rdfs:label>electret ion chamber radon dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010023"/>
+        <obo:IAO_0000115>A passive radon dosimeter in which a container filled with activated charcoal absorbs radon from the air. After exposure (typically 2�7 days), the canister is sealed and sent to a lab for gamma spectroscopy, which measures radon decay products.</obo:IAO_0000115>
+        <rdfs:label>charcoal cannister radon dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010023"/>
+        <obo:IAO_0000115>A passive radon dosimeter in which a small plastic film or polycarbonate chip is exposed to radon gas. When radon decays, it emits alpha particles that leave microscopic tracks on the film. After exposure, the film is chemically etched to reveal the tracks, which are counted under a microscope to determine radon levels.</obo:IAO_0000115>
+        <obo:IAO_0000116>Alpha track radon dosimeters are used domestically for radon monitoring over long periods of time.</obo:IAO_0000116>
+        <obo:IAO_0000118>alpha track detector</obo:IAO_0000118>
+        <rdfs:label>alpha track radon dosimeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
+        <obo:IAO_0000115>Nuclear reactors primarily used to produce neutrons for the study of materials at the atomic level, the biological effects of radiation, the production of radioisotopes for medicine, industry and research, and the imaging of objects� internal structure.</obo:IAO_0000115>
+        <obo:IAO_0000118>research reactor</obo:IAO_0000118>
+        <obo:IAO_0000119>Definition adapted from: https://www.iaea.org/bulletin/what-are-research-reactors-how-do-they-contribute-to-sustainable-development</obo:IAO_0000119>
+        <rdfs:label>research nuclear reactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
+        <obo:IAO_0000115>A nuclear reactor primarily used to generate and supply power.</obo:IAO_0000115>
+        <obo:IAO_0000118>power reactor</obo:IAO_0000118>
+        <rdfs:label>nuclear power reactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
+        <obo:IAO_0000115>A nuclear reactor used for military purposes such as plutonium production.</obo:IAO_0000115>
+        <rdfs:label>military nuclear reactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
+        <obo:IAO_0000115>A nuclear reactor used for more than one purpose.</obo:IAO_0000115>
+        <rdfs:label>multi-purpose nuclear reactor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00015000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015000">
@@ -5189,9 +5325,27 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000115>
         <rdfs:label>X-Rad320</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RBO_00010021">
+        <obo:IAO_0000115>Radon dosimeters are radiation dosimeters used to measure the presence and concentration of radon gas (Rn-222), a radioactive noble gas that can accumulate in buildings and pose health risks. Different types of radon detectors use various detection methods, based on the radioactive decay products of radon.</obo:IAO_0000115>
+        <obo:IAO_0000115>The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).</obo:IAO_0000115>
+        <obo:IAO_0000118>radon detector</obo:IAO_0000118>
+        <rdfs:label>mass number</rdfs:label>
+        <rdfs:label>radon dosimeter</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

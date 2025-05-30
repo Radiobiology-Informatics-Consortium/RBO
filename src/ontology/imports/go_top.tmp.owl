@@ -31,15 +31,33 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233">
+        <oboInOwl:hasDbXref>IAO:0000233</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>term_tracker_item</oboInOwl:id>
+        <oboInOwl:is_class_level rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_class_level>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>term_tracker_item</oboInOwl:shorthand>
+        <rdfs:label>term tracker item</rdfs:label>
+    </AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
-    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label>created by</rdfs:label>
+    </AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
-    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+        <rdfs:label>creation date</rdfs:label>
+    </AnnotationProperty>
     
 
 
@@ -61,7 +79,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </AnnotationProperty>
     
 
 
@@ -99,7 +119,9 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </AnnotationProperty>
     
 
 
@@ -107,6 +129,26 @@
 
     <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
         <rdfs:label>in_subset</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_class_level -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_class_level"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
     </AnnotationProperty>
     
 
@@ -218,6 +260,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006302"/>
         <obo:IAO_0000115>The error-free repair of a double-strand break in DNA in which the broken DNA molecule is repaired using homologous sequences. A strand in the broken DNA searches for a homologous region in an intact chromosome to serve as the template for DNA synthesis. The restoration of two intact DNA molecules results in the exchange, reciprocal or nonreciprocal, of genetic material between the intact DNA molecule and the broken DNA molecule.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0016924</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5693538</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>HDR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>HRR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Rad51-dependent recombinational repair</oboInOwl:hasExactSynonym>
@@ -230,10 +273,22 @@
     </Class>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <annotatedTarget>homology-directed repair</annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:vk</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The error-free repair of a double-strand break in DNA in which the broken DNA molecule is repaired using homologous sequences. A strand in the broken DNA searches for a homologous region in an intact chromosome to serve as the template for DNA synthesis. The restoration of two intact DNA molecules results in the exchange, reciprocal or nonreciprocal, of genetic material between the intact DNA molecule and the broken DNA molecule.</annotatedTarget>
         <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5693538</annotatedTarget>
+        <rdfs:label>Homology Directed Repair</rdfs:label>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
@@ -246,12 +301,6 @@
         <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <annotatedTarget>Rad51-dependent recombinational repair</annotatedTarget>
         <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-    </Axiom>
-    <Axiom>
-        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
-        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <annotatedTarget>homology-directed repair</annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:vk</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -298,10 +347,12 @@
 
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0006281">
         <obo:IAO_0000115>The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-73894</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:DNA_repair</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006281</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
@@ -315,6 +366,12 @@
         <annotatedTarget>The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.</annotatedTarget>
         <oboInOwl:hasDbXref>PMID:11563486</oboInOwl:hasDbXref>
     </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-73894</annotatedTarget>
+        <rdfs:label>DNA Repair</rdfs:label>
+    </Axiom>
     
 
 
@@ -323,6 +380,7 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0006283">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006289"/>
         <obo:IAO_0000115>The nucleotide-excision repair process that carries out preferential repair of DNA lesions on the actively transcribed strand of the DNA duplex. In addition, the transcription-coupled nucleotide-excision repair pathway is required for the recognition and repair of a small subset of lesions that are not recognized by the global genome nucleotide excision repair pathway.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-6781827</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>TC-NER</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>transcription-coupled NER</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>transcription-coupled repair</oboInOwl:hasExactSynonym>
@@ -337,6 +395,12 @@
         <annotatedTarget>The nucleotide-excision repair process that carries out preferential repair of DNA lesions on the actively transcribed strand of the DNA duplex. In addition, the transcription-coupled nucleotide-excision repair pathway is required for the recognition and repair of a small subset of lesions that are not recognized by the global genome nucleotide excision repair pathway.</annotatedTarget>
         <oboInOwl:hasDbXref>PMID:10197977</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11900249</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006283"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-6781827</annotatedTarget>
+        <rdfs:label>Transcription-Coupled Nucleotide Excision Repair (TC-NER)</rdfs:label>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006283"/>
@@ -372,6 +436,8 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0006284">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
         <obo:IAO_0000115>In base excision repair, an altered base is removed by a DNA glycosylase enzyme, followed by excision of the resulting sugar phosphate. The small gap left in the DNA helix is filled in by the sequential action of DNA polymerase and DNA ligase.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-73884</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-73930</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Base_excision_repair</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>BER</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -384,6 +450,18 @@
         <annotatedTarget>In base excision repair, an altered base is removed by a DNA glycosylase enzyme, followed by excision of the resulting sugar phosphate. The small gap left in the DNA helix is filled in by the sequential action of DNA polymerase and DNA ligase.</annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0815316194</oboInOwl:hasDbXref>
     </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-73884</annotatedTarget>
+        <rdfs:label>Base Excision Repair</rdfs:label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006284"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-73930</annotatedTarget>
+        <rdfs:label>Abasic sugar-phosphate removal via the single-nucleotide replacement pathway</rdfs:label>
+    </Axiom>
     
 
 
@@ -393,6 +471,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
         <obo:IAO_0000115>A DNA repair process in which a small region of the strand surrounding the damage is removed from the DNA helix as an oligonucleotide. The small gap left in the DNA helix is filled in by the sequential action of DNA polymerase and DNA ligase. Nucleotide excision repair recognizes a wide range of substrates, including damage caused by UV irradiation (pyrimidine dimers and 6-4 photoproducts) and chemicals (intrastrand cross-links and bulky adducts).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0045001</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5696398</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5696400</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>NER</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pyrimidine-dimer repair, DNA damage excision</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -406,6 +486,18 @@
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A DNA repair process in which a small region of the strand surrounding the damage is removed from the DNA helix as an oligonucleotide. The small gap left in the DNA helix is filled in by the sequential action of DNA polymerase and DNA ligase. Nucleotide excision repair recognizes a wide range of substrates, including damage caused by UV irradiation (pyrimidine dimers and 6-4 photoproducts) and chemicals (intrastrand cross-links and bulky adducts).</annotatedTarget>
         <oboInOwl:hasDbXref>PMID:10197977</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5696398</annotatedTarget>
+        <rdfs:label>Nucleotide Excision Repair</rdfs:label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006289"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5696400</annotatedTarget>
+        <rdfs:label>Dual Incision in GG-NER</rdfs:label>
     </Axiom>
     
 
@@ -434,6 +526,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
         <obo:IAO_0000115>A system for the correction of errors in which an incorrect base, which cannot form hydrogen bonds with the corresponding base in the parent strand, is incorporated into the daughter strand. The mismatch repair system promotes genomic fidelity by repairing base-base mismatches, insertion-deletion loops and heterologies generated during DNA replication and recombination.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0006300</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5358508</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:DNA_mismatch_repair</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>MMR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>long patch mismatch repair system</oboInOwl:hasNarrowSynonym>
@@ -449,6 +542,12 @@
         <annotatedTarget>A system for the correction of errors in which an incorrect base, which cannot form hydrogen bonds with the corresponding base in the parent strand, is incorporated into the daughter strand. The mismatch repair system promotes genomic fidelity by repairing base-base mismatches, insertion-deletion loops and heterologies generated during DNA replication and recombination.</annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11687886</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006298"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5358508</annotatedTarget>
+        <rdfs:label>Mismatch Repair</rdfs:label>
     </Axiom>
     
 
@@ -478,6 +577,7 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0006302">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
         <obo:IAO_0000115>The repair of double-strand breaks in DNA via homologous and nonhomologous mechanisms to reform a continuous DNA helix.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5693532</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006302</oboInOwl:id>
         <rdfs:comment>Note that the processes of nuclear double-strand break repair and mitochondrial double-strand break repair are genetically separable (PMID:22214610). To annotate gene products involved in mitochondrial double-strand break repair, please use GO:0097551 &apos;mitochondrial double-strand break repair&apos;.</rdfs:comment>
@@ -489,6 +589,12 @@
         <annotatedTarget>The repair of double-strand breaks in DNA via homologous and nonhomologous mechanisms to reform a continuous DNA helix.</annotatedTarget>
         <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
     </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006302"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5693532</annotatedTarget>
+        <rdfs:label>DNA Double-Strand Break Repair</rdfs:label>
+    </Axiom>
     
 
 
@@ -497,6 +603,7 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0006303">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006302"/>
         <obo:IAO_0000115>The repair of a double-strand break in DNA in which the two broken ends are rejoined with little or no sequence complementarity. Information at the DNA ends may be lost due to the modification of broken DNA ends. This term covers instances of separate pathways, called classical (or canonical) and alternative nonhomologous end joining (C-NHEJ and A-NHEJ). These in turn may further branch into sub-pathways, but evidence is still unclear.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5693571</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>NHEJ</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006303</oboInOwl:id>
@@ -509,6 +616,47 @@
         <oboInOwl:hasDbXref>GOC:rph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10827453</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:24837021</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006303"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5693571</annotatedTarget>
+        <rdfs:label>Nonhomologous End-Joining (NHEJ)</rdfs:label>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006307 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/GO_0006307">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
+        <obo:IAO_0000115>The repair of alkylation damage in DNA, e.g. the removal of a non-physiological alkyl group from a nucleobase. This is usually mediated by DNA alkyltransferases.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/27258</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5657655</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-73943</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>DNA dealkylation involved in DNA repair</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0006307</oboInOwl:id>
+        <rdfs:label>DNA alkylation repair</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006307"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>The repair of alkylation damage in DNA, e.g. the removal of a non-physiological alkyl group from a nucleobase. This is usually mediated by DNA alkyltransferases.</annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:10946226</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:35543797</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006307"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5657655</annotatedTarget>
+        <rdfs:label>MGMT-mediated DNA damage reversal</rdfs:label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006307"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-73943</annotatedTarget>
+        <rdfs:label>Reversal of alkylation damage by DNA dioxygenases</rdfs:label>
     </Axiom>
     
 
@@ -581,6 +729,7 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0019985">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006301"/>
         <obo:IAO_0000115>The replication of damaged DNA by synthesis across a lesion in the template strand; a specialized DNA polymerase or replication complex inserts a defined nucleotide across from the lesion which allows DNA synthesis to continue beyond the lesion. This process can be mutagenic depending on the damaged nucleotide and the inserted nucleotide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-73893</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>bypass DNA synthesis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0019985</oboInOwl:id>
@@ -593,6 +742,12 @@
         <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:10535901</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019985"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-73893</annotatedTarget>
+        <rdfs:label>DNA Damage Bypass</rdfs:label>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019985"/>
@@ -610,6 +765,7 @@
         <obo:IAO_0000115>Removal of a DNA interstrand crosslink (a covalent attachment of DNA bases on opposite strands of the DNA) and restoration of the DNA. DNA interstrand crosslinks occur when both strands of duplex DNA are covalently tethered together (e.g. by an exogenous or endogenous agent), thus preventing the strand unwinding necessary for essential DNA functions such as transcription and replication.</obo:IAO_0000115>
         <oboInOwl:created_by>bf</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-08-07T11:05:19Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-6783310</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>ICL repair</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0036297</oboInOwl:id>
@@ -622,6 +778,12 @@
         <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:16464006</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:22064477</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036297"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-6783310</annotatedTarget>
+        <rdfs:label>Fanconi Anemia Pathway</rdfs:label>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0036297"/>
@@ -732,6 +894,9 @@
     <Class rdf:about="http://purl.obolibrary.org/obo/GO_0042276">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019985"/>
         <obo:IAO_0000115>The conversion of DNA-damage induced single-stranded gaps into large molecular weight DNA after replication by using a specialized DNA polymerase or replication complex to insert a defined nucleotide across the lesion. This process does not remove the replication-blocking lesions and causes an increase in the endogenous mutation level. For example, in E. coli, a low fidelity DNA polymerase, pol V, copies lesions that block replication fork progress. This produces mutations specifically targeted to DNA template damage sites, but it can also produce mutations at undamaged sites.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-110312</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5655862</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5656121</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>mutagenic PRR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>error-prone postreplication DNA repair</oboInOwl:hasRelatedSynonym>
@@ -746,6 +911,24 @@
         <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:11485998</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0042276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-110312</annotatedTarget>
+        <rdfs:label>Translesion synthesis by REV1</rdfs:label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0042276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5655862</annotatedTarget>
+        <rdfs:label>Translesion synthesis by POLK</rdfs:label>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0042276"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5656121</annotatedTarget>
+        <rdfs:label>Translesion synthesis by POLI</rdfs:label>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0042276"/>
@@ -806,6 +989,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0000724"/>
         <obo:IAO_0000115>SDSA is a major mechanism of double-strand break repair in mitosis which allows for the error-free repair of a double-strand break without the exchange of adjacent sequences. The broken DNA searches for and base pairs with a homologous region in an intact chromosome. DNA synthesis initiates from the 3&apos; end of the invading DNA strand, using the intact chromosome as the template. Newly synthesized DNA is then displaced from the template and anneal with its complement on the other side of the double-strand break.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>SDSA</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5693554</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>mitotic gene conversion</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0045003</oboInOwl:id>
@@ -816,6 +1000,12 @@
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>SDSA is a major mechanism of double-strand break repair in mitosis which allows for the error-free repair of a double-strand break without the exchange of adjacent sequences. The broken DNA searches for and base pairs with a homologous region in an intact chromosome. DNA synthesis initiates from the 3&apos; end of the invading DNA strand, using the intact chromosome as the template. Newly synthesized DNA is then displaced from the template and anneal with its complement on the other side of the double-strand break.</annotatedTarget>
         <oboInOwl:hasDbXref>PMID:10357855</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0045003"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5693554</annotatedTarget>
+        <rdfs:label>Resolution of D-loop Structures through Synthesis-Dependent Strand Annealing (SDSA)</rdfs:label>
     </Axiom>
     
 
@@ -892,6 +1082,7 @@
         <obo:IAO_0000115>The nucleotide-excision repair process in which DNA lesions are removed from nontranscribed strands and from transcriptionally silent regions over the entire genome.</obo:IAO_0000115>
         <oboInOwl:created_by>mah</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-09-09T03:13:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-5696399</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>GG-NER</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GGR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>global genome NER</oboInOwl:hasExactSynonym>
@@ -907,6 +1098,12 @@
         <annotatedTarget>The nucleotide-excision repair process in which DNA lesions are removed from nontranscribed strands and from transcriptionally silent regions over the entire genome.</annotatedTarget>
         <oboInOwl:hasDbXref>PMID:10197977</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:18794354</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070911"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-5696399</annotatedTarget>
+        <rdfs:label>Global Genome Nucleotide Excision Repair (GG-NER)</rdfs:label>
     </Axiom>
     <Axiom>
         <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070911"/>
@@ -1011,6 +1208,7 @@
         <obo:IAO_0000115>The conversion of DNA-damage induced single-stranded gaps into large molecular weight DNA after replication by using a specialized DNA polymerase or replication complex to insert a defined nucleotide across the lesion. This process does not remove the replication-blocking lesions but does not causes an increase in the endogenous mutation level. For S. cerevisiae, RAD30 encodes DNA polymerase eta, which incorporates two adenines. When incorporated across a thymine-thymine dimer, it does not increase the endogenous mutation level.</obo:IAO_0000115>
         <oboInOwl:created_by>mah</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-10-29T02:45:42Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-110320</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0070987</oboInOwl:id>
         <rdfs:comment>Note that &apos;error-free&apos; does not mean that literally zero errors occur during DNA synthesis, but that the error rate is low, comparable to that of DNA synthesis during replication.</rdfs:comment>
@@ -1021,6 +1219,12 @@
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>The conversion of DNA-damage induced single-stranded gaps into large molecular weight DNA after replication by using a specialized DNA polymerase or replication complex to insert a defined nucleotide across the lesion. This process does not remove the replication-blocking lesions but does not causes an increase in the endogenous mutation level. For S. cerevisiae, RAD30 encodes DNA polymerase eta, which incorporates two adenines. When incorporated across a thymine-thymine dimer, it does not increase the endogenous mutation level.</annotatedTarget>
         <oboInOwl:hasDbXref>GOC:elh</oboInOwl:hasDbXref>
+    </Axiom>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0070987"/>
+        <annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <annotatedTarget>Reactome:R-HSA-110320</annotatedTarget>
+        <rdfs:label>Translesion Synthesis by POLH</rdfs:label>
     </Axiom>
     
 
@@ -1182,6 +1386,32 @@
         <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <annotatedTarget>A mechanism of homologous recombination and DNA repair in which transcript RNA is used as a template for DSB repair.</annotatedTarget>
         <oboInOwl:hasDbXref>PMID:25186730</oboInOwl:hasDbXref>
+    </Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0141168 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/GO_0141168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
+        <obo:IAO_0000115>An epigenetic cytosine DNA demethylation pathway that includes a deamination step to produce either a thymine (T), or a 5-hydroxymethyluracil (5hmU), if the 5meC had first been converted to 5hmC. A DNA glycosylase (e. g. TDG) recognizes the T mispaired with a G or the 5hmC and excises the modified base to initiate its replacement with unmethylated cytosine through base excision repair.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/27078</obo:IAO_0000233>
+        <oboInOwl:created_by>pg</oboInOwl:created_by>
+        <oboInOwl:creation_date>2024-02-16T13:11:58Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>epigenetic 5-methylcytosine DNA demethylation, oxidative deamination pathway</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>epigenetic DNA demethylation, oxidative deamination pathway</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0141168</oboInOwl:id>
+        <rdfs:comment>Note that this term describes one of the biochemical pathways of chromosomal cytosine demethylation but is agnostic to the effect on gene expression. If the data supports it, consider co-annotating to &apos;positive regulation of gene expression, epigenetic ; GO:0044029&apos; or a child. A similar pathway may also convert chromosomal DNA N6-methyladenosine to adenosine but little evidence exists for this pathway. Current evidence indicates that this pathway in used for DNA repair, and not for epigenetic gene expression regulation.</rdfs:comment>
+        <rdfs:label>chromosomal 5-methylcytosine DNA demethylation, oxidative deamination pathway</rdfs:label>
+    </Class>
+    <Axiom>
+        <annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0141168"/>
+        <annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <annotatedTarget>An epigenetic cytosine DNA demethylation pathway that includes a deamination step to produce either a thymine (T), or a 5-hydroxymethyluracil (5hmU), if the 5meC had first been converted to 5hmC. A DNA glycosylase (e. g. TDG) recognizes the T mispaired with a G or the 5hmC and excises the modified base to initiate its replacement with unmethylated cytosine through base excision repair.</annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:21862972</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:29875631</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:36478523</oboInOwl:hasDbXref>
     </Axiom>
     
 
@@ -1349,5 +1579,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

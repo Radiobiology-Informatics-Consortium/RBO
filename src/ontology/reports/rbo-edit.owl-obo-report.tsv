@@ -99,6 +99,10 @@ ERROR	missing_label	SO:0000704	rdfs:label
 ERROR	missing_label	UBERON:0000000	rdfs:label	
 ERROR	missing_label	UO:0000127	rdfs:label	
 ERROR	missing_label	UO:0000160	rdfs:label	
+ERROR	multiple_definitions	mass number	IAO:0000115	Radon dosimeters are radiation dosimeters used to measure the presence and concentration of radon gas (Rn-222), a radioactive noble gas that can accumulate in buildings and pose health risks. Different types of radon detectors use various detection methods, based on the radioactive decay products of radon.
+ERROR	multiple_definitions	mass number	IAO:0000115	The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).
+ERROR	multiple_labels	mass number	rdfs:label	mass number
+ERROR	multiple_labels	mass number	rdfs:label	radon dosimeter
 WARN	annotation_whitespace	radiation response modifier	IAO:0000115	Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. 
 WARN	annotation_whitespace	Iron-56 nucleus	IAO:0000115	An atomic nucleus with 26 protons and 30 neutrons 
 WARN	annotation_whitespace	Iron-56 nucleus	IAO:0000118	Fe-56 ion;Fe-56 nucleus;Fe-56 
@@ -132,22 +136,22 @@ WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000115	An atomic nucleus with
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000118	Kr-84 ion;Kr-84 nucleus;Kr-84 
 WARN	annotation_whitespace	external radiation exposure	IAO:0000112	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	senolytic	IAO:0000115	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
-WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	RBE
-WARN	duplicate_exact_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
-WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	RBE
-WARN	duplicate_exact_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
-WARN	duplicate_exact_synonym	linear energy transfer	IAO:0000118	LET
-WARN	duplicate_exact_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
-WARN	duplicate_exact_synonym	linear energy transfer	IAO:0000118	LET
-WARN	duplicate_exact_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
-WARN	duplicate_exact_synonym	delta ray	IAO:0000118	delta electron
-WARN	duplicate_exact_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
-WARN	duplicate_exact_synonym	delta ray	IAO:0000118	delta electron
-WARN	duplicate_exact_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
-WARN	duplicate_exact_synonym	as low as reasonably achievable	IAO:0000118	ALARA
-WARN	duplicate_exact_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
-WARN	duplicate_exact_synonym	as low as reasonably achievable	IAO:0000118	ALARA
-WARN	duplicate_exact_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
+WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	
+WARN	duplicate_exact_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	
+WARN	duplicate_exact_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	linear energy transfer	IAO:0000118	
+WARN	duplicate_exact_synonym	linear energy transfer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	linear energy transfer	IAO:0000118	
+WARN	duplicate_exact_synonym	linear energy transfer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	delta ray	IAO:0000118	
+WARN	duplicate_exact_synonym	delta ray	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	delta ray	IAO:0000118	
+WARN	duplicate_exact_synonym	delta ray	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	as low as reasonably achievable	IAO:0000118	
+WARN	duplicate_exact_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	as low as reasonably achievable	IAO:0000118	
+WARN	duplicate_exact_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	
 WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
 WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
 WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
