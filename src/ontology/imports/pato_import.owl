@@ -19,8 +19,8 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/pato_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-03-20/imports/pato_import.owl"/>
-        <owl:versionInfo>2025-03-20</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-05-30/imports/pato_import.owl"/>
+        <owl:versionInfo>2025-05-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -330,6 +330,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/uberon/core#upper_level -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#upper_level">
@@ -489,7 +497,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>part_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
@@ -498,7 +505,6 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">part of</rdfs:label>
-        <rdfs:label>part of</rdfs:label>
         <rdfs:label>part_of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -511,7 +517,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
         <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:id>has_part</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
@@ -519,7 +524,6 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has part</rdfs:label>
-        <rdfs:label>has part</rdfs:label>
         <rdfs:label>has_part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -538,13 +542,8 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000062"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000115 xml:lang="en">x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>BFO:0000062</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>preceded_by</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>preceded_by</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
-        <rdfs:label>preceded by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -561,13 +560,8 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000063"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000115 xml:lang="en">x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>BFO:0000063</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>precedes</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>precedes</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">precedes</rdfs:label>
-        <rdfs:label>precedes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -591,12 +585,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000115 xml:lang="en">Inverse of characteristic_of</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0000053</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>bearer_of</oboInOwl:id>
-        <oboInOwl:shorthand>bearer_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has characteristic</rdfs:label>
-        <rdfs:label>bearer of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -608,12 +597,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0000056</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>participates_in</oboInOwl:id>
-        <oboInOwl:shorthand>participates_in</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">participates in</rdfs:label>
-        <rdfs:label>participates in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -629,11 +613,9 @@
         </owl:propertyChainAxiom>
         <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <oboInOwl:hasDbXref>RO:0000057</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>has_participant</oboInOwl:id>
         <oboInOwl:shorthand>has_participant</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
-        <rdfs:label>has participant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -706,13 +688,8 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002224"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002230"/>
         </owl:propertyChainAxiom>
-        <oboInOwl:hasDbXref>RO:0002087</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>immediately_preceded_by</oboInOwl:id>
-        <oboInOwl:shorthand>immediately_preceded_by</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
         <rdfs:label xml:lang="en">immediately preceded by</rdfs:label>
-        <rdfs:label>immediately preceded by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -725,14 +702,9 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002230"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002224"/>
         </owl:propertyChainAxiom>
-        <oboInOwl:hasDbXref>RO:0002090</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>immediately_precedes</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>immediately_precedes</oboInOwl:shorthand>
         <rdfs:comment xml:lang="en">X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)</rdfs:comment>
         <rdfs:label xml:lang="en">immediately precedes</rdfs:label>
-        <rdfs:label>immediately precedes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -755,25 +727,10 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000115>x overlaps y if and only if there exists some z such that x has part z and z part of y</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002131</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>overlaps</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>overlaps</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
-        <rdfs:label>overlaps</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002160 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002160">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-        <obo:IAO_0000115>x only in taxon y if and only if x is in taxon y, and there is no other organism z such that y!=z a and x is in taxon z.</obo:IAO_0000115>
-        <rdfs:label>only in taxon</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -796,6 +753,7 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002162"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000115>x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym xml:lang="en">life cycle stage of</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:comment>Connects a biological entity to its taxon of origin.</rdfs:comment>
         <rdfs:label>in taxon</rdfs:label>
@@ -808,13 +766,8 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002180">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <obo:IAO_0000115>w &apos;has component&apos; p if w &apos;has part&apos; p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002180</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>has_component</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>has_component</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has component</rdfs:label>
-        <rdfs:label>has component</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -851,13 +804,8 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) &lt; ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002224</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>starts_with</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>starts_with</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">starts with</rdfs:label>
-        <rdfs:label>starts with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -882,13 +830,8 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) &gt; α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002230</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>ends_with</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>ends_with</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">ends with</rdfs:label>
-        <rdfs:label>ends with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -904,16 +847,11 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002233</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>has_input</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>has_input</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has input</rdfs:label>
-        <rdfs:label>has input</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -928,16 +866,11 @@
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002234"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002234</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>has_output</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>has_output</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has output</rdfs:label>
-        <rdfs:label>has output</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -949,12 +882,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <obo:IAO_0000115>p results in the developmental progression of s iff p is a developmental process and s is an anatomical entity and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002295</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>results_in_developmental_progression_of</oboInOwl:id>
-        <oboInOwl:shorthand>results_in_developmental_progression_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">results in developmental progression of</rdfs:label>
-        <rdfs:label>results in developmental progression of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -965,15 +893,10 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002295"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002354"/>
-        <oboInOwl:hasDbXref>RO:0002297</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>results_in_formation_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <oboInOwl:shorthand>results_in_formation_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">results in formation of anatomical entity</rdfs:label>
-        <rdfs:label>results in formation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1047,14 +970,9 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
         <obo:IAO_0000115>inverse of has output</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002353</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>output_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <oboInOwl:shorthand>output_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">output of</rdfs:label>
-        <rdfs:label>output of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1075,12 +993,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002427"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
         <obo:IAO_0000115>inverse of upstream of</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002404</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>causally_downstream_of</oboInOwl:id>
-        <oboInOwl:shorthand>causally_downstream_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">causally downstream of</rdfs:label>
-        <rdfs:label>causally downstream of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1107,14 +1020,9 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002418"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002411</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>causally_upstream_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <oboInOwl:shorthand>causally_upstream_of</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">causally upstream of</rdfs:label>
-        <rdfs:label>causally upstream of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1125,12 +1033,12 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002501"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002427"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002418"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
         <obo:IAO_0000115>p is &apos;causally upstream or within&apos; q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002418</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>affects</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>causally_upstream_of_or_within</oboInOwl:id>
-        <oboInOwl:shorthand>causally_upstream_of_or_within</oboInOwl:shorthand>
         <rdfs:label>causally upstream of or within</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1142,11 +1050,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002501"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>inverse of causally upstream of or within</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002427</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>causally_downstream_of_or_within</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
-        <oboInOwl:shorthand>causally_downstream_of_or_within</oboInOwl:shorthand>
         <rdfs:label>causally downstream of or within</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1269,13 +1173,9 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002588">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002297"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002592"/>
-        <oboInOwl:hasDbXref>RO:0002588</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>results_in_assembly_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <oboInOwl:shorthand>results_in_assembly_of</oboInOwl:shorthand>
         <rdfs:label>results in assembly of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1286,10 +1186,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002590">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002586"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002592"/>
-        <oboInOwl:hasDbXref>RO:0002590</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>results_in_disassembly_of</oboInOwl:id>
-        <oboInOwl:shorthand>results_in_disassembly_of</oboInOwl:shorthand>
         <rdfs:label>results in disassembly of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1300,10 +1196,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002592">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0040036"/>
         <obo:IAO_0000115>p results in organization of c iff p results in the assembly, arrangement of constituent parts, or disassembly of c</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002592</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>results_in_organization_of</oboInOwl:id>
-        <oboInOwl:shorthand>results_in_organization_of</oboInOwl:shorthand>
         <rdfs:label>results in organization of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1326,10 +1218,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002608">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
         <obo:IAO_0000115>Inverse of &apos;causal agent in process&apos;</obo:IAO_0000115>
-        <oboInOwl:hasDbXref>RO:0002608</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>process_has_causal_agent</oboInOwl:id>
-        <oboInOwl:shorthand>process_has_causal_agent</oboInOwl:shorthand>
         <rdfs:label>process has causal agent</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1342,11 +1230,7 @@
         <obo:IAO_0000115>p &apos;has primary input ot output&apos; c iff either (a) p &apos;has primary input&apos; c or (b) p &apos;has primary output&apos; c.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-13T11:26:17Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref>RO:0004007</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>has_primary_input_or_output</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
-        <oboInOwl:shorthand>has_primary_input_or_output</oboInOwl:shorthand>
         <rdfs:label>has primary input or output</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1360,11 +1244,7 @@
         <obo:IAO_0000115>p has primary output c if (a) p has output c and (b) the goal of process is to modify, produce, or transform c.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-12-13T11:26:32Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref>RO:0004008</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>has_primary_output</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
-        <oboInOwl:shorthand>has_primary_output</oboInOwl:shorthand>
         <rdfs:label>has primary output</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
@@ -1387,10 +1267,6 @@
         <obo:IAO_0000115>p has anatomical participant c iff p has participant c, and c is an anatomical entity</obo:IAO_0000115>
         <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T01:08:58Z</oboInOwl:creation_date>
-        <oboInOwl:hasDbXref>RO:0040036</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>results_in_changes_to_anatomical_or_cellular_structure</oboInOwl:id>
-        <oboInOwl:shorthand>results_in_changes_to_anatomical_or_cellular_structure</oboInOwl:shorthand>
         <rdfs:label>results in changes to anatomical or cellular structure</rdfs:label>
     </owl:ObjectProperty>
     
@@ -2069,18 +1945,6 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>peptidos</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Peptide</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>KEGG_COMPOUND</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>Peptid</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -2089,6 +1953,18 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>peptido</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>peptidos</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ChEBI</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16670"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>Peptide</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>KEGG_COMPOUND</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9237,6 +9113,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002588"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0044207"/>
             </owl:Restriction>
@@ -9303,6 +9185,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>Wikipedia:Intracellular</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>internal to cell</oboInOwl:hasExactSynonym>
@@ -9345,14 +9233,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043231"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002160"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
@@ -9418,7 +9300,13 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0012505"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>The double lipid bilayer enclosing the nucleus and separating its contents from the rest of the cytoplasm; includes the intermembrane space, a gap of width 20-40 nm (also called the perinuclear space).</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The double lipid bilayer that encloses the nucleus, separating its contents from the cytoplasm. It consists of an inner and outer nuclear membrane, with an intermembrane space (20-40 nm wide, also called the perinuclear space) between them. The envelope is supported by the nuclear lamina and contains nuclear pore complexes, which regulate molecular transport.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0005636</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>Wikipedia:Nuclear_envelope</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
@@ -9431,8 +9319,9 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005635"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The double lipid bilayer enclosing the nucleus and separating its contents from the rest of the cytoplasm; includes the intermembrane space, a gap of width 20-40 nm (also called the perinuclear space).</owl:annotatedTarget>
+        <owl:annotatedTarget>The double lipid bilayer that encloses the nucleus, separating its contents from the cytoplasm. It consists of an inner and outer nuclear membrane, with an intermembrane space (20-40 nm wide, also called the perinuclear space) between them. The envelope is supported by the nuclear lamina and contains nuclear pore complexes, which regulate molecular transport.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:16164970</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -9445,6 +9334,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures.</obo:IAO_0000115>
@@ -9738,6 +9633,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006413"/>
             </owl:Restriction>
@@ -9758,6 +9659,7 @@
         <oboInOwl:hasAlternativeId>GO:0006416</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0006453</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0043037</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-72766</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Translation_(genetics)</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>protein anabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>protein biosynthesis</oboInOwl:hasExactSynonym>
@@ -9784,6 +9686,12 @@
         <owl:annotatedTarget>The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006412"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-72766</owl:annotatedTarget>
+        <rdfs:label>Translation</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -9800,6 +9708,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0001677"/>
             </owl:Restriction>
@@ -9810,6 +9724,7 @@
         <oboInOwl:hasBroadSynonym>biopolymerisation</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>biopolymerization</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>protein synthesis initiation</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-72613</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>translation initiation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006413</oboInOwl:id>
@@ -9821,6 +9736,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process preceding formation of the peptide bond between the first two amino acids of a protein. This includes the formation of a complex of the ribosome, mRNA or circRNA, and an initiation complex that contains the first aminoacyl-tRNA.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:019879276X</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006413"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-72613</owl:annotatedTarget>
+        <rdfs:label>Eukaryotic Translation Initiation</rdfs:label>
     </owl:Axiom>
     
 
@@ -9835,10 +9756,17 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006412"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The successive addition of amino acid residues to a nascent polypeptide chain during protein biosynthesis.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0006442</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0006455</oboInOwl:hasAlternativeId>
         <oboInOwl:hasBroadSynonym>protein synthesis elongation</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-156842</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>translation elongation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006414</oboInOwl:id>
@@ -9850,6 +9778,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The successive addition of amino acid residues to a nascent polypeptide chain during protein biosynthesis.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:ems</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006414"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-156842</owl:annotatedTarget>
+        <rdfs:label>Eukaryotic Translation Elongation</rdfs:label>
     </owl:Axiom>
     
 
@@ -9864,10 +9798,17 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006412"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The process resulting in the release of a polypeptide chain from the ribosome, usually in response to a termination codon (UAA, UAG, or UGA in the universal genetic code).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0006443</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0006456</oboInOwl:hasAlternativeId>
         <oboInOwl:hasBroadSynonym>protein synthesis termination</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-72764</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>translation termination</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>translational complex disassembly</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -9880,6 +9821,12 @@
         <owl:annotatedTarget>The process resulting in the release of a polypeptide chain from the ribosome, usually in response to a termination codon (UAA, UAG, or UGA in the universal genetic code).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:hjd</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ISBN:019879276X</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006415"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-72764</owl:annotatedTarget>
+        <rdfs:label>Eukaryotic Translation Termination</rdfs:label>
     </owl:Axiom>
     
 
@@ -9907,6 +9854,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The chemical reactions and pathways involving peptides, compounds of two or more amino acids where the alpha carboxyl group of one is bound to the alpha amino group of another.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-2980736</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>peptide metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006518</oboInOwl:id>
@@ -9918,6 +9866,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The chemical reactions and pathways involving peptides, compounds of two or more amino acids where the alpha carboxyl group of one is bound to the alpha amino group of another.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006518"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-2980736</owl:annotatedTarget>
+        <rdfs:label>Peptide hormone metabolism</rdfs:label>
     </owl:Axiom>
     
 
@@ -9996,6 +9950,7 @@
         <oboInOwl:created_by>jl</oboInOwl:created_by>
         <oboInOwl:creation_date>2013-12-19T15:25:51Z</oboInOwl:creation_date>
         <oboInOwl:hasAlternativeId>GO:1902589</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1852241</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>organelle organisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>single organism organelle organization</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -10013,6 +9968,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of an organelle within a cell. An organelle is an organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006996"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-1852241</owl:annotatedTarget>
+        <rdfs:label>Organelle biogenesis and maintenance</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006996"/>
@@ -10360,6 +10321,7 @@
         <oboInOwl:creation_date>2012-10-17T15:46:40Z</oboInOwl:creation_date>
         <oboInOwl:hasAlternativeId>GO:0044236</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0044710</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1430728</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Metabolism</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
@@ -10380,6 +10342,12 @@
         <owl:annotatedTarget>A cellular process consisting of the biochemical pathways by which a living organism transforms chemical substances. This includes including anabolism (biosynthetic process) and catabolism (catabolic process). Metabolic processes includes the transformation of small molecules, as well  macromolecular processes such as DNA repair and replication, protein synthesis and degradation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-1430728</owl:annotatedTarget>
+        <rdfs:label>Metabolism</rdfs:label>
     </owl:Axiom>
     
 
@@ -10712,6 +10680,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005886"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A collection of membranous structures involved in transport within the cell. The main components of the endomembrane system are endoplasmic reticulum, Golgi bodies, vesicles, cell membrane and nuclear envelope. Members of the endomembrane system pass materials through each other or though the use of vesicles.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>Wikipedia:Endomembrane_system</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
@@ -10907,6 +10881,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The cellular chemical reactions and pathways involving RNA, ribonucleic acid, one of the two main type of nucleic acid, consisting of a long, unbranched macromolecule formed from ribonucleotides joined in 3&apos;,5&apos;-phosphodiester linkage.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-8953854</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>RNA metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0016070</oboInOwl:id>
@@ -10923,6 +10898,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The cellular chemical reactions and pathways involving RNA, ribonucleic acid, one of the two main type of nucleic acid, consisting of a long, unbranched macromolecule formed from ribonucleotides joined in 3&apos;,5&apos;-phosphodiester linkage.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0016070"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-8953854</owl:annotatedTarget>
+        <rdfs:label>Metabolism of RNA</rdfs:label>
     </owl:Axiom>
     
 
@@ -10953,6 +10934,7 @@
         <oboInOwl:hasAlternativeId>GO:0006411</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0044267</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0044268</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-392499</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Protein_metabolism</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cellular protein metabolic process</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cellular protein metabolism</oboInOwl:hasExactSynonym>
@@ -10977,6 +10959,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The chemical reactions and pathways involving a protein. Includes protein modification.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:ma</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019538"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-392499</owl:annotatedTarget>
+        <rdfs:label>Metabolism of proteins</rdfs:label>
     </owl:Axiom>
     
 
@@ -11003,6 +10991,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The chemical reactions and pathways involving carboxylic acids, any organic acid containing one or more carboxyl (COOH) groups or anions (COO-).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-389661</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>carboxylic acid metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0019752</oboInOwl:id>
@@ -11013,6 +11002,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The chemical reactions and pathways involving carboxylic acids, any organic acid containing one or more carboxyl (COOH) groups or anions (COO-).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-389661</owl:annotatedTarget>
+        <rdfs:label>Glyoxylate metabolism and glycine degradation</rdfs:label>
     </owl:Axiom>
     
 
@@ -11289,6 +11284,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005635"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Either of the lipid bilayers that surround the nucleus and form the nuclear envelope; excludes the intermembrane space.</obo:IAO_0000115>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao1687101204</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
@@ -11319,6 +11320,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0043229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A double membrane structure enclosing an organelle, including two lipid bilayers and the region between them. In some cases, an organelle envelope may have more than two membranes.</obo:IAO_0000115>
@@ -11578,6 +11585,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>The chemical reactions and pathways resulting in the formation of peptides, compounds of 2 or more (but usually less than 100) amino acids where the alpha carboxyl group of one is bound to the alpha amino group of another. This may include the translation of a precursor protein and its subsequent processing into a functional peptide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-9037628</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>peptide anabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>peptide biosynthesis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>peptide formation</oboInOwl:hasExactSynonym>
@@ -11592,6 +11600,12 @@
         <owl:annotatedTarget>The chemical reactions and pathways resulting in the formation of peptides, compounds of 2 or more (but usually less than 100) amino acids where the alpha carboxyl group of one is bound to the alpha amino group of another. This may include the translation of a precursor protein and its subsequent processing into a functional peptide.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043043"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-9037628</owl:annotatedTarget>
+        <rdfs:label>Rhesus blood group biosynthesis</rdfs:label>
     </owl:Axiom>
     
 
@@ -11729,6 +11743,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane.</obo:IAO_0000115>
@@ -12023,6 +12043,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005737"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A ribonucleoprotein complex that contains aminoacylated initiator methionine tRNA, GTP, and initiation factor 2 (either eIF2 in eukaryotes, or IF2 in prokaryotes). In prokaryotes, fMet-tRNA (initiator) is used rather than Met-tRNA (initiator).</obo:IAO_0000115>
         <oboInOwl:created_by>jl</oboInOwl:created_by>
         <oboInOwl:creation_date>2009-10-22T02:38:55Z</oboInOwl:creation_date>
@@ -12275,6 +12301,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
         <obo:IAO_0000115>Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus by a cell and ends with a change in state or activity or the cell.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-8953897</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0051716</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
@@ -12288,6 +12315,12 @@
         <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
     </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051716"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-8953897</owl:annotatedTarget>
+        <rdfs:label>Cellular responses to stimuli</rdfs:label>
+    </owl:Axiom>
     
 
 
@@ -12297,6 +12330,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006139"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044281"/>
         <obo:IAO_0000115>The cellular chemical reactions and pathways involving a nucleobase-containing small molecule: a nucleobase, a nucleoside, or a nucleotide.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-15869</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-2393930</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>nucleobase, nucleoside and nucleotide metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>nucleobase, nucleoside and nucleotide metabolic process</oboInOwl:hasRelatedSynonym>
@@ -12313,6 +12348,18 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The cellular chemical reactions and pathways involving a nucleobase-containing small molecule: a nucleobase, a nucleoside, or a nucleotide.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0055086"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-15869</owl:annotatedTarget>
+        <rdfs:label>Metabolism of nucleotides</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0055086"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-2393930</owl:annotatedTarget>
+        <rdfs:label>Phosphate bond hydrolysis by NUDT proteins</rdfs:label>
     </owl:Axiom>
     
 
@@ -12343,6 +12390,7 @@
         <oboInOwl:creation_date>2010-02-08T02:43:11Z</oboInOwl:creation_date>
         <oboInOwl:hasAlternativeId>GO:0016044</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0044802</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-199991</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>cellular membrane organisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>cellular membrane organization</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>membrane organisation</oboInOwl:hasExactSynonym>
@@ -12364,6 +12412,12 @@
         <owl:annotatedTarget>A process which results in the assembly, arrangement of constituent parts, or disassembly of a membrane. A membrane is a double layer of lipid molecules that encloses all cells, and, in eukaryotes, many organelles; may be a single or double lipid bilayer; also includes associated proteins.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0061024"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-199991</owl:annotatedTarget>
+        <rdfs:label>Membrane Trafficking</rdfs:label>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0061024"/>
@@ -13050,6 +13104,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005634"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together in the nucleus.</obo:IAO_0000115>
         <oboInOwl:created_by>pg</oboInOwl:created_by>
         <oboInOwl:creation_date>2020-09-09T05:12:38Z</oboInOwl:creation_date>
@@ -13125,6 +13185,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006520"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019752"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0004007"/>
@@ -13169,6 +13230,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008652"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046394"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901605"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -14051,49 +14113,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PR_000036194 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000036194">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002160"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002160"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A protein that is encoded in the genome of some Eukaryota.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>Eukaryota protein</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>PR:000036194</oboInOwl:id>
-        <rdfs:label>eukaryotic protein</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000036194"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A protein that is encoded in the genome of some Eukaryota.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000036194"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>Eukaryota protein</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PR_000064867 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000064867">
@@ -14221,6 +14240,7 @@
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>UBERON:0000061</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_reference_atlas"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
         <rdfs:label>anatomical structure</rdfs:label>
     </owl:Class>
@@ -14554,5 +14574,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

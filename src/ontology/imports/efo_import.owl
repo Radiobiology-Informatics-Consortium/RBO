@@ -19,8 +19,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-03-20/imports/efo_import.owl"/>
-        <owl:versionInfo>2025-03-20</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-05-30/imports/efo_import.owl"/>
+        <owl:versionInfo>2025-05-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -113,6 +113,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
     
 
 
@@ -539,6 +545,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_transitive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_transitive"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
@@ -593,19 +605,28 @@
         <obo:IAO_0000115>For continuants: C part_of C&apos; if and only if: given any c that instantiates C at a time t, there is some c&apos; such that c&apos; instantiates C&apos; at time t, and c *part_of* c&apos; at t. For processes: P part_of P&apos; if and only if: given any p that instantiates P at a time t, there is some p&apos; such that p&apos; instantiates P&apos; at time t, and p *part_of* p&apos; at t. (Here *part_of* is the instance-level part-relation.)</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
 
 A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <efo:EFO_URI>http://www.ebi.ac.uk/efo/part_of</efo:EFO_URI>
         <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>part of</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>experimental_condition_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>source</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>spatial</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>part_of</oboInOwl:id>
@@ -623,6 +644,12 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Part_of</rdfs:seeAlso>
         <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
     </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>For continuants: C part_of C&apos; if and only if: given any c that instantiates C at a time t, there is some c&apos; such that c&apos; instantiates C&apos; at time t, and c *part_of* c&apos; at t. For processes: P part_of P&apos; if and only if: given any p that instantiates P at a time t, there is some p&apos; such that p&apos; instantiates P&apos; at time t, and p *part_of* p&apos; at t. (Here *part_of* is the instance-level part-relation.)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:15892874</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -645,12 +672,15 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <efo:EFO_URI>http://www.ebi.ac.uk/efo/has_part</efo:EFO_URI>
         <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_part</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
         <rdfs:label xml:lang="en">has part</rdfs:label>
         <rdfs:label>has part</rdfs:label>
+        <rdfs:label>has_part</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -678,17 +708,24 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">this fragility inheres in this vase</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this fragility is a characteristic of this vase</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this red color inheres in this apple</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this red color is a characteristic of this apple</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">A dependent inheres in its bearer at all times for which the dependent exists.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0000829</efo:EFO_URI>
         <oboInOwl:hasDbXref>RO:0000052</oboInOwl:hasDbXref>
         <oboInOwl:id>inheres_in</oboInOwl:id>
+        <oboInOwl:shorthand>characteristic_of</oboInOwl:shorthand>
         <oboInOwl:shorthand>inheres_in</oboInOwl:shorthand>
         <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
         <rdfs:label xml:lang="en">characteristic of</rdfs:label>
+        <rdfs:label xml:lang="en">inheres in</rdfs:label>
         <rdfs:label>inheres in</rdfs:label>
         <rdfs:label>inheres_in</rdfs:label>
     </owl:ObjectProperty>
@@ -801,11 +838,16 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <oboInOwl:hasDbXref>RO:0002180</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_component</oboInOwl:id>
         <oboInOwl:id>qualifier</oboInOwl:id>
+        <oboInOwl:is_transitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</oboInOwl:is_transitive>
+        <oboInOwl:shorthand>has_component</oboInOwl:shorthand>
         <oboInOwl:shorthand>qualifier</oboInOwl:shorthand>
         <rdfs:comment>For use in recording has_part with a cardinality constraint.</rdfs:comment>
         <rdfs:comment>placeholder relation to indicate normality/abnormality.</rdfs:comment>
         <rdfs:label>has component</rdfs:label>
+        <rdfs:label>has_component</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -815,7 +857,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
         <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">has input</rdfs:label>
-        <rdfs:label>has input</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -868,6 +909,32 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002330 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002330">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <oboInOwl:hasDbXref>RO:0002330</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>genomically_related_to</oboInOwl:id>
+        <oboInOwl:shorthand>genomically_related_to</oboInOwl:shorthand>
+        <rdfs:label>genomically_related_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
+        <oboInOwl:hasDbXref>RO:0002353</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>output_of</oboInOwl:id>
+        <oboInOwl:is_transitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</oboInOwl:is_transitive>
+        <oboInOwl:shorthand>output_of</oboInOwl:shorthand>
+        <rdfs:label>output_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
@@ -875,6 +942,45 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:label>depends on</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#has_constituent_monomer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/pr#has_constituent_monomer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+        <obo:IAO_0000115>A relation that holds between a polymer and its constituent monomers. P has_constituent_monomer c if and only if P has_component multiple instances of c and each instance of c is covalently attached to another instance of c.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_constituent_monomer</oboInOwl:id>
+        <oboInOwl:is_transitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</oboInOwl:is_transitive>
+        <rdfs:comment>The constituent monomers need not be covalently attached in an end-to-end manner; that is, polymers with internal connections (e.g., polyubiquitin) can use this relation, as can circular polymers (e.g., plasmids) and multi-branched polymers (e.g., glycans). This relation, as non-transitive, allows one to indicate the number of instances of c.</rdfs:comment>
+        <rdfs:label>has_constituent_monomer</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/pr#has_constituent_monomer"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A relation that holds between a polymer and its constituent monomers. P has_constituent_monomer c if and only if P has_component multiple instances of c and each instance of c is covalently attached to another instance of c.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/pr#has_gene_template -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/pr#has_gene_template">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002330"/>
+        <obo:IAO_0000115>See document https://docs.google.com/document/d/15iVMtMyYbQSlvUDgn2XUaDzpwkB0USZI for full definition.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_gene_template</oboInOwl:id>
+        <oboInOwl:is_transitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</oboInOwl:is_transitive>
+        <rdfs:label>has_gene_template</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/pr#has_gene_template"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>See document https://docs.google.com/document/d/15iVMtMyYbQSlvUDgn2XUaDzpwkB0USZI for full definition.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1007,9 +1113,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <efo:organizational_class>true</efo:organizational_class>
         <efo:source_definition>A realizable entity [snap:RealizableEntity] the manifestation of which brings about some result or end that is not essential to a continuant [snap:Continuant] in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant [snap:Continuant] in some kinds of natural, social or institutional contexts.</efo:source_definition>
         <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#Role</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>MeSH:D012380</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D012380</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C48835</oboInOwl:hasDbXref>
         <rdfs:label>role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <oboInOwl:hasOBONamespace>bfo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>BFO:0000030</oboInOwl:id>
+        <rdfs:label>object</rdfs:label>
     </owl:Class>
     
 
@@ -1026,15 +1143,35 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <efo:source_definition>An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</efo:source_definition>
         <oboInOwl:hasAlternativeId>http://www.ifomis.org/bfo/1.1/snap#MaterialEntity</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>material type</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>bfo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>BFO:0000040</oboInOwl:id>
         <rdfs:label>material entity</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <obo:IAO_0000115>Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:23367</oboInOwl:id>
+        <rdfs:label>molecular entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>fake:2</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <obo:IAO_0000115>A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>chemical entity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
@@ -1071,6 +1208,18 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33247 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33247">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000115>Any substituent group or skeleton containing carbon.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:33247</oboInOwl:id>
+        <rdfs:label>organic group</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_33250 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33250">
@@ -1078,7 +1227,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>A chemical entity constituting the smallest component of an element having the chemical properties of the element.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>CHEBI:22671</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:23907</oboInOwl:hasAlternativeId>
-        <oboInOwl:hasDbXref>MeSH:D004602</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D004602</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C1940</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C48792</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT:290004009</oboInOwl:hasDbXref>
@@ -1140,31 +1289,116 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33708">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33247"/>
+        <obo:IAO_0000115>When two or more amino acids combine to form a peptide, the elements of water are removed, and what remains of each amino acid is called an amino-acid residue.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>amino acid residue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>protein residue</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>CHEBI:33708</oboInOwl:id>
+        <rdfs:label>amino-acid residue</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>When two or more amino acids combine to form a peptide, the elements of water are removed, and what remains of each amino acid is called an amino-acid residue.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>Dummy:dummy</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>protein residue</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_36080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36080">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000018263"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006412"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pr#has_gene_template"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000018263"/>
         <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/efo/EFO_0004446"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006412"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pr#has_gene_template"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A biological macromolecule minimally consisting of one polypeptide chain synthesized at the ribosome.</obo:IAO_0000115>
+        <obo:IAO_0000115>An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>CHEBI:13677</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>CHEBI:14911</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>MESH:D011506</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MO:683</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MeSH:D011506</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C17021</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PRO:000000001</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT:88878007</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>natural protein</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>proteins</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>native protein</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
         <oboInOwl:id>CHEBI:36080</oboInOwl:id>
+        <oboInOwl:id>PR:000000001</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/chebi#3_STAR"/>
+        <rdfs:comment>Note that the definition allows for experimentally-manipulated genes, and allows for artifically-produced derivatives that mimic those found naturally. Note also that the definition excludes protein complexes, which some also consider a protein. Those who wish to refer to a class representing both senses of the word are directed to PR:000064867 (&quot;protein-containing molecular entity&quot;). Proteins (in the sense defined here) that descended from a common ancestor can be classified into families and superfamilies composed of products of evolutionarily-related genes. The domain architecture of a protein is described by the order of its constituent domains. Proteins with the same domains in the same order are defined as homeomorphic [PRO:WCB).</rdfs:comment>
         <rdfs:label>protein</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PRO:WCB</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>natural protein</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>proteins</owl:annotatedTarget>
         <oboInOwl:hasDbXref>IUPAC</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/chebi#IUPAC_NAME"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>native protein</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>IEDB:BP</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1255,11 +1489,24 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace>core</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>COB:0000013</oboInOwl:id>
+        <rdfs:label>molecule</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>A location, relative to cellular compartments and structures, occupied by a macromolecular machine. There are three types of cellular components described in the gene ontology: (1) the cellular anatomical entity where a gene product carries out a molecular function (e.g., plasma membrane, cytoskeleton) or membrane-enclosed compartments (e.g., mitochondrion); (2) virion components, where viral proteins act, and (3) the stable macromolecular complexes of which gene product are parts (e.g., the clathrin complex).</obo:IAO_0000115>
+        <obo:IAO_0000115>The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/17729</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>GO:0008372</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao1337158144</oboInOwl:hasDbXref>
@@ -1275,6 +1522,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
         <rdfs:comment>Note that, in addition to forming the root of the cellular component ontology, this term is recommended for the annotation of gene products whose cellular component is unknown. When this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <rdfs:comment>Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
         <rdfs:label>cellular_component</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1285,9 +1533,58 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>subcellular entity</owl:annotatedTarget>
         <oboInOwl:hasDbXref>NIF_Subcellular:nlx_subcell_100315</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005622 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+        <obo:IAO_0000115>A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/17776</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>NCIt:C28217</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:83167003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Intracellular</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>internal to cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>intracellular</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>protoplasm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>nucleocytoplasm</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>protoplast</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0005622</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <rdfs:label>intracellular anatomical structure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>nucleocytoplasm</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>protoplast</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1296,9 +1593,15 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005737">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/23023</obo:IAO_0000233>
-        <oboInOwl:hasDbXref>MeSH:D003593</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D003593</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C13226</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Cytoplasm</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
@@ -1323,6 +1626,25 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0006412 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006412">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>protein anabolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006412</oboInOwl:id>
+        <rdfs:label>translation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006412"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The cellular metabolic process in which a protein is formed, using the sequence of a mature mRNA or circRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA or circRNA. Translation ends with the release of a polypeptide chain from the ribosome.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
@@ -1335,7 +1657,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref>GO:0008150</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>MeSH:D055705</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D055705</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C17828</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
@@ -1565,7 +1887,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>Mus (commonly mice) is a small mammal belonging to the order of rodents.</obo:IAO_0000115>
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0002644</efo:EFO_URI>
-        <oboInOwl:hasDbXref>MeSH:D051379</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D051379</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C14238</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT:447482001</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>mice</oboInOwl:hasExactSynonym>
@@ -1697,15 +2019,25 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117>James Malone</obo:IAO_0000117>
         <obo:IAO_0000117>Tomasz Adamusiak</obo:IAO_0000117>
         <efo:EFO_URI>http://www.ebi.ac.uk/efo/EFO_0001449</efo:EFO_URI>
-        <oboInOwl:hasDbXref>MeSH:D056890</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MESH:D056890</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NCIt:C25796</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NIFSTD:birnlex_399</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT:415671008</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Eucaryotae</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Eukarya</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>eucaryotes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>euk-</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>NCBITaxon:2759</oboInOwl:id>
         <rdfs:label>Eukaryota</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2759"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>euk-</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/pr#PRO-short-label"/>
+    </owl:Axiom>
     
 
 
@@ -1742,7 +2074,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
@@ -1769,6 +2101,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <oboInOwl:hasDbXref>NIFSTD:birnlex_376</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT:410607006</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>species</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>obi</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>OBI:0100026</oboInOwl:id>
+        <rdfs:comment>Category=external.</rdfs:comment>
         <rdfs:label xml:lang="en">organism</rdfs:label>
         <rdfs:label>organism</rdfs:label>
     </owl:Class>
@@ -1804,16 +2139,150 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PR_000018263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000018263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/pr#has_constituent_monomer"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A molecule that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>peptide</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>polypeptide</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PR:000018263</oboInOwl:id>
+        <rdfs:comment>Category=polymer.</rdfs:comment>
+        <rdfs:label>amino acid chain</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000018263"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A molecule that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PRO:JSG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000018263"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>peptide</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000018263"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>polypeptide</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000064867 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000064867">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A molecular entity that minimally consists of a protein.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym>protein</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>protein aggregate</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>protein complex</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>protein-containing complex</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PR:000064867</oboInOwl:id>
+        <rdfs:comment>Note: This includes single proteins and derivatives thereof (PR:000000001), protein-containing complexes (GO:0032991), and protein aggregates (PR:000050565).</rdfs:comment>
+        <rdfs:label>protein-containing molecular entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000064867"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A molecular entity that minimally consists of a protein.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000064867"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>protein</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000064867"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>protein aggregate</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000064867"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>protein complex</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PR_000064867"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedTarget>protein-containing complex</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PRO:DAN</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>An extent of biological sequence.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>located_sequence_feature</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sequence feature</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>located sequence feature</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>SO:0000110</oboInOwl:id>
+        <rdfs:label>sequence_feature</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An extent of biological sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SO:ke</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000704">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000110"/>
         <obo:IAO_0000115>A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</obo:IAO_0000115>
         <obo:IAO_0000117>SO editors</obo:IAO_0000117>
         <oboInOwl:hasDbXref>NCIt:C16612</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>SNOMEDCT:67271001</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000704</oboInOwl:id>
         <rdfs:label>gene</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>SO:immuno_workshop</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -2305,5 +2774,5 @@ The CBA/J inbred mouse strain is used to study granulomatous experimental autoim
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 

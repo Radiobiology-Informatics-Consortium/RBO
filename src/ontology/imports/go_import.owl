@@ -12,9 +12,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/go_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-03-20/imports/go_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/go/releases/2024-01-17/go.owl"/>
-        <owl:versionInfo>2025-03-20</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-05-30/imports/go_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/go/releases/2025-03-16/go.owl"/>
+        <owl:versionInfo>2025-05-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -56,23 +56,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002161 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002161"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -105,6 +91,14 @@
     <!-- http://purl.obolibrary.org/obo/go#goslim_drosophila -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_drosophila">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -158,6 +152,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/go#goslim_plant_ribbon -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/go#goslim_pombe -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_pombe">
@@ -169,6 +171,14 @@
     <!-- http://purl.obolibrary.org/obo/go#goslim_prokaryote -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_prokaryote">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
     </owl:AnnotationProperty>
     
@@ -214,19 +224,17 @@
 
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label>created by</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#default-namespace"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+        <rdfs:label>creation date</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -491,6 +499,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
         <rdfs:comment>Chromosomes include parts that are not part of the chromatin. Examples include the kinetochore.</rdfs:comment>
         <rdfs:label>chromosome</rdfs:label>
@@ -524,7 +533,9 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
         <rdfs:label>cytoplasm</rdfs:label>
     </owl:Class>
@@ -540,11 +551,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0006139 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006139">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006725"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0034641"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044238"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046483"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1901360"/>
         <obo:IAO_0000115>Any cellular metabolic process involving nucleobases, nucleosides, nucleotides and nucleic acids.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0055134</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym>cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolic process</oboInOwl:hasExactSynonym>
@@ -591,6 +598,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <rdfs:label>DNA metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -608,10 +617,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006259"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006974"/>
         <obo:IAO_0000115>The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-73894</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:DNA_repair</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006281</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
@@ -624,6 +635,12 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:11563486</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006281"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-73894</owl:annotatedTarget>
+        <rdfs:label>DNA Repair</rdfs:label>
     </owl:Axiom>
     
 
@@ -665,69 +682,22 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0006725 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006725">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-        <obo:IAO_0000115>The chemical reactions and pathways involving aromatic compounds, any organic compound characterized by one or more planar rings, each of which contains conjugated double bonds and delocalized pi electrons, as carried out by individual cells.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>aromatic compound metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>aromatic hydrocarbon metabolic process</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>aromatic hydrocarbon metabolism</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0006725</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:label>cellular aromatic compound metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006725"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways involving aromatic compounds, any organic compound characterized by one or more planar rings, each of which contains conjugated double bonds and delocalized pi electrons, as carried out by individual cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0006807 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006807">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
-        <obo:IAO_0000115>The chemical reactions and pathways involving organic or inorganic compounds that contain nitrogen.</obo:IAO_0000115>
-        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
-        <oboInOwl:hasExactSynonym>nitrogen compound metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0006807</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:label>nitrogen compound metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways involving organic or inorganic compounds that contain nitrogen.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GO_0006950 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006950">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
         <obo:IAO_0000115>Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26810</obo:IAO_0000233>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>response to abiotic stress</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>response to biotic stress</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0006950</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
-        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
         <rdfs:label>response to stress</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -803,34 +773,41 @@
     <!-- http://purl.obolibrary.org/obo/GO_0008152 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008152">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <obo:IAO_0000115>The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
+        <obo:IAO_0000115>A cellular process consisting of the biochemical pathways by which a living organism transforms chemical substances. This includes including anabolism (biosynthetic process) and catabolism (catabolic process). Metabolic processes includes the transformation of small molecules, as well  macromolecular processes such as DNA repair and replication, protein synthesis and degradation.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28932</obo:IAO_0000233>
         <oboInOwl:created_by>jl</oboInOwl:created_by>
         <oboInOwl:creation_date>2012-10-17T15:46:40Z</oboInOwl:creation_date>
         <oboInOwl:hasAlternativeId>GO:0044236</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId>GO:0044710</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1430728</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Wikipedia:Metabolism</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>metabolic process resulting in cell growth</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>metabolism resulting in cell growth</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>multicellular organism metabolic process</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>single-organism metabolic process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0008152</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <rdfs:comment>Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.</rdfs:comment>
         <rdfs:label>metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation.</owl:annotatedTarget>
+        <owl:annotatedTarget>A cellular process consisting of the biochemical pathways by which a living organism transforms chemical substances. This includes including anabolism (biosynthetic process) and catabolism (catabolic process). Metabolic processes includes the transformation of small molecules, as well  macromolecular processes such as DNA repair and replication, protein synthesis and degradation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ISBN:0198547684</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-1430728</owl:annotatedTarget>
+        <rdfs:label>Metabolism</rdfs:label>
     </owl:Axiom>
     
 
@@ -866,7 +843,7 @@
         <oboInOwl:hasNarrowSynonym>response to abiotic stress</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0009628</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
@@ -896,7 +873,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048519"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048523"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
@@ -941,7 +918,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048518"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048522"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
@@ -1152,8 +1129,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031323"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051171"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0080090"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1198,7 +1173,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050789"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
@@ -1207,6 +1182,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId>GO:0044246</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-1989781</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>regulation of metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>regulation of multicellular organismal metabolic process</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>regulation of organismal metabolic process</oboInOwl:hasNarrowSynonym>
@@ -1223,134 +1199,15 @@
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-1989781</owl:annotatedTarget>
+        <rdfs:label>PPARA activates gene expression</rdfs:label>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
         <owl:annotatedTarget>regulation of organismal metabolic process</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0031323 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0031323">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>regulation of cellular metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0031323</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <rdfs:label>regulation of cellular metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0031323"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0031324 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0031324">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009892"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031323"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048523"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>down regulation of cellular metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>down-regulation of cellular metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>downregulation of cellular metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>negative regulation of cellular metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>inhibition of cellular metabolic process</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0031324</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <rdfs:label>negative regulation of cellular metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0031324"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0031325 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0031325">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009893"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031323"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048522"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>positive regulation of cellular metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>up regulation of cellular metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>up-regulation of cellular metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>upregulation of cellular metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>activation of cellular metabolic process</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>stimulation of cellular metabolic process</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0031325</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <rdfs:label>positive regulation of cellular metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0031325"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1361,10 +1218,10 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006950"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051716"/>
         <obo:IAO_0000115>Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating the organism is under stress. The stress is usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26810</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-2262752</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0033554</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
-        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
         <rdfs:label>cellular response to stress</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1373,28 +1230,11 @@
         <owl:annotatedTarget>Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating the organism is under stress. The stress is usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation).</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0034641 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0034641">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-        <obo:IAO_0000115>The chemical reactions and pathways involving various organic and inorganic nitrogenous compounds, as carried out by individual cells.</obo:IAO_0000115>
-        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
-        <oboInOwl:hasExactSynonym>cellular nitrogen compound metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0034641</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <rdfs:label>cellular nitrogen compound metabolic process</rdfs:label>
-    </owl:Class>
     <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0034641"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways involving various organic and inorganic nitrogenous compounds, as carried out by individual cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0033554"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-2262752</owl:annotatedTarget>
+        <rdfs:label>Cellular responses to stress</rdfs:label>
     </owl:Axiom>
     
 
@@ -1465,7 +1305,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0043170 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043170">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
         <obo:IAO_0000115>The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
         <oboInOwl:hasAlternativeId>GO:0034960</oboInOwl:hasAlternativeId>
@@ -1509,6 +1349,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <rdfs:label>organelle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1526,13 +1367,18 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
         <obo:IAO_0000115>Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane. Includes ribosomes, the cytoskeleton and chromosomes.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/21881</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28153</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/29106</obo:IAO_0000233>
         <oboInOwl:hasDbXref>NIF_Subcellular:sao1456184038</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>membrane-less organelle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>non-membrane-bounded organelle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>non-membrane-enclosed organelle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>biological condensate</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0043228</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
-        <rdfs:label>non-membrane-bounded organelle</rdfs:label>
+        <rdfs:label>membraneless organelle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043228"/>
@@ -1565,8 +1411,10 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28153</obo:IAO_0000233>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0043229</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <rdfs:label>intracellular organelle</rdfs:label>
     </owl:Class>
@@ -1596,11 +1444,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043228"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043229"/>
         <obo:IAO_0000115>Organized structure of distinctive morphology and function, not bounded by a lipid bilayer membrane and occurring within the cell. Includes ribosomes, the cytoskeleton and chromosomes.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/29106</obo:IAO_0000233>
+        <oboInOwl:hasExactSynonym>intracellular non-membrane-bounded organelle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>intracellular non-membrane-enclosed organelle</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0043232</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:label>intracellular non-membrane-bounded organelle</rdfs:label>
+        <rdfs:label>intracellular membraneless organelle</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0043232"/>
@@ -1611,46 +1461,21 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0044237 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
-        <obo:IAO_0000115>The chemical reactions and pathways by which individual cells transform chemical substances.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>cellular metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym>intermediary metabolism</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id>GO:0044237</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <rdfs:comment>This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.</rdfs:comment>
-        <rdfs:label>cellular metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways by which individual cells transform chemical substances.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-        <owl:annotatedTarget>intermediary metabolism</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GO_0044238 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044238">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
         <obo:IAO_0000115>The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>Wikipedia:Primary_metabolite</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>primary metabolism</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0044238</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_euk_cellular_processes_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <rdfs:label>primary metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1658,7 +1483,6 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:go_curators</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>http://www.metacyc.org</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -1760,9 +1584,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009892"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019219"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031324"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051172"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
@@ -1810,9 +1633,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009893"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019219"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031325"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051173"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
@@ -1843,26 +1665,6 @@
         <owl:annotatedTarget>positive regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0046483 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046483">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
-        <obo:IAO_0000115>The chemical reactions and pathways involving heterocyclic compounds, those with a cyclic molecular structure and at least two different atoms in the ring (or rings).</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>heterocycle metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0046483</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:label>heterocycle metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0046483"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways involving heterocyclic compounds, those with a cyclic molecular structure and at least two different atoms in the ring (or rings).</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -2063,7 +1865,7 @@
         <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of a response to a stimulus. Response to stimulus is a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0048583</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
         <rdfs:label>regulation of response to stimulus</rdfs:label>
     </owl:Class>
@@ -2106,7 +1908,7 @@
         <oboInOwl:hasNarrowSynonym>stimulation of response to stimulus</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0048584</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
         <rdfs:label>positive regulation of response to stimulus</rdfs:label>
     </owl:Class>
@@ -2148,7 +1950,7 @@
         <oboInOwl:hasNarrowSynonym>inhibition of response to stimulus</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0048585</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
         <rdfs:label>negative regulation of response to stimulus</rdfs:label>
     </owl:Class>
@@ -2249,12 +2051,13 @@
         <oboInOwl:hasExactSynonym>physiological response to stimulus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0050896</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_agr"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
         <rdfs:label>response to stimulus</rdfs:label>
     </owl:Class>
@@ -2391,158 +2194,16 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0051171 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051171">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0019222"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>regulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>regulation of nitrogen metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0051171</oboInOwl:id>
-        <rdfs:label>regulation of nitrogen compound metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051171"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051171"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>regulation of nitrogen metabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0051172 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051172">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009892"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051171"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>down regulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>down-regulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>downregulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>negative regulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>negative regulation of nitrogen metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>inhibition of nitrogen metabolic process</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0051172</oboInOwl:id>
-        <rdfs:label>negative regulation of nitrogen compound metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051172"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051172"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>negative regulation of nitrogen metabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0051173 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051173">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0065007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009893"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051171"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006807"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>positive regulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>positive regulation of nitrogen metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>up regulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>up-regulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>upregulation of nitrogen metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>activation of nitrogen metabolic process</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>stimulation of nitrogen metabolic process</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0051173</oboInOwl:id>
-        <rdfs:label>positive regulation of nitrogen compound metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051173"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>Any process that activates or increases the frequency, rate or extent of the chemical reactions and pathways involving nitrogen or nitrogenous compounds.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051173"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>positive regulation of nitrogen metabolic process</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GO_0051716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051716">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050896"/>
         <obo:IAO_0000115>Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus by a cell and ends with a change in state or activity or the cell.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-8953897</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0051716</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
         <rdfs:label>cellular response to stimulus</rdfs:label>
     </owl:Class>
@@ -2552,6 +2213,12 @@
         <owl:annotatedTarget>Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus by a cell and ends with a change in state or activity or the cell.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051716"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-8953897</owl:annotatedTarget>
+        <rdfs:label>Cellular responses to stimuli</rdfs:label>
     </owl:Axiom>
     
 
@@ -2628,7 +2295,7 @@
         <oboInOwl:hasNarrowSynonym>cellular response to abiotic stress</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0071214</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
         <rdfs:label>cellular response to abiotic stimulus</rdfs:label>
     </owl:Class>
@@ -2781,31 +2448,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0071704 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0071704">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008152"/>
-        <obo:IAO_0000115>The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon.</obo:IAO_0000115>
-        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
-        <oboInOwl:created_by>mah</oboInOwl:created_by>
-        <oboInOwl:creation_date>2010-03-08T03:32:18Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym>organic molecular entity metabolic process</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic molecular entity metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>organic substance metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:0071704</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
-        <rdfs:label>organic substance metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways involving an organic substance, any molecular entity containing carbon.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/GO_0080090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0080090">
@@ -2869,7 +2511,7 @@
         <oboInOwl:creation_date>2009-05-06T04:51:28Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0080134</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
         <rdfs:label>regulation of response to stress</rdfs:label>
     </owl:Class>
@@ -2927,10 +2569,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043170"/>
         <obo:IAO_0000115>Any cellular metabolic process involving nucleic acids.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26133</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/27052</obo:IAO_0000233>
         <oboInOwl:created_by>tb</oboInOwl:created_by>
         <oboInOwl:creation_date>2010-04-07T10:18:47Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0090304</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
+        <rdfs:comment>This term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term.</rdfs:comment>
         <rdfs:label>nucleic acid metabolic process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2946,7 +2591,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0090398 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0090398">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0009987"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2955,9 +2600,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>A cell aging process stimulated in response to cellular stress, whereby normal cells lose the ability to divide through irreversible cell cycle arrest.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/22788</obo:IAO_0000233>
-        <obo:RO_0002161 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
         <oboInOwl:created_by>tb</oboInOwl:created_by>
         <oboInOwl:creation_date>2011-01-05T02:27:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-2559583</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0090398</oboInOwl:id>
         <rdfs:label>cellular senescence</rdfs:label>
@@ -2968,6 +2613,12 @@
         <owl:annotatedTarget>A cell aging process stimulated in response to cellular stress, whereby normal cells lose the ability to divide through irreversible cell cycle arrest.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:BHF</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>PMID:28682291</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0090398"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-2559583</owl:annotatedTarget>
+        <rdfs:label>Cellular Senescence</rdfs:label>
     </owl:Axiom>
     
 
@@ -3059,49 +2710,24 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0110165">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
-        <obo:IAO_0000115>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</obo:IAO_0000115>
+        <obo:IAO_0000115>A part of a cellular organism consisting of a material entity with granularity above the level of a protein complex but below that of an anatomical system. Note that cellular organisms exclude viruses.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24200</obo:IAO_0000233>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/26424</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/28978</obo:IAO_0000233>
         <oboInOwl:created_by>kmv</oboInOwl:created_by>
         <oboInOwl:creation_date>2019-08-12T18:01:37Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>cellular anatomical entity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>cellular_component</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0110165</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:label>cellular anatomical entity</rdfs:label>
+        <rdfs:label>cellular anatomical structure</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0110165"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex but below that of an anatomical system. Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</owl:annotatedTarget>
+        <owl:annotatedTarget>A part of a cellular organism consisting of a material entity with granularity above the level of a protein complex but below that of an anatomical system. Note that cellular organisms exclude viruses.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GOC:kmv</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_1901360 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1901360">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0071704"/>
-        <obo:IAO_0000115>The chemical reactions and pathways involving organic cyclic compound.</obo:IAO_0000115>
-        <oboInOwl:created_by>bf</oboInOwl:created_by>
-        <oboInOwl:creation_date>2012-09-14T09:03:51Z</oboInOwl:creation_date>
-        <oboInOwl:hasExactSynonym>organic cyclic compound metabolism</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
-        <oboInOwl:id>GO:1901360</oboInOwl:id>
-        <rdfs:label>organic cyclic compound metabolic process</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901360"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>The chemical reactions and pathways involving organic cyclic compound.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_1901360"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget>organic cyclic compound metabolism</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -3589,7 +3215,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031323"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050794"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
@@ -3626,7 +3252,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031324"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048523"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_2000772"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3664,7 +3290,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0031325"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048522"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_2000772"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3844,5 +3470,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
