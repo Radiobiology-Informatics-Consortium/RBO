@@ -382,6 +382,8 @@ obo:RBO_00010030	research nuclear reactor			research reactor	"Nuclear reactors p
 obo:RBO_00010031	nuclear power reactor			power reactor	A nuclear reactor primarily used to generate and supply power.			"This conceptualization of nuclear power reactor emphasizes its role as a radiation source.  For use to emphasize its roles in energy production, recommend use of identically named concept ENVO:02000137"							obo:RBO_00000122																				
 obo:RBO_00010032	military nuclear reactor				A nuclear reactor used for military purposes such as plutonium production.										obo:RBO_00000122																				
 obo:RBO_00010033	multi-purpose nuclear reactor				A nuclear reactor used for more than one purpose.										obo:RBO_00000122																				
-obo:RBO_00010034	faxitron CP160				An x-ray source.	doi: 10.2349/biij.2.1.e1									OBI:0001138																				
-obo:RBO_00010035	x-rad320				An x-ray source.	https://precisionxray.com/x-rad/xrad-320/									OBI:0001138																				
-obo:RBO_00010036	gammacell 40				A source of gamma irradiation.	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf									obo:RBO_00005039																				
+obo:RBO_00010034	faxitron CP160				An 160 kV x-ray source.	doi: 10.2349/biij.2.1.e1									obo:RBO_00010037																				
+obo:RBO_00010035	x-rad320				An 320 kV x-ray source.	https://precisionxray.com/x-rad/xrad-320/									OBI:0001138																				
+obo:RBO_00010036	gammacell 40				A source of gamma irradiation.	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf									obo:RBO_00010038																				
+obo:RBO_00010037	160 kV x-ray device				An x-ray source operating at a voltage of 160 kV.										http://purl.obolibrary.org/obo/OBI_0001138																				
+obo:RBO_00010038	320 kV x-ray device				An x-ray source operating at a voltage of 320 kV.										http://purl.obolibrary.org/obo/OBI_0001138																				
