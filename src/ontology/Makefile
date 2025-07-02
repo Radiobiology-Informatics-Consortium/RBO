@@ -466,8 +466,8 @@ $(COMPONENTSDIR)/%.owl: | $(COMPONENTSDIR)
 # ----------------------------------------
 
 IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
-IMP_LARGE=true# Global parameter to bypass handling of large imports
+MIR=false # Global parameter to bypass mirror generation
+IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 ifeq ($(strip $(MIR)),true)
 

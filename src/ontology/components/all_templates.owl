@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-05-30/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-07-02/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -3937,14 +3937,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RBO_00010021 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000115"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RBO_00010022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010022">
@@ -4049,6 +4041,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
         <obo:IAO_0000115>A nuclear reactor primarily used to generate and supply power.</obo:IAO_0000115>
+        <obo:IAO_0000116>This conceptualization of nuclear power reactor emphasizes its role as a radiation source.  For use to emphasize its roles in energy production, recommend use of identically named concept ENVO:02000137</obo:IAO_0000116>
         <obo:IAO_0000118>power reactor</obo:IAO_0000118>
         <rdfs:label>nuclear power reactor</rdfs:label>
     </owl:Class>
@@ -4071,6 +4064,39 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
         <obo:IAO_0000115>A nuclear reactor used for more than one purpose.</obo:IAO_0000115>
         <rdfs:label>multi-purpose nuclear reactor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <obo:IAO_0000115>An x-ray source.</obo:IAO_0000115>
+        <obo:IAO_0000119>doi: 10.2349/biij.2.1.e1</obo:IAO_0000119>
+        <rdfs:label>faxitron CP160</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <obo:IAO_0000115>An x-ray source.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000119>
+        <rdfs:label>x-rad320</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
+        <obo:IAO_0000115>A source of gamma irradiation.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</obo:IAO_0000119>
+        <rdfs:label>gammacell 40</rdfs:label>
     </owl:Class>
     
 
@@ -5222,7 +5248,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00000056 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00000056">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000122"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00010030"/>
         <obo:IAO_0000111>KUR-HWNIF</obo:IAO_0000111>
         <obo:IAO_0000112>The samples were irradiated with thermal neutrons at the KUR-HWNIF</obo:IAO_0000112>
         <obo:IAO_0000115>A heavy water tank of approximately 2 m3 adjacent to the core of the Kyoto University Research Reactor (KUR), a light-water moderated tank-type reactor.</obo:IAO_0000115>
@@ -5311,8 +5337,9 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00005079 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005079">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
-        <obo:IAO_0000115>doi: 10.2349/biij.2.1.e1</obo:IAO_0000115>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00010034"/>
+        <obo:IAO_0000115>A specific instance of Faxitron CP160 x-ray source. </obo:IAO_0000115>
+        <obo:IAO_0000119> doi: 10.2349/biij.2.1.e1</obo:IAO_0000119>
         <rdfs:label>Faxitron CP160</rdfs:label>
     </owl:NamedIndividual>
     
@@ -5322,8 +5349,28 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005080">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
-        <obo:IAO_0000115>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000115>
+        <obo:IAO_0000115>A specific instance of an X-Rad320 x-ray source. </obo:IAO_0000115>
+        <obo:IAO_0000119>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000119>
         <rdfs:label>X-Rad320</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005081 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005081">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00000121"/>
+        <obo:IAO_0000115>A particle accelerator located at Brookhaven National Laboratory, Upton, NY, capable of delivering protons and heavier ions at energies between several hundred MeV/nucleon and several GeV/nucleon.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>BNL AGS</oboInOwl:hasExactSynonym>
+        <rdfs:label>Brookhaven National Laboratory Alternating Gradient Synchrotron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00010021">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0302889"/>
     </owl:NamedIndividual>
     
 

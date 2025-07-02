@@ -27,6 +27,8 @@ ERROR	duplicate_definition	quality factor	IAO:0000115	Dimensionless factor devel
 ERROR	duplicate_definition	quality factor	IAO:0000115	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed
 ERROR	duplicate_definition	tissue equivalence	IAO:0000115	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
 ERROR	duplicate_definition	tissue equivalence	IAO:0000115	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
+ERROR	duplicate_definition	faxitron CP160	IAO:0000115	An x-ray source.
+ERROR	duplicate_definition	x-rad320	IAO:0000115	An x-ray source.
 ERROR	duplicate_definition	heavy ion	IAO:0000115	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
 ERROR	duplicate_definition	heavy ion	IAO:0000115	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
 ERROR	duplicate_definition	as low as reasonably achievable	IAO:0000115	A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen
@@ -134,6 +136,9 @@ WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000115	An atomic nucleus wit
 WARN	annotation_whitespace	Titanium-48 nucleus	IAO:0000118	Ti-48  ion;Ti-48  nucleus;Ti-48  
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000115	An atomic nucleus with 36 protons and 48 neutrons 
 WARN	annotation_whitespace	Krypton-84 nucleus	IAO:0000118	Kr-84 ion;Kr-84 nucleus;Kr-84 
+WARN	annotation_whitespace	Faxitron CP160	IAO:0000115	A specific instance of Faxitron CP160 x-ray source. 
+WARN	annotation_whitespace	Faxitron CP160	IAO:0000119	 doi: 10.2349/biij.2.1.e1
+WARN	annotation_whitespace	X-Rad320	IAO:0000115	A specific instance of an X-Rad320 x-ray source. 
 WARN	annotation_whitespace	external radiation exposure	IAO:0000112	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	senolytic	IAO:0000115	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
 WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	
@@ -209,6 +214,4 @@ INFO	lowercase_definition	RARAF 5.5 MV microbeam	IAO:0000115	https://www.crr.col
 INFO	lowercase_definition	Swift HALE	IAO:0000115	https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights
 INFO	lowercase_definition	ER-2	IAO:0000115	https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html
 INFO	lowercase_definition	WB-57	IAO:0000115	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
-INFO	lowercase_definition	Faxitron CP160	IAO:0000115	doi: 10.2349/biij.2.1.e1
-INFO	lowercase_definition	X-Rad320	IAO:0000115	https://precisionxray.com/x-rad/xrad-320/
 INFO	lowercase_definition	epithermal neutron	IAO:0000115	a neutron with energy greater than a thermal neutron, but less than a fast neutron. The approximate energy range is 0.025-0.4 eV.
