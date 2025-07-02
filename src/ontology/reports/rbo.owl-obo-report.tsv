@@ -31,8 +31,6 @@ ERROR	duplicate_definition	tissue equivalence	textual definition	Denotes a subst
 ERROR	duplicate_definition	tissue equivalence	textual definition	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
 ERROR	duplicate_definition	anatomical entity	textual definition	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
 ERROR	duplicate_definition	anatomical entity	textual definition	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
-ERROR	duplicate_definition	faxitron CP160	textual definition	An x-ray source.
-ERROR	duplicate_definition	x-rad320	textual definition	An x-ray source.
 ERROR	duplicate_definition	heavy ion	textual definition	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
 ERROR	duplicate_definition	heavy ion	textual definition	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
 ERROR	duplicate_definition	as low as reasonably achievable	textual definition	A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen
@@ -202,8 +200,8 @@ ERROR	multiple_definitions	inheres in	textual definition	a relation between a sp
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	has characteristic	textual definition	Inverse of characteristic_of@en
 ERROR	multiple_definitions	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
-ERROR	multiple_definitions	participates_in	textual definition	Participates in is a primitive instance-level relation between a continuant and a process in which it participates. For example a scanner participates in a scanning process at some specific time.
-ERROR	multiple_definitions	participates_in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+ERROR	multiple_definitions	participates in	textual definition	Participates in is a primitive instance-level relation between a continuant and a process in which it participates. For example a scanner participates in a scanning process at some specific time.
+ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	has participant	textual definition	Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the A continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	overlaps	textual definition	A overlaps B if they share some part in common.
@@ -384,8 +382,8 @@ ERROR	multiple_labels	inheres in	label	inheres in@en
 ERROR	multiple_labels	inheres in	label	inheres_in
 ERROR	multiple_labels	has characteristic	label	bearer of@en
 ERROR	multiple_labels	has characteristic	label	has characteristic@en
-ERROR	multiple_labels	participates_in	label	participates in@en
-ERROR	multiple_labels	participates_in	label	participates_in
+ERROR	multiple_labels	participates in	label	participates in@en
+ERROR	multiple_labels	participates in	label	participates_in
 ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	has participant	label	has_participant
 ERROR	multiple_labels	has quality	label	has quality
@@ -421,9 +419,9 @@ ERROR	multiple_labels	output of	label	output of@en
 ERROR	multiple_labels	output of	label	output_of
 ERROR	multiple_labels	prefix	label	derived unit
 ERROR	multiple_labels	prefix	label	prefix
-ERROR	multiple_labels	Creator	label	Creator
-ERROR	multiple_labels	Creator	label	Creator@en-us
-ERROR	multiple_labels	Creator	label	creator
+ERROR	multiple_labels	creator	label	Creator
+ERROR	multiple_labels	creator	label	Creator@en-us
+ERROR	multiple_labels	creator	label	creator
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
@@ -3122,7 +3120,7 @@ WARN	missing_definition	channels_into	textual definition
 WARN	missing_definition	layer part of	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	Creator	textual definition	
+WARN	missing_definition	creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	title	textual definition	
@@ -3265,7 +3263,7 @@ INFO	lowercase_definition	epithermal neutron	textual definition	a neutron with e
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	participates_in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	function of	textual definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	quality of	textual definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en

@@ -4566,7 +4566,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An x-ray source."
+          "val" : "An 160 kV x-ray source."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -4579,7 +4579,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An x-ray source."
+          "val" : "An 320 kV x-ray source."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -4598,6 +4598,24 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf"
         } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010037",
+      "lbl" : "160 kV x-ray device",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An x-ray source operating at a voltage of 160 kV."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010038",
+      "lbl" : "320 kV x-ray device",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An x-ray source operating at a voltage of 320 kV."
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015000",
@@ -6225,7 +6243,11 @@
       "meta" : {
         "definition" : {
           "val" : "http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005075",
@@ -6274,6 +6296,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : " doi: 10.2349/biij.2.1.e1"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -6287,6 +6312,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "https://precisionxray.com/x-rad/xrad-320/"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -7722,7 +7750,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010034",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010037"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010035",
       "pred" : "is_a",
@@ -7730,7 +7758,15 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010036",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00005039"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010037",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010038",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",

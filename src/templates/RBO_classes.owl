@@ -3725,8 +3725,8 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00010034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
-        <obo:IAO_0000115>An x-ray source.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010037"/>
+        <obo:IAO_0000115>An 160 kV x-ray source.</obo:IAO_0000115>
         <obo:IAO_0000119>doi: 10.2349/biij.2.1.e1</obo:IAO_0000119>
         <rdfs:label>faxitron CP160</rdfs:label>
     </owl:Class>
@@ -3737,7 +3737,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
-        <obo:IAO_0000115>An x-ray source.</obo:IAO_0000115>
+        <obo:IAO_0000115>An 320 kV x-ray source.</obo:IAO_0000115>
         <obo:IAO_0000119>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000119>
         <rdfs:label>x-rad320</rdfs:label>
     </owl:Class>
@@ -3747,10 +3747,30 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00010036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010038"/>
         <obo:IAO_0000115>A source of gamma irradiation.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</obo:IAO_0000119>
         <rdfs:label>gammacell 40</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <obo:IAO_0000115>An x-ray source operating at a voltage of 160 kV.</obo:IAO_0000115>
+        <rdfs:label>160 kV x-ray device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <obo:IAO_0000115>An x-ray source operating at a voltage of 320 kV.</obo:IAO_0000115>
+        <rdfs:label>320 kV x-ray device</rdfs:label>
     </owl:Class>
     
 
