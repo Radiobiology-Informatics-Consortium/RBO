@@ -148,6 +148,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00010040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010040"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -489,6 +495,39 @@
         <obo:IAO_0000115>A particle accelerator located at Brookhaven National Laboratory, Upton, NY, capable of delivering protons and heavier ions at energies between several hundred MeV/nucleon and several GeV/nucleon.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>BNL AGS</oboInOwl:hasExactSynonym>
         <rdfs:label>Brookhaven National Laboratory Alternating Gradient Synchrotron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005082 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005082">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00010040"/>
+        <obo:IAO_0000111>DULB-4900</obo:IAO_0000111>
+        <obo:IAO_0000115>An instance of an underground low background radiation laboratory located near the Baksan Neutrino Laboratory</obo:IAO_0000115>
+        <obo:IAO_0000119>https://plos.figshare.com/articles/dataset/Components_of_radiation_background_in_DULB-4900_and_the_ground_laboratory_in_the_institute_building_of_BNO_INR_RAS_/15117918</obo:IAO_0000119>
+        <rdfs:label>Deep Underground Low Radiation Background Laboratory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005083 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005083">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00010040"/>
+        <obo:IAO_0000111>BNO</obo:IAO_0000111>
+        <obo:IAO_0000115>An instance of an underground low background radiation laboratory</obo:IAO_0000115>
+        <obo:IAO_0000119>https://doi.org/10.1016/j.nima.2013.07.090</obo:IAO_0000119>
+        <rdfs:label>Baksan Neutrino Observatory</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005084 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00005084">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
+        <rdfs:label>Mark 1 model 68A gamma irradiator at ARC</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

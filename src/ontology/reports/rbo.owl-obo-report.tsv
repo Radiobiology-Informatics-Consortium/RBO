@@ -200,8 +200,8 @@ ERROR	multiple_definitions	inheres in	textual definition	a relation between a sp
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 ERROR	multiple_definitions	has characteristic	textual definition	Inverse of characteristic_of@en
 ERROR	multiple_definitions	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
-ERROR	multiple_definitions	participates in	textual definition	Participates in is a primitive instance-level relation between a continuant and a process in which it participates. For example a scanner participates in a scanning process at some specific time.
-ERROR	multiple_definitions	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+ERROR	multiple_definitions	participates_in	textual definition	Participates in is a primitive instance-level relation between a continuant and a process in which it participates. For example a scanner participates in a scanning process at some specific time.
+ERROR	multiple_definitions	participates_in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	has participant	textual definition	Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the A continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.
 ERROR	multiple_definitions	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 ERROR	multiple_definitions	overlaps	textual definition	A overlaps B if they share some part in common.
@@ -382,8 +382,8 @@ ERROR	multiple_labels	inheres in	label	inheres in@en
 ERROR	multiple_labels	inheres in	label	inheres_in
 ERROR	multiple_labels	has characteristic	label	bearer of@en
 ERROR	multiple_labels	has characteristic	label	has characteristic@en
-ERROR	multiple_labels	participates in	label	participates in@en
-ERROR	multiple_labels	participates in	label	participates_in
+ERROR	multiple_labels	participates_in	label	participates in@en
+ERROR	multiple_labels	participates_in	label	participates_in
 ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	has participant	label	has_participant
 ERROR	multiple_labels	has quality	label	has quality
@@ -3263,7 +3263,7 @@ INFO	lowercase_definition	epithermal neutron	textual definition	a neutron with e
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	has characteristic	textual definition	a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
-INFO	lowercase_definition	participates in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+INFO	lowercase_definition	participates_in	textual definition	a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	has participant	textual definition	a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
 INFO	lowercase_definition	function of	textual definition	a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
 INFO	lowercase_definition	quality of	textual definition	a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en

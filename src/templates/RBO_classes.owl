@@ -184,6 +184,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_01001406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001406"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/ENVO_01001488 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_01001488"/>
@@ -3736,7 +3742,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00010035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010038"/>
         <obo:IAO_0000115>An 320 kV x-ray source.</obo:IAO_0000115>
         <obo:IAO_0000119>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000119>
         <rdfs:label>x-rad320</rdfs:label>
@@ -3747,7 +3753,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00010036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010038"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
         <obo:IAO_0000115>A source of gamma irradiation.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</obo:IAO_0000119>
         <rdfs:label>gammacell 40</rdfs:label>
@@ -3771,6 +3777,26 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001138"/>
         <obo:IAO_0000115>An x-ray source operating at a voltage of 320 kV.</obo:IAO_0000115>
         <rdfs:label>320 kV x-ray device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001406"/>
+        <obo:IAO_0000115>A facility designed and constructed so as to minimize exposure to natural background radiation.</obo:IAO_0000115>
+        <rdfs:label>low background facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010039"/>
+        <obo:IAO_0000115>A facility located below the earth&apos;s surface in order to minimize natural background radiation</obo:IAO_0000115>
+        <rdfs:label>underground low background radiation laboratory</rdfs:label>
     </owl:Class>
     
 

@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-07-02"
+        "val" : "2025-07-03"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-07-02/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-07-03/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
@@ -73,6 +73,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001023",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ENVO_01001406",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001488",
@@ -4618,6 +4621,24 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010039",
+      "lbl" : "low background facility",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A facility designed and constructed so as to minimize exposure to natural background radiation."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010040",
+      "lbl" : "underground low background radiation laboratory",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A facility located below the earth's surface in order to minimize natural background radiation"
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "lbl" : "radiation",
       "type" : "CLASS",
@@ -6331,6 +6352,42 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005082",
+      "lbl" : "Deep Underground Low Radiation Background Laboratory",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "An instance of an underground low background radiation laboratory located near the Baksan Neutrino Laboratory"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "DULB-4900"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "https://plos.figshare.com/articles/dataset/Components_of_radiation_background_in_DULB-4900_and_the_ground_laboratory_in_the_institute_building_of_BNO_INR_RAS_/15117918"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005083",
+      "lbl" : "Baksan Neutrino Observatory",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "An instance of an underground low background radiation laboratory"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "BNO"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "https://doi.org/10.1016/j.nima.2013.07.090"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005084",
+      "lbl" : "Mark 1 model 68A gamma irradiator at ARC",
+      "type" : "INDIVIDUAL"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -7754,11 +7811,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010035",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010038"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010036",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00010038"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00005039"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010037",
       "pred" : "is_a",
@@ -7767,6 +7824,14 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010038",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010039",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_01001406"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010040",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010039"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",
@@ -8187,6 +8252,18 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005081",
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00000121"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005082",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005083",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005084",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00005039"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010021",
       "pred" : "type",
