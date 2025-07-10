@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-05-30"
+        "val" : "2025-07-03"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-05-30/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-07-03/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
@@ -75,6 +75,9 @@
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001023",
       "type" : "CLASS"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/ENVO_01001406",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01001488",
       "type" : "CLASS"
     }, {
@@ -121,6 +124,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0002983",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0302889",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0000025",
@@ -4411,19 +4417,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/RBO_00010021",
-      "lbl" : "radon dosimeter",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit)."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "radon detector"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010022",
       "lbl" : "active radon dosimeter",
       "type" : "CLASS",
@@ -4545,6 +4538,9 @@
           "val" : "A nuclear reactor primarily used to generate and supply power."
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This conceptualization of nuclear power reactor emphasizes its role as a radiation source.  For use to emphasize its roles in energy production, recommend use of identically named concept ENVO:02000137"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "power reactor"
         } ]
@@ -4565,6 +4561,81 @@
       "meta" : {
         "definition" : {
           "val" : "A nuclear reactor used for more than one purpose."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010034",
+      "lbl" : "faxitron CP160",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An 160 kV x-ray source."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "doi: 10.2349/biij.2.1.e1"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010035",
+      "lbl" : "x-rad320",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An 320 kV x-ray source."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "https://precisionxray.com/x-rad/xrad-320/"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010036",
+      "lbl" : "gammacell 40",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A source of gamma irradiation."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010037",
+      "lbl" : "160 kV x-ray device",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An x-ray source operating at a voltage of 160 kV."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010038",
+      "lbl" : "320 kV x-ray device",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An x-ray source operating at a voltage of 320 kV."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010039",
+      "lbl" : "low background facility",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A facility designed and constructed so as to minimize exposure to natural background radiation."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010040",
+      "lbl" : "underground low background radiation laboratory",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A facility located below the earth's surface in order to minimize natural background radiation"
         }
       }
     }, {
@@ -5797,6 +5868,19 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010021",
+      "lbl" : "radon dosimeter",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit)."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "radon detector"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00000025",
       "lbl" : "NSRL Galactic Cosmic Ray Simulation",
       "type" : "INDIVIDUAL",
@@ -6180,7 +6264,11 @@
       "meta" : {
         "definition" : {
           "val" : "http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005075",
@@ -6224,8 +6312,15 @@
       "type" : "INDIVIDUAL",
       "meta" : {
         "definition" : {
-          "val" : "doi: 10.2349/biij.2.1.e1"
-        }
+          "val" : "A specific instance of Faxitron CP160 x-ray source. "
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : " doi: 10.2349/biij.2.1.e1"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005080",
@@ -6233,9 +6328,65 @@
       "type" : "INDIVIDUAL",
       "meta" : {
         "definition" : {
+          "val" : "A specific instance of an X-Rad320 x-ray source. "
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "https://precisionxray.com/x-rad/xrad-320/"
-        }
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005081",
+      "lbl" : "Brookhaven National Laboratory Alternating Gradient Synchrotron",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "A particle accelerator located at Brookhaven National Laboratory, Upton, NY, capable of delivering protons and heavier ions at energies between several hundred MeV/nucleon and several GeV/nucleon."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "BNL AGS"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005082",
+      "lbl" : "Deep Underground Low Radiation Background Laboratory",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "An instance of an underground low background radiation laboratory located near the Baksan Neutrino Laboratory"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "DULB-4900"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "https://plos.figshare.com/articles/dataset/Components_of_radiation_background_in_DULB-4900_and_the_ground_laboratory_in_the_institute_building_of_BNO_INR_RAS_/15117918"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005083",
+      "lbl" : "Baksan Neutrino Observatory",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "An instance of an underground low background radiation laboratory"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "BNO"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "https://doi.org/10.1016/j.nima.2013.07.090"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005084",
+      "lbl" : "Mark 1 model 68A gamma irradiator at ARC",
+      "type" : "INDIVIDUAL"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
       "type" : "PROPERTY",
@@ -7606,10 +7757,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0001018"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00010021",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00000115"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010022",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00000011"
@@ -7657,6 +7804,34 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010033",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00000122"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010034",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010037"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010035",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010038"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010036",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00005039"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010037",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010038",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010039",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_01001406"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010040",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010039"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",
@@ -8036,7 +8211,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000056",
       "pred" : "type",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00000122"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010030"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000057",
       "pred" : "type",
@@ -8068,11 +8243,31 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005079",
       "pred" : "type",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010034"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005080",
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0001138"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005081",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000121"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005082",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005083",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005084",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00005039"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010021",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0302889"
     } ],
     "domainRangeAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002404",
