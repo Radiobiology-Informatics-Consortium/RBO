@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-07-03"
+        "val" : "2025-07-10"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-07-03/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-07-10/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
@@ -3930,10 +3930,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "mGy/sec"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005067",
@@ -5423,10 +5421,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010001",
@@ -5445,10 +5441,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010002",
@@ -5467,10 +5461,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010003",
@@ -5489,10 +5481,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010006",
@@ -5518,10 +5508,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010007",
@@ -5540,10 +5528,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010008",
@@ -5559,10 +5545,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010009",
@@ -5581,10 +5565,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010010",
@@ -5603,10 +5585,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010011",
@@ -5625,10 +5605,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010012",
@@ -5644,10 +5622,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010013",
@@ -5673,10 +5649,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010014",
@@ -5695,10 +5669,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010015",
@@ -5717,10 +5689,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010016",
@@ -5739,10 +5709,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010017",
@@ -5761,10 +5729,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf) and see https://melodi-online.eu/wp-content/uploads/2021/04/02-What-is-radiation-quality-Goodhead.pdf"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010018",
@@ -5783,10 +5749,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010019",
@@ -5812,10 +5776,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010020",
@@ -5834,10 +5796,8 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/UBERON_0000000",
@@ -6265,10 +6225,7 @@
         "definition" : {
           "val" : "http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005075",
@@ -6317,10 +6274,8 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : " doi: 10.2349/biij.2.1.e1"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005080",
@@ -6333,10 +6288,8 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "https://precisionxray.com/x-rad/xrad-320/"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005081",
