@@ -419,7 +419,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
         <obo:IAO_0000115>http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</obo:IAO_0000115>
         <rdfs:label>Gammacell 40</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     
 
@@ -471,7 +471,7 @@
         <obo:IAO_0000115>A specific instance of Faxitron CP160 x-ray source. </obo:IAO_0000115>
         <obo:IAO_0000119> doi: 10.2349/biij.2.1.e1</obo:IAO_0000119>
         <rdfs:label>Faxitron CP160</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     
 
@@ -483,7 +483,7 @@
         <obo:IAO_0000115>A specific instance of an X-Rad320 x-ray source. </obo:IAO_0000115>
         <obo:IAO_0000119>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000119>
         <rdfs:label>X-Rad320</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     
 

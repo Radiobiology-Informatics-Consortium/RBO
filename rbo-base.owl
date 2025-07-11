@@ -13,12 +13,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-07-03/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-07-10/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2025-07-03</owl:versionInfo>
+        <owl:versionInfo>2025-07-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3693,7 +3693,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>mGy/sec</obo:IAO_0000118>
         <oboInOwl:hasDbXref>UO:0010065</oboInOwl:hasDbXref>
         <rdfs:label>miligray per second</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4890,7 +4890,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>ALARA</oboInOwl:hasExactSynonym>
         <rdfs:label>as low as reasonably achievable</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4904,7 +4904,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation attenuation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4918,7 +4918,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>biodosimetry</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4932,7 +4932,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>bystander effect</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4948,7 +4948,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>delta electron</oboInOwl:hasExactSynonym>
         <rdfs:label>delta ray</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4962,7 +4962,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>dose equivalent</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4975,7 +4975,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>excess lifetime risk of cancer</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4989,7 +4989,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>fast neutron</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5003,7 +5003,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>fluence</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5017,7 +5017,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>flux</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5031,7 +5031,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>heavy ion</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5047,7 +5047,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>LET</oboInOwl:hasExactSynonym>
         <rdfs:label>linear energy transfer</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5061,7 +5061,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>organ dose</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5075,7 +5075,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>quality factor</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5089,7 +5089,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A measurement datum of the quantity of radiation absorbed by a substance or organism. The term &quot;radiation dose&quot; may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>radiation dose</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5103,7 +5103,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf) and see https://melodi-online.eu/wp-content/uploads/2021/04/02-What-is-radiation-quality-Goodhead.pdf</obo:IAO_0000119>
         <rdfs:label>radiation quality</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5117,7 +5117,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation weighting factor</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5133,7 +5133,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>RBE</oboInOwl:hasExactSynonym>
         <rdfs:label>relative biological effectiveness</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5147,7 +5147,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>tissue equivalence</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5441,7 +5441,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00005039"/>
         <obo:IAO_0000115>http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf</obo:IAO_0000115>
         <rdfs:label>Gammacell 40</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     
 
@@ -5493,7 +5493,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A specific instance of Faxitron CP160 x-ray source. </obo:IAO_0000115>
         <obo:IAO_0000119> doi: 10.2349/biij.2.1.e1</obo:IAO_0000119>
         <rdfs:label>Faxitron CP160</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     
 
@@ -5505,7 +5505,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A specific instance of an X-Rad320 x-ray source. </obo:IAO_0000115>
         <obo:IAO_0000119>https://precisionxray.com/x-rad/xrad-320/</obo:IAO_0000119>
         <rdfs:label>X-Rad320</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
     
 
