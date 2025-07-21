@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-07-10"
+        "val" : "2025-07-21"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-07-10/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-07-21/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
@@ -3930,8 +3930,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "mGy/sec"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005067",
@@ -4634,6 +4636,60 @@
       "meta" : {
         "definition" : {
           "val" : "A facility located below the earth's surface in order to minimize natural background radiation"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010041",
+      "lbl" : "radiation shielding",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An energy transfer process in which radiation intensity is reduced by modifying the composition, and/or energy of incident radiation."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010042",
+      "lbl" : "active radiation shielding",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Radiation shielding that require using an external power or energy source, such as an electrostatic or electromagnetic field."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010043",
+      "lbl" : "passive radiatin shielding role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The role of materials used in radiation shielding such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010044",
+      "lbl" : "radiation intensity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The power per unit solid angle delivered by radiation incident on a given location."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010045",
+      "lbl" : "radiation shielding role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The role of a material in reducing radiation intensity by modifying the composition, and/or energy of incident radiation."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010046",
+      "lbl" : "passive radiatin shielding",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Radiation shielding using materials such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"
         }
       }
     }, {
@@ -5421,8 +5477,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010001",
@@ -5441,8 +5499,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010002",
@@ -5461,8 +5521,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010003",
@@ -5481,8 +5543,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010006",
@@ -5508,8 +5572,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010007",
@@ -5528,8 +5594,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010008",
@@ -5545,8 +5613,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010009",
@@ -5565,8 +5635,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010010",
@@ -5585,8 +5657,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010011",
@@ -5605,8 +5679,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010012",
@@ -5622,8 +5698,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010013",
@@ -5649,8 +5727,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010014",
@@ -5669,8 +5749,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010015",
@@ -5689,8 +5771,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010016",
@@ -5709,8 +5793,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010017",
@@ -5729,8 +5815,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf) and see https://melodi-online.eu/wp-content/uploads/2021/04/02-What-is-radiation-quality-Goodhead.pdf"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010018",
@@ -5749,8 +5837,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010019",
@@ -5776,8 +5866,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010020",
@@ -5796,8 +5888,10 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
-        } ],
-        "deprecated" : true
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/UBERON_0000000",
@@ -7785,6 +7879,34 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010040",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00010039"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010041",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_01001852"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010042",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010045"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010043",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010045"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010044",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001018"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010045",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010045",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_50906"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010046",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010041"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",

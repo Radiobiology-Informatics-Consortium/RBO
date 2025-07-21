@@ -1,30 +1,40 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	miligray per second	rdfs:subClassOf	UO:0000129
-ERROR	deprecated_class_reference	as low as reasonably achievable	rdfs:subClassOf	IAO:0000104
-ERROR	deprecated_class_reference	radiation attenuation	rdfs:subClassOf	BFO:0000182
-ERROR	deprecated_class_reference	biodosimetry	rdfs:subClassOf	CHMO:0002796
-ERROR	deprecated_class_reference	bystander effect	rdfs:subClassOf	non-targeted effects of ionising radiation
-ERROR	deprecated_class_reference	delta ray	rdfs:subClassOf	charged particle radiation
-ERROR	deprecated_class_reference	dose equivalent	rdfs:subClassOf	radiation dose
-ERROR	deprecated_class_reference	excess lifetime risk of cancer	rdfs:subClassOf	lifetime risk estimate
-ERROR	deprecated_class_reference	fast neutron	rdfs:subClassOf	neutral particle radiation
-ERROR	deprecated_class_reference	fluence	rdfs:subClassOf	IAO:0000109
-ERROR	deprecated_class_reference	flux	rdfs:subClassOf	IAO:0000109
-ERROR	deprecated_class_reference	heavy ion	rdfs:subClassOf	CHEBI:33252
-ERROR	deprecated_class_reference	heavy ion	rdfs:subClassOf	charged particle
-ERROR	deprecated_class_reference	linear energy transfer	rdfs:subClassOf	IAO:0000109
-ERROR	deprecated_class_reference	organ dose	rdfs:subClassOf	radiation dose
-ERROR	deprecated_class_reference	quality factor	rdfs:subClassOf	OBI:0001909
-ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	OBI:0000984
-ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	absorbed radiation dose
-ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	nanodosimetric measurement datum
-ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	specific energy measurement datum
-ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	microdosimetric measurement datum
-ERROR	deprecated_class_reference	radiation quality	rdfs:subClassOf	PATO:0001018
-ERROR	deprecated_class_reference	radiation weighting factor	rdfs:subClassOf	OBI:0001909
-ERROR	deprecated_class_reference	relative biological effectiveness	rdfs:subClassOf	IAO:0000109
-ERROR	deprecated_class_reference	tissue equivalence	rdfs:subClassOf	PATO:0001018
-ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	radiation dose
+ERROR	duplicate_definition	biodosimetry	IAO:0000115	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
+ERROR	duplicate_definition	biodosimetry	IAO:0000115	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
+ERROR	duplicate_definition	bystander effect	IAO:0000115	The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.
+ERROR	duplicate_definition	bystander effect	IAO:0000115	The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.
+ERROR	duplicate_definition	radiation attenuation	IAO:0000115	The reduction of radiation intensity upon passage of radiation through matter
+ERROR	duplicate_definition	radiation attenuation	IAO:0000115	The reduction of radiation intensity upon passage of radiation through matter
+ERROR	duplicate_definition	flux	IAO:0000115	The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)
+ERROR	duplicate_definition	flux	IAO:0000115	The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)
+ERROR	duplicate_definition	dose equivalent	IAO:0000115	The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)
+ERROR	duplicate_definition	dose equivalent	IAO:0000115	The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)
+ERROR	duplicate_definition	fluence	IAO:0000115	The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2]).
+ERROR	duplicate_definition	fluence	IAO:0000115	The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2]).
+ERROR	duplicate_definition	organ dose	IAO:0000115	The mean absorbed radiation dose in a specified tissue or organ of the human body.
+ERROR	duplicate_definition	organ dose	IAO:0000115	The mean absorbed radiation dose in a specified tissue or organ of the human body.
+ERROR	duplicate_definition	excess lifetime risk of cancer	IAO:0000115	The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included
+ERROR	duplicate_definition	excess lifetime risk of cancer	IAO:0000115	The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included
+ERROR	duplicate_definition	linear energy transfer	IAO:0000115	The energy deposited by an ionizing charged particle or photon in any medium per unit path length.
+ERROR	duplicate_definition	linear energy transfer	IAO:0000115	The energy deposited by an ionizing charged particle or photon in any medium per unit path length.
+ERROR	duplicate_definition	fast neutron	IAO:0000115	Neutrons of energies above a few hundred kiloelectron volts (keV)
+ERROR	duplicate_definition	fast neutron	IAO:0000115	Neutrons of energies above a few hundred kiloelectron volts (keV)
+ERROR	duplicate_definition	delta ray	IAO:0000115	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a
+ERROR	duplicate_definition	delta ray	IAO:0000115	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a
+ERROR	duplicate_definition	relative biological effectiveness	IAO:0000115	Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r
+ERROR	duplicate_definition	relative biological effectiveness	IAO:0000115	Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r
+ERROR	duplicate_definition	quality factor	IAO:0000115	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed
+ERROR	duplicate_definition	quality factor	IAO:0000115	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed
+ERROR	duplicate_definition	tissue equivalence	IAO:0000115	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
+ERROR	duplicate_definition	tissue equivalence	IAO:0000115	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
+ERROR	duplicate_definition	heavy ion	IAO:0000115	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
+ERROR	duplicate_definition	heavy ion	IAO:0000115	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
+ERROR	duplicate_definition	as low as reasonably achievable	IAO:0000115	A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen
+ERROR	duplicate_definition	as low as reasonably achievable	IAO:0000115	A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen
+ERROR	duplicate_definition	radiation dose	IAO:0000115	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
+ERROR	duplicate_definition	radiation dose	IAO:0000115	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
+ERROR	duplicate_definition	radiation weighting factor	IAO:0000115	A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated.
+ERROR	duplicate_definition	radiation weighting factor	IAO:0000115	A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated.
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	tissue equivalence	rdfs:label	tissue equivalence
@@ -129,6 +139,22 @@ WARN	annotation_whitespace	Faxitron CP160	IAO:0000119	 doi: 10.2349/biij.2.1.e1
 WARN	annotation_whitespace	X-Rad320	IAO:0000115	A specific instance of an X-Rad320 x-ray source. 
 WARN	annotation_whitespace	external radiation exposure	IAO:0000112	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	senolytic	IAO:0000115	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
+WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	
+WARN	duplicate_exact_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118	
+WARN	duplicate_exact_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	linear energy transfer	IAO:0000118	
+WARN	duplicate_exact_synonym	linear energy transfer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	linear energy transfer	IAO:0000118	
+WARN	duplicate_exact_synonym	linear energy transfer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	delta ray	IAO:0000118	
+WARN	duplicate_exact_synonym	delta ray	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	delta ray	IAO:0000118	
+WARN	duplicate_exact_synonym	delta ray	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	as low as reasonably achievable	IAO:0000118	
+WARN	duplicate_exact_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	as low as reasonably achievable	IAO:0000118	
+WARN	duplicate_exact_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	
 WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
 WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
 WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
@@ -179,29 +205,9 @@ WARN	missing_definition	SO:0000704	IAO:0000115
 WARN	missing_definition	UBERON:0000000	IAO:0000115	
 WARN	missing_definition	UO:0000127	IAO:0000115	
 WARN	missing_definition	UO:0000160	IAO:0000115	
-WARN	missing_obsolete_label	miligray per second	rdfs:label	miligray per second
 WARN	missing_obsolete_label	Gammacell 40	rdfs:label	Gammacell 40
 WARN	missing_obsolete_label	Faxitron CP160	rdfs:label	Faxitron CP160
 WARN	missing_obsolete_label	X-Rad320	rdfs:label	X-Rad320
-WARN	missing_obsolete_label	as low as reasonably achievable	rdfs:label	as low as reasonably achievable
-WARN	missing_obsolete_label	radiation attenuation	rdfs:label	radiation attenuation
-WARN	missing_obsolete_label	biodosimetry	rdfs:label	biodosimetry
-WARN	missing_obsolete_label	bystander effect	rdfs:label	bystander effect
-WARN	missing_obsolete_label	delta ray	rdfs:label	delta ray
-WARN	missing_obsolete_label	dose equivalent	rdfs:label	dose equivalent
-WARN	missing_obsolete_label	excess lifetime risk of cancer	rdfs:label	excess lifetime risk of cancer
-WARN	missing_obsolete_label	fast neutron	rdfs:label	fast neutron
-WARN	missing_obsolete_label	fluence	rdfs:label	fluence
-WARN	missing_obsolete_label	flux	rdfs:label	flux
-WARN	missing_obsolete_label	heavy ion	rdfs:label	heavy ion
-WARN	missing_obsolete_label	linear energy transfer	rdfs:label	linear energy transfer
-WARN	missing_obsolete_label	organ dose	rdfs:label	organ dose
-WARN	missing_obsolete_label	quality factor	rdfs:label	quality factor
-WARN	missing_obsolete_label	radiation dose	rdfs:label	radiation dose
-WARN	missing_obsolete_label	radiation quality	rdfs:label	radiation quality
-WARN	missing_obsolete_label	radiation weighting factor	rdfs:label	radiation weighting factor
-WARN	missing_obsolete_label	relative biological effectiveness	rdfs:label	relative biological effectiveness
-WARN	missing_obsolete_label	tissue equivalence	rdfs:label	tissue equivalence
 INFO	lowercase_definition	spacecraft module	IAO:0000115	a self-contained unit of a spacecraft
 INFO	lowercase_definition	gamma radiation	IAO:0000115	electromagnetic radiation with photon energies greater than approximately 100 keV
 INFO	lowercase_definition	Gammacell 40	IAO:0000115	http://www.theratronics.ca/PDFs/GC40_BTMB_8008GC40E_2_v112013_webSECURE.pdf
