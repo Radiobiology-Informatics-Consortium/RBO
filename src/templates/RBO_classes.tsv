@@ -391,7 +391,27 @@ obo:RBO_00010039	low background facility				A facility designed and constructed 
 obo:RBO_00010040	underground low background radiation laboratory				A facility located below the earth's surface in order to minimize natural background radiation										obo:RBO_00010039																				
 obo:RBO_00010041	radiation shielding				"An energy transfer process in which radiation intensity is reduced by modifying the composition, and/or energy of incident radiation."										ENVO:01001852																				
 obo:RBO_00010042	active radiation shielding				"Radiation shielding that require using an external power or energy source, such as an electrostatic or electromagnetic field."										obo:RBO_00010045																				
-obo:RBO_00010043	passive radiatin shielding role				"The role of materials used in radiation shielding such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"										obo:RBO_00010045																				
+obo:RBO_00010043	passive radiation shielding role				"The role of materials used in radiation shielding such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"										obo:RBO_00010045																				
 obo:RBO_00010044	radiation intensity				The power per unit solid angle delivered by radiation incident on a given location.										PATO:0001018																				
 obo:RBO_00010045	radiation shielding role				"The role of a material in reducing radiation intensity by modifying the composition, and/or energy of incident radiation."										BFO:0000023																				
-obo:RBO_00010046	passive radiatin shielding				"Radiation shielding using materials such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"										obo:RBO_00010041																				
+obo:RBO_00010046	passive radiation shielding				"Radiation shielding using materials such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"										obo:RBO_00010041																				
+obo:RBO_00010047	acute radiation syndrome			"acute radiation sickness, ARS"	"A serious human disease that occurs when the entire body (or a large portion of it) is exposed to a high dose of penetrating radiation—typically more than 1 Gray (Gy)—over a short period (minutes to hours).
+
+Key features:
+
+Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fatigue.
+
+Latent Phase (hours to weeks): Apparent improvement or absence of symptoms.
+
+Manifest Illness Phase: Depending on dose, damage to rapidly dividing cells leads to one or more syndromes:
+
+Hematopoietic syndrome (1–10 Gy): Bone marrow failure, infection, bleeding.
+
+Gastrointestinal syndrome (5–20 Gy): Severe GI tract damage, fluid loss, sepsis.
+
+Neurovascular syndrome (?20 Gy): Neurological impairment, confusion, convulsions; usually fatal within days.
+
+Recovery or Death: If dose is survivable and supportive care is provided, recovery can occur over weeks to months; higher doses carry a poor prognosis."	"Dainiak, N., & Albanese, J. (2022). Medical management of acute radiation syndrome. Journal of radiological protection : official journal of the Society for Radiological Protection, 42(3), 10.1088/1361-6498/ac7d18. https://doi.org/10.1088/1361-6498/ac7d18. https://www.icrpaedia.org/Acute_radiation_syndrome"									http://purl.obolibrary.org/obo/DOID_4																				
+obo:RBO_00010048	anthropogenic radiation environment				An environment in which there is human-created radiation.			"Includes terrestrial and non-terrestrial environments. Includes environments created for investigations, and those used for other purposes including those created by humans for habitation, manufacture, storage, clinical practice and transport. Will include mines and other environments actively created by humans by the manipulation of natural materials"							RBO:00000016																				
+obo:RBO_00010049	natural radiation environment				A radiation environment resulting from natural processes.										RBO:00000016																				
+obo:RBO_00010050	earth subsurface radiation environment														obo:RBO_00000016																				
