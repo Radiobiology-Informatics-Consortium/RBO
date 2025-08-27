@@ -52,6 +52,7 @@ imports/envo_import.owl: mirror/envo.owl imports/envo_terms_combined.txt
 		remove -t "http://purl.obolibrary.org/obo/RO_0002507" -t "http://purl.obolibrary.org/obo/RO_0002508" \
 		remove -t "ENVO:02500000" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
 		remove -t "ENVO:09200002" -t BFO:0000001 --trim false --axioms subclass --signature true --preserve-structure false\
+		remove -t "rf:type" \
 		remove -t "ENVO:01001174"  --select self --trim true --signature true --preserve-structure false\
 		remove -t "http://purl.obolibrary.org/obo/PATO_0001739" -t "IAO:0000115" --axioms annotation --trim false --signature true \
     query --update ../sparql/inject-subset-declaration.ru \
