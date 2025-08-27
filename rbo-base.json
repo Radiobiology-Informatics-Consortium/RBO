@@ -16,11 +16,14 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-07-21"
+        "val" : "2025-08-27"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-07-21/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-08-27/rbo-base.json"
     },
     "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000003",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
       "type" : "CLASS"
     }, {
@@ -61,6 +64,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/COB_0001300",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/DOID_4",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_01000254",
@@ -3366,6 +3372,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -3382,6 +3391,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -3398,6 +3410,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -3414,6 +3429,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -3430,6 +3448,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -3446,6 +3467,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -3462,6 +3486,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -3478,6 +3505,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -4658,7 +4688,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010043",
-      "lbl" : "passive radiatin shielding role",
+      "lbl" : "passive radiation shielding role",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -4685,13 +4715,55 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010046",
-      "lbl" : "passive radiatin shielding",
+      "lbl" : "passive radiation shielding",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
           "val" : "Radiation shielding using materials such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"
         }
       }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010047",
+      "lbl" : "acute radiation syndrome",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A serious human disease that occurs when the entire body (or a large portion of it) is exposed to a high dose of penetrating radiation�typically more than 1 Gray (Gy)�over a short period (minutes to hours).\n\nKey features:\n\nProdromal Phase (hours to days): Nausea, vomiting, diarrhoea, fatigue.\n\nLatent Phase (hours to weeks): Apparent improvement or absence of symptoms.\n\nManifest Illness Phase: Depending on dose, damage to rapidly dividing cells leads to one or more syndromes:\n\nHematopoietic syndrome (1�10 Gy): Bone marrow failure, infection, bleeding.\n\nGastrointestinal syndrome (5�20 Gy): Severe GI tract damage, fluid loss, sepsis.\n\nNeurovascular syndrome (?20 Gy): Neurological impairment, confusion, convulsions; usually fatal within days.\n\nRecovery or Death: If dose is survivable and supportive care is provided, recovery can occur over weeks to months; higher doses carry a poor prognosis."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "acute radiation sickness, ARS"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Dainiak, N., & Albanese, J. (2022). Medical management of acute radiation syndrome. Journal of radiological protection : official journal of the Society for Radiological Protection, 42(3), 10.1088/1361-6498/ac7d18. https://doi.org/10.1088/1361-6498/ac7d18. https://www.icrpaedia.org/Acute_radiation_syndrome"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010048",
+      "lbl" : "anthropogenic radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An environment in which there is human-created radiation."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Includes terrestrial and non-terrestrial environments. Includes environments created for investigations, and those used for other purposes including those created by humans for habitation, manufacture, storage, clinical practice and transport. Will include mines and other environments actively created by humans by the manipulation of natural materials"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010049",
+      "lbl" : "natural radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A radiation environment resulting from natural processes."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010050",
+      "lbl" : "earth subsurface radiation environment",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "lbl" : "radiation",
@@ -7458,6 +7530,10 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
       "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
+      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/ENVO_02500041"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
@@ -7907,6 +7983,22 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010046",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00010041"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010047",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/DOID_4"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010048",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010049",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010050",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",

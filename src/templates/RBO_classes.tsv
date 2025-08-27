@@ -136,14 +136,14 @@ obo:RBO_00005013	x-ray radiation	x-ray		x-ray	Electromagnetic radiation with pho
 obo:RBO_00005014	radiation source				A material entity which emits radiation				Jack Miller						material entity																				
 obo:RBO_00005015	sham irradiation	sham irradiation		sham	"Sham irradiation refers to a procedure in which participants or subjects in an experiment are exposed to simulated radiation, mimicking precisely the conditions of actual irradiation. The purpose of using sham irradiation is to create a control group that experiences the non-specific effects of the experimental setup, while excluding the specific effects associated with radiation exposure."				Jack Miller						obo:OBI_0000272																				
 obo:RBO_00005016	radiation fractionation protocol	fractionation protocol		fractionation protocol	A protocol for administering a total radiation dose in two or more increments separated by a specified time interval				Jack Miller						obo:IAO_0000104																				
-obo:RBO_00005017	cis-lunar space	cis-lunar space			The region of space between the Earth and the Moon				Jack Miller						obo:RBO_00000016																				
-obo:RBO_00005018	lunar orbit	lunar orbit			"A region of space defined by a regular, repeating path of a specified object about Earth's moon"				Jack Miller						obo:RBO_00000016																				
-obo:RBO_00005019	lunar surface	lunar surface			The area of the lunar landmass exposed to space				Jack Miller						obo:RBO_00000016																				
-obo:RBO_00005020	cis-mars space	cis-Mars space			The region of space between the Earth and Mars				Jack Miller						obo:RBO_00000016																				
-obo:RBO_00005021	mars orbit	Mars orbit			"A region of space defined by a regular, repeating path of a specified object about Mars"				Jack Miller						obo:RBO_00000016																				
-obo:RBO_00005022	mars surface	Mars surface			The area of the Mars landmass exposed to the Martian atmosphere				Jack Miller						obo:RBO_00000016																				
-obo:RBO_00005023	interplanetary space	interplanetary space			The region of space in the Solar System between planets				Jack Miller						obo:RBO_00000016																				
-obo:RBO_00005024	planet surface	planet surface			The outermost solid or liquid area of a planet				Jack Miller						obo:RBO_00000016																				
+obo:RBO_00005017	cis-lunar space	cis-lunar space			The region of space between the Earth and the Moon				Jack Miller						obo:RBO_00000016						TRUE														
+obo:RBO_00005018	lunar orbit	lunar orbit			"A region of space defined by a regular, repeating path of a specified object about Earth's moon"				Jack Miller						obo:RBO_00000016						TRUE														
+obo:RBO_00005019	lunar surface	lunar surface			The area of the lunar landmass exposed to space				Jack Miller						obo:RBO_00000016						TRUE														
+obo:RBO_00005020	cis-mars space	cis-Mars space			The region of space between the Earth and Mars				Jack Miller						obo:RBO_00000016						TRUE														
+obo:RBO_00005021	mars orbit	Mars orbit			"A region of space defined by a regular, repeating path of a specified object about Mars"				Jack Miller						obo:RBO_00000016						TRUE														
+obo:RBO_00005022	mars surface	Mars surface			The area of the Mars landmass exposed to the Martian atmosphere				Jack Miller						obo:RBO_00000016						TRUE														
+obo:RBO_00005023	interplanetary space	interplanetary space			The region of space in the Solar System between planets				Jack Miller						obo:RBO_00000016						TRUE														
+obo:RBO_00005024	planet surface	planet surface			The outermost solid or liquid area of a planet				Jack Miller						obo:RBO_00000016						TRUE														
 obo:RBO_00005025	non-irradiated	non-irradiated			"An organism or material entity kept unexposed to radiation, for purposes of comparison to a similar organism or material entity that has been exposed to radiation"				Jack Miller						PATO:0001241																				
 obo:RBO_00005026	ground analog study	ground analog experiment		ground analog	"A study at a ground facility designed so as to replicate one or more conditions in space (e.g. radiation, microgravity, isolation)"				Jack Miller						obo:RBO_00000082																				
 obo:RBO_00005027	ground control study	ground control		ground control	"An study at a ground facility designed so as to replicate conditions in space (e.g. radiation, microgravity, isolation) with the exception of one condition, so as to ascertain the effects of that condition on an organism or instrument"				Jack Miller						obo:RBO_00000082																				
@@ -391,7 +391,27 @@ obo:RBO_00010039	low background facility				A facility designed and constructed 
 obo:RBO_00010040	underground low background radiation laboratory				A facility located below the earth's surface in order to minimize natural background radiation										obo:RBO_00010039																				
 obo:RBO_00010041	radiation shielding				"An energy transfer process in which radiation intensity is reduced by modifying the composition, and/or energy of incident radiation."										ENVO:01001852																				
 obo:RBO_00010042	active radiation shielding				"Radiation shielding that require using an external power or energy source, such as an electrostatic or electromagnetic field."										obo:RBO_00010045																				
-obo:RBO_00010043	passive radiatin shielding role				"The role of materials used in radiation shielding such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"										obo:RBO_00010045																				
+obo:RBO_00010043	passive radiation shielding role				"The role of materials used in radiation shielding such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"										obo:RBO_00010045																				
 obo:RBO_00010044	radiation intensity				The power per unit solid angle delivered by radiation incident on a given location.										PATO:0001018																				
 obo:RBO_00010045	radiation shielding role				"The role of a material in reducing radiation intensity by modifying the composition, and/or energy of incident radiation."										BFO:0000023																				
-obo:RBO_00010046	passive radiatin shielding				"Radiation shielding using materials such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"										obo:RBO_00010041																				
+obo:RBO_00010046	passive radiation shielding				"Radiation shielding using materials such as concrete, lead, or polyethylene, with no requirement for external power or operator intervention"										obo:RBO_00010041																				
+obo:RBO_00010047	acute radiation syndrome			"acute radiation sickness, ARS"	"A serious human disease that occurs when the entire body (or a large portion of it) is exposed to a high dose of penetrating radiation—typically more than 1 Gray (Gy)—over a short period (minutes to hours).
+
+Key features:
+
+Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fatigue.
+
+Latent Phase (hours to weeks): Apparent improvement or absence of symptoms.
+
+Manifest Illness Phase: Depending on dose, damage to rapidly dividing cells leads to one or more syndromes:
+
+Hematopoietic syndrome (1–10 Gy): Bone marrow failure, infection, bleeding.
+
+Gastrointestinal syndrome (5–20 Gy): Severe GI tract damage, fluid loss, sepsis.
+
+Neurovascular syndrome (?20 Gy): Neurological impairment, confusion, convulsions; usually fatal within days.
+
+Recovery or Death: If dose is survivable and supportive care is provided, recovery can occur over weeks to months; higher doses carry a poor prognosis."	"Dainiak, N., & Albanese, J. (2022). Medical management of acute radiation syndrome. Journal of radiological protection : official journal of the Society for Radiological Protection, 42(3), 10.1088/1361-6498/ac7d18. https://doi.org/10.1088/1361-6498/ac7d18. https://www.icrpaedia.org/Acute_radiation_syndrome"									http://purl.obolibrary.org/obo/DOID_4																				
+obo:RBO_00010048	anthropogenic radiation environment				An environment in which there is human-created radiation.			"Includes terrestrial and non-terrestrial environments. Includes environments created for investigations, and those used for other purposes including those created by humans for habitation, manufacture, storage, clinical practice and transport. Will include mines and other environments actively created by humans by the manipulation of natural materials"							RBO:00000016																				
+obo:RBO_00010049	natural radiation environment				A radiation environment resulting from natural processes.										RBO:00000016																				
+obo:RBO_00010050	earth subsurface radiation environment														obo:RBO_00000016																				

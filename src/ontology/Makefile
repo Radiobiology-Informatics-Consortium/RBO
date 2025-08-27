@@ -465,9 +465,9 @@ $(COMPONENTSDIR)/%.owl: | $(COMPONENTSDIR)
 # Mirroring upstream ontologies
 # ----------------------------------------
 
-IMP=true # Global parameter to bypass import generation
-MIR=true # Global parameter to bypass mirror generation
-IMP_LARGE=true # Global parameter to bypass handling of large imports
+IMP=false # Global parameter to bypass import generation
+MIR=false # Global parameter to bypass mirror generation
+IMP_LARGE=false # Global parameter to bypass handling of large imports
 
 ifeq ($(strip $(MIR)),true)
 
