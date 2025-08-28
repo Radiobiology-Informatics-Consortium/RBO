@@ -37,6 +37,7 @@ import_group:
     mirror_from: https://github.com/obophenotype/uberon/releases/download/v2023-02-14/uberon.owl
   - id: cob
     module_type: custom
+  - id: slso
   - id: go
     use_gzipped: FALSE
     is_large: TRUE

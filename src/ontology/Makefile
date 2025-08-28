@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                3b63bc1503d827c8a3a569aefc4e9cf24e528b4ffc0992a1fcb244be0a6fb5e4
+CONFIG_HASH=                acdac552bd105c9a4b3867457f885d2b41d2fe1dd5c8cd666ef17b3b34698056
 
 
 # ----------------------------------------
@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro bfo chebi pato chmo envo pco obi uo doid uberon cob go efo ncbitaxon
+IMPORTS =  ro bfo chebi pato chmo envo pco obi uo doid uberon cob slso go efo ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -465,7 +465,7 @@ $(COMPONENTSDIR)/%.owl: | $(COMPONENTSDIR)
 # Mirroring upstream ontologies
 # ----------------------------------------
 
-IMP=false # Global parameter to bypass import generation
+IMP=true # Global parameter to bypass import generation
 MIR=false # Global parameter to bypass mirror generation
 IMP_LARGE=false # Global parameter to bypass handling of large imports
 
@@ -568,6 +568,14 @@ mirror-uberon: | $(TMPDIR)
 mirror-cob: | $(TMPDIR)
 	curl -L $(OBOBASE)/cob.owl --create-dirs -o $(TMPDIR)/cob-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/cob-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: slso
+.PHONY: mirror-slso
+.PRECIOUS: $(MIRRORDIR)/slso.owl
+mirror-slso: | $(TMPDIR)
+	curl -L $(OBOBASE)/slso.owl --create-dirs -o $(TMPDIR)/slso-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/slso-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: go
