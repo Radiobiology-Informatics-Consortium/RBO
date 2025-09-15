@@ -11,8 +11,8 @@ obo:RBO_00000013	ionizing background radiation				"The amount of ionizing radiat
 obo:RBO_00000014	effective dose				"The sum of the equivalent doses to all organs in the body, each adjusted to account for the sensitivity of the organ to radiation. Effective dose is calculated for the whole body. Effective dose is expressed in millisieverts (mSv)."		The effective dose was calculated to be 300 mSv.								radiation dose																				
 obo:RBO_00000015	mixed radiation				"The process of exposing the same sample to more than one type and/or energy of radiation, in sequence or simultaneously."		The samples were exposed to a mixed radiation field consisting of several ions at different energies.								particle accelerator radiation	mixed field|mixed radiation field																			
 obo:RBO_00000016	radiation environment				An environment the occupation of which results in exposure to radiation.										ENVO:01000254																				
-obo:RBO_00000017	earth surface				That part of the Earth exposed to the Earth atmosphere.										radiation environment																				
-obo:RBO_00000018	earth atmosphere				The region between the Earth's surface and an altitude of approximately 100 km										radiation environment																				
+obo:RBO_00000017	earth surface				That part of the Earth exposed to the Earth atmosphere.										radiation environment						TRUE														
+obo:RBO_00000018	earth atmosphere				The region between the Earth's surface and an altitude of approximately 100 km										radiation environment						TRUE														
 obo:RBO_00000019	low earth orbit	LEO			The region of outer space between the Earth's atmosphere and the innermost Earth radiation belt										ENVO:01000637	LEO																			
 obo:RBO_00000020	beyond low earth orbit	BLEO			That part of outer space beyond the Earth's radiation belts.										ENVO:01000637	BLEO																			
 obo:RBO_00000021	fractionated radiation exposure	fractionated			A radiation dose administered in two or more exposures at specified time intervals										obo:RBO_00002000																				
@@ -415,3 +415,5 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
 obo:RBO_00010048	anthropogenic radiation environment				An environment in which there is human-created radiation.			"Includes terrestrial and non-terrestrial environments. Includes environments created for investigations, and those used for other purposes including those created by humans for habitation, manufacture, storage, clinical practice and transport. Will include mines and other environments actively created by humans by the manipulation of natural materials"							RBO:00000016																				
 obo:RBO_00010049	natural radiation environment				A radiation environment resulting from natural processes.										RBO:00000016																				
 obo:RBO_00010050	earth subsurface radiation environment														obo:RBO_00000016																				
+obo:RBO_00010051	earth surface radiation environment														radiation environment																				
+obo:RBO_00010052	earth atmosphere radiation environment														radiation environment																				
