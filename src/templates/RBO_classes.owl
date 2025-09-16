@@ -467,6 +467,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>That part of the Earth exposed to the Earth atmosphere.</obo:IAO_0000115>
         <rdfs:label>earth surface</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -477,6 +478,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>The region between the Earth&apos;s surface and an altitude of approximately 100 km</obo:IAO_0000115>
         <rdfs:label>earth atmosphere</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3933,6 +3935,24 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00010051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <rdfs:label>earth surface radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <rdfs:label>earth atmosphere radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00015000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015000">
@@ -4480,6 +4500,7 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).</obo:IAO_0000115>
         <rdfs:label>space radiation environment</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 

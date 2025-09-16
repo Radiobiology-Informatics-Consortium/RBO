@@ -16,14 +16,11 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-08-27"
+        "val" : "2025-09-16"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-08-27/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-09-16/rbo-base.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000003",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
       "type" : "CLASS"
     }, {
@@ -334,7 +331,11 @@
       "meta" : {
         "definition" : {
           "val" : "That part of the Earth exposed to the Earth atmosphere."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00000018",
@@ -343,7 +344,11 @@
       "meta" : {
         "definition" : {
           "val" : "The region between the Earth's surface and an altitude of approximately 100 km"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00000019",
@@ -4765,6 +4770,14 @@
       "lbl" : "earth subsurface radiation environment",
       "type" : "CLASS"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010051",
+      "lbl" : "earth surface radiation environment",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010052",
+      "lbl" : "earth atmosphere radiation environment",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "lbl" : "radiation",
       "type" : "CLASS",
@@ -5441,7 +5454,11 @@
       "meta" : {
         "definition" : {
           "val" : "A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line)."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015047",
@@ -7530,10 +7547,6 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000003"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
-      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/ENVO_02500041"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
@@ -7997,6 +8010,14 @@
       "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010050",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010052",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
     }, {

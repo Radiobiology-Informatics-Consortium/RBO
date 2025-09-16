@@ -13,12 +13,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-08-27/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-09-16/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2025-08-27</owl:versionInfo>
+        <owl:versionInfo>2025-09-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -181,12 +181,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000003"/>
     
 
 
@@ -623,6 +617,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>That part of the Earth exposed to the Earth atmosphere.</obo:IAO_0000115>
         <rdfs:label>earth surface</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -633,6 +628,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>The region between the Earth&apos;s surface and an altitude of approximately 100 km</obo:IAO_0000115>
         <rdfs:label>earth atmosphere</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3023,7 +3019,6 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002122">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_02500041"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4375,6 +4370,24 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00010051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <rdfs:label>earth surface radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <rdfs:label>earth atmosphere radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00015000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015000">
@@ -4947,6 +4960,7 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).</obo:IAO_0000115>
         <rdfs:label>space radiation environment</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
