@@ -16,14 +16,11 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-08-27"
+        "val" : "2025-09-17"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-08-27/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-09-17/rbo-base.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000003",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
       "type" : "CLASS"
     }, {
@@ -334,7 +331,11 @@
       "meta" : {
         "definition" : {
           "val" : "That part of the Earth exposed to the Earth atmosphere."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00000018",
@@ -343,7 +344,11 @@
       "meta" : {
         "definition" : {
           "val" : "The region between the Earth's surface and an altitude of approximately 100 km"
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00000019",
@@ -4728,7 +4733,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A serious human disease that occurs when the entire body (or a large portion of it) is exposed to a high dose of penetrating radiation�typically more than 1 Gray (Gy)�over a short period (minutes to hours).\n\nKey features:\n\nProdromal Phase (hours to days): Nausea, vomiting, diarrhoea, fatigue.\n\nLatent Phase (hours to weeks): Apparent improvement or absence of symptoms.\n\nManifest Illness Phase: Depending on dose, damage to rapidly dividing cells leads to one or more syndromes:\n\nHematopoietic syndrome (1�10 Gy): Bone marrow failure, infection, bleeding.\n\nGastrointestinal syndrome (5�20 Gy): Severe GI tract damage, fluid loss, sepsis.\n\nNeurovascular syndrome (?20 Gy): Neurological impairment, confusion, convulsions; usually fatal within days.\n\nRecovery or Death: If dose is survivable and supportive care is provided, recovery can occur over weeks to months; higher doses carry a poor prognosis."
+          "val" : "A serious human disease that occurs when the entire body (or a large portion of it) is exposed to a high dose of penetrating radiation�typically more than 1 Gray (Gy)�over a short period (minutes to hours).\nKey features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fatigue. Latent Phase (hours to weeks): Apparent improvement or absence of symptoms. Manifest Illness Phase: Depending on dose, damage to rapidly dividing cells leads to one or more syndromes: Hematopoietic syndrome (1�10 Gy): Bone marrow failure, infection, bleeding. Gastrointestinal syndrome (5�20 Gy): Severe GI tract damage, fluid loss, sepsis. Neurovascular syndrome (?20 Gy): Neurological impairment, confusion, convulsions; usually fatal within days. Recovery or Death: If dose is survivable and supportive care is provided, recovery can occur over weeks to months; higher doses carry a poor prognosis."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
@@ -4764,6 +4769,50 @@
       "id" : "http://purl.obolibrary.org/obo/RBO_00010050",
       "lbl" : "earth subsurface radiation environment",
       "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010051",
+      "lbl" : "earth surface radiation environment",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010052",
+      "lbl" : "earth atmosphere radiation environment",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010053",
+      "lbl" : "high linear energy transfer",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The quality of neutrons or charged particles, such as protons or alpha particles, such that they can produce ionizing events densely spaced on a molecular scale (e.g., >10 keV-micron^[-1]."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010054",
+      "lbl" : "low linear energy transfer",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The quality of X and gamma rays or light charged particles such as electrons such that they can only produce sparse ionizing events far apart on a molecular scale."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010055",
+      "lbl" : "microdosimetry study type",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Microdosimetry is a radiobiology study type that deals with the study of the distribution of energy deposition on a micrometer scale in biological systems exposed to ionizing radiation. It focuses on understanding how radiation interacts with cellular and sub-cellular structures and the resulting effects on biological systems."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010056",
+      "lbl" : "low dose radiation study type",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A study of the biological effects of low acute or protracted doses of ionising radiation defined as being below 500 mSv, less than 100mGy, or at dose rates less than 5mGy per hour. ( https://www.nationalacademies.org/our-work/developing-a-long-term-strategy-for-low-dose-radiation-research-in-the-united-states)"
+        }
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "lbl" : "radiation",
@@ -5441,7 +5490,11 @@
       "meta" : {
         "definition" : {
           "val" : "A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line)."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015047",
@@ -5777,7 +5830,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_010013",
-      "lbl" : "linear energy transfer",
+      "lbl" : "linear energy transfer measurement",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -7530,10 +7583,6 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000003"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
-      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/ENVO_02500041"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002122",
@@ -7862,7 +7911,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010015",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0001909"
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001018"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010016",
       "pred" : "is_a",
@@ -7999,6 +8048,30 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010050",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010051",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010052",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010053",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001739"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010054",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001739"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010055",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000082"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010056",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000082"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",
@@ -8290,7 +8363,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_010015",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0001909"
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001018"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_010016",
       "pred" : "is_a",

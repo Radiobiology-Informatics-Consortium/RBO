@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-08-20/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-09-17/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -548,6 +548,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>That part of the Earth exposed to the Earth atmosphere.</obo:IAO_0000115>
         <rdfs:label>earth surface</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -558,6 +559,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>The region between the Earth&apos;s surface and an altitude of approximately 100 km</obo:IAO_0000115>
         <rdfs:label>earth atmosphere</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -3893,7 +3895,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <!-- http://purl.obolibrary.org/obo/RBO_00010015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000112>Neutrons have a high quality factor compared to photons.</obo:IAO_0000112>
         <obo:IAO_0000115>Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
@@ -4226,22 +4228,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
         <obo:IAO_0000115>A serious human disease that occurs when the entire body (or a large portion of it) is exposed to a high dose of penetrating radiation�typically more than 1 Gray (Gy)�over a short period (minutes to hours).
-
-Key features:
-
-Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fatigue.
-
-Latent Phase (hours to weeks): Apparent improvement or absence of symptoms.
-
-Manifest Illness Phase: Depending on dose, damage to rapidly dividing cells leads to one or more syndromes:
-
-Hematopoietic syndrome (1�10 Gy): Bone marrow failure, infection, bleeding.
-
-Gastrointestinal syndrome (5�20 Gy): Severe GI tract damage, fluid loss, sepsis.
-
-Neurovascular syndrome (?20 Gy): Neurological impairment, confusion, convulsions; usually fatal within days.
-
-Recovery or Death: If dose is survivable and supportive care is provided, recovery can occur over weeks to months; higher doses carry a poor prognosis.</obo:IAO_0000115>
+Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fatigue. Latent Phase (hours to weeks): Apparent improvement or absence of symptoms. Manifest Illness Phase: Depending on dose, damage to rapidly dividing cells leads to one or more syndromes: Hematopoietic syndrome (1�10 Gy): Bone marrow failure, infection, bleeding. Gastrointestinal syndrome (5�20 Gy): Severe GI tract damage, fluid loss, sepsis. Neurovascular syndrome (?20 Gy): Neurological impairment, confusion, convulsions; usually fatal within days. Recovery or Death: If dose is survivable and supportive care is provided, recovery can occur over weeks to months; higher doses carry a poor prognosis.</obo:IAO_0000115>
         <obo:IAO_0000118>acute radiation sickness, ARS</obo:IAO_0000118>
         <obo:IAO_0000119>Dainiak, N., &amp; Albanese, J. (2022). Medical management of acute radiation syndrome. Journal of radiological protection : official journal of the Society for Radiological Protection, 42(3), 10.1088/1361-6498/ac7d18. https://doi.org/10.1088/1361-6498/ac7d18. https://www.icrpaedia.org/Acute_radiation_syndrome</obo:IAO_0000119>
         <rdfs:label>acute radiation syndrome</rdfs:label>
@@ -4275,6 +4262,64 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <rdfs:label>earth subsurface radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <rdfs:label>earth surface radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <rdfs:label>earth atmosphere radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001739"/>
+        <obo:IAO_0000115>The quality of neutrons or charged particles, such as protons or alpha particles, such that they can produce ionizing events densely spaced on a molecular scale (e.g., &gt;10 keV-micron^[-1].</obo:IAO_0000115>
+        <rdfs:label>high linear energy transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001739"/>
+        <obo:IAO_0000115>The quality of X and gamma rays or light charged particles such as electrons such that they can only produce sparse ionizing events far apart on a molecular scale.</obo:IAO_0000115>
+        <rdfs:label>low linear energy transfer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115>Microdosimetry is a radiobiology study type that deals with the study of the distribution of energy deposition on a micrometer scale in biological systems exposed to ionizing radiation. It focuses on understanding how radiation interacts with cellular and sub-cellular structures and the resulting effects on biological systems.</obo:IAO_0000115>
+        <rdfs:label>microdosimetry study type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
+        <obo:IAO_0000115>A study of the biological effects of low acute or protracted doses of ionising radiation defined as being below 500 mSv, less than 100mGy, or at dose rates less than 5mGy per hour. ( https://www.nationalacademies.org/our-work/developing-a-long-term-strategy-for-low-dose-radiation-research-in-the-united-states)</obo:IAO_0000115>
+        <rdfs:label>low dose radiation study type</rdfs:label>
     </owl:Class>
     
 
@@ -4826,6 +4871,7 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).</obo:IAO_0000115>
         <rdfs:label>space radiation environment</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -5065,7 +5111,7 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
         <obo:IAO_0000118>LET</obo:IAO_0000118>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>LET</oboInOwl:hasExactSynonym>
-        <rdfs:label>linear energy transfer</rdfs:label>
+        <rdfs:label>linear energy transfer measurement</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
@@ -5088,7 +5134,7 @@ Recovery or Death: If dose is survivable and supportive care is provided, recove
     <!-- http://purl.obolibrary.org/obo/RBO_010015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000112>Neutrons have a high quality factor compared to photons.</obo:IAO_0000112>
         <obo:IAO_0000115>Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
