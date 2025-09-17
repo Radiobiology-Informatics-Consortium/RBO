@@ -17313,15 +17313,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00010014> "organ dose")
 SubClassOf(<http://purl.obolibrary.org/obo/RBO_00010014> <http://purl.obolibrary.org/obo/RBO_00010016>)
 
-# Class: <http://purl.obolibrary.org/obo/RBO_00010015> (quality factor)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RBO_00010015> "Neutrons have a high quality factor compared to photons.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RBO_00010015> "Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RBO_00010015> "Jack Miller")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RBO_00010015> "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RBO_00010015> "quality factor")
-SubClassOf(<http://purl.obolibrary.org/obo/RBO_00010015> <http://purl.obolibrary.org/obo/OBI_0001909>)
-
 # Class: <http://purl.obolibrary.org/obo/RBO_00010016> (radiation dose)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RBO_00010016> "The samples received a dose of 1 Gy. (The use of the gray unit implies that \"dose\" refers to a measured quantity, typically absorbed dose or organ dose.)")
