@@ -16,7 +16,7 @@ ERROR	duplicate_definition	organ dose	IAO:0000115	The mean absorbed radiation do
 ERROR	duplicate_definition	excess lifetime risk of cancer	IAO:0000115	The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included
 ERROR	duplicate_definition	excess lifetime risk of cancer	IAO:0000115	The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included
 ERROR	duplicate_definition	linear energy transfer	IAO:0000115	The energy deposited by an ionizing charged particle or photon in any medium per unit path length.
-ERROR	duplicate_definition	linear energy transfer	IAO:0000115	The energy deposited by an ionizing charged particle or photon in any medium per unit path length.
+ERROR	duplicate_definition	linear energy transfer measurement	IAO:0000115	The energy deposited by an ionizing charged particle or photon in any medium per unit path length.
 ERROR	duplicate_definition	fast neutron	IAO:0000115	Neutrons of energies above a few hundred kiloelectron volts (keV)
 ERROR	duplicate_definition	fast neutron	IAO:0000115	Neutrons of energies above a few hundred kiloelectron volts (keV)
 ERROR	duplicate_definition	delta ray	IAO:0000115	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a
@@ -57,8 +57,6 @@ ERROR	duplicate_label	organ dose	rdfs:label	organ dose
 ERROR	duplicate_label	organ dose	rdfs:label	organ dose
 ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
 ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
-ERROR	duplicate_label	linear energy transfer	rdfs:label	linear energy transfer
-ERROR	duplicate_label	linear energy transfer	rdfs:label	linear energy transfer
 ERROR	duplicate_label	heavy ion	rdfs:label	heavy ion
 ERROR	duplicate_label	heavy ion	rdfs:label	heavy ion
 ERROR	duplicate_label	flux	rdfs:label	flux
@@ -145,8 +143,8 @@ WARN	duplicate_exact_synonym	relative biological effectiveness	IAO:0000118
 WARN	duplicate_exact_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	
 WARN	duplicate_exact_synonym	linear energy transfer	IAO:0000118	
 WARN	duplicate_exact_synonym	linear energy transfer	oboInOwl:hasExactSynonym	
-WARN	duplicate_exact_synonym	linear energy transfer	IAO:0000118	
-WARN	duplicate_exact_synonym	linear energy transfer	oboInOwl:hasExactSynonym	
+WARN	duplicate_exact_synonym	linear energy transfer measurement	IAO:0000118	
+WARN	duplicate_exact_synonym	linear energy transfer measurement	oboInOwl:hasExactSynonym	
 WARN	duplicate_exact_synonym	delta ray	IAO:0000118	
 WARN	duplicate_exact_synonym	delta ray	oboInOwl:hasExactSynonym	
 WARN	duplicate_exact_synonym	delta ray	IAO:0000118	
@@ -170,8 +168,8 @@ WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA
 WARN	duplicate_scoped_synonym	as low as reasonably achievable	oboInOwl:hasExactSynonym	ALARA
 WARN	duplicate_scoped_synonym	delta ray	IAO:0000118	delta electron
 WARN	duplicate_scoped_synonym	delta ray	oboInOwl:hasExactSynonym	delta electron
-WARN	duplicate_scoped_synonym	linear energy transfer	IAO:0000118	LET
-WARN	duplicate_scoped_synonym	linear energy transfer	oboInOwl:hasExactSynonym	LET
+WARN	duplicate_scoped_synonym	linear energy transfer measurement	IAO:0000118	LET
+WARN	duplicate_scoped_synonym	linear energy transfer measurement	oboInOwl:hasExactSynonym	LET
 WARN	duplicate_scoped_synonym	relative biological effectiveness	IAO:0000118	RBE
 WARN	duplicate_scoped_synonym	relative biological effectiveness	oboInOwl:hasExactSynonym	RBE
 WARN	equivalent_class_axiom_no_genus	particle track	RO:0000086	particle track structure
