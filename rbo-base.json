@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-09-22"
+        "val" : "2025-11-26"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-09-22/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2025-11-26/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000015",
@@ -3249,6 +3249,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "spaceflight"
+        }, {
+          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
+          "val" : "false"
         } ]
       }
     }, {
@@ -4768,15 +4771,42 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010050",
       "lbl" : "earth subsurface radiation environment",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The radiation environment below the surface of the Earth, consisting of radiation from naturally occurring radioactive elements; particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth's magnetic field, atmosphere and materials in the Earth's crust to enable them to penetrate below the Earth's surface; particles produced by interactions of primary radiation with the Earth's crust; and anthropogenic sources of radiation such as buried nuclear waste. The composition and strength of the radiation at a given point under the Earth's surface depends strongly on depth below the surface and composition of the surrounding crustal material."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "terrestrial subsurface radiation environment"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010051",
       "lbl" : "earth surface radiation environment",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : " The radiation environment at the surface of the Earth, consisting of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth's magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth's atmosphere; decays of naturally occurring radioactive elements on the surface; and anthropogenic radiation. The composition and strength of the radiation at a given point on the Earth's surface depends on factors including altitude, the composition of the surface material, and the temporal variation in incident space radiation, e.g. with solar cycle."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "terrestrial surface radiation environment"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010052",
       "lbl" : "earth atmosphere radiation environment",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The radiation environment in the Earth's atmosphere , consisting of particles originating in space which are sufficiently energetic and/or weakly interacting to penetrate the Earth's magnetic field; particles produced by interactions of space radiation with the Earth's atmosphere and albedo radiation from interactions of incident radiation with the Earth's crust; and anthropogenic radiation. The composition and strength of the radiation at a given point in the Earth's atmosphere depends on factors including altitude and the temporal variation in incident space radiation, e.g. with solar cycle."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "terrestrial atmosphere radiation environment"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010053",
       "lbl" : "high linear energy transfer",
@@ -4811,6 +4841,15 @@
       "meta" : {
         "definition" : {
           "val" : "A study of the biological effects of low acute or protracted doses of ionising radiation defined as being below 500 mSv, less than 100mGy, or at dose rates less than 5mGy per hour. ( https://www.nationalacademies.org/our-work/developing-a-long-term-strategy-for-low-dose-radiation-research-in-the-united-states)"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010057",
+      "lbl" : "earth hydrosphere radiation environment",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The radiation environment consisting of the water at the surface of the Earth, including all of Earth�s water: oceans and seas, lakes and rivers (freshwater), groundwater, and atmospheric water. Some frameworks treat the cryosphere (ice, snow, glaciers) as a sub-part of the hydrosphere. Radiation in water consists of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth's magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth's atmosphere; decays of naturally occurring radioactive elements dissolved or suspended in water, those on the substrate where there is body of water and from the subsurface. This includes anthropogenic radiation carried in water by means of direct discharges, precipitation and other transfer routes. The composition and strength of the radiation in water at a given point on the Earth's surface depends on factors including underlying geology, water chemistry and elemental composition, and the temporal variation in incident space radiation, e.g. with solar cycle."
         }
       }
     }, {
@@ -5266,7 +5305,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The process by an entity is exposed to two or more species of accelerated ions sequentially or simultaneously."
+          "val" : "The process by which an entity is exposed to two or more species of accelerated ions sequentially or simultaneously."
         },
         "comments" : [ "The term is often used as jargon, in which cases it is taken to imply sequential exposure to multiple ion types, and not parallel exposures. (perhaps include reference to NSRL)" ],
         "basicPropertyValues" : [ {
@@ -5885,7 +5924,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed"
+          "val" : "In radiation science, a dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
@@ -8072,6 +8111,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010056",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00000082"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010057",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010051"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",

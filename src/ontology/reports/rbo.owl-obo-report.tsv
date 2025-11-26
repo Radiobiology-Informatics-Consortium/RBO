@@ -25,8 +25,6 @@ ERROR	duplicate_definition	delta ray	textual definition	Highly energetic electro
 ERROR	duplicate_definition	delta ray	textual definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a
 ERROR	duplicate_definition	relative biological effectiveness	textual definition	Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r
 ERROR	duplicate_definition	relative biological effectiveness	textual definition	Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r
-ERROR	duplicate_definition	quality factor	textual definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed
-ERROR	duplicate_definition	quality factor	textual definition	Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed
 ERROR	duplicate_definition	tissue equivalence	textual definition	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
 ERROR	duplicate_definition	tissue equivalence	textual definition	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
 ERROR	duplicate_definition	anatomical entity	textual definition	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
@@ -768,9 +766,9 @@ ERROR	multiple_labels	part_of	label	part_of
 ERROR	multiple_labels	has_part	label	has part
 ERROR	multiple_labels	has_part	label	has part@en
 ERROR	multiple_labels	has_part	label	has_part
-ERROR	multiple_labels	realized in	label	has realization@en
-ERROR	multiple_labels	realized in	label	realized in
-ERROR	multiple_labels	realized in	label	realized in@en
+ERROR	multiple_labels	has realization	label	has realization@en
+ERROR	multiple_labels	has realization	label	realized in
+ERROR	multiple_labels	has realization	label	realized in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	preceded by	label	preceded by
@@ -956,8 +954,8 @@ ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
 ERROR	multiple_labels	has_broad_synonym	label	has_broad_synonym
-ERROR	multiple_labels	has cross-reference	label	database_cross_reference
-ERROR	multiple_labels	has cross-reference	label	has cross-reference
+ERROR	multiple_labels	database_cross_reference	label	database_cross_reference
+ERROR	multiple_labels	database_cross_reference	label	has cross-reference
 ERROR	multiple_labels	has exact synonym	label	has exact synonym@en
 ERROR	multiple_labels	has exact synonym	label	has_exact_synonym
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
@@ -988,16 +986,16 @@ WARN	annotation_whitespace	function	IAO:0000602	(forall (x) (if (Function x) (Di
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
-WARN	annotation_whitespace	cell	has cross-reference	"CALOHA:TS-2035
+WARN	annotation_whitespace	cell	database_cross_reference	"CALOHA:TS-2035
 "
-WARN	annotation_whitespace	cell	has cross-reference	FMA:68646 
-WARN	annotation_whitespace	cell	has cross-reference	GO:0005623
-WARN	annotation_whitespace	cell	has cross-reference	"KUPO:0000002
+WARN	annotation_whitespace	cell	database_cross_reference	FMA:68646 
+WARN	annotation_whitespace	cell	database_cross_reference	GO:0005623
+WARN	annotation_whitespace	cell	database_cross_reference	"KUPO:0000002
 
 "
-WARN	annotation_whitespace	cell	has cross-reference	VHOG:0001533
-WARN	annotation_whitespace	cell	has cross-reference	WBbt:0004017
-WARN	annotation_whitespace	cell	has cross-reference	XAO:0003012
+WARN	annotation_whitespace	cell	database_cross_reference	VHOG:0001533
+WARN	annotation_whitespace	cell	database_cross_reference	WBbt:0004017
+WARN	annotation_whitespace	cell	database_cross_reference	XAO:0003012
 WARN	annotation_whitespace	datum label	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
 "
 WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
@@ -1066,6 +1064,7 @@ WARN	annotation_whitespace	Krypton-84 nucleus	alternative term	Kr-84 ion;Kr-84 n
 WARN	annotation_whitespace	Faxitron CP160	textual definition	A specific instance of Faxitron CP160 x-ray source. 
 WARN	annotation_whitespace	Faxitron CP160	definition source	 doi: 10.2349/biij.2.1.e1
 WARN	annotation_whitespace	X-Rad320	textual definition	A specific instance of an X-Rad320 x-ray source. 
+WARN	annotation_whitespace	earth surface radiation environment	textual definition	 The radiation environment at the surface of the Earth, consisting of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth's magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth's atmosphere; decays of naturally occurring radioactive elements on the surface; and anthropogenic radiation. The composition and strength of the radiation at a given point on the Earth's surface depends on factors including altitude, the composition of the surface material, and the temporal variation in incident space radiation, e.g. with solar cycle.
 WARN	annotation_whitespace	external radiation exposure	example of usage	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	internal experimental radiation exposure	rdfs:comment	 Research subjects participating in a clinical trial using an internally implanted radiation source have an internal experimental radiation exposure
 WARN	annotation_whitespace	senolytic	textual definition	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
@@ -2222,12 +2221,12 @@ WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track s
 WARN	equivalent_class_axiom_no_genus	track formation	has_output	particle track
 WARN	equivalent_pair	role	owl:equivalentClass	role
 WARN	equivalent_pair	protein	owl:equivalentClass	protein
-WARN	invalid_xref	cell	has cross-reference	FMA:68646 
-WARN	invalid_xref	cell	has cross-reference	"KUPO:0000002
+WARN	invalid_xref	cell	database_cross_reference	FMA:68646 
+WARN	invalid_xref	cell	database_cross_reference	"KUPO:0000002
 
 "
-WARN	invalid_xref	cell	has cross-reference	VHOG:0001533
-WARN	invalid_xref	cell	has cross-reference	XAO:0003012
+WARN	invalid_xref	cell	database_cross_reference	VHOG:0001533
+WARN	invalid_xref	cell	database_cross_reference	XAO:0003012
 WARN	missing_definition	temporal region	textual definition	
 WARN	missing_definition	spatiotemporal region	textual definition	
 WARN	missing_definition	fiat object part	textual definition	
@@ -3336,9 +3335,6 @@ WARN	missing_definition	risk estimate	textual definition
 WARN	missing_definition	lifetime risk estimate	textual definition	
 WARN	missing_definition	biological process	textual definition	
 WARN	missing_definition	cellular process	textual definition	
-WARN	missing_definition	earth subsurface radiation environment	textual definition	
-WARN	missing_definition	earth surface radiation environment	textual definition	
-WARN	missing_definition	earth atmosphere radiation environment	textual definition	
 WARN	missing_definition	track formation	textual definition	
 WARN	missing_definition	contained in	textual definition	
 WARN	missing_definition	contains	textual definition	
@@ -4039,7 +4035,7 @@ INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate 
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part_of	textual definition	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	has realization	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
@@ -4088,6 +4084,7 @@ INFO	lowercase_definition	RARAF 5.5 MV microbeam	textual definition	https://www.
 INFO	lowercase_definition	Swift HALE	textual definition	https://www.nasa.gov/feature/ames/nasa-small-business-partnership-prepares-drone-for-30-day-science-flights
 INFO	lowercase_definition	ER-2	textual definition	https://www.nasa.gov/centers/armstrong/aircraft/ER-2/index.html
 INFO	lowercase_definition	WB-57	textual definition	https://airbornescience.nasa.gov/aircraft/WB-57_-_JSC
+INFO	lowercase_definition	earth surface radiation environment	textual definition	 The radiation environment at the surface of the Earth, consisting of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth's magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth's atmosphere; decays of naturally occurring radioactive elements on the surface; and anthropogenic radiation. The composition and strength of the radiation at a given point on the Earth's surface depends on factors including altitude, the composition of the surface material, and the temporal variation in incident space radiation, e.g. with solar cycle.
 INFO	lowercase_definition	epithermal neutron	textual definition	a neutron with energy greater than a thermal neutron, but less than a fast neutron. The approximate energy range is 0.025-0.4 eV.
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
 INFO	lowercase_definition	inheres in	textual definition	a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rbo/imports/slso_import.owl>
-<http://purl.obolibrary.org/obo/rbo/releases/2025-09-22/imports/slso_import.owl>
+<http://purl.obolibrary.org/obo/rbo/releases/2025-11-25/imports/slso_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/slso/releases/2025-09-16/slso.owl>)
-Annotation(owl:versionInfo "2025-09-22")
+Annotation(owl:versionInfo "2025-11-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000796>))
@@ -3458,7 +3458,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000051> "has
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/RO_0002131>)
 TransitiveObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>)
 
-# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (has realization)
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000054> (realized in)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/BFO_0000054> "realized in"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/BFO_0000054> "this disease is realized in this disease course"@en)
