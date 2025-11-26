@@ -13,12 +13,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-09-17/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-11-26/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2025-09-17</owl:versionInfo>
+        <owl:versionInfo>2025-11-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3177,6 +3177,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>spaceflight</obo:IAO_0000118>
         <oboInOwl:hasExactSynonym>Space flight</oboInOwl:hasExactSynonym>
         <rdfs:label>space flight</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
     </owl:Class>
     
 
@@ -4350,6 +4351,8 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <obo:IAO_0000115>The radiation environment below the surface of the Earth, consisting of radiation from naturally occurring radioactive elements; particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth&apos;s magnetic field, atmosphere and materials in the Earth&apos;s crust to enable them to penetrate below the Earth&apos;s surface; particles produced by interactions of primary radiation with the Earth&apos;s crust; and anthropogenic sources of radiation such as buried nuclear waste. The composition and strength of the radiation at a given point under the Earth&apos;s surface depends strongly on depth below the surface and composition of the surrounding crustal material.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>terrestrial subsurface radiation environment</oboInOwl:hasExactSynonym>
         <rdfs:label>earth subsurface radiation environment</rdfs:label>
     </owl:Class>
     
@@ -4359,6 +4362,8 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <obo:IAO_0000115> The radiation environment at the surface of the Earth, consisting of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth&apos;s magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth&apos;s atmosphere; decays of naturally occurring radioactive elements on the surface; and anthropogenic radiation. The composition and strength of the radiation at a given point on the Earth&apos;s surface depends on factors including altitude, the composition of the surface material, and the temporal variation in incident space radiation, e.g. with solar cycle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>terrestrial surface radiation environment</oboInOwl:hasExactSynonym>
         <rdfs:label>earth surface radiation environment</rdfs:label>
     </owl:Class>
     
@@ -4368,6 +4373,8 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
+        <obo:IAO_0000115>The radiation environment in the Earth&apos;s atmosphere , consisting of particles originating in space which are sufficiently energetic and/or weakly interacting to penetrate the Earth&apos;s magnetic field; particles produced by interactions of space radiation with the Earth&apos;s atmosphere and albedo radiation from interactions of incident radiation with the Earth&apos;s crust; and anthropogenic radiation. The composition and strength of the radiation at a given point in the Earth&apos;s atmosphere depends on factors including altitude and the temporal variation in incident space radiation, e.g. with solar cycle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>terrestrial atmosphere radiation environment</oboInOwl:hasExactSynonym>
         <rdfs:label>earth atmosphere radiation environment</rdfs:label>
     </owl:Class>
     
@@ -4409,6 +4416,26 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the biological effects of low acute or protracted doses of ionising radiation defined as being below 500 mSv, less than 100mGy, or at dose rates less than 5mGy per hour. ( https://www.nationalacademies.org/our-work/developing-a-long-term-strategy-for-low-dose-radiation-research-in-the-united-states)</obo:IAO_0000115>
         <rdfs:label>low dose radiation study type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010051"/>
+        <obo:IAO_0000115>The radiation environment consisting of the water at the surface of the Earth, including all of Earth�s water: oceans and seas, lakes and rivers (freshwater), groundwater, and atmospheric water. Some frameworks treat the cryosphere (ice, snow, glaciers) as a sub-part of the hydrosphere. Radiation in water consists of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth&apos;s magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth&apos;s atmosphere; decays of naturally occurring radioactive elements dissolved or suspended in water, those on the substrate where there is body of water and from the subsurface. This includes anthropogenic radiation carried in water by means of direct discharges, precipitation and other transfer routes. The composition and strength of the radiation in water at a given point on the Earth&apos;s surface depends on factors including underlying geology, water chemistry and elemental composition, and the temporal variation in incident space radiation, e.g. with solar cycle.</obo:IAO_0000115>
+        <rdfs:label>earth hydrosphere radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>A measurement of the amount of energy deposited by ionizing radiation per unit length of a medium. . It represents the average energy transferred to the material per unit length along the path of the particle in a specified micrometric ( or smaller) site divided by the mean chord length of the site volume. Lineal energy is typically expressed in units of keV/?m (kilo-electron volts per micrometer) or MeV/cm (mega-electron volts per centimeter)</obo:IAO_0000115>
+        <rdfs:label>lineal energy measurement datum</rdfs:label>
     </owl:Class>
     
 
@@ -4828,7 +4855,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002000"/>
-        <obo:IAO_0000115>The process by an entity is exposed to two or more species of accelerated ions sequentially or simultaneously.</obo:IAO_0000115>
+        <obo:IAO_0000115>The process by which an entity is exposed to two or more species of accelerated ions sequentially or simultaneously.</obo:IAO_0000115>
         <obo:IAO_0000117>Mark H. Phillips</obo:IAO_0000117>
         <obo:IAO_0000117>http://orcid.org/0000-0002-5111-7263</obo:IAO_0000117>
         <obo:IAO_0000117>http://orcid.org/0000-0003-4312-9552</obo:IAO_0000117>
@@ -5250,7 +5277,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_010015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
         <obo:IAO_0000112>Neutrons have a high quality factor compared to photons.</obo:IAO_0000112>
-        <obo:IAO_0000115>Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed</obo:IAO_0000115>
+        <obo:IAO_0000115>In radiation science, a dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>quality factor</rdfs:label>
