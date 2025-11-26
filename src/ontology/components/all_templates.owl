@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-11-25/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-11-26/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -4337,6 +4337,16 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010051"/>
         <obo:IAO_0000115>The radiation environment consisting of the water at the surface of the Earth, including all of Earth�s water: oceans and seas, lakes and rivers (freshwater), groundwater, and atmospheric water. Some frameworks treat the cryosphere (ice, snow, glaciers) as a sub-part of the hydrosphere. Radiation in water consists of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth&apos;s magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth&apos;s atmosphere; decays of naturally occurring radioactive elements dissolved or suspended in water, those on the substrate where there is body of water and from the subsurface. This includes anthropogenic radiation carried in water by means of direct discharges, precipitation and other transfer routes. The composition and strength of the radiation in water at a given point on the Earth&apos;s surface depends on factors including underlying geology, water chemistry and elemental composition, and the temporal variation in incident space radiation, e.g. with solar cycle.</obo:IAO_0000115>
         <rdfs:label>earth hydrosphere radiation environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>A measurement of the amount of energy deposited by ionizing radiation per unit length of a medium. . It represents the average energy transferred to the material per unit length along the path of the particle in a specified micrometric ( or smaller) site divided by the mean chord length of the site volume. Lineal energy is typically expressed in units of keV/?m (kilo-electron volts per micrometer) or MeV/cm (mega-electron volts per centimeter)</obo:IAO_0000115>
+        <rdfs:label>lineal energy measurement datum</rdfs:label>
     </owl:Class>
     
 

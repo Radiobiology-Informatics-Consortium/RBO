@@ -691,8 +691,8 @@ ERROR	multiple_definitions	has output	textual definition	p has output c iff c is
 ERROR	multiple_definitions	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.
 ERROR	multiple_definitions	results in developmental progression of	textual definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical entity and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
 ERROR	multiple_definitions	results in developmental progression of	textual definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
-ERROR	multiple_definitions	characteristic of part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
-ERROR	multiple_definitions	characteristic of part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+ERROR	multiple_definitions	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+ERROR	multiple_definitions	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
 ERROR	multiple_definitions	causally related to	textual definition	This relation groups causal relations between material entities and causal relations between processes
 ERROR	multiple_definitions	causally related to	textual definition	relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.
 ERROR	multiple_definitions	causally upstream of	textual definition	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
@@ -766,9 +766,9 @@ ERROR	multiple_labels	part_of	label	part_of
 ERROR	multiple_labels	has_part	label	has part
 ERROR	multiple_labels	has_part	label	has part@en
 ERROR	multiple_labels	has_part	label	has_part
-ERROR	multiple_labels	has realization	label	has realization@en
-ERROR	multiple_labels	has realization	label	realized in
-ERROR	multiple_labels	has realization	label	realized in@en
+ERROR	multiple_labels	realized in	label	has realization@en
+ERROR	multiple_labels	realized in	label	realized in
+ERROR	multiple_labels	realized in	label	realized in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	preceded by	label	preceded by
@@ -925,12 +925,12 @@ ERROR	multiple_labels	adjacent to	label	adjacent to
 ERROR	multiple_labels	adjacent to	label	adjacent to@en
 ERROR	multiple_labels	temporal relation	label	temporal relation@en
 ERROR	multiple_labels	temporal relation	label	temporally related to@en
-ERROR	multiple_labels	results in formation of	label	results in formation of@en
-ERROR	multiple_labels	results in formation of	label	results in formation of anatomical entity@en
+ERROR	multiple_labels	results in formation of anatomical entity	label	results in formation of@en
+ERROR	multiple_labels	results in formation of anatomical entity	label	results in formation of anatomical entity@en
 ERROR	multiple_labels	has habitat	label	has habitat
 ERROR	multiple_labels	has habitat	label	has habitat@en
-ERROR	multiple_labels	characteristic of part of	label	characteristic of part of@en
-ERROR	multiple_labels	characteristic of part of	label	inheres in part of
+ERROR	multiple_labels	inheres in part of	label	characteristic of part of@en
+ERROR	multiple_labels	inheres in part of	label	inheres in part of
 ERROR	multiple_labels	member of	label	is member of
 ERROR	multiple_labels	member of	label	member of@en
 ERROR	multiple_labels	has member	label	has member
@@ -954,8 +954,8 @@ ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
 ERROR	multiple_labels	has_broad_synonym	label	has_broad_synonym
-ERROR	multiple_labels	database_cross_reference	label	database_cross_reference
-ERROR	multiple_labels	database_cross_reference	label	has cross-reference
+ERROR	multiple_labels	has cross-reference	label	database_cross_reference
+ERROR	multiple_labels	has cross-reference	label	has cross-reference
 ERROR	multiple_labels	has exact synonym	label	has exact synonym@en
 ERROR	multiple_labels	has exact synonym	label	has_exact_synonym
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
@@ -986,16 +986,16 @@ WARN	annotation_whitespace	function	IAO:0000602	(forall (x) (if (Function x) (Di
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
-WARN	annotation_whitespace	cell	database_cross_reference	"CALOHA:TS-2035
+WARN	annotation_whitespace	cell	has cross-reference	"CALOHA:TS-2035
 "
-WARN	annotation_whitespace	cell	database_cross_reference	FMA:68646 
-WARN	annotation_whitespace	cell	database_cross_reference	GO:0005623
-WARN	annotation_whitespace	cell	database_cross_reference	"KUPO:0000002
+WARN	annotation_whitespace	cell	has cross-reference	FMA:68646 
+WARN	annotation_whitespace	cell	has cross-reference	GO:0005623
+WARN	annotation_whitespace	cell	has cross-reference	"KUPO:0000002
 
 "
-WARN	annotation_whitespace	cell	database_cross_reference	VHOG:0001533
-WARN	annotation_whitespace	cell	database_cross_reference	WBbt:0004017
-WARN	annotation_whitespace	cell	database_cross_reference	XAO:0003012
+WARN	annotation_whitespace	cell	has cross-reference	VHOG:0001533
+WARN	annotation_whitespace	cell	has cross-reference	WBbt:0004017
+WARN	annotation_whitespace	cell	has cross-reference	XAO:0003012
 WARN	annotation_whitespace	datum label	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
 "
 WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
@@ -1414,7 +1414,7 @@ WARN	duplicate_label_synonym	uranium	has exact synonym	uranium
 WARN	duplicate_label_synonym	biological process	has exact synonym	biological process
 WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
 WARN	duplicate_label_synonym	overlaps	alternative term	overlaps
-WARN	duplicate_label_synonym	characteristic of part of	alternative term	inheres in part of
+WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
 WARN	duplicate_label_synonym	member of	alternative term	is member of
 WARN	duplicate_label_synonym	sympathetic nervous system	has exact synonym	sympathetic nervous system
 WARN	duplicate_label_synonym	endocrine pancreas	has exact synonym	endocrine pancreas
@@ -2221,12 +2221,12 @@ WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track s
 WARN	equivalent_class_axiom_no_genus	track formation	has_output	particle track
 WARN	equivalent_pair	role	owl:equivalentClass	role
 WARN	equivalent_pair	protein	owl:equivalentClass	protein
-WARN	invalid_xref	cell	database_cross_reference	FMA:68646 
-WARN	invalid_xref	cell	database_cross_reference	"KUPO:0000002
+WARN	invalid_xref	cell	has cross-reference	FMA:68646 
+WARN	invalid_xref	cell	has cross-reference	"KUPO:0000002
 
 "
-WARN	invalid_xref	cell	database_cross_reference	VHOG:0001533
-WARN	invalid_xref	cell	database_cross_reference	XAO:0003012
+WARN	invalid_xref	cell	has cross-reference	VHOG:0001533
+WARN	invalid_xref	cell	has cross-reference	XAO:0003012
 WARN	missing_definition	temporal region	textual definition	
 WARN	missing_definition	spatiotemporal region	textual definition	
 WARN	missing_definition	fiat object part	textual definition	
@@ -3350,7 +3350,7 @@ WARN	missing_definition	immediately precedes	textual definition
 WARN	missing_definition	ends during	textual definition	
 WARN	missing_definition	temporal relation	textual definition	
 WARN	missing_definition	part of developmental precursor of	textual definition	
-WARN	missing_definition	results in formation of	textual definition	
+WARN	missing_definition	results in formation of anatomical entity	textual definition	
 WARN	missing_definition	genomically_related_to	textual definition	
 WARN	missing_definition	results in growth of	textual definition	
 WARN	missing_definition	results in transport to from or in	textual definition	
@@ -4035,7 +4035,7 @@ INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate 
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part_of	textual definition	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	has realization	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
@@ -4155,8 +4155,8 @@ INFO	lowercase_definition	results in development of	textual definition	p 'result
 INFO	lowercase_definition	has habitat	textual definition	x 'has habitat' y if and only if: x is an organism, y is a habitat, and y can sustain and allow the growth of a population of xs.
 INFO	lowercase_definition	causally upstream of, positive effect	textual definition	p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.
 INFO	lowercase_definition	causally upstream of, negative effect	textual definition	p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q.
-INFO	lowercase_definition	characteristic of part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
-INFO	lowercase_definition	characteristic of part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
 INFO	lowercase_definition	enables	textual definition	c enables p iff c is capable of p and c acts to execute p.
 INFO	lowercase_definition	part of structure that is capable of	textual definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
 INFO	lowercase_definition	involved in	textual definition	c involved_in p if and only if c enables some process p', and p' is part of p

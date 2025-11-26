@@ -3995,6 +3995,16 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00010058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <obo:IAO_0000115>A measurement of the amount of energy deposited by ionizing radiation per unit length of a medium. . It represents the average energy transferred to the material per unit length along the path of the particle in a specified micrometric ( or smaller) site divided by the mean chord length of the site volume. Lineal energy is typically expressed in units of keV/?m (kilo-electron volts per micrometer) or MeV/cm (mega-electron volts per centimeter)</obo:IAO_0000115>
+        <rdfs:label>lineal energy measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00015000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015000">

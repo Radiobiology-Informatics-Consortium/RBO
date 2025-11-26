@@ -4853,6 +4853,15 @@
         }
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010058",
+      "lbl" : "lineal energy measurement datum",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A measurement of the amount of energy deposited by ionizing radiation per unit length of a medium. . It represents the average energy transferred to the material per unit length along the path of the particle in a specified micrometric ( or smaller) site divided by the mean chord length of the site volume. Lineal energy is typically expressed in units of keV/?m (kilo-electron volts per micrometer) or MeV/cm (mega-electron volts per centimeter)"
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "lbl" : "radiation",
       "type" : "CLASS",
@@ -8115,6 +8124,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010057",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00010051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010058",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000109"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",
