@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-11-26/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-12-11/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -548,7 +548,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>That part of the Earth exposed to the Earth atmosphere.</obo:IAO_0000115>
         <rdfs:label>earth surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -559,7 +559,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>The region between the Earth&apos;s surface and an altitude of approximately 100 km</obo:IAO_0000115>
         <rdfs:label>earth atmosphere</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1052,7 +1052,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the impact of radiation on the composition of or processes within the natural or anthropogenic environment.</obo:IAO_0000115>
         <rdfs:label>environmental study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1243,7 +1243,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study that aims at the discovery, development or assessment of efficacy of therapeutic agents or processes designed to mitigate or cure the effects of radiation exposure.</obo:IAO_0000115>
         <rdfs:label>therapeutics study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1274,7 +1274,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the contributing factors consequences and prevention of nuclear accidents</obo:IAO_0000115>
         <rdfs:label>nuclear accident study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1470,7 +1470,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <oboInOwl:hasDbXref>GO:0008150</oboInOwl:hasDbXref>
         <rdfs:label>biological process</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1481,7 +1481,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
         <oboInOwl:hasDbXref>GO:0009987</oboInOwl:hasDbXref>
         <rdfs:label>cellular process</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1724,7 +1724,7 @@
         <obo:IAO_0000115>Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
         <rdfs:label>unplanned naturally occurring radiation exposure</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2895,7 +2895,7 @@
         <obo:IAO_0000119>Jack Miller</obo:IAO_0000119>
         <oboInOwl:hasDbXref>obo:RBO_0002000</oboInOwl:hasDbXref>
         <rdfs:label>irradiation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3095,7 +3095,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>spaceflight</obo:IAO_0000118>
         <oboInOwl:hasExactSynonym>Space flight</oboInOwl:hasExactSynonym>
         <rdfs:label>space flight</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3192,7 +3192,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The region of space between the Earth and the Moon</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>cis-lunar space</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3205,7 +3205,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Earth&apos;s moon</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>lunar orbit</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3218,7 +3218,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The area of the lunar landmass exposed to space</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>lunar surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3231,7 +3231,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The region of space between the Earth and Mars</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>cis-mars space</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3244,7 +3244,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A region of space defined by a regular, repeating path of a specified object about Mars</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>mars orbit</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3257,7 +3257,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The area of the Mars landmass exposed to the Martian atmosphere</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>mars surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3270,7 +3270,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The region of space in the Solar System between planets</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>interplanetary space</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3283,7 +3283,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>The outermost solid or liquid area of a planet</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>planet surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3628,7 +3628,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>mGy/sec</obo:IAO_0000118>
         <oboInOwl:hasDbXref>UO:0010065</oboInOwl:hasDbXref>
         <rdfs:label>miligray per second</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4898,7 +4898,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).</obo:IAO_0000115>
         <rdfs:label>space radiation environment</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4982,7 +4982,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>ALARA</oboInOwl:hasExactSynonym>
         <rdfs:label>as low as reasonably achievable</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4996,7 +4996,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation attenuation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5010,7 +5010,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>biodosimetry</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5024,7 +5024,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>bystander effect</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5040,7 +5040,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>delta electron</oboInOwl:hasExactSynonym>
         <rdfs:label>delta ray</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5054,7 +5054,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>dose equivalent</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5067,7 +5067,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>excess lifetime risk of cancer</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5081,7 +5081,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>fast neutron</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5095,7 +5095,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>fluence</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5109,7 +5109,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>flux</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5123,7 +5123,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>In RBO--needs def from NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>heavy ion</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5139,7 +5139,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>LET</oboInOwl:hasExactSynonym>
         <rdfs:label>linear energy transfer measurement</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5153,7 +5153,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>organ dose</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5167,7 +5167,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>quality factor</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5181,7 +5181,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000115>A measurement datum of the quantity of radiation absorbed by a substance or organism. The term &quot;radiation dose&quot; may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>radiation dose</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5195,7 +5195,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf) and see https://melodi-online.eu/wp-content/uploads/2021/04/02-What-is-radiation-quality-Goodhead.pdf</obo:IAO_0000119>
         <rdfs:label>radiation quality</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5209,7 +5209,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation weighting factor</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5225,7 +5225,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym>RBE</oboInOwl:hasExactSynonym>
         <rdfs:label>relative biological effectiveness</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5239,7 +5239,7 @@ Key features: Prodromal Phase (hours to days): Nausea, vomiting, diarrhoea, fati
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>tissue equivalence</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 

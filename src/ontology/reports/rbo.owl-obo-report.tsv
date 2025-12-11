@@ -1,46 +1,91 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	duplicate_definition	biodosimetry	textual definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
-ERROR	duplicate_definition	biodosimetry	textual definition	Use of a biological response as an indicator of a dose of an effective agent (e.g., the extent of decline in peripheral blood lymphocytes of humans exposed to ionizing radiation can be used as an indicator of the absorbed dose to the whole body from that
-ERROR	duplicate_definition	bystander effect	textual definition	The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.
-ERROR	duplicate_definition	bystander effect	textual definition	The term used to describe the effects on cells in proximity to irradiated cells, but through which radiation has not passed. In experimental radiation biology, the bystander effect can be investigated by targeting individual cells, or by using doses low enough that the probability for a given cell to be hit by a particle is less than one.
-ERROR	duplicate_definition	radiation attenuation	textual definition	The reduction of radiation intensity upon passage of radiation through matter
-ERROR	duplicate_definition	radiation attenuation	textual definition	The reduction of radiation intensity upon passage of radiation through matter
-ERROR	duplicate_definition	flux	textual definition	The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)
-ERROR	duplicate_definition	flux	textual definition	The quotient of dN by dt, where dN is the increment of the particle number in the time interval dt. The unit for flux is reciprocal second (s^[-1].)
-ERROR	duplicate_definition	dose equivalent	textual definition	The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)
-ERROR	duplicate_definition	dose equivalent	textual definition	The product of the absorbed dose (D) at a point and the quality factor (Q) at that point for the radiation type (i.e., H = DQ). The unit of H is J-kg^[-1] with the special name sievert (Sv)
-ERROR	duplicate_definition	fluence	textual definition	The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2]).
-ERROR	duplicate_definition	fluence	textual definition	The number of particles or photons per unit of cross-sectional area perpendicular to the direction of the particle (units of m^2 or cm^2) (i.e., particles-m^[-2] or particles-cm^[-2]).
-ERROR	duplicate_definition	organ dose	textual definition	The mean absorbed radiation dose in a specified tissue or organ of the human body.
-ERROR	duplicate_definition	organ dose	textual definition	The mean absorbed radiation dose in a specified tissue or organ of the human body.
-ERROR	duplicate_definition	excess lifetime risk of cancer	textual definition	The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included
-ERROR	duplicate_definition	excess lifetime risk of cancer	textual definition	The increased risk from induced cancer due to exposure when the effects over an entire lifetime are accounted for. Individuals who would have died of cancer anyway but die early because of exposure are not included
-ERROR	duplicate_definition	linear energy transfer	textual definition	The energy deposited by an ionizing charged particle or photon in any medium per unit path length.
-ERROR	duplicate_definition	linear energy transfer measurement	textual definition	The energy deposited by an ionizing charged particle or photon in any medium per unit path length.
-ERROR	duplicate_definition	fast neutron	textual definition	Neutrons of energies above a few hundred kiloelectron volts (keV)
-ERROR	duplicate_definition	fast neutron	textual definition	Neutrons of energies above a few hundred kiloelectron volts (keV)
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	1b63178e-f86e-48f2-99e2-495b9608c99bgenid35673
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	process
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	completely executed planned process
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	material extraction process
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	manufacturing process
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	human-directed construction process
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned environmental usage process
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	anthropogenic modulatory intervention process
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	environmental monitoring
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	radiobiology study type
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned radiation exposure
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned anthropogenic radiation exposure
+ERROR	deprecated_class_reference	planned process	owl:disjointWith	biological process
+ERROR	deprecated_class_reference	planned process	owl:equivalentClass	1b63178e-f86e-48f2-99e2-495b9608c99bgenid35671
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	1b63178e-f86e-48f2-99e2-495b9608c99bgenid35806
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	sensor
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	manufactured product
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	processed material
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	light emission device
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	X-ray source
+ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	object
+ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	organismal entity
+ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	root
+ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	Viruses
+ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	population of organisms
+ERROR	deprecated_class_reference	obsolete organism	owl:equivalentClass	1b63178e-f86e-48f2-99e2-495b9608c99bgenid35897
+ERROR	deprecated_class_reference	earth surface	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	earth atmosphere	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	environmental study	rdfs:subClassOf	radiobiology study type
+ERROR	deprecated_class_reference	therapeutics study	rdfs:subClassOf	radiobiology study type
+ERROR	deprecated_class_reference	nuclear accident study	rdfs:subClassOf	radiobiology study type
+ERROR	deprecated_class_reference	biological process	rdfs:subClassOf	process
+ERROR	deprecated_class_reference	biological process	rdfs:subClassOf	cellular process
+ERROR	deprecated_class_reference	cellular process	rdfs:subClassOf	biological process
+ERROR	deprecated_class_reference	unplanned naturally occurring radiation exposure	rdfs:subClassOf	exposure to naturally ocurring radioactive material
+ERROR	deprecated_class_reference	irradiation	rdfs:subClassOf	energy transfer process
+ERROR	deprecated_class_reference	irradiation	rdfs:subClassOf	planned irradiation
+ERROR	deprecated_class_reference	space flight	rdfs:subClassOf	material transport process
+ERROR	deprecated_class_reference	cis-lunar space	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	lunar orbit	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	lunar surface	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	cis-mars space	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	mars orbit	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	mars surface	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	interplanetary space	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	planet surface	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	miligray per second	rdfs:subClassOf	absorbed dose unit
+ERROR	deprecated_class_reference	space radiation environment	rdfs:subClassOf	radiation environment
+ERROR	deprecated_class_reference	as low as reasonably achievable	rdfs:subClassOf	plan specification
+ERROR	deprecated_class_reference	radiation attenuation	rdfs:subClassOf	history
+ERROR	deprecated_class_reference	biodosimetry	rdfs:subClassOf	dosimetry
+ERROR	deprecated_class_reference	bystander effect	rdfs:subClassOf	non-targeted effects of ionising radiation
+ERROR	deprecated_class_reference	delta ray	rdfs:subClassOf	charged particle radiation
+ERROR	deprecated_class_reference	dose equivalent	rdfs:subClassOf	radiation dose
+ERROR	deprecated_class_reference	excess lifetime risk of cancer	rdfs:subClassOf	lifetime risk estimate
+ERROR	deprecated_class_reference	fast neutron	rdfs:subClassOf	neutral particle radiation
+ERROR	deprecated_class_reference	fluence	rdfs:subClassOf	measurement datum
+ERROR	deprecated_class_reference	flux	rdfs:subClassOf	measurement datum
+ERROR	deprecated_class_reference	heavy ion	rdfs:subClassOf	atomic nucleus
+ERROR	deprecated_class_reference	heavy ion	rdfs:subClassOf	charged particle
+ERROR	deprecated_class_reference	linear energy transfer measurement	rdfs:subClassOf	measurement datum
+ERROR	deprecated_class_reference	organ dose	rdfs:subClassOf	radiation dose
+ERROR	deprecated_class_reference	quality factor	rdfs:subClassOf	physical quality
+ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	dose
+ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	absorbed radiation dose
+ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	nanodosimetric measurement datum
+ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	specific energy measurement datum
+ERROR	deprecated_class_reference	radiation dose	rdfs:subClassOf	microdosimetric measurement datum
+ERROR	deprecated_class_reference	radiation quality	rdfs:subClassOf	physical quality
+ERROR	deprecated_class_reference	radiation weighting factor	rdfs:subClassOf	conclusion based on data
+ERROR	deprecated_class_reference	relative biological effectiveness	rdfs:subClassOf	measurement datum
+ERROR	deprecated_class_reference	tissue equivalence	rdfs:subClassOf	physical quality
+ERROR	deprecated_class_reference	cis-lunar space radiation environment	rdfs:subClassOf	space radiation environment
+ERROR	deprecated_class_reference	cis-mars space radiation environment	rdfs:subClassOf	space radiation environment
+ERROR	deprecated_class_reference	blank node	owl:allValuesFrom	planned process
+ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	obsolete organism
+ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	radiation dose
 ERROR	duplicate_definition	anatomical structure	textual definition	Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.
 ERROR	duplicate_definition	anatomical structure	textual definition	Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome.
-ERROR	duplicate_definition	delta ray	textual definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a
-ERROR	duplicate_definition	delta ray	textual definition	Highly energetic electrons produced during inelastic collisions between ionizing radiation and atomic electrons. In a small proportion of collisions, the ejected electron receives a considerable amount of energy (i.e., >1,000 eV), allowing it to travel a
-ERROR	duplicate_definition	relative biological effectiveness	textual definition	Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r
-ERROR	duplicate_definition	relative biological effectiveness	textual definition	Factor used to compare the biological effectiveness of absorbed doses from different types of ionizing radiation, determined experimentally. RBE is the ratio of the absorbed dose of a reference radiation to the absorbed dose of the radiation in question r
-ERROR	duplicate_definition	tissue equivalence	textual definition	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
-ERROR	duplicate_definition	tissue equivalence	textual definition	Denotes a substance with absorbing and scattering properties for a given radiation that sufficiently match those of a particular biological tissue.
 ERROR	duplicate_definition	anatomical entity	textual definition	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
 ERROR	duplicate_definition	anatomical entity	textual definition	Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.
-ERROR	duplicate_definition	heavy ion	textual definition	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
-ERROR	duplicate_definition	heavy ion	textual definition	An atomic nucleus, fully stripped of its orbital electrons, containing 2 or more protons. Nuclei containing between 2 protons (helium) and 6 protons (carbon) are sometimes referred to as light ions.
-ERROR	duplicate_definition	space flight	textual definition	Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere.
-ERROR	duplicate_definition	space flight	textual definition	Activity carried out by crewed or robotic vehicles outside the Earth's atmmosphere.
-ERROR	duplicate_definition	space radiation environment	textual definition	A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).
-ERROR	duplicate_definition	space radiation environment	textual definition	A radiation environment outside a commonly defined boundary marking the beginning of space (frequently the Karman line).
-ERROR	duplicate_definition	as low as reasonably achievable	textual definition	A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen
-ERROR	duplicate_definition	as low as reasonably achievable	textual definition	A principle of radiation protection philosophy that requires that exposures to ionizing radiation be kept as low as reasonably achievable, economic and social factors being taken into account. The protection from radiation exposure is ALARA when the expen
-ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
-ERROR	duplicate_definition	radiation dose	textual definition	"A measurement datum of the quantity of radiation absorbed by a substance or organism. The term \""radiation dose\"" may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s)."
-ERROR	duplicate_definition	radiation weighting factor	textual definition	A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated.
-ERROR	duplicate_definition	radiation weighting factor	textual definition	A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated.
+ERROR	duplicate_definition	molecular entity	textual definition	Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.
+ERROR	duplicate_definition	molecule	textual definition	Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.
+ERROR	duplicate_definition	protein	textual definition	An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.
+ERROR	duplicate_definition	protein	textual definition	An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.
+ERROR	duplicate_definition	atom	textual definition	A chemical entity constituting the smallest component of an element having the chemical properties of the element.
+ERROR	duplicate_definition	atom	textual definition	A chemical entity constituting the smallest component of an element having the chemical properties of the element.
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	tissue equivalence	label	tissue equivalence
@@ -85,7 +130,7 @@ ERROR	duplicate_label	participates in	label	participates in@en
 ERROR	duplicate_label	organismal entity	label	organismal entity@en
 ERROR	duplicate_label	organismal entity	label	organismal entity@en
 ERROR	duplicate_label	organism	label	organism@en
-ERROR	duplicate_label	organism	label	organism@en
+ERROR	duplicate_label	obsolete organism	label	organism@en
 ERROR	duplicate_label	organ dose	label	organ dose
 ERROR	duplicate_label	organ dose	label	organ dose
 ERROR	duplicate_label	nuclear accident study	label	nuclear accident study
@@ -136,6 +181,8 @@ ERROR	duplicate_label	bystander effect	label	bystander effect
 ERROR	duplicate_label	bystander effect	label	bystander effect
 ERROR	duplicate_label	biodosimetry	label	biodosimetry
 ERROR	duplicate_label	biodosimetry	label	biodosimetry
+ERROR	duplicate_label	atom	label	atom
+ERROR	duplicate_label	atom	label	atom
 ERROR	duplicate_label	as low as reasonably achievable	label	as low as reasonably achievable
 ERROR	duplicate_label	as low as reasonably achievable	label	as low as reasonably achievable
 ERROR	duplicate_label	anatomical structure	label	anatomical structure
@@ -144,7 +191,12 @@ ERROR	duplicate_label	anatomical entity	label	anatomical entity
 ERROR	duplicate_label	anatomical entity	label	anatomical entity
 ERROR	label_formatting	Encoding Schemes for temporal characteristics	label	"Encoding Schemes
         for temporal characteristics@en-us"
+ERROR	missing_label	OMO:0003003	label	
 ERROR	missing_label	obo:chebi#IUPAC_NAME	label	
+ERROR	missing_label	obo:ncbitaxon/subsets/taxslim.obo#blast_name	label	
+ERROR	missing_label	obo:ncbitaxon/subsets/taxslim.obo#genbank_common_name	label	
+ERROR	missing_label	obo:ncbitaxon/subsets/taxslim.obo#synonym	label	
+ERROR	missing_label	obo:po#Spanish	label	
 ERROR	missing_label	http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled	label	
 ERROR	missing_label	xsd:boolean	label	
 ERROR	missing_label	xsd:string	label	
@@ -171,8 +223,14 @@ ERROR	multiple_definitions	protein	textual definition	A biological macromolecule
 ERROR	multiple_definitions	protein	textual definition	An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.
 ERROR	multiple_definitions	alpha-amino-acid zwitterion	textual definition	An amino acid zwitterion obtained by transfer of a proton from the carboxy to the amino group of any alpha-amino acid; major species at pH 7.3.
 ERROR	multiple_definitions	alpha-amino-acid zwitterion	textual definition	An amino acid-zwitterion obtained by transfer of a proton from the carboxy to the amino group of any alpha-amino acid; major species at pH 7.3.
+ERROR	multiple_definitions	atom	textual definition	A chemical entity constituting the smallest component of an element having the chemical properties of the element.
+ERROR	multiple_definitions	atom	textual definition	A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.@en
 ERROR	multiple_definitions	molecule	textual definition	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.
 ERROR	multiple_definitions	molecule	textual definition	A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.@en
+ERROR	multiple_definitions	molecule	textual definition	Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.
+ERROR	multiple_definitions	complex of molecules	textual definition	A complex of two or more molecular entities that are not covalently bound.
+ERROR	multiple_definitions	complex of molecules	textual definition	A complex of two or more molecular entities that are not covalently bound.@en
+ERROR	multiple_definitions	complex of molecules	textual definition	A complex of two or more molecules that are not covalently bound.@en
 ERROR	multiple_definitions	molecular_function	textual definition	A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.
 ERROR	multiple_definitions	molecular_function	textual definition	A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs. These actions are described from two distinct but related perspectives: (1) biochemical activity, and (2) role as a component in a larger system/process.
 ERROR	multiple_definitions	cellular_component	textual definition	A location, relative to cellular compartments and structures, occupied by a macromolecular machine when it carries out a molecular function. There are two ways in which the gene ontology describes locations of gene products: (1) relative to cellular structures (e.g., cytoplasmic side of plasma membrane) or compartments (e.g., mitochondrion), and (2) the stable macromolecular complexes of which they are parts (e.g., the ribosome).
@@ -197,6 +255,8 @@ ERROR	multiple_definitions	data item	textual definition	a data item is an inform
 ERROR	multiple_definitions	information content entity	textual definition	A generically dependent continuant that is about some thing.@en
 ERROR	multiple_definitions	information content entity	textual definition	An information entity is an entity that represents information about some other entity.  For example, a measurement, a clustered data set.
 ERROR	multiple_definitions	information content entity	textual definition	an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity@en
+ERROR	multiple_definitions	failed exploratory term	textual definition	The term was initially used in an attempt to structure part of the ontology, but in retrospect failed to do a good job.@en
+ERROR	multiple_definitions	failed exploratory term	textual definition	The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job@en
 ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
 ERROR	multiple_definitions	plan specification	textual definition	A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.@en
 ERROR	multiple_definitions	textual definition	textual definition	The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
@@ -209,8 +269,6 @@ ERROR	multiple_definitions	organizational term	textual definition	Term created t
 ERROR	multiple_definitions	organizational term	textual definition	The term was created to ease viewing/sorting terms for development purposes, but will not be included in a release.@en
 ERROR	multiple_definitions	is about	textual definition	A (currently) primitive relation that relates an information artifact to an entity.@en
 ERROR	multiple_definitions	is about	textual definition	is_about is a (currently) primitive relation that relates an information artifact to an entity.
-ERROR	multiple_definitions	planned process	textual definition	A process that realizes a plan which is the concretization of a plan specification.@en
-ERROR	multiple_definitions	planned process	textual definition	A processual entity that realizes a plan which is the concretization of a plan specification.
 ERROR	multiple_definitions	specimen role	textual definition	A role borne by a material entity that is obtained during a specimen collection process and that can be realized by performing measurements or observations on the specimen.@en
 ERROR	multiple_definitions	specimen role	textual definition	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
 ERROR	multiple_definitions	is_supported_by_data	textual definition	The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process
@@ -222,6 +280,8 @@ ERROR	multiple_definitions	has_specified_input	textual definition	A relation bet
 ERROR	multiple_definitions	has_specified_input	textual definition	The inverse property of is specified input of
 ERROR	multiple_definitions	has_specified_input	textual definition	The inverse property of is specified input of@en
 ERROR	multiple_definitions	has_specified_input	textual definition	The inverse property of is_specified_input_of@en
+ERROR	multiple_definitions	is specified input of	textual definition	A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.@en
+ERROR	multiple_definitions	is specified input of	textual definition	A relation between a planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.
 ERROR	multiple_definitions	has_output	textual definition	A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.
 ERROR	multiple_definitions	has_output	textual definition	The inverse property of is specified output of
 ERROR	multiple_definitions	has_output	textual definition	The inverse property of is specified output of@en
@@ -280,8 +340,6 @@ ERROR	multiple_definitions	processed specimen	textual definition	A specimen that
 ERROR	multiple_definitions	processed specimen	textual definition	A specimen that has been intentionally physically modified.@en
 ERROR	multiple_definitions	categorical label	textual definition	A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale.
 ERROR	multiple_definitions	categorical label	textual definition	A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale.@en
-ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.
-ERROR	multiple_definitions	device	textual definition	A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.@en
 ERROR	multiple_definitions	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities.@en
 ERROR	multiple_definitions	Edingburgh handedness inventory	textual definition	The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. @en
 ERROR	multiple_definitions	specimen from organism	textual definition	A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).
@@ -638,9 +696,6 @@ ERROR	multiple_definitions	BioGents	textual definition	An organization that manu
 ERROR	multiple_definitions	BioGents	textual definition	An organization that manufactures mosquito traps and other mosquito control products.@en
 ERROR	multiple_definitions	material supplier	textual definition	A person or organization that provides material supplies to other people or organizations.
 ERROR	multiple_definitions	material supplier	textual definition	A person or organization that provides material supplies to other people or organizations.@en
-ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.
-ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.@en
-ERROR	multiple_definitions	organism	textual definition	A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs. E.g Drosophila melanogaster
 ERROR	multiple_definitions	specimen	textual definition	A material entity that has the specimen role.@en
 ERROR	multiple_definitions	specimen	textual definition	A material entity that is collected for potential use as an input upon which measurements or observations are performed.@en
 ERROR	multiple_definitions	leave one out cross validation method	textual definition	is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data
@@ -649,6 +704,8 @@ ERROR	multiple_definitions	data visualization	textual definition	A planned proce
 ERROR	multiple_definitions	data visualization	textual definition	An planned process that creates images, diagrams or animations from the input data.@en
 ERROR	multiple_definitions	clustered data visualization	textual definition	A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.
 ERROR	multiple_definitions	clustered data visualization	textual definition	A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.@en
+ERROR	multiple_definitions	protein	textual definition	An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.
+ERROR	multiple_definitions	protein	textual definition	An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.
 ERROR	multiple_definitions	amino acid chain	textual definition	A molecule that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.
 ERROR	multiple_definitions	amino acid chain	textual definition	An organic amino compound that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.
 ERROR	multiple_definitions	mass number	textual definition	Radon dosimeters are radiation dosimeters used to measure the presence and concentration of radon gas (Rn-222), a radioactive noble gas that can accumulate in buildings and pose health risks. Different types of radon detectors use various detection methods, based on the radioactive decay products of radon.
@@ -729,7 +786,9 @@ ERROR	multiple_equivalent_class_definitions	membrane biogenesis	owl:equivalentCl
 ERROR	multiple_equivalent_class_definitions	nuclear membrane biogenesis	owl:equivalentClass	blank node
 ERROR	multiple_equivalent_class_definitions	alpha-amino acid metabolic process	owl:equivalentClass	blank node
 ERROR	multiple_equivalent_class_definitions	alpha-amino acid biosynthetic process	owl:equivalentClass	blank node
+ERROR	multiple_equivalent_class_definitions	specimen collection process	owl:equivalentClass	blank node
 ERROR	multiple_equivalent_class_definitions	processed specimen	owl:equivalentClass	blank node
+ERROR	multiple_equivalent_class_definitions	light emission device	owl:equivalentClass	blank node
 ERROR	multiple_equivalent_class_definitions	specimen from organism	owl:equivalentClass	blank node
 ERROR	multiple_equivalent_class_definitions	protein-containing molecular entity	owl:equivalentClass	blank node
 ERROR	multiple_labels	continuant	label	continuant
@@ -766,9 +825,9 @@ ERROR	multiple_labels	part_of	label	part_of
 ERROR	multiple_labels	has_part	label	has part
 ERROR	multiple_labels	has_part	label	has part@en
 ERROR	multiple_labels	has_part	label	has_part
-ERROR	multiple_labels	realized in	label	has realization@en
-ERROR	multiple_labels	realized in	label	realized in
-ERROR	multiple_labels	realized in	label	realized in@en
+ERROR	multiple_labels	has realization	label	has realization@en
+ERROR	multiple_labels	has realization	label	realized in
+ERROR	multiple_labels	has realization	label	realized in@en
 ERROR	multiple_labels	has participant	label	has participant
 ERROR	multiple_labels	has participant	label	has participant@en
 ERROR	multiple_labels	preceded by	label	preceded by
@@ -793,8 +852,12 @@ ERROR	multiple_labels	cell	label	cell
 ERROR	multiple_labels	cell	label	cell@en
 ERROR	multiple_labels	neuron	label	neuron
 ERROR	multiple_labels	neuron	label	neuron@en
+ERROR	multiple_labels	atom	label	atom
+ERROR	multiple_labels	atom	label	atom@en
 ERROR	multiple_labels	molecule	label	molecule
 ERROR	multiple_labels	molecule	label	molecule@en
+ERROR	multiple_labels	complex of molecules	label	complex of molecules
+ERROR	multiple_labels	complex of molecules	label	complex of molecules@en
 ERROR	multiple_labels	has atomic number	label	has atomic number
 ERROR	multiple_labels	has atomic number	label	has atomic number@en
 ERROR	multiple_labels	laboratory facility	label	laboratory facility
@@ -859,8 +922,6 @@ ERROR	multiple_labels	is about	label	is about
 ERROR	multiple_labels	is about	label	is about@en
 ERROR	multiple_labels	Mus <genus>	label	Mus
 ERROR	multiple_labels	Mus <genus>	label	Mus <genus>
-ERROR	multiple_labels	planned process	label	planned process
-ERROR	multiple_labels	planned process	label	planned process@en
 ERROR	multiple_labels	organization	label	organization
 ERROR	multiple_labels	organization	label	organization@en
 ERROR	multiple_labels	protocol	label	protocol
@@ -878,8 +939,6 @@ ERROR	multiple_labels	is_specified_output_of	label	is specified output of@en
 ERROR	multiple_labels	is_specified_output_of	label	is_specified_output_of@en
 ERROR	multiple_labels	specimen from organism	label	specimen from organism
 ERROR	multiple_labels	specimen from organism	label	specimen from organism@en
-ERROR	multiple_labels	organism	label	organism
-ERROR	multiple_labels	organism	label	organism@en
 ERROR	multiple_labels	mass number	label	mass number
 ERROR	multiple_labels	mass number	label	radon dosimeter
 ERROR	multiple_labels	inheres in	label	characteristic of@en
@@ -917,8 +976,6 @@ ERROR	multiple_labels	negatively regulates	label	negatively regulates
 ERROR	multiple_labels	negatively regulates	label	negatively regulates@en
 ERROR	multiple_labels	positively regulates	label	positively regulates
 ERROR	multiple_labels	positively regulates	label	positively regulates@en
-ERROR	multiple_labels	capable of	label	capable of
-ERROR	multiple_labels	capable of	label	capable of@en
 ERROR	multiple_labels	surrounded by	label	surrounded by
 ERROR	multiple_labels	surrounded by	label	surrounded by@en
 ERROR	multiple_labels	adjacent to	label	adjacent to
@@ -939,9 +996,9 @@ ERROR	multiple_labels	output of	label	output of@en
 ERROR	multiple_labels	output of	label	output_of
 ERROR	multiple_labels	prefix	label	derived unit
 ERROR	multiple_labels	prefix	label	prefix
-ERROR	multiple_labels	creator	label	Creator
-ERROR	multiple_labels	creator	label	Creator@en-us
-ERROR	multiple_labels	creator	label	creator
+ERROR	multiple_labels	Creator	label	Creator
+ERROR	multiple_labels	Creator	label	Creator@en-us
+ERROR	multiple_labels	Creator	label	creator
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
@@ -954,8 +1011,8 @@ ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
 ERROR	multiple_labels	has_broad_synonym	label	has_broad_synonym
-ERROR	multiple_labels	has cross-reference	label	database_cross_reference
-ERROR	multiple_labels	has cross-reference	label	has cross-reference
+ERROR	multiple_labels	database_cross_reference	label	database_cross_reference
+ERROR	multiple_labels	database_cross_reference	label	has cross-reference
 ERROR	multiple_labels	has exact synonym	label	has exact synonym@en
 ERROR	multiple_labels	has exact synonym	label	has_exact_synonym
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
@@ -986,16 +1043,16 @@ WARN	annotation_whitespace	function	IAO:0000602	(forall (x) (if (Function x) (Di
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
-WARN	annotation_whitespace	cell	has cross-reference	"CALOHA:TS-2035
+WARN	annotation_whitespace	cell	database_cross_reference	"CALOHA:TS-2035
 "
-WARN	annotation_whitespace	cell	has cross-reference	FMA:68646 
-WARN	annotation_whitespace	cell	has cross-reference	GO:0005623
-WARN	annotation_whitespace	cell	has cross-reference	"KUPO:0000002
+WARN	annotation_whitespace	cell	database_cross_reference	FMA:68646 
+WARN	annotation_whitespace	cell	database_cross_reference	GO:0005623
+WARN	annotation_whitespace	cell	database_cross_reference	"KUPO:0000002
 
 "
-WARN	annotation_whitespace	cell	has cross-reference	VHOG:0001533
-WARN	annotation_whitespace	cell	has cross-reference	WBbt:0004017
-WARN	annotation_whitespace	cell	has cross-reference	XAO:0003012
+WARN	annotation_whitespace	cell	database_cross_reference	VHOG:0001533
+WARN	annotation_whitespace	cell	database_cross_reference	WBbt:0004017
+WARN	annotation_whitespace	cell	database_cross_reference	XAO:0003012
 WARN	annotation_whitespace	datum label	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
 "
 WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
@@ -1141,10 +1198,6 @@ WARN	duplicate_exact_synonym	Stage IIB (AJCC 7th)	alternative term
 WARN	duplicate_exact_synonym	Stage IIB (FIGO)	alternative term	
 WARN	duplicate_exact_synonym	Stage IIA (AJCC 7th)	alternative term	
 WARN	duplicate_exact_synonym	Stage IIA (FIGO)	alternative term	
-WARN	duplicate_exact_synonym	relative biological effectiveness	alternative term	
-WARN	duplicate_exact_synonym	relative biological effectiveness	has exact synonym	
-WARN	duplicate_exact_synonym	relative biological effectiveness	alternative term	
-WARN	duplicate_exact_synonym	relative biological effectiveness	has exact synonym	
 WARN	duplicate_exact_synonym	pathologic lymph node stage for colon and rectum according to AJCC 7th edition	alternative term	
 WARN	duplicate_exact_synonym	pathologic lymph node stage for lung according to AJCC 7th edition	alternative term	
 WARN	duplicate_exact_synonym	picometer	has exact synonym	
@@ -1186,10 +1239,6 @@ WARN	duplicate_exact_synonym	molar	has exact synonym
 WARN	duplicate_exact_synonym	molal	has exact synonym	
 WARN	duplicate_exact_synonym	mega	has exact synonym	
 WARN	duplicate_exact_synonym	milli	has exact synonym	
-WARN	duplicate_exact_synonym	linear energy transfer	alternative term	
-WARN	duplicate_exact_synonym	linear energy transfer	has exact synonym	
-WARN	duplicate_exact_synonym	linear energy transfer measurement	alternative term	
-WARN	duplicate_exact_synonym	linear energy transfer measurement	has exact synonym	
 WARN	duplicate_exact_synonym	kelvin	has exact synonym	
 WARN	duplicate_exact_synonym	kilo	has exact synonym	
 WARN	duplicate_exact_synonym	Insecta	has exact synonym	
@@ -1212,10 +1261,6 @@ WARN	duplicate_exact_synonym	Dipnomorpha	has exact synonym
 WARN	duplicate_exact_synonym	Actinopterygii	has exact synonym	
 WARN	duplicate_exact_synonym	degree Fahrenheit	has exact synonym	
 WARN	duplicate_exact_synonym	femto	has exact synonym	
-WARN	duplicate_exact_synonym	delta ray	alternative term	
-WARN	duplicate_exact_synonym	delta ray	has exact synonym	
-WARN	duplicate_exact_synonym	delta ray	alternative term	
-WARN	duplicate_exact_synonym	delta ray	has exact synonym	
 WARN	duplicate_exact_synonym	dorsal aorta	has exact synonym	
 WARN	duplicate_exact_synonym	centimeter	has exact synonym	
 WARN	duplicate_exact_synonym	centiMorgan	has exact synonym	
@@ -1230,10 +1275,6 @@ WARN	duplicate_exact_synonym	magnetic flux density unit	has exact synonym
 WARN	duplicate_exact_synonym	byte	has exact synonym	
 WARN	duplicate_exact_synonym	azanide	has exact synonym	
 WARN	duplicate_exact_synonym	amide	has exact synonym	
-WARN	duplicate_exact_synonym	as low as reasonably achievable	alternative term	
-WARN	duplicate_exact_synonym	as low as reasonably achievable	has exact synonym	
-WARN	duplicate_exact_synonym	as low as reasonably achievable	alternative term	
-WARN	duplicate_exact_synonym	as low as reasonably achievable	has exact synonym	
 WARN	duplicate_exact_synonym	ampere	has exact synonym	
 WARN	duplicate_exact_synonym	atto	has exact synonym	
 WARN	duplicate_exact_synonym	A/J	has exact synonym	
@@ -1388,6 +1429,7 @@ WARN	duplicate_label_synonym	cadmium-113	has exact synonym	cadmium-113
 WARN	duplicate_label_synonym	molybdenum-95	has exact synonym	molybdenum-95
 WARN	duplicate_label_synonym	dosimeter	has exact synonym	dosimeter
 WARN	duplicate_label_synonym	myocyte of sinoatrial node	has exact synonym	myocyte of sinoatrial node
+WARN	duplicate_label_synonym	atom	has exact synonym	atom
 WARN	duplicate_label_synonym	molecule	has exact synonym	molecule
 WARN	duplicate_label_synonym	nucleus	has exact synonym	nucleus
 WARN	duplicate_label_synonym	behavior	has exact synonym	behavior
@@ -1411,7 +1453,6 @@ WARN	duplicate_label_synonym	neptunium	has exact synonym	neptunium
 WARN	duplicate_label_synonym	plutonium	has exact synonym	plutonium
 WARN	duplicate_label_synonym	thorium	has exact synonym	thorium
 WARN	duplicate_label_synonym	uranium	has exact synonym	uranium
-WARN	duplicate_label_synonym	biological process	has exact synonym	biological process
 WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
 WARN	duplicate_label_synonym	overlaps	alternative term	overlaps
 WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
@@ -1922,6 +1963,8 @@ WARN	duplicate_scoped_synonym	iodine-129 atom	has exact synonym	iodine-129
 WARN	duplicate_scoped_synonym	iodine-129 atom	has_related_synonym	iodine-129
 WARN	duplicate_scoped_synonym	europium-151 atom	has exact synonym	europium-151
 WARN	duplicate_scoped_synonym	europium-151 atom	has_related_synonym	europium-151
+WARN	duplicate_scoped_synonym	protein-containing complex	alternative term	protein complex
+WARN	duplicate_scoped_synonym	protein-containing complex	oboInOwl:hasNarrowSynonym	protein complex
 WARN	duplicate_scoped_synonym	membraneless organelle	oboInOwl:hasNarrowSynonym	biological condensate
 WARN	duplicate_scoped_synonym	membraneless organelle	has_related_synonym	biological condensate
 WARN	duplicate_scoped_synonym	Euteleostomi	alternative term	bony vertebrates
@@ -1953,8 +1996,10 @@ WARN	duplicate_scoped_synonym	Viridiplantae	has exact synonym	green plants
 WARN	duplicate_scoped_synonym	Viridiplantae	has_related_synonym	green plants
 WARN	duplicate_scoped_synonym	Metazoa	alternative term	metazoans
 WARN	duplicate_scoped_synonym	Metazoa	alternative term	multicellular animals
+WARN	duplicate_scoped_synonym	Metazoa	has exact synonym	animals
 WARN	duplicate_scoped_synonym	Metazoa	has exact synonym	metazoans
 WARN	duplicate_scoped_synonym	Metazoa	has exact synonym	multicellular animals
+WARN	duplicate_scoped_synonym	Metazoa	has_related_synonym	animals
 WARN	duplicate_scoped_synonym	Carnivora	has exact synonym	carnivores
 WARN	duplicate_scoped_synonym	Carnivora	has_related_synonym	carnivores
 WARN	duplicate_scoped_synonym	Magnoliopsida	has exact synonym	flowering plants
@@ -2019,6 +2064,8 @@ WARN	duplicate_scoped_synonym	Artiodactyla	has exact synonym	even-toed ungulates
 WARN	duplicate_scoped_synonym	Artiodactyla	has_related_synonym	even-toed ungulates & whales
 WARN	duplicate_scoped_synonym	Eutheria	has exact synonym	placentals
 WARN	duplicate_scoped_synonym	Eutheria	has_related_synonym	placentals
+WARN	duplicate_scoped_synonym	Primates	has exact synonym	primates
+WARN	duplicate_scoped_synonym	Primates	has_related_synonym	primates
 WARN	duplicate_scoped_synonym	Homo sapiens	alternative term	human
 WARN	duplicate_scoped_synonym	Homo sapiens	has exact synonym	human
 WARN	duplicate_scoped_synonym	ionizing radiation	alternative term	ionising radiation
@@ -2221,12 +2268,12 @@ WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track s
 WARN	equivalent_class_axiom_no_genus	track formation	has_output	particle track
 WARN	equivalent_pair	role	owl:equivalentClass	role
 WARN	equivalent_pair	protein	owl:equivalentClass	protein
-WARN	invalid_xref	cell	has cross-reference	FMA:68646 
-WARN	invalid_xref	cell	has cross-reference	"KUPO:0000002
+WARN	invalid_xref	cell	database_cross_reference	FMA:68646 
+WARN	invalid_xref	cell	database_cross_reference	"KUPO:0000002
 
 "
-WARN	invalid_xref	cell	has cross-reference	VHOG:0001533
-WARN	invalid_xref	cell	has cross-reference	XAO:0003012
+WARN	invalid_xref	cell	database_cross_reference	VHOG:0001533
+WARN	invalid_xref	cell	database_cross_reference	XAO:0003012
 WARN	missing_definition	temporal region	textual definition	
 WARN	missing_definition	spatiotemporal region	textual definition	
 WARN	missing_definition	fiat object part	textual definition	
@@ -2586,56 +2633,34 @@ WARN	missing_definition	trophectodermal cell	textual definition
 WARN	missing_definition	lung endothelial cell	textual definition	
 WARN	missing_definition	pulmonary artery endothelial cell	textual definition	
 WARN	missing_definition	completely executed planned process	textual definition	
+WARN	missing_definition	characteristic	textual definition	
 WARN	missing_definition	atherosclerosis	textual definition	
 WARN	missing_definition	iris disease	textual definition	
 WARN	missing_definition	liver disease	textual definition	
 WARN	missing_definition	bone marrow disease	textual definition	
 WARN	missing_definition	cornea cancer	textual definition	
-WARN	missing_definition	anthropogenic geographic feature	textual definition	
 WARN	missing_definition	mine tailing	textual definition	
 WARN	missing_definition	transport feature	textual definition	
-WARN	missing_definition	hydrographic feature	textual definition	
-WARN	missing_definition	sea	textual definition	
-WARN	missing_definition	saline hydrographic feature	textual definition	
-WARN	missing_definition	saline lake	textual definition	
-WARN	missing_definition	lake	textual definition	
 WARN	missing_definition	sand pit quarry	textual definition	
 WARN	missing_definition	wetland area	textual definition	
-WARN	missing_definition	water body	textual definition	
-WARN	missing_definition	human construction	textual definition	
 WARN	missing_definition	building	textual definition	
 WARN	missing_definition	mine	textual definition	
 WARN	missing_definition	agricultural ecosystem	textual definition	
-WARN	missing_definition	desert area	textual definition	
 WARN	missing_definition	valley	textual definition	
 WARN	missing_definition	grassland area	textual definition	
 WARN	missing_definition	woodland area	textual definition	
 WARN	missing_definition	forested area	textual definition	
 WARN	missing_definition	agricultural field	textual definition	
 WARN	missing_definition	dry valley	textual definition	
-WARN	missing_definition	permafrost	textual definition	
 WARN	missing_definition	ocean current	textual definition	
-WARN	missing_definition	elevated landform	textual definition	
-WARN	missing_definition	solid astronomical body part	textual definition	
 WARN	missing_definition	swamp ecosystem	textual definition	
 WARN	missing_definition	glacial valley	textual definition	
 WARN	missing_definition	quarry	textual definition	
 WARN	missing_definition	ice field	textual definition	
 WARN	missing_definition	scrubland area	textual definition	
-WARN	missing_definition	depressed landform	textual definition	
-WARN	missing_definition	particle of sand	textual definition	
 WARN	missing_definition	grain of desert sand	textual definition	
-WARN	missing_definition	biome	textual definition	
-WARN	missing_definition	terrestrial biome	textual definition	
 WARN	missing_definition	marine biome	textual definition	
-WARN	missing_definition	research facility	textual definition	
 WARN	missing_definition	submerged bed	textual definition	
-WARN	missing_definition	rock	textual definition	
-WARN	missing_definition	soil	textual definition	
-WARN	missing_definition	slope	textual definition	
-WARN	missing_definition	air	textual definition	
-WARN	missing_definition	liquid water	textual definition	
-WARN	missing_definition	sediment	textual definition	
 WARN	missing_definition	dust	textual definition	
 WARN	missing_definition	sedimentary rock	textual definition	
 WARN	missing_definition	wood	textual definition	
@@ -2650,36 +2675,23 @@ WARN	missing_definition	geothermal power plant	textual definition
 WARN	missing_definition	industrial waste material	textual definition	
 WARN	missing_definition	nuclear power plant	textual definition	
 WARN	missing_definition	air conditioning unit	textual definition	
-WARN	missing_definition	clay	textual definition	
-WARN	missing_definition	manufactured product	textual definition	
 WARN	missing_definition	industrial building	textual definition	
 WARN	missing_definition	brewery	textual definition	
-WARN	missing_definition	research station	textual definition	
 WARN	missing_definition	warehouse	textual definition	
 WARN	missing_definition	air filter	textual definition	
-WARN	missing_definition	upland soil	textual definition	
 WARN	missing_definition	animal habitation	textual definition	
 WARN	missing_definition	nest of bird	textual definition	
-WARN	missing_definition	environmental material	textual definition	
-WARN	missing_definition	surface layer	textual definition	
-WARN	missing_definition	aerosol	textual definition	
-WARN	missing_definition	anthropogenic environmental material	textual definition	
 WARN	missing_definition	upwelling	textual definition	
-WARN	missing_definition	silt	textual definition	
-WARN	missing_definition	sand	textual definition	
 WARN	missing_definition	estuarine biome	textual definition	
 WARN	missing_definition	marine salt marsh biome	textual definition	
 WARN	missing_definition	marginal sea biome	textual definition	
 WARN	missing_definition	ocean biome	textual definition	
 WARN	missing_definition	marine current	textual definition	
-WARN	missing_definition	organic material	textual definition	
 WARN	missing_definition	subtropical desert biome	textual definition	
 WARN	missing_definition	tropical grassland biome	textual definition	
 WARN	missing_definition	temperate grassland biome	textual definition	
-WARN	missing_definition	environmental condition	textual definition	
 WARN	missing_definition	tropical	textual definition	
 WARN	missing_definition	temperate	textual definition	
-WARN	missing_definition	anthropogenic terrestrial biome	textual definition	
 WARN	missing_definition	polar	textual definition	
 WARN	missing_definition	desert scrubland	textual definition	
 WARN	missing_definition	cropland biome	textual definition	
@@ -2687,15 +2699,6 @@ WARN	missing_definition	village biome	textual definition
 WARN	missing_definition	rangeland biome	textual definition	
 WARN	missing_definition	dense settlement biome	textual definition	
 WARN	missing_definition	subpolar	textual definition	
-WARN	missing_definition	mineral material	textual definition	
-WARN	missing_definition	water vapour	textual definition	
-WARN	missing_definition	atmosphere	textual definition	
-WARN	missing_definition	atmospheric water vapour	textual definition	
-WARN	missing_definition	ecoregion	textual definition	
-WARN	missing_definition	water ice	textual definition	
-WARN	missing_definition	ecozone	textual definition	
-WARN	missing_definition	layer	textual definition	
-WARN	missing_definition	marine layer	textual definition	
 WARN	missing_definition	marine environment	textual definition	
 WARN	missing_definition	understory	textual definition	
 WARN	missing_definition	shrub layer	textual definition	
@@ -2705,7 +2708,6 @@ WARN	missing_definition	alpine	textual definition
 WARN	missing_definition	montane	textual definition	
 WARN	missing_definition	altitudinal condition	textual definition	
 WARN	missing_definition	field	textual definition	
-WARN	missing_definition	snow	textual definition	
 WARN	missing_definition	house	textual definition	
 WARN	missing_definition	human house	textual definition	
 WARN	missing_definition	room	textual definition	
@@ -2731,87 +2733,35 @@ WARN	missing_definition	stratosphere	textual definition
 WARN	missing_definition	mesosphere	textual definition	
 WARN	missing_definition	troposphere	textual definition	
 WARN	missing_definition	thermosphere	textual definition	
-WARN	missing_definition	boundary layer	textual definition	
 WARN	missing_definition	motor vehicle	textual definition	
-WARN	missing_definition	vehicle	textual definition	
 WARN	missing_definition	motor	textual definition	
-WARN	missing_definition	hydrological condensation process	textual definition	
 WARN	missing_definition	plant litter	textual definition	
-WARN	missing_definition	planetary landmass	textual definition	
-WARN	missing_definition	outer space	textual definition	
-WARN	missing_definition	planetary crust	textual definition	
-WARN	missing_definition	planetary mantle	textual definition	
-WARN	missing_definition	lithosphere	textual definition	
 WARN	missing_definition	geological fracture	textual definition	
 WARN	missing_definition	earthquake	textual definition	
 WARN	missing_definition	tectonic earthquake	textual definition	
-WARN	missing_definition	coast	textual definition	
 WARN	missing_definition	tsunami	textual definition	
 WARN	missing_definition	geological subsidence	textual definition	
-WARN	missing_definition	hydrological precipitation process	textual definition	
-WARN	missing_definition	condensation process	textual definition	
-WARN	missing_definition	desublimation process	textual definition	
 WARN	missing_definition	habitat	textual definition	
 WARN	missing_definition	land consumption process	textual definition	
 WARN	missing_definition	human dwelling	textual definition	
-WARN	missing_definition	area of barren land	textual definition	
 WARN	missing_definition	village	textual definition	
 WARN	missing_definition	public infrastructure	textual definition	
 WARN	missing_definition	mass gaseous flow	textual definition	
 WARN	missing_definition	atmospheric wind	textual definition	
-WARN	missing_definition	gaseous environmental material	textual definition	
-WARN	missing_definition	plasma	textual definition	
-WARN	missing_definition	astronomical body	textual definition	
-WARN	missing_definition	planet	textual definition	
-WARN	missing_definition	star	textual definition	
-WARN	missing_definition	astronomical object	textual definition	
-WARN	missing_definition	biosphere	textual definition	
-WARN	missing_definition	hydrosphere	textual definition	
-WARN	missing_definition	pedosphere	textual definition	
 WARN	missing_definition	water-based rainfall	textual definition	
 WARN	missing_definition	droplet	textual definition	
 WARN	missing_definition	water raindrop	textual definition	
-WARN	missing_definition	crystal	textual definition	
 WARN	missing_definition	area of scrub	textual definition	
-WARN	missing_definition	precipitation process	textual definition	
 WARN	missing_definition	area of developed open space	textual definition	
 WARN	missing_definition	area of sedge- and forb-dominated herbaceous vegetation	textual definition	
 WARN	missing_definition	area of gramanoid or herbaceous vegetation	textual definition	
-WARN	missing_definition	natural environment	textual definition	
-WARN	missing_definition	anthropisation	textual definition	
-WARN	missing_definition	terrestrial planet	textual definition	
 WARN	missing_definition	animal trap	textual definition	
 WARN	missing_definition	mass liquid flow	textual definition	
-WARN	missing_definition	technosphere	textual definition	
 WARN	missing_definition	plumbing fixture	textual definition	
-WARN	missing_definition	manufacturing process	textual definition	
-WARN	missing_definition	meteor	textual definition	
-WARN	missing_definition	hydrometeor	textual definition	
-WARN	missing_definition	radiation	textual definition	
 WARN	missing_definition	particle radiation	textual definition	
-WARN	missing_definition	electromagnetic radiation	textual definition	
-WARN	missing_definition	meteoroid	textual definition	
-WARN	missing_definition	metallic material	textual definition	
-WARN	missing_definition	particulate matter formation process	textual definition	
-WARN	missing_definition	atmospheric aerosol formation	textual definition	
-WARN	missing_definition	formation of a solid aerosol in an atmosphere	textual definition	
-WARN	missing_definition	formation of a liquid aerosol in an atmosphere	textual definition	
-WARN	missing_definition	aerosolised liquids	textual definition	
-WARN	missing_definition	aerosolised solids	textual definition	
-WARN	missing_definition	formation of a solid aerosol from gaseous material in an atmosphere	textual definition	
-WARN	missing_definition	formation of a liquid aerosol from gaseous material in an atmosphere	textual definition	
 WARN	missing_definition	tectonic movement	textual definition	
 WARN	missing_definition	tectonic plate	textual definition	
 WARN	missing_definition	tectonic plate boundary	textual definition	
-WARN	missing_definition	ecosystem	textual definition	
-WARN	missing_definition	gas planet	textual definition	
-WARN	missing_definition	ocean planet	textual definition	
-WARN	missing_definition	ice planet	textual definition	
-WARN	missing_definition	carbon dioxide ice	textual definition	
-WARN	missing_definition	helium planet	textual definition	
-WARN	missing_definition	volatile astrogeological material	textual definition	
-WARN	missing_definition	astrogeological gas	textual definition	
-WARN	missing_definition	geodiversity	textual definition	
 WARN	missing_definition	ecosystem fragmentation process	textual definition	
 WARN	missing_definition	active ecosystem management process	textual definition	
 WARN	missing_definition	acidic soil	textual definition	
@@ -2819,7 +2769,6 @@ WARN	missing_definition	algal material	textual definition
 WARN	missing_definition	lithification	textual definition	
 WARN	missing_definition	grassland ecosystem	textual definition	
 WARN	missing_definition	wetland ecosystem	textual definition	
-WARN	missing_definition	stellar radiation	textual definition	
 WARN	missing_definition	office building	textual definition	
 WARN	missing_definition	commercial building	textual definition	
 WARN	missing_definition	office	textual definition	
@@ -2832,10 +2781,7 @@ WARN	missing_definition	agricultural process	textual definition
 WARN	missing_definition	bush area	textual definition	
 WARN	missing_definition	advective transport process	textual definition	
 WARN	missing_definition	erosion	textual definition	
-WARN	missing_definition	aerosolised particle formation process	textual definition	
-WARN	missing_definition	primary aerosol formation process	textual definition	
 WARN	missing_definition	gill tissue material	textual definition	
-WARN	missing_definition	laboratory facility	textual definition	
 WARN	missing_definition	land conversion process	textual definition	
 WARN	missing_definition	agricultural land conversion process	textual definition	
 WARN	missing_definition	land use process	textual definition	
@@ -2847,22 +2793,8 @@ WARN	missing_definition	usage of an environment for infrastructure and utilities
 WARN	missing_definition	usage of an environment for residential activity	textual definition	
 WARN	missing_definition	usage of an environment for industry	textual definition	
 WARN	missing_definition	usage of an environment for business	textual definition	
-WARN	missing_definition	fluid astronomical body part	textual definition	
 WARN	missing_definition	domestic building	textual definition	
-WARN	missing_definition	aircraft	textual definition	
-WARN	missing_definition	radiation from a manufactured product	textual definition	
 WARN	missing_definition	visible spectrum radiation from a manufactured product	textual definition	
-WARN	missing_definition	material congelation process	textual definition	
-WARN	missing_definition	frozen land	textual definition	
-WARN	missing_definition	freezing	textual definition	
-WARN	missing_definition	snow accumulation process	textual definition	
-WARN	missing_definition	ice accumulation process	textual definition	
-WARN	missing_definition	snow and ice accumulation process	textual definition	
-WARN	missing_definition	formation of a solid aerosol from liquid material in an atmosphere	textual definition	
-WARN	missing_definition	fluid interface layer	textual definition	
-WARN	missing_definition	fluid front	textual definition	
-WARN	missing_definition	weather front	textual definition	
-WARN	missing_definition	polar front	textual definition	
 WARN	missing_definition	tropical environment	textual definition	
 WARN	missing_definition	subtropical environment	textual definition	
 WARN	missing_definition	polar environment	textual definition	
@@ -2870,18 +2802,10 @@ WARN	missing_definition	subpolar environment	textual definition
 WARN	missing_definition	temperate environment	textual definition	
 WARN	missing_definition	straight-line wind	textual definition	
 WARN	missing_definition	structural collapse process	textual definition	
-WARN	missing_definition	landmass	textual definition	
-WARN	missing_definition	compound astronomical body part	textual definition	
-WARN	missing_definition	land	textual definition	
 WARN	missing_definition	aquatic ecosystem	textual definition	
 WARN	missing_definition	marine ecosystem	textual definition	
 WARN	missing_definition	temperate grassland	textual definition	
-WARN	missing_definition	ecological succession	textual definition	
-WARN	missing_definition	climactic ecological succession	textual definition	
 WARN	missing_definition	wind gust	textual definition	
-WARN	missing_definition	landform	textual definition	
-WARN	missing_definition	particle	textual definition	
-WARN	missing_definition	particle of clay	textual definition	
 WARN	missing_definition	convective transport process	textual definition	
 WARN	missing_definition	convective	textual definition	
 WARN	missing_definition	advective	textual definition	
@@ -2897,7 +2821,6 @@ WARN	missing_definition	dust from plant parts	textual definition
 WARN	missing_definition	open-pit mine	textual definition	
 WARN	missing_definition	nuclear reactor	textual definition	
 WARN	missing_definition	nuclear power reactor	textual definition	
-WARN	missing_definition	fluid environmental material	textual definition	
 WARN	missing_definition	desertification	textual definition	
 WARN	missing_definition	flooding	textual definition	
 WARN	missing_definition	land degradation	textual definition	
@@ -2908,22 +2831,16 @@ WARN	missing_definition	forest area expansion	textual definition
 WARN	missing_definition	planetary erosion	textual definition	
 WARN	missing_definition	environmental pollution	textual definition	
 WARN	missing_definition	soil pollution	textual definition	
-WARN	missing_definition	compaction process	textual definition	
 WARN	missing_definition	geographic basin	textual definition	
 WARN	missing_definition	soot	textual definition	
-WARN	missing_definition	marine sediment	textual definition	
 WARN	missing_definition	acid rainfall	textual definition	
 WARN	missing_definition	acidic water-based rain	textual definition	
-WARN	missing_definition	cryosphere	textual definition	
 WARN	missing_definition	healthcare facility	textual definition	
 WARN	missing_definition	radioactive material	textual definition	
-WARN	missing_definition	snow crystal	textual definition	
 WARN	missing_definition	chemically contaminated sediment	textual definition	
 WARN	missing_definition	pipeline network	textual definition	
 WARN	missing_definition	tailings pond	textual definition	
 WARN	missing_definition	soil organic matter	textual definition	
-WARN	missing_definition	compacted soil	textual definition	
-WARN	missing_definition	water-holding capacity of soil	textual definition	
 WARN	missing_definition	generation of energy from coal	textual definition	
 WARN	missing_definition	stellar radiation energy	textual definition	
 WARN	missing_definition	coal power plant	textual definition	
@@ -3290,6 +3207,7 @@ WARN	missing_definition	Ovis aries	textual definition
 WARN	missing_definition	Caprinae	textual definition	
 WARN	missing_definition	Lagomorpha	textual definition	
 WARN	missing_definition	Rodentia	textual definition	
+WARN	missing_definition	OMO:0003003	textual definition	
 WARN	missing_definition	material entity role	textual definition	
 WARN	missing_definition	physical quality of a process	textual definition	
 WARN	missing_definition	sloped downward	textual definition	
@@ -3333,8 +3251,6 @@ WARN	missing_definition	dentist	textual definition
 WARN	missing_definition	radiologist	textual definition	
 WARN	missing_definition	risk estimate	textual definition	
 WARN	missing_definition	lifetime risk estimate	textual definition	
-WARN	missing_definition	biological process	textual definition	
-WARN	missing_definition	cellular process	textual definition	
 WARN	missing_definition	track formation	textual definition	
 WARN	missing_definition	contained in	textual definition	
 WARN	missing_definition	contains	textual definition	
@@ -3778,6 +3694,10 @@ WARN	missing_definition	is substituent group from	textual definition
 WARN	missing_definition	is tautomer of	textual definition	
 WARN	missing_definition	lacks_part	textual definition	
 WARN	missing_definition	lacks_plasma_membrane_part	textual definition	
+WARN	missing_definition	obo:ncbitaxon/subsets/taxslim.obo#blast_name	textual definition	
+WARN	missing_definition	obo:ncbitaxon/subsets/taxslim.obo#genbank_common_name	textual definition	
+WARN	missing_definition	obo:ncbitaxon/subsets/taxslim.obo#synonym	textual definition	
+WARN	missing_definition	obo:po#Spanish	textual definition	
 WARN	missing_definition	abbreviation	textual definition	
 WARN	missing_definition	channel for	textual definition	
 WARN	missing_definition	channels_from	textual definition	
@@ -3785,7 +3705,7 @@ WARN	missing_definition	channels_into	textual definition
 WARN	missing_definition	layer part of	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	creator	textual definition	
+WARN	missing_definition	Creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	Title	textual definition	
@@ -3862,9 +3782,55 @@ WARN	missing_definition	is subject of	textual definition
 WARN	missing_definition	is about	textual definition	
 WARN	missing_definition	designated by	textual definition	
 WARN	missing_definition	designates	textual definition	
+WARN	missing_obsolete_label	planned process	label	planned process
+WARN	missing_obsolete_label	planned process	label	planned process@en
+WARN	missing_obsolete_label	obsolete device	label	device
+WARN	missing_obsolete_label	obsolete organism	label	organism
+WARN	missing_obsolete_label	obsolete organism	label	organism@en
+WARN	missing_obsolete_label	earth surface	label	earth surface
+WARN	missing_obsolete_label	earth atmosphere	label	earth atmosphere
+WARN	missing_obsolete_label	environmental study	label	environmental study
+WARN	missing_obsolete_label	therapeutics study	label	therapeutics study
+WARN	missing_obsolete_label	nuclear accident study	label	nuclear accident study
+WARN	missing_obsolete_label	biological process	label	biological process
+WARN	missing_obsolete_label	cellular process	label	cellular process
+WARN	missing_obsolete_label	unplanned naturally occurring radiation exposure	label	unplanned naturally occurring radiation exposure
+WARN	missing_obsolete_label	irradiation	label	irradiation
+WARN	missing_obsolete_label	space flight	label	space flight
+WARN	missing_obsolete_label	cis-lunar space	label	cis-lunar space
+WARN	missing_obsolete_label	lunar orbit	label	lunar orbit
+WARN	missing_obsolete_label	lunar surface	label	lunar surface
+WARN	missing_obsolete_label	cis-mars space	label	cis-mars space
+WARN	missing_obsolete_label	mars orbit	label	mars orbit
+WARN	missing_obsolete_label	mars surface	label	mars surface
+WARN	missing_obsolete_label	interplanetary space	label	interplanetary space
+WARN	missing_obsolete_label	planet surface	label	planet surface
+WARN	missing_obsolete_label	miligray per second	label	miligray per second
 WARN	missing_obsolete_label	Gammacell 40	label	Gammacell 40
 WARN	missing_obsolete_label	Faxitron CP160	label	Faxitron CP160
 WARN	missing_obsolete_label	X-Rad320	label	X-Rad320
+WARN	missing_obsolete_label	space radiation environment	label	space radiation environment
+WARN	missing_obsolete_label	as low as reasonably achievable	label	as low as reasonably achievable
+WARN	missing_obsolete_label	radiation attenuation	label	radiation attenuation
+WARN	missing_obsolete_label	biodosimetry	label	biodosimetry
+WARN	missing_obsolete_label	bystander effect	label	bystander effect
+WARN	missing_obsolete_label	delta ray	label	delta ray
+WARN	missing_obsolete_label	dose equivalent	label	dose equivalent
+WARN	missing_obsolete_label	excess lifetime risk of cancer	label	excess lifetime risk of cancer
+WARN	missing_obsolete_label	fast neutron	label	fast neutron
+WARN	missing_obsolete_label	fluence	label	fluence
+WARN	missing_obsolete_label	flux	label	flux
+WARN	missing_obsolete_label	heavy ion	label	heavy ion
+WARN	missing_obsolete_label	linear energy transfer measurement	label	linear energy transfer measurement
+WARN	missing_obsolete_label	organ dose	label	organ dose
+WARN	missing_obsolete_label	quality factor	label	quality factor
+WARN	missing_obsolete_label	radiation dose	label	radiation dose
+WARN	missing_obsolete_label	radiation quality	label	radiation quality
+WARN	missing_obsolete_label	radiation weighting factor	label	radiation weighting factor
+WARN	missing_obsolete_label	relative biological effectiveness	label	relative biological effectiveness
+WARN	missing_obsolete_label	tissue equivalence	label	tissue equivalence
+WARN	missing_obsolete_label	cis-lunar space radiation environment	label	cis-lunar space radiation environment
+WARN	missing_obsolete_label	cis-mars space radiation environment	label	cis-mars space radiation environment
 WARN	missing_subset_declaration	obo:doid#DO_AGR_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_CFDE_slim	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	obo:doid#DO_FlyBase_slim	rdfs:subPropertyOf	
@@ -3892,7 +3858,6 @@ WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_synonymtype_declaration	OMO:0003003	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:bspo#vertebrate	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:caloha-reqs-vetted#PLURAL	rdfs:subPropertyOf	
 WARN	missing_synonymtype_declaration	obo:chebi#INN	rdfs:subPropertyOf	
@@ -3939,7 +3904,9 @@ WARN	multiple_equivalent_classes	nuclear membrane biogenesis	owl:equivalentClass
 WARN	multiple_equivalent_classes	alpha-amino acid metabolic process	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	alpha-amino acid biosynthetic process	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	obsolescence reason specification	owl:equivalentClass	blank node
+WARN	multiple_equivalent_classes	specimen collection process	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	processed specimen	owl:equivalentClass	blank node
+WARN	multiple_equivalent_classes	light emission device	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	specimen from organism	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	protein-containing molecular entity	owl:equivalentClass	blank node
 WARN	multiple_equivalent_classes	kilogram	owl:equivalentClass	blank node
@@ -4035,7 +4002,7 @@ INFO	lowercase_definition	object aggregate	IAO:0000600	b is an object aggregate 
 INFO	lowercase_definition	generically dependent continuant	textual definition	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
 INFO	lowercase_definition	part_of	textual definition	a core relation that holds between a part and its whole@en
 INFO	lowercase_definition	has_part	textual definition	a core relation that holds between a whole and its part@en
-INFO	lowercase_definition	realized in	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	has realization	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	realizes	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
 INFO	lowercase_definition	preceded by	textual definition	x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
 INFO	lowercase_definition	precedes	textual definition	x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en
@@ -4068,6 +4035,10 @@ INFO	lowercase_definition	specimen role	textual definition	a role borne by a mat
 INFO	lowercase_definition	protocol	textual definition	a protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.
 INFO	lowercase_definition	zip	textual definition	zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification  (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/)@en
 INFO	lowercase_definition	tar	textual definition	tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)@en
+INFO	lowercase_definition	reverse transcriptase	textual definition	"enzyme and has_function some GO:0003964 (RNA-directed DNA polymerase
+activity)@en"
+INFO	lowercase_definition	enzyme	textual definition	"(protein or rna) or has_part (protein or rna) and
+has_function some GO:0003824 (catalytic activity)@en"
 INFO	lowercase_definition	assay objective	textual definition	an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)@en
 INFO	lowercase_definition	material transformation objective	textual definition	an objective specifiction that creates an specific output object from input materials.@en
 INFO	lowercase_definition	manufacturing objective	textual definition	is the objective to manufacture a material of a certain function (device)@en
@@ -4256,7 +4227,9 @@ Like CASA, CAST is resistant to flavivirus infection. The flavivirus family incl
 
 Wild-derived mice are genetically distinct from common laboratory mice for a number of complex phenotypic characteristics and are valuable tools for genetic mapping, evolution and systematics research.
 "
+INFO	lowercase_definition	Earth	textual definition	third planet from the Sun in the Solar System
 INFO	missing_superclass	entity	rdfs:subClassOf	
+INFO	missing_superclass	characteristic	rdfs:subClassOf	
 INFO	missing_superclass	cellular response to toxic substance	rdfs:subClassOf	
 INFO	missing_superclass	DCMI Type Vocabulary	rdfs:subClassOf	
 INFO	missing_superclass	Date Encoding Schemes	rdfs:subClassOf	
