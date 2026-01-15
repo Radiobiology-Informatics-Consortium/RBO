@@ -1,5 +1,5 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	1b63178e-f86e-48f2-99e2-495b9608c99bgenid35673
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	7023dee3-1bab-4fd2-9a03-b7aab1921f88genid35673
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	process
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	completely executed planned process
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	material extraction process
@@ -12,8 +12,8 @@ ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	radiobiology st
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned radiation exposure
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned anthropogenic radiation exposure
 ERROR	deprecated_class_reference	planned process	owl:disjointWith	biological process
-ERROR	deprecated_class_reference	planned process	owl:equivalentClass	1b63178e-f86e-48f2-99e2-495b9608c99bgenid35671
-ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	1b63178e-f86e-48f2-99e2-495b9608c99bgenid35806
+ERROR	deprecated_class_reference	planned process	owl:equivalentClass	7023dee3-1bab-4fd2-9a03-b7aab1921f88genid35671
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	7023dee3-1bab-4fd2-9a03-b7aab1921f88genid35806
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	sensor
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	manufactured product
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	processed material
@@ -24,7 +24,7 @@ ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	organismal en
 ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	root
 ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	Viruses
 ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	population of organisms
-ERROR	deprecated_class_reference	obsolete organism	owl:equivalentClass	1b63178e-f86e-48f2-99e2-495b9608c99bgenid35897
+ERROR	deprecated_class_reference	obsolete organism	owl:equivalentClass	7023dee3-1bab-4fd2-9a03-b7aab1921f88genid35897
 ERROR	deprecated_class_reference	earth surface	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	earth atmosphere	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	environmental study	rdfs:subClassOf	radiobiology study type
@@ -708,6 +708,8 @@ ERROR	multiple_definitions	protein	textual definition	An amino acid chain that i
 ERROR	multiple_definitions	protein	textual definition	An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.
 ERROR	multiple_definitions	amino acid chain	textual definition	A molecule that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.
 ERROR	multiple_definitions	amino acid chain	textual definition	An organic amino compound that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.
+ERROR	multiple_definitions	occupational role	textual definition	A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Professionâ€ can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society.
+ERROR	multiple_definitions	occupational role	textual definition	A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Profession” can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society.
 ERROR	multiple_definitions	mass number	textual definition	Radon dosimeters are radiation dosimeters used to measure the presence and concentration of radon gas (Rn-222), a radioactive noble gas that can accumulate in buildings and pose health risks. Different types of radon detectors use various detection methods, based on the radioactive decay products of radon.
 ERROR	multiple_definitions	mass number	textual definition	The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).
 ERROR	multiple_definitions	inheres in	textual definition	a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en
@@ -748,8 +750,8 @@ ERROR	multiple_definitions	has output	textual definition	p has output c iff c is
 ERROR	multiple_definitions	has output	textual definition	p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.
 ERROR	multiple_definitions	results in developmental progression of	textual definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical entity and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
 ERROR	multiple_definitions	results in developmental progression of	textual definition	p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).
-ERROR	multiple_definitions	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
-ERROR	multiple_definitions	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+ERROR	multiple_definitions	characteristic of part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+ERROR	multiple_definitions	characteristic of part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
 ERROR	multiple_definitions	causally related to	textual definition	This relation groups causal relations between material entities and causal relations between processes
 ERROR	multiple_definitions	causally related to	textual definition	relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.
 ERROR	multiple_definitions	causally upstream of	textual definition	p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain
@@ -986,8 +988,8 @@ ERROR	multiple_labels	results in formation of anatomical entity	label	results in
 ERROR	multiple_labels	results in formation of anatomical entity	label	results in formation of anatomical entity@en
 ERROR	multiple_labels	has habitat	label	has habitat
 ERROR	multiple_labels	has habitat	label	has habitat@en
-ERROR	multiple_labels	inheres in part of	label	characteristic of part of@en
-ERROR	multiple_labels	inheres in part of	label	inheres in part of
+ERROR	multiple_labels	characteristic of part of	label	characteristic of part of@en
+ERROR	multiple_labels	characteristic of part of	label	inheres in part of
 ERROR	multiple_labels	member of	label	is member of
 ERROR	multiple_labels	member of	label	member of@en
 ERROR	multiple_labels	has member	label	has member
@@ -1124,7 +1126,7 @@ WARN	annotation_whitespace	X-Rad320	textual definition	A specific instance of an
 WARN	annotation_whitespace	earth surface radiation environment	textual definition	 The radiation environment at the surface of the Earth, consisting of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth's magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth's atmosphere; decays of naturally occurring radioactive elements on the surface; and anthropogenic radiation. The composition and strength of the radiation at a given point on the Earth's surface depends on factors including altitude, the composition of the surface material, and the temporal variation in incident space radiation, e.g. with solar cycle.
 WARN	annotation_whitespace	external radiation exposure	example of usage	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	internal experimental radiation exposure	rdfs:comment	 Research subjects participating in a clinical trial using an internally implanted radiation source have an internal experimental radiation exposure
-WARN	annotation_whitespace	senolytic	textual definition	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells�cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
+WARN	annotation_whitespace	senolytic	textual definition	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells—cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
 WARN	annotation_whitespace	contained in	editor note	"Intended meaning:
 domain: material entity
 range: spatial region or site (immaterial continuant)
@@ -1455,7 +1457,7 @@ WARN	duplicate_label_synonym	thorium	has exact synonym	thorium
 WARN	duplicate_label_synonym	uranium	has exact synonym	uranium
 WARN	duplicate_label_synonym	charged particle	alternative term	charged particle
 WARN	duplicate_label_synonym	overlaps	alternative term	overlaps
-WARN	duplicate_label_synonym	inheres in part of	alternative term	inheres in part of
+WARN	duplicate_label_synonym	characteristic of part of	alternative term	inheres in part of
 WARN	duplicate_label_synonym	member of	alternative term	is member of
 WARN	duplicate_label_synonym	sympathetic nervous system	has exact synonym	sympathetic nervous system
 WARN	duplicate_label_synonym	endocrine pancreas	has exact synonym	endocrine pancreas
@@ -4126,8 +4128,8 @@ INFO	lowercase_definition	results in development of	textual definition	p 'result
 INFO	lowercase_definition	has habitat	textual definition	x 'has habitat' y if and only if: x is an organism, y is a habitat, and y can sustain and allow the growth of a population of xs.
 INFO	lowercase_definition	causally upstream of, positive effect	textual definition	p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.
 INFO	lowercase_definition	causally upstream of, negative effect	textual definition	p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q.
-INFO	lowercase_definition	inheres in part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
-INFO	lowercase_definition	inheres in part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	characteristic of part of	textual definition	q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.
+INFO	lowercase_definition	characteristic of part of	textual definition	q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.
 INFO	lowercase_definition	enables	textual definition	c enables p iff c is capable of p and c acts to execute p.
 INFO	lowercase_definition	part of structure that is capable of	textual definition	this relation holds between c and p when c is part of some c', and c' is capable of p.
 INFO	lowercase_definition	involved in	textual definition	c involved_in p if and only if c enables some process p', and p' is part of p
