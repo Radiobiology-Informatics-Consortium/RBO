@@ -13,12 +13,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-01-15/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-01-28/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2026-01-15</owl:versionInfo>
+        <owl:versionInfo>2026-01-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -126,6 +126,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
     
 
 
@@ -4494,6 +4500,12 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RBO_00015009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The particle track penumbra is the region where secondary electrons released by the primary particle, transitioning a medium, are the exclusive agents of energy deposition due to multiple scattering and energy loss of the charged particles as they interact with the atoms and molecules of the medium.&quot; Makes sense to define this a s a spatial region ( BFO:000006) as it has extent that can be measured but is a concept rather than a material entity.</obo:IAO_0000115>
         <obo:IAO_0000116>Heavy nuclei of the primary galactic radiation in space can have the same linear energy transfer yet greatly different lateral distribution patterns of the energy in the microstructure of tissue. Track structure thus presents itself as a new dosimetric parameter for HZE particles which is at present incompletely understood in its radiobiological significance. The theory of track structure distinguishes two regions: core and penumbra. The core is a narrow region with a radius far below 1 micron in tissue where energy deposition occurs mainly through excitations and collective oscillations of electrons. Energy density in the core accounts for slightly more than half the total LET. The penumbra surrounding the core extends laterally several to many microns depending on the energy of the primary. Energy density in the penumbra decreases steeply with the square of increasing radius. The relationships are illustrated with nuclear emulsion micrographs and plots of energy density profiles. The implications of the findings for a dosimetric system for HZE particles are discussed. See Chatterjee, A., Schaefer, H.J. ( 1976) Rad Env Biophys 13, 215-227  https://ntrs.nasa.gov/api/citations/19750020623/downloads/19750020623.pdf</obo:IAO_0000116>
         <rdfs:label>particle track penumbra</rdfs:label>
@@ -4505,8 +4517,23 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RBO_00015009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>In the theory of particle track structure, the narrow central zone with a radius in matter far below 1 micron where energy deposition occurs mainly in processes of ionisation, excitation and collective oscillation of the atoms of the medium related to the passage of the primary particle.</obo:IAO_0000115>
         <rdfs:label>particle track core</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010063">
+        <obo:IAO_0000115>A volume characterized by dimensions on the order of 1-100 nanometers</obo:IAO_0000115>
+        <rdfs:label>nanometric volume</rdfs:label>
     </owl:Class>
     
 

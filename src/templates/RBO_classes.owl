@@ -4053,6 +4053,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00010063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010063">
+        <obo:IAO_0000115>A volume characterized by dimensions on the order of 1-100 nanometers</obo:IAO_0000115>
+        <rdfs:label>nanometric volume</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00015000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015000">

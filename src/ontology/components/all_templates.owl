@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-01-15/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-01-28/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -4395,6 +4395,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <obo:IAO_0000115>In the theory of particle track structure, the narrow central zone with a radius in matter far below 1 micron where energy deposition occurs mainly in processes of ionisation, excitation and collective oscillation of the atoms of the medium related to the passage of the primary particle.</obo:IAO_0000115>
         <rdfs:label>particle track core</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010063">
+        <obo:IAO_0000115>A volume characterized by dimensions on the order of 1-100 nanometers</obo:IAO_0000115>
+        <rdfs:label>nanometric volume</rdfs:label>
     </owl:Class>
     
 
