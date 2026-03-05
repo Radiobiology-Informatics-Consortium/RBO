@@ -16,12 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-01-28"
-      }, {
-        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-01-29"
+        "val" : "2026-03-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-01-29/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-03-05/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000006",
@@ -142,6 +139,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0000025",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000125",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0001018",
@@ -4935,6 +4935,34 @@
       "meta" : {
         "definition" : {
           "val" : "A volume characterized by dimensions on the order of 1-100 nanometers"
+        },
+        "deprecated" : true
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010064",
+      "lbl" : "energy deposition event",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A processual entity that is one discrete interaction of an incident particle and atomic or sub-atomic constituents of matter, in which a quantized amount of energy is transferred to atomic or sub-atomic constituents of matter, producing excitation, ionization, or nuclear recoil"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010065",
+      "lbl" : "atomic mass",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The total mass of an atom, equal to the mass of the atom's constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 � 10?24 gram. The amu is also called the Dalton (Da)."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010067",
+      "lbl" : "atomic weight",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The weighted average of the atomic masses of the naturally occurring stable isotopes and long-lived radioactive isotopes of an element. Atomic weight is typically expressed in atomic mass units. For example, the atomic weight of carbon, 12.011 amu, is calculated based on the natural abundance of carbon-12 (approx. 98.9%) and carbon-13 (approx. 1.1%), with carbon-14 contributing a negligible amount."
         }
       }
     }, {
@@ -5108,7 +5136,8 @@
       "meta" : {
         "definition" : {
           "val" : "A volume of matter characterised by linear dimensions of the order of 0.5- 10's of microns, referred to as the \"site\" in microdosimetry."
-        }
+        },
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015015",
@@ -6656,6 +6685,15 @@
       "lbl" : "Mark 1 model 68A gamma irradiator at ARC",
       "type" : "INDIVIDUAL"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010066",
+      "lbl" : "mass number",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "definition" : {
+          "val" : "The total number of protons and neutrons in a nucleus of an element or isotope of an element. The mass number of carbon-12 is 12; the mass number of carbon-13 is 13."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -8193,6 +8231,18 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000006"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010064",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/UBERON_0000000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010065",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000125"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010067",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0000125"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00015000",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
@@ -8622,6 +8672,10 @@
       "obj" : "http://purl.obolibrary.org/obo/RBO_00005039"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010021",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0302889"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010066",
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0302889"
     } ],

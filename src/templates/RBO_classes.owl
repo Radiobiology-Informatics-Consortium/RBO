@@ -324,6 +324,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001018"/>
@@ -4058,6 +4064,37 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010063">
         <obo:IAO_0000115>A volume characterized by dimensions on the order of 1-100 nanometers</obo:IAO_0000115>
         <rdfs:label>nanometric volume</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000000"/>
+        <obo:IAO_0000115>A processual entity that is one discrete interaction of an incident particle and atomic or sub-atomic constituents of matter, in which a quantized amount of energy is transferred to atomic or sub-atomic constituents of matter, producing excitation, ionization, or nuclear recoil</obo:IAO_0000115>
+        <rdfs:label>energy deposition event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <obo:IAO_0000115>The total mass of an atom, equal to the mass of the atom&apos;s constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 � 10?24 gram. The amu is also called the Dalton (Da).</obo:IAO_0000115>
+        <rdfs:label>atomic mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <obo:IAO_0000115>The weighted average of the atomic masses of the naturally occurring stable isotopes and long-lived radioactive isotopes of an element. Atomic weight is typically expressed in atomic mass units. For example, the atomic weight of carbon, 12.011 amu, is calculated based on the natural abundance of carbon-12 (approx. 98.9%) and carbon-13 (approx. 1.1%), with carbon-14 contributing a negligible amount.</obo:IAO_0000115>
+        <rdfs:label>atomic weight</rdfs:label>
     </owl:Class>
     
 
@@ -4218,6 +4255,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000115>A volume of matter characterised by linear dimensions of the order of 0.5- 10&apos;s of microns, referred to as the &quot;site&quot; in microdosimetry.</obo:IAO_0000115>
         <rdfs:label>micrometric volume</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4296,7 +4334,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015006"/>
         <obo:IAO_0000115>The direct or indirect transfer of energy from radiation to a medium through ionisation or excitation of the atoms of the medium.</obo:IAO_0000115>
-        <rdfs:label>energy deposition event</rdfs:label>
+        <rdfs:label>energy deposition</rdfs:label>
     </owl:Class>
     
 
@@ -5005,6 +5043,16 @@
         <obo:IAO_0000115>Radon dosimeters are radiation dosimeters used to measure the presence and concentration of radon gas (Rn-222), a radioactive noble gas that can accumulate in buildings and pose health risks. Different types of radon detectors use various detection methods, based on the radioactive decay products of radon.</obo:IAO_0000115>
         <obo:IAO_0000118>radon detector</obo:IAO_0000118>
         <rdfs:label>radon dosimeter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010066 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00010066">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0302889"/>
+        <obo:IAO_0000115>The total number of protons and neutrons in a nucleus of an element or isotope of an element. The mass number of carbon-12 is 12; the mass number of carbon-13 is 13.</obo:IAO_0000115>
+        <rdfs:label>mass number</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
