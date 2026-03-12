@@ -20,6 +20,7 @@ ERROR	deprecated_class_reference	mars surface	rdfs:subClassOf	radiation environm
 ERROR	deprecated_class_reference	interplanetary space	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	planet surface	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	miligray per second	rdfs:subClassOf	UO:0000129
+ERROR	deprecated_class_reference	micrometric volume	rdfs:subClassOf	PATO:0001241
 ERROR	deprecated_class_reference	space radiation environment	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	as low as reasonably achievable	rdfs:subClassOf	IAO:0000104
 ERROR	deprecated_class_reference	radiation attenuation	rdfs:subClassOf	BFO:0000182
@@ -68,6 +69,8 @@ ERROR	duplicate_label	organ dose	rdfs:label	organ dose
 ERROR	duplicate_label	organ dose	rdfs:label	organ dose
 ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
 ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
+ERROR	duplicate_label	mass number	rdfs:label	mass number
+ERROR	duplicate_label	mass number	rdfs:label	mass number
 ERROR	duplicate_label	heavy ion	rdfs:label	heavy ion
 ERROR	duplicate_label	heavy ion	rdfs:label	heavy ion
 ERROR	duplicate_label	flux	rdfs:label	flux
@@ -219,6 +222,8 @@ WARN	missing_obsolete_label	miligray per second	rdfs:label	miligray per second
 WARN	missing_obsolete_label	Gammacell 40	rdfs:label	Gammacell 40
 WARN	missing_obsolete_label	Faxitron CP160	rdfs:label	Faxitron CP160
 WARN	missing_obsolete_label	X-Rad320	rdfs:label	X-Rad320
+WARN	missing_obsolete_label	nanometric volume	rdfs:label	nanometric volume
+WARN	missing_obsolete_label	micrometric volume	rdfs:label	micrometric volume
 WARN	missing_obsolete_label	space radiation environment	rdfs:label	space radiation environment
 WARN	missing_obsolete_label	as low as reasonably achievable	rdfs:label	as low as reasonably achievable
 WARN	missing_obsolete_label	radiation attenuation	rdfs:label	radiation attenuation

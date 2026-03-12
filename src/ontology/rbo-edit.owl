@@ -58,7 +58,6 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
 
 
-
 ############################
 #   Classes
 ############################
@@ -115,12 +114,11 @@ SubClassOf(obo:GO_0010212 ObjectSomeValuesFrom(obo:RO_0002608 obo:RBO_00000116))
 
 SubClassOf(obo:PO_0009012 obo:BFO_0000015)
 
-# Class: obo:RBO_00002118 (Radioactive decay)
+# Class: obo:RBO_00002118 (radioactive decay)
 
 SubClassOf(obo:RBO_00002118 ObjectSomeValuesFrom(obo:RO_0002234 obo:RBO_00015000))
-#SubClassOf(obo:RBO_00002118 ObjectMinCardinality(1 obo:RO_0002233 obo:CHEBI_33252))
 
-# Class: obo:RBO_00002122 (Environmental radiation monitoring)
+# Class: obo:RBO_00002122 (environmental radiation monitoring)
 
 SubClassOf(obo:RBO_00002122 ObjectSomeValuesFrom(obo:RO_0002234 obo:RBO_010016))
 
@@ -128,10 +126,21 @@ SubClassOf(obo:RBO_00002122 ObjectSomeValuesFrom(obo:RO_0002234 obo:RBO_010016))
 
 SubClassOf(obo:RBO_00005068 ObjectAllValuesFrom(obo:RO_0002404 obo:ENVO_01001023))
 
+# Class: obo:RBO_00010061 (particle track penumbra)
+
+SubClassOf(obo:RBO_00010061 ObjectAllValuesFrom(obo:BFO_0000050 obo:RBO_00015009))
+
+# Class: obo:RBO_00010062 (particle track core)
+
+SubClassOf(obo:RBO_00010062 ObjectAllValuesFrom(obo:BFO_0000050 obo:RBO_00015009))
+
+# Class: obo:RBO_00015009 (particle track)
+
+EquivalentClasses(obo:RBO_00015009 ObjectSomeValuesFrom(obo:RO_0000086 obo:RBO_00015011))
+
 # Class: obo:RBO_00015022 (track formation)
 
 EquivalentClasses(obo:RBO_00015022 ObjectSomeValuesFrom(obo:OBI_0000299 obo:RBO_00015009))
-EquivalentClasses(obo:RBO_00015009 ObjectSomeValuesFrom(obo:RO_0000086 obo:RBO_00015011))
 
 # Class: obo:SO_0000704 (gene)
 

@@ -13,12 +13,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-01-15/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-03-05/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2026-01-15</owl:versionInfo>
+        <owl:versionInfo>2026-03-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -126,6 +126,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
     
 
 
@@ -421,6 +427,12 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125"/>
     
 
 
@@ -4494,6 +4506,12 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RBO_00015009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>The particle track penumbra is the region where secondary electrons released by the primary particle, transitioning a medium, are the exclusive agents of energy deposition due to multiple scattering and energy loss of the charged particles as they interact with the atoms and molecules of the medium.&quot; Makes sense to define this a s a spatial region ( BFO:000006) as it has extent that can be measured but is a concept rather than a material entity.</obo:IAO_0000115>
         <obo:IAO_0000116>Heavy nuclei of the primary galactic radiation in space can have the same linear energy transfer yet greatly different lateral distribution patterns of the energy in the microstructure of tissue. Track structure thus presents itself as a new dosimetric parameter for HZE particles which is at present incompletely understood in its radiobiological significance. The theory of track structure distinguishes two regions: core and penumbra. The core is a narrow region with a radius far below 1 micron in tissue where energy deposition occurs mainly through excitations and collective oscillations of electrons. Energy density in the core accounts for slightly more than half the total LET. The penumbra surrounding the core extends laterally several to many microns depending on the energy of the primary. Energy density in the penumbra decreases steeply with the square of increasing radius. The relationships are illustrated with nuclear emulsion micrographs and plots of energy density profiles. The implications of the findings for a dosimetric system for HZE particles are discussed. See Chatterjee, A., Schaefer, H.J. ( 1976) Rad Env Biophys 13, 215-227  https://ntrs.nasa.gov/api/citations/19750020623/downloads/19750020623.pdf</obo:IAO_0000116>
         <rdfs:label>particle track penumbra</rdfs:label>
@@ -4505,8 +4523,54 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RBO_00015009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>In the theory of particle track structure, the narrow central zone with a radius in matter far below 1 micron where energy deposition occurs mainly in processes of ionisation, excitation and collective oscillation of the atoms of the medium related to the passage of the primary particle.</obo:IAO_0000115>
         <rdfs:label>particle track core</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010063">
+        <obo:IAO_0000115>A volume characterized by dimensions on the order of 1-100 nanometers</obo:IAO_0000115>
+        <rdfs:label>nanometric volume</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000000"/>
+        <obo:IAO_0000115>A processual entity that is one discrete interaction of an incident particle and atomic or sub-atomic constituents of matter, in which a quantized amount of energy is transferred to atomic or sub-atomic constituents of matter, producing excitation, ionization, or nuclear recoil</obo:IAO_0000115>
+        <rdfs:label>energy deposition event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <obo:IAO_0000115>The total mass of an atom, equal to the mass of the atom&apos;s constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 � 10?24 gram. The amu is also called the Dalton (Da).</obo:IAO_0000115>
+        <rdfs:label>atomic mass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
+        <obo:IAO_0000115>The weighted average of the atomic masses of the naturally occurring stable isotopes and long-lived radioactive isotopes of an element. Atomic weight is typically expressed in atomic mass units. For example, the atomic weight of carbon, 12.011 amu, is calculated based on the natural abundance of carbon-12 (approx. 98.9%) and carbon-13 (approx. 1.1%), with carbon-14 contributing a negligible amount.</obo:IAO_0000115>
+        <rdfs:label>atomic weight</rdfs:label>
     </owl:Class>
     
 
@@ -4681,6 +4745,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
         <obo:IAO_0000115>A volume of matter characterised by linear dimensions of the order of 0.5- 10&apos;s of microns, referred to as the &quot;site&quot; in microdosimetry.</obo:IAO_0000115>
         <rdfs:label>micrometric volume</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4759,6 +4824,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015006"/>
         <obo:IAO_0000115>The direct or indirect transfer of energy from radiation to a medium through ionisation or excitation of the atoms of the medium.</obo:IAO_0000115>
+        <rdfs:label>energy deposition</rdfs:label>
         <rdfs:label>energy deposition event</rdfs:label>
     </owl:Class>
     
@@ -5837,6 +5903,16 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00010021">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0302889"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010066 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00010066">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0302889"/>
+        <obo:IAO_0000115>The total number of protons and neutrons in a nucleus of an element or isotope of an element. The mass number of carbon-12 is 12; the mass number of carbon-13 is 13.</obo:IAO_0000115>
+        <rdfs:label>mass number</rdfs:label>
     </owl:NamedIndividual>
     
 

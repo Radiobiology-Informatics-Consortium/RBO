@@ -20,8 +20,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/efo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2025-12-11/imports/efo_import.owl"/>
-        <owl:versionInfo>2025-12-11</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-03-05/imports/efo_import.owl"/>
+        <owl:versionInfo>2026-03-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2114,6 +2114,21 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:comment>Category=external.</rdfs:comment>
         <rdfs:label xml:lang="en">organism</rdfs:label>
         <rdfs:label>organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000115>A physical quality of the amount of matter in a material.</obo:IAO_0000115>
+        <efo:definition_citation>James Malone modified from PATO</efo:definition_citation>
+        <oboInOwl:hasDbXref>NCIt:C34808</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIt:C43246</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:118538004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>SNOMEDCT:4147007</oboInOwl:hasDbXref>
+        <rdfs:label>mass</rdfs:label>
     </owl:Class>
     
 

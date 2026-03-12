@@ -1,5 +1,5 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	7023dee3-1bab-4fd2-9a03-b7aab1921f88genid35673
+ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	989bc09a-aa32-41f7-9181-03cd59d9d501genid35674
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	process
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	completely executed planned process
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	material extraction process
@@ -12,8 +12,8 @@ ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	radiobiology st
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned radiation exposure
 ERROR	deprecated_class_reference	planned process	rdfs:subClassOf	planned anthropogenic radiation exposure
 ERROR	deprecated_class_reference	planned process	owl:disjointWith	biological process
-ERROR	deprecated_class_reference	planned process	owl:equivalentClass	7023dee3-1bab-4fd2-9a03-b7aab1921f88genid35671
-ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	7023dee3-1bab-4fd2-9a03-b7aab1921f88genid35806
+ERROR	deprecated_class_reference	planned process	owl:equivalentClass	989bc09a-aa32-41f7-9181-03cd59d9d501genid35672
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	989bc09a-aa32-41f7-9181-03cd59d9d501genid35807
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	sensor
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	manufactured product
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	processed material
@@ -24,7 +24,7 @@ ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	organismal en
 ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	root
 ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	Viruses
 ERROR	deprecated_class_reference	obsolete organism	rdfs:subClassOf	population of organisms
-ERROR	deprecated_class_reference	obsolete organism	owl:equivalentClass	7023dee3-1bab-4fd2-9a03-b7aab1921f88genid35897
+ERROR	deprecated_class_reference	obsolete organism	owl:equivalentClass	989bc09a-aa32-41f7-9181-03cd59d9d501genid35898
 ERROR	deprecated_class_reference	earth surface	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	earth atmosphere	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	environmental study	rdfs:subClassOf	radiobiology study type
@@ -46,6 +46,7 @@ ERROR	deprecated_class_reference	mars surface	rdfs:subClassOf	radiation environm
 ERROR	deprecated_class_reference	interplanetary space	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	planet surface	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	miligray per second	rdfs:subClassOf	absorbed dose unit
+ERROR	deprecated_class_reference	micrometric volume	rdfs:subClassOf	physical object quality
 ERROR	deprecated_class_reference	space radiation environment	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	as low as reasonably achievable	rdfs:subClassOf	plan specification
 ERROR	deprecated_class_reference	radiation attenuation	rdfs:subClassOf	history
@@ -149,6 +150,8 @@ ERROR	duplicate_label	material processing	label	material processing@en
 ERROR	duplicate_label	material processing	label	material processing@en
 ERROR	duplicate_label	material anatomical entity	label	material anatomical entity
 ERROR	duplicate_label	material anatomical entity	label	material anatomical entity
+ERROR	duplicate_label	mass number	label	mass number
+ERROR	duplicate_label	mass number	label	mass number
 ERROR	duplicate_label	is about	label	is about@en
 ERROR	duplicate_label	is about	label	is about@en
 ERROR	duplicate_label	International Space Station	label	International Space Station
@@ -171,6 +174,8 @@ ERROR	duplicate_label	excess lifetime risk of cancer	label	excess lifetime risk 
 ERROR	duplicate_label	excess lifetime risk of cancer	label	excess lifetime risk of cancer
 ERROR	duplicate_label	environmental study	label	environmental study
 ERROR	duplicate_label	environmental study	label	environmental study
+ERROR	duplicate_label	energy deposition event	label	energy deposition event
+ERROR	duplicate_label	energy deposition	label	energy deposition event
 ERROR	duplicate_label	dose equivalent	label	dose equivalent
 ERROR	duplicate_label	dose equivalent	label	dose equivalent
 ERROR	duplicate_label	delta ray	label	delta ray
@@ -191,6 +196,7 @@ ERROR	duplicate_label	anatomical entity	label	anatomical entity
 ERROR	duplicate_label	anatomical entity	label	anatomical entity
 ERROR	label_formatting	Encoding Schemes for temporal characteristics	label	"Encoding Schemes
         for temporal characteristics@en-us"
+ERROR	missing_label	IAO:0000004	label	
 ERROR	missing_label	OMO:0003003	label	
 ERROR	missing_label	obo:chebi#IUPAC_NAME	label	
 ERROR	missing_label	obo:ncbitaxon/subsets/taxslim.obo#blast_name	label	
@@ -704,6 +710,8 @@ ERROR	multiple_definitions	data visualization	textual definition	A planned proce
 ERROR	multiple_definitions	data visualization	textual definition	An planned process that creates images, diagrams or animations from the input data.@en
 ERROR	multiple_definitions	clustered data visualization	textual definition	A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.
 ERROR	multiple_definitions	clustered data visualization	textual definition	A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.@en
+ERROR	multiple_definitions	mass	textual definition	A physical quality of the amount of matter in a material.
+ERROR	multiple_definitions	mass	textual definition	A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.
 ERROR	multiple_definitions	protein	textual definition	An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.
 ERROR	multiple_definitions	protein	textual definition	An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.
 ERROR	multiple_definitions	amino acid chain	textual definition	A molecule that consists of amino acid residues (unmodified amino-acid residues and/or modified amino-acid residues) linked by peptide bonds or derivatives of such bonds.
@@ -943,6 +951,8 @@ ERROR	multiple_labels	specimen from organism	label	specimen from organism
 ERROR	multiple_labels	specimen from organism	label	specimen from organism@en
 ERROR	multiple_labels	mass number	label	mass number
 ERROR	multiple_labels	mass number	label	radon dosimeter
+ERROR	multiple_labels	energy deposition	label	energy deposition
+ERROR	multiple_labels	energy deposition	label	energy deposition event
 ERROR	multiple_labels	inheres in	label	characteristic of@en
 ERROR	multiple_labels	inheres in	label	inheres in
 ERROR	multiple_labels	inheres in	label	inheres in@en
@@ -984,8 +994,8 @@ ERROR	multiple_labels	adjacent to	label	adjacent to
 ERROR	multiple_labels	adjacent to	label	adjacent to@en
 ERROR	multiple_labels	temporal relation	label	temporal relation@en
 ERROR	multiple_labels	temporal relation	label	temporally related to@en
-ERROR	multiple_labels	results in formation of anatomical entity	label	results in formation of@en
-ERROR	multiple_labels	results in formation of anatomical entity	label	results in formation of anatomical entity@en
+ERROR	multiple_labels	results in formation of	label	results in formation of@en
+ERROR	multiple_labels	results in formation of	label	results in formation of anatomical entity@en
 ERROR	multiple_labels	has habitat	label	has habitat
 ERROR	multiple_labels	has habitat	label	has habitat@en
 ERROR	multiple_labels	characteristic of part of	label	characteristic of part of@en
@@ -2853,6 +2863,7 @@ WARN	missing_definition	integumental system environment	textual definition
 WARN	missing_definition	is_subject_of	textual definition	
 WARN	missing_definition	results in distribution of	textual definition	
 WARN	missing_definition	results in fission of	textual definition	
+WARN	missing_definition	IAO:0000004	textual definition	
 WARN	missing_definition	has measurement unit label	textual definition	
 WARN	missing_definition	jaw movement	textual definition	
 WARN	missing_definition	root	textual definition	
@@ -3268,7 +3279,7 @@ WARN	missing_definition	immediately precedes	textual definition
 WARN	missing_definition	ends during	textual definition	
 WARN	missing_definition	temporal relation	textual definition	
 WARN	missing_definition	part of developmental precursor of	textual definition	
-WARN	missing_definition	results in formation of anatomical entity	textual definition	
+WARN	missing_definition	results in formation of	textual definition	
 WARN	missing_definition	genomically_related_to	textual definition	
 WARN	missing_definition	results in growth of	textual definition	
 WARN	missing_definition	results in transport to from or in	textual definition	
@@ -3811,6 +3822,8 @@ WARN	missing_obsolete_label	miligray per second	label	miligray per second
 WARN	missing_obsolete_label	Gammacell 40	label	Gammacell 40
 WARN	missing_obsolete_label	Faxitron CP160	label	Faxitron CP160
 WARN	missing_obsolete_label	X-Rad320	label	X-Rad320
+WARN	missing_obsolete_label	nanometric volume	label	nanometric volume
+WARN	missing_obsolete_label	micrometric volume	label	micrometric volume
 WARN	missing_obsolete_label	space radiation environment	label	space radiation environment
 WARN	missing_obsolete_label	as low as reasonably achievable	label	as low as reasonably achievable
 WARN	missing_obsolete_label	radiation attenuation	label	radiation attenuation
