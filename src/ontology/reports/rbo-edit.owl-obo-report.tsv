@@ -47,6 +47,8 @@ ERROR	deprecated_class_reference	radiation weighting factor	rdfs:subClassOf	OBI:
 ERROR	deprecated_class_reference	relative biological effectiveness	rdfs:subClassOf	IAO:0000109
 ERROR	deprecated_class_reference	tissue equivalence	rdfs:subClassOf	PATO:0001018
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	radiation dose
+ERROR	duplicate_definition	mass number	IAO:0000115	The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).
+ERROR	duplicate_definition	mass number	IAO:0000115	The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	unplanned naturally occurring radiation exposure	rdfs:label	unplanned naturally occurring radiation exposure
 ERROR	duplicate_label	tissue equivalence	rdfs:label	tissue equivalence
@@ -69,6 +71,7 @@ ERROR	duplicate_label	organ dose	rdfs:label	organ dose
 ERROR	duplicate_label	organ dose	rdfs:label	organ dose
 ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
 ERROR	duplicate_label	nuclear accident study	rdfs:label	nuclear accident study
+ERROR	duplicate_label	mass number	rdfs:label	mass number
 ERROR	duplicate_label	mass number	rdfs:label	mass number
 ERROR	duplicate_label	mass number	rdfs:label	mass number
 ERROR	duplicate_label	heavy ion	rdfs:label	heavy ion
@@ -152,7 +155,10 @@ WARN	annotation_whitespace	X-Rad320	IAO:0000115	A specific instance of an X-Rad3
 WARN	annotation_whitespace	earth surface radiation environment	IAO:0000115	 The radiation environment at the surface of the Earth, consisting of particles originating in space which are sufficiently energetic and/or weakly interacting with the Earth's magnetic field and atmosphere to reach the surface; particles produced by interactions of space radiation with the Earth's atmosphere; decays of naturally occurring radioactive elements on the surface; and anthropogenic radiation. The composition and strength of the radiation at a given point on the Earth's surface depends on factors including altitude, the composition of the surface material, and the temporal variation in incident space radiation, e.g. with solar cycle.
 WARN	annotation_whitespace	external radiation exposure	IAO:0000112	 Mice exposed to external radiation from a Sr source.
 WARN	annotation_whitespace	senolytic	IAO:0000115	A senolytic is a type of drug or compound that selectively induces the death, removal or both of senescent cells—cells that have stopped dividing but often remain metabolically active, often secreting inflammatory and harmful molecules. These cells accumulate with age and contribute to aging-related diseases, chronic inflammation, and tissue dysfunction. 
+WARN	duplicate_exact_synonym	microdosimetry study type	IAO:0000118	
+WARN	duplicate_exact_synonym	microdosimetry assay	IAO:0000118	
 WARN	duplicate_label_synonym	charged particle	IAO:0000118	charged particle
+WARN	duplicate_label_synonym	nanodosimetry	IAO:0000118	nanodosimetry
 WARN	duplicate_scoped_synonym	ionizing radiation	IAO:0000118	ionising radiation
 WARN	duplicate_scoped_synonym	ionizing radiation	oboInOwl:hasExactSynonym	ionising radiation
 WARN	duplicate_scoped_synonym	as low as reasonably achievable	IAO:0000118	ALARA

@@ -166,6 +166,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300"/>
@@ -265,12 +271,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     
 
 
@@ -964,7 +964,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000082 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>The theme or modality of an experimental, theoretical, critical or summative study involving radiation, radioactive materials including their impacts on orgnisms and society.</obo:IAO_0000115>
         <obo:IAO_0000118>radiobiology investigation</obo:IAO_0000118>
         <rdfs:label>radiobiology study type</rdfs:label>
@@ -1450,7 +1450,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
@@ -1523,7 +1523,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
@@ -3979,6 +3979,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>Microdosimetry is a radiobiology study type that deals with the study of the distribution of energy deposition on a micrometer scale in biological systems exposed to ionizing radiation. It focuses on understanding how radiation interacts with cellular and sub-cellular structures and the resulting effects on biological systems.</obo:IAO_0000115>
+        <obo:IAO_0000118>microdosimetry</obo:IAO_0000118>
         <rdfs:label>microdosimetry study type</rdfs:label>
     </owl:Class>
     
@@ -4124,6 +4125,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005041"/>
         <obo:IAO_0000115>An assay of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers</obo:IAO_0000115>
+        <obo:IAO_0000118>nanodosimetry</obo:IAO_0000118>
         <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment>Usually a track structure assay at nm scale</rdfs:comment>
         <rdfs:label>nanodosimetry assay</rdfs:label>
@@ -4136,6 +4138,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005041"/>
         <obo:IAO_0000115>An assay of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 micrometers</obo:IAO_0000115>
+        <obo:IAO_0000118>microdosimetry</obo:IAO_0000118>
         <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment>Usually a track structure assay at micrometre scale</rdfs:comment>
         <rdfs:label>microdosimetry assay</rdfs:label>

@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-03-05"
+        "val" : "2026-03-20"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-03-05/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-03-20/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000006",
@@ -61,6 +61,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/COB_0000035",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/COB_0000082",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/COB_0001300",
@@ -4845,7 +4848,11 @@
       "meta" : {
         "definition" : {
           "val" : "Microdosimetry is a radiobiology study type that deals with the study of the distribution of energy deposition on a micrometer scale in biological systems exposed to ionizing radiation. It focuses on understanding how radiation interacts with cellular and sub-cellular structures and the resulting effects on biological systems."
-        }
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "microdosimetry"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010056",
@@ -4993,6 +5000,9 @@
         },
         "comments" : [ "Usually a track structure assay at nm scale" ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "nanodosimetry"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology & Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006."
         }, {
@@ -5010,6 +5020,9 @@
         },
         "comments" : [ "Usually a track structure assay at micrometre scale" ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "microdosimetry"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology & Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006."
         }, {
@@ -6172,6 +6185,16 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005058",
+      "lbl" : "mass number",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA",
+      "meta" : {
+        "definition" : {
+          "val" : "The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit)."
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00010021",
       "lbl" : "radon dosimeter",
       "type" : "INDIVIDUAL",
@@ -6997,6 +7020,10 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000082",
       "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000082"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00000082",
+      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000083",
@@ -7229,6 +7256,10 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002002",
       "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000082"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00002002",
+      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002002",
@@ -7254,6 +7285,10 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002007",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00002000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00002008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000082"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002008",
       "pred" : "is_a",
