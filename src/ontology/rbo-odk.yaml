@@ -38,6 +38,7 @@ import_group:
   - id: cob
     module_type: custom
   - id: slso
+    module_type: custom
   - id: go
     use_gzipped: FALSE
     is_large: TRUE
