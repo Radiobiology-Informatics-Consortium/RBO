@@ -13,12 +13,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-03-20/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-04-03/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2026-03-20</owl:versionInfo>
+        <owl:versionInfo>2026-04-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -393,12 +393,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000112 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000112"/>
@@ -658,7 +652,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>That part of the Earth exposed to the Earth atmosphere.</obo:IAO_0000115>
         <rdfs:label>earth surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -670,7 +663,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>The region between the Earth&apos;s surface and an altitude of approximately 100 km</obo:IAO_0000115>
         <rdfs:label>earth atmosphere</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1065,7 +1057,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000073"/>
         <obo:IAO_0000115>Radiation response modifiers that are peptides.</obo:IAO_0000115>
         <obo:IAO_0000119>Shaghaghi, Zahra et al. â€œPotential utility of peptides against damage induced by ionizing radiation.â€ Future oncology (2021): doi/10.2217/fon-2020-0577</obo:IAO_0000119>
-        <obo:IAO_0000119>Shaghaghi, Zahra et al. “Potential utility of peptides against damage induced by ionizing radiation.” Future oncology (2021): doi/10.2217/fon-2020-0577</obo:IAO_0000119>
         <rdfs:label>peptide radiation response modifier</rdfs:label>
     </owl:Class>
     
@@ -1087,7 +1078,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000111"/>
         <obo:IAO_0000115>A person employed or otherwise working in commercial activities where nuclear materials are created, handled or disposed and at risk of occupational radiation exposure. Excludes health workers.</obo:IAO_0000115>
         <obo:IAO_0000119>Nezahat Hunter, Richard G.E. Haylock, Michael Gillies, Wei Zhang; Extended analysis of solid cancer incidence among the Nuclear Industry Workers in the UK: 1955â€“2011. Radiat Res 2022; doi: https://doi.org/10.1667/RADE-20-00269.1</obo:IAO_0000119>
-        <obo:IAO_0000119>Nezahat Hunter, Richard G.E. Haylock, Michael Gillies, Wei Zhang; Extended analysis of solid cancer incidence among the Nuclear Industry Workers in the UK: 1955–2011. Radiat Res 2022; doi: https://doi.org/10.1667/RADE-20-00269.1</obo:IAO_0000119>
         <rdfs:label>nuclear industry worker</rdfs:label>
     </owl:Class>
     
@@ -1142,7 +1132,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>The theme or modality of an experimental, theoretical, critical or summative study involving radiation, radioactive materials including their impacts on orgnisms and society.</obo:IAO_0000115>
         <obo:IAO_0000118>radiobiology investigation</obo:IAO_0000118>
         <rdfs:label>radiobiology study type</rdfs:label>
@@ -1167,7 +1156,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the impact of radiation on the composition of or processes within the natural or anthropogenic environment.</obo:IAO_0000115>
         <rdfs:label>environmental study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1359,7 +1347,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study that aims at the discovery, development or assessment of efficacy of therapeutic agents or processes designed to mitigate or cure the effects of radiation exposure.</obo:IAO_0000115>
         <rdfs:label>therapeutics study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1391,7 +1378,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the contributing factors consequences and prevention of nuclear accidents</obo:IAO_0000115>
         <rdfs:label>nuclear accident study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1445,7 +1431,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000115>A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Professionâ€ can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society.</obo:IAO_0000115>
-        <obo:IAO_0000115>A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Profession” can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society.</obo:IAO_0000115>
         <rdfs:label>occupational role</rdfs:label>
     </owl:Class>
     
@@ -1590,7 +1575,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <oboInOwl:hasDbXref>GO:0008150</oboInOwl:hasDbXref>
         <rdfs:label>biological process</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1602,7 +1586,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
         <oboInOwl:hasDbXref>GO:0009987</oboInOwl:hasDbXref>
         <rdfs:label>cellular process</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1736,7 +1719,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
@@ -1810,7 +1792,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
@@ -1848,7 +1829,6 @@
         <obo:IAO_0000115>Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
         <rdfs:label>unplanned naturally occurring radiation exposure</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -3020,7 +3000,6 @@
         <obo:IAO_0000119>Jack Miller</obo:IAO_0000119>
         <oboInOwl:hasDbXref>obo:RBO_0002000</oboInOwl:hasDbXref>
         <rdfs:label>irradiation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -3135,15 +3114,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000117"/>
         <obo:IAO_0000115>A type of ionizing radiation consisting of charged particles that are relatively massive compared to other types of radiation, such as alpha, beta, and gamma radiation. Heavy ion radiation is composed of atomic nuclei that have been stripped of their electrons, resulting in positively charged particles.</obo:IAO_0000115>
-        <obo:IAO_0000116>Heavy ion radiation has several notable characteristics and contexts:
-
-High Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues.
-
-Enhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.
-
-Space Radiation: Heavy ions are a component of the galactic cosmic radiation present in space.
-
-In common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, &quot;heavy&quot; is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10.</obo:IAO_0000116>
         <obo:IAO_0000116>Heavy ion radiation has several notable characteristics and contexts: High Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues. Enhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.Space Radiation: Heavy ions are a component of the galactic cosmic radiation present in space. In common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, &quot;heavy&quot; is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10.</obo:IAO_0000116>
         <rdfs:label>heavy ion radiation</rdfs:label>
     </owl:Class>
@@ -3767,7 +3737,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>mGy/sec</obo:IAO_0000118>
         <oboInOwl:hasDbXref>UO:0010065</oboInOwl:hasDbXref>
         <rdfs:label>miligray per second</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -3796,7 +3765,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000112>The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo &amp; Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. L?ffler MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671</obo:IAO_0000112>
         <obo:IAO_0000112>The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo &amp; Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. Löffler  MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671</obo:IAO_0000112>
         <obo:IAO_0000115>Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of radiation acting on another cell and not on the responding cell. The process begins with detection of radiation by a cell or cells and ends with a change in state or activity of a different cell or cells.</obo:IAO_0000115>
         <obo:IAO_0000119>Paul Schofield</obo:IAO_0000119>
@@ -4463,6 +4431,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>Microdosimetry is a radiobiology study type that deals with the study of the distribution of energy deposition on a micrometer scale in biological systems exposed to ionizing radiation. It focuses on understanding how radiation interacts with cellular and sub-cellular structures and the resulting effects on biological systems.</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, chromosomal domains up to nuclei, and of the associated probability distribution&quot;</obo:IAO_0000116>
         <obo:IAO_0000118>microdosimetry</obo:IAO_0000118>
         <rdfs:label>microdosimetry study type</rdfs:label>
     </owl:Class>
@@ -4580,7 +4549,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-        <obo:IAO_0000115>The total mass of an atom, equal to the mass of the atom&apos;s constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 � 10?24 gram. The amu is also called the Dalton (Da).</obo:IAO_0000115>
+        <obo:IAO_0000115>The total mass of an atom, equal to the mass of the atom&apos;s constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 x 10^(-24) gram. The amu is also called the Dalton (Da).</obo:IAO_0000115>
         <rdfs:label>atomic mass</rdfs:label>
     </owl:Class>
     
@@ -4621,9 +4590,9 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005041"/>
         <obo:IAO_0000115>An assay of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, assay of DNA, and of the associated probability distribution&quot;</obo:IAO_0000116>
         <obo:IAO_0000118>nanodosimetry</obo:IAO_0000118>
         <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
-        <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259�265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment>Usually a track structure assay at nm scale</rdfs:comment>
         <rdfs:label>nanodosimetry assay</rdfs:label>
     </owl:Class>
@@ -4635,9 +4604,9 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005041"/>
         <obo:IAO_0000115>An assay of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 micrometers</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, chromosomal domains up to nuclei, and of the associated probability distribution&quot;</obo:IAO_0000116>
         <obo:IAO_0000118>microdosimetry</obo:IAO_0000118>
         <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
-        <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259�265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment>Usually a track structure assay at micrometre scale</rdfs:comment>
         <rdfs:label>microdosimetry assay</rdfs:label>
     </owl:Class>
@@ -4848,7 +4817,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015006"/>
         <obo:IAO_0000115>The direct or indirect transfer of energy from radiation to a medium through ionisation or excitation of the atoms of the medium.</obo:IAO_0000115>
         <rdfs:label>energy deposition</rdfs:label>
-        <rdfs:label>energy deposition event</rdfs:label>
     </owl:Class>
     
 
@@ -5456,7 +5424,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A measurement datum of the quantity of radiation absorbed by a substance or organism. The term &quot;radiation dose&quot; may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>radiation dose</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     

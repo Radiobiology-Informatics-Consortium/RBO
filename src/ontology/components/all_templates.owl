@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-03-20/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-04-03/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -4336,6 +4336,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>Microdosimetry is a radiobiology study type that deals with the study of the distribution of energy deposition on a micrometer scale in biological systems exposed to ionizing radiation. It focuses on understanding how radiation interacts with cellular and sub-cellular structures and the resulting effects on biological systems.</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, chromosomal domains up to nuclei, and of the associated probability distribution&quot;</obo:IAO_0000116>
         <obo:IAO_0000118>microdosimetry</obo:IAO_0000118>
         <rdfs:label>microdosimetry study type</rdfs:label>
     </owl:Class>
@@ -4441,7 +4442,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-        <obo:IAO_0000115>The total mass of an atom, equal to the mass of the atom&apos;s constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 � 10?24 gram. The amu is also called the Dalton (Da).</obo:IAO_0000115>
+        <obo:IAO_0000115>The total mass of an atom, equal to the mass of the atom&apos;s constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 x 10^(-24) gram. The amu is also called the Dalton (Da).</obo:IAO_0000115>
         <rdfs:label>atomic mass</rdfs:label>
     </owl:Class>
     
@@ -4482,6 +4483,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005041"/>
         <obo:IAO_0000115>An assay of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, assay of DNA, and of the associated probability distribution&quot;</obo:IAO_0000116>
         <obo:IAO_0000118>nanodosimetry</obo:IAO_0000118>
         <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment>Usually a track structure assay at nm scale</rdfs:comment>
@@ -4495,6 +4497,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005041"/>
         <obo:IAO_0000115>An assay of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 micrometers</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, chromosomal domains up to nuclei, and of the associated probability distribution&quot;</obo:IAO_0000116>
         <obo:IAO_0000118>microdosimetry</obo:IAO_0000118>
         <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment>Usually a track structure assay at micrometre scale</rdfs:comment>

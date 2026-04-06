@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-03-20"
+        "val" : "2026-04-03"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-03-20/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-04-03/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000006",
@@ -115,9 +115,6 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000109",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0000011",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000112",
@@ -344,10 +341,6 @@
         "definition" : {
           "val" : "That part of the Earth exposed to the Earth atmosphere."
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ],
         "deprecated" : true
       }
     }, {
@@ -358,10 +351,6 @@
         "definition" : {
           "val" : "The region between the Earth's surface and an altitude of approximately 100 km"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ],
         "deprecated" : true
       }
     }, {
@@ -843,9 +832,6 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "Shaghaghi, Zahra et al. â€œPotential utility of peptides against damage induced by ionizing radiation.â€ Future oncology (2021): doi/10.2217/fon-2020-0577"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "Shaghaghi, Zahra et al. “Potential utility of peptides against damage induced by ionizing radiation.” Future oncology (2021): doi/10.2217/fon-2020-0577"
         } ]
       }
     }, {
@@ -868,9 +854,6 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "Nezahat Hunter, Richard G.E. Haylock, Michael Gillies, Wei Zhang; Extended analysis of solid cancer incidence among the Nuclear Industry Workers in the UK: 1955â€“2011. Radiat Res 2022; doi: https://doi.org/10.1667/RADE-20-00269.1"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "Nezahat Hunter, Richard G.E. Haylock, Michael Gillies, Wei Zhang; Extended analysis of solid cancer incidence among the Nuclear Industry Workers in the UK: 1955–2011. Radiat Res 2022; doi: https://doi.org/10.1667/RADE-20-00269.1"
         } ]
       }
     }, {
@@ -927,10 +910,6 @@
         "definition" : {
           "val" : "A study of the impact of radiation on the composition of or processes within the natural or anthropogenic environment."
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ],
         "deprecated" : true
       }
     }, {
@@ -1103,10 +1082,6 @@
         "definition" : {
           "val" : "A study that aims at the discovery, development or assessment of efficacy of therapeutic agents or processes designed to mitigate or cure the effects of radiation exposure."
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ],
         "deprecated" : true
       }
     }, {
@@ -1135,10 +1110,6 @@
         "definition" : {
           "val" : "A study of the contributing factors consequences and prevention of nuclear accidents"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ],
         "deprecated" : true
       }
     }, {
@@ -1191,7 +1162,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Profession” can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society."
+          "val" : "A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Professionâ€ can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society."
         }
       }
     }, {
@@ -1373,10 +1344,6 @@
         "xrefs" : [ {
           "val" : "GO:0008150"
         } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
-        } ],
         "deprecated" : true
       }
     }, {
@@ -1386,10 +1353,6 @@
       "meta" : {
         "xrefs" : [ {
           "val" : "GO:0009987"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
         } ],
         "deprecated" : true
       }
@@ -1661,9 +1624,6 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "0000-0002-5111-7263"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
         } ],
         "deprecated" : true
       }
@@ -3075,9 +3035,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "Jack Miller"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
         } ],
         "deprecated" : true
       }
@@ -3171,9 +3128,6 @@
           "val" : "A type of ionizing radiation consisting of charged particles that are relatively massive compared to other types of radiation, such as alpha, beta, and gamma radiation. Heavy ion radiation is composed of atomic nuclei that have been stripped of their electrons, resulting in positively charged particles."
         },
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "Heavy ion radiation has several notable characteristics and contexts:\n\nHigh Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues.\n\nEnhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.\n\nSpace Radiation: Heavy ions are a component of the galactic cosmic radiation present in space.\n\nIn common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, \"heavy\" is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10."
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Heavy ion radiation has several notable characteristics and contexts: High Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues. Enhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.Space Radiation: Heavy ions are a component of the galactic cosmic radiation present in space. In common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, \"heavy\" is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10."
         } ]
@@ -3980,9 +3934,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "mGy/sec"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
         } ],
         "deprecated" : true
       }
@@ -4014,9 +3965,6 @@
           "val" : "Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of radiation acting on another cell and not on the responding cell. The process begins with detection of radiation by a cell or cells and ends with a change in state or activity of a different cell or cells."
         },
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo & Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. L?ffler MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo & Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. Löffler  MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671"
         }, {
@@ -4850,6 +4798,9 @@
           "val" : "Microdosimetry is a radiobiology study type that deals with the study of the distribution of energy deposition on a micrometer scale in biological systems exposed to ionizing radiation. It focuses on understanding how radiation interacts with cellular and sub-cellular structures and the resulting effects on biological systems."
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "\"For example, chromosomal domains up to nuclei, and of the associated probability distribution\""
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "microdosimetry"
         } ]
@@ -4960,7 +4911,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The total mass of an atom, equal to the mass of the atom's constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 � 10?24 gram. The amu is also called the Dalton (Da)."
+          "val" : "The total mass of an atom, equal to the mass of the atom's constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 x 10^(-24) gram. The amu is also called the Dalton (Da)."
         }
       }
     }, {
@@ -5000,14 +4951,14 @@
         },
         "comments" : [ "Usually a track structure assay at nm scale" ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "\"For example, assay of DNA, and of the associated probability distribution\""
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "nanodosimetry"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology & Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259�265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology & Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006."
         } ]
       }
     }, {
@@ -5020,14 +4971,14 @@
         },
         "comments" : [ "Usually a track structure assay at micrometre scale" ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "\"For example, chromosomal domains up to nuclei, and of the associated probability distribution\""
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "microdosimetry"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology & Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259�265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology & Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006."
         } ]
       }
     }, {
@@ -5229,7 +5180,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00015021",
-      "lbl" : "energy deposition event",
+      "lbl" : "energy deposition",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -6059,9 +6010,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
-        }, {
-          "pred" : "http://www.w3.org/2002/07/owl#deprecated",
-          "val" : "false"
         } ],
         "deprecated" : true
       }
@@ -7022,10 +6970,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/COB_0000082"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00000082",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000083",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00000082"
@@ -7260,10 +7204,6 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002002",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00002002",
-      "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00002007"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002003",
@@ -7289,10 +7229,6 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002008",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/COB_0000082"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00002008",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00002008",
       "pred" : "is_a",
