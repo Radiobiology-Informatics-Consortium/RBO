@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/rbo/components/RBO_infrastructure_class.owl#"
+     xml:base="http://purl.obolibrary.org/obo/rbo/components/RBO_infrastructure_class.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/RBO_infrastructure_class.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00003919 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03501288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03501288"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000616"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000116>Primary parent for physical infrastructure assets.</obo:IAO_0000116>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>Physical radiation research infrastructure</rdfs:label>
+        <skos:definition>A material entity such as physical resources, facilities, or personnel organized to support radiation biology research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000116>Primary parent for digital/information infrastructure assets.</obo:IAO_0000116>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>Digital radiation research infrastructure</rdfs:label>
+        <skos:definition>An information content entity that consists of digital resources, data systems, and models organized to support radiation biology research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation exposure facility</rdfs:label>
+        <skos:definition>A facility specifically designed to provide controlled radiation exposure to biological or physical samples for research purposes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011002"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>external exposure facility</rdfs:label>
+        <skos:definition>A radiation exposure facility in which biological or physical samples are irradiated by a radiation source external to the subject, including photon, particle beam, neutron, radon and calibration irradiation systems.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011002"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>internal exposure facility</rdfs:label>
+        <skos:definition>A radiation exposure facility in which biological subjects are exposed to radionuclides via incorporation routes such as inhalation, ingestion or wound contamination, resulting in internal radiation exposure from incorporated radionuclides.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003919"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <obo:IAO_0000116>Polyhierarchy: child of both Physical Infrastructure and BFO:Site.</obo:IAO_0000116>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>contaminated site observatory</rdfs:label>
+        <skos:definition>A geographically defined area contaminated with radionuclides or naturally occurring radioactive materials (NORM) that is formally designated as a long-term field research site for radioecological investigation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation research analytical platform</rdfs:label>
+        <skos:definition>A facility providing specialised analytical capabilities including biodosimetry, genomics, proteomics, radiochemistry, in vivo bioassay or imaging used to characterise biological samples or measure radiation-related outcomes in support of radiation biology and radiation protection research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000616"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation research sample bank</rdfs:label>
+        <skos:definition>A physical infrastructure for the systematic storage and management of biological or environmental samples related to radiation research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011001"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation epidemiology cohort</rdfs:label>
+        <skos:definition>A research infrastructure centered around a defined group of individuals (aggregate of organisms) tracked over time for radiation-related health outcomes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011001"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation biology database</rdfs:label>
+        <skos:definition>An information content entity consisting of structured collections of data related to radiation biology research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011001"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation dosimetry model</rdfs:label>
+        <skos:definition>A computational model, simulation code or software application used to calculate radiation doses, model the biological effects of ionising radiation, assess environmental radiation risk, or support radiological emergency response decision-making.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation dosimetry tool</rdfs:label>
+        <skos:definition>A physical infrastructure consisting of devices or instruments used to measure radiation dose.</skos:definition>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

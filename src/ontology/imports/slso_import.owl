@@ -24,8 +24,8 @@
      xmlns:taxslim="http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.obo#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/slso_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-04-03/imports/slso_import.owl"/>
-        <owl:versionInfo>2026-04-03</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-07-14/imports/slso_import.owl"/>
+        <owl:versionInfo>2026-07-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -22979,6 +22979,24 @@ Definitions of Cryosphere come from several glossaries including:
 - Trombotto, D., P. Wainstein &amp; L. Arenson, 2014, Guía Terminológica de la Geocriología Sudamericana” / “Terminological Guide of the South American Geocryology, 1a ed. 128 pp. [Link]
 - UNESCO-WMO, 2012, International Glossary of Hydrology, 3rd edition, WMO-No. 385. [Link]</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03501288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03501288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
+        <obo:IAO_0000115 xml:lang="en">A human construction specially designed for a specific purpose.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:resource="https://orcid.org/0000-0002-9578-0788"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-15T04:00:01.750Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">facility</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">A human construction specially designed for a specific purpose.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wiktionary.org/wiki/facility"/>
     </owl:Axiom>
     
 

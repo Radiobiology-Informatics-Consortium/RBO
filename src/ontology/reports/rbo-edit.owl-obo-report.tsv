@@ -96,6 +96,8 @@ ERROR	duplicate_label	biodosimetry	rdfs:label	biodosimetry
 ERROR	duplicate_label	biodosimetry	rdfs:label	biodosimetry
 ERROR	duplicate_label	as low as reasonably achievable	rdfs:label	as low as reasonably achievable
 ERROR	duplicate_label	as low as reasonably achievable	rdfs:label	as low as reasonably achievable
+ERROR	duplicate_label	All kinds of radiation multipurpose irradiation facility	rdfs:label	All kinds of radiation multipurpose irradiation facility
+ERROR	duplicate_label	All kinds of radiation multipurpose irradiation facility	rdfs:label	All kinds of radiation multipurpose irradiation facility
 ERROR	missing_label	BFO:0000023	rdfs:label	
 ERROR	missing_label	CHEBI:33252	rdfs:label	
 ERROR	missing_label	CHEBI:36080	rdfs:label	
@@ -110,6 +112,7 @@ ERROR	missing_label	GO:0009314	rdfs:label
 ERROR	missing_label	GO:0010212	rdfs:label	
 ERROR	missing_label	OBI:0302889	rdfs:label	
 ERROR	missing_label	PO:0009012	rdfs:label	
+ERROR	missing_label	RBO:00120061	rdfs:label	
 ERROR	missing_label	SO:0000704	rdfs:label	
 ERROR	missing_label	UBERON:0000000	rdfs:label	
 ERROR	missing_label	UO:0000127	rdfs:label	
@@ -201,6 +204,18 @@ WARN	missing_definition	dentist	IAO:0000115
 WARN	missing_definition	radiologist	IAO:0000115	
 WARN	missing_definition	risk estimate	IAO:0000115	
 WARN	missing_definition	lifetime risk estimate	IAO:0000115	
+WARN	missing_definition	Physical radiation research infrastructure	IAO:0000115	
+WARN	missing_definition	Digital radiation research infrastructure	IAO:0000115	
+WARN	missing_definition	radiation exposure facility	IAO:0000115	
+WARN	missing_definition	external exposure facility	IAO:0000115	
+WARN	missing_definition	internal exposure facility	IAO:0000115	
+WARN	missing_definition	contaminated site observatory	IAO:0000115	
+WARN	missing_definition	radiation research analytical platform	IAO:0000115	
+WARN	missing_definition	radiation research sample bank	IAO:0000115	
+WARN	missing_definition	radiation epidemiology cohort	IAO:0000115	
+WARN	missing_definition	radiation biology database	IAO:0000115	
+WARN	missing_definition	radiation dosimetry model	IAO:0000115	
+WARN	missing_definition	radiation dosimetry tool	IAO:0000115	
 WARN	missing_definition	track formation	IAO:0000115	
 WARN	missing_definition	SO:0000704	IAO:0000115	
 WARN	missing_definition	UBERON:0000000	IAO:0000115	
