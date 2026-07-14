@@ -26,6 +26,7 @@ import_group:
     module_type: custom
   - id: pco
   - id: obi
+  - id: obib
   - id: uo
     module_type: custom
     mirror_from: https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl
