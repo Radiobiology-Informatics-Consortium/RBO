@@ -143,6 +143,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00011005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
         <obo:IAO_0000116>Polyhierarchy: child of both Physical Infrastructure and BFO:Site.</obo:IAO_0000116>
         <rdfs:comment>Paul Schofield</rdfs:comment>
         <rdfs:label>contaminated site observatory</rdfs:label>

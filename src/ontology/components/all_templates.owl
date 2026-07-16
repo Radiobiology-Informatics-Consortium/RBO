@@ -10,7 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/components/all_templates.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-07-15/components/all_templates.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-07-16/components/all_templates.owl"/>
     </owl:Ontology>
     
 
@@ -4538,6 +4538,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00011005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
         <obo:IAO_0000116>Polyhierarchy: child of both Physical Infrastructure and BFO:Site.</obo:IAO_0000116>
         <rdfs:comment>Paul Schofield</rdfs:comment>
         <rdfs:label>contaminated site observatory</rdfs:label>

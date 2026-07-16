@@ -13,9 +13,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-07-14"
+        "val" : "2026-07-16"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-07-14/rbo-full.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-07-16/rbo-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -21732,7 +21732,7 @@
           "val" : "An amino acid chain that is canonically produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.",
           "xrefs" : [ "PRO:DAN", "PRO:WCB" ]
         },
-        "comments" : [ "Note that the definition allows for experimentally-manipulated genes, and allows for artifically-produced derivatives that mimic those found naturally. Note also that the definition excludes protein complexes, which some also consider a protein. Those who wish to refer to a class representing both senses of the word are directed to PR:000064867 (\"protein-containing molecular entity\"). Proteins (in the sense defined here) that descended from a common ancestor can be classified into families and superfamilies composed of products of evolutionarily-related genes. The domain architecture of a protein is described by the order of its constituent domains. Proteins with the same domains in the same order are defined as homeomorphic [PRO:WCB)." ],
+        "comments" : [ "Note that the definition allows for experimentally-manipulated genes, and allows for artifically-produced derivatives that mimic those found naturally. Note also that the definition excludes protein complexes, which some also consider a protein. Those who wish to refer to a class representing both senses of the word are directed to PR:000064867 (\"protein-containing molecular entity\"). Proteins (in the sense defined here) that descended from a common ancestor can be classified into families and superfamilies composed of products of evolutionarily-related genes. The domain architecture of a protein is described by the order of its constituent domains. Proteins with the same domains in the same order are defined as homeomorphic [PRO:WCB]." ],
         "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR", "http://purl.obolibrary.org/obo/chebi/3_STAR" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -276197,12 +276197,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "part_of"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/cob.owl"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/ro.owl"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
           "val" : "http://purl.obolibrary.org/obo/RO_0001901"
         }, {
@@ -276229,9 +276223,6 @@
         }, {
           "pred" : "http://www.ebi.ac.uk/efo/EFO_URI",
           "val" : "http://www.ebi.ac.uk/efo/part_of"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "experimental_condition_ontology"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "external"
@@ -277617,12 +277608,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "inheres_in"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/cob.owl"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/ro.owl"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
           "val" : "http://purl.obolibrary.org/obo/RO_0001901"
         }, {
@@ -278113,7 +278098,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0001015",
-      "lbl" : "location of",
+      "lbl" : "location_of",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
@@ -278136,11 +278121,17 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "location_of"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
           "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/EFO_URI",
+          "val" : "http://www.ebi.ac.uk/efo/location_of"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "uberon"
@@ -278208,7 +278199,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0001025",
-      "lbl" : "located in",
+      "lbl" : "located_in",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
@@ -278235,8 +278226,14 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "located_in"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ro.owl"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
           "val" : "http://purl.obolibrary.org/obo/RO_0001901"
@@ -278246,6 +278243,9 @@
         }, {
           "pred" : "http://purl.org/dc/terms/source",
           "val" : "http://www.obofoundry.org/ro/#OBO_REL:located_in"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/EFO_URI",
+          "val" : "http://www.ebi.ac.uk/efo/located_in"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "uberon"
@@ -281076,21 +281076,8 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002330",
-      "lbl" : "genomically_related_to",
       "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "xrefs" : [ {
-          "val" : "RO:0002330"
-        } ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "protein"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "genomically_related_to"
-        } ]
-      }
+      "propertyType" : "OBJECT"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002331",
       "lbl" : "involved in",
@@ -358959,6 +358946,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00011000"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00011005",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0001025",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_03600073"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00011006",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000027"
@@ -428283,6 +428274,13 @@
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0002160",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_10090"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/RBO_00011005",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/ENVO_00003919" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0001025",
+        "fillerId" : "http://purl.obolibrary.org/obo/ENVO_03600073"
       } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/UBERON_0000018",

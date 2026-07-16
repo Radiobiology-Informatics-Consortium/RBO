@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-07-14"
+        "val" : "2026-07-16"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-07-14/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-07-16/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000006",
@@ -103,6 +103,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/ENVO_03501288",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ENVO_03600073",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/GO_0051716",
@@ -6275,6 +6278,10 @@
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0001025",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0002234",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
@@ -10094,6 +10101,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00011000"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00011005",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0001025",
+      "obj" : "http://purl.obolibrary.org/obo/ENVO_03600073"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00011006",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000027"
@@ -10973,6 +10984,14 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00120101",
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00011010"
+    } ],
+    "logicalDefinitionAxioms" : [ {
+      "definedClassId" : "http://purl.obolibrary.org/obo/RBO_00011005",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/ENVO_00003919" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0001025",
+        "fillerId" : "http://purl.obolibrary.org/obo/ENVO_03600073"
+      } ]
     } ],
     "domainRangeAxioms" : [ {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002404",
