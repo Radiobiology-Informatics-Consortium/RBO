@@ -38,6 +38,7 @@ http://purl.obolibrary.org/obo/ENVO_01001852
 http://purl.obolibrary.org/obo/ENVO_02500041
 http://purl.obolibrary.org/obo/ENVO_03000010
 http://purl.obolibrary.org/obo/ENVO_03501288
+http://purl.obolibrary.org/obo/ENVO_03600073
 http://purl.obolibrary.org/obo/GO_0005575
 http://purl.obolibrary.org/obo/GO_0005737
 http://purl.obolibrary.org/obo/GO_0009314
@@ -725,6 +726,7 @@ http://purl.obolibrary.org/obo/RBO_010018
 http://purl.obolibrary.org/obo/RBO_010019
 http://purl.obolibrary.org/obo/RBO_010020
 http://purl.obolibrary.org/obo/RO_0000086
+http://purl.obolibrary.org/obo/RO_0001025
 http://purl.obolibrary.org/obo/RO_0002180
 http://purl.obolibrary.org/obo/RO_0002233
 http://purl.obolibrary.org/obo/RO_0002234
@@ -749,6 +751,7 @@ http://www.geneontology.org/formats/oboInOwl#creation_date
 http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
 http://www.geneontology.org/formats/oboInOwl#hasDbXref
 http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://www.w3.org/2001/XMLSchema#nonNegativeInteger
 http://www.w3.org/2004/02/skos/core#definition
 term
