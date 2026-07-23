@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                acdac552bd105c9a4b3867457f885d2b41d2fe1dd5c8cd666ef17b3b34698056
+CONFIG_HASH=                7a0ab035e742b08e52fa9732a2eef6c36aa0624c77109a879c929344ca46d5cc
 
 
 # ----------------------------------------
@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro bfo chebi pato chmo envo pco obi uo doid uberon cob slso go efo ncbitaxon
+IMPORTS =  ro bfo chebi pato chmo envo pco obi obib uo doid uberon cob slso go efo ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -396,6 +396,10 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl
 
 $(IMPORTDIR)/cob_import.owl: $(MIRRORDIR)/cob.owl
 	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in rbo.Makefile!" && false
+## Module for ontology: slso
+
+$(IMPORTDIR)/slso_import.owl: $(MIRRORDIR)/slso.owl
+	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in rbo.Makefile!" && false
 ## Module for ontology: go
 
 $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl
@@ -541,11 +545,20 @@ mirror-obi: | $(TMPDIR)
 	$(ROBOT) convert -i $(TMPDIR)/obi-download.owl -o $(TMPDIR)/$@.owl
 
 
+## ONTOLOGY: obib
+.PHONY: mirror-obib
+.PRECIOUS: $(MIRRORDIR)/obib.owl
+mirror-obib: | $(TMPDIR)
+	curl -L $(OBOBASE)/obib.owl --create-dirs -o $(TMPDIR)/obib-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/obib-download.owl -o $(TMPDIR)/$@.owl
+
+
 ## ONTOLOGY: uo
 .PHONY: mirror-uo
 .PRECIOUS: $(MIRRORDIR)/uo.owl
 mirror-uo: | $(TMPDIR)
-	$(ROBOT) convert -I https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl -o $(TMPDIR)/$@.owl
+	curl -L $(OBOBASE)/uo.owl --create-dirs -o $(TMPDIR)/uo-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/uo-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: doid

@@ -10,15 +10,16 @@
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-03-05/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-07-16/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2026-03-05</owl:versionInfo>
+        <owl:versionInfo>2026-07-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -118,6 +119,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -147,6 +154,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234"/>
@@ -167,6 +180,17 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005058 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/RBO_00005058">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/RBO_00005001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <obo:IAO_0000115>The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit).</obo:IAO_0000115>
+        <rdfs:label>mass number</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -274,6 +298,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000082"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/COB_0001300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0001300"/>
@@ -283,6 +313,12 @@
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_00003919 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919"/>
     
 
 
@@ -340,6 +376,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ENVO_03501288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03501288"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ENVO_03600073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ENVO_03600073"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0051716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051716"/>
@@ -376,9 +424,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000616 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000616"/>
     
 
 
@@ -641,7 +689,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>That part of the Earth exposed to the Earth atmosphere.</obo:IAO_0000115>
         <rdfs:label>earth surface</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -653,7 +700,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000016"/>
         <obo:IAO_0000115>The region between the Earth&apos;s surface and an altitude of approximately 100 km</obo:IAO_0000115>
         <rdfs:label>earth atmosphere</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1048,7 +1094,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000073"/>
         <obo:IAO_0000115>Radiation response modifiers that are peptides.</obo:IAO_0000115>
         <obo:IAO_0000119>Shaghaghi, Zahra et al. â€œPotential utility of peptides against damage induced by ionizing radiation.â€ Future oncology (2021): doi/10.2217/fon-2020-0577</obo:IAO_0000119>
-        <obo:IAO_0000119>Shaghaghi, Zahra et al. “Potential utility of peptides against damage induced by ionizing radiation.” Future oncology (2021): doi/10.2217/fon-2020-0577</obo:IAO_0000119>
         <rdfs:label>peptide radiation response modifier</rdfs:label>
     </owl:Class>
     
@@ -1070,7 +1115,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000111"/>
         <obo:IAO_0000115>A person employed or otherwise working in commercial activities where nuclear materials are created, handled or disposed and at risk of occupational radiation exposure. Excludes health workers.</obo:IAO_0000115>
         <obo:IAO_0000119>Nezahat Hunter, Richard G.E. Haylock, Michael Gillies, Wei Zhang; Extended analysis of solid cancer incidence among the Nuclear Industry Workers in the UK: 1955â€“2011. Radiat Res 2022; doi: https://doi.org/10.1667/RADE-20-00269.1</obo:IAO_0000119>
-        <obo:IAO_0000119>Nezahat Hunter, Richard G.E. Haylock, Michael Gillies, Wei Zhang; Extended analysis of solid cancer incidence among the Nuclear Industry Workers in the UK: 1955–2011. Radiat Res 2022; doi: https://doi.org/10.1667/RADE-20-00269.1</obo:IAO_0000119>
         <rdfs:label>nuclear industry worker</rdfs:label>
     </owl:Class>
     
@@ -1124,7 +1168,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00000082 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <obo:IAO_0000115>The theme or modality of an experimental, theoretical, critical or summative study involving radiation, radioactive materials including their impacts on orgnisms and society.</obo:IAO_0000115>
         <obo:IAO_0000118>radiobiology investigation</obo:IAO_0000118>
         <rdfs:label>radiobiology study type</rdfs:label>
@@ -1149,7 +1193,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the impact of radiation on the composition of or processes within the natural or anthropogenic environment.</obo:IAO_0000115>
         <rdfs:label>environmental study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1341,7 +1384,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study that aims at the discovery, development or assessment of efficacy of therapeutic agents or processes designed to mitigate or cure the effects of radiation exposure.</obo:IAO_0000115>
         <rdfs:label>therapeutics study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1373,7 +1415,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>A study of the contributing factors consequences and prevention of nuclear accidents</obo:IAO_0000115>
         <rdfs:label>nuclear accident study</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1427,7 +1468,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
         <obo:IAO_0000115>A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Professionâ€ can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society.</obo:IAO_0000115>
-        <obo:IAO_0000115>A set of behaviours that have some socially agreed upon function and for which there is an accepted code of norms. This may refer to a role within an organisation or within society as a whole. For example a Profession” can be defined as a cluster of occupational roles, or roles in which the incumbents perform certain functions valued in the organisation or society.</obo:IAO_0000115>
         <rdfs:label>occupational role</rdfs:label>
     </owl:Class>
     
@@ -1572,7 +1612,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <oboInOwl:hasDbXref>GO:0008150</oboInOwl:hasDbXref>
         <rdfs:label>biological process</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1584,7 +1623,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000123"/>
         <oboInOwl:hasDbXref>GO:0009987</oboInOwl:hasDbXref>
         <rdfs:label>cellular process</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -1717,7 +1755,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure of an entity to radiation of any type, for example as part of a medical or experimental procedure with the intention of exposing the entity to radiation energy internally or externally.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
@@ -1790,7 +1828,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00002008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00002008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00002007"/>
         <obo:IAO_0000115>Planned exposure to radiation generated through a device or exposure to a source emitting ionising radiation</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
@@ -1828,7 +1866,6 @@
         <obo:IAO_0000115>Incidental exposure to naturally occurring radiation in a natural or anthropogenic environment, such as geographical areas with high background levels of radiation or specific locations such as Uranium mines.</obo:IAO_0000115>
         <obo:IAO_0000117>0000-0002-5111-7263</obo:IAO_0000117>
         <rdfs:label>unplanned naturally occurring radiation exposure</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -3000,7 +3037,6 @@
         <obo:IAO_0000119>Jack Miller</obo:IAO_0000119>
         <oboInOwl:hasDbXref>obo:RBO_0002000</oboInOwl:hasDbXref>
         <rdfs:label>irradiation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -3115,15 +3151,6 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000117"/>
         <obo:IAO_0000115>A type of ionizing radiation consisting of charged particles that are relatively massive compared to other types of radiation, such as alpha, beta, and gamma radiation. Heavy ion radiation is composed of atomic nuclei that have been stripped of their electrons, resulting in positively charged particles.</obo:IAO_0000115>
-        <obo:IAO_0000116>Heavy ion radiation has several notable characteristics and contexts:
-
-High Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues.
-
-Enhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.
-
-Space Radiation: Heavy ions are a component of the galactic cosmic radiation present in space.
-
-In common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, &quot;heavy&quot; is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10.</obo:IAO_0000116>
         <obo:IAO_0000116>Heavy ion radiation has several notable characteristics and contexts: High Linear Energy Transfer (LET): Heavy ion radiation has a high linear energy transfer, which means it deposits a significant amount of energy per unit path length as it travels through tissue. This characteristic can lead to more localized and potentially more damaging effects on cells and tissues. Enhanced Biological Effectiveness: Due to its high LET, heavy ion radiation in many cases has enhanced biological effectiveness, meaning it can cause more severe biological damage per unit of absorbed dose compared to other types of radiation.Space Radiation: Heavy ions are a component of the galactic cosmic radiation present in space. In common use, the distinction between heavy ions and light ions is somewhat flexible and context dependent. For example, &quot;heavy&quot; is sometimes used to refer to any ion heavier than a helium nucleus or even a proton; in practice the dividing line between light and heavy lies around atomic numbers 6-10.</obo:IAO_0000116>
         <rdfs:label>heavy ion radiation</rdfs:label>
     </owl:Class>
@@ -3747,7 +3774,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000118>mGy/sec</obo:IAO_0000118>
         <oboInOwl:hasDbXref>UO:0010065</oboInOwl:hasDbXref>
         <rdfs:label>miligray per second</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -3776,7 +3802,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000112>The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo &amp; Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. L?ffler MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671</obo:IAO_0000112>
         <obo:IAO_0000112>The most obvious example is the bystander effect ( Carmel Mothersill, Andrej Rusin, Cristian Fernandez-Palomo &amp; Colin Seymour (2018) History of bystander effects research 1905-present; what is in a name?, International Journal of Radiation Biology, 94:8, 696-707, DOI: 10.1080/09553002.2017.1398436) where a naive cell behaves as if it has been irradiated because of its communication with an irradiated cell. It may also be used to describe the abscopal effect. Note that abscopal effects have been noted for ionising and non-ionising ( RF) radiation, eg. Löffler  MW. et al. . A Non-interventional Clinical Trial Assessing Immune Responses After Radiofrequency Ablation of Liver Metastases From Colorectal Cancer. Front Immunol. 2019 Nov 19;10:2526. doi: 10.3389/fimmu.2019.02526. PMID: 31803175; PMCID: PMC6877671</obo:IAO_0000112>
         <obo:IAO_0000115>Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of radiation acting on another cell and not on the responding cell. The process begins with detection of radiation by a cell or cells and ends with a change in state or activity of a different cell or cells.</obo:IAO_0000115>
         <obo:IAO_0000119>Paul Schofield</obo:IAO_0000119>
@@ -4443,6 +4468,8 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000082"/>
         <obo:IAO_0000115>Microdosimetry is a radiobiology study type that deals with the study of the distribution of energy deposition on a micrometer scale in biological systems exposed to ionizing radiation. It focuses on understanding how radiation interacts with cellular and sub-cellular structures and the resulting effects on biological systems.</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, chromosomal domains up to nuclei, and of the associated probability distribution&quot;</obo:IAO_0000116>
+        <obo:IAO_0000118>microdosimetry</obo:IAO_0000118>
         <rdfs:label>microdosimetry study type</rdfs:label>
     </owl:Class>
     
@@ -4559,7 +4586,7 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
-        <obo:IAO_0000115>The total mass of an atom, equal to the mass of the atom&apos;s constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 � 10?24 gram. The amu is also called the Dalton (Da).</obo:IAO_0000115>
+        <obo:IAO_0000115>The total mass of an atom, equal to the mass of the atom&apos;s constituent protons, neutrons and electrons minus the nuclear and electron binding energies. Atomic mass is expressed in atomic mass units (amu), where 1 amu is equal to one twelfth the mass of an atom of carbon-12, which is equal to 1.660539040 x 10^(-24) gram. The amu is also called the Dalton (Da).</obo:IAO_0000115>
         <rdfs:label>atomic mass</rdfs:label>
     </owl:Class>
     
@@ -4571,6 +4598,163 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
         <obo:IAO_0000115>The weighted average of the atomic masses of the naturally occurring stable isotopes and long-lived radioactive isotopes of an element. Atomic weight is typically expressed in atomic mass units. For example, the atomic weight of carbon, 12.011 amu, is calculated based on the natural abundance of carbon-12 (approx. 98.9%) and carbon-13 (approx. 1.1%), with carbon-14 contributing a negligible amount.</obo:IAO_0000115>
         <rdfs:label>atomic weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000116>Primary parent for physical infrastructure assets.</obo:IAO_0000116>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>Physical radiation research infrastructure</rdfs:label>
+        <skos:definition>A material entity such as physical resources, facilities, or personnel organized to support radiation biology research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000116>Primary parent for digital/information infrastructure assets.</obo:IAO_0000116>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>Digital radiation research infrastructure</rdfs:label>
+        <skos:definition>An information content entity that consists of digital resources, data systems, and models organized to support radiation biology research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_03501288"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation exposure facility</rdfs:label>
+        <skos:definition>A facility specifically designed to provide controlled radiation exposure to biological or physical samples for research purposes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011002"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>external exposure facility</rdfs:label>
+        <skos:definition>A radiation exposure facility in which biological or physical samples are irradiated by a radiation source external to the subject, including photon, particle beam, neutron, radon and calibration irradiation systems.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011002"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>internal exposure facility</rdfs:label>
+        <skos:definition>A radiation exposure facility in which biological subjects are exposed to radionuclides via incorporation routes such as inhalation, ingestion or wound contamination, resulting in internal radiation exposure from incorporated radionuclides.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011005">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00003919"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_03600073"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00003919"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ENVO_03600073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116>Polyhierarchy: child of both Physical Infrastructure and BFO:Site.</obo:IAO_0000116>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>contaminated site observatory</rdfs:label>
+        <skos:definition>A geographically defined area contaminated with radionuclides or naturally occurring radioactive materials (NORM) that is formally designated as a long-term field research site for radioecological investigation.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation research analytical platform</rdfs:label>
+        <skos:definition>A facility providing specialised analytical capabilities including biodosimetry, genomics, proteomics, radiochemistry, in vivo bioassay or imaging used to characterise biological samples or measure radiation-related outcomes in support of radiation biology and radiation protection research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000616"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation research sample bank</rdfs:label>
+        <skos:definition>A physical infrastructure for the systematic storage and management of biological or environmental samples related to radiation research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011001"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation epidemiology cohort</rdfs:label>
+        <skos:definition>A research infrastructure centered around a defined group of individuals (aggregate of organisms) tracked over time for radiation-related health outcomes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011001"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation biology database</rdfs:label>
+        <skos:definition>An information content entity consisting of structured collections of data related to radiation biology research.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011001"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation dosimetry model</rdfs:label>
+        <skos:definition>A computational model, simulation code or software application used to calculate radiation doses, model the biological effects of ionising radiation, assess environmental radiation risk, or support radiological emergency response decision-making.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00011011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00011011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00011000"/>
+        <rdfs:comment>Paul Schofield</rdfs:comment>
+        <rdfs:label>radiation dosimetry tool</rdfs:label>
+        <skos:definition>A physical infrastructure consisting of devices or instruments used to measure radiation dose.</skos:definition>
     </owl:Class>
     
 
@@ -4600,8 +4784,9 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005041"/>
         <obo:IAO_0000115>An assay of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 nanometers</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, assay of DNA, and of the associated probability distribution&quot;</obo:IAO_0000116>
+        <obo:IAO_0000118>nanodosimetry</obo:IAO_0000118>
         <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
-        <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259�265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment>Usually a track structure assay at nm scale</rdfs:comment>
         <rdfs:label>nanodosimetry assay</rdfs:label>
     </owl:Class>
@@ -4613,8 +4798,9 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00015003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005041"/>
         <obo:IAO_0000115>An assay of the pattern (frequency and spatial distribution) of ionization events produced by energy deposition in time and space in a substance characterized by linear dimensions of the order of 1-100 micrometers</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;For example, chromosomal domains up to nuclei, and of the associated probability distribution&quot;</obo:IAO_0000116>
+        <obo:IAO_0000118>microdosimetry</obo:IAO_0000118>
         <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259ï¿½265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
-        <obo:IAO_0000119>See H.H. Rossi, Microdosimetry and Radiobiology, Radiation Protection Dosimetry, Volume 13, Issue 1-4, 1 December 1985, Pages 259�265, https://doi.org/10.1093/rpd/13.1-4.259 and Gustavo A. Santa Cruz,Microdosimetry: Principles and applications,Reports of Practical Oncology &amp; Radiotherapy,Volume 21, Issue 2,2016,Pages 135-139,ISSN 1507-1367,https://doi.org/10.1016/j.rpor.2014.10.006.</obo:IAO_0000119>
         <rdfs:comment>Usually a track structure assay at micrometre scale</rdfs:comment>
         <rdfs:label>microdosimetry assay</rdfs:label>
     </owl:Class>
@@ -4825,7 +5011,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00015006"/>
         <obo:IAO_0000115>The direct or indirect transfer of energy from radiation to a medium through ionisation or excitation of the atoms of the medium.</obo:IAO_0000115>
         <rdfs:label>energy deposition</rdfs:label>
-        <rdfs:label>energy deposition event</rdfs:label>
     </owl:Class>
     
 
@@ -5433,7 +5618,6 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <obo:IAO_0000115>A measurement datum of the quantity of radiation absorbed by a substance or organism. The term &quot;radiation dose&quot; may for example refer to absorbed dose, organ dose, dose equivalent or equivalent dose, depending upon context and weighting factor(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <rdfs:label>radiation dose</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:deprecated>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -5913,6 +6097,1250 @@ In common use, the distinction between heavy ions and light ions is somewhat fle
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0302889"/>
         <obo:IAO_0000115>The total number of protons and neutrons in a nucleus of an element or isotope of an element. The mass number of carbon-12 is 12; the mass number of carbon-13 is 13.</obo:IAO_0000115>
         <rdfs:label>mass number</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120000 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120000">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>CIRIL (Centre for Interdisciplinary Research with Heavy Ions) is the radiation biology platform at the GANIL heavy ion accelerator facility in Caen, managed by the CIMAP laboratory together with the radiation-biology laboratory LARIA. The GANIL accelerator provides beams from carbon to uranium at energies ranging from 95 MeV/A for light ions down to 24 MeV/A for uranium, with dose rates of 0.5–5 Gy/min; most biology experiments are performed in the D1 experimental area via the IRABAT beamline. The platform hosts cells (2D and 3D models) and is open to external users through a selection committee process, covering research in hadrontherapy, space radioprotection and fundamental radiobiology. Located at CEA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>CIRIL</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120001 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120001">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Faxitron is a low-energy X-ray irradiation system at CEA Saclay used for controlled biological irradiation experiments. It provides X-ray exposures at a dose rate of approximately 1 Gy/min and is used for studies of DNA damage responses and cellular radiation sensitivity. The system is housed in the SBIGeM unit and is available for collaborative research projects requiring well-characterised low-LET reference irradiations. Located at CEA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>FAXITRON X-rays generator</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120002">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>This multipurpose irradiation facility at the Central Mining Institute in Katowice is located within a radiation-protected area and can deliver various types of ionizing radiation including radon and radon progeny, X-rays, alpha, beta and gamma radiation. It supports studies related to environmental radioactivity, radiation protection and biological effects, serving both the institute&apos;s own research and external collaborators. Access requires authorization from the laboratory head and approval from the institute&apos;s scientific council. Located at Silesian Centre for Environmental Radioactivity, Central Mining Institute (SCRS-GIG).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>All kinds of radiation multipurpose irradiation facility</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120003 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120003">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The X-ray irradiation unit at Public Health England&apos;s Harwell Campus provides controlled low-LET external exposures for radiobiology and radiation protection research. The facility supports studies on cellular and molecular responses to ionizing radiation, and is available for collaborative research following appropriate authorization. It forms part of PHE&apos;s broader capability for radiation biology and dosimetry research. Located at Public Health England.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>X-ray unit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120004 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120004">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The CERN-EU high-energy Reference Field (CERF) facility, located in the North Experimental Area of CERN and served by a secondary beam from the Super Proton Synchrotron (SPS), reproduces the mixed radiation field encountered near high-energy particle accelerators and at commercial flight altitudes. A 120 GeV/c positively charged hadron beam (approximately 2/3 pions and 1/3 protons) strikes a copper target to produce a neutron-dominated mixed field; ambient dose equivalent rates range from 5–250 μSv/h on the concrete roof and 18–360 μSv/h on the iron roof. The facility is used for calibrating and testing dosimeters and radiation protection instruments for aviation, space and accelerator applications, with around ten international user groups per year. Located at CERN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>The CERN-EU high-energy Reference Field (CERF) facility for dosimetry at commercial flight altitudes and in space, A. Mitaroff and M. Silari, Radiation Protection Dosimetry 102, 7-22, 2002</obo:IAO_0000119>
+        <rdfs:label>CERF</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120005 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120005">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The mixed beams facility at Stockholm University provides low-dose-rate gamma irradiation as well as alpha particle and neutron exposures for radiobiology research. It supports studies on radiation-induced genomic instability and the biological effects of mixed radiation fields, including work relevant to space radiation and radiation protection. Research conducted there has contributed to understanding dose-rate effects and bystander responses in mammalian cells. Located at Stockholms University.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>doi: 10.1093/rpd/ncs024</obo:IAO_0000119>
+        <rdfs:label>Mixed beams facility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120006 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120006">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Laboratory for Nuclear Calibrations (LNK) at SCK-CEN, a member of the EURAMET network and Designated Metrology Institute since 2012 and IAEA SSDL member, performs calibrations of dosimeters from research centres, nuclear power plants, industry and hospital radiotherapy departments. It offers gamma (Cs-137, Co-60), X-ray (10–300 kVp), beta (Sr-90/Y-90) and neutron (Cf-252, Am-Be) irradiators with various beam geometries, issuing approximately 500 irradiation certificates and 200 calibration certificates per year. The X-ray system is also used for irradiation of radiobiological samples, and the facility has ISO 17025 accreditation. Located at SCK-CEN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Laboratory for Nuclear Calibrations (LNK)</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120007 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120007">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>ISS Rome acquired its Gammacell® 40 Exactor (Nordion International) in 1993 for acute gamma irradiation of biological samples; it forms part of the LIBIS facility complex and complements the Cs-137 low dose rate irradiator in the same room. The system delivers high dose rate gamma exposures and is used for comparative studies alongside the low dose rate LIBIS irradiator to investigate dose-rate effects on cellular responses. It is available for collaborative research through the local group. Located at Istituto Superiore di Sanità.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Gammacell40 Exactor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120008 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120008">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The PULEX-COSMIC SILENCE facilities at the Gran Sasso National Laboratory (one of the four national laboratories of INFN, Italy) exploit the deep underground location — shielded by 1400 m of rock — to provide an environment where cosmic ray flux is reduced by a factor of ~10⁶, creating an extremely low radiation background for biological experiments. The PULEX cell culture facility and the adjacent climate-controlled COSMIC SILENCE animal facility (housing Drosophila melanogaster and other model organisms) allow investigation of whether normal environmental radiation is required for maintaining cellular defence mechanisms. Experiments have demonstrated that reduced background radiation decreases cells&apos; protection against chemical radio-mimetic stressors, with the facilities open to external collaborators. Located at Gran Sasso National Laboratory-National Institute for Nuclear Physics (LNGS-INFN).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Fratini et al. Radiat Environ Biophys 54:183, 2015</obo:IAO_0000119>
+        <rdfs:label>PULEX-COSMIC SILENCE</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120009 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120009">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The alpha particle irradiator at ISS Rome uses an americium-241 or polonium source to deliver well-defined high-LET alpha particle doses to cells and biological samples, and is used alongside the LIBIS and Gammacell® 40 facilities in the same department. It has been used to study DNA damage clustering, cell killing and the bystander effect following high-LET irradiation, contributing to understanding of the relative biological effectiveness of alpha particles. The facility supports fundamental radiobiology studies on the mechanisms of action of densely ionising radiation. Located at Istituto Superiore di Sanità.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Esposito et al., 2009. Radiat. Res. 172: 632-642</obo:IAO_0000119>
+        <rdfs:label>Alpha particles irradiator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120010 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120010">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Calibration and Dosimetry Laboratory at INTE (Polytechnic University of Catalonia) is an accredited Secondary Standard Dosimetry Laboratory providing photon (1 μGy/h–54 mGy/h), X-ray (0.1 mGy/h–10 Gy/h) and beta particle irradiation fields for calibration and research. It maintains national reference standards and supports dosimetry research, personal dosimeter testing and detector development. External users require authorisation from the Technical Director and approval from the Management Committee. Located at INTE (Institut de Tècniques Energètiques).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Calibration and Dosimetry Laboratory</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120011 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120011">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Gilardoni CHF 320G is an X-ray irradiator at ENEA Rome providing controlled low-LET exposures for radiobiological and material science research. The system delivers X-rays at diagnostic energies and is available to authorised personnel for studies requiring well-characterised photon irradiation. It forms part of ENEA&apos;s radiation biology research capability in Rome. Located at ENEA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Gilardoni CHF 320G</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120012 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120012">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Nuclear Metrology Group (NMG) at NPL (National Physical Laboratory, UK) maintains primary radiation measurement standards and provides mixed field plus neutron and gamma reference irradiation facilities for calibration and dosimetry research. The facility dose rates range from 1 μGy/h to mGy/h and supports metrology research and dissemination of dosimetry standards across the UK and internationally. It underpins the traceability chain for radiation protection measurements. Located at NPL.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>NMG</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120013 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120013">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Radiation Metrology Laboratory (DOS) at STUK (Radiation and Nuclear Safety Authority, Finland) maintains the Finnish national standard for ionising radiation and provides calibration and irradiation facilities covering gamma, X-ray, alpha, beta and neutron radiation qualities, with dose rates from 700 nGy/h to 40 Gy/h. The laboratory is accredited to ISO 17025, is a member of CIPM MRA and participates in regular EURAMET intercomparison measurements and external audits. It is also a member of the IAEA/WHO SSDL network. Located at STUK.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>STUK</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120014 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120014">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>LIBIS (Low dose-rate Irradiator for Biological Investigations at ISS) is a dedicated Cs-137 low dose-rate gamma irradiation facility at ISS Rome, designed to expose cell cultures at dose rates between 2 μGy/h and 20 mGy/h by varying the distance from the source (28–125 cm). All experiments are performed in safe operating conditions; the facility shares its room with the Gammacell® 40 for acute irradiations, allowing direct comparison of dose-rate effects on the same cellular systems. LIBIS is open to collaboration with all interested research groups. Located at Istituto Superiore di Sanità.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>LIBIS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120015 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120015">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The CERN Radiation Protection CALibration LABoratory (CALLAB), in service since 2015 and designed to ISO 17025 standards, is a state-of-the-art calibration facility for testing radiation protection instruments used at CERN and by external organisations. It houses Co-60 sources (up to 11.8 TBq), four Am-Be neutron sources (100 MBq–888 GBq), five Cs-137 sources (300 MBq–3 TBq), Kr-85 beta sources and an X-ray generator (up to 320 kV), providing H*(10) rates from tens of nSv/h to Sv/h across gamma, neutron, beta and X-ray fields. The Co-60 room also enables Total Ionising Dose testing of large systems up to ~1 m³. Located at CERN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>CALLAB</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120016 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120016">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>This low-dose-rate gamma irradiation facility at Stockholm University is designed for chronic whole-animal exposures, allowing investigation of dose-rate effects on biological systems under controlled conditions. It has been used to study proteomic changes in human umbilical vein endothelial cells exposed to chronic low-dose-rate gamma radiation, demonstrating induction of premature senescence. The facility supports research relevant to both occupational radiation protection and the effects of chronic low-level exposures. Located at Stockholm University.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>R. Yentrapalli et al., Proteomics, 13 (2013) 1096-1107</obo:IAO_0000119>
+        <rdfs:label>Low dose rate facility for animal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120017 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120017">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>This cell irradiation facility at Stockholm University delivers controlled low-dose and low-dose-rate gamma exposures for in vitro radiobiology studies. Research using the facility has demonstrated induction of premature senescence in human endothelial cells following chronic low-dose-rate gamma irradiation, with proteomic analysis revealing key mechanistic pathways. It is particularly suited to experiments requiring prolonged, low-intensity exposures that mimic occupational or environmental radiation scenarios. Located at Stockholm University.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>R. Yentrapalli et al., Proteomics, 13 (2013) 1096-1107</obo:IAO_0000119>
+        <rdfs:label>Low dose and low dose rate facility for cells</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120018 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120018">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The University of Pisa neutron irradiation facility (UNIPI-AmBe), operational since 2010, consists of an irradiation room for fast neutron and gamma exposures using AmBe and Co-60 sources, designed to minimise neutron scattering. The AmBe source is retrieved from a storage box and positioned at a specified distance from the device or detector to be irradiated, with a neutron ambient dose rate of approximately 9.4 μSv/h. The facility is part of the Nuclear Measurement Group at the Department of Civil and Industrial Engineering and is available following completion of radiation protection documentation. Located at Dipartimento di Ingegneria Civile e Industriale - University of Pisa.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>UNIPI-AmBe</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120019 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120019">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The irradiation facility at KIT (Karlsruhe Institute of Technology) provides photon, electron and neutron irradiations in the dose range from 50 μGy up to 5 Gy, with dose rates from 2 μGy/h to 80 mGy/h (air kerma rate for photons). It uses six Cs-137 sources at different activity levels, two X-ray tubes (up to 60 kV soft X-rays), electron beta secondary standards, and Cf-252 and Am-Be neutron sources; a solid-state dosimetry laboratory with TLD and track-etch detectors is co-located. Originally designed for calibration of active and passive dosemeters, it is also used for research and development in radiation protection. Located at Karlsruhe Institute of Technology.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>calibration facility - Karlsruhe Institute of Technology</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120020 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120020">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>CANAM is a multi-user infrastructure at the Nuclear Physics Institute of the Czech Academy of Sciences providing access to a range of accelerator-based analytical and irradiation methods including neutron diffraction, small-angle neutron scattering, ion beam analysis and proton irradiation. The facility supports materials science, cultural heritage analysis, nuclear physics and radiation biology research from international users, with beam time allocated through a user office with an annual selection process. It is located at the Řež research campus near Prague. Located at Nuclear Physics Institute of the Czech Academy of Sciences.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>CANAM infrastructure - Center of Accelerators and Nuclear Analytical Methods</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120021 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120021">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Laboratory for Dosimetry Standards (NDS) at the Jozef Stefan Institute, established in 1992 and appointed Designated Institute by Slovenia&apos;s Metrology Institute (MIRS) in 2008, holds the Slovenian national standard for ionising radiation (air kerma and dose equivalent). It provides gamma (Co-60, Cs-137, Am-241), X-ray (2–160 keV, various ISO 4037 and IEC 61267 qualities) and mammographic spectrum irradiations, with dose rates from 0 to 0.1 Gy/min, and is accredited to ISO/IEC 17025. Calibration capabilities are confirmed through BIPM supplementary intercomparisons and are published in the BIPM KCDB database. Located at Jozef Stefan Institute.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>NDS</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120022 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120022">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>This facility at IRSN combines a medical linear accelerator with imaging capability for radiobiology and radiation therapy research. It enables precision irradiation of biological targets with image guidance, supporting studies on tumour radiobiology and the optimisation of radiotherapy fractionation. The facility is available to collaborative research partners through an application process. Located at IRSN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Linac+imageur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120023 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120023">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>CYCERON in Caen is a biomedical imaging platform housing a cyclotron and PET/CT scanners, used for preclinical and clinical imaging research related to oncology and neuroscience. It supports radiobiology studies linking functional imaging with radiation response, and offers irradiation capabilities for experimental research. The platform is managed by a consortium of research institutions in the Normandy region. Located at CYCERON.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>CYCERON</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120024 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120024">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Small Animal Radiation Research Platform (SARRP) at Institut Curie in Orsay provides image-guided, precision irradiation of small animals for experimental radiobiology and preclinical radiotherapy research. It enables targeted tumour irradiation in mouse models with millimetre precision, closely mimicking clinical radiotherapy conditions. The system supports studies on tumour response, normal tissue toxicity and the development of novel fractionation schemes. Located at INSTITUT CURIE.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>SARRP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120025 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120025">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The ICO facility at INSERM in Nantes provides irradiation capabilities for experimental cancer research, focusing on the biological mechanisms of radiation-induced cell death and tissue response. It supports in vitro and in vivo studies relevant to improving radiotherapy and understanding normal tissue complications. The facility is available through collaborative agreements with INSERM research teams. Located at INSERM.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>ICO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120026 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120026">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Radon Calibration Laboratory of the German Federal Office for Radiation Protection (BfS) in Berlin provides reference radon atmospheres at concentrations from 0.5–100 kBq/m³ for the calibration and testing of radon measurement devices. It operates controlled radon chambers under well-defined conditions of radon concentration, humidity and temperature, and supports national and international instrument intercomparisons. The facility also performs research on radon measurement methodology and access is by prior appointment. Located at BfS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Radon calibration laboratory</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120027 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120027">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The PTB accelerator facility (PIAF) for ion and neutron research at Braunschweig operates a charged-particle microbeam that has been in routine use for over 15 years, using a 3 MV tandem accelerator and compact cyclotron to deliver protons and alpha particles with LET values from approximately 3 to 200 keV/μm. The sub-2 μm focused beam — achieved by quadrupole magnet focusing with a unique 90° bending magnet design that eliminates scattered particles — allows targeted irradiation of individual cell nuclei, cytoplasm or organelles with single counted ions at rates up to 50,000 cells/hour. In addition to microbeam work, the facility offers broad-beam proton and alpha irradiations and neutron field exposures, and has been used extensively in European framework programmes. Located at PTB.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>K. D. Greif et al., Nucl. Instr. and Meth. B 217 (2004) 505-512</obo:IAO_0000119>
+        <rdfs:label>PTB Microbeam</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120028 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120028">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>MELAF (Metrological Electron beam Accelerator Facility) at PTB Braunschweig is operated for service and research in dosimetry for external beam radiotherapy, comprising a custom research electron LINAC, two commercially available medical LINACs, and a Co-60 facility. It delivers electron and photon dose rates from 0.01 Gy/min to high dose rates, with the electron energy varied continuously; the facility is used for calibrating therapy-level dosimeters and for research on detector response in clinical beam qualities. Access is by radiation protection controlled area rules under supervision of a radiation protection supervisor. Located at PTB - Physikalisch-Technische Bundesanstalt.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>MELAF</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120029 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120029">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Secondary Standard Dosimetry Laboratory (SSDL) at Helmholtz Zentrum München in Neuherberg provides traceable calibration services for radiation protection instruments and dosimeters using gamma, X-ray and beta sources. It supports dosimetry research and the dissemination of calibration standards to hospitals, research institutions and industry in Germany. The laboratory participates in international metrology comparisons coordinated by the IAEA and BIPM. Located at Helmholtz Zentrum München.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>SSDL Neuherberg</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120030 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120030">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Radon Exposure Chamber at GSI Darmstadt was developed within the GREWIS project (in collaboration with TU Darmstadt and the Universities of Frankfurt and Erlangen) to investigate the anti-inflammatory and carcinogenic mechanisms of radon exposure. The climate-controlled chamber allows exposure of cells and mice to Rn-222 at defined concentrations, with humidity controlled via a carrier gas mixed with vaporised sterile water; an Am-241 alpha source with comparable energies to radon&apos;s alpha emissions is also available for controlled cell irradiation on thin foils. Beam time applications require a project description and are evaluated by the GSI beamtime application system. Located at GSI Helmholtzcenter for Heavy Ion Research.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Radon Exposure Chamber</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120031 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120031">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>SNAKE (Superconducting Nanoprobe for Applied nuclear (Kern) physics Experiments) is the ion microbeam installed at the 14 MV Tandem Accelerator in Garching, achieving sub-micrometer beam focusing via a superconducting quadrupole doublet over a broad ion range from 20 MeV protons to 200 MeV gold ions, with LET values from 2–2000 keV/μm. The facility allows targeted irradiation of single defined cells and more complex samples with single or counted ions, supporting LET-dependent intercomparison studies and live-cell imaging of DNA double-strand break repair kinetics. It is used exclusively for joint research collaborations (approximately 3–6 beam times per year), with biological security class S1 required. Located at Maier-Leibnitz-Laboratory (MLL).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Hauptner et al. 2004, Radiat Environ Biophys 42:237-245</obo:IAO_0000119>
+        <rdfs:label>SNAKE</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120032 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120032">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The infrastructure for retrospective radon and thoron dosimetry at Sofia University in Bulgaria, completed in 2015 within the DoReMi project framework, provides a Radon and Thoron Exposure Facility (RTEF) capable of exposures to ²²²Rn (1–2000 kBq/m³) and ²²⁰Rn concentrations under static or dynamic temperature regimes using a programmable thermostat. Its main purpose is to provide low-dose retrospective dosimetry for epidemiological studies where radon or thoron is the primary risk agent or a confounder, and it can also support detector response studies and measurement method development. The facility is available to external users following agreement. Located at Faculty of Physics, Sofia University.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>D. Pressyanov et al., Journal of Environmental Radioactivity 166 (2017) 181-187</obo:IAO_0000119>
+        <rdfs:label>Laboratory for retrospective Radon and Thoron dosimetry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120033 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120033">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Biological Irradiation Facility (BIO) operates within the Budapest Neutron Centre (BNC) at the research reactor, providing neutron dose rates of 0.023–14 mGy/s and co-produced gamma dose rates for biological irradiation studies. The channel lock consists of three steel and heavy concrete segments rotatable around an eccentric axis, with a remotely controlled internal filter system using thermal and epithermal absorbers and a movable collimator on a rail to achieve uniform, homogeneous irradiation. The facility supports studies on radiation damage to electronics and biological systems, and characterisation of realistic neutron spectra for radiation protection applications. Located at Hungarian Academy of Sciences Centre for Energy Research.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Pálfalvi J.K. et al. 2002. Nucl. Instrum. Methods A 476, 452-456</obo:IAO_0000119>
+        <rdfs:label>BIOLOGICAL IRRADIATION FACILITY (BIO)</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120034 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120034">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The MT-25 Microtron at the Nuclear Physics Institute in Prague (Řež) is a cyclic electron accelerator with a Kapitza-type resonator, accelerating electrons by a constant-frequency RF electric field in a constant uniform magnetic field. It is equipped with a device for generating highly homogeneous gamma and electron fields, providing dose rates from 0.01 Gy/min to 10 kGy/min and is used for biomedical, environmental and prompt gamma activation analysis (PAA) procedures. The facility is freely accessible with no specific requirements and complements the CANAM infrastructure at the same institute. Located at Nuclear Physics Institute of the CAS, v.v.i..</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Microtron Laboratory</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120035 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120035">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>IRRAD is the 24 GeV/c proton irradiation facility at CERN, located in the PS accelerator complex, primarily designed for testing the radiation hardness of electronic components and detector materials for high-energy physics experiments at one of the highest proton fluences available internationally. The facility operates during CERN&apos;s accelerator runs and access is coordinated through the facility team following CERN radiation protection procedures and facility coordination approval. It has been extended to support radiobiology experiments requiring high-energy proton exposures. Located at CERN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>F. Ravotti et al., AccApp&apos;15, Washington DC, USA, pp. 182-187</obo:IAO_0000119>
+        <rdfs:label>Proton Irradiation Facility (IRRAD)</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120036 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120036">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The TIFPA (Trento Institute for Fundamental Physics and Applications) proton irradiation facility is embedded in the Trento Proton Therapy Centre, which started clinical operations in October 2014 and has treated over 300 patients. The experimental area consists of a multifunctional preparation room and an irradiation cave where the clinical beam line is split into &apos;Biology&apos; and &apos;Physics&apos; sub-branches, both delivering horizontal proton beams at clinical energies of 70–228 MeV at dose rates of 0.1–2 Gy/min. Beam time applications are evaluated by a Program Advisory Committee (PAC), and personal dosimeters and radiation protection documentation are required. Located at INFN TIFPA - APSS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>http://dx.doi.org/10.1016/j.nima.2017.06.017</obo:IAO_0000119>
+        <rdfs:label>Trento Facility for Proton Irradiation</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120037 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120037">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>FIGARO is the low-dose ⁶⁰Co gamma irradiation facility at the Norwegian University of Life Sciences (NMBU), managed by CERAD CoE, with a campus gamma irradiation history dating back to 1952; the current low-dose facility opened in 2003 and was upgraded to a climate-controlled facility in 2012 with DoReMi support. The 12 Ci Co-60 source provides a continuous dose-rate field from 3 Gy/h down to 400 μGy/h, enabling simultaneous acute to chronic exposure of multiple test organisms — cells, fish, mussels, earthworms, plants and small rodents — alongside other stressors such as metals and UV. The facility is licensed for GMOs and open for international collaboration; it has ScanClime and Innovive rack access for small rodent studies. Located at Centre for Environmental Radioactivity (CoE CERAD).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Lind et al., Int J Radiat Biol, 2018, DOI: 10.1080/09553002.2018.1516906</obo:IAO_0000119>
+        <rdfs:label>FIGARO</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120038 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120038">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011003"/>
+        <obo:IAO_0000115>The Heidelberg Ion-Beam Therapy Centre (HIT), part of Heidelberg University Hospital and operational since November 2009, is Europe&apos;s first combined proton and heavy ion therapy facility, delivering proton and carbon ion beams (and also oxygen and helium ions) via an intensity-modulated raster scanning system to approximately 750 patients per year in three treatment rooms. It is strategically located 45 minutes from Frankfurt airport and offers beam time for experimental research proposals evaluated by HIT alongside its clinical programme, with the beam application system based on intensity-modulated raster scanning technology allowing maximum 3D flexibility. Research proposals should be submitted to Proposal.HIT@med.uni-heidelberg.de. Located at Heidelberg University Hospital.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Haberer Th. et al., Radiother Oncol, 73 (Suppl. 2), S186-S190</obo:IAO_0000119>
+        <rdfs:label>Heidelberg Ion-Beam Therapy Centre (HIT)</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120039 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120039">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011004"/>
+        <obo:IAO_0000115>The Laboratory of RadioToxicology (LRT) at CEA Arpajon is the principal French facility dedicated to studying the biological effects and biokinetics of internally incorporated alpha-emitting actinides (primarily plutonium and americium) using in vitro and in vivo animal models including rats and non-human primates. Its main mission is to improve radiological protection of nuclear industry workers potentially exposed to actinides by inhalation or through wounds, generating experimental data on dissolution parameters, biokinetics and actinide-induced carcinogenesis. The facility also maintains a legacy tissue repository (&apos;Rat Actinide Repository&apos;) of around 3000 samples and 7000 tissue sections from 1500 rats contaminated since the 1960s. Located at CEA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Grémy et al., Radiat Res. 2010; 174(5):637-44</obo:IAO_0000119>
+        <rdfs:label>Laboratory of Radio Toxicology, Animal Contamination Facility</rdfs:label>
+        <rdfs:seeAlso>https://jacob.cea.fr/drf/ifrancoisjacob/english/Pages/Departments/IRCM/Teams/LRT.aspx</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120040 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120040">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011004"/>
+        <obo:IAO_0000115>This multipurpose irradiation facility at the Central Mining Institute in Katowice can deliver various types of ionizing radiation including radon and radon progeny, X-rays, alpha, beta and gamma radiation for both external and internal exposure studies. It supports research into environmental radioactivity, radiation protection and biological effects, and is particularly relevant to NORM studies related to the Upper Silesian coal basin. Access requires authorisation from the laboratory head and scientific council approval. Located at Silesian Centre for Environmental Radioactivity, Central Mining Institute (SCRS-GIG).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>All kinds of radiation multipurpose irradiation facility</rdfs:label>
+        <rdfs:seeAlso>http://www.radiometria.gig.eu</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120041 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120041">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011004"/>
+        <obo:IAO_0000115>This facility at SCK-CEN Mol is dedicated to studying the behaviour of radionuclides in biological and environmental systems, including their availability, transfer and migration in plants, soils and organisms. It supports research on radionuclide biokinetics and the development of environmental transfer models relevant to nuclear waste management and radioecology. Access requires security verification by the Federal Agency for Nuclear Control, a medical examination, and a safety quiz. Located at SCK-CEN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Facility for studying radionuclides availability, transfer and migration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120042 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120042">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011005"/>
+        <obo:IAO_0000115>Rontok Lake is a contaminated site in the Upper Silesian coal basin, Poland, where radium-bearing waters discharged from coal mines have led to elevated radioactivity concentrations in the water, sediments and surrounding environment. It forms part of the ALLIANCE NORM observatory network and offers a unique field laboratory for studying natural radionuclide transport, accumulation and ecological effects in a freshwater system affected by mining activity. Access requires authorisation via SCRS-GIG based on mutual agreement with the site owner. Located at Silesian Centre for Environmental Radioactivity, Central Mining Institute (SCRS-GIG).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Chałupnik et al., Journal of Environmental Radioactivity Vol. 54, s. 85-98 (2001)</obo:IAO_0000119>
+        <rdfs:label>Rontok Lake</rdfs:label>
+        <rdfs:seeAlso>http://www.gig.eu</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120043 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120043">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011005"/>
+        <obo:IAO_0000115>The Forest observatory site in Yamakiya, Japan, is a semi-natural terrestrial forest contaminated primarily with radiocaesium (Cs-137) following the Fukushima Daiichi nuclear accident in 2011, with additional contamination from Pu and Sr-90. As one of the ALLIANCE observatory sites, it offers a radiation contamination gradient largely free from non-radioactive chemical pollutants, enabling studies on radionuclide behaviour in forest ecosystems, soil-to-plant transfer, and ecological effects. Access requires permission from the Institute of Environmental Radioactivity (IER) at Fukushima University. Located at IER.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Yoschenko V. et al., J Environ Radioact, 166, 45-55 (2017)</obo:IAO_0000119>
+        <rdfs:label>Forest observatory site in Yamakiya</rdfs:label>
+        <rdfs:seeAlso>http://www.ier.fukushima-u.ac.jp/index_e.html</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120044 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120044">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011005"/>
+        <obo:IAO_0000115>The IRSE Experimental Farm is located within the Semipalatinsk Nuclear Test Site (STS) in Kazakhstan, a territory of 18,500 km² of steppe semi-desert contaminated with radionuclides (caesium, strontium, transuranium elements, tritium) and heavy metals following decades of nuclear weapons testing. It provides a unique field research environment for studying radioecological processes, radionuclide uptake by plants and animals, and long-term ecosystem recovery in a heavily contaminated arid environment. Special permission is required for access. Located at IRSE.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>IRSE Experimental Farm</rdfs:label>
+        <rdfs:seeAlso>http://irse.nnc.kz/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120045 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120045">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011005"/>
+        <obo:IAO_0000115>The Belgian NORM Observatory Site is a terrestrial forest area contaminated with naturally occurring radioactive materials (NORM) — specifically U-238, Ra-226, Pb-210 and Po-210 — alongside heavy metals, representing a mixed radioactive-chemical contaminant situation. As one of the ALLIANCE observatory sites, it enables studies on NORM behaviour in terrestrial environments and the combined effects of radioactive and chemical stressors on soil biota and vegetation. Permission from the site owner must be obtained via SCK-CEN. Located at SCK-CEN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>To be filled in soon</obo:IAO_0000119>
+        <rdfs:label>Belgian NORM Observatory Site</rdfs:label>
+        <rdfs:seeAlso>https://radioecology-exchange.org/content/belgian-norm-observatory</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120046 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120046">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011009"/>
+        <obo:IAO_0000115>STORE (Sustaining access to Tissues and data from Radiobiological Experiments) is a freely available online platform, initiated under European Commission funding in 2009 and developed further within CONCERT, providing a single portal to radiobiological data and biological material (tissue samples, FFPE blocks, slides) presently distributed across scientific centres worldwide. The platform consists of a &apos;Data Warehouse&apos; enabling sharing of datasets, experimental material and links to other databases, with Standard Operating Procedures for evaluating archived tissue usability. It also encompasses the European Radiobiological Archives (ERA), which hold data from nearly all experimental animal radiation biology studies conducted between 1960 and 1998 involving over 300,000 animals. Located at BfS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>STORE</rdfs:label>
+        <rdfs:seeAlso>http://www.storedb.org</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120047 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120047">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011009"/>
+        <obo:IAO_0000115>FREDERICA is a freely accessible online database collating published dose-effect relationships for radiation effects on wildlife — including mammals, birds, reptiles, amphibians, fish, insects and plants — with data from both laboratory and field studies. It underpins environmental radiation risk assessment frameworks such as ERICA and FASSET, and has been used extensively in the development of Predicted No-Effect Dose Rate (PNEDR) values for non-human biota. Users must register to access the data, and usage should be acknowledged in publications. Located at University of Stirling.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>DOI: 10.1016/j.jenvrad.2008.01.006</obo:IAO_0000119>
+        <rdfs:label>FREDERICA</rdfs:label>
+        <rdfs:seeAlso>http://www.frederica-online.org</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120048 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120048">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011009"/>
+        <obo:IAO_0000115>RES³T (Rossendorf Expert System for Surface and Sorption Thermodynamics) is a freely accessible online thermodynamic reference database for radionuclide sorption data, providing links to experimental sorption data, surface complexation model parameters, spectroscopic evidence and quantum chemical approaches for contaminant transport modelling. It supports safety assessment of radioactive waste repositories and remediation of contaminated sites by providing critically evaluated data for predicting radionuclide mobility in geological and environmental systems. Access is free but usage must be cited. Located at HZDR.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>DOI: 10.1016/S0169-7722(02)00129-8</obo:IAO_0000119>
+        <rdfs:label>RES³T</rdfs:label>
+        <rdfs:seeAlso>http://www.hzdr.de/res3t</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120049 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120049">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011009"/>
+        <obo:IAO_0000115>The Environmental Information Data Centre (EIDC) at the UK Centre for Ecology &amp; Hydrology provides open access to a wide range of environmental datasets covering ecology, hydrology, soil science and environmental monitoring across the UK and internationally. It serves as a national archive for environmental research data, supporting studies on radionuclide transfer in the environment, wildlife ecology and long-term ecosystem change. Registration is required to access some datasets. Located at Centre for Ecology &amp; Hydrology.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>see individual records</obo:IAO_0000119>
+        <rdfs:label>Environmental Information Data Centre</rdfs:label>
+        <rdfs:seeAlso>http://eidc.ceh.ac.uk/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120050 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120050">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011009"/>
+        <obo:IAO_0000115>This database at SUBI (Southern Urals Biophysics Institute) contains medical and dosimetric data on workers at the Mayak plutonium production association — one of the most heavily exposed occupational cohorts in history — and their families, comprising several thousand individuals with varying exposure levels and quality of dosimetric information. It constitutes a unique resource for investigating radiation effects from protracted internal and external exposures, individual radiation susceptibility, non-cancer radiation diseases and radiation-specific biomarkers. Access requires approval from the SUBI Review Board and a signed data access agreement. Located at Southern Urals Biophysics Institute (SUBI).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Database of Mayak workers&apos; families</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120051 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120051">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011007"/>
+        <obo:IAO_0000115>The French Haemangioma Biobank was established through collaborations between INSERM (U1018, Florent de Vathaire) and CEA, collecting peripheral blood lymphocytes, DNA and cytogenetic slides from T- and B-cells of 369 individuals from the French Haemangioma Cohort (8,335 subjects, of whom 5,744 were treated with radiotherapy using brachytherapy sources or X-rays for childhood skin haemangioma). The biobank supports studies on long-term cancer risks following low-dose radiation in childhood, cytogenetic markers of exposure and individual radiosensitivity. External access requires approval from the selection committee. Located at CEA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Haddy N et al. Melanoma Res. 2012, 1, 77-85</obo:IAO_0000119>
+        <rdfs:label>French Haemangioma Biobank</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120052 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120052">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011007"/>
+        <obo:IAO_0000115>A collection of 20 uncontaminated Belgian soils at SCK-CEN&apos;s Biosphere Impact Studies group, which can be experimentally contaminated with specific radionuclides (e.g. Cs-137, U-238, Th-232) for dedicated laboratory experiments to study radionuclide behaviour in the terrestrial environment. The collection enables soil-specific distribution coefficients (Kd values) to be calculated and relationships with soil characteristics to be evaluated; contaminated soils can also be used to study radionuclide uptake by plants and to calculate transfer factors. Storage is at room temperature under dry conditions. Located at SCK-CEN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Belgian soil collection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120053 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120053">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011007"/>
+        <obo:IAO_0000115>The Biobank of Eastern Finland, established in 2015 in Kuopio by the Hospital Districts of Eastern Finland and the University of Eastern Finland, is a hospital-integrated clinical biobank with a catchment population of over 800,000, collecting blood, serum, plasma, tissue (FFPE and frozen) and DNA samples from consenting new hospital patients (&apos;Capture all newcomers&apos; principle). Existing pathology archives contain 250,000 samples from 100,000 persons connected with clinical records, and the biobank operates under the Finnish Biobank Act (2013). It is particularly valuable for population-based studies on disease markers and for investigating radiation-associated health effects in a genetically homogeneous population isolate. Located at Kuopio University Hospital/University of Eastern Finland.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.concert-h2020.eu/en/Concert_info/Access_Infrastructures/Bulletins</obo:IAO_0000119>
+        <rdfs:label>Biobank of Eastern Finland</rdfs:label>
+        <rdfs:seeAlso>http://www.easternfinlandbiobank.fi</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120054 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120054">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011007"/>
+        <obo:IAO_0000115>The Bank of Biological Materials (BBM) at SBRC in Seversk, Russia, created in 2002, collects blood, tissue, blood DNA and cytogenetic suspension samples from employees of the Siberian Group of Chemical Enterprises (SGCE) — the world&apos;s largest nuclear industrial complex — and residents of Seversk, totalling over 20,000 samples from more than 10,000 donors. It is particularly suited to investigating individual radiation susceptibility to lung cancer, non-cancer radiation-induced diseases such as cardiac disease, and radiation-specific fingerprints in tumour material from individuals exposed to occupational and environmental ionising radiation. Access is available to external researchers. Located at Seversk Biophysical Research Center of the Russian Federal Medical and Biological Agency.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Bank of Biological Materials</rdfs:label>
+        <rdfs:seeAlso>Tobefilledinsoon</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120055 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120055">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011007"/>
+        <obo:IAO_0000115>The Chernobyl Tissue Bank (CTB) is an international collaborative resource holding thyroid tissue samples, blood and other biological materials collected from patients in Ukraine, Russia and Belarus who developed thyroid cancer or benign nodules following childhood exposure to radioiodine from the Chernobyl accident. The bank has been a highly valuable tool for investigating radiation-induced molecular changes in thyroid tissue, with data showing distinct radiation-specific genomic signatures. Access is through an application process via the website, with no access restrictions beyond the application procedure. Located at Imperial College London.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Chernobyl Tissue Bank</rdfs:label>
+        <rdfs:seeAlso>http://www.chernobyltissuebank.com</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120056 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120056">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011007"/>
+        <obo:IAO_0000115>The Radiobiological Human Tissue Repository (RHTR/RHRTR) at SUBI Ozyorsk, initiated in 1970, holds a collection of biological samples (organs and tissues fixed in formalin, embedded in paraffin blocks and stored as histology slides) from the Mayak PA worker cohort, constituting a unique resource for investigating biological mechanisms of radiation-induced cancer and non-cancer outcomes and for identifying radiation exposure biomarkers in individuals exposed to prolonged low-dose ionising radiation. Each patient or relative provided informed consent, and the SUBI Review Board grants and annually reviews permissions for use of the samples. An online catalogue is available at http://rhtr.subi.su. Located at Southern Urals Biophysics Institute (SUBI).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Radiobiological Human Tissue Repository (RHTR)</rdfs:label>
+        <rdfs:seeAlso>http://rhtr.subi.su/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120057 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120057">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011007"/>
+        <obo:IAO_0000115>The Central dosimetric bioprobe bank at the National Research Center for Radiation Medicine (NRCRM) in Kyiv holds biological samples from individuals exposed to radiation due to the Chernobyl nuclear accident, including cleanup workers and residents of contaminated areas in Ukraine. Access is by permit only through NRCRM, and the bank supports retrospective dosimetry studies and research on late health effects of radiation exposure. It represents an important resource for Chernobyl-related epidemiological research. Located at National Research Center for Radiation Medicine NAMS Ukraine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Central dosimetric bioprobe bank</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120058 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120058">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The WISMUT cohort includes approximately 59,000 male uranium miners employed between 1946 and 1989 in the former East German uranium mining company, with strengths including large size, long follow-up (mean 37 years), 25,438 total deaths, a wide range of radiation exposures and availability of information on silica, fine dust and arsenic dust. Individual cohort data are accessible to the scientific community for investigating dose-response relationships for cancer and non-cancer mortality; an associated biobank at BfS holds peripheral blood lymphocytes, DNA, RNA and plasma from 442 high/low-exposed workers plus over 400 lung cancer cases. Access to cohort data or biobank material requires submission of a proposal to BfS. Located at Federal Office for Radiation Protection (BfS).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Kreuzer M. et al., Int J Epidemiol 2010; 39:980-7</obo:IAO_0000119>
+        <rdfs:label>The German uranium miners cohort study (WISMUT cohort)</rdfs:label>
+        <rdfs:seeAlso>http://www.bfs.de/EN/bfs/science-research/projects/wismut</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120059 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120059">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The French Haemangioma Cohort (FHC) comprises 8,335 subjects (5,744 treated with radiotherapy) who received brachytherapy (Ra-226, P-32, Y-90, Sr-90) or X-ray irradiation for skin haemangioma in childhood, making it exceptional for studying long-term cancer and non-cancer risks following low-dose radiation exposure early in life. The cohort has demonstrated increased risks of malignant melanoma, breast cancer and cardiovascular disease, providing key evidence for estimating radiogenic risk at low doses. An associated biobank of 369 individuals&apos; peripheral blood lymphocytes, DNA and cytogenetic samples is available for collaborative research. Located at INSERM/Gustave Roussy.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Haddy N et al. Melanoma Res. 2012, 1, 77-85</obo:IAO_0000119>
+        <rdfs:label>French Haemangioma Cohort</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120060 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120060">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The Portuguese Tinea Capitis Cohort follows individuals who received low-dose-rate X-ray irradiation to the head in childhood for tinea capitis treatment, enabling long-term evaluation of radiation effects including head and neck pathologies such as thyroid abnormalities and central nervous system tumours. The associated biobank holds blood DNA (400 cases), oral mucosa cells, lymphocytes, plasma and serum from 1,375 cases. The cohort provides valuable data on the late effects of childhood low-dose-rate head irradiation. Located at Ipatimup.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Boaventura P et al., Lancet Infect Dis. 2011;11(3):163-4</obo:IAO_0000119>
+        <rdfs:label>Portuguese Tinea Capitis Cohort</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120061 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120061">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>This Icelandic cohort at the University of Iceland studies health effects in a defined population, with data access regulated by the Data Protection Commission and ethical oversight by the National Bioethics Committee. The cohort leverages Iceland&apos;s unique characteristics as a genetically homogeneous island population with comprehensive health registries. Access requires permissions from both the Data Protection Commission and National Bioethics Committee. Located at University of Iceland.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:seeAlso>http://www.hi.is/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120062 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120062">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The SAAMI cohort investigates cancer incidence in Finnish Sami reindeer herders and residents of northern Finland potentially exposed to global radioactive fallout, with ethical review conducted by the Radiation Protection Advisory Board and permissions from the Population Register Centre, Statistics Finland and the National Cancer Registry. Published findings on the cohort demonstrated no significantly increased cancer incidence attributable to global fallout in this population. Access requires appropriate institutional permissions. Located at STUK.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Kurttio P et al., Occupational and Environmental Medicine, 2010;67:737-743</obo:IAO_0000119>
+        <rdfs:label>SAAMI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120063 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120063">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The National Radiation and Epidemiology Registry (NRER) at the Medical Radiological Research Center in Obninsk, Russia, maintains epidemiological data on populations exposed to ionising radiation including Chernobyl cleanup workers, residents of contaminated territories and other radiation-exposed groups in Russia. It supports long-term epidemiological follow-up studies on cancer and non-cancer health effects and provides a resource for collaborative research with international partners. Located at A. Tsyb MRRC.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>NRER</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120064 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120064">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>This three-generation study in Kazakhstan follows individuals and their descendants living near the Semipalatinsk Nuclear Test Site, investigating whether radiation effects are transmitted across generations through epigenetic or genomic mechanisms. It provides a unique multi-generational dataset from a population exposed to nuclear weapons testing fallout, supporting research on transgenerational radiation effects and heritable genomic instability. Access is after agreement with the Institute. Located at Scientific Research Institute of Radiation Medicine and Ecology.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>AIR², Issue 5, March 2016</obo:IAO_0000119>
+        <rdfs:label>3-generation exposure study</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120065 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120065">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The Dutch Pediatric CT Study follows children who underwent CT scanning in the Netherlands to assess associations between low-dose radiation from medical imaging and subsequent cancer risk, particularly leukaemia and brain tumours. Published results contributed to the growing international evidence base on radiation risks from paediatric CT, informing radiation protection guidance for diagnostic imaging in children. Access requires appropriate ethical and data protection approvals. Located at Netherlands Cancer Institute.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Meulepas et al. Eur J Epidemiol. 2014; 29(4): 293-301</obo:IAO_0000119>
+        <rdfs:label>Dutch Pediatric CT Study</rdfs:label>
+        <rdfs:seeAlso>http://www.nki.nl/divisions/psychosocial-research-and-epidemiology/hauptmann-m-group/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120066 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120066">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>EstChern is a cohort of Estonian Chernobyl cleanup workers (&apos;liquidators&apos;) followed for cancer incidence and mortality, comprising individuals who participated in remediation work at the Chernobyl site between 1986 and 1991. Published results from the cohort have characterised the demographic and dosimetric characteristics of the Estonian liquidator population and provide a resource for pan-European comparative analyses of Chernobyl worker health effects. Ethical approval is required for access. Located at National Institute for Health Development.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Rahu K et al., J Radiol Prot 2015;35:R35-R45</obo:IAO_0000119>
+        <rdfs:label>EstChern</rdfs:label>
+        <rdfs:seeAlso>http://www.tai.ee</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120067 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120067">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>ELFE (Étude Longitudinale Française depuis l&apos;Enfance) is a major French longitudinal birth cohort following children from birth into adulthood to study the effects of environmental, social and family factors on health and development. While not exclusively a radiation cohort, it provides a large population-based resource for investigating childhood radiation exposure from natural and medical sources in conjunction with other health determinants. The cohort is managed by a consortium of Ined, Inserm and the French Blood Establishment (EFS). Located at Ined-Inserm-EFS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>ELFE</rdfs:label>
+        <rdfs:seeAlso>http://www.elfe-france.fr</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120068 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120068">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The Latvian State Register of Persons Exposed to Radiation due to the Chernobyl Nuclear Power Plant Accident is maintained by the Centre of Occupational and Radiation Medicine (Pauls Stradins Clinical University Hospital) and documents Latvian Chernobyl cleanup workers and affected residents, supporting long-term health monitoring and epidemiological research. Data can only be processed without personal sensitive information and cannot be sent outside Latvia; joint research collaboration is possible subject to ethics committee approval. Research is carried out in collaboration with the Institute of Occupational Safety and Environmental Health at Riga Stradins University. Located at The Centre of Occupational and Radiation Medicine (Pauls Stradins Clinical University Hospital).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>LATVIAN STATE REGISTER OF PERSONS EXPOSED TO RADIATION DUE TO CHERNOBYL</rdfs:label>
+        <rdfs:seeAlso>https://www.rsu.lv/en/node/597</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120069 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120069">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The Techa River Cohort includes approximately 30,000 persons born before 1950 who lived in villages along the Techa River (Russia) between 1950 and 1960 and were affected by external gamma radiation from contaminated river sediments and internal exposure to Sr-89, Sr-90 and Cs-137 from consumption of local water, milk and food, receiving protracted low-to-medium doses (&lt;1 Gy to soft tissues). Individualised organ doses were calculated by the URCRM dosimetry team using specially developed software, making it one of the best-characterised general population radiation cohorts in the world. A data access agreement and written authorisation from the URCRM director are required. Located at Urals Research Center for Radiation Medicine (URCRM).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Krestinina et al., British Journal of Cancer (2013) 109, 2886-2893</obo:IAO_0000119>
+        <rdfs:label>Techa River Cohort (TRC)</rdfs:label>
+        <rdfs:seeAlso>http://www.urcrm.ru</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120070 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120070">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The East Urals Radioactive Trace Cohort (EURTC) follows individuals residing in the area contaminated by the 1957 Kyshtym accident at the Mayak production association, in which a chemical explosion in a radioactive waste storage tank released radioactive material over a large area of the southern Urals. The cohort enables studies on cancer and non-cancer health effects following protracted exposure to mixed fission products including Sr-90, Cs-137 and rare earth elements. A signed data access agreement and authorisation from the URCRM director are required. Located at Urals Research Center for Radiation Medicine.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Akleyev et al., J. Radiol. Prot. 37 (2017) R19-R42</obo:IAO_0000119>
+        <rdfs:label>East Urals Radioactive Trace Cohort (EURTC)</rdfs:label>
+        <rdfs:seeAlso>http://www.urcrm.ru</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120071 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120071">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The Techa River In Utero Cohort (TRCIU) focuses specifically on individuals who were exposed to ionising radiation from the Techa River contamination while in utero, providing a unique dataset for studying the long-term health consequences of prenatal radiation exposure including cancer incidence and haematological malignancies. Published work has demonstrated increased cancer incidence following in utero exposure and contributed to pooled analyses of in utero exposure and haematological malignancies across multiple cohorts. A data access agreement and URCRM director authorisation are required. Located at Urals Research Center for Radiation Medicine (URCRM).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Krestinina et al., Radiation Research V.188, 314-324 (2017)</obo:IAO_0000119>
+        <rdfs:label>Techa River In Utero exposed Cohort (TRCIU)</rdfs:label>
+        <rdfs:seeAlso>http://www.urcrm.ru</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120072 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120072">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>TRC F1 is a follow-up of the children of Techa River Cohort members, designed to investigate transgenerational effects of parental radiation exposure on the health of the first generation offspring. It provides data to address key questions about heritable radiation effects and genetic instability transmitted from exposed parents to their children. Access requires a data access agreement and written authorisation from the URCRM director. Located at Urals Research Center for Radiation Medicine (URCRM).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>to be filled in soon</obo:IAO_0000119>
+        <rdfs:label>Techa River Cohort: First Generation (TRC F1)</rdfs:label>
+        <rdfs:seeAlso>http://www.urcrm.ru</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120073 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120073">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The CECU cohort focuses on individuals who were exposed to ionising radiation from the Techa River contamination during childhood, enabling studies on the late health effects of childhood radiation exposure and comparison with in utero and adult exposure scenarios within the same contaminated population. It contributes to the comprehensive URCRM programme of epidemiological studies on the Techa River and Mayak-affected populations. A data access agreement and URCRM director authorisation are required. Located at URCRM.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>To be filled in soon</obo:IAO_0000119>
+        <rdfs:label>Cohort of Exposed in Childhood in the Ural (CECU)</rdfs:label>
+        <rdfs:seeAlso>http://www.urcrm.ru</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120074 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120074">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The TRACY cohort holds individual data on 12,649 workers employed between 1958 and 2006 in French companies involved in nuclear fuel production, monitored for both external gamma and internal alpha radiation (uranium) exposure at low doses over prolonged periods. Dose reconstruction protocols for internal exposure were developed in collaboration with other European groups within DoReMi/CONCERT. Published results have shown associations between uranium exposure and lung and kidney cancer, contributing to the evidence base for occupational radiation risk assessment for internal emitters. Located at IRSN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Samson E. et al., BMJ Open 2016;6:e010316</obo:IAO_0000119>
+        <rdfs:label>TRACY cohort</rdfs:label>
+        <rdfs:seeAlso>http://www.irsn.fr</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120075 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120075">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The German Thorotrast Cohort Study follows patients who received thorium dioxide (Thorotrast) as a radiographic contrast agent primarily between 1930 and 1950, providing long-term follow-up data on the carcinogenic effects of internal alpha particle exposure from retained thorium in the liver, spleen and bone marrow. Data are accessible via the STORE platform; downloaders must request file access from the data uploader. The study represents a key resource for understanding alpha particle-induced hepatic and haematological malignancies. Located at The Federal Office for Radiation Protection.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Grosche B. et al., Radiat Environ Biophys, 55 (3), 281-289 (2016)</obo:IAO_0000119>
+        <rdfs:label>The German Thorotrast Cohort Study</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120076 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120076">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The Department of Prevention and Evaluation at BIPS (Leibniz Institute for Prevention Research and Epidemiology) in Bremen conducts epidemiological research on cancer prevention and environmental risk factors including ionising radiation. It maintains cohort and registry data relevant to radiation epidemiology and is available for collaborative research proposals. Located at Leibniz Institute for Prevention Research and Epidemiology - BIPS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Department of Prevention and Evaluation</rdfs:label>
+        <rdfs:seeAlso>http://www.bips-institut.de/en</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120077 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120077">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>This infrastructure at BIPS Bremen is listed in the CONCERT registry but details are yet to be provided. BIPS conducts epidemiological research on cancer, environmental health and prevention; further information should be sought directly from Prof. Hajo Zeeb (zeeb@leibniz-bips.de). Located at Leibniz Institute for Prevention Research and Epidemiology - BIPS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>to be filled out soon</rdfs:label>
+        <rdfs:seeAlso>http://www.bips-institut.de/en</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120078 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120078">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The Mayak worker cohort (MWC) at SUBI comprises workers at the Mayak plutonium production facility who received among the highest documented occupational radiation doses in history, with external gamma and internal alpha (plutonium) and beta (Sr-90) exposures, making it a uniquely valuable resource for radiation risk assessment at doses above those in other occupational cohorts. The cohort data and associated Radiobiological Human Tissue Repository (RHTR) enable investigation of radiation-induced cancer mechanisms, non-cancer outcomes such as cardiovascular disease, and biomarkers of exposure. Access requires SUBI Review Board approval. Located at Southern Urals Biophysics Institute (SUBI).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Mayak worker cohort (MWC)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120079 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120079">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011008"/>
+        <obo:IAO_0000115>The ISE (Individual Sensitivity and Effects) cohort at DKFZ Heidelberg follows breast cancer patients treated with radiotherapy, collecting blood and tumour tissue samples to investigate predictive factors for late normal tissue complications including fibrosis, telangiectasia and lymphoedema following breast cancer radiotherapy. Ethical approval from the University of Heidelberg Medical Faculty ethics committee is required for access. The cohort contributes to understanding of individual radiosensitivity and genetic determinants of radiation response. Located at German Cancer Research Center Heidelberg.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Lilla et al., Breast Cancer Res Treat 2007:106(1), 143-150</obo:IAO_0000119>
+        <rdfs:label>The ISE cohort</rdfs:label>
+        <rdfs:seeAlso>http://www.dkfz.de</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120080 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120080">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>RENEB (Realising the European Network of Biodosimetry) is a European biodosimetry network capable of performing large-scale rapid biodosimetric dose estimation for radiological emergency response, specialised to handle large numbers of samples using a panel of cytogenetic assays (dicentric chromosome analysis, FISH), gene expression assays and gamma-H2AX foci analysis on biological and inert samples. The network contributes to radiological emergency preparedness through its connection with the NERIS Emergency Preparedness Platform, and also supports large-scale scientific research projects. It is coordinated by BfS and is not applicable for traditional security access or authorisation requirements. Located at BfS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Kulka U. et al., Radiat Prot Dosimetry. 2015 Apr;164(1-2):42-5</obo:IAO_0000119>
+        <rdfs:label>RENEB</rdfs:label>
+        <rdfs:seeAlso>http://reneb.eu</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120081 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120081">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>The in-vivo bioassay facility at BfS Neuherberg provides whole-body and partial-body counting for measuring internal contamination by gamma-emitting radionuclides in human subjects, and also offers rental of calibration phantoms (brick, LLNL lung, neck) and production/rental of suitable radionuclide sources. An annual whole/partial-body counting intercomparison exercise is organised from this facility, supporting national and international quality assurance in internal dosimetry. Authorisation from BfS is required for access. Located at BfS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>In-vivo bioassay facility Neuherberg</rdfs:label>
+        <rdfs:seeAlso>http://www.bfs.de/EN/topics/ion/service/incorporation/incorporation_node.html</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120082 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120082">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>This facility at SCK-CEN provides specialist chemical and radiochemical analysis capabilities for characterising radionuclide speciation, concentration and behaviour in environmental and biological samples. It supports research on radioecology, waste management and radiation biology requiring advanced analytical techniques including radiochemical separations, alpha and gamma spectrometry and mass spectrometry. Specific authorisation is required for access. Located at SCK-CEN.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>to be filled in soon</obo:IAO_0000119>
+        <rdfs:label>Facility for chemical and radiochemical analyses</rdfs:label>
+        <rdfs:seeAlso>http://science.sckcen.be/en/Services/Testing/Radiochemical</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120083 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120083">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>CATI (Centre for Acquisitions and Processing of Images) at Neurospin/CEA is a distributed neuroimaging platform providing high-field MRI acquisition and advanced image processing infrastructure for multi-centre clinical and research neuroimaging studies. Within radiation research, it enables brain imaging studies relevant to radiation-induced neurocognitive effects and is available to scientific projects approved by its steering committee. The platform operates under a YES scientific committee approval process. Located at Neurospin, CEA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>CATI</rdfs:label>
+        <rdfs:seeAlso>http://cati-neuroimaging.com</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120084 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120084">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>The Advanced Technologies Network Center at the University of Palermo provides analytical capabilities including electron paramagnetic resonance (EPR) and thermoluminescence dosimetry relevant to biodosimetry and retrospective dose assessment following radiation accidents. EPR spectroscopy of tooth enamel, bone and other biological materials allows retrospective dosimetry in individuals exposed to ionising radiation without physical dosimeters. Access requires institutional authorisation. Located at University of Palermo.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Advanced Technologies Network Center</rdfs:label>
+        <rdfs:seeAlso>DEAD LINK: http://www.chab.center/home-en/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120085 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120085">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>The Consolidated Radioisotope Facility (CoRiF) at Plymouth University provides a restricted-access radioisotope laboratory supporting research on radionuclide behaviour in marine and freshwater environments, environmental radioactivity, and radiotracer applications in ecological research. It is managed by a CoRiF management committee and access is via Prof. William Blake. The facility supports radioecological research relevant to nuclear decommissioning and environmental monitoring. Located at Plymouth University.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>Consolidated Radioisotope Facility (CoRiF)</rdfs:label>
+        <rdfs:seeAlso>https://www.plymouth.ac.uk/schools/school-of-geography-earth-and-environmental-sciences/consolidated-radio-isotope-facility</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120086 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120086">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>The HZDR radioanalytical laboratories provide specialist capabilities for studying radionuclide speciation and sorption in environmental systems using techniques including X-ray absorption spectroscopy at the ROBL beamline at the ESRF synchrotron (Grenoble), vibrational spectroscopy and radiochemical methods. Research focuses on the molecular-level interactions of actinides and fission products with mineral surfaces and organic matter, underpinning predictive models for radionuclide migration in contaminated sites and repositories. Access is subject to surveillance by experienced HZDR scientists and national radiation protection guidelines. Located at Helmholtz-Zentrum Dresden-Rossendorf, Institute of Resource Ecology.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>HZDR-Radioanalytical Laboratories</rdfs:label>
+        <rdfs:seeAlso>http://www.hzdr.de</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120087 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120087">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>The iGE3 Genomics Platform at the University of Geneva provides next-generation sequencing, microarray and bioinformatics services for genome-wide studies, supporting radiation biology research on gene expression changes, DNA damage signatures and epigenetic modifications following radiation exposure. The platform operates under ISO-certified quality management and is available to internal and external users following contact with the facility manager Mylène Docquier. Published work includes studies on transcriptional responses and differentiation programmes relevant to radiation-induced changes in stem cell biology. Located at University of Geneva.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Telley L. et al., Science, 351 (6280), 1443-1446 (2016)</obo:IAO_0000119>
+        <rdfs:label>iGE3 Genomics Platform</rdfs:label>
+        <rdfs:seeAlso>https://ige3.genomics.unige.ch</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120088 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120088">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>The VIB Proteomics Core in Ghent provides state-of-the-art mass spectrometry-based proteomics services for quantitative protein profiling, post-translational modification analysis and protein interaction studies relevant to radiation biology research on radiation-induced proteome changes. The facility is internationally recognised for quality control in mass spectrometry-based proteomics and offers collaboration upon discussion with the facility head. It supports radiation research requiring high-throughput protein identification and quantification. Located at VIB.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Bittremieux W. et al., Mass Spectrometry Reviews, doi:10.1002/mas.21544 (2017)</obo:IAO_0000119>
+        <rdfs:label>VIB Proteomics Core</rdfs:label>
+        <rdfs:seeAlso>https://corefacilities.vib.be/proteomics</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120089 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120089">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>France Génomique is a national genomics infrastructure providing access to high-throughput sequencing, genotyping and bioinformatics platforms distributed across France, supporting large-scale genomics projects in radiation biology, epidemiology and cancer research. Although the platform PI must be from a French laboratory, international projects are accepted; projects can be submitted continuously via the web portal or through biennial &apos;large-scale projects&apos; calls for proposals. EC ethical clearance is required for human genomics projects. Located at CEA / IBFJ.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>France Génomique</rdfs:label>
+        <rdfs:seeAlso>http://www.france-genomique.org</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120090 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120090">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011006"/>
+        <obo:IAO_0000115>INFRAFRONTIER is a pan-European research infrastructure for the systemic phenotyping and archiving of mouse models, providing access to standardised mouse phenotyping pipelines, cryopreservation, rederivation and distribution of mouse models including those relevant to radiation biology and cancer research. The German Mouse Clinic (GMC) at Helmholtz Zentrum München is a key node of the network. Access is available through scientific user support with no specific committee requirements. Located at INFRAFRONTIER GmbH.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>INFRAFRONTIER</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120091 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120091">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>EFFTRAN is a Monte Carlo efficiency transfer code for gamma-ray spectrometry, developed at SCK-CEN, that enables calculation of detection efficiencies for arbitrary source geometries by transferring reference efficiencies measured with point sources or standard geometries to other geometries. It supports accurate activity measurements in environmental, waste and biological samples with non-standard geometries without requiring separate calibration measurements. The software is available from the author upon request and usage should be cited. Located at SCK.CEN, Belgian Nuclear Research Centre.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Tim Vidmar, 2005, Nuclear Instruments and Methods in Physics Research A 550, 603-608</obo:IAO_0000119>
+        <rdfs:label>EFFTRAN</rdfs:label>
+        <rdfs:seeAlso>https://efftran.github.io/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120092 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120092">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>HYDRUS is a software package for modelling water flow and solute transport in variably saturated porous media, applied at BfS for simulating radionuclide migration in soils and groundwater systems relevant to radioactive waste disposal and contaminated land assessment. It enables prediction of radionuclide transport and breakthrough curves under realistic hydrological conditions. The software is freely available and not subject to committee review requirements. Located at BfS Federal Office for Radiation Protection, SW 1.6.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>HYDRUS</rdfs:label>
+        <rdfs:seeAlso>http://www.bfs.de</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120093 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120093">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>PENELOPE (PENetration and Energy LOss of Positrons and Electrons) is a Monte Carlo simulation code for modelling the transport of electrons, positrons and photons in matter, used at BfS for dosimetry calculations, shielding assessments and detector response modelling in radiation protection research. The 2008 version provides improved cross-section data and variance reduction techniques for efficient simulation of radiation transport in complex geometries. It is freely available and requires no authorisation. Located at BfS Federal Office for Radiation Protection, SW 1.6.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>PENELOPE-2008</rdfs:label>
+        <rdfs:seeAlso>http://www.bfs.de</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120094 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120094">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>DoseEstimate and CABAS (Chromosomal Aberration Biodosimetry Analysis Software) are freely available PC software tools for fitting calibration curves in chromosome aberration biodosimetry, enabling estimation of radiation doses from cytogenetic data (dicentric chromosomes, translocations) following radiological accidents or incidents. They incorporate Poisson statistics for overdispersion analysis and are used internationally in biodosimetry laboratories as standard tools for dose assessment from biological samples. Both are available free on request from the authors. Located at PHE/SU.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Deperas J. et al., Radiat. Prot. Dosim. 2007 124:115-23</obo:IAO_0000119>
+        <rdfs:label>DoseEstimate/CABAS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120095 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120095">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>LDRadStatsNet is a network of statisticians with shared interest in statistical methods for low-dose ionising radiation research, providing a freely accessible resource connecting radiation epidemiologists and biostatisticians to address challenges in analysing small effects at low doses. It addresses the specific statistical needs of radiation protection research including dose-response modelling at low doses, uncertainty quantification and meta-analysis of radiation epidemiology datasets. Membership and resources are available free of charge. Located at PHE.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <rdfs:label>LDRadStatsNet - Network of statisticians interested in low dose IR research</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120096 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120096">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>The Analytical Platform (AP) of the PREPARE project at KIT provides an integrated suite of models and tools for nuclear emergency response decision support, including atmospheric dispersion models, dose assessment tools and consequence analysis frameworks for radiological accidents. It connects to the NERIS (Nuclear and Radiological Emergency Response and Information System) Platform and has been developed to support real-time decision-making during nuclear or radiological emergencies. Access requires a request to Wolfgang Raskob at KIT. Located at Karlsruhe Institute of Technology (KIT).</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Raskob et al., Radiation Protection Dosimetry, 164(2015), pp.170-174</obo:IAO_0000119>
+        <rdfs:label>Analytical Platform (AP)</rdfs:label>
+        <rdfs:seeAlso>NotApplicable</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120097 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120097">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>The ERICA (Environmental Risk from Ionising Contaminants: Assessment and Management) Tool is a freely available software implementing a tiered environmental risk assessment framework for evaluating the impact of radioactive contamination on non-human biota in aquatic and terrestrial ecosystems. Underpinned by the FREDERICA database, it calculates dose rates to reference organisms and compares them against risk characterisation ratios to assess ecological risk. The most recent version (Brown et al., 2016) introduced improvements to the reference organism database and dose conversion coefficients. Located at Norwegian Radiation Protection Authority.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Brown J.E. et al., J. Environ Radioact, 153, pp. 141-148 (2016)</obo:IAO_0000119>
+        <rdfs:label>ERICA Tool</rdfs:label>
+        <rdfs:seeAlso>http://www.nrpa.no</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120098 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120098">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>CROM-8 is a generic model for combined Tier-1 assessments of radiation exposures for humans and wildlife, developed at CIEMAT and registered as intellectual property, implementing screening-level dose assessment in a combined framework that simultaneously evaluates risks to both humans and non-human biota from radionuclides in the environment. It supports regulatory and research assessments under the ICRP framework and ERICA methodology. Contacting the author by email is recommended. Located at CIEMAT.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Mora J.C. et al., STAR Deliverable D-N°3.1 (2015)</obo:IAO_0000119>
+        <rdfs:label>CROM 8</rdfs:label>
+        <rdfs:seeAlso>website</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120099 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120099">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>BIANCA (BIophysical ANalysis of Cell death and chromosome Aberrations) is a biophysical simulation code that models chromosome aberration induction and cell death following exposure to ionising radiation, accounting for track structure, dose, radiation quality (LET) and cell type. It has been validated against experimental data for various radiation types including photons, protons and heavy ions, and is used to predict relative biological effectiveness for different endpoints. The code is freely available and has been applied to both radiation protection and hadrontherapy research. Located at University of Pavia and INFN-Pavia.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Ballarini F. and Carante M.P., Radiation Physics and Chemistry 128C, 18-25 (2016)</obo:IAO_0000119>
+        <rdfs:label>BIANCA</rdfs:label>
+        <rdfs:seeAlso>http://fisica.unipv.it/ricerca/RicAppl/ENG/EN_SFB_Radio_computazionale.htm</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120100 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120100">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>Geant4-DNA is an extension of the Geant4 Monte Carlo simulation toolkit dedicated to modelling radiation interactions at the DNA and cellular scale, simulating the physical, physico-chemical and chemical stages of radiation-induced damage in liquid water as a biological surrogate. It is open source and steered by an international committee, enabling simulation of direct and indirect DNA strand breaks, base damage and their dependence on radiation quality (LET). The code is widely used in radiation biology, hadrontherapy research and space dosimetry. Located at CNRS.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>https://doi.org/10.1002/mp.13048</obo:IAO_0000119>
+        <rdfs:label>Geant4-DNA</rdfs:label>
+        <rdfs:seeAlso>http://geant4-dna.org</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00120101 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/RBO_00120101">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/RBO_00011010"/>
+        <obo:IAO_0000115>D-DAT (Dynamic Dose Assessment Tool) is a software tool developed at SCK-CEN for calculating time-integrated doses to aquatic and terrestrial organisms from radionuclide exposures, accounting for dynamic changes in activity concentrations and biological uptake over time. It was published by Vives i Batlle (2016) and extends static dose assessment approaches to time-varying exposure scenarios relevant to post-accident environmental assessments and long-term radioecological monitoring. The tool is available from the author. Located at Belgian Nuclear Research Centre.</obo:IAO_0000115>
+        <obo:IAO_0000117>Paul Schofield</obo:IAO_0000117>
+        <obo:IAO_0000119>Vives i Batlle J., J Environ Radioact 151, 502-511 (2016)</obo:IAO_0000119>
+        <rdfs:label>D-DAT</rdfs:label>
+        <rdfs:seeAlso>http://www.sckcen.be/</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 

@@ -32,3 +32,4 @@ obo:RBO_00005049	Silver-107 nucleus	subclass	class	obo:RBO_00010012		An atomic n
 obo:RBO_00005050	Xenon-129 nucleus	subclass	class	obo:RBO_00010012		An atomic nucleus with 54 protons and 75 neutrons 	Xe-129 ion;Xe-129 nucleus;Xe-129 		
 obo:RBO_00005051	Tantalum-181 nucleus	subclass	class	obo:RBO_00010012		An atomic nucleus with 73 protons and 108 neutrons 	Ta-181 ion;Ta-181 nucleus;Ta-181 		
 obo:RBO_00005052	Gold-197 nucleus	subclass	class	obo:RBO_00010012		An atomic nucleus with 79 protons and 118 neutrons 	Au-197 ion;Au-197 nucleus;Au-197 		
+obo:RBO_00005058	mass number		data property			"The atomic mass (ma or m) is the mass of an atom.  The protons and neutrons of the nucleus account for nearly all of the total mass of atoms, with the electrons and nuclear binding energy making minor contributions.  It is measured in Daltons (unit)."		obo:RBO_00005001	xsd:nonNegativeInteger

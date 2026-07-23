@@ -26,9 +26,10 @@ import_group:
     module_type: custom
   - id: pco
   - id: obi
+  - id: obib
   - id: uo
     module_type: custom
-    mirror_from: https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl
+      #    mirror_from: https://github.com/gouttegd/unit-ontology/raw/refs/heads/fix-inferred-equivalences/uo.owl
   - id: doid
     mirror_from: http://purl.obolibrary.org/obo/doid/subsets/DO_RAD_slim.owl
     module_type: custom
@@ -38,6 +39,7 @@ import_group:
   - id: cob
     module_type: custom
   - id: slso
+    module_type: custom
   - id: go
     use_gzipped: FALSE
     is_large: TRUE

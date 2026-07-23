@@ -87,6 +87,12 @@ imports/uo_import.owl: mirror/uo.owl imports/uo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/uo_terms_combined.txt --force true --method BOT --individuals exclude \
     query --update ../sparql/inject-subset-declaration.ru \
     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+	
+imports/slso_import.owl: mirror/slso.owl imports/slso_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/slso_terms_combined.txt --force true --method STAR \
+	remove --select "<http://purl.obolibrary.org/obo/RBO_*>" \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 
 #########################################
