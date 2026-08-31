@@ -19,8 +19,8 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/pato_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-07-16/imports/pato_import.owl"/>
-        <owl:versionInfo>2026-07-16</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-08-26/imports/pato_import.owl"/>
+        <owl:versionInfo>2026-08-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -14058,6 +14058,21 @@
         <owl:annotatedTarget>A nucleate quality inhering in a bearer by virtue of the bearer&apos;s having one or more nucleus.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0040026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0040026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001241"/>
+        <obo:IAO_0000115>A structural quality inhering in a bearer by virtue of the bearer&apos;s being marked by interruptions or gaps.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-5208-3432"/>
+        <oboInOwl:hasExactSynonym>structurally interrupted</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0040026</oboInOwl:id>
+        <rdfs:comment>This term is intended for use for terms such as MP:0010461 discontinuous pulmonary artery and MP:0004157 interrupted aortic arch.</rdfs:comment>
+        <rdfs:label>structurally discontinuous</rdfs:label>
+    </owl:Class>
     
 
 

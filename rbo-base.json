@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-07-16"
+        "val" : "2026-08-26"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-07-16/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-08-26/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000006",
@@ -169,6 +169,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0002062",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0040026",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00000001",
@@ -4289,7 +4292,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The energy deposited by an ionizing charged particle or photon in any medium per unit path length."
+          "val" : "The measured amount of energy deposited by an ionizing charged particle or photon in any medium per unit path length."
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -4933,6 +4936,42 @@
       "meta" : {
         "definition" : {
           "val" : "The weighted average of the atomic masses of the naturally occurring stable isotopes and long-lived radioactive isotopes of an element. Atomic weight is typically expressed in atomic mass units. For example, the atomic weight of carbon, 12.011 amu, is calculated based on the natural abundance of carbon-12 (approx. 98.9%) and carbon-13 (approx. 1.1%), with carbon-14 contributing a negligible amount."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010068",
+      "lbl" : "DNA structural discontinuity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A structural quality of DNA inhering in a bearer by virtue of the bearer's being marked by interruptions or gaps."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010069",
+      "lbl" : "cleaved double-stranded DNA",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A DNA molecule which has been cut through both strands at or near the same position � i.e., both phosphodiester backbones are severed � so the molecule is separated into two independent fragments. The ends produced may be blunt (cut at the same position on both strands) or staggered, leaving short single-stranded overhangs (\"sticky ends\")"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010070",
+      "lbl" : "nicked double-stranded DNA",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A DNA molecule containing a break in the phosphodiester backbone of only one strand of the duplex, while the complementary strand remains intact - so the molecule stays in one piece, held together by the unbroken strand and base pairing. A nick leaves adjacent 3? and 5? ends on the broken strand and can be resealed by DNA ligase."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010071",
+      "lbl" : "double-stranded DNA containing at least one strand break",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A DNA duplex in which one or more phosphodiester bonds in the sugar-phosphate backbone have been broken - encompassing both single-strand breaks (nicks), where only one strand is interrupted and the molecule remains intact, and double-strand breaks (cleavage), where both strands are severed and the molecule separates into two fragments."
         }
       }
     }, {
@@ -6264,6 +6303,9 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/UO_1000135",
+      "type" : "CLASS"
+    }, {
+      "id" : "https://www.ebi.ac.uk/chebi/CHEBI:4705",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -10068,6 +10110,22 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010067",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0000125"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010068",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0040026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010069",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010071"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010070",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010071"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010071",
+      "pred" : "is_a",
+      "obj" : "https://www.ebi.ac.uk/chebi/CHEBI:4705"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00011000",
       "pred" : "is_a",

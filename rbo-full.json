@@ -13,9 +13,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-07-16"
+        "val" : "2026-08-26"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-07-16/rbo-full.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-08-26/rbo-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -3242,6 +3242,101 @@
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
           "val" : "CHEBI:3099"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHEBI_16991",
+      "lbl" : "deoxyribonucleic acid",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Deoxyribonucleic acid",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "synonymType" : "http://purl.obolibrary.org/obo/chebi#IUPAC_NAME",
+          "pred" : "hasExactSynonym",
+          "val" : "deoxyribonucleic acids",
+          "xrefs" : [ "IUPAC" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "(Deoxyribonucleotide)m",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "(Deoxyribonucleotide)n",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "(Deoxyribonucleotide)n+m",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "DNA",
+          "xrefs" : [ "IUPAC" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "DNA",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "DNA",
+          "xrefs" : [ "UniProt" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "DNAn",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "DNAn+1",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "DNS",
+          "xrefs" : [ "ChEBI" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Desoxyribonukleinsaeure",
+          "xrefs" : [ "ChEBI" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "deoxyribonucleic acids",
+          "xrefs" : [ "ChEBI" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "desoxyribose nucleic acid",
+          "xrefs" : [ "ChemIDplus" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "thymus nucleic acid",
+          "xrefs" : [ "ChEBI" ]
+        } ],
+        "xrefs" : [ {
+          "val" : "CAS:9007-49-2"
+        }, {
+          "val" : "CAS:9007-49-2"
+        }, {
+          "val" : "KEGG:C00039"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CHEBI:13302"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CHEBI:21123"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CHEBI:33698"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "CHEBI:4291"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "chebi_ontology"
@@ -20270,6 +20365,42 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/CHEBI_33793",
+      "lbl" : "canonical deoxyribonucleoside residue",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "canonical deoxyribonucleoside residues",
+          "xrefs" : [ "ChEBI" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "common 2'-deoxyribonucleoside residue",
+          "xrefs" : [ "CBN" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "common 2'-deoxyribonucleoside residues",
+          "xrefs" : [ "CBN" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "dN",
+          "xrefs" : [ "CBN" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "dNuc",
+          "xrefs" : [ "CBN" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "standard deoxyribonucleoside residues",
+          "xrefs" : [ "ChEBI" ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_33815",
       "lbl" : "oxygen-18 atom",
       "type" : "CLASS",
@@ -27633,6 +27764,32 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/CHEBI_4705",
+      "lbl" : "double-stranded DNA",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Double-stranded DNA",
+          "xrefs" : [ "KEGG_COMPOUND" ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "dsDNA",
+          "xrefs" : [ "UniProt" ]
+        } ],
+        "xrefs" : [ {
+          "val" : "KEGG:C00434"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
+          "val" : "C10H17O8PR2(C5H8O5PR)n.C10H17O7PR2(C5H8O6PR)n"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/CHEBI_47891",
       "lbl" : "steroid acid",
       "type" : "CLASS",
@@ -28456,6 +28613,22 @@
         "synonyms" : [ {
           "pred" : "hasRelatedSynonym",
           "val" : "canonical nucleotide residues",
+          "xrefs" : [ "ChEBI" ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHEBI_50298",
+      "lbl" : "canonical deoxyribonucleotide residue",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/chebi#3_STAR" ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "canonical deoxyribonucleotide residues",
           "xrefs" : [ "ChEBI" ]
         } ],
         "basicPropertyValues" : [ {
@@ -164767,6 +164940,27 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0040026",
+      "lbl" : "structurally discontinuous",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A structural quality inhering in a bearer by virtue of the bearer's being marked by interruptions or gaps."
+        },
+        "comments" : [ "This term is intended for use for terms such as MP:0010461 discontinuous pulmonary artery and MP:0004157 interrupted aortic arch." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "structurally interrupted"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-5208-3432"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "quality"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0070044",
       "lbl" : "anatomical structure quality",
       "type" : "CLASS",
@@ -173294,7 +173488,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "The energy deposited by an ionizing charged particle or photon in any medium per unit path length."
+          "val" : "The measured amount of energy deposited by an ionizing charged particle or photon in any medium per unit path length."
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
@@ -173938,6 +174132,42 @@
       "meta" : {
         "definition" : {
           "val" : "The weighted average of the atomic masses of the naturally occurring stable isotopes and long-lived radioactive isotopes of an element. Atomic weight is typically expressed in atomic mass units. For example, the atomic weight of carbon, 12.011 amu, is calculated based on the natural abundance of carbon-12 (approx. 98.9%) and carbon-13 (approx. 1.1%), with carbon-14 contributing a negligible amount."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010068",
+      "lbl" : "DNA structural discontinuity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A structural quality of DNA inhering in a bearer by virtue of the bearer's being marked by interruptions or gaps."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010069",
+      "lbl" : "cleaved double-stranded DNA",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A DNA molecule which has been cut through both strands at or near the same position � i.e., both phosphodiester backbones are severed � so the molecule is separated into two independent fragments. The ends produced may be blunt (cut at the same position on both strands) or staggered, leaving short single-stranded overhangs (\"sticky ends\")"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010070",
+      "lbl" : "nicked double-stranded DNA",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A DNA molecule containing a break in the phosphodiester backbone of only one strand of the duplex, while the complementary strand remains intact - so the molecule stays in one piece, held together by the unbroken strand and base pairing. A nick leaves adjacent 3? and 5? ends on the broken strand and can be resealed by DNA ligase."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010071",
+      "lbl" : "double-stranded DNA containing at least one strand break",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A DNA duplex in which one or more phosphodiester bonds in the sugar-phosphate backbone have been broken - encompassing both single-strand breaks (nicks), where only one strand is interrupted and the molecule remains intact, and double-strand breaks (cleavage), where both strands are severed and the molecule separates into two fragments."
         }
       }
     }, {
@@ -276152,6 +276382,9 @@
         } ]
       }
     }, {
+      "id" : "https://www.ebi.ac.uk/chebi/CHEBI:4705",
+      "type" : "CLASS"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
       "lbl" : "part_of",
       "type" : "PROPERTY",
@@ -284667,8 +284900,21 @@
       "propertyType" : "OBJECT"
     }, {
       "id" : "http://purl.obolibrary.org/obo/chebi#has_functional_parent",
+      "lbl" : "has functional parent",
       "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "chebi_ontology"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
+          "val" : "false"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_transitive",
+          "val" : "false"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/chebi#has_parent_hydride",
       "lbl" : "has parent hydride",
@@ -300644,6 +300890,26 @@
       "pred" : "http://purl.obolibrary.org/obo/chebi#is_conjugate_acid_of",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_57977"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_16991",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33696"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_16991",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33793"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_16991",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_50298"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_16991",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_75771"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_16991",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_77746"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_17087",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_36586"
@@ -303144,6 +303410,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33791"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_33793",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_33791"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_33815",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_25805"
@@ -304244,6 +304514,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_33249"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_4705",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_16991"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_47891",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_35341"
@@ -304371,6 +304645,10 @@
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_50297",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/CHEBI_50319"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/CHEBI_50298",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_50297"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/CHEBI_50299",
       "pred" : "is_a",
@@ -356516,6 +356794,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0015021"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/PATO_0040026",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0001241"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/PATO_0070044",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0001241"
@@ -358913,6 +359195,22 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010067",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0000125"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010068",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/PATO_0040026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010069",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010071"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010070",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010071"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010071",
+      "pred" : "is_a",
+      "obj" : "https://www.ebi.ac.uk/chebi/CHEBI:4705"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00011000",
       "pred" : "is_a",

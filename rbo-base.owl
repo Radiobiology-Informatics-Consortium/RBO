@@ -14,12 +14,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-07-16/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-08-26/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2026-07-16</owl:versionInfo>
+        <owl:versionInfo>2026-08-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -511,6 +511,12 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0002062 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0002062"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0040026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0040026"/>
     
 
 
@@ -4022,7 +4028,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000112>Biological effects are a function of LET.</obo:IAO_0000112>
-        <obo:IAO_0000115>The energy deposited by an ionizing charged particle or photon in any medium per unit path length.</obo:IAO_0000115>
+        <obo:IAO_0000115>The measured amount of energy deposited by an ionizing charged particle or photon in any medium per unit path length.</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
         <obo:IAO_0000118>LET</obo:IAO_0000118>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
@@ -4598,6 +4604,46 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000125"/>
         <obo:IAO_0000115>The weighted average of the atomic masses of the naturally occurring stable isotopes and long-lived radioactive isotopes of an element. Atomic weight is typically expressed in atomic mass units. For example, the atomic weight of carbon, 12.011 amu, is calculated based on the natural abundance of carbon-12 (approx. 98.9%) and carbon-13 (approx. 1.1%), with carbon-14 contributing a negligible amount.</obo:IAO_0000115>
         <rdfs:label>atomic weight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0040026"/>
+        <obo:IAO_0000115>A structural quality of DNA inhering in a bearer by virtue of the bearer&apos;s being marked by interruptions or gaps.</obo:IAO_0000115>
+        <rdfs:label>DNA structural discontinuity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010071"/>
+        <obo:IAO_0000115>A DNA molecule which has been cut through both strands at or near the same position � i.e., both phosphodiester backbones are severed � so the molecule is separated into two independent fragments. The ends produced may be blunt (cut at the same position on both strands) or staggered, leaving short single-stranded overhangs (&quot;sticky ends&quot;)</obo:IAO_0000115>
+        <rdfs:label>cleaved double-stranded DNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010071"/>
+        <obo:IAO_0000115>A DNA molecule containing a break in the phosphodiester backbone of only one strand of the duplex, while the complementary strand remains intact - so the molecule stays in one piece, held together by the unbroken strand and base pairing. A nick leaves adjacent 3? and 5? ends on the broken strand and can be resealed by DNA ligase.</obo:IAO_0000115>
+        <rdfs:label>nicked double-stranded DNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010071">
+        <rdfs:subClassOf rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:4705"/>
+        <obo:IAO_0000115>A DNA duplex in which one or more phosphodiester bonds in the sugar-phosphate backbone have been broken - encompassing both single-strand breaks (nicks), where only one strand is interrupted and the molecule remains intact, and double-strand breaks (cleavage), where both strands are severed and the molecule separates into two fragments.</obo:IAO_0000115>
+        <rdfs:label>double-stranded DNA containing at least one strand break</rdfs:label>
     </owl:Class>
     
 
@@ -5702,6 +5748,12 @@
     <!-- http://purl.obolibrary.org/obo/UO_1000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135"/>
+    
+
+
+    <!-- https://www.ebi.ac.uk/chebi/CHEBI:4705 -->
+
+    <owl:Class rdf:about="https://www.ebi.ac.uk/chebi/CHEBI:4705"/>
     
 
 
