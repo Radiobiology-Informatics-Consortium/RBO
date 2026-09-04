@@ -160,6 +160,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4705"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHMO_0002796 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0002796"/>
@@ -4140,7 +4146,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00010071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010071">
-        <rdfs:subClassOf rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:4705"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4705"/>
         <obo:IAO_0000115>A DNA duplex in which one or more phosphodiester bonds in the sugar-phosphate backbone have been broken - encompassing both single-strand breaks (nicks), where only one strand is interrupted and the molecule remains intact, and double-strand breaks (cleavage), where both strands are severed and the molecule separates into two fragments.</obo:IAO_0000115>
         <rdfs:label>double-stranded DNA containing at least one strand break</rdfs:label>
     </owl:Class>
@@ -5074,12 +5080,6 @@
     <!-- http://purl.obolibrary.org/obo/UO_1000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135"/>
-    
-
-
-    <!-- https://www.ebi.ac.uk/chebi/CHEBI:4705 -->
-
-    <owl:Class rdf:about="https://www.ebi.ac.uk/chebi/CHEBI:4705"/>
     
 
 

@@ -1,5 +1,4 @@
 
-CHEBI:16991 # DNA
 CHEBI:24432 # exact
 CHEBI:24636 # proton
 CHEBI:30222 # neutron
@@ -9,7 +8,6 @@ CHEBI:36080
 CHEBI:36347  # nuclear particle
 CHEBI:36348  # pi meson
 CHEBI:36356	# muon
-CHEBI:4705  # DS DNA 
 http://creativecommons.org/licenses/by/3.0/
 http://purl.obolibrary.org/obo/BFO_0000003
 http://purl.obolibrary.org/obo/BFO_0000004
@@ -29,6 +27,7 @@ http://purl.obolibrary.org/obo/CHEBI_33252
 http://purl.obolibrary.org/obo/CHEBI_33695
 http://purl.obolibrary.org/obo/CHEBI_36080
 http://purl.obolibrary.org/obo/CHEBI_36347
+http://purl.obolibrary.org/obo/CHEBI_4705
 http://purl.obolibrary.org/obo/CHEBI_50906
 http://purl.obolibrary.org/obo/CHMO_0002796
 http://purl.obolibrary.org/obo/CL_0000000
@@ -702,6 +701,7 @@ http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://www.w3.org/2001/XMLSchema#nonNegativeInteger
 http://www.w3.org/2004/02/skos/core#definition
-https://www.ebi.ac.uk/chebi/CHEBI:4705
+obo:CHEBI_16991 # DNA
 obo:CHEBI_30216 # alpha particle
+obo:CHEBI_4705  # DS DNA 
 term

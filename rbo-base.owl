@@ -14,12 +14,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-08-26/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-09-04/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2026-08-26</owl:versionInfo>
+        <owl:versionInfo>2026-09-04</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -277,6 +277,12 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_36347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36347"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4705"/>
     
 
 
@@ -4641,7 +4647,7 @@
     <!-- http://purl.obolibrary.org/obo/RBO_00010071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010071">
-        <rdfs:subClassOf rdf:resource="https://www.ebi.ac.uk/chebi/CHEBI:4705"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4705"/>
         <obo:IAO_0000115>A DNA duplex in which one or more phosphodiester bonds in the sugar-phosphate backbone have been broken - encompassing both single-strand breaks (nicks), where only one strand is interrupted and the molecule remains intact, and double-strand breaks (cleavage), where both strands are severed and the molecule separates into two fragments.</obo:IAO_0000115>
         <rdfs:label>double-stranded DNA containing at least one strand break</rdfs:label>
     </owl:Class>
@@ -5748,12 +5754,6 @@
     <!-- http://purl.obolibrary.org/obo/UO_1000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_1000135"/>
-    
-
-
-    <!-- https://www.ebi.ac.uk/chebi/CHEBI:4705 -->
-
-    <owl:Class rdf:about="https://www.ebi.ac.uk/chebi/CHEBI:4705"/>
     
 
 
