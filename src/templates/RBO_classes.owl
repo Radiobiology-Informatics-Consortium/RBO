@@ -4127,7 +4127,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010071"/>
-        <obo:IAO_0000115>A DNA molecule which has been cut through both strands at or near the same position � i.e., both phosphodiester backbones are severed � so the molecule is separated into two independent fragments. The ends produced may be blunt (cut at the same position on both strands) or staggered, leaving short single-stranded overhangs (&quot;sticky ends&quot;)</obo:IAO_0000115>
+        <obo:IAO_0000115>A DNA molecule which has been cut through both strands at or near the same position - i.e., both phosphodiester backbones are severed - so the molecule is separated into two independent fragments. The ends produced may be blunt (cut at the same position on both strands) or staggered, leaving short single-stranded overhangs (&quot;sticky ends&quot;)</obo:IAO_0000115>
+        <obo:IAO_0000116>DS breaks are generally considered to be within 10 bp on each strand as the default clustering distance for scoring DSBs in almost all (ARTRAC, Geant4-DNA/DBSCAN, KURBUC, RITRACKS) models. The range of distances used historically is ~3 to ~30 bp but anything with less than a 10 BP overlap ( effectively one turn) will melt easily, breaking the molecule. Ref: Friedland, W., Schmitt, E., Kundr&amp;aacute;t, P., Dingfelder, M., Baiocco, G., Barbieri, S. &amp; Ottolenghi, A. (2017). Comprehensive track-structure based evaluation of DNA damage by light ions from radiotherapy-relevant energies down to stopping. Scientific Reports 7, 45161. doi:10.1038/srep45161</obo:IAO_0000116>
         <rdfs:label>cleaved double-stranded DNA</rdfs:label>
     </owl:Class>
     

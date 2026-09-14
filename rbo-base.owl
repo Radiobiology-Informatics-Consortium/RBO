@@ -14,12 +14,12 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/rbo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-09-04/rbo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-09-14/rbo-base.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2026-09-04</owl:versionInfo>
+        <owl:versionInfo>2026-09-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4628,7 +4628,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010071"/>
-        <obo:IAO_0000115>A DNA molecule which has been cut through both strands at or near the same position � i.e., both phosphodiester backbones are severed � so the molecule is separated into two independent fragments. The ends produced may be blunt (cut at the same position on both strands) or staggered, leaving short single-stranded overhangs (&quot;sticky ends&quot;)</obo:IAO_0000115>
+        <obo:IAO_0000115>A DNA molecule which has been cut through both strands at or near the same position - i.e., both phosphodiester backbones are severed - so the molecule is separated into two independent fragments. The ends produced may be blunt (cut at the same position on both strands) or staggered, leaving short single-stranded overhangs (&quot;sticky ends&quot;)</obo:IAO_0000115>
+        <obo:IAO_0000116>DS breaks are generally considered to be within 10 bp on each strand as the default clustering distance for scoring DSBs in almost all (ARTRAC, Geant4-DNA/DBSCAN, KURBUC, RITRACKS) models. The range of distances used historically is ~3 to ~30 bp but anything with less than a 10 BP overlap ( effectively one turn) will melt easily, breaking the molecule. Ref: Friedland, W., Schmitt, E., Kundr&amp;aacute;t, P., Dingfelder, M., Baiocco, G., Barbieri, S. &amp; Ottolenghi, A. (2017). Comprehensive track-structure based evaluation of DNA damage by light ions from radiotherapy-relevant energies down to stopping. Scientific Reports 7, 45161. doi:10.1038/srep45161</obo:IAO_0000116>
         <rdfs:label>cleaved double-stranded DNA</rdfs:label>
     </owl:Class>
     
@@ -4648,6 +4649,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010071">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4705"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RBO_00010068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A DNA duplex in which one or more phosphodiester bonds in the sugar-phosphate backbone have been broken - encompassing both single-strand breaks (nicks), where only one strand is interrupted and the molecule remains intact, and double-strand breaks (cleavage), where both strands are severed and the molecule separates into two fragments.</obo:IAO_0000115>
         <rdfs:label>double-stranded DNA containing at least one strand break</rdfs:label>
     </owl:Class>
