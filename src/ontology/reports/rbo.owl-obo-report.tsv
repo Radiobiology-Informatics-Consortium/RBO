@@ -1,5 +1,5 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	deprecated_class_reference	obsolete planned process	rdfs:subClassOf	c30bd13b-2a5f-4d1a-8f95-bdf50260c8fbgenid36106
+ERROR	deprecated_class_reference	obsolete planned process	rdfs:subClassOf	5403f3a7-f7ee-4b1d-addf-f3bd601d0207genid36136
 ERROR	deprecated_class_reference	obsolete planned process	rdfs:subClassOf	process
 ERROR	deprecated_class_reference	obsolete planned process	rdfs:subClassOf	completely executed planned process
 ERROR	deprecated_class_reference	obsolete planned process	rdfs:subClassOf	material extraction process
@@ -10,15 +10,15 @@ ERROR	deprecated_class_reference	obsolete planned process	rdfs:subClassOf	anthro
 ERROR	deprecated_class_reference	obsolete planned process	rdfs:subClassOf	environmental monitoring
 ERROR	deprecated_class_reference	obsolete planned process	rdfs:subClassOf	sampling specimens for biobank
 ERROR	deprecated_class_reference	obsolete planned process	owl:disjointWith	biological process
-ERROR	deprecated_class_reference	obsolete planned process	owl:equivalentClass	c30bd13b-2a5f-4d1a-8f95-bdf50260c8fbgenid36104
-ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	c30bd13b-2a5f-4d1a-8f95-bdf50260c8fbgenid36248
+ERROR	deprecated_class_reference	obsolete planned process	owl:equivalentClass	5403f3a7-f7ee-4b1d-addf-f3bd601d0207genid36134
+ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	5403f3a7-f7ee-4b1d-addf-f3bd601d0207genid36278
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	sensor
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	manufactured product
 ERROR	deprecated_class_reference	obsolete device	rdfs:subClassOf	processed material
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	organismal entity
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	root
 ERROR	deprecated_class_reference	organism	rdfs:subClassOf	Viruses
-ERROR	deprecated_class_reference	organism	owl:equivalentClass	c30bd13b-2a5f-4d1a-8f95-bdf50260c8fbgenid36337
+ERROR	deprecated_class_reference	organism	owl:equivalentClass	5403f3a7-f7ee-4b1d-addf-f3bd601d0207genid36367
 ERROR	deprecated_class_reference	earth surface	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	earth atmosphere	rdfs:subClassOf	radiation environment
 ERROR	deprecated_class_reference	environmental study	rdfs:subClassOf	radiobiology study type
@@ -68,10 +68,10 @@ ERROR	deprecated_class_reference	relative biological effectiveness	rdfs:subClass
 ERROR	deprecated_class_reference	tissue equivalence	rdfs:subClassOf	physical quality
 ERROR	deprecated_class_reference	cis-lunar space radiation environment	rdfs:subClassOf	space radiation environment
 ERROR	deprecated_class_reference	cis-mars space radiation environment	rdfs:subClassOf	space radiation environment
-ERROR	deprecated_class_reference	micromole	rdfs:subClassOf	c30bd13b-2a5f-4d1a-8f95-bdf50260c8fbgenid58330
+ERROR	deprecated_class_reference	micromole	rdfs:subClassOf	5403f3a7-f7ee-4b1d-addf-f3bd601d0207genid58361
 ERROR	deprecated_class_reference	micromole	rdfs:subClassOf	mole based unit
-ERROR	deprecated_class_reference	micromole	owl:equivalentClass	c30bd13b-2a5f-4d1a-8f95-bdf50260c8fbgenid58324
-ERROR	deprecated_class_reference	micromole	owl:equivalentClass	c30bd13b-2a5f-4d1a-8f95-bdf50260c8fbgenid58328
+ERROR	deprecated_class_reference	micromole	owl:equivalentClass	5403f3a7-f7ee-4b1d-addf-f3bd601d0207genid58355
+ERROR	deprecated_class_reference	micromole	owl:equivalentClass	5403f3a7-f7ee-4b1d-addf-f3bd601d0207genid58359
 ERROR	deprecated_class_reference	blank node	owl:allValuesFrom	obsolete planned process
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	organism
 ERROR	deprecated_class_reference	blank node	owl:someValuesFrom	radiation dose
@@ -1033,9 +1033,9 @@ ERROR	multiple_labels	output of	label	output of@en
 ERROR	multiple_labels	output of	label	output_of
 ERROR	multiple_labels	prefix	label	derived unit
 ERROR	multiple_labels	prefix	label	prefix
-ERROR	multiple_labels	creator	label	Creator
-ERROR	multiple_labels	creator	label	Creator@en-us
-ERROR	multiple_labels	creator	label	creator
+ERROR	multiple_labels	Creator	label	Creator
+ERROR	multiple_labels	Creator	label	Creator@en-us
+ERROR	multiple_labels	Creator	label	creator
 ERROR	multiple_labels	Date	label	Date
 ERROR	multiple_labels	Date	label	Date@en-us
 ERROR	multiple_labels	Description	label	Description
@@ -1048,8 +1048,8 @@ ERROR	multiple_labels	created_by	label	created by
 ERROR	multiple_labels	created_by	label	created_by
 ERROR	multiple_labels	has_broad_synonym	label	has broad synonym@en
 ERROR	multiple_labels	has_broad_synonym	label	has_broad_synonym
-ERROR	multiple_labels	database_cross_reference	label	database_cross_reference
-ERROR	multiple_labels	database_cross_reference	label	has cross-reference
+ERROR	multiple_labels	has cross-reference	label	database_cross_reference
+ERROR	multiple_labels	has cross-reference	label	has cross-reference
 ERROR	multiple_labels	has exact synonym	label	has exact synonym@en
 ERROR	multiple_labels	has exact synonym	label	has_exact_synonym
 WARN	annotation_whitespace	continuant	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
@@ -1080,16 +1080,16 @@ WARN	annotation_whitespace	function	IAO:0000602	(forall (x) (if (Function x) (Di
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
 WARN	annotation_whitespace	material entity	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
-WARN	annotation_whitespace	cell	database_cross_reference	"CALOHA:TS-2035
+WARN	annotation_whitespace	cell	has cross-reference	"CALOHA:TS-2035
 "
-WARN	annotation_whitespace	cell	database_cross_reference	FMA:68646 
-WARN	annotation_whitespace	cell	database_cross_reference	GO:0005623
-WARN	annotation_whitespace	cell	database_cross_reference	"KUPO:0000002
+WARN	annotation_whitespace	cell	has cross-reference	FMA:68646 
+WARN	annotation_whitespace	cell	has cross-reference	GO:0005623
+WARN	annotation_whitespace	cell	has cross-reference	"KUPO:0000002
 
 "
-WARN	annotation_whitespace	cell	database_cross_reference	VHOG:0001533
-WARN	annotation_whitespace	cell	database_cross_reference	WBbt:0004017
-WARN	annotation_whitespace	cell	database_cross_reference	XAO:0003012
+WARN	annotation_whitespace	cell	has cross-reference	VHOG:0001533
+WARN	annotation_whitespace	cell	has cross-reference	WBbt:0004017
+WARN	annotation_whitespace	cell	has cross-reference	XAO:0003012
 WARN	annotation_whitespace	datum label	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
 "
 WARN	annotation_whitespace	textual definition	editor note	"2012-04-05: 
@@ -1585,6 +1585,8 @@ WARN	duplicate_label_synonym	rad	has exact synonym	rad
 WARN	duplicate_label_synonym	mass per unit volume	has exact synonym	mass per unit volume
 WARN	duplicate_label_synonym	fraction	alternative term	fraction
 WARN	duplicate_label_synonym	pH	has exact synonym	pH
+WARN	duplicate_scoped_synonym	deoxyribonucleic acid	has exact synonym	deoxyribonucleic acids
+WARN	duplicate_scoped_synonym	deoxyribonucleic acid	has_related_synonym	deoxyribonucleic acids
 WARN	duplicate_scoped_synonym	ketone	has exact synonym	ketones
 WARN	duplicate_scoped_synonym	ketone	has_related_synonym	ketones
 WARN	duplicate_scoped_synonym	iron atom	has exact synonym	iron
@@ -2317,12 +2319,12 @@ WARN	equivalent_class_axiom_no_genus	particle track	has quality	particle track s
 WARN	equivalent_class_axiom_no_genus	track formation	has_output	particle track
 WARN	equivalent_pair	role	owl:equivalentClass	role
 WARN	equivalent_pair	protein	owl:equivalentClass	protein
-WARN	invalid_xref	cell	database_cross_reference	FMA:68646 
-WARN	invalid_xref	cell	database_cross_reference	"KUPO:0000002
+WARN	invalid_xref	cell	has cross-reference	FMA:68646 
+WARN	invalid_xref	cell	has cross-reference	"KUPO:0000002
 
 "
-WARN	invalid_xref	cell	database_cross_reference	VHOG:0001533
-WARN	invalid_xref	cell	database_cross_reference	XAO:0003012
+WARN	invalid_xref	cell	has cross-reference	VHOG:0001533
+WARN	invalid_xref	cell	has cross-reference	XAO:0003012
 WARN	missing_definition	temporal region	textual definition	
 WARN	missing_definition	spatiotemporal region	textual definition	
 WARN	missing_definition	fiat object part	textual definition	
@@ -2543,6 +2545,7 @@ WARN	missing_definition	nickel group molecular entity	textual definition
 WARN	missing_definition	platinum molecular entity	textual definition	
 WARN	missing_definition	canonical nucleoside residue	textual definition	
 WARN	missing_definition	canonical ribonucleoside residue	textual definition	
+WARN	missing_definition	canonical deoxyribonucleoside residue	textual definition	
 WARN	missing_definition	halide salt	textual definition	
 WARN	missing_definition	gold molecular entity	textual definition	
 WARN	missing_definition	nitrogen hydride	textual definition	
@@ -2607,6 +2610,7 @@ WARN	missing_definition	hydroxy group	textual definition
 WARN	missing_definition	hydrogensulfate	textual definition	
 WARN	missing_definition	oxo group	textual definition	
 WARN	missing_definition	carboxy group	textual definition	
+WARN	missing_definition	double-stranded DNA	textual definition	
 WARN	missing_definition	sulfur oxide	textual definition	
 WARN	missing_definition	argon atom	textual definition	
 WARN	missing_definition	hydrogen atom	textual definition	
@@ -2617,6 +2621,7 @@ WARN	missing_definition	praseodymium atom	textual definition
 WARN	missing_definition	rhenium atom	textual definition	
 WARN	missing_definition	xenon atom	textual definition	
 WARN	missing_definition	canonical nucleotide residue	textual definition	
+WARN	missing_definition	canonical deoxyribonucleotide residue	textual definition	
 WARN	missing_definition	canonical ribonucleotide residue	textual definition	
 WARN	missing_definition	onium compound	textual definition	
 WARN	missing_definition	nucleotide residue	textual definition	
@@ -3463,6 +3468,7 @@ WARN	missing_definition	teaspoon based unit	textual definition
 WARN	missing_definition	gram per square meter based unit	textual definition	
 WARN	missing_definition	large calorie based unit	textual definition	
 WARN	missing_definition	gray per minute based unit	textual definition	
+WARN	missing_definition	has functional parent	textual definition	
 WARN	missing_definition	has parent hydride	textual definition	
 WARN	missing_definition	is conjugate acid of	textual definition	
 WARN	missing_definition	is conjugate base of	textual definition	
@@ -3477,7 +3483,7 @@ WARN	missing_definition	channels_into	textual definition
 WARN	missing_definition	layer part of	textual definition	
 WARN	missing_definition	protects	textual definition	
 WARN	missing_definition	subdivision of	textual definition	
-WARN	missing_definition	creator	textual definition	
+WARN	missing_definition	Creator	textual definition	
 WARN	missing_definition	Date	textual definition	
 WARN	missing_definition	Description	textual definition	
 WARN	missing_definition	Title	textual definition	

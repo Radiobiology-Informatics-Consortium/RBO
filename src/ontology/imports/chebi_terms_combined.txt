@@ -1,3 +1,4 @@
+
 CHEBI:24432 # exact
 CHEBI:24636 # proton
 CHEBI:30222 # neutron
@@ -26,6 +27,7 @@ http://purl.obolibrary.org/obo/CHEBI_33252
 http://purl.obolibrary.org/obo/CHEBI_33695
 http://purl.obolibrary.org/obo/CHEBI_36080
 http://purl.obolibrary.org/obo/CHEBI_36347
+http://purl.obolibrary.org/obo/CHEBI_4705
 http://purl.obolibrary.org/obo/CHEBI_50906
 http://purl.obolibrary.org/obo/CHMO_0002796
 http://purl.obolibrary.org/obo/CL_0000000
@@ -82,6 +84,7 @@ http://purl.obolibrary.org/obo/PATO_0001236
 http://purl.obolibrary.org/obo/PATO_0001241
 http://purl.obolibrary.org/obo/PATO_0001739
 http://purl.obolibrary.org/obo/PATO_0002062
+http://purl.obolibrary.org/obo/PATO_0040026
 http://purl.obolibrary.org/obo/PO_0009012
 http://purl.obolibrary.org/obo/RBO.owl
 http://purl.obolibrary.org/obo/RBO_00000001
@@ -479,6 +482,10 @@ http://purl.obolibrary.org/obo/RBO_00010064
 http://purl.obolibrary.org/obo/RBO_00010065
 http://purl.obolibrary.org/obo/RBO_00010066
 http://purl.obolibrary.org/obo/RBO_00010067
+http://purl.obolibrary.org/obo/RBO_00010068
+http://purl.obolibrary.org/obo/RBO_00010069
+http://purl.obolibrary.org/obo/RBO_00010070
+http://purl.obolibrary.org/obo/RBO_00010071
 http://purl.obolibrary.org/obo/RBO_00011000
 http://purl.obolibrary.org/obo/RBO_00011001
 http://purl.obolibrary.org/obo/RBO_00011002
@@ -694,5 +701,7 @@ http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
 http://www.w3.org/1999/02/22-rdf-syntax-ns#nil
 http://www.w3.org/2001/XMLSchema#nonNegativeInteger
 http://www.w3.org/2004/02/skos/core#definition
+obo:CHEBI_16991 # DNA
 obo:CHEBI_30216 # alpha particle
+obo:CHEBI_4705  # DS DNA 
 term
