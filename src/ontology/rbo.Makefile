@@ -29,15 +29,15 @@ imports/pato_import.owl: mirror/pato.owl imports/pato_terms_combined.txt
 		remove -t "http://purl.obolibrary.org/obo/BFO_0000023" -t "http://purl.obolibrary.org/obo/CHEBI_50906" --axioms subclass --trim false --signature true \
 		remove -t "http://purl.obolibrary.org/obo/BFO_0000023" -t "http://purl.obolibrary.org/obo/CHEBI_50906" --axioms equivalent --trim false --signature true \
 		remove -t "http://purl.obolibrary.org/obo/PATO_0001291" --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/CHEBI_16134" --axioms subclass --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/CHEBI_28938" --axioms subclass --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/CHEBI_27594" --axioms subclass --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/CHEBI_49637" --axioms subclass --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/CHEBI_25555" --axioms subclass --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/GO_0098796" --axioms subclass --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/CHEBI_24833" --axioms subclass --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/CHEBI_25805" --axioms subclass --trim false --signature true \
-		remove -t "http://purl.obolibrary.org/obo/GO_0044207" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/CHEBI_16134" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/CHEBI_28938" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/CHEBI_27594" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/CHEBI_49637" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/CHEBI_25555" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/GO_0098796" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/CHEBI_24833" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/CHEBI_25805" --axioms subclass --trim false --signature true \
+		remove -t "http://purl.obolibrary.org/obo/BFO_0000004" -t "http://purl.obolibrary.org/obo/GO_0044207" --axioms subclass --trim false --signature true \
 		query --update ../sparql/inject-subset-declaration.ru \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
