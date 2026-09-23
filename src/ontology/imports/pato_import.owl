@@ -19,8 +19,8 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo/imports/pato_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-08-26/imports/pato_import.owl"/>
-        <owl:versionInfo>2026-08-26</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-09-23/imports/pato_import.owl"/>
+        <owl:versionInfo>2026-09-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1791,7 +1791,6 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_16134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16134">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_138675"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35107"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37176"/>
@@ -2687,7 +2686,6 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_24833 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24833">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24651"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2942,7 +2940,6 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25555 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25555">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33300"/>
         <rdfs:subClassOf>
@@ -3163,7 +3160,6 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_25805 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25805">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33303"/>
         <rdfs:subClassOf>
@@ -3334,7 +3330,6 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_27594 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27594">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33306"/>
         <rdfs:subClassOf>
@@ -3497,7 +3492,6 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_28938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28938">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35106"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50313"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60242"/>
@@ -5970,8 +5964,15 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_35605 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24651"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24833"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36963"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_39141"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>carbon oxoacids</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>oxoacids of carbon</oboInOwl:hasRelatedSynonym>
@@ -6950,7 +6951,6 @@
     <!-- http://purl.obolibrary.org/obo/CHEBI_49637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_49637">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24835"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25585"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33559"/>
@@ -12111,7 +12111,6 @@
     <!-- http://purl.obolibrary.org/obo/GO_0044207 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044207">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1990904"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12961,7 +12960,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12998,11 +12996,18 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032991"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0098796"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005886"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0016020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Any protein complex that is part of the plasma membrane.</obo:IAO_0000115>

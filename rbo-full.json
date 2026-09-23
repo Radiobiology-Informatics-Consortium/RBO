@@ -13,9 +13,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-09-14"
+        "val" : "2026-09-23"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-09-14/rbo-full.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-09-23/rbo-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -3326,6 +3326,12 @@
           "val" : "KEGG:C00039"
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "deoxyribonucleic acid"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/chebi.owl"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
           "val" : "CHEBI:13302"
         }, {
@@ -27782,6 +27788,12 @@
           "val" : "KEGG:C00434"
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "double-stranded DNA"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/chebi.owl"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/chebi/formula",
           "val" : "C10H17O8PR2(C5H8O5PR)n.C10H17O7PR2(C5H8O6PR)n"
         }, {
