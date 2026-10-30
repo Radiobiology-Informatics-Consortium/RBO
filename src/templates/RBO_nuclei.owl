@@ -28,6 +28,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -134,6 +140,12 @@
         <obo:IAO_0000115>Atomic nuclei, each with 10 protons and 10 neutrons with kinetic energy imparted by natural or artificial means such as by a particle accelerator</obo:IAO_0000115>
         <rdfs:label>Ne-20 ion radiation</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000015"/>
     
 
 
@@ -410,6 +422,78 @@
         <obo:IAO_0000115>An atomic nucleus with 36 protons and 48 neutrons </obo:IAO_0000115>
         <obo:IAO_0000118>Kr-84 ion;Kr-84 nucleus;Kr-84 </obo:IAO_0000118>
         <rdfs:label>Krypton-84 nucleus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of ions of different species, e.g. protons and iron ions</obo:IAO_0000115>
+        <obo:IAO_0000118>mixed ion radiation</obo:IAO_0000118>
+        <rdfs:label>multiple ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of one or more species of ion and one or more species of ionizing photons</obo:IAO_0000115>
+        <obo:IAO_0000116>Photons used in investigations are most commonly ionizing photons, classified as either x-ray or gamma, depending upon the energy, but in some instances including high energy ultraviolet (UVC)</obo:IAO_0000116>
+        <rdfs:label>mixed ion and photon radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005060"/>
+        <obo:IAO_0000115>Mixed radiation consisting of one or more species of ion and one or more species of gamma-ray photons</obo:IAO_0000115>
+        <rdfs:label>mixed ion and gamma radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005060"/>
+        <obo:IAO_0000115>Mixed radiation consisting of one or more species of ion and one or more species of x-ray photons</obo:IAO_0000115>
+        <rdfs:label>mixed ion and x-ray radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of one or more species of ion and neutron radiation</obo:IAO_0000115>
+        <rdfs:label>mixed ion and neutron radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of neutron and photon radiation</obo:IAO_0000115>
+        <rdfs:label>mixed neutron and photon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of electron and photon radiation</obo:IAO_0000115>
+        <rdfs:label>mixed electron and photon</rdfs:label>
     </owl:Class>
     
 
