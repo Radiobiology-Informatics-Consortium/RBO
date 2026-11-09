@@ -40,11 +40,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/rbo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-09-23/rbo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/rbo/releases/2026-10-30/rbo.owl"/>
         <dce:description>RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.</dce:description>
         <dce:title>Radiation Biology Ontology</dce:title>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo>2026-09-23</owl:versionInfo>
+        <owl:versionInfo>2026-10-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -282798,7 +282798,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/RBO_00000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000049"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000116"/>
         <obo:IAO_0000112>The samples were exposed to a mixed radiation field consisting of several ions at different energies.</obo:IAO_0000112>
         <obo:IAO_0000115>The process of exposing the same sample to more than one type and/or energy of radiation, in sequence or simultaneously.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>mixed field</oboInOwl:hasExactSynonym>
@@ -283215,7 +283215,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/RBO_00000073 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010072"/>
         <obo:IAO_0000115>Radiation response modifiers are agents that alter tumor or normal tissue response to radiation, such as radiation sensitizers and radiation protectors. </obo:IAO_0000115>
         <obo:IAO_0000119>Citrin DE, Mitchell JB. Altering the response to radiation: sensitizers and protectors. Semin Oncol. 2014 Dec;41(6):848-59. doi: 10.1053/j.seminoncol.2014.09.013. Epub 2014 Oct 7. PMID: 25499642; PMCID: PMC4270009.</obo:IAO_0000119>
         <rdfs:label>radiation response modifier</rdfs:label>
@@ -285900,6 +285900,78 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RBO_00005059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of ions of different species, e.g. protons and iron ions</obo:IAO_0000115>
+        <obo:IAO_0000118>mixed ion radiation</obo:IAO_0000118>
+        <rdfs:label>multiple ion radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of one or more species of ion and one or more species of ionizing photons</obo:IAO_0000115>
+        <obo:IAO_0000116>Photons used in investigations are most commonly ionizing photons, classified as either x-ray or gamma, depending upon the energy, but in some instances including high energy ultraviolet (UVC)</obo:IAO_0000116>
+        <rdfs:label>mixed ion and photon radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005060"/>
+        <obo:IAO_0000115>Mixed radiation consisting of one or more species of ion and one or more species of gamma-ray photons</obo:IAO_0000115>
+        <rdfs:label>mixed ion and gamma radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00005060"/>
+        <obo:IAO_0000115>Mixed radiation consisting of one or more species of ion and one or more species of x-ray photons</obo:IAO_0000115>
+        <rdfs:label>mixed ion and x-ray radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of one or more species of ion and neutron radiation</obo:IAO_0000115>
+        <rdfs:label>mixed ion and neutron radiation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of neutron and photon radiation</obo:IAO_0000115>
+        <rdfs:label>mixed neutron and photon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00005065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00000015"/>
+        <obo:IAO_0000115>Mixed radiation consisting of electron and photon radiation</obo:IAO_0000115>
+        <rdfs:label>mixed electron and photon</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RBO_00005066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00005066">
@@ -286183,7 +286255,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/RBO_00010015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
         <obo:IAO_0000112>Neutrons have a high quality factor compared to photons.</obo:IAO_0000112>
         <obo:IAO_0000115>Dimensionless factor developed for purposes of radiation protection and assessing health risks in general terms that accounts for the relative biological effectiveness of different radiations in producing stochastic effects and is used to relate absorbed</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
@@ -286211,8 +286283,9 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
         <obo:IAO_0000112>Radiation weighting factors may change as more data on biological effects are obtained.</obo:IAO_0000112>
-        <obo:IAO_0000115>A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated.</obo:IAO_0000115>
+        <obo:IAO_0000115>A dimensionless constant that accounts for the relative biological effectiveness (RBE) of various types of ionizing radiation. Equivalent dose = (absorbed dose) x (radiation weighting factor)</obo:IAO_0000115>
         <obo:IAO_0000117>Jack Miller</obo:IAO_0000117>
+        <obo:IAO_0000118>w sub r</obo:IAO_0000118>
         <obo:IAO_0000119>NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)</obo:IAO_0000119>
         <rdfs:label>radiation weighting factor</rdfs:label>
     </owl:Class>
@@ -286494,8 +286567,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/RBO_00010045 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010045">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RBO_00010072"/>
         <obo:IAO_0000115>The role of a material in reducing radiation intensity by modifying the composition, and/or energy of incident radiation.</obo:IAO_0000115>
         <rdfs:label>radiation shielding role</rdfs:label>
     </owl:Class>
@@ -286780,6 +286852,29 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         </rdfs:subClassOf>
         <obo:IAO_0000115>A DNA duplex in which one or more phosphodiester bonds in the sugar-phosphate backbone have been broken - encompassing both single-strand breaks (nicks), where only one strand is interrupted and the molecule remains intact, and double-strand breaks (cleavage), where both strands are severed and the molecule separates into two fragments.</obo:IAO_0000115>
         <rdfs:label>double-stranded DNA containing at least one strand break</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50906"/>
+        <obo:IAO_0000115>The role of a material or process in reducing the effects of radiation by any means.</obo:IAO_0000115>
+        <obo:IAO_0000118>radiation countermeasure</obo:IAO_0000118>
+        <rdfs:label>radiation effect mitigation role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RBO_00010073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RBO_00010073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
+        <obo:IAO_0000115> A numerical multiplier used in radiation protection to represent the relative risk of stochastic biological effects (such as fatal cancer or hereditary damage) from irradiation of a specific organ or tissue compared to the whole body. The effective dose (E),is the sum of the equivalent doses to various tissues multiplied by their respective w sub T values.</obo:IAO_0000115>
+        <obo:IAO_0000118>w sub T</obo:IAO_0000118>
+        <rdfs:label>tissue weighting factor</rdfs:label>
     </owl:Class>
     
 

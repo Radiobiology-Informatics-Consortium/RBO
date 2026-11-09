@@ -16,9 +16,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-09-23"
+        "val" : "2026-10-30"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-09-23/rbo-base.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-10-30/rbo-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000006",
@@ -3936,6 +3936,77 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005059",
+      "lbl" : "multiple ion radiation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Mixed radiation consisting of ions of different species, e.g. protons and iron ions"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "mixed ion radiation"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005060",
+      "lbl" : "mixed ion and photon radiation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Mixed radiation consisting of one or more species of ion and one or more species of ionizing photons"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Photons used in investigations are most commonly ionizing photons, classified as either x-ray or gamma, depending upon the energy, but in some instances including high energy ultraviolet (UVC)"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005061",
+      "lbl" : "mixed ion and gamma radiation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Mixed radiation consisting of one or more species of ion and one or more species of gamma-ray photons"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005062",
+      "lbl" : "mixed ion and x-ray radiation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Mixed radiation consisting of one or more species of ion and one or more species of x-ray photons"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005063",
+      "lbl" : "mixed ion and neutron radiation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Mixed radiation consisting of one or more species of ion and neutron radiation"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005064",
+      "lbl" : "mixed neutron and photon",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Mixed radiation consisting of neutron and photon radiation"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00005065",
+      "lbl" : "mixed electron and photon",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Mixed radiation consisting of electron and photon radiation"
+        }
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00005066",
       "lbl" : "miligray per second",
       "type" : "CLASS",
@@ -4378,7 +4449,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A factor used to allow for differences in the biological effectiveness between different radiations when calculating equivalent dose (H_T) (see equivalent dose). These factors are independent of the tissue or organ irradiated."
+          "val" : "A dimensionless constant that accounts for the relative biological effectiveness (RBE) of various types of ionizing radiation. Equivalent dose = (absorbed dose) x (radiation weighting factor)"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
@@ -4386,6 +4457,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "w sub r"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
@@ -4980,6 +5054,32 @@
         "definition" : {
           "val" : "A DNA duplex in which one or more phosphodiester bonds in the sugar-phosphate backbone have been broken - encompassing both single-strand breaks (nicks), where only one strand is interrupted and the molecule remains intact, and double-strand breaks (cleavage), where both strands are severed and the molecule separates into two fragments."
         }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010072",
+      "lbl" : "radiation effect mitigation role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "The role of a material or process in reducing the effects of radiation by any means."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "radiation countermeasure"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RBO_00010073",
+      "lbl" : "tissue weighting factor",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : " A numerical multiplier used in radiation protection to represent the relative risk of stochastic biological effects (such as fatal cancer or hereditary damage) from irradiation of a specific organ or tissue compared to the whole body. The effective dose (E),is the sum of the equivalent doses to various tissues multiplied by their respective w sub T values."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "w sub T"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RBO_00011000",
@@ -8685,7 +8785,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000015",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/RBO_00000049"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000116"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000016",
       "pred" : "is_a",
@@ -8833,7 +8933,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000073",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_24432"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010072"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00000074",
       "pred" : "is_a",
@@ -9827,6 +9927,34 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00010012"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005059",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005060",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005061",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00005060"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005062",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00005060"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005063",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005064",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00005065",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00000015"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00005066",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/UO_0000129"
@@ -9917,7 +10045,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010015",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/PATO_0001018"
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001909"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010016",
       "pred" : "is_a",
@@ -10029,11 +10157,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010045",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RBO_00010045",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/CHEBI_50906"
+      "obj" : "http://purl.obolibrary.org/obo/RBO_00010072"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010046",
       "pred" : "is_a",
@@ -10134,6 +10258,18 @@
       "sub" : "http://purl.obolibrary.org/obo/RBO_00010071",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000086",
       "obj" : "http://purl.obolibrary.org/obo/RBO_00010068"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010072",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010072",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/CHEBI_50906"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RBO_00010073",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0001909"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RBO_00011000",
       "pred" : "is_a",
