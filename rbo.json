@@ -13,9 +13,9 @@
         "val" : "http://creativecommons.org/licenses/by/3.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-10-30"
+        "val" : "2026-11-09"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-10-30/rbo.json"
+      "version" : "http://purl.obolibrary.org/obo/rbo/releases/2026-11-09/rbo.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -174283,7 +174283,7 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "w sub T"
+          "val" : "w sub T, w_T"
         } ]
       }
     }, {
@@ -175551,6 +175551,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Jack Miller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "w_R"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "NCRP Glossary (https://ncrponline.org/wp-content/themes/ncrp/PDFs/NCRP-Composite-Glossary.pdf)"
